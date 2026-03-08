@@ -1,0 +1,219 @@
+.page {
+  padding: 2rem 0 4rem;
+}
+
+.title {
+  margin-bottom: 1.25rem;
+}
+
+.section {
+  margin-top: 2rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--ifm-background-surface-color);
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  background: var(--ifm-color-emphasis-100);
+}
+
+.sectionTitle {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.sectionLink {
+  font-size: 0.9rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0;
+}
+
+@media (max-width: 996px) {
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 420px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cardLink {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+.card {
+  height: 100%;
+  border-right: 1px solid var(--ifm-color-emphasis-200);
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+.cardLink:hover .card {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+}
+
+.cardTop {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  background: var(--ifm-background-color);
+}
+
+.cardName {
+  font-weight: 700;
+  font-size: 0.95rem;
+  line-height: 1.2;
+}
+
+.imageWrap {
+  aspect-ratio: 4 / 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--ifm-color-emphasis-100);
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imageFallback {
+  opacity: 0.6;
+  font-size: 0.9rem;
+}
+
+.cardBottom {
+  padding: 0.6rem 0.75rem 0.75rem;
+}
+
+.subtitle {
+  font-size: 0.85rem;
+  opacity: 0.85;
+  margin-bottom: 0.25rem;
+}
+
+.caption {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+/* ===== Page header ===== */
+.pageHeader{
+  margin: 0 0 1.25rem;
+  padding: 1rem 1.25rem;
+  border-radius: 14px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  background:
+
+    var(--ifm-background-surface-color);
+}
+
+.pageTitle{
+  margin: 0;
+  font-size: clamp(1.6rem, 2vw, 2.2rem);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.pageSubtitle{
+  margin: 0.35rem 0 0;
+  opacity: 0.75;
+  font-size: 0.95rem;
+}
+
+/* ===== Section header ===== */
+.sectionHeader{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.15rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  background:
+    var(--ifm-background-surface-color);
+}
+
+.sectionTitle{
+  margin: 0;
+  font-size: 1.3rem;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  color: rgba(120, 255, 226, 0.95);
+  text-shadow: 0 0 16px rgba(120, 220, 255, 0.15);
+}
+
+.sectionCta{
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.95rem; /* un poco más grande */
+  padding: 0.42rem 0.7rem;
+  border-radius: 10px;
+  border: 1px solid rgba(120, 220, 255, 0.25);
+  background: rgba(120, 220, 255, 0.08);
+  text-decoration: none !important;
+  transition: transform 120ms ease, background 120ms ease, border-color 120ms ease;
+}
+
+.sectionCta:hover{
+  transform: translateY(-1px);
+  background: rgba(120, 220, 255, 0.12);
+  border-color: rgba(120, 220, 255, 0.40);
+}
+
+.arrow{
+  transition: transform 120ms ease;
+}
+.sectionCta:hover .arrow{
+  transform: translateX(2px);
+}
+
+/* details reset */
+.section > summary { list-style: none; }
+.section > summary::-webkit-details-marker { display: none; }
+
+.sectionActions{
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.chevron{
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  border-right: 2px solid rgba(255,255,255,0.55);
+  border-bottom: 2px solid rgba(255,255,255,0.55);
+  transform: rotate(45deg);
+  transition: transform 140ms ease, opacity 140ms ease;
+  opacity: 0.85;
+}
+
+.section[open] .chevron{
+  transform: rotate(225deg);
+}
+
+.sectionBody{
+  padding: 0;
+}

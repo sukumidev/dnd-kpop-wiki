@@ -1,0 +1,3990 @@
+{
+  "pc-minjae": {
+    "id": "pc-minjae",
+    "title": "Yang Minjae",
+    "imageSrc": "/img/characters/party/minjae-classic.jpeg",
+    "subtitle": "El Corazón de la Luz de la Luna",
+
+    "faction": { "label": "Los Panes del Destino", "doc": "factions/panes-del-destino" },
+    "group": "party",
+    "role": "Player",
+
+    "occupation": [
+      "Líder de los Panes del Destino",
+      "(Ex) Capitán de la Guardia Real de Sylmorien"
+    ],
+    "status": "Activo",
+
+    "dateOfBirth": "1996-11-11",
+    "age": 29,
+    "zodiac": "Escorpio ♏",
+    "mbti": "ENFJ",
+
+    "race": "Semi-Elfo",
+    "dynamic": "Alfa",
+
+    "orientation": "Pan",
+    "romantic_situation": "En una relación con Joshua",
+    "poli": "Sí",
+
+    "hometown": { "label": "Aldea Serin, Sylmorien", "doc": "world/locations/serin" },
+    "actual_location": { "label": "Neocity", "doc": "world/locations/neocity" },
+
+    "realm": { "label": "Sylmorien", "doc": "world/realms/sylmorien" },
+
+    "class": "Paladin",
+    "subclass": "Oath of Devotion",
+    "lvl": 4,
+
+    "firstAppearance": { "label": "Sesión 01", "doc": "campaign/sessions/01" },
+    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
+
+    "bonds": [
+      { "label": "Joshua", "doc": "characters/misc/svt-joshua" },
+      { "label": "I.N.", "doc": "characters/misc/skz-jeongin" },
+      { "label": "Hyunjin", "doc": "characters/misc/skz-hyunjin" },
+      { "label": "S.Coups", "doc": "characters/misc/svt-scoups" },
+      { "label": "Kiyori", "doc": "characters/party/pc-kiyori" },
+      { "label": "Imugi", "doc": "characters/party/pc-imugi" },
+      { "label": "Soobin", "doc": "characters/party/pc-soobin" },
+      { "label": "Chen", "doc": "characters/misc/exo-chen" },
+      { "label": "Kai", "doc": "characters/misc/exo-kai" },
+      { "label": "Jaehyun", "doc": "characters/misc/nct-jaehyun" },
+      { "label": "Johnny", "doc": "characters/misc/nct-johnny" },
+      { "label": "Jaemin", "doc": "characters/misc/nct-jaemin" }
+    ],
+
+    "destinyCard": "—",
+
+    "images": [
+      { "img": "/img/characters/party/minjae.png", "caption": "Minjae cambio de look" },
+      { "img": "/img/characters/party/minjae-king.png", "caption": "Minjae Rey de Corazones" },
+      { "img": "/img/characters/party/minjae-navidad.jpg", "caption": "Minjae durante la fiesta del Solsticio de Invierno" },
+      { "img": "/img/characters/party/minjae-vampiro.jpeg", "caption": "Minjae durante la fiesta del Aquelarre" },
+      { "img": "/img/characters/party/minjae-cursed.png", "caption": "Alter-Ego de Minjae" }
+    ]
+  },
+  "pc-kiyori": {
+    "id": "pc-kiyori",
+    "title": "Kiyori Hoshizuki",
+    "imageSrc": "/img/characters/party/kiyori.png",
+    "subtitle": "La Heroína Erudita",
+    "faction": { "label": "Los Panes del Destino", "doc": "factions/panes-del-destino" },
+    "group": "party",
+    "role": "Player",
+    "occupation": [
+      "Estudiante de la Neo Academia", "Primogénita del Clan Hoshizuki de Hotou"
+    ],
+    "status": "Activo",
+    "dateOfBirth": "2000-10-05",
+    "age": 25,
+    "zodiac": "Libra ♎",
+    "mbti": "INFP",
+    "race": "Tiefling",
+    "dynamic": "Omega",
+    "orientation": "Pan",
+    "romantic_situation": "Sin compromisos",
+    "poli": "Sí",
+    "hometown": { "label": "Puerto Bay Alta, Hotou", "doc": "—" },
+    "actual_location": { "label": "Neocity", "doc": "world/locations/neocity" },
+    "realm": { "label": "Hotou", "doc": "world/realms/hotou" },
+    "class": "Wizard",
+    "subclass": "Diviner",
+    "lvl": 4,
+    "firstAppearance": { "label": "Sesión 01", "doc": "campaign/sessions/01" },
+    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
+    "bonds": [
+      { "label": "Minjae", "doc": "characters/party/pc-minjae" },
+      { "label": "Imugi", "doc": "characters/party/pc-imugi" },
+      { "label": "Soobin", "doc": "characters/party/pc-soobin" },
+
+      { "label": "Mark", "doc": "characters/misc/nct-mark" },
+      { "label": "Yushi", "doc": "characters/misc/nct-yushi" },
+      { "label": "Sion", "doc": "characters/misc/nct-sion" },
+      { "label": "Riku", "doc": "characters/misc/nct-riku" },
+      { "label": "Jaehee", "doc": "characters/misc/nct-jaehee" },
+      { "label": "Ryo", "doc": "characters/misc/nct-ryo" },
+      { "label": "Sakuya", "doc": "characters/misc/nct-sakuya" },
+
+      { "label": "Yuta", "doc": "characters/misc/nct-yuta" },
+      { "label": "Haechan", "doc": "characters/misc/nct-haechan" },
+      { "label": "Chenle", "doc": "characters/misc/nct-chenle" },
+      { "label": "Taeyong", "doc": "characters/misc/nct-taeyong" },
+
+      { "label": "Jackson Wang", "doc": "—" },
+      { "label": "Chaewon", "doc": "—" },
+      { "label": "Sakura", "doc": "—" },
+      { "label": "Yunjin", "doc": "—" }
+    ],
+    "destinyCard": "—",
+    "images": [
+      { "img": "/img/characters/party/kiyori-neovibe.png", "caption": "Kiyori cambio de look" },
+      { "img": "/img/characters/party/kiyori-queen.png", "caption": "Kiyori Reina de Diamantes" },
+      { "img": "/img/characters/party/kiyori-belmont.jpeg", "caption": "Kiyori durante la fiesta del Aquelarre" },
+      { "img": "/img/characters/party/kiyori-navidad.png", "caption": "Kiyori durante la fiesta del Solsticio de Invierno" },
+      { "img": "/img/characters/party/kiyori-cursed.png", "caption": "Alter-Ego de Kiyori" }
+    ]
+  },
+
+  "pc-imugi": {
+    "id": "pc-imugi",
+    "title": "Fenghuang Imugi",
+    "imageSrc": "/img/characters/party/imugi.jpeg",
+    "subtitle": "El Príncipe Heredero del Caos",
+    "faction": { "label": "Los Panes del Destino", "doc": "factions/panes-del-destino" },
+    "group": "party",
+    "role": "Player",
+    "occupation": ["Heredero del Clan Fenghuang"],
+    "status": "Activo",
+    "dateOfBirth": "1582-11-09",
+    "age": 443,
+    "zodiac": "Escorpio ♏",
+    "mbti": "ESFP",
+    "race": "Elfo",
+    "dynamic": "Omega",
+    "orientation": "Pan",
+    "romantic_situation": "Es complicado",
+    "poli": "Sí",
+    "hometown": { "label": "?", "doc": "—" },
+    "actual_location": { "label": "Neocity", "doc": "world/locations/neocity" },
+    "realm": { "label": "Ygdrassil", "doc": "world/realms/ygdrassil" },
+    "class": "Warlock",
+    "subclass": "The Great Old One Patron",
+    "lvl": 4,
+    "firstAppearance": { "label": "Sesión 01", "doc": "campaign/sessions/01" },
+    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
+    "bonds": [
+      { "label": "Minjae", "doc": "characters/party/pc-minjae" },
+      { "label": "Kiyori", "doc": "characters/party/pc-kiyori" },
+      { "label": "Soobin", "doc": "characters/party/pc-soobin" },
+
+      { "label": "S.Coups", "doc": "characters/misc/svt-scoups" },
+      { "label": "Jeonghan", "doc": "characters/misc/svt-jeonghan" },
+      { "label": "Dino", "doc": "characters/misc/svt-dino" },
+      { "label": "San", "doc": "characters/misc/ateez-san" },
+      { "label": "Chenle", "doc": "characters/misc/nct-chenle" }
+    ],
+    "destinyCard": "—",
+    "images": [
+      { "img": "/img/characters/party/imugi-fringe.jpg", "caption": "Imugi cambio de look" },
+      { "img": "/img/characters/party/imugi-king.png", "caption": "Imugi Rey de Treboles" }
+    ]
+  },
+
+  "pc-soobin": {
+    "id": "pc-soobin",
+    "title": "Jang Soobin",
+    "imageSrc": "/img/characters/party/soobin.jpeg",
+    "subtitle": "La Becaria Humilde",
+    "faction": { "label": "Los Panes del Destino", "doc": "factions/panes-del-destino" },
+    "group": "party",
+    "role": "Player",
+    "occupation": [
+      "Monje del Templo Astronómico",
+      "Aprendiz Becada de la Neo Academia"
+    ],
+    "status": "Activo",
+    "dateOfBirth": "2001-08-08",
+    "age": 24,
+    "zodiac": "Leo ♌",
+    "mbti": "ENFP",
+    "race": "Semi-Elfa",
+    "dynamic": "Omega",
+    "orientation": "Pan",
+    "romantic_situation": "Es complicado",
+    "poli": "Sí",
+    "hometown": { "label": "Villa Jangmi, Jeyperia", "doc": "—" },
+    "actual_location": { "label": "Neocity", "doc": "world/locations/neocity" },
+    "realm": { "label": "Jeyperia", "doc": "world/realms/jeyperia" },
+    "class": "Monk",
+    "subclass": "Way of the Open Hand",
+    "lvl": 4,
+    "firstAppearance": { "label": "Sesión 01", "doc": "campaign/sessions/01" },
+    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
+    "bonds": [
+      { "label": "Minjae", "doc": "characters/party/pc-minjae" },
+      { "label": "Kiyori", "doc": "characters/party/pc-kiyori" },
+      { "label": "Imugi", "doc": "characters/party/pc-imugi" },
+
+      { "label": "Dokyeom", "doc": "characters/misc/svt-dk" },
+      { "label": "Jake", "doc": "characters/misc/enha-jake" },
+      { "label": "Yunho", "doc": "characters/misc/ateez-yunho" },
+      { "label": "Jongho", "doc": "characters/misc/ateez-jongho" },
+      { "label": "San", "doc": "characters/misc/ateez-san" },
+      { "label": "Jisung", "doc": "characters/misc/nct-jisung" }
+    ],
+    "destinyCard": "—",
+    "images": [
+      { "img": "/img/characters/party/soobin-silver.png", "caption": "Soobin cambio de look" },
+      { "img": "/img/characters/party/soobin-queen.png", "caption": "Soobin Reina de Espadas" }
+    ]
+  },
+  "svt-scoups": {
+    "id": "svt-scoups",
+    "title": "Choi Seungcheol (S.Coups)",
+    "imageSrc": "/img/characters/svt/scoups.png",
+    "subtitle": "El Gran Maestro del Gremio de Aventureros",
+
+    "faction": { "label": "Gremio de Aventureros", "doc": "factions/gremio-de-aventureros" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": [
+      "Líder y Representante Legal del Gremio de Aventureros",
+      "Líder de la Unidad de Defensa y Vanguardia"
+    ],
+    "status": "Activo",
+
+    "dateOfBirth": "1995-08-08",
+    "age": 30,
+    "zodiac": "Leo ♌",
+    "mbti": "ESTP",
+
+    "race": "Humano",
+    "dynamic": "Alfa",
+
+    "orientation": "Bi",
+    "romantic_situation": "En una relación abierta con Jeonghan",
+    "poli": "Sí",
+
+    "hometown": { "label": "Gudae, Hyberia", "doc": "—" },
+    "actual_location": { "label": "Sector 17", "doc": "—" },
+
+    "realm": { "label": "Hyberia", "doc": "world/realms/hyberia" },
+
+    "class": "Paladin",
+    "subclass": "Oath of the Ancients",
+    "lvl": 5,
+
+    "firstAppearance": { "label": "Sesión 01", "doc": "campaign/sessions/01" },
+    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
+
+    "bonds": [
+      { "label": "Imugi", "doc": "characters/party/pc-imugi" },
+      { "label": "Minjae", "doc": "characters/party/pc-minjae" },
+      { "label": "Jeonghan", "doc": "characters/misc/svt-jeonghan" },
+      { "label": "Joshua", "doc": "characters/misc/svt-joshua" },
+      { "label": "Jun", "doc": "characters/misc/svt-jun" },
+      { "label": "Hoshi", "doc": "characters/misc/svt-hoshi" },
+      { "label": "Wonwoo", "doc": "characters/misc/svt-wonwoo" },
+      { "label": "Woozi", "doc": "characters/misc/svt-woozi" },
+      { "label": "Dokyeom", "doc": "characters/misc/svt-dk" },
+      { "label": "Mingyu", "doc": "characters/misc/svt-mingyu" },
+      { "label": "Minghao", "doc": "characters/misc/svt-minghao" },
+      { "label": "Seungkwan", "doc": "characters/misc/svt-seungkwan" },
+      { "label": "Vernon", "doc": "characters/misc/svt-vernon" },
+      { "label": "Dino", "doc": "characters/misc/svt-dino" }
+    ],
+
+    "destinyCard": "—",
+    "images": [
+      { "img": "/img/characters/svt/scoups-farmer.jpg", "caption": "S.Coups granjero" },
+      { "img": "/img/characters/svt/scoups-halloween.jpg", "caption": "S.Coups durante Halloween" },
+      { "img": "/img/characters/svt/scoups-xmas.jpg", "caption": "S.Coups durante el Solsticio de Invierno" }
+    ]
+  },
+
+  "svt-jeonghan": {
+    "id": "svt-jeonghan",
+    "title": "Yoon Jeonghan",
+    "imageSrc": "/img/characters/svt/jeonghan.png",
+    "subtitle": "El Estratega de la Eternidad",
+
+    "faction": { "label": "Gremio de Aventureros", "doc": "factions/gremio-de-aventureros" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": [
+      "Sub Líder y Jefe de Operaciones del Gremio de Aventureros",
+      "Especialista en Relaciones con Entidades Oscuras de la Unidad de Relaciones Públicas e Impacto Social"
+    ],
+    "status": "Activo",
+
+    "dateOfBirth": "1995-10-04",
+    "age": 30,
+    "zodiac": "Libra ♎",
+    "mbti": "ISFJ",
+
+    "race": "Humano",
+    "dynamic": "Alfa",
+
+    "orientation": "Pan",
+    "romantic_situation": "En una relación abierta con S.Coups",
+    "poli": "Sí",
+
+    "hometown": { "label": "Borasek, Hyberia", "doc": "—" },
+    "actual_location": { "label": "Sector 17", "doc": "—" },
+
+    "realm": { "label": "Hyberia", "doc": "world/realms/hyberia" },
+
+    "class": "Warlock",
+    "subclass": "The Timeless Patron",
+    "lvl": 4,
+
+    "firstAppearance": { "label": "Sesión 01", "doc": "campaign/sessions/01" },
+    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
+
+    "bonds": [
+      { "label": "Imugi", "doc": "characters/party/pc-imugi" },
+      { "label": "Minjae", "doc": "characters/party/pc-minjae" },
+      { "label": "S.Coups", "doc": "characters/misc/svt-scoups" },
+      { "label": "Joshua", "doc": "characters/misc/svt-joshua" },
+      { "label": "Jun", "doc": "characters/misc/svt-jun" },
+      { "label": "Hoshi", "doc": "characters/misc/svt-hoshi" },
+      { "label": "Wonwoo", "doc": "characters/misc/svt-wonwoo" },
+      { "label": "Woozi", "doc": "characters/misc/svt-woozi" },
+      { "label": "Dokyeom", "doc": "characters/misc/svt-dk" },
+      { "label": "Mingyu", "doc": "characters/misc/svt-mingyu" },
+      { "label": "Minghao", "doc": "characters/misc/svt-minghao" },
+      { "label": "Seungkwan", "doc": "characters/misc/svt-seungkwan" },
+      { "label": "Vernon", "doc": "characters/misc/svt-vernon" },
+      { "label": "Dino", "doc": "characters/misc/svt-dino" }
+    ],
+
+    "destinyCard": "—",
+    "images": [
+      { "img": "/img/characters/svt/jeonghan-farmer.jpg", "caption": "Jeonghan granjero" },
+      { "img": "/img/characters/svt/jeonghan-halloween.jpg", "caption": "Jeonghan durante Halloween" },
+      { "img": "/img/characters/svt/jeonghan-xmas.jpg", "caption": "Jeonghan durante el Solsticio de Invierno" }
+    ]
+  },
+
+  "svt-joshua": {
+    "id": "svt-joshua",
+    "title": "Joshua Hong",
+    "imageSrc": "/img/characters/svt/joshua.png",
+    "subtitle": "El Portador del Milagro",
+
+    "faction": { "label": "Gremio de Aventureros", "doc": "factions/gremio-de-aventureros" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": [
+      "Sub sub Líder del Gremio de Aventureros",
+      "Manager de Capital Humano del Gremio de Aventureros"
+    ],
+    "status": "Activo",
+
+    "dateOfBirth": "1995-12-30",
+    "age": 29,
+    "zodiac": "Capricornio ♑",
+    "mbti": "ISFJ",
+
+    "race": "Humano",
+    "dynamic": "Omega",
+
+    "orientation": "Pan",
+    "romantic_situation": "Es complicado",
+    "poli": "Sí",
+
+    "hometown": { "label": "Los Arcángeles, Tierra sin Nombre", "doc": "—" },
+    "actual_location": { "label": "Sector 17", "doc": "—" },
+
+    "realm": { "label": "Hyberia", "doc": "world/realms/hyberia" },
+
+    "class": "Bard",
+    "subclass": "College of Valor",
+    "lvl": 4,
+
+    "firstAppearance": { "label": "Sesión 01", "doc": "campaign/sessions/01" },
+    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
+
+    "bonds": [
+      { "label": "Minjae", "doc": "characters/party/pc-minjae" },
+      { "label": "S.Coups", "doc": "characters/misc/svt-scoups" },
+      { "label": "Jeonghan", "doc": "characters/misc/svt-jeonghan" },
+      { "label": "Jun", "doc": "characters/misc/svt-jun" },
+      { "label": "Hoshi", "doc": "characters/misc/svt-hoshi" },
+      { "label": "Wonwoo", "doc": "characters/misc/svt-wonwoo" },
+      { "label": "Woozi", "doc": "characters/misc/svt-woozi" },
+      { "label": "Dokyeom", "doc": "characters/misc/svt-dk" },
+      { "label": "Mingyu", "doc": "characters/misc/svt-mingyu" },
+      { "label": "Minghao", "doc": "characters/misc/svt-minghao" },
+      { "label": "Seungkwan", "doc": "characters/misc/svt-seungkwan" },
+      { "label": "Vernon", "doc": "characters/misc/svt-vernon" },
+      { "label": "Dino", "doc": "characters/misc/svt-dino" }
+    ],
+
+    "destinyCard": "—",
+    "images": [
+      { "img": "/img/characters/svt/joshua-farmer.jpeg", "caption": "Joshua granjero" },
+      { "img": "/img/characters/svt/joshua-halloween.jpg", "caption": "Joshua durante Halloween" },
+      { "img": "/img/characters/svt/joshua-xmas.jpg", "caption": "Joshua durante el Solsticio de Invierno" }
+    ]
+  },
+
+  "svt-jun": {
+    "id": "svt-jun",
+    "title": "Wen Junhui (Jun)",
+    "imageSrc": "/img/characters/svt/jun.png",
+    "subtitle": "El Explorador de Vanguardia",
+
+    "faction": { "label": "Gremio de Aventureros", "doc": "factions/gremio-de-aventureros" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": [
+      "Rastreador y Reconocimiento en la Unidad de Exploración y Expediciones"
+    ],
+    "status": "Activo",
+
+    "dateOfBirth": "1996-06-10",
+    "age": 29,
+    "zodiac": "Géminis ♊",
+    "mbti": "INFP",
+
+    "race": "Humano",
+    "dynamic": "Beta",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "Sí",
+
+    "hometown": { "label": "Zhenshen, Naxai", "doc": "—" },
+    "actual_location": { "label": "Sector 17", "doc": "—" },
+
+    "realm": { "label": "Hyberia", "doc": "world/realms/hyberia" },
+
+    "class": "Ranger",
+    "subclass": "Swarmkeeper",
+    "lvl": 4,
+
+    "firstAppearance": { "label": "Sesión 01", "doc": "campaign/sessions/01" },
+    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
+
+    "bonds": [
+      { "label": "S.Coups", "doc": "characters/misc/svt-scoups" },
+      { "label": "Jeonghan", "doc": "characters/misc/svt-jeonghan" },
+      { "label": "Joshua", "doc": "characters/misc/svt-joshua" },
+      { "label": "Hoshi", "doc": "characters/misc/svt-hoshi" },
+      { "label": "Wonwoo", "doc": "characters/misc/svt-wonwoo" },
+      { "label": "Woozi", "doc": "characters/misc/svt-woozi" },
+      { "label": "Dokyeom", "doc": "characters/misc/svt-dk" },
+      { "label": "Mingyu", "doc": "characters/misc/svt-mingyu" },
+      { "label": "Minghao", "doc": "characters/misc/svt-minghao" },
+      { "label": "Seungkwan", "doc": "characters/misc/svt-seungkwan" },
+      { "label": "Vernon", "doc": "characters/misc/svt-vernon" },
+      { "label": "Dino", "doc": "characters/misc/svt-dino" }
+    ],
+
+    "destinyCard": "—",
+    "images": [
+      { "img": "/img/characters/svt/jun-farmer.jpg", "caption": "Jun granjero" },
+      { "img": "/img/characters/svt/jun-halloween.jpg", "caption": "Jun durante Halloween" },
+      { "img": "/img/characters/svt/jun-xmas.jpg", "caption": "Jun durante el Solsticio de Invierno" }
+    ]
+  },
+
+  "svt-hoshi": {
+    "id": "svt-hoshi",
+    "title": "Kwon Soonyoung (Hoshi)",
+    "imageSrc": "/img/characters/svt/hoshi.png",
+    "subtitle": "El Guardián Ancestral",
+
+    "faction": { "label": "Gremio de Aventureros", "doc": "factions/gremio-de-aventureros" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": [
+      "Líder de la Unidad de Exploración y Expediciones",
+      "Guardian Espiritual de la Familia Hoshizuki"
+    ],
+    "status": "Activo",
+
+    "dateOfBirth": "1996-06-15",
+    "age": 29,
+    "zodiac": "Géminis ♊",
+    "mbti": "ENFP",
+
+    "race": "Changeling",
+    "dynamic": "Omega",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "Sí",
+
+    "hometown": { "label": "Borasek, Hyberia", "doc": "—" },
+    "actual_location": { "label": "Sector 17", "doc": "—" },
+
+    "realm": { "label": "Hyberia", "doc": "world/realms/hyberia" },
+
+    "class": "Druid",
+    "subclass": "Circle of the Moon",
+    "lvl": 4,
+
+    "firstAppearance": { "label": "Sesión 01", "doc": "campaign/sessions/01" },
+    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
+
+    "bonds": [
+      { "label": "S.Coups", "doc": "characters/misc/svt-scoups" },
+      { "label": "Jeonghan", "doc": "characters/misc/svt-jeonghan" },
+      { "label": "Joshua", "doc": "characters/misc/svt-joshua" },
+      { "label": "Jun", "doc": "characters/misc/svt-jun" },
+      { "label": "Wonwoo", "doc": "characters/misc/svt-wonwoo" },
+      { "label": "Woozi", "doc": "characters/misc/svt-woozi" },
+      { "label": "Dokyeom", "doc": "characters/misc/svt-dk" },
+      { "label": "Mingyu", "doc": "characters/misc/svt-mingyu" },
+      { "label": "Minghao", "doc": "characters/misc/svt-minghao" },
+      { "label": "Seungkwan", "doc": "characters/misc/svt-seungkwan" },
+      { "label": "Vernon", "doc": "characters/misc/svt-vernon" },
+      { "label": "Dino", "doc": "characters/misc/svt-dino" }
+    ],
+
+    "destinyCard": "—",
+    "images": [
+      { "img": "/img/characters/svt/hoshi-farmer.png", "caption": "Hoshi granjero" },
+      { "img": "/img/characters/svt/hoshi-halloween.jpg", "caption": "Hoshi durante Halloween" },
+      { "img": "/img/characters/svt/hoshi-xmas.jpg", "caption": "Hoshi durante el Solsticio de Invierno" }
+    ]
+  },
+
+  "svt-wonwoo": {
+    "id": "svt-wonwoo",
+    "title": "Jeon Wonwoo",
+    "imageSrc": "/img/characters/svt/wonwoo.png",
+    "subtitle": "El Inventor Silencioso",
+
+    "faction": { "label": "Gremio de Aventureros", "doc": "factions/gremio-de-aventureros" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": [
+      "Ingeniero de Armería Táctica en la Unidad de Defensa y Vanguardia"
+    ],
+    "status": "Activo",
+
+    "dateOfBirth": "1996-07-17",
+    "age": 29,
+    "zodiac": "Cáncer ♋",
+    "mbti": "INTP",
+
+    "race": "Humano",
+    "dynamic": "Beta",
+
+    "orientation": "Hetero",
+    "romantic_situation": "Soltero",
+    "poli": "No",
+
+    "hometown": { "label": "Aldea Wongchang, Hyberia", "doc": "—" },
+    "actual_location": { "label": "Sector 17", "doc": "—" },
+
+    "realm": { "label": "Hyberia", "doc": "world/realms/hyberia" },
+
+    "class": "Artificier",
+    "subclass": "Battle Smith",
+    "lvl": 4,
+
+    "firstAppearance": { "label": "Sesión 01", "doc": "campaign/sessions/01" },
+    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
+
+    "bonds": [
+      { "label": "S.Coups", "doc": "characters/misc/svt-scoups" },
+      { "label": "Jeonghan", "doc": "characters/misc/svt-jeonghan" },
+      { "label": "Joshua", "doc": "characters/misc/svt-joshua" },
+      { "label": "Hoshi", "doc": "characters/misc/svt-hoshi" },
+      { "label": "Jun", "doc": "characters/misc/svt-jun" },
+      { "label": "Woozi", "doc": "characters/misc/svt-woozi" },
+      { "label": "Dokyeom", "doc": "characters/misc/svt-dk" },
+      { "label": "Mingyu", "doc": "characters/misc/svt-mingyu" },
+      { "label": "Minghao", "doc": "characters/misc/svt-minghao" },
+      { "label": "Seungkwan", "doc": "characters/misc/svt-seungkwan" },
+      { "label": "Vernon", "doc": "characters/misc/svt-vernon" },
+      { "label": "Dino", "doc": "characters/misc/svt-dino" }
+    ],
+
+    "destinyCard": "—",
+    "images": [
+      { "img": "/img/characters/svt/wonwoo-farmer.jpeg", "caption": "Wonwoo granjero" },
+      { "img": "/img/characters/svt/wonwoo-halloween.jpg", "caption": "Wonwoo durante Halloween" },
+      { "img": "/img/characters/svt/wonwoo-xmas.jpg", "caption": "Wonwoo durante el Solsticio de Invierno" }
+    ]
+  },
+
+  "svt-woozi": {
+    "id": "svt-woozi",
+    "title": "Lee Jihoon (Woozi)",
+    "imageSrc": "/img/characters/svt/woozi.png",
+    "subtitle": "El Hechicero Pródigo",
+
+    "faction": { "label": "Gremio de Aventureros", "doc": "factions/gremio-de-aventureros" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": [
+      "Director de Comunicación y Estratega de Imagen del Gremio de Aventureros",
+      "Líder de la Sub Unidad de Relaciones Públicas e Impacto Social"
+    ],
+    "status": "Activo",
+
+    "dateOfBirth": "1996-11-22",
+    "age": 29,
+    "zodiac": "Escorpio ♏",
+    "mbti": "INTJ",
+
+    "race": "Humano",
+    "dynamic": "Beta",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "No",
+
+    "hometown": { "label": "Sanbu, Jeyperia", "doc": "—" },
+    "actual_location": { "label": "Sector 17", "doc": "—" },
+
+    "realm": { "label": "Hyberia", "doc": "world/realms/hyberia" },
+
+    "class": "Sorcerer",
+    "subclass": "Wild Magic Sorcery",
+    "lvl": 4,
+
+    "firstAppearance": { "label": "Sesión 01", "doc": "campaign/sessions/01" },
+    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
+
+    "bonds": [
+      { "label": "S.Coups", "doc": "characters/misc/svt-scoups" },
+      { "label": "Jeonghan", "doc": "characters/misc/svt-jeonghan" },
+      { "label": "Joshua", "doc": "characters/misc/svt-joshua" },
+      { "label": "Hoshi", "doc": "characters/misc/svt-hoshi" },
+      { "label": "Wonwoo", "doc": "characters/misc/svt-wonwoo" },
+      { "label": "Jun", "doc": "characters/misc/svt-jun" },
+      { "label": "Dokyeom", "doc": "characters/misc/svt-dk" },
+      { "label": "Mingyu", "doc": "characters/misc/svt-mingyu" },
+      { "label": "Minghao", "doc": "characters/misc/svt-minghao" },
+      { "label": "Seungkwan", "doc": "characters/misc/svt-seungkwan" },
+      { "label": "Vernon", "doc": "characters/misc/svt-vernon" },
+      { "label": "Dino", "doc": "characters/misc/svt-dino" }
+    ],
+
+    "destinyCard": "—",
+    "images": [
+      { "img": "/img/characters/svt/woozi-farmer.png", "caption": "Woozi granjero" },
+      { "img": "/img/characters/svt/woozi-halloween.jpg", "caption": "Woozi durante Halloween" },
+      { "img": "/img/characters/svt/woozi-xmas.jpg", "caption": "Woozi durante el Solsticio de Invierno" }
+    ]
+  },
+
+  "svt-dk": {
+    "id": "svt-dk",
+    "title": "Lee Seokmin (Dokyeom)",
+    "imageSrc": "/img/characters/svt/dk.png",
+    "subtitle": "El Sanador de las Manitas Mágicas",
+
+    "faction": { "label": "Gremio de Aventureros", "doc": "factions/gremio-de-aventureros" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": [
+      "Sanador Oficial del Gremio de Aventureros",
+      "Enlace con Templos en la Unidad de Relaciones Públicas e Impacto Social"
+    ],
+    "status": "Activo",
+
+    "dateOfBirth": "1997-02-18",
+    "age": 28,
+    "zodiac": "Acuario ♒",
+    "mbti": "ESFP",
+
+    "race": "Humano",
+    "dynamic": "Omega",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero, Le gusta Soobin",
+    "poli": "Sí",
+
+    "hometown": { "label": "Borasek, Hyberia", "doc": "—" },
+    "actual_location": { "label": "Sector 17", "doc": "—" },
+
+    "realm": { "label": "Hyberia", "doc": "world/realms/hyberia" },
+
+    "class": "Cleric",
+    "subclass": "Life Domain",
+    "lvl": 4,
+
+    "firstAppearance": { "label": "Sesión 01", "doc": "campaign/sessions/01" },
+    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
+
+    "bonds": [
+      { "label": "S.Coups", "doc": "characters/misc/svt-scoups" },
+      { "label": "Jeonghan", "doc": "characters/misc/svt-jeonghan" },
+      { "label": "Joshua", "doc": "characters/misc/svt-joshua" },
+      { "label": "Hoshi", "doc": "characters/misc/svt-hoshi" },
+      { "label": "Wonwoo", "doc": "characters/misc/svt-wonwoo" },
+      { "label": "Woozi", "doc": "characters/misc/svt-woozi" },
+      { "label": "Jun", "doc": "characters/misc/svt-jun" },
+      { "label": "Mingyu", "doc": "characters/misc/svt-mingyu" },
+      { "label": "Minghao", "doc": "characters/misc/svt-minghao" },
+      { "label": "Seungkwan", "doc": "characters/misc/svt-seungkwan" },
+      { "label": "Vernon", "doc": "characters/misc/svt-vernon" },
+      { "label": "Dino", "doc": "characters/misc/svt-dino" }
+    ],
+
+    "destinyCard": "—",
+    "images": [
+      { "img": "/img/characters/svt/dk-farmer.jpg", "caption": "Dokyeom granjero" },
+      { "img": "/img/characters/svt/dk-halloween.jpg", "caption": "Dokyeom durante Halloween" },
+      { "img": "/img/characters/svt/dk-xmas.jpg", "caption": "Dokyeom durante el Solsticio de Invierno" }
+    ]
+  },
+
+  "svt-mingyu": {
+    "id": "svt-mingyu",
+    "title": "Kim Mingyu",
+    "imageSrc": "/img/characters/svt/mingyu.png",
+    "subtitle": "El Titán del Arrozal",
+
+    "faction": { "label": "Gremio de Aventureros", "doc": "factions/gremio-de-aventureros" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": [
+      "Chef Oficial del Gremio de Aventureros",
+      "Jefe de Seguridad en la Unidad de Defensa y Vanguardia"
+    ],
+    "status": "Activo",
+
+    "dateOfBirth": "1997-04-06",
+    "age": 28,
+    "zodiac": "Aries ♈",
+    "mbti": "ESFJ",
+
+    "race": "Humano",
+    "dynamic": "Alfa",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "Sí",
+
+    "hometown": { "label": "Borasek, Hyberia", "doc": "—" },
+    "actual_location": { "label": "Sector 17", "doc": "—" },
+
+    "realm": { "label": "Hyberia", "doc": "world/realms/hyberia" },
+
+    "class": "Barbarian",
+    "subclass": "Path of the Berserker",
+    "lvl": 4,
+
+    "firstAppearance": { "label": "Sesión 01", "doc": "campaign/sessions/01" },
+    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
+
+    "bonds": [
+      { "label": "S.Coups", "doc": "characters/misc/svt-scoups" },
+      { "label": "Jeonghan", "doc": "characters/misc/svt-jeonghan" },
+      { "label": "Joshua", "doc": "characters/misc/svt-joshua" },
+      { "label": "Hoshi", "doc": "characters/misc/svt-hoshi" },
+      { "label": "Wonwoo", "doc": "characters/misc/svt-wonwoo" },
+      { "label": "Woozi", "doc": "characters/misc/svt-woozi" },
+      { "label": "Dokyeom", "doc": "characters/misc/svt-dk" },
+      { "label": "Jun", "doc": "characters/misc/svt-jun" },
+      { "label": "Minghao", "doc": "characters/misc/svt-minghao" },
+      { "label": "Seungkwan", "doc": "characters/misc/svt-seungkwan" },
+      { "label": "Vernon", "doc": "characters/misc/svt-vernon" },
+      { "label": "Dino", "doc": "characters/misc/svt-dino" }
+    ],
+
+    "destinyCard": "—",
+    "images": [
+      { "img": "/img/characters/svt/mingyu-farmer.jpeg", "caption": "Mingyu granjero" },
+      { "img": "/img/characters/svt/mingyu-halloween.jpg", "caption": "Mingyu durante Halloween" },
+      { "img": "/img/characters/svt/mingyu-xmas.jpg", "caption": "Mingyu durante el Solsticio de Invierno" }
+    ]
+  },
+
+  "svt-minghao": {
+    "id": "svt-minghao",
+    "title": "Xu Minghao (The8)",
+    "imageSrc": "/img/characters/svt/minghao.png",
+    "subtitle": "El Rastrador de la Fortuna",
+
+    "faction": { "label": "Gremio de Aventureros", "doc": "factions/gremio-de-aventureros" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": [
+      "Encargado de Entrenamiento en la Unidad de Exploración y Expediciones"
+    ],
+    "status": "Activo",
+
+    "dateOfBirth": "1997-11-07",
+    "age": 28,
+    "zodiac": "Escorpio ♏",
+    "mbti": "ISFP",
+
+    "race": "Humano",
+    "dynamic": "Alfa",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "No",
+
+    "hometown": { "label": "Ningliao, Naxai", "doc": "—" },
+    "actual_location": { "label": "Sector 17", "doc": "—" },
+
+    "realm": { "label": "Hyberia", "doc": "world/realms/hyberia" },
+
+    "class": "Fighter",
+    "subclass": "Eldritch Knight",
+    "lvl": 4,
+
+    "firstAppearance": { "label": "Sesión 01", "doc": "campaign/sessions/01" },
+    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
+
+    "bonds": [
+      { "label": "S.Coups", "doc": "characters/misc/svt-scoups" },
+      { "label": "Jeonghan", "doc": "characters/misc/svt-jeonghan" },
+      { "label": "Joshua", "doc": "characters/misc/svt-joshua" },
+      { "label": "Hoshi", "doc": "characters/misc/svt-hoshi" },
+      { "label": "Wonwoo", "doc": "characters/misc/svt-wonwoo" },
+      { "label": "Woozi", "doc": "characters/misc/svt-woozi" },
+      { "label": "Dokyeom", "doc": "characters/misc/svt-dk" },
+      { "label": "Mingyu", "doc": "characters/misc/svt-mingyu" },
+      { "label": "Jun", "doc": "characters/misc/svt-jun" },
+      { "label": "Seungkwan", "doc": "characters/misc/svt-seungkwan" },
+      { "label": "Vernon", "doc": "characters/misc/svt-vernon" },
+      { "label": "Dino", "doc": "characters/misc/svt-dino" }
+    ],
+
+    "destinyCard": "—",
+    "images": [
+      { "img": "/img/characters/svt/minghao-farmer.jpg", "caption": "Minghao granjero" },
+      { "img": "/img/characters/svt/minghao-halloween.jpg", "caption": "Minghao durante Halloween" },
+      { "img": "/img/characters/svt/minghao-xmas.jpg", "caption": "Minghao durante el Solsticio de Invierno" }
+    ]
+  },
+
+  "svt-seungkwan": {
+    "id": "svt-seungkwan",
+    "title": "Boo Seungkwan",
+    "imageSrc": "/img/characters/svt/seungkwan.png",
+    "subtitle": "El Entusiasta de los Duelos",
+
+    "faction": { "label": "Gremio de Aventureros", "doc": "factions/gremio-de-aventureros" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": [
+      "Coordinador de Relaciones Comunitarias en la Unidad de Relaciones Públicas e Impacto Social"
+    ],
+    "status": "Activo",
+
+    "dateOfBirth": "1998-01-16",
+    "age": 27,
+    "zodiac": "Capricornio ♑",
+    "mbti": "ESFJ",
+
+    "race": "Humano",
+    "dynamic": "Omega",
+
+    "orientation": "Gay",
+    "romantic_situation": "Soltero",
+    "poli": "No",
+
+    "hometown": { "label": "Isla Juju, Hyberia", "doc": "—" },
+    "actual_location": { "label": "Sector 17", "doc": "—" },
+
+    "realm": { "label": "Hyberia", "doc": "world/realms/hyberia" },
+
+    "class": "Monk",
+    "subclass": "Way of Mercy",
+    "lvl": 4,
+
+    "firstAppearance": { "label": "Sesión 01", "doc": "campaign/sessions/01" },
+    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
+
+    "bonds": [
+      { "label": "S.Coups", "doc": "characters/misc/svt-scoups" },
+      { "label": "Jeonghan", "doc": "characters/misc/svt-jeonghan" },
+      { "label": "Joshua", "doc": "characters/misc/svt-joshua" },
+      { "label": "Hoshi", "doc": "characters/misc/svt-hoshi" },
+      { "label": "Wonwoo", "doc": "characters/misc/svt-wonwoo" },
+      { "label": "Woozi", "doc": "characters/misc/svt-woozi" },
+      { "label": "Dokyeom", "doc": "characters/misc/svt-dk" },
+      { "label": "Mingyu", "doc": "characters/misc/svt-mingyu" },
+      { "label": "Minghao", "doc": "characters/misc/svt-minghao" },
+      { "label": "Jun", "doc": "characters/misc/svt-jun" },
+      { "label": "Vernon", "doc": "characters/misc/svt-vernon" },
+      { "label": "Dino", "doc": "characters/misc/svt-dino" }
+    ],
+
+    "destinyCard": "—",
+    "images": [
+      { "img": "/img/characters/svt/seungkwan-farmer.png", "caption": "Seungkwan granjero" },
+      { "img": "/img/characters/svt/seungkwan-halloween.jpg", "caption": "Seungkwan durante Halloween" },
+      { "img": "/img/characters/svt/seungkwan-xmas.jpg", "caption": "Seungkwan durante el Solsticio de Invierno" }
+    ]
+  },
+
+  "svt-vernon": {
+    "id": "svt-vernon",
+    "title": "Hansol Vernon Chwe (Vernon)",
+    "imageSrc": "/img/characters/svt/vernon.png",
+    "subtitle": "El Ermitaño Imperturbable",
+
+    "faction": { "label": "Gremio de Aventureros", "doc": "factions/gremio-de-aventureros" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": [
+      "Encargado de la Investigación de Artefactos Arcanos en la Unidad de Defensa y Vanguardia"
+    ],
+    "status": "Activo",
+
+    "dateOfBirth": "1998-02-18",
+    "age": 27,
+    "zodiac": "Acuario ♒",
+    "mbti": "ISFP",
+
+    "race": "Humano",
+    "dynamic": "Beta",
+
+    "orientation": "Hetero",
+    "romantic_situation": "Soltero",
+    "poli": "Sí",
+
+    "hometown": { "label": "Hanmattan, Tierra sin Nombre", "doc": "—" },
+    "actual_location": { "label": "Sector 17", "doc": "—" },
+
+    "realm": { "label": "Hyberia", "doc": "world/realms/hyberia" },
+
+    "class": "Wizard",
+    "subclass": "Evoker",
+    "lvl": 4,
+
+    "firstAppearance": { "label": "Sesión 01", "doc": "campaign/sessions/01" },
+    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
+
+    "bonds": [
+      { "label": "S.Coups", "doc": "characters/misc/svt-scoups" },
+      { "label": "Jeonghan", "doc": "characters/misc/svt-jeonghan" },
+      { "label": "Joshua", "doc": "characters/misc/svt-joshua" },
+      { "label": "Hoshi", "doc": "characters/misc/svt-hoshi" },
+      { "label": "Wonwoo", "doc": "characters/misc/svt-wonwoo" },
+      { "label": "Woozi", "doc": "characters/misc/svt-woozi" },
+      { "label": "Dokyeom", "doc": "characters/misc/svt-dk" },
+      { "label": "Mingyu", "doc": "characters/misc/svt-mingyu" },
+      { "label": "Minghao", "doc": "characters/misc/svt-minghao" },
+      { "label": "Seungkwan", "doc": "characters/misc/svt-seungkwan" },
+      { "label": "Jun", "doc": "characters/misc/svt-jun" },
+      { "label": "Dino", "doc": "characters/misc/svt-dino" }
+    ],
+
+    "destinyCard": "—",
+    "images": [
+      { "img": "/img/characters/svt/vernon-farmer.png", "caption": "Vernon granjero" },
+      { "img": "/img/characters/svt/vernon-halloween.jpg", "caption": "Vernon durante Halloween" },
+      { "img": "/img/characters/svt/vernon-xmas.jpg", "caption": "Vernon durante el Solsticio de Invierno" }
+    ]
+  },
+
+  "svt-dino": {
+    "id": "svt-dino",
+    "title": "Lee Chan (Dino)",
+    "imageSrc": "/img/characters/svt/dino.png",
+    "subtitle": "El Último en Rendirse",
+
+    "faction": { "label": "Gremio de Aventureros", "doc": "factions/gremio-de-aventureros" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": [
+      "Encargado de la Recuperación de Activos en la Unidad de Exploración y Expediciones"
+    ],
+    "status": "Activo",
+
+    "dateOfBirth": "1999-02-11",
+    "age": 26,
+    "zodiac": "Aries ♈",
+    "mbti": "ESTJ",
+
+    "race": "Humano",
+    "dynamic": "Alfa",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "Sí",
+
+    "hometown": { "label": "Aldea Sanik, Hyberia", "doc": "—" },
+    "actual_location": { "label": "Sector 17", "doc": "—" },
+
+    "realm": { "label": "Hyberia", "doc": "world/realms/hyberia" },
+
+    "class": "Rogue",
+    "subclass": "Thief",
+    "lvl": 4,
+
+    "firstAppearance": { "label": "Sesión 01", "doc": "campaign/sessions/01" },
+    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
+
+    "bonds": [
+      { "label": "S.Coups", "doc": "characters/misc/svt-scoups" },
+      { "label": "Jeonghan", "doc": "characters/misc/svt-jeonghan" },
+      { "label": "Joshua", "doc": "characters/misc/svt-joshua" },
+      { "label": "Hoshi", "doc": "characters/misc/svt-hoshi" },
+      { "label": "Wonwoo", "doc": "characters/misc/svt-wonwoo" },
+      { "label": "Woozi", "doc": "characters/misc/svt-woozi" },
+      { "label": "Dokyeom", "doc": "characters/misc/svt-dk" },
+      { "label": "Mingyu", "doc": "characters/misc/svt-mingyu" },
+      { "label": "Minghao", "doc": "characters/misc/svt-minghao" },
+      { "label": "Seungkwan", "doc": "characters/misc/svt-seungkwan" },
+      { "label": "Vernon", "doc": "characters/misc/svt-vernon" },
+      { "label": "Jun", "doc": "characters/misc/svt-jun" }
+    ],
+
+    "destinyCard": "—",
+    "images": [
+      { "img": "/img/characters/svt/dino-farmer.jpg", "caption": "Dino granjero" },
+      { "img": "/img/characters/svt/dino-halloween.jpg", "caption": "Dino durante Halloween" },
+      { "img": "/img/characters/svt/dino-xmas.jpg", "caption": "Dino durante el Solsticio de Invierno" }
+    ]
+  },
+  "skz-bangchan": {
+    "id": "skz-bangchan",
+    "title": "Christopher Bang (Bang Chan)",
+    "imageSrc": "/img/characters/skz/bangchan.png",
+    "subtitle": "El Alfa de Alfas",
+
+    "faction": { "label": "Los Lobos Perdidos", "doc": "factions/lobos-perdidos" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": ["Líder de Manada", "Comandante del Distrito 9"],
+    "status": "Activo",
+
+    "dateOfBirth": "1997-10-03",
+    "age": 28,
+    "zodiac": "Libra ♎",
+    "mbti": "ENFJ",
+
+    "race": "Licántropo",
+    "dynamic": "Alfa",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "Sí",
+
+    "hometown": { "label": "Neysyd, Tierra Canguro", "doc": "—" },
+    "actual_location": { "label": "Distrito 9", "doc": "—" },
+
+    "realm": { "label": "Jeyperia", "doc": "world/realms/jeyperia" },
+
+    "class": "Fighter",
+    "subclass": "Psi Warrior",
+    "lvl": 10,
+
+    "firstAppearance": { "label": "Sesión 07", "doc": "campaign/sessions/07" },
+    "lastSeen": { "label": "Sesión 11.5", "doc": "campaign/sessions/11-5" },
+
+    "bonds": [
+      { "label": "Lee Know", "doc": "characters/misc/skz-leeknow" },
+      { "label": "Changbin", "doc": "characters/misc/skz-changbin" },
+      { "label": "Hyunjin", "doc": "characters/misc/skz-hyunjin" },
+      { "label": "Han", "doc": "characters/misc/skz-han" },
+      { "label": "Felix", "doc": "characters/misc/skz-felix" },
+      { "label": "Seungmin", "doc": "characters/misc/skz-seungmin" },
+      { "label": "I.N.", "doc": "characters/misc/skz-jeongin" }
+    ],
+
+    "destinyCard": "—",
+    "images": []
+  },
+
+  "skz-leeknow": {
+    "id": "skz-leeknow",
+    "title": "Lee Minho (Lee Know)",
+    "imageSrc": "/img/characters/skz/leeknow.png",
+    "subtitle": "El Domador de Bestias",
+
+    "faction": { "label": "Los Lobos Perdidos", "doc": "factions/lobos-perdidos" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": ["Maestro de Bestias", "Encargado de rastreo y manejo de criaturas"],
+    "status": "Activo",
+
+    "dateOfBirth": "1998-10-25",
+    "age": 27,
+    "zodiac": "Escorpio ♏",
+    "mbti": "INTP",
+
+    "race": "Licántropo",
+    "dynamic": "Alfa",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "Sí",
+
+    "hometown": { "label": "Borasek, Hyberia", "doc": "—" },
+    "actual_location": { "label": "Distrito 9", "doc": "—" },
+
+    "realm": { "label": "Jeyperia", "doc": "world/realms/jeyperia" },
+
+    "class": "Ranger",
+    "subclass": "Beast Master",
+    "lvl": 10,
+
+    "firstAppearance": { "label": "Sesión 07", "doc": "campaign/sessions/07" },
+    "lastSeen": { "label": "Sesión 11.5", "doc": "campaign/sessions/11-5" },
+
+    "bonds": [
+      { "label": "Bang Chan", "doc": "characters/misc/skz-bangchan" },
+      { "label": "Changbin", "doc": "characters/misc/skz-changbin" },
+      { "label": "Hyunjin", "doc": "characters/misc/skz-hyunjin" },
+      { "label": "Han", "doc": "characters/misc/skz-han" },
+      { "label": "Felix", "doc": "characters/misc/skz-felix" },
+      { "label": "Seungmin", "doc": "characters/misc/skz-seungmin" },
+      { "label": "I.N.", "doc": "characters/misc/skz-jeongin" }
+    ],
+
+    "destinyCard": "—",
+    "images": []
+  },
+
+  "skz-changbin": {
+    "id": "skz-changbin",
+    "title": "Seo Changbin",
+    "imageSrc": "/img/characters/skz/changbin.png",
+    "subtitle": "La Fuerza de la Ferocidad",
+
+    "faction": { "label": "Los Lobos Perdidos", "doc": "factions/lobos-perdidos" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": ["Vanguardia de Choque", "Protector territorial"],
+    "status": "Activo",
+
+    "dateOfBirth": "1999-08-11",
+    "age": 26,
+    "zodiac": "Leo ♌",
+    "mbti": "ESFP",
+
+    "race": "Licántropo",
+    "dynamic": "Alfa",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "Sí",
+
+    "hometown": { "label": "Borasek, Hyberia", "doc": "—" },
+    "actual_location": { "label": "Distrito 9", "doc": "—" },
+
+    "realm": { "label": "Jeyperia", "doc": "world/realms/jeyperia" },
+
+    "class": "Barbarian",
+    "subclass": "Path of the Beast",
+    "lvl": 10,
+
+    "firstAppearance": { "label": "Sesión 07", "doc": "campaign/sessions/07" },
+    "lastSeen": { "label": "Sesión 11.5", "doc": "campaign/sessions/11-5" },
+
+    "bonds": [
+      { "label": "Lee Know", "doc": "characters/misc/skz-leeknow" },
+      { "label": "Bang Chan", "doc": "characters/misc/skz-bangchan" },
+      { "label": "Hyunjin", "doc": "characters/misc/skz-hyunjin" },
+      { "label": "Han", "doc": "characters/misc/skz-han" },
+      { "label": "Felix", "doc": "characters/misc/skz-felix" },
+      { "label": "Seungmin", "doc": "characters/misc/skz-seungmin" },
+      { "label": "I.N.", "doc": "characters/misc/skz-jeongin" }
+    ],
+
+    "destinyCard": "—",
+    "images": []
+  },
+
+  "skz-hyunjin": {
+    "id": "skz-hyunjin",
+    "title": "Hwang Hyunjin",
+    "imageSrc": "/img/characters/skz/hyunjin.png",
+    "subtitle": "El Artista del Espejismo",
+
+    "faction": { "label": "Los Lobos Perdidos", "doc": "factions/lobos-perdidos" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": ["Explorador táctico", "Ilusionista de campo"],
+    "status": "Activo",
+
+    "dateOfBirth": "2000-03-20",
+    "age": 25,
+    "zodiac": "Piscis ♓",
+    "mbti": "ISFP",
+
+    "race": "Licántropo",
+    "dynamic": "Omega",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "Sí",
+
+    "hometown": { "label": "Kwangya, Sylmorien", "doc": "—" },
+    "actual_location": { "label": "Distrito 9", "doc": "—" },
+
+    "realm": { "label": "Jeyperia", "doc": "world/realms/jeyperia" },
+
+    "class": "Fighter",
+    "subclass": "Battle Master",
+    "lvl": 10,
+
+    "firstAppearance": { "label": "Sesión 07", "doc": "campaign/sessions/07" },
+    "lastSeen": { "label": "Sesión 11.5", "doc": "campaign/sessions/11-5" },
+
+    "bonds": [
+      { "label": "Lee Know", "doc": "characters/misc/skz-leeknow" },
+      { "label": "Changbin", "doc": "characters/misc/skz-changbin" },
+      { "label": "Bang Chan", "doc": "characters/misc/skz-bangchan" },
+      { "label": "Han", "doc": "characters/misc/skz-han" },
+      { "label": "Felix", "doc": "characters/misc/skz-felix" },
+      { "label": "Seungmin", "doc": "characters/misc/skz-seungmin" },
+      { "label": "I.N.", "doc": "characters/misc/skz-jeongin" },
+      { "label": "Minjae", "doc": "characters/party/pc-minjae" }
+    ],
+
+    "destinyCard": "—",
+    "images": []
+  },
+
+  "skz-han": {
+    "id": "skz-han",
+    "title": "Han Jisung",
+    "imageSrc": "/img/characters/skz/han.png",
+    "subtitle": "El Psíquico Rebelde",
+
+    "faction": { "label": "Los Lobos Perdidos", "doc": "factions/lobos-perdidos" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": ["Enlace diplomático", "Vocero de la manada"],
+    "status": "Activo",
+
+    "dateOfBirth": "2000-09-14",
+    "age": 25,
+    "zodiac": "Virgo ♍",
+    "mbti": "ENFP",
+
+    "race": "Licántropo",
+    "dynamic": "Omega",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "Sí",
+
+    "hometown": { "label": "Cheonin, Jeyperia", "doc": "—" },
+    "actual_location": { "label": "Distrito 9", "doc": "—" },
+
+    "realm": { "label": "Jeyperia", "doc": "world/realms/jeyperia" },
+
+    "class": "Bard",
+    "subclass": "College of Eloquence",
+    "lvl": 10,
+
+    "firstAppearance": { "label": "Sesión 07", "doc": "campaign/sessions/07" },
+    "lastSeen": { "label": "Sesión 11.5", "doc": "campaign/sessions/11-5" },
+
+    "bonds": [
+      { "label": "Lee Know", "doc": "characters/misc/skz-leeknow" },
+      { "label": "Changbin", "doc": "characters/misc/skz-changbin" },
+      { "label": "Hyunjin", "doc": "characters/misc/skz-hyunjin" },
+      { "label": "Bang Chan", "doc": "characters/misc/skz-bangchan" },
+      { "label": "Felix", "doc": "characters/misc/skz-felix" },
+      { "label": "Seungmin", "doc": "characters/misc/skz-seungmin" },
+      { "label": "I.N.", "doc": "characters/misc/skz-jeongin" }
+    ],
+
+    "destinyCard": "—",
+    "images": []
+  },
+
+  "skz-felix": {
+    "id": "skz-felix",
+    "title": "Felix Lee",
+    "imageSrc": "/img/characters/skz/felix.png",
+    "subtitle": "El Ente de los Sueños",
+
+    "faction": { "label": "Los Lobos Perdidos", "doc": "factions/lobos-perdidos" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": ["Guardián onírico", "Vigilante espiritual"],
+    "status": "Activo",
+
+    "dateOfBirth": "2000-09-15",
+    "age": 25,
+    "zodiac": "Virgo ♍",
+    "mbti": "ENFP",
+
+    "race": "Licántropo",
+    "dynamic": "Beta",
+
+    "orientation": "Pan",
+    "romantic_situation": "Es complicado",
+    "poli": "Sí",
+
+    "hometown": { "label": "Neysyd, Tierra Canguro", "doc": "—" },
+    "actual_location": { "label": "Distrito 9", "doc": "—" },
+
+    "realm": { "label": "Jeyperia", "doc": "world/realms/jeyperia" },
+
+    "class": "Monk",
+    "subclass": "Way of the Astral Self",
+    "lvl": 10,
+
+    "firstAppearance": { "label": "Sesión 07", "doc": "campaign/sessions/07" },
+    "lastSeen": { "label": "Sesión 11.5", "doc": "campaign/sessions/11-5" },
+
+    "bonds": [
+      { "label": "Lee Know", "doc": "characters/misc/skz-leeknow" },
+      { "label": "Changbin", "doc": "characters/misc/skz-changbin" },
+      { "label": "Hyunjin", "doc": "characters/misc/skz-hyunjin" },
+      { "label": "Han", "doc": "characters/misc/skz-han" },
+      { "label": "Bang Chan", "doc": "characters/misc/skz-bangchan" },
+      { "label": "Seungmin", "doc": "characters/misc/skz-seungmin" },
+      { "label": "I.N.", "doc": "characters/misc/skz-jeongin" },
+      { "label": "Minjae", "doc": "characters/party/pc-minjae" }
+    ],
+
+    "destinyCard": "—",
+    "images": []
+  },
+
+  "skz-seungmin": {
+    "id": "skz-seungmin",
+    "title": "Kim Seungmin",
+    "imageSrc": "/img/characters/skz/seungmin.png",
+    "subtitle": "La Sombra Ejecutora",
+
+    "faction": { "label": "Los Lobos Perdidos", "doc": "factions/lobos-perdidos" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": ["Agente encubierto", "Ejecutor de operaciones especiales"],
+    "status": "Activo",
+
+    "dateOfBirth": "2000-09-22",
+    "age": 25,
+    "zodiac": "Virgo ♍",
+    "mbti": "ISFJ",
+
+    "race": "Licántropo",
+    "dynamic": "Alfa",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "Sí",
+
+    "hometown": { "label": "Kwangya, Sylmorien", "doc": "—" },
+    "actual_location": { "label": "Distrito 9", "doc": "—" },
+
+    "realm": { "label": "Jeyperia", "doc": "world/realms/jeyperia" },
+
+    "class": "Rogue",
+    "subclass": "Arcane Trickster",
+    "lvl": 10,
+
+    "firstAppearance": { "label": "Sesión 07", "doc": "campaign/sessions/07" },
+    "lastSeen": { "label": "Sesión 11.5", "doc": "campaign/sessions/11-5" },
+
+    "bonds": [
+      { "label": "Lee Know", "doc": "characters/misc/skz-leeknow" },
+      { "label": "Changbin", "doc": "characters/misc/skz-changbin" },
+      { "label": "Hyunjin", "doc": "characters/misc/skz-hyunjin" },
+      { "label": "Han", "doc": "characters/misc/skz-han" },
+      { "label": "Felix", "doc": "characters/misc/skz-felix" },
+      { "label": "Bang Chan", "doc": "characters/misc/skz-bangchan" },
+      { "label": "I.N.", "doc": "characters/misc/skz-jeongin" }
+    ],
+
+    "destinyCard": "—",
+    "images": []
+  },
+
+  "skz-jeongin": {
+    "id": "skz-jeongin",
+    "title": "Yang Jeongin",
+    "imageSrc": "/img/characters/skz/jeongin.png",
+    "subtitle": "La Reencarnación del Dios de la Luna",
+
+    "faction": { "label": "Los Lobos Perdidos", "doc": "factions/lobos-perdidos" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": ["Guía espiritual", "Guardián del vínculo lunar"],
+    "status": "Activo",
+
+    "dateOfBirth": "2001-02-08",
+    "age": 24,
+    "zodiac": "Acuario ♒",
+    "mbti": "INFJ",
+
+    "race": "Licántropo",
+    "dynamic": "Alfa",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "Sí",
+
+    "hometown": { "label": "Sanbu, Jeyperia", "doc": "—" },
+    "actual_location": { "label": "Distrito 9", "doc": "—" },
+
+    "realm": { "label": "Jeyperia", "doc": "world/realms/jeyperia" },
+
+    "class": "Druid",
+    "subclass": "Circle of the Land",
+    "lvl": 10,
+
+    "firstAppearance": { "label": "Sesión 07", "doc": "campaign/sessions/07" },
+    "lastSeen": { "label": "Sesión 11.5", "doc": "campaign/sessions/11-5" },
+
+    "bonds": [
+      { "label": "Minjae", "doc": "characters/party/pc-minjae" },
+      { "label": "Imugi", "doc": "characters/party/pc-imugi" },
+      { "label": "Kiyori", "doc": "characters/party/pc-kiyori" },
+      { "label": "Soobin", "doc": "characters/party/pc-soobin" },
+
+      { "label": "Lee Know", "doc": "characters/misc/skz-leeknow" },
+      { "label": "Changbin", "doc": "characters/misc/skz-changbin" },
+      { "label": "Hyunjin", "doc": "characters/misc/skz-hyunjin" },
+      { "label": "Han", "doc": "characters/misc/skz-han" },
+      { "label": "Felix", "doc": "characters/misc/skz-felix" },
+      { "label": "Seungmin", "doc": "characters/misc/skz-seungmin" },
+      { "label": "Bang Chan", "doc": "characters/misc/skz-bangchan" }
+    ],
+
+    "destinyCard": "—",
+    "images": []
+  },
+
+  "skz-woojin": {
+    "id": "skz-woojin",
+    "title": "Kim Woojin",
+    "imageSrc": "/img/characters/skz/woojin.png",
+    "subtitle": "El Lobo Solitario",
+
+    "faction": { "label": "Los Lobos Perdidos", "doc": "factions/lobos-perdidos" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": ["Protector de las fronteras"],
+    "status": "Fallecido",
+
+    "dateOfBirth": "1997-04-08",
+    "age": 28,
+    "zodiac": "Aries ♈",
+    "mbti": "ISFJ",
+
+    "race": "Licántropo",
+    "dynamic": "Alfa",
+
+    "orientation": "—",
+    "romantic_situation": "—",
+    "poli": "—",
+
+    "hometown": { "label": "Borasek, Hyberia", "doc": "—" },
+    "actual_location": { "label": "—", "doc": "—" },
+
+    "realm": { "label": "Jeyperia", "doc": "world/realms/jeyperia" },
+
+    "class": "Fighter",
+    "subclass": "Champion",
+    "lvl": 0,
+
+    "firstAppearance": { "label": "—", "doc": "—" },
+    "lastSeen": { "label": "—", "doc": "—" },
+
+    "bonds": [
+      { "label": "Bang Chan", "doc": "characters/misc/skz-bangchan" },
+      { "label": "Lee Know", "doc": "characters/misc/skz-leeknow" },
+      { "label": "Changbin", "doc": "characters/misc/skz-changbin" },
+      { "label": "Hyunjin", "doc": "characters/misc/skz-hyunjin" },
+      { "label": "Han", "doc": "characters/misc/skz-han" },
+      { "label": "Felix", "doc": "characters/misc/skz-felix" },
+      { "label": "Seungmin", "doc": "characters/misc/skz-seungmin" },
+      { "label": "I.N.", "doc": "characters/misc/skz-jeongin" }
+    ],
+
+    "destinyCard": "9 de Picas",
+    "images": []
+  },
+  "enha-jungwon": {
+    "id": "enha-jungwon",
+    "title": "Yang Jungwon",
+    "imageSrc": "/img/characters/enha/jungwon.png",
+    "subtitle": "El Heraldo del Crepúsculo",
+
+    "faction": { "label": "Los Hijos de la Noche", "doc": "factions/hijos-de-la-noche" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": [
+      "Guía espiritual de la orden",
+      "Portador del pacto con Moonbin"
+    ],
+    "status": "Activo",
+
+    "dateOfBirth": "1904-02-09",
+    "age": 121,
+    "zodiac": "Acuario ♒",
+    "mbti": "ISFJ",
+
+    "race": "Vampiro",
+    "dynamic": "Omega",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "Sí",
+
+    "hometown": { "label": "Kwangya, Sylmorien", "doc": "—" },
+    "actual_location": { "label": "Borasek", "doc": "world/locations/borasek" },
+
+    "realm": { "label": "Hyberia", "doc": "world/realms/hyberia" },
+
+    "class": "Cleric",
+    "subclass": "Twilight Domain",
+    "lvl": 9,
+
+    "firstAppearance": { "label": "Sesión 10", "doc": "campaign/sessions/10" },
+    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
+
+    "bonds": [
+      { "label": "Heeseung", "doc": "characters/misc/enha-heeseung" },
+      { "label": "Jay", "doc": "characters/misc/enha-jay" },
+      { "label": "Jake", "doc": "characters/misc/enha-jake" },
+      { "label": "Sunghoon", "doc": "characters/misc/enha-sunghoon" },
+      { "label": "Sunoo", "doc": "characters/misc/enha-sunoo" },
+      { "label": "Ni-ki", "doc": "characters/misc/enha-niki" }
+    ],
+    "destinyCard": "—",
+    "images": []
+  },
+
+  "enha-heeseung": {
+    "id": "enha-heeseung",
+    "title": "Lee Heeseung",
+    "imageSrc": "/img/characters/enha/heeseung.png",
+    "subtitle": "El Investigador de la Muerte",
+
+    "faction": { "label": "Los Hijos de la Noche", "doc": "factions/hijos-de-la-noche" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": [
+      "Investigador arcano",
+      "Anatomista de la muerte"
+    ],
+    "status": "Activo",
+
+    "dateOfBirth": "1901-10-15",
+    "age": 124,
+    "zodiac": "Libra ♎",
+    "mbti": "INFJ",
+
+    "race": "Vampiro",
+    "dynamic": "Beta",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "Sí",
+
+    "hometown": { "label": "Borasek, Hyberia", "doc": "world/locations/borasek" },
+    "actual_location": { "label": "Borasek", "doc": "world/locations/borasek" },
+
+    "realm": { "label": "Hyberia", "doc": "world/realms/hyberia" },
+
+    "class": "Wizard",
+    "subclass": "Necromancer",
+    "lvl": 9,
+
+    "firstAppearance": { "label": "Sesión 05", "doc": "campaign/sessions/05" },
+    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
+
+    "bonds": [{ "label": "Jungwon", "doc": "characters/misc/enha-jungwon" },
+      { "label": "Jay", "doc": "characters/misc/enha-jay" },
+      { "label": "Jake", "doc": "characters/misc/enha-jake" },
+      { "label": "Sunghoon", "doc": "characters/misc/enha-sunghoon" },
+      { "label": "Sunoo", "doc": "characters/misc/enha-sunoo" },
+      { "label": "Ni-ki", "doc": "characters/misc/enha-niki" }
+],
+    "destinyCard": "—",
+    "images": []
+  },
+
+  "enha-jay": {
+    "id": "enha-jay",
+    "title": "Jay Park",
+    "imageSrc": "/img/characters/enha/jay.png",
+    "subtitle": "El Abogado del Rey Demonio",
+
+    "faction": { "label": "Los Hijos de la Noche", "doc": "factions/hijos-de-la-noche" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": ["Estratega de la corte nocturna"],
+    "status": "Activo",
+
+    "dateOfBirth": "1902-04-20",
+    "age": 123,
+    "zodiac": "Tauro ♉",
+    "mbti": "ENTP",
+
+    "race": "Vampiro",
+    "dynamic": "Alfa",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "Sí",
+
+    "hometown": { "label": "Hanmattan, Tierra sin Nombre", "doc": "—" },
+    "actual_location": { "label": "Borasek", "doc": "world/locations/borasek" },
+
+    "realm": { "label": "Hyberia", "doc": "world/realms/hyberia" },
+
+    "class": "Paladin",
+    "subclass": "Oath of Vengeance",
+    "lvl": 9,
+
+    "firstAppearance": { "label": "Sesión 10", "doc": "campaign/sessions/10" },
+    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
+
+    "bonds": [{ "label": "Jungwon", "doc": "characters/misc/enha-jungwon" },
+      { "label": "Heeseung", "doc": "characters/misc/enha-heeseung" },
+      { "label": "Jake", "doc": "characters/misc/enha-jake" },
+      { "label": "Sunghoon", "doc": "characters/misc/enha-sunghoon" },
+      { "label": "Sunoo", "doc": "characters/misc/enha-sunoo" },
+      { "label": "Ni-ki", "doc": "characters/misc/enha-niki" }
+],
+    "destinyCard": "—",
+    "images": []
+  },
+
+  "enha-jake": {
+    "id": "enha-jake",
+    "title": "Jake Sim",
+    "imageSrc": "/img/characters/enha/jake.png",
+    "subtitle": "El Vampiro que Volvió a Vivir",
+
+    "faction": { "label": "Los Hijos de la Noche", "doc": "factions/hijos-de-la-noche" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": [
+      "Operativo espectral",
+      "Sabueso de rastreo y cacería"
+    ],
+    "status": "Activo",
+
+    "dateOfBirth": "1902-11-15",
+    "age": 123,
+    "zodiac": "Escorpio ♏",
+    "mbti": "ESTP",
+
+    "race": "Vampiro",
+    "dynamic": "Alfa",
+
+    "orientation": "Pan",
+    "romantic_situation": "En una relación con derechos con Soobin",
+    "poli": "Sí",
+
+    "hometown": { "label": "Neysyd, Tierra Canguro", "doc": "—" },
+    "actual_location": { "label": "Borasek", "doc": "world/locations/borasek" },
+
+    "realm": { "label": "Hyberia", "doc": "world/realms/hyberia" },
+
+    "class": "Rogue",
+    "subclass": "Phantom",
+    "lvl": 9,
+
+    "firstAppearance": { "label": "Sesión 04", "doc": "campaign/sessions/04" },
+    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
+
+    "bonds": [{ "label": "Jungwon", "doc": "characters/misc/enha-jungwon" },
+      { "label": "Heeseung", "doc": "characters/misc/enha-heeseung" },
+      { "label": "Jay", "doc": "characters/misc/enha-jay" },
+      { "label": "Sunghoon", "doc": "characters/misc/enha-sunghoon" },
+      { "label": "Sunoo", "doc": "characters/misc/enha-sunoo" },
+      { "label": "Ni-ki", "doc": "characters/misc/enha-niki" },
+
+      { "label": "Soobin", "doc": "characters/party/pc-soobin" }],
+    "destinyCard": "—",
+    "images": []
+  },
+
+  "enha-sunghoon": {
+    "id": "enha-sunghoon",
+    "title": "Park Sunghoon",
+    "imageSrc": "/img/characters/enha/sunghoon.png",
+    "subtitle": "El Loco del Machete",
+
+    "faction": { "label": "Los Hijos de la Noche", "doc": "factions/hijos-de-la-noche" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": [
+      "Verdugo de la noche",
+      "Ejecutor de campo"
+    ],
+    "status": "Activo",
+
+    "dateOfBirth": "1902-12-08",
+    "age": 123,
+    "zodiac": "Sagitario ♐",
+    "mbti": "ISTJ",
+
+    "race": "Vampiro",
+    "dynamic": "Alfa",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "Sí",
+
+    "hometown": { "label": "Neocity, Sylmorien", "doc": "world/locations/neocity" },
+    "actual_location": { "label": "Borasek", "doc": "world/locations/borasek" },
+
+    "realm": { "label": "Hyberia", "doc": "world/realms/hyberia" },
+
+    "class": "Fighter",
+    "subclass": "Champion",
+    "lvl": 9,
+
+    "firstAppearance": { "label": "Sesión 04", "doc": "campaign/sessions/04" },
+    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
+
+    "bonds": [{ "label": "Jungwon", "doc": "characters/misc/enha-jungwon" },
+      { "label": "Heeseung", "doc": "characters/misc/enha-heeseung" },
+      { "label": "Jay", "doc": "characters/misc/enha-jay" },
+      { "label": "Jake", "doc": "characters/misc/enha-jake" },
+      { "label": "Sunoo", "doc": "characters/misc/enha-sunoo" },
+      { "label": "Ni-ki", "doc": "characters/misc/enha-niki" }],
+    "destinyCard": "—",
+    "images": []
+  },
+
+  "enha-sunoo": {
+    "id": "enha-sunoo",
+    "title": "Kim Sunoo",
+    "imageSrc": "/img/characters/enha/sunoo.jpeg",
+    "subtitle": "El Asesino de Monstruos",
+
+    "faction": { "label": "Los Hijos de la Noche", "doc": "factions/hijos-de-la-noche" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": [
+      "Cazador de aberraciones",
+      "Purificador nocturno"
+    ],
+    "status": "Activo",
+
+    "dateOfBirth": "1903-06-24",
+    "age": 122,
+    "zodiac": "Cáncer ♋",
+    "mbti": "ENFP",
+
+    "race": "Vampiro",
+    "dynamic": "Omega",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "Sí",
+
+    "hometown": { "label": "Borasek, Hyberia", "doc": "world/locations/borasek" },
+    "actual_location": { "label": "Borasek", "doc": "world/locations/borasek" },
+
+    "realm": { "label": "Hyberia", "doc": "world/realms/hyberia" },
+
+    "class": "Blood Hunter",
+    "subclass": "Order of the Ghostslayer",
+    "lvl": 9,
+
+    "firstAppearance": { "label": "Sesión 05", "doc": "campaign/sessions/05" },
+    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
+
+    "bonds": [{ "label": "Jungwon", "doc": "characters/misc/enha-jungwon" },
+      { "label": "Heeseung", "doc": "characters/misc/enha-heeseung" },
+      { "label": "Jay", "doc": "characters/misc/enha-jay" },
+      { "label": "Jake", "doc": "characters/misc/enha-jake" },
+      { "label": "Sunghoon", "doc": "characters/misc/enha-sunghoon" },
+      { "label": "Ni-ki", "doc": "characters/misc/enha-niki" }],
+    "destinyCard": "—",
+    "images": []
+  },
+
+  "enha-niki": {
+    "id": "enha-niki",
+    "title": "Riki Nishimura (Ni-ki)",
+    "imageSrc": "/img/characters/enha/niki.png",
+    "subtitle": "El Pequeño Dictador",
+
+    "faction": { "label": "Los Hijos de la Noche", "doc": "factions/hijos-de-la-noche" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": [
+      "Táctico de sombras",
+      "Comandante de incursión"
+    ],
+    "status": "Activo",
+
+    "dateOfBirth": "1905-12-09",
+    "age": 120,
+    "zodiac": "Sagitario ♐",
+    "mbti": "ENTJ",
+
+    "race": "Vampiro",
+    "dynamic": "Alfa",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "Sí",
+
+    "hometown": { "label": "Puerto Nawaki, Hotou", "doc": "—" },
+    "actual_location": { "label": "Borasek", "doc": "world/locations/borasek" },
+
+    "realm": { "label": "Hyberia", "doc": "world/realms/hyberia" },
+
+    "class": "Monk",
+    "subclass": "Way of Shadow",
+    "lvl": 9,
+
+    "firstAppearance": { "label": "Sesión 10", "doc": "campaign/sessions/10" },
+    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
+
+    "bonds": [{ "label": "Jungwon", "doc": "characters/misc/enha-jungwon" },
+      { "label": "Heeseung", "doc": "characters/misc/enha-heeseung" },
+      { "label": "Jay", "doc": "characters/misc/enha-jay" },
+      { "label": "Jake", "doc": "characters/misc/enha-jake" },
+      { "label": "Sunghoon", "doc": "characters/misc/enha-sunghoon" },
+      { "label": "Sunoo", "doc": "characters/misc/enha-sunoo" }],
+    "destinyCard": "—",
+    "images": []
+  },
+  "nct-johnny": {
+    "id": "nct-johnny",
+    "title": "Johnny Suh",
+    "imageSrc": "/img/characters/nct/johnny.png",
+    "subtitle": "El Maestro que Despeja Caminos",
+
+    "faction": { "label": "Los Neo Culturales Tecnológicos", "doc": "factions/neo-culturales-tecnologicos" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": ["Profesor de Defensa Arcana y Apertura de Portales"],
+    "status": "Activo",
+
+    "dateOfBirth": "1495-02-09",
+    "age": 530,
+    "zodiac": "Acuario ♒",
+    "mbti": "ENTP",
+
+    "race": "Superhumano",
+    "dynamic": "Alfa",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "Sí",
+
+    "hometown": { "label": "Cagochi, EU", "doc": "—" },
+    "actual_location": { "label": "Neocity", "doc": "world/locations/neocity" },
+
+    "realm": { "label": "Sylmorien", "doc": "world/realms/sylmorien" },
+
+    "class": "Wizard/Fighter",
+    "subclass": "Abjuration/Eldritch Knight",
+    "lvl": "6/4",
+
+    "firstAppearance": { "label": "Sesión 04", "doc": "campaign/sessions/04" },
+    "lastSeen": { "label": "Sesión 11.5", "doc": "campaign/sessions/11-5" },
+
+    "bonds": [
+      { "label": "Taeyong", "doc": "characters/misc/nct-taeyong" },
+      { "label": "Yuta", "doc": "characters/misc/nct-yuta" },
+      { "label": "Doyoung", "doc": "characters/misc/nct-doyoung" },
+      { "label": "Jaehyun", "doc": "characters/misc/nct-jaehyun" },
+      { "label": "Jungwoo", "doc": "characters/misc/nct-jungwoo" },
+      { "label": "Mark", "doc": "characters/misc/nct-mark" },
+      { "label": "Haechan", "doc": "characters/misc/nct-haechan" },
+      { "label": "Yushi", "doc": "characters/misc/nct-yushi" }
+    ],
+
+    "destinyCard": "—",
+    "images": []
+  },
+
+  "nct-taeyong": {
+    "id": "nct-taeyong",
+    "title": "Lee Taeyong",
+    "imageSrc": "/img/characters/nct/taeyong.png",
+    "subtitle": "El Padre de la Neovibra",
+
+    "faction": { "label": "Los Neo Culturales Tecnológicos", "doc": "factions/neo-culturales-tecnologicos" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": ["Director de la Neo Academia", "Fundador de los Neo Culturales"],
+    "status": "Activo",
+
+    "dateOfBirth": "0995-07-01",
+    "age": 1030,
+    "zodiac": "Cáncer ♋",
+    "mbti": "ISFP",
+
+    "race": "Fallen Celestial",
+    "dynamic": "Omega",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "No",
+
+    "hometown": { "label": "Kwangya, Sylmorien", "doc": "—" },
+    "actual_location": { "label": "Neocity", "doc": "world/locations/neocity" },
+
+    "realm": { "label": "Sylmorien", "doc": "world/realms/sylmorien" },
+
+    "class": "Wizard/Bard",
+    "subclass": "Diviner/College of Glamour",
+    "lvl": "11/5",
+
+    "firstAppearance": { "label": "Epílogo Sesión 10", "doc": "campaign/sessions/10-epilogo" },
+    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
+
+    "bonds": [
+      { "label": "Johnny", "doc": "characters/misc/nct-johnny" },
+      { "label": "Yuta", "doc": "characters/misc/nct-yuta" },
+      { "label": "Doyoung", "doc": "characters/misc/nct-doyoung" },
+      { "label": "Jaehyun", "doc": "characters/misc/nct-jaehyun" },
+      { "label": "Jungwoo", "doc": "characters/misc/nct-jungwoo" },
+      { "label": "Mark", "doc": "characters/misc/nct-mark" },
+      { "label": "Haechan", "doc": "characters/misc/nct-haechan" },
+      { "label": "Kiyori", "doc": "characters/party/pc-kiyori" },
+      { "label": "Ryo", "doc": "characters/misc/nct-ryo" }
+    ],
+
+    "destinyCard": "—",
+    "images": []
+  },
+
+  "nct-yuta": {
+    "id": "nct-yuta",
+    "title": "Yuta Nakamoto",
+    "imageSrc": "/img/characters/nct/yuta.png",
+    "subtitle": "El Maestro de la Espada",
+
+    "faction": { "label": "Los Neo Culturales Tecnológicos", "doc": "factions/neo-culturales-tecnologicos" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": ["Profesor de Esgrima Arcana y Combate de Vanguardia"],
+    "status": "Activo",
+
+    "dateOfBirth": "1895-10-26",
+    "age": 130,
+    "zodiac": "Escorpio ♏",
+    "mbti": "ESTP",
+
+    "race": "Superhumano",
+    "dynamic": "Alfa",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "Sí",
+
+    "hometown": { "label": "Puerto Nawaki, Hotou", "doc": "—" },
+    "actual_location": { "label": "Neocity", "doc": "world/locations/neocity" },
+
+    "realm": { "label": "Sylmorien", "doc": "world/realms/sylmorien" },
+
+    "class": "Paladin/Fighter",
+    "subclass": "Oath of the Watchers/Battle Master",
+    "lvl": "8/4",
+
+    "firstAppearance": { "label": "Sesión 09", "doc": "campaign/sessions/09" },
+    "lastSeen": { "label": "Sesión 10", "doc": "campaign/sessions/10" },
+
+    "bonds": [
+      { "label": "Kiyori", "doc": "characters/party/pc-kiyori" },
+      { "label": "Johnny", "doc": "characters/misc/nct-johnny" },
+      { "label": "Taeyong", "doc": "characters/misc/nct-taeyong" },
+      { "label": "Doyoung", "doc": "characters/misc/nct-doyoung" },
+      { "label": "Jaehyun", "doc": "characters/misc/nct-jaehyun" },
+      { "label": "Jungwoo", "doc": "characters/misc/nct-jungwoo" },
+      { "label": "Mark", "doc": "characters/misc/nct-mark" },
+      { "label": "Haechan", "doc": "characters/misc/nct-haechan" },
+      { "label": "Sakuya", "doc": "characters/misc/nct-sakuya" }
+    ],
+
+    "destinyCard": "—",
+    "images": []
+  },
+
+  "nct-kun": {
+    "id": "nct-kun",
+    "title": "Qian Kun",
+    "imageSrc": "/img/characters/nct/kun.png",
+    "subtitle": "El Maestro de la Tierra",
+
+    "faction": { "label": "Los Neo Culturales Tecnológicos", "doc": "factions/neo-culturales-tecnologicos" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": ["Profesor de Geomancia y Equilibrio Elemental"],
+    "status": "Activo",
+
+    "dateOfBirth": "1796-01-01",
+    "age": 229,
+    "zodiac": "Capricornio ♑",
+    "mbti": "ESFJ",
+
+    "race": "Earth Genasi",
+    "dynamic": "Beta",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "Sí",
+
+    "hometown": { "label": "Ningtai, Naxai", "doc": "—" },
+    "actual_location": { "label": "Neocity", "doc": "world/locations/neocity" },
+
+    "realm": { "label": "Sylmorien", "doc": "world/realms/sylmorien" },
+
+    "class": "Druid/Sorcerer",
+    "subclass": "Circle of the Land/Wild Magic Sorcery",
+    "lvl": "8/4",
+
+    "firstAppearance": { "label": "—", "doc": "—" },
+    "lastSeen": { "label": "—", "doc": "—" },
+
+    "bonds": [
+      { "label": "Ten", "doc": "characters/misc/nct-ten" },
+      { "label": "Winwin", "doc": "characters/misc/nct-winwin" },
+      { "label": "Lucas", "doc": "characters/misc/nct-lucas" },
+      { "label": "Xiaojun", "doc": "characters/misc/nct-xiaojun" },
+      { "label": "Hendery", "doc": "characters/misc/nct-hendery" },
+      { "label": "Yangyang", "doc": "characters/misc/nct-yangyang" }
+    ],
+
+    "destinyCard": "—",
+    "images": []
+  },
+
+  "nct-doyoung": {
+    "id": "nct-doyoung",
+    "title": "Kim Doyoung",
+    "imageSrc": "/img/characters/nct/doyoung.png",
+    "subtitle": "El Maestro de la Magia Salvaje",
+
+    "faction": { "label": "Los Neo Culturales Tecnológicos", "doc": "factions/neo-culturales-tecnologicos" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": ["Profesor de Teoría de la Neovibra y Regulación Mágica"],
+    "status": "Activo",
+
+    "dateOfBirth": "1596-02-01",
+    "age": 429,
+    "zodiac": "Acuario ♒",
+    "mbti": "ESTJ",
+
+    "race": "Superhumano",
+    "dynamic": "Beta",
+
+    "orientation": "Pan",
+    "romantic_situation": "En una polícula con Jaehyun y Jungwoo",
+    "poli": "Sí",
+
+    "hometown": { "label": "Borasek, Hyberia", "doc": "world/locations/borasek" },
+    "actual_location": { "label": "Neocity", "doc": "world/locations/neocity" },
+
+    "realm": { "label": "Sylmorien", "doc": "world/realms/sylmorien" },
+
+    "class": "Sorcerer/Cleric",
+    "subclass": "Order Domain",
+    "lvl": "11/5",
+
+    "firstAppearance": { "label": "Sesión 06", "doc": "campaign/sessions/06" },
+    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
+
+    "bonds": [
+      { "label": "Taeyong", "doc": "characters/misc/nct-taeyong" },
+      { "label": "Yuta", "doc": "characters/misc/nct-yuta" },
+      { "label": "Johnny", "doc": "characters/misc/nct-johnny" },
+      { "label": "Jaehyun", "doc": "characters/misc/nct-jaehyun" },
+      { "label": "Jungwoo", "doc": "characters/misc/nct-jungwoo" },
+      { "label": "Mark", "doc": "characters/misc/nct-mark" },
+      { "label": "Haechan", "doc": "characters/misc/nct-haechan" },
+      { "label": "Jaewoo", "doc": "—" }
+    ],
+
+    "destinyCard": "—",
+    "images": []
+  },
+
+  "nct-ten": {
+    "id": "nct-ten",
+    "title": "Ten Lee",
+    "imageSrc": "/img/characters/nct/ten.png",
+    "subtitle": "El Maestro del Agua",
+
+    "faction": { "label": "Los Neo Culturales Tecnológicos", "doc": "factions/neo-culturales-tecnologicos" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": ["Profesor de Artes Fluídicas y Combate Elemental"],
+    "status": "Activo",
+
+    "dateOfBirth": "1596-02-27",
+    "age": 429,
+    "zodiac": "Piscis ♓",
+    "mbti": "ISFP",
+
+    "race": "Water Genasi",
+    "dynamic": "Omega",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "Sí",
+
+    "hometown": { "label": "Kokbang, Landtai", "doc": "—" },
+    "actual_location": { "label": "Neocity", "doc": "world/locations/neocity" },
+
+    "realm": { "label": "Sylmorien", "doc": "world/realms/sylmorien" },
+
+    "class": "Monk/Druid",
+    "subclass": "Way of the Elements/Circle of the Sea",
+    "lvl": "11/5",
+
+    "firstAppearance": { "label": "Sesión 09", "doc": "campaign/sessions/09" },
+    "lastSeen": { "label": "Sesión 10", "doc": "campaign/sessions/10" },
+
+    "bonds": [
+      { "label": "Kun", "doc": "characters/misc/nct-kun" },
+      { "label": "Winwin", "doc": "characters/misc/nct-winwin" },
+      { "label": "Lucas", "doc": "characters/misc/nct-lucas" },
+      { "label": "Xiaojun", "doc": "characters/misc/nct-xiaojun" },
+      { "label": "Hendery", "doc": "characters/misc/nct-hendery" },
+      { "label": "Yangyang", "doc": "characters/misc/nct-yangyang" }
+    ],
+
+    "destinyCard": "—",
+    "images": []
+  },
+
+  "nct-jaehyun": {
+    "id": "nct-jaehyun",
+    "title": "Jeong Jaehyun",
+    "imageSrc": "/img/characters/nct/jaehyun.png",
+    "subtitle": "El Maestro de Combate",
+
+    "faction": { "label": "Los Neo Culturales Tecnológicos", "doc": "factions/neo-culturales-tecnologicos" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": ["Profesor de Estrategia de Combate y Formación de Guardianes"],
+    "status": "Activo",
+
+    "dateOfBirth": "1597-02-14",
+    "age": 428,
+    "zodiac": "Acuario ♒",
+    "mbti": "ESTP",
+
+    "race": "Superhumano",
+    "dynamic": "Alfa",
+
+    "orientation": "Pan",
+    "romantic_situation": "En una polícula con Doyoung y Jungwoo",
+    "poli": "Sí",
+
+    "hometown": { "label": "Kwangya, Sylmorien", "doc": "—" },
+    "actual_location": { "label": "Neocity", "doc": "world/locations/neocity" },
+
+    "realm": { "label": "Sylmorien", "doc": "world/realms/sylmorien" },
+
+    "class": "Paladin/Fighter",
+    "subclass": "Oath of Glory/Champion",
+    "lvl": "11/5",
+
+    "firstAppearance": { "label": "Sesión 04", "doc": "campaign/sessions/04" },
+    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
+
+    "bonds": [
+      { "label": "Taeyong", "doc": "characters/misc/nct-taeyong" },
+      { "label": "Yuta", "doc": "characters/misc/nct-yuta" },
+      { "label": "Doyoung", "doc": "characters/misc/nct-doyoung" },
+      { "label": "Johnny", "doc": "characters/misc/nct-johnny" },
+      { "label": "Jungwoo", "doc": "characters/misc/nct-jungwoo" },
+      { "label": "Mark", "doc": "characters/misc/nct-mark" },
+      { "label": "Haechan", "doc": "characters/misc/nct-haechan" },
+      { "label": "Sion", "doc": "characters/misc/nct-sion" },
+      { "label": "Jaewoo", "doc": "—" }
+    ],
+
+    "destinyCard": "—",
+    "images": []
+  },
+
+  "nct-winwin": {
+    "id": "nct-winwin",
+    "title": "Dong Sicheng (Winwin)",
+    "imageSrc": "/img/characters/nct/winwin.png",
+    "subtitle": "El Maestro de la Luz",
+
+    "faction": { "label": "Los Neo Culturales Tecnológicos", "doc": "factions/neo-culturales-tecnologicos" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": ["Profesor de Luminomancia y Protección Sagrada"],
+    "status": "Activo",
+
+    "dateOfBirth": "1897-10-28",
+    "age": 128,
+    "zodiac": "Escorpio ♏",
+    "mbti": "INFJ",
+
+    "race": "Superhumano",
+    "dynamic": "Omega",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "Sí",
+
+    "hometown": { "label": "Wenzhou, Naxai", "doc": "—" },
+    "actual_location": { "label": "Neocity", "doc": "world/locations/neocity" },
+
+    "realm": { "label": "Sylmorien", "doc": "world/realms/sylmorien" },
+
+    "class": "Cleric/Paladin",
+    "subclass": "Light Domain/Oath of Devotion",
+    "lvl": "6/4",
+
+    "firstAppearance": { "label": "Sesión 07", "doc": "campaign/sessions/07" },
+    "lastSeen": { "label": "Sesión 07", "doc": "campaign/sessions/07" },
+
+    "bonds": [
+      { "label": "Kun", "doc": "characters/misc/nct-kun" },
+      { "label": "Ten", "doc": "characters/misc/nct-ten" },
+      { "label": "Yuta", "doc": "characters/misc/nct-yuta" },
+      { "label": "Lucas", "doc": "characters/misc/nct-lucas" },
+      { "label": "Xiaojun", "doc": "characters/misc/nct-xiaojun" },
+      { "label": "Hendery", "doc": "characters/misc/nct-hendery" },
+      { "label": "Yangyang", "doc": "characters/misc/nct-yangyang" }
+    ],
+
+    "destinyCard": "—",
+    "images": []
+  },
+
+  "nct-jungwoo": {
+    "id": "nct-jungwoo",
+    "title": "Kim Jungwoo",
+    "imageSrc": "/img/characters/nct/jungwoo.png",
+    "subtitle": "El Maestro de la Innovación",
+
+    "faction": { "label": "Los Neo Culturales Tecnológicos", "doc": "factions/neo-culturales-tecnologicos" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": ["Profesor de Ingeniería de Sistemas Tecnomágicos Automatizados"],
+    "status": "Activo",
+
+    "dateOfBirth": "1898-02-19",
+    "age": 127,
+    "zodiac": "Piscis ♓",
+    "mbti": "ESFJ",
+
+    "race": "Superhumano",
+    "dynamic": "Omega",
+
+    "orientation": "Pan",
+    "romantic_situation": "En una polícula con Jaehyun y Doyoung",
+    "poli": "Sí",
+
+    "hometown": { "label": "Borasek, Hyberia", "doc": "world/locations/borasek" },
+    "actual_location": { "label": "Neocity", "doc": "world/locations/neocity" },
+
+    "realm": { "label": "Sylmorien", "doc": "world/realms/sylmorien" },
+
+    "class": "Bard/Cleric",
+    "subclass": "College of Glamour/Peace Domain",
+    "lvl": "11/5",
+
+    "firstAppearance": { "label": "Sesión 06", "doc": "campaign/sessions/06" },
+    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
+
+    "bonds": [
+      { "label": "Johnny", "doc": "characters/misc/nct-johnny" },
+      { "label": "Taeyong", "doc": "characters/misc/nct-taeyong" },
+      { "label": "Yuta", "doc": "characters/misc/nct-yuta" },
+      { "label": "Doyoung", "doc": "characters/misc/nct-doyoung" },
+      { "label": "Jaehyun", "doc": "characters/misc/nct-jaehyun" },
+      { "label": "Mark", "doc": "characters/misc/nct-mark" },
+      { "label": "Haechan", "doc": "characters/misc/nct-haechan" },
+      { "label": "Jaewoo", "doc": "—" }
+    ],
+
+    "destinyCard": "—",
+    "images": []
+  },
+
+  "nct-lucas": {
+    "id": "nct-lucas",
+    "title": "Wong Yukhei (Lucas)",
+    "imageSrc": "/img/characters/nct/lucas.png",
+    "subtitle": "El Maestro de las Sombras",
+
+    "faction": { "label": "Los Neo Culturales Tecnológicos", "doc": "factions/neo-culturales-tecnologicos" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": ["Profesor de Magia Umbría y Tácticas de Infiltración"],
+    "status": "Activo",
+
+    "dateOfBirth": "1899-01-25",
+    "age": 126,
+    "zodiac": "Acuario ♒",
+    "mbti": "ESTP",
+
+    "race": "Superhumano",
+    "dynamic": "Alfa",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "Sí",
+
+    "hometown": { "label": "Kong Kong, Naxai", "doc": "—" },
+    "actual_location": { "label": "Neocity", "doc": "world/locations/neocity" },
+
+    "realm": { "label": "Sylmorien", "doc": "world/realms/sylmorien" },
+
+    "class": "Warlock/Rogue",
+    "subclass": "The Undying Patron/Arcane Trickster",
+    "lvl": "6/4",
+
+    "firstAppearance": { "label": "Sesión 07", "doc": "campaign/sessions/07" },
+    "lastSeen": { "label": "Sesión 07", "doc": "campaign/sessions/07" },
+
+    "bonds": [
+      { "label": "Kun", "doc": "characters/misc/nct-kun" },
+      { "label": "Ten", "doc": "characters/misc/nct-ten" },
+      { "label": "Winwin", "doc": "characters/misc/nct-winwin" },
+      { "label": "Xiaojun", "doc": "characters/misc/nct-xiaojun" },
+      { "label": "Hendery", "doc": "characters/misc/nct-hendery" },
+      { "label": "Yangyang", "doc": "characters/misc/nct-yangyang" }
+    ],
+
+    "destinyCard": "—",
+    "images": []
+  },
+  "nct-mark": {
+    "id": "nct-mark",
+    "title": "Mark Lee",
+    "imageSrc": "/img/characters/nct/mark.png",
+    "subtitle": "El Maestro Prodigioso",
+
+    "faction": { "label": "Los Neo Culturales Tecnológicos", "doc": "factions/neo-culturales-tecnologicos" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": ["Profesor de Historia Arcana, Runas de Combate y Sistemas de Artillería Tecnomágica"],
+    "status": "Activo",
+
+    "dateOfBirth": "1899-08-02",
+    "age": 126,
+    "zodiac": "Leo ♌",
+    "mbti": "ESFJ",
+
+    "race": "Superhumano",
+    "dynamic": "Alfa",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "Sí",
+
+    "hometown": { "label": "Totonto, República del Maple", "doc": "—" },
+    "actual_location": { "label": "Neocity", "doc": "world/locations/neocity" },
+
+    "realm": { "label": "Sylmorien", "doc": "world/realms/sylmorien" },
+
+    "class": "Wizard/Artificier",
+    "subclass": "Order of the Scribes/Artillerist",
+    "lvl": "11/5",
+
+    "firstAppearance": { "label": "Sesión 09", "doc": "campaign/sessions/09" },
+    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
+
+    "bonds": [
+      { "label": "Kiyori", "doc": "characters/party/pc-kiyori" },
+      { "label": "Johnny", "doc": "characters/misc/nct-johnny" },
+      { "label": "Taeyong", "doc": "characters/misc/nct-taeyong" },
+      { "label": "Yuta", "doc": "characters/misc/nct-yuta" },
+      { "label": "Doyoung", "doc": "characters/misc/nct-doyoung" },
+      { "label": "Jaehyun", "doc": "characters/misc/nct-jaehyun" },
+      { "label": "Jungwoo", "doc": "characters/misc/nct-jungwoo" },
+      { "label": "Haechan", "doc": "characters/misc/nct-haechan" },
+      { "label": "Renjun", "doc": "characters/misc/nct-renjun" },
+      { "label": "Jeno", "doc": "characters/misc/nct-jeno" },
+      { "label": "Jaemin", "doc": "characters/misc/nct-jaemin" },
+      { "label": "Chenle", "doc": "characters/misc/nct-chenle" },
+      { "label": "Jisung", "doc": "characters/misc/nct-jisung" },
+      { "label": "Sungchan", "doc": "—" }
+    ],
+
+    "destinyCard": "Rey de Corazones",
+    "images": []
+  },
+
+  "nct-xiaojun": {
+    "id": "nct-xiaojun",
+    "title": "Xiao Dejun (Xiaojun)",
+    "imageSrc": "/img/characters/nct/xiaojun.png",
+    "subtitle": "El Maestro del Fuego",
+
+    "faction": { "label": "Los Neo Culturales Tecnológicos", "doc": "factions/neo-culturales-tecnologicos" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": ["Profesor de Pirodinámica y Combate Elemental Ígneo"],
+    "status": "Activo",
+
+    "dateOfBirth": "1899-08-08",
+    "age": 126,
+    "zodiac": "Leo ♌",
+    "mbti": "INFJ",
+
+    "race": "Fire Genasi",
+    "dynamic": "Beta",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "Sí",
+
+    "hometown": { "label": "Dong Dong, Naxai", "doc": "—" },
+    "actual_location": { "label": "Neocity", "doc": "world/locations/neocity" },
+
+    "realm": { "label": "Sylmorien", "doc": "world/realms/sylmorien" },
+
+    "class": "Monk/Druid",
+    "subclass": "Way of the Elements/Circle of the Wildfire",
+    "lvl": "6/4",
+
+    "firstAppearance": { "label": "Sesión 06", "doc": "campaign/sessions/06" },
+    "lastSeen": { "label": "Sesión 09", "doc": "campaign/sessions/09" },
+
+    "bonds": [
+      { "label": "Kun", "doc": "characters/misc/nct-kun" },
+      { "label": "Ten", "doc": "characters/misc/nct-ten" },
+      { "label": "Winwin", "doc": "characters/misc/nct-winwin" },
+      { "label": "Lucas", "doc": "characters/misc/nct-lucas" },
+      { "label": "Hendery", "doc": "characters/misc/nct-hendery" },
+      { "label": "Yangyang", "doc": "characters/misc/nct-yangyang" },
+      { "label": "Bella", "doc": "—" }
+    ],
+
+    "destinyCard": "—",
+    "images": []
+  },
+
+  "nct-hendery": {
+    "id": "nct-hendery",
+    "title": "Huang Guanheng (Hendery)",
+    "imageSrc": "/img/characters/nct/hendery.png",
+    "subtitle": "El Maestro del Metal",
+
+    "faction": { "label": "Los Neo Culturales Tecnológicos", "doc": "factions/neo-culturales-tecnologicos" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": ["Profesor de Ingeniería Metalomágica y Forja de Constructos"],
+    "status": "Activo",
+
+    "dateOfBirth": "1899-09-28",
+    "age": 126,
+    "zodiac": "Libra ♎",
+    "mbti": "INTP",
+
+    "race": "Superhumano",
+    "dynamic": "Beta",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "Sí",
+
+    "hometown": { "label": "Isla de Macacau, Nacai", "doc": "—" },
+    "actual_location": { "label": "Neocity", "doc": "world/locations/neocity" },
+
+    "realm": { "label": "Sylmorien", "doc": "world/realms/sylmorien" },
+
+    "class": "Artificier",
+    "subclass": "Battle Smith",
+    "lvl": 8,
+
+    "firstAppearance": { "label": "Sesión 04", "doc": "campaign/sessions/04" },
+    "lastSeen": { "label": "Sesión 05", "doc": "campaign/sessions/05" },
+
+    "bonds": [
+      { "label": "Kun", "doc": "characters/misc/nct-kun" },
+      { "label": "Ten", "doc": "characters/misc/nct-ten" },
+      { "label": "Winwin", "doc": "characters/misc/nct-winwin" },
+      { "label": "Lucas", "doc": "characters/misc/nct-lucas" },
+      { "label": "Xiaojun", "doc": "characters/misc/nct-xiaojun" },
+      { "label": "Yangyang", "doc": "characters/misc/nct-yangyang" }
+    ],
+
+    "destinyCard": "—",
+    "images": []
+  },
+
+  "nct-renjun": {
+    "id": "nct-renjun",
+    "title": "Huang Renjun",
+    "imageSrc": "/img/characters/nct/renjun.png",
+    "subtitle": "El Oráculo del Anochecer",
+
+    "faction": { "label": "Los Neo Culturales Tecnológicos", "doc": "factions/neo-culturales-tecnologicos" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": ["Guardián de los Archivos Proféticos"],
+    "status": "Activo",
+
+    "dateOfBirth": "1900-03-23",
+    "age": 125,
+    "zodiac": "Aries ♈",
+    "mbti": "INTP",
+
+    "race": "Elfo",
+    "dynamic": "Omega",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "Sí",
+
+    "hometown": { "label": "Linji, Naxai", "doc": "—" },
+    "actual_location": { "label": "Neocity", "doc": "world/locations/neocity" },
+
+    "realm": { "label": "Sylmorien", "doc": "world/realms/sylmorien" },
+
+    "class": "Wizard/Cleric",
+    "subclass": "Divination/Light Domain",
+    "lvl": "6/4",
+
+    "firstAppearance": { "label": "—", "doc": "—" },
+    "lastSeen": { "label": "—", "doc": "—" },
+
+    "bonds": [
+      { "label": "Mark", "doc": "characters/misc/nct-mark" },
+      { "label": "Haechan", "doc": "characters/misc/nct-haechan" },
+      { "label": "Jeno", "doc": "characters/misc/nct-jeno" },
+      { "label": "Jaemin", "doc": "characters/misc/nct-jaemin" },
+      { "label": "Chenle", "doc": "characters/misc/nct-chenle" },
+      { "label": "Jisung", "doc": "characters/misc/nct-jisung" }
+    ],
+
+    "destinyCard": "—",
+    "images": []
+  },
+
+  "nct-jeno": {
+    "id": "nct-jeno",
+    "title": "Lee Jeno",
+    "imageSrc": "/img/characters/nct/jeno.png",
+    "subtitle": "El Centinela de los Sueños",
+
+    "faction": { "label": "Los Neo Culturales Tecnológicos", "doc": "factions/neo-culturales-tecnologicos" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": ["Guardián de Defensa Táctica de la Neo Academia"],
+    "status": "Activo",
+
+    "dateOfBirth": "1900-04-23",
+    "age": 125,
+    "zodiac": "Tauro ♉",
+    "mbti": "ISTP",
+
+    "race": "Superhumano",
+    "dynamic": "Alfa",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "No",
+
+    "hometown": { "label": "Cheonin, Jeyperia", "doc": "—" },
+    "actual_location": { "label": "Neocity", "doc": "world/locations/neocity" },
+
+    "realm": { "label": "Sylmorien", "doc": "world/realms/sylmorien" },
+
+    "class": "Paladin/Fighter",
+    "subclass": "Oath of Devotion/Battle Master",
+    "lvl": "6/4",
+
+    "firstAppearance": { "label": "Sesión 09", "doc": "campaign/sessions/09" },
+    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
+
+    "bonds": [
+      { "label": "Mark", "doc": "characters/misc/nct-mark" },
+      { "label": "Haechan", "doc": "characters/misc/nct-haechan" },
+      { "label": "Renjun", "doc": "characters/misc/nct-renjun" },
+      { "label": "Jaemin", "doc": "characters/misc/nct-jaemin" },
+      { "label": "Chenle", "doc": "characters/misc/nct-chenle" },
+      { "label": "Jisung", "doc": "characters/misc/nct-jisung" }
+    ],
+
+    "destinyCard": "—",
+    "images": []
+  },
+
+  "nct-haechan": {
+    "id": "nct-haechan",
+    "title": "Lee Donghyuck (Haechan)",
+    "imageSrc": "/img/characters/nct/haechan.png",
+    "subtitle": "El Maestro de las Pesadilas",
+
+    "faction": { "label": "Los Neo Culturales Tecnológicos", "doc": "factions/neo-culturales-tecnologicos" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": ["Profesor de Oniromancia, Ilusiones Cognitivas e Interpretación de Pesadillas"],
+    "status": "Activo",
+
+    "dateOfBirth": "1500-06-06",
+    "age": 525,
+    "zodiac": "Géminis ♊",
+    "mbti": "ESFP",
+
+    "race": "Superhumano",
+    "dynamic": "Omega",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "No",
+
+    "hometown": { "label": "Kwangya, Sylmorien", "doc": "—" },
+    "actual_location": { "label": "Neocity", "doc": "world/locations/neocity" },
+
+    "realm": { "label": "Sylmorien", "doc": "world/realms/sylmorien" },
+
+    "class": "Bard/Warlock",
+    "subclass": "College of Lore/The Great Old One",
+    "lvl": "8/5",
+
+    "firstAppearance": { "label": "Sesión 09", "doc": "campaign/sessions/09" },
+    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
+
+    "bonds": [
+      { "label": "Kiyori", "doc": "characters/party/pc-kiyori" },
+      { "label": "Johnny", "doc": "characters/misc/nct-johnny" },
+      { "label": "Taeyong", "doc": "characters/misc/nct-taeyong" },
+      { "label": "Yuta", "doc": "characters/misc/nct-yuta" },
+      { "label": "Doyoung", "doc": "characters/misc/nct-doyoung" },
+      { "label": "Jaehyun", "doc": "characters/misc/nct-jaehyun" },
+      { "label": "Jungwoo", "doc": "characters/misc/nct-jungwoo" },
+      { "label": "Mark", "doc": "characters/misc/nct-mark" },
+      { "label": "Renjun", "doc": "characters/misc/nct-renjun" },
+      { "label": "Jeno", "doc": "characters/misc/nct-jeno" },
+      { "label": "Jaemin", "doc": "characters/misc/nct-jaemin" },
+      { "label": "Chenle", "doc": "characters/misc/nct-chenle" },
+      { "label": "Jisung", "doc": "characters/misc/nct-jisung" }
+    ],
+
+    "destinyCard": "—",
+    "images": []
+  },
+
+  "nct-jaemin": {
+    "id": "nct-jaemin",
+    "title": "Na Jaemin",
+    "imageSrc": "/img/characters/nct/jaemin.png",
+    "subtitle": "El Guardián del Plano Onírico",
+
+    "faction": { "label": "Los Neo Culturales Tecnológicos", "doc": "factions/neo-culturales-tecnologicos" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": ["Guardián de Contención del Plano Onírico (Dreamscape)"],
+    "status": "Activo",
+
+    "dateOfBirth": "1900-08-13",
+    "age": 125,
+    "zodiac": "Leo ♌",
+    "mbti": "ISFJ",
+
+    "race": "Superhumano",
+    "dynamic": "Omega",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "No",
+
+    "hometown": { "label": "Sanbu, Jeyperia", "doc": "—" },
+    "actual_location": { "label": "Neocity", "doc": "world/locations/neocity" },
+
+    "realm": { "label": "Sylmorien", "doc": "world/realms/sylmorien" },
+
+    "class": "Cleric/Wizard",
+    "subclass": "Knowledge Domain/Abjurer",
+    "lvl": "6/4",
+
+    "firstAppearance": { "label": "Sesión 03", "doc": "campaign/sessions/03" },
+    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
+
+    "bonds": [
+      { "label": "Mark", "doc": "characters/misc/nct-mark" },
+      { "label": "Haechan", "doc": "characters/misc/nct-haechan" },
+      { "label": "Jeno", "doc": "characters/misc/nct-jeno" },
+      { "label": "Renjun", "doc": "characters/misc/nct-renjun" },
+      { "label": "Chenle", "doc": "characters/misc/nct-chenle" },
+      { "label": "Jisung", "doc": "characters/misc/nct-jisung" },
+      { "label": "Minjae", "doc": "characters/party/pc-minjae" }
+    ],
+
+    "destinyCard": "—",
+    "images": []
+  },
+
+  "nct-yangyang": {
+    "id": "nct-yangyang",
+    "title": "Liu Yangyang",
+    "imageSrc": "/img/characters/nct/yangyang.png",
+    "subtitle": "El Maestro del Viento",
+
+    "faction": { "label": "Los Neo Culturales Tecnológicos", "doc": "factions/neo-culturales-tecnologicos" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": ["Profesor de Aerodinámica Arcana y Movilidad de Combate"],
+    "status": "Activo",
+
+    "dateOfBirth": "1910-10-10",
+    "age": 115,
+    "zodiac": "Libra ♎",
+    "mbti": "INTJ",
+
+    "race": "Air Genasi",
+    "dynamic": "Omega",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "Sí",
+
+    "hometown": { "label": "Peitai, Wantai", "doc": "—" },
+    "actual_location": { "label": "Neocity", "doc": "world/locations/neocity" },
+
+    "realm": { "label": "Sylmorien", "doc": "world/realms/sylmorien" },
+
+    "class": "Monk/Bard",
+    "subclass": "Way of the Elements/College of Dance",
+    "lvl": "6/4",
+
+    "firstAppearance": { "label": "—", "doc": "—" },
+    "lastSeen": { "label": "—", "doc": "—" },
+
+    "bonds": [
+      { "label": "Kun", "doc": "characters/misc/nct-kun" },
+      { "label": "Ten", "doc": "characters/misc/nct-ten" },
+      { "label": "Winwin", "doc": "characters/misc/nct-winwin" },
+      { "label": "Lucas", "doc": "characters/misc/nct-lucas" },
+      { "label": "Xiaojun", "doc": "characters/misc/nct-xiaojun" },
+      { "label": "Hendery", "doc": "characters/misc/nct-hendery" }
+    ],
+
+    "destinyCard": "—",
+    "images": []
+  },
+
+  "nct-chenle": {
+    "id": "nct-chenle",
+    "title": "Zhong Chenle",
+    "imageSrc": "/img/characters/nct/chenle.png",
+    "subtitle": "El Arquitecto de Sueños",
+
+    "faction": { "label": "Los Neo Culturales Tecnológicos", "doc": "factions/neo-culturales-tecnologicos" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": ["Guardián de Infraestructura de Redes Oníricas"],
+    "status": "Activo",
+
+    "dateOfBirth": "1901-11-22",
+    "age": 124,
+    "zodiac": "Sagitario ♐",
+    "mbti": "ESTP",
+
+    "race": "Superhumano",
+    "dynamic": "Omega",
+
+    "orientation": "Hetero",
+    "romantic_situation": "Soltero",
+    "poli": "Sí",
+
+    "hometown": { "label": "Haishang, Naxai", "doc": "—" },
+    "actual_location": { "label": "Neocity", "doc": "world/locations/neocity" },
+
+    "realm": { "label": "Sylmorien", "doc": "world/realms/sylmorien" },
+
+    "class": "Wizard/Artificier",
+    "subclass": "Illusionist/Armorer",
+    "lvl": "6/4",
+
+    "firstAppearance": { "label": "Sesión 08", "doc": "campaign/sessions/08" },
+    "lastSeen": { "label": "Sesión 10", "doc": "campaign/sessions/10" },
+
+    "bonds": [
+      { "label": "Mark", "doc": "characters/misc/nct-mark" },
+      { "label": "Haechan", "doc": "characters/misc/nct-haechan" },
+      { "label": "Jeno", "doc": "characters/misc/nct-jeno" },
+      { "label": "Renjun", "doc": "characters/misc/nct-renjun" },
+      { "label": "Jaemin", "doc": "characters/misc/nct-jaemin" },
+      { "label": "Jisung", "doc": "characters/misc/nct-jisung" },
+      { "label": "Imugi", "doc": "characters/party/pc-imugi" }
+    ],
+
+    "destinyCard": "—",
+    "images": []
+  },
+
+  "nct-jisung": {
+    "id": "nct-jisung",
+    "title": "Park Jisung",
+    "imageSrc": "/img/characters/nct/jisung.png",
+    "subtitle": "El Vigilante del Subconsciente",
+
+    "faction": { "label": "Los Neo Culturales Tecnológicos", "doc": "factions/neo-culturales-tecnologicos" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": ["Guardián de Vigilancia Subconsciente e Infiltración Mental"],
+    "status": "Activo",
+
+    "dateOfBirth": "1902-02-05",
+    "age": 123,
+    "zodiac": "Acuario ♒",
+    "mbti": "INFP",
+
+    "race": "Superhumano",
+    "dynamic": "Alfa",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "Sí",
+
+    "hometown": { "label": "Kwangya, Sylmorien", "doc": "—" },
+    "actual_location": { "label": "Neocity", "doc": "world/locations/neocity" },
+
+    "realm": { "label": "Sylmorien", "doc": "world/realms/sylmorien" },
+
+    "class": "Rogue/Monk",
+    "subclass": "Arcane Trickster/Way of the Open Hand",
+    "lvl": "6/4",
+
+    "firstAppearance": { "label": "Sesión 07", "doc": "campaign/sessions/07" },
+    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
+
+    "bonds": [
+      { "label": "Mark", "doc": "characters/misc/nct-mark" },
+      { "label": "Haechan", "doc": "characters/misc/nct-haechan" },
+      { "label": "Jeno", "doc": "characters/misc/nct-jeno" },
+      { "label": "Renjun", "doc": "characters/misc/nct-renjun" },
+      { "label": "Chenle", "doc": "characters/misc/nct-chenle" },
+      { "label": "Jaemin", "doc": "characters/misc/nct-jaemin" },
+      { "label": "Soobin", "doc": "characters/party/pc-soobin" }
+    ],
+
+    "destinyCard": "—",
+    "images": []
+  },
+  "nct-sion": {
+    "id": "nct-sion",
+    "title": "Oh Sion",
+    "imageSrc": "/img/characters/nct/sion.png",
+    "subtitle": "El Prodigio de la Evocación",
+
+    "faction": { "label": "Los Neo Culturales Tecnológicos", "doc": "factions/neo-culturales-tecnologicos" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": ["Nuevo Defensor de Sylmorien", "Especialista en Evocación Táctica"],
+    "status": "Activo",
+
+    "dateOfBirth": "2002-05-11",
+    "age": 23,
+    "zodiac": "Tauro ♉",
+    "mbti": "INTJ",
+
+    "race": "Superhumano",
+    "dynamic": "Alfa",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "Descubriendo",
+
+    "hometown": { "label": "Namjeo, Sylmorien", "doc": "—" },
+    "actual_location": { "label": "Neocity", "doc": "world/locations/neocity" },
+
+    "realm": { "label": "Sylmorien", "doc": "world/realms/sylmorien" },
+
+    "class": "Wizard",
+    "subclass": "Evoker",
+    "lvl": 6,
+
+    "firstAppearance": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
+    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
+
+    "bonds": [
+      { "label": "Kiyori", "doc": "characters/party/pc-kiyori" },
+      { "label": "Riku", "doc": "characters/misc/nct-riku" },
+      { "label": "Yushi", "doc": "characters/misc/nct-yushi" },
+      { "label": "Jaehee", "doc": "characters/misc/nct-jaehee" },
+      { "label": "Ryo", "doc": "characters/misc/nct-ryo" },
+      { "label": "Sakuya", "doc": "characters/misc/nct-sakuya" },
+      { "label": "Jaehyun", "doc": "characters/misc/nct-jaehyun" }
+    ],
+
+    "destinyCard": "2 de Corazones",
+    "images": []
+  },
+
+  "nct-riku": {
+    "id": "nct-riku",
+    "title": "Riku Maeda",
+    "imageSrc": "/img/characters/nct/riku.png",
+    "subtitle": "El Prodigio de Gravitacional",
+
+    "faction": { "label": "Los Neo Culturales Tecnológicos", "doc": "factions/neo-culturales-tecnologicos" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": ["Nuevo Defensor de Sylmorien", "Especialista en Dinámica Gravitacional"],
+    "status": "Activo",
+
+    "dateOfBirth": "2003-06-28",
+    "age": 22,
+    "zodiac": "Cáncer ♋",
+    "mbti": "ISFP",
+
+    "race": "Semi-Tiefling",
+    "dynamic": "Beta",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "Descubriendo",
+
+    "hometown": { "label": "Kuifu, Hotou", "doc": "—" },
+    "actual_location": { "label": "Neocity", "doc": "world/locations/neocity" },
+
+    "realm": { "label": "Sylmorien", "doc": "world/realms/sylmorien" },
+
+    "class": "Wizard",
+    "subclass": "Graviturgist",
+    "lvl": 6,
+
+    "firstAppearance": { "label": "—", "doc": "—" },
+    "lastSeen": { "label": "—", "doc": "—" },
+
+    "bonds": [
+      { "label": "Kiyori", "doc": "characters/party/pc-kiyori" },
+      { "label": "Sion", "doc": "characters/misc/nct-sion" },
+      { "label": "Yushi", "doc": "characters/misc/nct-yushi" },
+      { "label": "Jaehee", "doc": "characters/misc/nct-jaehee" },
+      { "label": "Ryo", "doc": "characters/misc/nct-ryo" },
+      { "label": "Sakuya", "doc": "characters/misc/nct-sakuya" }
+    ],
+
+    "destinyCard": "3 de Corazones",
+    "images": []
+  },
+
+  "nct-yushi": {
+    "id": "nct-yushi",
+    "title": "Yushi Tokuno",
+    "imageSrc": "/img/characters/nct/yushi.png",
+    "subtitle": "El Prodigio de la Abjuración",
+
+    "faction": { "label": "Los Neo Culturales Tecnológicos", "doc": "factions/neo-culturales-tecnologicos" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": ["Nuevo Defensor de Sylmorien", "Especialista en Protección Abjurativa"],
+    "status": "Activo",
+
+    "dateOfBirth": "2004-04-05",
+    "age": 21,
+    "zodiac": "Aries ♈",
+    "mbti": "ISTJ",
+
+    "race": "Semi-Tiefling",
+    "dynamic": "Beta",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "Descubriendo",
+
+    "hometown": { "label": "Kyokyo, Hotou", "doc": "—" },
+    "actual_location": { "label": "Neocity", "doc": "world/locations/neocity" },
+
+    "realm": { "label": "Sylmorien", "doc": "world/realms/sylmorien" },
+
+    "class": "Wizard",
+    "subclass": "Abjurer",
+    "lvl": 6,
+
+    "firstAppearance": { "label": "—", "doc": "—" },
+    "lastSeen": { "label": "—", "doc": "—" },
+
+    "bonds": [
+      { "label": "Kiyori", "doc": "characters/party/pc-kiyori" },
+      { "label": "Sion", "doc": "characters/misc/nct-sion" },
+      { "label": "Riku", "doc": "characters/misc/nct-riku" },
+      { "label": "Jaehee", "doc": "characters/misc/nct-jaehee" },
+      { "label": "Ryo", "doc": "characters/misc/nct-ryo" },
+      { "label": "Sakuya", "doc": "characters/misc/nct-sakuya" },
+      { "label": "Johnny", "doc": "characters/misc/nct-johnny" }
+    ],
+
+    "destinyCard": "4 de Corazones",
+    "images": []
+  },
+
+  "nct-jaehee": {
+    "id": "nct-jaehee",
+    "title": "Kim Daeyoung (Jaehee)",
+    "imageSrc": "/img/characters/nct/jaehee.png",
+    "subtitle": "El Prodigio de la Creación",
+
+    "faction": { "label": "Los Neo Culturales Tecnológicos", "doc": "factions/neo-culturales-tecnologicos" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": ["Nuevo Defensor de Sylmorien", "Especialista en Creación Arcanotécnica"],
+    "status": "Activo",
+
+    "dateOfBirth": "2005-06-21",
+    "age": 20,
+    "zodiac": "Cáncer ♋",
+    "mbti": "INFJ",
+
+    "race": "Superhumano",
+    "dynamic": "Omega",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "Descubriendo",
+
+    "hometown": { "label": "Gudae, Hyberia", "doc": "—" },
+    "actual_location": { "label": "Neocity", "doc": "world/locations/neocity" },
+
+    "realm": { "label": "Sylmorien", "doc": "world/realms/sylmorien" },
+
+    "class": "Bard",
+    "subclass": "College of Creation",
+    "lvl": 6,
+
+    "firstAppearance": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
+    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
+
+    "bonds": [
+      { "label": "Kiyori", "doc": "characters/party/pc-kiyori" },
+      { "label": "Sion", "doc": "characters/misc/nct-sion" },
+      { "label": "Riku", "doc": "characters/misc/nct-riku" },
+      { "label": "Yushi", "doc": "characters/misc/nct-yushi" },
+      { "label": "Ryo", "doc": "characters/misc/nct-ryo" },
+      { "label": "Sakuya", "doc": "characters/misc/nct-sakuya" }
+    ],
+
+    "destinyCard": "5 de Corazones",
+    "images": []
+  },
+
+  "nct-ryo": {
+    "id": "nct-ryo",
+    "title": "Ryo Hirose",
+    "imageSrc": "/img/characters/nct/ryo.png",
+    "subtitle": "El Prodigio de la Alquimia",
+
+    "faction": { "label": "Los Neo Culturales Tecnológicos", "doc": "factions/neo-culturales-tecnologicos" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": ["Nuevo Defensor de Sylmorien", "Especialista en Alquimia Aplicada"],
+    "status": "Activo",
+
+    "dateOfBirth": "2007-08-04",
+    "age": 18,
+    "zodiac": "Leo ♌",
+    "mbti": "ENTP",
+
+    "race": "Semi-Tiefling",
+    "dynamic": "Beta",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "Descubriendo",
+
+    "hometown": { "label": "Kyokyo, Hotou", "doc": "—" },
+    "actual_location": { "label": "Neocity", "doc": "world/locations/neocity" },
+
+    "realm": { "label": "Sylmorien", "doc": "world/realms/sylmorien" },
+
+    "class": "Artificier",
+    "subclass": "Alchemist",
+    "lvl": 6,
+
+    "firstAppearance": { "label": "—", "doc": "—" },
+    "lastSeen": { "label": "—", "doc": "—" },
+
+    "bonds": [
+      { "label": "Kiyori", "doc": "characters/party/pc-kiyori" },
+      { "label": "Sion", "doc": "characters/misc/nct-sion" },
+      { "label": "Riku", "doc": "characters/misc/nct-riku" },
+      { "label": "Yushi", "doc": "characters/misc/nct-yushi" },
+      { "label": "Jaehee", "doc": "characters/misc/nct-jaehee" },
+      { "label": "Sakuya", "doc": "characters/misc/nct-sakuya" },
+      { "label": "Taeyong", "doc": "characters/misc/nct-taeyong" }
+    ],
+
+    "destinyCard": "6 de Corazones",
+    "images": []
+  },
+
+  "nct-sakuya": {
+    "id": "nct-sakuya",
+    "title": "Sakuya Fujinaga",
+    "imageSrc": "/img/characters/nct/sakuya.png",
+    "subtitle": "El Prodigio de las Armas",
+
+    "faction": { "label": "Los Neo Culturales Tecnológicos", "doc": "factions/neo-culturales-tecnologicos" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": ["Nuevo Defensor de Sylmorien", "Especialista en Armamento Arcano"],
+    "status": "Activo",
+
+    "dateOfBirth": "2007-11-18",
+    "age": 18,
+    "zodiac": "Escorpio ♏",
+    "mbti": "ENFP",
+
+    "race": "Humano",
+    "dynamic": "Alfa",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "Descubriendo",
+
+    "hometown": { "label": "Tamasai, Hotou", "doc": "—" },
+    "actual_location": { "label": "Neocity", "doc": "world/locations/neocity" },
+
+    "realm": { "label": "Sylmorien", "doc": "world/realms/sylmorien" },
+
+    "class": "Fighter",
+    "subclass": "Rune Knight",
+    "lvl": 6,
+
+    "firstAppearance": { "label": "Sesión 10", "doc": "campaign/sessions/10" },
+    "lastSeen": { "label": "Sesión 10", "doc": "campaign/sessions/10" },
+
+    "bonds": [
+      { "label": "Kiyori", "doc": "characters/party/pc-kiyori" },
+      { "label": "Sion", "doc": "characters/misc/nct-sion" },
+      { "label": "Riku", "doc": "characters/misc/nct-riku" },
+      { "label": "Yushi", "doc": "characters/misc/nct-yushi" },
+      { "label": "Jaehee", "doc": "characters/misc/nct-jaehee" },
+      { "label": "Ryo", "doc": "characters/misc/nct-ryo" },
+      { "label": "Yuta", "doc": "characters/misc/nct-yuta" }
+    ],
+
+    "destinyCard": "7 de Corazones",
+    "images": []
+  },
+
+  "nct-baby": {
+    "id": "nct-baby",
+    "title": "Jeong Jaewoo (Baby Jungwoo)",
+    "imageSrc": "/img/characters/nct/baby.png",
+    "subtitle": "La Clave de Sylmorien",
+
+    "faction": { "label": "Los Neo Culturales Tecnológicos", "doc": "factions/neo-culturales-tecnologicos" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": ["Clave de Sylmorien", "Custodia Especial de la Neo Academia"],
+    "status": "Activo",
+
+    "dateOfBirth": "2024-06-30",
+    "age": 1,
+    "zodiac": "Cáncer ♋",
+    "mbti": "—",
+
+    "race": "Superhumano",
+    "dynamic": "—",
+
+    "orientation": "—",
+    "romantic_situation": "—",
+    "poli": "—",
+
+    "hometown": { "label": "Neocity, Sylmorien", "doc": "world/locations/neocity" },
+    "actual_location": { "label": "Neocity", "doc": "world/locations/neocity" },
+
+    "realm": { "label": "Sylmorien", "doc": "world/realms/sylmorien" },
+
+    "class": "—",
+    "subclass": "—",
+    "lvl": 0,
+
+    "firstAppearance": { "label": "Sesión 06", "doc": "campaign/sessions/06" },
+    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
+
+    "bonds": [
+      { "label": "Jungwoo", "doc": "characters/misc/nct-jungwoo" },
+      { "label": "Jaehyun", "doc": "characters/misc/nct-jaehyun" },
+      { "label": "Doyoung", "doc": "characters/misc/nct-doyoung" }
+    ],
+
+    "destinyCard": "—",
+    "images": []
+  },
+  "ateez-hongjoong": {
+    "id": "ateez-hongjoong",
+    "title": "Kim Hongjoong",
+    "imageSrc": "/img/characters/ateez/hongjoong.png",
+    "subtitle": "El Capitán del Caos",
+
+    "faction": { "label": "Los Piratas de la Marea Negra", "doc": "factions/marea-negra" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": ["Capitán de la Marea Negra"],
+    "status": "Activo",
+
+    "dateOfBirth": "1998-11-07",
+    "age": 27,
+    "zodiac": "Escorpio ♏",
+    "mbti": "INFJ",
+
+    "race": "Humano",
+    "dynamic": "Alfa",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "Sí",
+
+    "hometown": { "label": "Borasek, Hyberia", "doc": "world/locations/borasek" },
+    "actual_location": { "label": "—", "doc": "—" },
+
+    "realm": { "label": "Isla K'quor", "doc": "—" },
+
+    "class": "Bard",
+    "subclass": "College of Lore",
+    "lvl": 8,
+
+    "firstAppearance": { "label": "Sesión 07", "doc": "campaign/sessions/07" },
+    "lastSeen": { "label": "Sesión 08", "doc": "campaign/sessions/08" },
+
+    "bonds": [
+      { "label": "Seonghwa", "doc": "characters/misc/ateez-seonghwa" },
+      { "label": "Yunho", "doc": "characters/misc/ateez-yunho" },
+      { "label": "Yeosang", "doc": "characters/misc/ateez-yeosang" },
+      { "label": "San", "doc": "characters/misc/ateez-san" },
+      { "label": "Mingi", "doc": "characters/misc/ateez-mingi" },
+      { "label": "Wooyoung", "doc": "characters/misc/ateez-wooyoung" },
+      { "label": "Jongho", "doc": "characters/misc/ateez-jongho" }
+    ],
+
+    "destinyCard": "—",
+    "images": []
+  },
+
+  "ateez-seonghwa": {
+    "id": "ateez-seonghwa",
+    "title": "Park Seonghwa",
+    "imageSrc": "/img/characters/ateez/seonghwa.png",
+    "subtitle": "El Ángel de la Muerte",
+
+    "faction": { "label": "Los Piratas de la Marea Negra", "doc": "factions/marea-negra" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": ["Primer Oficial", "Maestro de Armas"],
+    "status": "Activo",
+
+    "dateOfBirth": "1998-04-03",
+    "age": 27,
+    "zodiac": "Aries ♈",
+    "mbti": "ISFJ",
+
+    "race": "Humano",
+    "dynamic": "Omega",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "Sí",
+
+    "hometown": { "label": "Junji, Sylmorien", "doc": "—" },
+    "actual_location": { "label": "—", "doc": "—" },
+
+    "realm": { "label": "Isla K'quor", "doc": "—" },
+
+    "class": "Fighter",
+    "subclass": "Battle Master",
+    "lvl": 8,
+
+    "firstAppearance": { "label": "Sesión 07", "doc": "campaign/sessions/07" },
+    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
+
+    "bonds": [
+      { "label": "Hongjoong", "doc": "characters/misc/ateez-hongjoong" },
+      { "label": "Yunho", "doc": "characters/misc/ateez-yunho" },
+      { "label": "Yeosang", "doc": "characters/misc/ateez-yeosang" },
+      { "label": "San", "doc": "characters/misc/ateez-san" },
+      { "label": "Mingi", "doc": "characters/misc/ateez-mingi" },
+      { "label": "Wooyoung", "doc": "characters/misc/ateez-wooyoung" },
+      { "label": "Jongho", "doc": "characters/misc/ateez-jongho" }
+    ],
+
+    "destinyCard": "As de Picas",
+    "images": []
+  },
+
+  "ateez-yunho": {
+    "id": "ateez-yunho",
+    "title": "Jeong Yunho",
+    "imageSrc": "/img/characters/ateez/yunho.png",
+    "subtitle": "El Cartografo Maestro",
+
+    "faction": { "label": "Los Piratas de la Marea Negra", "doc": "factions/marea-negra" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": ["Navegante Mayor", "Cartógrafo de la Tripulación"],
+    "status": "Activo",
+
+    "dateOfBirth": "1999-03-23",
+    "age": 26,
+    "zodiac": "Aries ♈",
+    "mbti": "ENTP",
+
+    "race": "Humano",
+    "dynamic": "Alfa",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "Sí",
+
+    "hometown": { "label": "Namjeo, Sylmorien", "doc": "—" },
+    "actual_location": { "label": "—", "doc": "—" },
+
+    "realm": { "label": "Isla K'quor", "doc": "—" },
+
+    "class": "Artificier",
+    "subclass": "Cartographer",
+    "lvl": 8,
+
+    "firstAppearance": { "label": "Sesión 04", "doc": "campaign/sessions/04" },
+    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
+
+    "bonds": [
+      { "label": "Seonghwa", "doc": "characters/misc/ateez-seonghwa" },
+      { "label": "Hongjoong", "doc": "characters/misc/ateez-hongjoong" },
+      { "label": "Yeosang", "doc": "characters/misc/ateez-yeosang" },
+      { "label": "San", "doc": "characters/misc/ateez-san" },
+      { "label": "Mingi", "doc": "characters/misc/ateez-mingi" },
+      { "label": "Wooyoung", "doc": "characters/misc/ateez-wooyoung" },
+      { "label": "Jongho", "doc": "characters/misc/ateez-jongho" }
+    ],
+
+    "destinyCard": "—",
+    "images": []
+  },
+
+  "ateez-yeosang": {
+    "id": "ateez-yeosang",
+    "title": "Kang Yeosang",
+    "imageSrc": "/img/characters/ateez/yeosang.png",
+    "subtitle": "El Ojo del Horizonte",
+
+    "faction": { "label": "Los Piratas de la Marea Negra", "doc": "factions/marea-negra" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": ["Vigía", "Explorador de Rutas"],
+    "status": "Activo",
+
+    "dateOfBirth": "1999-06-15",
+    "age": 26,
+    "zodiac": "Géminis ♊",
+    "mbti": "INTP",
+
+    "race": "Humano",
+    "dynamic": "Beta",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "Sí",
+
+    "hometown": { "label": "Aldea del Lago Celeste, Hyberia", "doc": "—" },
+    "actual_location": { "label": "—", "doc": "—" },
+
+    "realm": { "label": "Isla K'quor", "doc": "—" },
+
+    "class": "Ranger",
+    "subclass": "Gloom Stalker",
+    "lvl": 8,
+
+    "firstAppearance": { "label": "Sesión 07", "doc": "campaign/sessions/07" },
+    "lastSeen": { "label": "Sesión 09", "doc": "campaign/sessions/09" },
+
+    "bonds": [
+      { "label": "Seonghwa", "doc": "characters/misc/ateez-seonghwa" },
+      { "label": "Yunho", "doc": "characters/misc/ateez-yunho" },
+      { "label": "Hongjoong", "doc": "characters/misc/ateez-hongjoong" },
+      { "label": "San", "doc": "characters/misc/ateez-san" },
+      { "label": "Mingi", "doc": "characters/misc/ateez-mingi" },
+      { "label": "Wooyoung", "doc": "characters/misc/ateez-wooyoung" },
+      { "label": "Jongho", "doc": "characters/misc/ateez-jongho" }
+    ],
+
+    "destinyCard": "—",
+    "images": []
+  },
+
+  "ateez-san": {
+    "id": "ateez-san",
+    "title": "Choi San",
+    "imageSrc": "/img/characters/ateez/san.png",
+    "subtitle": "El Puño de la Tormenta",
+
+    "faction": { "label": "Los Piratas de la Marea Negra", "doc": "factions/marea-negra" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": ["Contramaestre", "Maestro de Abordaje"],
+    "status": "Activo",
+
+    "dateOfBirth": "1999-07-10",
+    "age": 26,
+    "zodiac": "Cáncer ♋",
+    "mbti": "ISFP",
+
+    "race": "Humano",
+    "dynamic": "Alfa",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "Sí",
+
+    "hometown": { "label": "Hamnae, Jeyperia", "doc": "—" },
+    "actual_location": { "label": "Neocity", "doc": "world/locations/neocity" },
+
+    "realm": { "label": "Isla K'quor", "doc": "—" },
+
+    "class": "Monk",
+    "subclass": "Way of the Drunken Master",
+    "lvl": 8,
+
+    "firstAppearance": { "label": "Sesión 04", "doc": "campaign/sessions/04" },
+    "lastSeen": { "label": "Sesión 10", "doc": "campaign/sessions/10" },
+
+    "bonds": [
+      { "label": "Seonghwa", "doc": "characters/misc/ateez-seonghwa" },
+      { "label": "Yunho", "doc": "characters/misc/ateez-yunho" },
+      { "label": "Yeosang", "doc": "characters/misc/ateez-yeosang" },
+      { "label": "Hongjoong", "doc": "characters/misc/ateez-hongjoong" },
+      { "label": "Mingi", "doc": "characters/misc/ateez-mingi" },
+      { "label": "Wooyoung", "doc": "characters/misc/ateez-wooyoung" },
+      { "label": "Jongho", "doc": "characters/misc/ateez-jongho" }
+    ],
+
+    "destinyCard": "—",
+    "images": []
+  },
+
+  "ateez-mingi": {
+    "id": "ateez-mingi",
+    "title": "Song Mingi",
+    "imageSrc": "/img/characters/ateez/mingi.png",
+    "subtitle": "El Incendiador del Abismo",
+
+    "faction": { "label": "Los Piratas de la Marea Negra", "doc": "factions/marea-negra" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": ["Artillero Mayor", "Ingeniero de Demoliciones"],
+    "status": "Activo",
+
+    "dateOfBirth": "1999-08-09",
+    "age": 26,
+    "zodiac": "Leo ♌",
+    "mbti": "ENTP",
+
+    "race": "Humano",
+    "dynamic": "Alfa",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "Sí",
+
+    "hometown": { "label": "Cheonin, Jeyperia", "doc": "—" },
+    "actual_location": { "label": "—", "doc": "—" },
+
+    "realm": { "label": "Isla K'quor", "doc": "—" },
+
+    "class": "Artificier",
+    "subclass": "Artillerist",
+    "lvl": 8,
+
+    "firstAppearance": { "label": "Sesión 07", "doc": "campaign/sessions/07" },
+    "lastSeen": { "label": "Sesión 07", "doc": "campaign/sessions/07" },
+
+    "bonds": [
+      { "label": "Seonghwa", "doc": "characters/misc/ateez-seonghwa" },
+      { "label": "Yunho", "doc": "characters/misc/ateez-yunho" },
+      { "label": "Yeosang", "doc": "characters/misc/ateez-yeosang" },
+      { "label": "San", "doc": "characters/misc/ateez-san" },
+      { "label": "Hongjoong", "doc": "characters/misc/ateez-hongjoong" },
+      { "label": "Wooyoung", "doc": "characters/misc/ateez-wooyoung" },
+      { "label": "Jongho", "doc": "characters/misc/ateez-jongho" }
+    ],
+
+    "destinyCard": "8 de Corazones",
+    "images": []
+  },
+
+  "ateez-wooyoung": {
+    "id": "ateez-wooyoung",
+    "title": "Jung Wooyoung",
+    "imageSrc": "/img/characters/ateez/wooyoung.png",
+    "subtitle": "El Infiltrador Danzante",
+
+    "faction": { "label": "Los Piratas de la Marea Negra", "doc": "factions/marea-negra" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": ["Espía de la Tripulación", "Maestro de Infiltración"],
+    "status": "Activo",
+
+    "dateOfBirth": "1999-11-16",
+    "age": 26,
+    "zodiac": "Sagitario ♐",
+    "mbti": "ESFP",
+
+    "race": "Humano",
+    "dynamic": "Omega",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "Sí",
+
+    "hometown": { "label": "Borasek, Hyberia", "doc": "world/locations/borasek" },
+    "actual_location": { "label": "—", "doc": "—" },
+
+    "realm": { "label": "Isla K'quor", "doc": "—" },
+
+    "class": "Rogue",
+    "subclass": "Arcane Trickster",
+    "lvl": 8,
+
+    "firstAppearance": { "label": "Sesión 06", "doc": "campaign/sessions/06" },
+    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
+
+    "bonds": [
+      { "label": "Seonghwa", "doc": "characters/misc/ateez-seonghwa" },
+      { "label": "Yunho", "doc": "characters/misc/ateez-yunho" },
+      { "label": "Yeosang", "doc": "characters/misc/ateez-yeosang" },
+      { "label": "San", "doc": "characters/misc/ateez-san" },
+      { "label": "Mingi", "doc": "characters/misc/ateez-mingi" },
+      { "label": "Hongjoong", "doc": "characters/misc/ateez-hongjoong" },
+      { "label": "Jongho", "doc": "characters/misc/ateez-jongho" }
+    ],
+
+    "destinyCard": "—",
+    "images": []
+  },
+
+  "ateez-jongho": {
+    "id": "ateez-jongho",
+    "title": "Choi Jongho",
+    "imageSrc": "/img/characters/ateez/jongho.png",
+    "subtitle": "El Bastión Inquebrantable",
+
+    "faction": { "label": "Los Piratas de la Marea Negra", "doc": "factions/marea-negra" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": ["Guardián del Casco", "Defensor de la Marea Negra"],
+    "status": "Activo",
+
+    "dateOfBirth": "2000-10-12",
+    "age": 25,
+    "zodiac": "Libra ♎",
+    "mbti": "ISTJ",
+
+    "race": "Humano",
+    "dynamic": "Alfa",
+
+    "orientation": "Hetero",
+    "romantic_situation": "Soltero",
+    "poli": "Sí",
+
+    "hometown": { "label": "Kwangya, Sylmorien", "doc": "—" },
+    "actual_location": { "label": "—", "doc": "—" },
+
+    "realm": { "label": "Isla K'quor", "doc": "—" },
+
+    "class": "Barbarian",
+    "subclass": "Path of the Wild Heart",
+    "lvl": 8,
+
+    "firstAppearance": { "label": "Sesión 06", "doc": "campaign/sessions/06" },
+    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
+
+    "bonds": [
+      { "label": "Hongjoong", "doc": "characters/misc/ateez-hongjoong" },
+      { "label": "Seonghwa", "doc": "characters/misc/ateez-seonghwa" },
+      { "label": "Yunho", "doc": "characters/misc/ateez-yunho" },
+      { "label": "Yeosang", "doc": "characters/misc/ateez-yeosang" },
+      { "label": "San", "doc": "characters/misc/ateez-san" },
+      { "label": "Mingi", "doc": "characters/misc/ateez-mingi" },
+      { "label": "Wooyoung", "doc": "characters/misc/ateez-wooyoung" }
+    ],
+
+    "destinyCard": "—",
+    "images": []
+  },
+  "mx-shownu": {
+    "id": "mx-shownu",
+    "title": "Son Hyunwoo (Shownu)",
+    "imageSrc": "/img/characters/mx/shownu.png",
+    "subtitle": "El Coloso del Juramento Roto",
+
+    "faction": { "label": "Los Monstruos X", "doc": "factions/monstruos-x" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": ["Libertador de Fronteras", "Jefe de Seguridad del Casino"],
+    "status": "Activo",
+
+    "dateOfBirth": "1492-06-18",
+    "age": 533,
+    "zodiac": "Géminis ♊",
+    "mbti": "—",
+
+    "race": "Semi-Tiefling",
+    "dynamic": "Alfa",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "Sí",
+
+    "hometown": { "label": "—", "doc": "—" },
+    "actual_location": { "label": "Pikotam, Hyberia", "doc": "—" },
+
+    "realm": { "label": "Isla Estelar", "doc": "world/locations/isla-estelar" },
+
+    "class": "Paladin",
+    "subclass": "Oath of Redemption",
+    "lvl": 10,
+
+    "firstAppearance": { "label": "Sesión 08", "doc": "campaign/sessions/08" },
+    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
+
+    "bonds": [
+      { "label": "Minhyuk", "doc": "characters/misc/mx-minhyuk" },
+      { "label": "Kihyun", "doc": "characters/misc/mx-kihyun" },
+      { "label": "Hyungwon", "doc": "characters/misc/mx-hyungwon" },
+      { "label": "Joohoney", "doc": "characters/misc/mx-joohoney" },
+      { "label": "I.M.", "doc": "characters/misc/mx-im" }
+    ],
+
+    "destinyCard": "—",
+    "images": []
+  },
+
+  "mx-minhyuk": {
+    "id": "mx-minhyuk",
+    "title": "Lee Minhyuk",
+    "imageSrc": "/img/characters/mx/minhyuk.png",
+    "subtitle": "La Sonrisa que Esconde Cuchillos",
+
+    "faction": { "label": "Los Monstruos X", "doc": "factions/monstruos-x" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": ["Mensajero de la Revuelta", "Animador, Tahúr y Rostro Público del Casino"],
+    "status": "Activo",
+
+    "dateOfBirth": "1493-11-03",
+    "age": 532,
+    "zodiac": "Escorpio ♏",
+    "mbti": "—",
+
+    "race": "Semi-Tiefling",
+    "dynamic": "Alfa",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "Sí",
+
+    "hometown": { "label": "—", "doc": "—" },
+    "actual_location": { "label": "Pikotam, Hyberia", "doc": "—" },
+
+    "realm": { "label": "Isla Estelar", "doc": "world/locations/isla-estelar" },
+
+    "class": "Rogue",
+    "subclass": "Swashbuckler",
+    "lvl": 11,
+
+    "firstAppearance": { "label": "Sesión 08", "doc": "campaign/sessions/08" },
+    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
+
+    "bonds": [
+      { "label": "Shownu", "doc": "characters/misc/mx-shownu" },
+      { "label": "Kihyun", "doc": "characters/misc/mx-kihyun" },
+      { "label": "Hyungwon", "doc": "characters/misc/mx-hyungwon" },
+      { "label": "Joohoney", "doc": "characters/misc/mx-joohoney" },
+      { "label": "I.M.", "doc": "characters/misc/mx-im" }
+    ],
+
+    "destinyCard": "—",
+    "images": []
+  },
+
+  "mx-kihyun": {
+    "id": "mx-kihyun",
+    "title": "Yoo Kihyun",
+    "imageSrc": "/img/characters/mx/kihyun.png",
+    "subtitle": "La Voz que Incendia la Noche",
+
+    "faction": { "label": "Los Monstruos X", "doc": "factions/monstruos-x" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": ["Artillero de la Resistencia", "Maestro del Escenario y Supervisor de Espectáculos"],
+    "status": "Activo",
+
+    "dateOfBirth": "1493-11-22",
+    "age": 532,
+    "zodiac": "Sagitario ♐",
+    "mbti": "—",
+
+    "race": "Semi-Tiefling",
+    "dynamic": "Beta",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "Sí",
+
+    "hometown": { "label": "—", "doc": "—" },
+    "actual_location": { "label": "Pikotam, Hyberia", "doc": "—" },
+
+    "realm": { "label": "Isla Estelar", "doc": "world/locations/isla-estelar" },
+
+    "class": "Wizard",
+    "subclass": "Evoker",
+    "lvl": 12,
+
+    "firstAppearance": { "label": "Sesión 08", "doc": "campaign/sessions/08" },
+    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
+
+    "bonds": [
+      { "label": "Minhyuk", "doc": "characters/misc/mx-minhyuk" },
+      { "label": "Shownu", "doc": "characters/misc/mx-shownu" },
+      { "label": "Hyungwon", "doc": "characters/misc/mx-hyungwon" },
+      { "label": "Joohoney", "doc": "characters/misc/mx-joohoney" },
+      { "label": "I.M.", "doc": "characters/misc/mx-im" }
+    ],
+
+    "destinyCard": "—",
+    "images": []
+  },
+
+  "mx-hyungwon": {
+    "id": "mx-hyungwon",
+    "title": "Chae Hyungwon",
+    "imageSrc": "/img/characters/mx/hyungwon.png",
+    "subtitle": "El Ente del Tiempo",
+
+    "faction": { "label": "Los Monstruos X", "doc": "factions/monstruos-x" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": ["Cronista de la Liberación", "Observador del Salón y Guardián del Reloj Oculto"],
+    "status": "Activo",
+
+    "dateOfBirth": "1494-01-15",
+    "age": 531,
+    "zodiac": "Capricornio ♑",
+    "mbti": "—",
+
+    "race": "Semi-Tiefling",
+    "dynamic": "Omega",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "Sí",
+
+    "hometown": { "label": "—", "doc": "—" },
+    "actual_location": { "label": "Pikotam, Hyberia", "doc": "—" },
+
+    "realm": { "label": "Isla Estelar", "doc": "world/locations/isla-estelar" },
+
+    "class": "Wizard",
+    "subclass": "Chronurgist",
+    "lvl": 11,
+
+    "firstAppearance": { "label": "Sesión 08", "doc": "campaign/sessions/08" },
+    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
+
+    "bonds": [
+      { "label": "Minhyuk", "doc": "characters/misc/mx-minhyuk" },
+      { "label": "Kihyun", "doc": "characters/misc/mx-kihyun" },
+      { "label": "Shownu", "doc": "characters/misc/mx-shownu" },
+      { "label": "Joohoney", "doc": "characters/misc/mx-joohoney" },
+      { "label": "I.M.", "doc": "characters/misc/mx-im" }
+    ],
+
+    "destinyCard": "—",
+    "images": []
+  },
+
+  "mx-joohoney": {
+    "id": "mx-joohoney",
+    "title": "Lee Jooheon (Joohoney)",
+    "imageSrc": "/img/characters/mx/joohoney.png",
+    "subtitle": "El Trueno de la Insurrección",
+
+    "faction": { "label": "Los Monstruos X", "doc": "factions/monstruos-x" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": ["Demoledor de Cadenas", "Cobrador, Gladiador y Rompehuesos del Casino"],
+    "status": "Activo",
+
+    "dateOfBirth": "1494-10-06",
+    "age": 531,
+    "zodiac": "Libra ♎",
+    "mbti": "—",
+
+    "race": "Semi-Tiefling",
+    "dynamic": "Alfa",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "Sí",
+
+    "hometown": { "label": "—", "doc": "—" },
+    "actual_location": { "label": "Pikotam, Hyberia", "doc": "—" },
+
+    "realm": { "label": "Isla Estelar", "doc": "world/locations/isla-estelar" },
+
+    "class": "Barbarian",
+    "subclass": "Path of the Zealot",
+    "lvl": 10,
+
+    "firstAppearance": { "label": "Sesión 08", "doc": "campaign/sessions/08" },
+    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
+
+    "bonds": [
+      { "label": "Minhyuk", "doc": "characters/misc/mx-minhyuk" },
+      { "label": "Kihyun", "doc": "characters/misc/mx-kihyun" },
+      { "label": "Hyungwon", "doc": "characters/misc/mx-hyungwon" },
+      { "label": "Shownu", "doc": "characters/misc/mx-shownu" },
+      { "label": "I.M.", "doc": "characters/misc/mx-im" }
+    ],
+
+    "destinyCard": "—",
+    "images": []
+  },
+
+  "mx-im": {
+    "id": "mx-im",
+    "title": "Im Changkyun (I.M)",
+    "imageSrc": "/img/characters/mx/im.png",
+    "subtitle": "El Murmullo del Abismo",
+
+    "faction": { "label": "Los Monstruos X", "doc": "factions/monstruos-x" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": ["Espía de los Libertadores", "Corredor de Información y Negociador de Deudas"],
+    "status": "Activo",
+
+    "dateOfBirth": "1496-01-26",
+    "age": 529,
+    "zodiac": "Capricornio ♑",
+    "mbti": "—",
+
+    "race": "Semi-Tiefling",
+    "dynamic": "Alfa",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "Sí",
+
+    "hometown": { "label": "—", "doc": "—" },
+    "actual_location": { "label": "Pikotam, Hyberia", "doc": "—" },
+
+    "realm": { "label": "Isla Estelar", "doc": "world/locations/isla-estelar" },
+
+    "class": "Warlock",
+    "subclass": "The Great Old One",
+    "lvl": 10,
+
+    "firstAppearance": { "label": "Sesión 08", "doc": "campaign/sessions/08" },
+    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
+
+    "bonds": [
+      { "label": "Minhyuk", "doc": "characters/misc/mx-minhyuk" },
+      { "label": "Kihyun", "doc": "characters/misc/mx-kihyun" },
+      { "label": "Hyungwon", "doc": "characters/misc/mx-hyungwon" },
+      { "label": "Joohoney", "doc": "characters/misc/mx-joohoney" },
+      { "label": "Shownu", "doc": "characters/misc/mx-shownu" }
+    ],
+
+    "destinyCard": "—",
+    "images": []
+  },
+
+  "mx-wonho": {
+    "id": "mx-wonho",
+    "title": "Lee Hoseok (Wonho)",
+    "imageSrc": "/img/characters/mx/wonho.png",
+    "subtitle": "El Titán de la Última Muralla",
+
+    "faction": { "label": "Los Monstruos X", "doc": "factions/monstruos-x" },
+    "group": "misc",
+    "role": "Aliado (NPC)",
+
+    "occupation": ["Rompeasedios de la Liberación"],
+    "status": "Fallecido",
+
+    "dateOfBirth": "1493-03-01",
+    "age": 532,
+    "zodiac": "Piscis ♓",
+    "mbti": "—",
+
+    "race": "Semi-Tiefling",
+    "dynamic": "Omega",
+
+    "orientation": "Pan",
+    "romantic_situation": "Soltero",
+    "poli": "Sí",
+
+    "hometown": { "label": "—", "doc": "—" },
+    "actual_location": { "label": "—", "doc": "—" },
+
+    "realm": { "label": "Isla Estelar", "doc": "world/locations/isla-estelar" },
+
+    "class": "Fighter",
+    "subclass": "Rune Knight",
+    "lvl": 10,
+
+    "firstAppearance": { "label": "—", "doc": "—" },
+    "lastSeen": { "label": "—", "doc": "—" },
+
+    "bonds": [
+      { "label": "Shownu", "doc": "characters/misc/mx-shownu" },
+      { "label": "Minhyuk", "doc": "characters/misc/mx-minhyuk" },
+      { "label": "Kihyun", "doc": "characters/misc/mx-kihyun" },
+      { "label": "Hyungwon", "doc": "characters/misc/mx-hyungwon" },
+      { "label": "Joohoney", "doc": "characters/misc/mx-joohoney" },
+      { "label": "I.M.", "doc": "characters/misc/mx-im" }
+    ],
+
+    "destinyCard": "2 de Picas",
+    "images": []
+  }
+}

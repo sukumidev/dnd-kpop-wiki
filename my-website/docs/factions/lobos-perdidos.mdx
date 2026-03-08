@@ -1,0 +1,70 @@
+---
+title: "Los Lobos Perdidos"
+sidebar_label: "Los Lobos Perdidos"
+displayed_sidebar: wiki
+factionId: "lobos-perdidos"
+---
+
+import FactionPageFromDoc from '@site/src/components/FactionPageFromDoc';
+import Link from '@docusaurus/Link';
+import factions from '@site/src/data/factions.json';
+import FactionMembersFromDoc from '@site/src/components/FactionMembersFromDoc';
+
+
+<FactionPageFromDoc>
+
+## Resumen
+Los Lobos Perdidos son la manada más temida y respetada de Jeyperia: una fuerza independiente, nacida para proteger el reino cuando las instituciones fallan. Operan como una unidad de élite —mitad familia, mitad arma— y su sola presencia puede detener conflictos antes de que empiecen. Custodian secretos que el reino preferiría no saber… y cargas que nadie más podría sostener.
+Tras el hipersueño de Felix y el debilitamiento gradual de la energía lunar, la manada ha quedado atrapada entre lo sagrado y lo político: Jeyperia los necesita, pero también les teme. Y mientras el Clan del Sol Ardiente busca apagar la Luna para quebrarlos, los Lobos se convierten en el último muro antes del colapso del reino.
+
+## Propósito
+- Proteger Jeyperia desde las sombras, sin depender de la burocracia ni de alianzas frágiles.
+- Mantener la estabilidad lunar y defender los lugares sagrados ligados a la Noche y los Sueños.
+- Neutralizar amenazas estratégicas (sabotaje, rituales, facciones extremistas) antes de que se vuelvan guerras.
+- Custodiar a Felix, Ente de los Sueños, cuya existencia impacta directamente el equilibrio del reino.
+- Preservar a la manada: ningún lobo se abandona, aunque el mundo pida sacrificios.
+
+## Miembros
+<FactionMembersFromDoc />
+
+## Sub-unidades
+
+{(factions["lobos-perdidos"]?.subunits ?? []).map((u) => (
+  <div key={u.name} style={{ marginBottom: "1.25rem" }}>
+    <h3>{u.name}</h3>
+
+    {u.role ? <p><b>Rol:</b> {u.role}</p> : null}
+
+    {u.leader ? (
+      <p>
+        <b>Líder:</b>{" "}
+        <Link to={`/${u.leader.doc}`}>{u.leader.label}</Link>
+      </p>
+    ) : null}
+
+    {u.bullets?.length ? (
+      <ul>
+        {u.bullets.map((b, i) => (
+          <li key={i}>{b}</li>
+        ))}
+      </ul>
+    ) : null}
+
+    {u.members?.length ? (
+      <p>
+        <b>Miembros:</b>{" "}
+        {u.members.map((m, i) => (
+          <span key={m.doc}>
+            <Link to={`/${m.doc}`}>{m.label}</Link>
+            {i < u.members.length - 1 ? " · " : ""}
+          </span>
+        ))}
+      </p>
+    ) : null}
+  </div>
+))}
+
+## Apariciones en campaña
+- …
+
+</FactionPageFromDoc>

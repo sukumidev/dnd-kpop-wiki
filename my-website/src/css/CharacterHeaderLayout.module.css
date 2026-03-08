@@ -1,0 +1,19 @@
+.wrap {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 16px;
+  align-items: start;
+  margin-bottom: 0; 
+}
+
+/* En pantallas medianas/pequeñas, que se apile */
+@media (max-width: 996px) {
+  .wrap {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Evita que cards “se estiren raro” */
+.left, .right {
+  min-width: 0;
+}

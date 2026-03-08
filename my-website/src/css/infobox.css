@@ -1,0 +1,291 @@
+/* src/css/infobox.css */
+/* Wikipedia-ish Infobox (fantasy moderno) — tuned with class accent */
+
+.infobox {
+  float: right;
+  width: 360px;
+  max-width: 100%;
+  margin: 0 0 1rem 1.25rem;
+  border-radius: 18px;
+  overflow: hidden;
+  min-height: 80px;
+
+  /* Accent system (default) */
+  --accent: rgba(120,140,255,.95);
+  --accentGlow: rgba(120,140,255,.18);
+
+  position: relative;
+  border: 1px solid rgba(255,255,255,.08);
+  background: rgba(255,255,255,.02);
+  box-shadow:
+    0 18px 40px rgba(0,0,0,.25),
+    inset 0 1px 0 rgba(255,255,255,.05);
+}
+
+/* Class-based accents */
+/* 14 classes — accents */
+/* Paladin — amarillo */
+.infobox[data-accent="paladin"]{
+  --accent: rgba(255, 212, 92, .95);
+  --accentGlow: rgba(255, 212, 92, .18);
+}
+
+/* Warlock — morado azuloso */
+.infobox[data-accent="warlock"]{
+  --accent: rgba(140, 120, 255, .95);
+  --accentGlow: rgba(140, 120, 255, .20);
+}
+
+/* Bard — rosa */
+.infobox[data-accent="bard"]{
+  --accent: rgba(255, 120, 200, .95);
+  --accentGlow: rgba(255, 120, 200, .18);
+}
+
+/* Ranger — verde menta */
+.infobox[data-accent="ranger"]{
+  --accent: rgba(120, 255, 205, .95);
+  --accentGlow: rgba(120, 255, 205, .16);
+}
+
+/* Druid — verde lima */
+.infobox[data-accent="druid"]{
+  --accent: rgba(185, 255, 90, .95);
+  --accentGlow: rgba(185, 255, 90, .16);
+}
+
+/* Artificier — dorado/ocre */
+.infobox[data-accent="artificier"],
+.infobox[data-accent="artificer"]{
+  --accent: rgba(214, 170, 80, .95);
+  --accentGlow: rgba(214, 170, 80, .18);
+}
+
+/* Sorcerer — naranja */
+.infobox[data-accent="sorcerer"]{
+  --accent: rgba(255, 160, 80, .95);
+  --accentGlow: rgba(255, 160, 80, .18);
+}
+
+/* Cleric — blanco */
+.infobox[data-accent="cleric"]{
+  --accent: rgba(245, 250, 255, .95);
+  --accentGlow: rgba(245, 250, 255, .14);
+}
+
+/* Barbarian — rojo */
+.infobox[data-accent="barbarian"]{
+  --accent: rgba(255, 90, 90, .95);
+  --accentGlow: rgba(255, 90, 90, .20);
+}
+
+/* Fighter — azul rey */
+.infobox[data-accent="fighter"]{
+  --accent: rgba(80, 140, 255, .95);
+  --accentGlow: rgba(80, 140, 255, .20);
+}
+
+/* Monk — turquesa claro */
+.infobox[data-accent="monk"]{
+  --accent: rgba(120, 235, 255, .95);
+  --accentGlow: rgba(120, 235, 255, .16);
+}
+
+/* Wizard — morado rosado */
+.infobox[data-accent="wizard"]{
+  --accent: rgba(210, 120, 255, .95);
+  --accentGlow: rgba(210, 120, 255, .20);
+}
+
+/* Rogue — gris */
+.infobox[data-accent="rogue"]{
+  --accent: rgba(180, 190, 205, .95);
+  --accentGlow: rgba(180, 190, 205, .18);
+}
+
+/* Blood Hunter — rojo sangre */
+.infobox[data-accent="bloodhunter"],
+.infobox[data-accent="blood-hunter"],
+.infobox[data-accent="blood_hunter"]{
+  --accent: rgba(190, 30, 60, .95);
+  --accentGlow: rgba(190, 30, 60, .22);
+}
+
+/* Accent strip top */
+.infobox::before{
+  content:"";
+  position:absolute;
+  inset:0 0 auto 0;
+  height:3px;
+  background: var(--accent);
+  opacity:.9;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  z-index: 2;
+}
+
+/* Soft glow */
+.infobox::after{
+  content:"";
+  position:absolute;
+  width: 260px;
+  height: 260px;
+  right: -130px;
+  top: -130px;
+  background: radial-gradient(circle, var(--accentGlow), rgba(0,0,0,0) 70%);
+  filter: blur(2px);
+  pointer-events:none;
+  z-index: 1;
+}
+
+/* En pantallas medianas, que no se haga micro */
+@media (max-width: 1200px) {
+  .infobox { width: 340px; }
+}
+
+/* En móvil, full width */
+@media (max-width: 996px) {
+  .infobox {
+    float: none;
+    width: 100%;
+    margin: 0 0 1rem 0;
+  }
+}
+
+.infobox__header {
+  padding: 0.75rem 0.9rem;
+  text-align: center;
+  background: rgba(7, 10, 18, 0.55);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+  position: relative;
+  z-index: 3; /* arriba del glow */
+}
+
+.infobox__figure {
+  margin: 0;
+  position: relative;
+  z-index: 3;
+}
+
+.infobox__img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.infobox__caption {
+  padding: 0.5rem 0.85rem;
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+  position: relative;
+  z-index: 3;
+}
+
+.infobox__section {
+  border-top: 1px solid rgba(255, 255, 255, 0.10);
+  position: relative;
+  z-index: 3;
+}
+
+.infobox__sectionTitle {
+  padding: 0.55rem 0.85rem;
+  font-weight: 800;
+  font-size: 0.78rem;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.85);
+
+  /* was purple fixed; now neutral + accent marker */
+  background: rgba(255,255,255,0.04);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.04);
+}
+
+.infobox__sectionTitle::before{
+  content:"";
+  display:inline-block;
+  width:10px;
+  height:10px;
+  border-radius:999px;
+  background: var(--accent);
+  margin-right: 10px;
+  vertical-align: -1px;
+  box-shadow: 0 0 18px var(--accentGlow);
+}
+
+/* Table */
+.infobox__table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+/* Fix: Infima convierte tables en block + overflow, eso crea “huecos” */
+.infobox .infobox__table {
+  display: table !important;
+  width: 100% !important;
+  table-layout: fixed;
+  overflow: visible !important;
+}
+
+.infobox__table th,
+.infobox__table td {
+  min-width: 0;
+  padding: 0.55rem 0.75rem !important;
+  line-height: 1.25;
+  vertical-align: middle;
+  background: transparent !important;
+  box-shadow: none !important;
+  filter: none !important;
+  display: table-cell;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.infobox__table th:last-child,
+.infobox__table td:last-child {
+  border-right: none;
+}
+
+.infobox__table tr:last-child th,
+.infobox__table tr:last-child td {
+  border-bottom: none !important;
+}
+
+/* labels */
+.infobox__table th {
+  width: 42%;
+  /* antes: nowrap -> eso rompe en labels largos */
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: normal;
+
+  background: rgba(255,255,255,0.03) !important;
+  border-right: 1px solid rgba(255,255,255,0.10);
+  box-shadow: inset 2px 0 0 var(--accentGlow);
+}
+
+/* values */
+.infobox__table td {
+  background: rgba(255, 255, 255, 0.02) !important;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 420px) {
+  .infobox__table th { white-space: normal; }
+}
+
+/* Links dentro del infobox: sin highlight raro */
+.infobox a {
+  background: transparent !important;
+}
+
+.infobox__table code {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+}

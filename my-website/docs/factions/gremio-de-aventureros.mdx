@@ -1,0 +1,66 @@
+---
+title: "El Gremio de Aventureros"
+sidebar_label: "Gremio de Aventureros"
+displayed_sidebar: wiki
+factionId: "gremio-de-aventureros"
+---
+
+import FactionPageFromDoc from '@site/src/components/FactionPageFromDoc';
+import Link from '@docusaurus/Link';
+import factions from '@site/src/data/factions.json';
+import FactionMembersFromDoc from '@site/src/components/FactionMembersFromDoc';
+
+<FactionPageFromDoc>
+
+## Resumen
+Un gremio recién fundado en Hyberia por los Soñadores del Arrozal tras años de abandono del reino. Nació como un espacio seguro donde aventureros sin hogar, campesinos sin protección y héroes olvidados puedan entrenar, aprender y reconstruir sus vidas.  
+Es el primer gremio formal en décadas, símbolo de esperanza en una Hyberia rota. Ofrece misiones, recursos, vivienda temporal y una comunidad cálida que celebra cada pequeño triunfo con risas, comida y mucho chisme.  
+Su creación marca un renacimiento político y social en el reino, pues su existencia desafía a la autoridad del Rey Bang PD, quien permitió que Hyberia cayera en decadencia.  
+
+## Propósito
+- …
+
+## Miembros
+<FactionMembersFromDoc />
+
+## Sub-unidades
+
+{(factions["gremio-de-aventureros"]?.subunits ?? []).map((u) => (
+  <div key={u.name} style={{ marginBottom: "1.25rem" }}>
+    <h3>{u.name}</h3>
+
+    {u.role ? <p><b>Rol:</b> {u.role}</p> : null}
+
+    {u.leader ? (
+      <p>
+        <b>Líder:</b>{" "}
+        <Link to={`/${u.leader.doc}`}>{u.leader.label}</Link>
+      </p>
+    ) : null}
+
+    {u.bullets?.length ? (
+      <ul>
+        {u.bullets.map((b, i) => (
+          <li key={i}>{b}</li>
+        ))}
+      </ul>
+    ) : null}
+
+    {u.members?.length ? (
+      <p>
+        <b>Miembros:</b>{" "}
+        {u.members.map((m, i) => (
+          <span key={m.doc}>
+            <Link to={`/${m.doc}`}>{m.label}</Link>
+            {i < u.members.length - 1 ? " · " : ""}
+          </span>
+        ))}
+      </p>
+    ) : null}
+  </div>
+))}
+
+## Apariciones en campaña
+- …
+
+</FactionPageFromDoc>

@@ -1,0 +1,39 @@
+[
+  {
+    "id": "01",
+    "number": 1,
+    "title": "Llegada al Valle del Arrozal",
+    "date": "2025-03-23",
+    "arc": "Acto I",
+    "realm": "Hyberia",
+    "location": ["Valle Dorado"],
+    "cover": {
+      "src": "/img/sessions/s01/cover.webp",
+      "alt": "Valle del Arrozal al amanecer",
+      "caption": "Primera vista del Valle Dorado"
+    },
+
+    "images": [
+      {
+        "src": "/img/sessions/s01/map.webp",
+        "alt": "Battlemaps del Valle Dorado",
+        "caption": "Zona de llegada"
+      },
+      {
+        "src": "/img/sessions/s01/npc.webp",
+        "alt": "Primer NPC del arco",
+        "caption": "El guía del arrozal"
+      }
+    ],
+    "tags": [
+      { "label": "🃏 Baraja del Destino", "doc": "lore/baraja-del-destino" },
+      { "label": "🩸 Hijos de la Noche", "doc": "factions/hijos-de-la-noche" },
+      { "label": "🌾 Gremio de Aventureros", "doc": "factions/gremio-de-aventureros" }
+    ],
+    "highlights": [
+      "La party revive por la carta.",
+      "Se revela el tema de sacrificios."
+    ],
+    "href": "/docs/campaing/sessions/s01"
+  }
+]

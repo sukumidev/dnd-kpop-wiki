@@ -1,0 +1,34 @@
+/* src/components/CharacterSplitLayout.module.css */
+.wrap{
+  display:grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  grid-template-areas:
+    "stat side"
+    "body side";
+  gap: 18px;
+  align-items:start;
+  margin: 14px 0 22px;
+}
+
+.side{
+  grid-area: side;
+  position: sticky;
+  top: calc(var(--ifm-navbar-height) + 12px);
+}
+
+.stat{ grid-area: stat; min-width:0; }
+.body{ grid-area: body; min-width:0; }
+
+/* MOBILE: Infobox -> Statblock -> Body */
+@media (max-width: 860px){
+  .wrap{
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "side"
+      "stat"
+      "body";
+  }
+  .side{
+    position: static;
+  }
+}

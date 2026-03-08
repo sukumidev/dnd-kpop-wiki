@@ -1,0 +1,86 @@
+/**
+ * Global CSS entrypoint
+ */
+
+/* Importa estilos por feature */
+@import "./infobox.css";
+@import "./chips.css";
+
+/* Variables Infima */
+:root {
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Navbar tweaks */
+.navbar__logo {
+  display: none !important;
+}
+
+/* Markdown lists */
+.theme-doc-markdown ul {
+  margin-top: 0.6rem;
+  margin-bottom: 1rem;
+  padding-left: 1.2rem;
+}
+
+.theme-doc-markdown li {
+  margin: 0.35rem 0;
+  line-height: 1.55;
+}
+
+.theme-doc-markdown ul li::marker {
+  color: rgba(0, 229, 255, 0.8);
+}
+
+@media (max-width: 1400px) {
+  /* Sidebar container real en tu DOM */
+  .theme-doc-sidebar-container,
+  [class*="docSidebarContainer"],
+  [class*="theme-doc-sidebar-container"] {
+    position: fixed !important;
+    top: var(--navbar-height);
+    left: -320px;
+    width: 300px;
+    height: calc(100vh - var(--navbar-height));
+    z-index: 9998;
+    transition: left 0.2s ease;
+    background: var(--ifm-background-color);
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+    overflow-y: auto;
+  }
+
+  /* open */
+  html.hally-sidebar-open .theme-doc-sidebar-container,
+  html.hally-sidebar-open [class*="docSidebarContainer"],
+  html.hally-sidebar-open [class*="theme-doc-sidebar-container"] {
+    left: 0;
+  }
+
+  /* overlay */
+  html.hally-sidebar-open::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 9997;
+  }
+}
