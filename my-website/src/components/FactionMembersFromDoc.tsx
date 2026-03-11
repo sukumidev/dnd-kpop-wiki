@@ -49,8 +49,8 @@ export default function FactionMembersFromDoc() {
     <Link to={`/characters/${character.group ?? 'misc'}/${id}`}>
       {character.title ?? id}
     </Link>
-    {(character.occupation?.[0] || character.role) ? (
-      <> — {character.occupation?.[0] ?? character.role}</>
+    {(character.subtitle || character.role) ? (
+      <> — {character.subtitle ?? character.role}</>
     ) : null}
   </li>
 ))}

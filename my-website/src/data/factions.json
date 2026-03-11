@@ -7,18 +7,18 @@
 
     "type": "Gremio / Facción",
     "reputation": "Respetados (y temidos cuando toca)",
-    "base": { "label": "Hyberia", "doc": "world/realms/hyberia" },
+    "base": { "label": "Sector 17", "doc": "—" },
     "realm": "Hyberia",
     "realmRef": { "label": "Hyberia", "doc": "world/realms/hyberia" },
 
     "goal": "Proteger rutas, resolver crisis locales y mantener el balance de poder en Hyberia.",
     "methods": "Contratos • diplomacia • misiones • fuerza cuando es necesario",
 
-    "leader": { "label": "S.Coups", "doc": "characters/svt-scoups" },
+    "leader": { "label": "S.Coups", "doc": "characters/misc/svt-scoups" },
     "keyMembers": [
-      { "label": "S.Coups", "doc": "characters/svt-scoups" },
-      { "label": "Jeonghan", "doc": "characters/svt-jeonghan" },
-      { "label": "Joshua", "doc": "characters/svt-joshua" },
+      { "label": "S.Coups", "doc": "characters/misc/svt-scoups" },
+      { "label": "Jeonghan", "doc": "characters/misc/svt-jeonghan" },
+      { "label": "Joshua", "doc": "characters/misc/svt-joshua" },
       { "label": "Jun", "doc": "characters/misc/svt-jun" },
       { "label": "Hoshi", "doc": "characters/misc/svt-hoshi" },
       { "label": "Woozi", "doc": "characters/svt-woozi" },

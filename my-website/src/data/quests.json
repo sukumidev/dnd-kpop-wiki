@@ -1,0 +1,228 @@
+{
+  "mq-collect-cards": {
+    "id": "mq-collect-cards",
+    "sessionStarted": 1,
+    "lastUpdatedSession": 11,
+    "title": "Recolectar la Baraja del Destino",
+    "subtitle": "Las 54 cartas que decidirán el destino del mundo",
+    "types": ["main"],
+    "status": "active",
+    "visibility": "public",
+    "summary": "La party debe encontrar, proteger o reclamar las 54 cartas de la Baraja del Destino antes de que caigan en manos de facciones que buscan alterar el equilibrio del mundo.",
+    "description": "Las cartas de la Baraja del Destino están ligadas a almas, linajes y fuerzas antiguas. Algunas ya han despertado, otras siguen ocultas y varias están siendo perseguidas por enemigos que desean manipular el orden del mundo. Reunir la baraja no solo implica localizar cartas o portadores: también exige descubrir la verdad sobre el destino, los sacrificios y las consecuencias de alterar el equilibrio.",
+    "progress": {
+      "mode": "manual",
+      "current": 0,
+      "goal": 54
+    },
+    "questGiver": {
+      "label": "La Carta del Destino",
+      "doc": "lore/baraja-del-destino"
+    },
+    "factions": [],
+    "rewards": [
+      "Experiencia",
+      "Acceso a la verdad sobre la Baraja del Destino",
+      "Ventaja narrativa contra facciones enemigas"
+    ],
+    "tags": [
+      "baraja del destino",
+      "cartas legendarias",
+      "portadores",
+      "destino"
+    ],
+    "accent": "gold",
+    "isRepeatable": false,
+    "notes": "Quest principal de toda la campaña.",
+    "sortOrder": 1
+  },
+
+  "mq-protect-holders": {
+    "id": "mq-protect-holders",
+    "sessionStarted": 11,
+    "lastUpdatedSession": null,
+    "parentQuestId": "mq-collect-cards",
+    "title": "Proteger a los Portadores de la Baraja del Destino",
+    "subtitle": "Ningún alma marcada debe caer",
+    "types": ["main"],
+    "status": "active",
+    "visibility": "public",
+    "summary": "La party debe identificar, proteger y poner a salvo a los portadores conocidos de la Baraja del Destino antes de que facciones enemigas los capturen, corrompan o sacrifiquen.",
+    "description": "Muchas de las cartas de la Baraja del Destino están ligadas a almas vivas, lo que convierte a sus portadores en objetivos prioritarios para facciones que desean torcer el destino. Protegerlos implica encontrarlos, anticipar amenazas, frustrar intentos de captura y construir una red de apoyo capaz de mantenerlos con vida.",
+    "progress": {
+      "mode": "manual",
+      "current": 0,
+      "goal": 4
+    },
+    "factions": [],
+    "rewards": [
+      "Supervivencia de portadores clave",
+      "Nuevos aliados vinculados a cartas activas",
+      "Mayor control narrativo sobre el destino de la Baraja"
+    ],
+    "tags": [
+      "portadores",
+      "protección",
+      "baraja del destino"
+    ],
+    "accent": "gold",
+    "isRepeatable": false,
+    "notes": "Quest paraguas centrada en la seguridad de los portadores.",
+    "sortOrder": 2
+  },
+
+  "mq-unlink-holders": {
+    "id": "mq-unlink-holders",
+    "sessionStarted": 12,
+    "lastUpdatedSession": null,
+    "parentQuestId": "mq-protect-holders",
+    "title": "Descubrir cómo Desvincular las Cartas del Destino del Alma de los Portadores",
+    "subtitle": "Romper el lazo entre destino y alma",
+    "types": ["main"],
+    "status": "active",
+    "visibility": "public",
+    "summary": "La party debe investigar si existe una forma de separar las cartas del destino de las almas a las que están vinculadas sin destruir a sus portadores.",
+    "description": "Las cartas no son simples reliquias: están unidas a almas vivas, pactos antiguos y fuerzas que parecen anteriores a la memoria misma. Si la party desea salvar a los portadores sin condenarlos a cargar con ese vínculo para siempre, deberá encontrar una forma de romper el lazo sin sacrificar la vida o la esencia de quienes portan el destino.",
+    "progress": {
+      "mode": "manual",
+      "current": 0,
+      "goal": 1
+    },
+    "factions": [],
+    "rewards": [
+      "Posible método para salvar portadores vinculados",
+      "Información crucial sobre la naturaleza real de la Baraja",
+      "Ventaja contra rituales enemigos"
+    ],
+    "tags": [
+      "almas",
+      "portadores",
+      "ritual",
+      "investigación"
+    ],
+    "accent": "gold",
+    "isRepeatable": false,
+    "notes": "Subquest de investigación mayor con implicaciones de late game.",
+    "sortOrder": 3
+  },
+
+  "mq-protect-seunghan": {
+    "id": "mq-protect-seunghan",
+    "sessionStarted": 11,
+    "lastUpdatedSession": 11,
+    "parentQuestId": "mq-protect-holders",
+    "title": "Proteger a Seunghan",
+    "subtitle": "Un alma sylmoriana que tiene que ser salvada",
+    "types": ["main", "faction"],
+    "status": "active",
+    "visibility": "public",
+    "summary": "La party debe mantener a Seunghan a salvo mientras investiga por qué su alma parece estar ligada a un destino mayor y por qué se ha convertido en un objetivo vulnerable.",
+    "description": "Seunghan, un alma sylmoriana marcada por fuerzas que la party aún no comprende del todo, corre peligro de caer en manos enemigas. Protegerlo implica no solo esconderlo o escoltarlo, sino entender qué lo hace importante, quién podría querer usarlo y cómo evitar que se convierta en otra víctima del conflicto por la Baraja del Destino.",
+    "progress": {
+      "mode": "manual",
+      "current": 0,
+      "goal": 1
+    },
+    "factions": [
+      {
+        "label": "Los Guerreros Ascendidos",
+        "doc": "factions/guerreros-ascendidos"
+      }
+    ],
+    "rewards": [
+      "Supervivencia de Seunghan",
+      "Posible aliado clave",
+      "Avance en la protección de portadores"
+    ],
+    "tags": [
+      "seunghan",
+      "protección",
+      "sylmorien",
+      "portadores"
+    ],
+    "accent": "purple",
+    "isRepeatable": false,
+    "notes": "Quest centrada en personaje con peso emocional y político.",
+    "sortOrder": 4
+  },
+
+  "mq-protect-wishies": {
+    "id": "mq-protect-wishies",
+    "sessionStarted": 11,
+    "lastUpdatedSession": null,
+    "parentQuestId": "mq-protect-holders",
+    "title": "Proteger a los miembros de la Casa de los Deseos",
+    "subtitle": "Los Wishitos bajo la amenaza de Taeil",
+    "types": ["main", "faction"],
+    "status": "active",
+    "visibility": "public",
+    "summary": "La party debe proteger a los miembros de la Casa de los Deseos, cuya existencia y vínculos con los deseos los convierten en objetivos prioritarios para Taeil y otras fuerzas enemigas.",
+    "description": "Los wishitos no son solo seres extraordinarios: están profundamente ligados a deseos, consecuencias y fuerzas que podrían rozar la Baraja del Destino. Bajo la amenaza directa de Taeil, la party debe evitar que sean capturados, usados como moneda de cambio o sacrificados en planes mayores.",
+    "progress": {
+      "mode": "manual",
+      "current": 0,
+      "goal": 1
+    },
+    "factions": [
+      {
+        "label": "Los Neo Culturales Tecnológicos",
+        "doc": "factions/neo-culturales-tecnologicos"
+      }
+    ],
+    "rewards": [
+      "Supervivencia de aliados clave",
+      "Acceso a conocimiento sobre deseos y consecuencias",
+      "Ventaja contra Taeil y sus planes"
+    ],
+    "tags": [
+      "wishitos",
+      "casa de los deseos",
+      "taeil",
+      "protección"
+    ],
+    "accent": "pink",
+    "isRepeatable": false,
+    "notes": "Quest de facción conectada a la seguridad de aliados excepcionales.",
+    "sortOrder": 5
+  },
+
+  "mq-recover-stolen-cards": {
+    "id": "mq-recover-stolen-cards",
+    "sessionStarted": null,
+    "lastUpdatedSession": null,
+    "parentQuestId": "mq-collect-cards",
+    "title": "Recuperar las Cartas Robadas",
+    "subtitle": "Cartas robadas por los Piratas de la Dimensión Z",
+    "types": ["main", "faction"],
+    "status": "active",
+    "visibility": "public",
+    "summary": "La party debe rastrear y recuperar las cartas de la Baraja del Destino que fueron robadas por los Piratas de la Dimensión Z antes de que desaparezcan, sean vendidas o caigan en manos aún peores.",
+    "description": "No todas las cartas permanecen ocultas o ligadas a portadores indefensos: algunas ya fueron arrebatadas y ahora están en circulación entre fuerzas peligrosas. Los Piratas de la Dimensión Z han robado parte de la Baraja, y recuperarla exigirá rastreo, confrontación, negociación o infiltración, dependiendo de quién las posea y qué tan lejos estén dispuestos a llegar para conservarlas.",
+    "progress": {
+      "mode": "manual",
+      "current": 1,
+      "goal": 4
+    },
+    "factions": [
+      {
+        "label": "Los Piratas de la Marea Negra",
+        "doc": "factions/marea-negra"
+      }
+    ],
+    "rewards": [
+      "Recuperación de cartas activas de la Baraja",
+      "Información sobre el mercado o circulación de cartas robadas",
+      "Avance directo en la main quest"
+    ],
+    "tags": [
+      "cartas robadas",
+      "baraja del destino",
+      "piratas",
+      "recuperación"
+    ],
+    "accent": "blue",
+    "isRepeatable": false,
+    "notes": "Quest de recuperación ligada al movimiento de cartas fuera del control de la party.",
+    "sortOrder": 6
+  }
+}
