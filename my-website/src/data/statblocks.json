@@ -463,5 +463,387 @@
   "resistances": [],
   "vulnerability": [],
   "immunity": []
+},
+"skz-bangchan": {
+  "id": "skz-bangchan",
+  "classes": [
+    { "name": "Fighter", "level": 11, "subclass": "Psi Warrior" }
+  ],
+  "race": "Human",
+  "alignment": "Lawful Good",
+  "proficiencyBonus": 4,
+  "initiative": 2,
+  "ac": 18,
+  "hp": 98,
+  "speed": "30 ft",
+  "passivePerception": 13,
+
+  "str": 18,
+  "dex": 14,
+  "con": 16,
+  "int": 14,
+  "wis": 12,
+  "cha": 13,
+
+  "savingThrows": {
+    "str": 8,
+    "dex": 2,
+    "con": 7,
+    "int": 2,
+    "wis": 1,
+    "cha": 1
+  },
+
+  "resistances": ["Psychic"],
+  "vulnerability": [],
+  "immunity": []
+},
+
+"skz-leeknow": {
+  "id": "skz-leeknow",
+  "classes": [
+    { "name": "Ranger", "level": 11, "subclass": "Beast Master" }
+  ],
+  "race": "Human",
+  "alignment": "Neutral Good",
+  "proficiencyBonus": 4,
+  "initiative": 4,
+  "ac": 16,
+  "hp": 92,
+  "speed": "30 ft",
+  "passivePerception": 16,
+
+  "str": 12,
+  "dex": 18,
+  "con": 14,
+  "int": 11,
+  "wis": 16,
+  "cha": 10,
+
+  "savingThrows": {
+    "str": 1,
+    "dex": 4,
+    "con": 2,
+    "int": 0,
+    "wis": 7,
+    "cha": 0
+  },
+
+  "resistances": [],
+  "vulnerability": [],
+  "immunity": []
+},
+
+"skz-hyunjin": {
+  "id": "skz-hyunjin",
+  "classes": [
+    { "name": "Fighter", "level": 11, "subclass": "Battle Master" }
+  ],
+  "race": "Human",
+  "alignment": "Chaotic Good",
+  "proficiencyBonus": 4,
+  "initiative": 4,
+  "ac": 17,
+  "hp": 95,
+  "speed": "30 ft",
+  "passivePerception": 12,
+
+  "str": 16,
+  "dex": 18,
+  "con": 14,
+  "int": 12,
+  "wis": 10,
+  "cha": 13,
+
+  "savingThrows": {
+    "str": 7,
+    "dex": 4,
+    "con": 6,
+    "int": 1,
+    "wis": 0,
+    "cha": 1
+  },
+
+  "resistances": [],
+  "vulnerability": [],
+  "immunity": []
+},
+
+"skz-felix": {
+  "id": "skz-felix",
+  "classes": [
+    { "name": "Monk", "level": 11, "subclass": "Way of the Astral Self" }
+  ],
+  "race": "Human",
+  "alignment": "Neutral Good",
+  "proficiencyBonus": 4,
+  "initiative": 5,
+  "ac": 18,
+  "hp": 88,
+  "speed": "50 ft",
+  "passivePerception": 15,
+
+  "str": 10,
+  "dex": 20,
+  "con": 14,
+  "int": 11,
+  "wis": 18,
+  "cha": 12,
+
+  "savingThrows": {
+    "str": 0,
+    "dex": 9,
+    "con": 2,
+    "int": 0,
+    "wis": 8,
+    "cha": 1
+  },
+
+  "resistances": [],
+  "vulnerability": [],
+  "immunity": []
+},
+"enha-jungwon": {
+  "id": "enha-jungwon",
+  "classes": [
+    { "name": "Cleric", "level": 9, "subclass": "Twilight Domain" }
+  ],
+  "race": "Human",
+  "alignment": "Lawful Neutral",
+  "proficiencyBonus": 4,
+  "initiative": 1,
+  "ac": 18,
+  "hp": 276,
+  "speed": "30 ft",
+  "passivePerception": 15,
+
+  "str": 12,
+  "dex": 12,
+  "con": 14,
+  "int": 11,
+  "wis": 18,
+  "cha": 14,
+
+  "savingThrows": {
+    "str": 1,
+    "dex": 1,
+    "con": 2,
+    "int": 0,
+    "wis": 8,
+    "cha": 6
+  },
+
+  "resistances": ["Radiant"],
+  "vulnerability": [],
+  "immunity": []
+},
+
+"enha-heeseung": {
+  "id": "enha-heeseung",
+  "classes": [
+    { "name": "Wizard", "level": 9, "subclass": "Necromancer" }
+  ],
+  "race": "Human",
+  "alignment": "Neutral Evil",
+  "proficiencyBonus": 4,
+  "initiative": 2,
+  "ac": 14,
+  "hp": 258,
+  "speed": "30 ft",
+  "passivePerception": 12,
+
+  "str": 8,
+  "dex": 14,
+  "con": 14,
+  "int": 18,
+  "wis": 12,
+  "cha": 13,
+
+  "savingThrows": {
+    "str": -1,
+    "dex": 2,
+    "con": 2,
+    "int": 8,
+    "wis": 5,
+    "cha": 1
+  },
+
+  "resistances": ["Necrotic"],
+  "vulnerability": ["Radiant"],
+  "immunity": []
+},
+
+"enha-jay": {
+  "id": "enha-jay",
+  "classes": [
+    { "name": "Paladin", "level": 9, "subclass": "Oath of Vengeance" }
+  ],
+  "race": "Human",
+  "alignment": "Lawful Good",
+  "proficiencyBonus": 4,
+  "initiative": 0,
+  "ac": 19,
+  "hp": 289,
+  "speed": "30 ft",
+  "passivePerception": 12,
+
+  "str": 18,
+  "dex": 10,
+  "con": 16,
+  "int": 10,
+  "wis": 12,
+  "cha": 16,
+
+  "savingThrows": {
+    "str": 8,
+    "dex": 0,
+    "con": 3,
+    "int": 0,
+    "wis": 5,
+    "cha": 7
+  },
+
+  "resistances": [],
+  "vulnerability": ["Radiant"],
+  "immunity": []
+},
+
+"enha-sunghoon": {
+  "id": "enha-sunghoon",
+  "classes": [
+    { "name": "Fighter", "level": 9, "subclass": "Champion" }
+  ],
+  "race": "Human",
+  "alignment": "Neutral",
+  "proficiencyBonus": 4,
+  "initiative": 3,
+  "ac": 18,
+  "hp": 292,
+  "speed": "30 ft",
+  "passivePerception": 13,
+
+  "str": 18,
+  "dex": 16,
+  "con": 16,
+  "int": 10,
+  "wis": 12,
+  "cha": 11,
+
+  "savingThrows": {
+    "str": 8,
+    "dex": 3,
+    "con": 7,
+    "int": 0,
+    "wis": 1,
+    "cha": 0
+  },
+
+  "resistances": [],
+  "vulnerability": ["Radiant"],
+  "immunity": []
+},
+"enha-niki": {
+  "id": "enha-niki",
+  "classes": [
+    { "name": "Monk", "level": 9, "subclass": "Warrior of Shadow" }
+  ],
+  "race": "Vampire",
+  "alignment": "Neutral",
+  "proficiencyBonus": 4,
+  "initiative": 5,
+  "ac": 16,
+  "hp": 275,
+  "speed": "45 ft",
+  "passivePerception": 11,
+
+  "str": 15,
+  "dex": 20,
+  "con": 16,
+  "int": 11,
+  "wis": 13,
+  "cha": 12,
+
+  "savingThrows": {
+    "str": 6,
+    "dex": 9,
+    "con": 3,
+    "int": 0,
+    "wis": 1,
+    "cha": 1
+  },
+
+  "resistances": ["Necrotic"],
+  "vulnerability": [],
+  "immunity": []
+},
+
+"enha-jake": {
+  "id": "enha-jake",
+  "classes": [
+    { "name": "Rogue", "level": 9, "subclass": "Phantom" }
+  ],
+  "race": "Vampire",
+  "alignment": "Chaotic Neutral",
+  "proficiencyBonus": 4,
+  "initiative": 7,
+  "ac": 20,
+  "hp": 257,
+  "speed": "30 ft",
+  "passivePerception": 15,
+
+  "str": 13,
+  "dex": 16,
+  "con": 12,
+  "int": 14,
+  "wis": 12,
+  "cha": 13,
+
+  "savingThrows": {
+    "str": 1,
+    "dex": 7,
+    "con": 1,
+    "int": 6,
+    "wis": 1,
+    "cha": 1
+  },
+
+  "resistances": ["Necrotic"],
+  "vulnerability": [],
+  "immunity": []
+},
+
+"enha-sunoo": {
+  "id": "enha-sunoo",
+  "classes": [
+    { "name": "Blood Hunter", "level": 9, "subclass": "Order of the Ghostslayer" }
+  ],
+  "race": "Vampire",
+  "alignment": "Neutral Evil",
+  "proficiencyBonus": 4,
+  "initiative": 3,
+  "ac": 13,
+  "hp": 276,
+  "speed": "30 ft",
+  "passivePerception": 10,
+
+  "str": 9,
+  "dex": 17,
+  "con": 14,
+  "int": 16,
+  "wis": 10,
+  "cha": 13,
+
+  "savingThrows": {
+    "str": -1,
+    "dex": 7,
+    "con": 2,
+    "int": 7,
+    "wis": 0,
+    "cha": 1
+  },
+
+  "resistances": ["Necrotic"],
+  "vulnerability": [],
+  "immunity": []
 }
 }

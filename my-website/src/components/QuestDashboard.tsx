@@ -19,36 +19,72 @@ type QuestDashboardProps = {
 
 const quests = questsJson as QuestMap;
 
-function getQuestPercent(quest: Quest): number {
+function getQuestProgress(
+  quest: Quest,
+  questMap: QuestMap
+): { current: number; goal: number; percent: number } {
+  if (quest.progress?.mode === "children") {
+    const children = Object.values(questMap).filter(
+      (candidate) => candidate.parentQuestId === quest.id
+    );
+
+    const goal = children.length;
+    const current = children.filter(
+      (child) => child.status === "completed"
+    ).length;
+
+    const percent = goal > 0 ? Math.round((current / goal) * 100) : 0;
+
+    return { current, goal, percent };
+  }
+
   if (quest.progress?.mode === "manual") {
-    if (typeof quest.progress.percent === "number") return quest.progress.percent;
-    if ((quest.progress.goal ?? 0) <= 0) return 0;
-    return Math.round((quest.progress.current / quest.progress.goal) * 100);
+    const current = quest.progress.current ?? 0;
+    const goal = quest.progress.goal ?? 0;
+    const percent =
+      typeof quest.progress.percent === "number"
+        ? quest.progress.percent
+        : goal > 0
+        ? Math.round((current / goal) * 100)
+        : 0;
+
+    return { current, goal, percent };
   }
 
   if (quest.progress?.mode === "objectives" && quest.objectives?.length) {
-    const totalWeight = quest.objectives.reduce(
+    const normalizedObjectives = quest.objectives.filter(
+      (obj): obj is Exclude<typeof obj, string> => typeof obj !== "string"
+    );
+
+    const goal = normalizedObjectives.reduce(
       (sum, obj) => sum + (obj.weight ?? 1),
       0
     );
-    if (totalWeight === 0) return 0;
 
-    const completedWeight = quest.objectives.reduce(
+    const current = normalizedObjectives.reduce(
       (sum, obj) => sum + (obj.done ? obj.weight ?? 1 : 0),
       0
     );
 
-    return Math.round((completedWeight / totalWeight) * 100);
+    const percent = goal > 0 ? Math.round((current / goal) * 100) : 0;
+
+    return { current, goal, percent };
   }
 
-  if ((quest.progress?.goal ?? 0) > 0) {
-    return Math.round(((quest.progress?.current ?? 0) / (quest.progress?.goal ?? 1)) * 100);
-  }
+  const current = quest.progress?.current ?? 0;
+  const goal = quest.progress?.goal ?? 0;
+  const percent = goal > 0 ? Math.round((current / goal) * 100) : 0;
 
-  return 0;
+  return { current, goal, percent };
 }
 
 function getAccentColor(accent?: string): string {
+  if (!accent) return "#7c8aa5";
+
+  if (accent.startsWith("#")) {
+    return accent;
+  }
+
   switch (accent) {
     case "gold":
       return "#d4a017";
@@ -131,6 +167,33 @@ function formatTypeLabel(type: string): string {
   }
 }
 
+function isQuestVisible(
+  quest: Quest,
+  questMap: QuestMap,
+  openQuestIds: Record<string, boolean>
+): boolean {
+  let current = quest;
+
+  while (current.parentQuestId) {
+    const parent = questMap[current.parentQuestId];
+    if (!parent) return true;
+
+    if (!openQuestIds[parent.id]) {
+      return false;
+    }
+
+    current = parent;
+  }
+
+  return true;
+}
+
+function hasChildren(quest: Quest, questMap: QuestMap): boolean {
+  return Object.values(questMap).some(
+    (candidate) => candidate.parentQuestId === quest.id
+  );
+}
+
 export default function QuestDashboard({
   showHidden = false,
 }: QuestDashboardProps): React.ReactElement {
@@ -140,14 +203,23 @@ export default function QuestDashboard({
 
   const questList = useMemo(() => buildQuestList(quests, showHidden), [showHidden]);
 
+  const visibleQuests = useMemo(
+    () => questList.filter((quest) => isQuestVisible(quest, quests, openQuestIds)),
+    [questList, openQuestIds]
+  );
+
   const chartData = useMemo(
     () =>
-      questList.map((quest) => ({
-        id: quest.id,
-        title: quest.title,
-        percent: getQuestPercent(quest),
-        accent: getAccentColor(quest.accent),
-      })),
+      questList.map((quest) => {
+        const { percent } = getQuestProgress(quest, quests);
+
+        return {
+          id: quest.id,
+          title: quest.title,
+          percent,
+          accent: getAccentColor(quest.accent),
+        };
+      }),
     [questList]
   );
 
@@ -181,8 +253,17 @@ export default function QuestDashboard({
         <div style={{ width: "100%", height: 360 }}>
           <ResponsiveContainer width="100%" height="100%">
             <BarChart data={chartData} layout="vertical" margin={{ left: 24, right: 24 }}>
-              <XAxis type="number" domain={[0, 100]} tickFormatter={(value) => `${value}%`} />
-              <YAxis type="category" dataKey="title" width={240} tick={{ fontSize: 12 }} />
+              <XAxis
+                type="number"
+                domain={[0, 100]}
+                tickFormatter={(value) => `${value}%`}
+              />
+              <YAxis
+                type="category"
+                dataKey="title"
+                width={240}
+                tick={{ fontSize: 12 }}
+              />
               <Tooltip formatter={(value: number) => [`${value}%`, "Progreso"]} />
               <Bar dataKey="percent" radius={[0, 8, 8, 0]}>
                 {chartData.map((entry) => (
@@ -195,13 +276,14 @@ export default function QuestDashboard({
       </div>
 
       <div style={{ display: "grid", gap: "1rem" }}>
-        {questList.map((quest) => {
-          const percent = getQuestPercent(quest);
+        {visibleQuests.map((quest) => {
+          const { current: progressCurrent, goal: progressGoal, percent } =
+            getQuestProgress(quest, quests);
+
           const depth = getDepth(quest, quests);
           const isOpen = !!openQuestIds[quest.id];
-          const progressCurrent = quest.progress?.current ?? 0;
-          const progressGoal = quest.progress?.goal ?? 0;
           const typeLabels = getTypeLabels(quest);
+          const childrenExist = hasChildren(quest, quests);
 
           return (
             <article
@@ -213,18 +295,19 @@ export default function QuestDashboard({
                 marginLeft: `${depth * 28}px`,
                 overflow: "hidden",
                 boxShadow: isOpen ? "0 0 0 1px rgba(255,255,255,0.03)" : "none",
+                borderLeft: `4px solid ${getAccentColor(quest.accent)}`,
               }}
             >
               <button
                 type="button"
-                onClick={() => toggleQuest(quest.id)}
-                aria-expanded={isOpen}
-                aria-controls={`quest-panel-${quest.id}`}
+                onClick={() => (childrenExist ? toggleQuest(quest.id) : undefined)}
+                aria-expanded={childrenExist ? isOpen : undefined}
+                aria-controls={childrenExist ? `quest-panel-${quest.id}` : undefined}
                 style={{
                   width: "100%",
                   border: "none",
                   background: "transparent",
-                  cursor: "pointer",
+                  cursor: childrenExist ? "pointer" : "default",
                   textAlign: "left",
                   padding: "1rem 1.1rem",
                   display: "flex",
@@ -295,25 +378,38 @@ export default function QuestDashboard({
                     {percent}%
                   </div>
 
-                  <div
-                    aria-hidden="true"
-                    style={{
-                      fontSize: "1.2rem",
-                      lineHeight: 1,
-                      transition: "transform 0.2s ease",
-                      transform: isOpen ? "rotate(180deg)" : "rotate(0deg)",
-                      opacity: 0.8,
-                    }}
-                  >
-                    ˅
-                  </div>
+                  {childrenExist ? (
+                    <div
+                      aria-hidden="true"
+                      style={{
+                        fontSize: "1.2rem",
+                        lineHeight: 1,
+                        transition: "transform 0.2s ease",
+                        transform: isOpen ? "rotate(180deg)" : "rotate(0deg)",
+                        opacity: 0.8,
+                      }}
+                    >
+                      ˅
+                    </div>
+                  ) : (
+                    <div
+                      aria-hidden="true"
+                      style={{
+                        width: "1rem",
+                        opacity: 0.25,
+                        textAlign: "center",
+                      }}
+                    >
+                      •
+                    </div>
+                  )}
                 </div>
               </button>
 
               <div
                 id={`quest-panel-${quest.id}`}
                 style={{
-                  display: isOpen ? "block" : "none",
+                  display: isOpen || !childrenExist ? "block" : "none",
                   padding: "0 1.1rem 1rem",
                   borderTop: "1px solid var(--ifm-color-emphasis-200)",
                 }}
@@ -331,7 +427,8 @@ export default function QuestDashboard({
                   >
                     <span>Progreso</span>
                     <span>
-                      {percent}% {progressGoal > 0 ? `(${progressCurrent}/${progressGoal})` : ""}
+                      {percent}%{" "}
+                      {progressGoal > 0 ? `(${progressCurrent}/${progressGoal})` : ""}
                     </span>
                   </div>
 
@@ -360,12 +457,25 @@ export default function QuestDashboard({
                   <div style={{ marginBottom: "1rem" }}>
                     <strong>Objetivos</strong>
                     <ul style={{ marginTop: "0.5rem", marginBottom: 0 }}>
-                      {quest.objectives.map((objective) => (
-                        <li key={objective.id} style={{ opacity: objective.done ? 0.7 : 1 }}>
-                          {objective.done ? "✅ " : "⬜ "}
-                          {objective.label}
-                        </li>
-                      ))}
+                      {quest.objectives.map((objective, index) => {
+                        if (typeof objective === "string") {
+                          return (
+                            <li key={`${quest.id}-objective-${index}`}>
+                              ⬜ {objective}
+                            </li>
+                          );
+                        }
+
+                        return (
+                          <li
+                            key={objective.id ?? `${quest.id}-objective-${index}`}
+                            style={{ opacity: objective.done ? 0.7 : 1 }}
+                          >
+                            {objective.done ? "✅ " : "⬜ "}
+                            {objective.label}
+                          </li>
+                        );
+                      })}
                     </ul>
                   </div>
                 ) : null}

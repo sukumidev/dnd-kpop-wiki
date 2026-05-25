@@ -217,3 +217,43 @@
 .sectionBody{
   padding: 0;
 }
+
+.cardDeceased {
+  opacity: 0.92;
+}
+
+.imageDeceased {
+  filter: grayscale(100%) brightness(0.7) contrast(1.05);
+}
+
+.imageWrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.cardDeceased .imageWrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(20, 20, 20, 0.1),
+    rgba(20, 20, 20, 0.35)
+  );
+  pointer-events: none;
+}
+
+.deceasedBadge {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 2;
+  padding: 0.22rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  background: rgba(15, 15, 15, 0.82);
+  color: #f3f3f3;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(4px);
+}

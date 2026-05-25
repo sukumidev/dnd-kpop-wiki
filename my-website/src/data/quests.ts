@@ -23,7 +23,8 @@ export type Quest = {
 
   title: string;
   subtitle?: string;
-  type: QuestType;
+  type?: QuestType;
+  types?: QuestType[];
   status: QuestStatus;
   visibility?: QuestVisibility;
   priority?: "low" | "medium" | "high" | "critical";
@@ -32,11 +33,11 @@ export type Quest = {
   description?: string;
 
   progress?: {
-    mode: "manual" | "objectives";
-    current: number;
-    goal: number;
-    percent?: number;
-  };
+  mode: "manual" | "objectives" | "children";
+  current?: number;
+  goal?: number;
+  percent?: number;
+};
 
   objectives?: QuestObjective[];
 

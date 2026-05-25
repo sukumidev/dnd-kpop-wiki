@@ -221,7 +221,7 @@
   },
   "svt-scoups": {
     "id": "svt-scoups",
-    "title": "Choi Seungcheol (S.Coups)",
+    "title": "S.Coups (Choi Seungcheol)",
     "imageSrc": "/img/characters/svt/scoups.png",
     "subtitle": "El Gran Maestro del Gremio de Aventureros",
 
@@ -477,7 +477,7 @@
 
   "svt-hoshi": {
     "id": "svt-hoshi",
-    "title": "Kwon Soonyoung (Hoshi)",
+    "title": "Hoshi (Kwon Soonyoung)",
     "imageSrc": "/img/characters/svt/hoshi.png",
     "subtitle": "El Guardián Ancestral",
 
@@ -602,7 +602,7 @@
 
   "svt-woozi": {
     "id": "svt-woozi",
-    "title": "Lee Jihoon (Woozi)",
+    "title": "Woozi (Lee Jihoon)",
     "imageSrc": "/img/characters/svt/woozi.png",
     "subtitle": "El Hechicero Pródigo",
 
@@ -665,7 +665,7 @@
 
   "svt-dk": {
     "id": "svt-dk",
-    "title": "Lee Seokmin (Dokyeom)",
+    "title": "Dokyeom (Lee Seokmin)",
     "imageSrc": "/img/characters/svt/dk.png",
     "subtitle": "El Sanador de las Manitas Mágicas",
 
@@ -791,7 +791,7 @@
 
   "svt-minghao": {
     "id": "svt-minghao",
-    "title": "Xu Minghao (The8)",
+    "title": "The8 (Xu Minghao)",
     "imageSrc": "/img/characters/svt/minghao.png",
     "subtitle": "El Rastrador de la Fortuna",
 
@@ -915,7 +915,7 @@
 
   "svt-vernon": {
     "id": "svt-vernon",
-    "title": "Hansol Vernon Chwe (Vernon)",
+    "title": "Hansol Vernon Chwe",
     "imageSrc": "/img/characters/svt/vernon.png",
     "subtitle": "El Ermitaño Imperturbable",
 
@@ -977,7 +977,7 @@
 
   "svt-dino": {
     "id": "svt-dino",
-    "title": "Lee Chan (Dino)",
+    "title": "Dino (Lee Chan)",
     "imageSrc": "/img/characters/svt/dino.png",
     "subtitle": "El Último en Rendirse",
 
@@ -1038,7 +1038,7 @@
   },
   "skz-bangchan": {
     "id": "skz-bangchan",
-    "title": "Christopher Bang (Bang Chan)",
+    "title": "Bang Chan (Christopher Bang)",
     "imageSrc": "/img/characters/skz/bangchan.png",
     "subtitle": "El Alfa de Alfas",
 
@@ -1089,7 +1089,7 @@
 
   "skz-leeknow": {
     "id": "skz-leeknow",
-    "title": "Lee Minho (Lee Know)",
+    "title": "Lee Know (Lee Minho)",
     "imageSrc": "/img/characters/skz/leeknow.png",
     "subtitle": "El Domador de Bestias",
 
@@ -1397,7 +1397,7 @@
 
   "skz-jeongin": {
     "id": "skz-jeongin",
-    "title": "Yang Jeongin",
+    "title": "Yang Jeongin (I.N)",
     "imageSrc": "/img/characters/skz/jeongin.png",
     "subtitle": "La Reencarnación del Dios de la Luna",
 
@@ -1568,7 +1568,7 @@
       "Investigador arcano",
       "Anatomista de la muerte"
     ],
-    "status": "Activo",
+    "status": "Fallecido",
 
     "dateOfBirth": "1901-10-15",
     "age": 124,
@@ -1807,7 +1807,7 @@
 
   "enha-niki": {
     "id": "enha-niki",
-    "title": "Riki Nishimura (Ni-ki)",
+    "title": "Ni-ki (Nishimura Riki)",
     "imageSrc": "/img/characters/enha/niki.png",
     "subtitle": "El Pequeño Dictador",
 
@@ -2219,7 +2219,7 @@
 
   "nct-winwin": {
     "id": "nct-winwin",
-    "title": "Dong Sicheng (Winwin)",
+    "title": "Winwin (Dong Sicheng)",
     "imageSrc": "/img/characters/nct/winwin.png",
     "subtitle": "El Maestro de la Luz",
 
@@ -2322,7 +2322,7 @@
 
   "nct-lucas": {
     "id": "nct-lucas",
-    "title": "Wong Yukhei (Lucas)",
+    "title": "Lucas Wong",
     "imageSrc": "/img/characters/nct/lucas.png",
     "subtitle": "El Maestro de las Sombras",
 
@@ -2429,7 +2429,7 @@
 
   "nct-xiaojun": {
     "id": "nct-xiaojun",
-    "title": "Xiao Dejun (Xiaojun)",
+    "title": "Xiaojun (Xiao Dejun)",
     "imageSrc": "/img/characters/nct/xiaojun.png",
     "subtitle": "El Maestro del Fuego",
 
@@ -2480,7 +2480,7 @@
 
   "nct-hendery": {
     "id": "nct-hendery",
-    "title": "Huang Guanheng (Hendery)",
+    "title": "Hendery (Huang Guanheng)",
     "imageSrc": "/img/characters/nct/hendery.png",
     "subtitle": "El Maestro del Metal",
 
@@ -2630,7 +2630,7 @@
 
   "nct-haechan": {
     "id": "nct-haechan",
-    "title": "Lee Donghyuck (Haechan)",
+    "title": "Haechan (Lee Donghyuck)",
     "imageSrc": "/img/characters/nct/haechan.png",
     "subtitle": "El Maestro de las Pesadilas",
 
@@ -3041,7 +3041,7 @@
 
   "nct-jaehee": {
     "id": "nct-jaehee",
-    "title": "Kim Daeyoung (Jaehee)",
+    "title": "Kim Jaehee",
     "imageSrc": "/img/characters/nct/jaehee.png",
     "subtitle": "El Prodigio de la Creación",
 
@@ -3235,756 +3235,6 @@
     ],
 
     "destinyCard": "—",
-    "images": []
-  },
-  "ateez-hongjoong": {
-    "id": "ateez-hongjoong",
-    "title": "Kim Hongjoong",
-    "imageSrc": "/img/characters/ateez/hongjoong.png",
-    "subtitle": "El Capitán del Caos",
-
-    "faction": { "label": "Los Piratas de la Marea Negra", "doc": "factions/marea-negra" },
-    "group": "misc",
-    "role": "Aliado (NPC)",
-
-    "occupation": ["Capitán de la Marea Negra"],
-    "status": "Activo",
-
-    "dateOfBirth": "1998-11-07",
-    "age": 27,
-    "zodiac": "Escorpio ♏",
-    "mbti": "INFJ",
-
-    "race": "Humano",
-    "dynamic": "Alfa",
-
-    "orientation": "Pan",
-    "romantic_situation": "Soltero",
-    "poli": "Sí",
-
-    "hometown": { "label": "Borasek, Hyberia", "doc": "world/locations/borasek" },
-    "actual_location": { "label": "—", "doc": "—" },
-
-    "realm": { "label": "Isla K'quor", "doc": "—" },
-
-    "class": "Bard",
-    "subclass": "College of Lore",
-    "lvl": 8,
-
-    "firstAppearance": { "label": "Sesión 07", "doc": "campaign/sessions/07" },
-    "lastSeen": { "label": "Sesión 08", "doc": "campaign/sessions/08" },
-
-    "bonds": [
-      { "label": "Seonghwa", "doc": "characters/misc/ateez-seonghwa" },
-      { "label": "Yunho", "doc": "characters/misc/ateez-yunho" },
-      { "label": "Yeosang", "doc": "characters/misc/ateez-yeosang" },
-      { "label": "San", "doc": "characters/misc/ateez-san" },
-      { "label": "Mingi", "doc": "characters/misc/ateez-mingi" },
-      { "label": "Wooyoung", "doc": "characters/misc/ateez-wooyoung" },
-      { "label": "Jongho", "doc": "characters/misc/ateez-jongho" }
-    ],
-
-    "destinyCard": "—",
-    "images": []
-  },
-
-  "ateez-seonghwa": {
-    "id": "ateez-seonghwa",
-    "title": "Park Seonghwa",
-    "imageSrc": "/img/characters/ateez/seonghwa.png",
-    "subtitle": "El Ángel de la Muerte",
-
-    "faction": { "label": "Los Piratas de la Marea Negra", "doc": "factions/marea-negra" },
-    "group": "misc",
-    "role": "Aliado (NPC)",
-
-    "occupation": ["Primer Oficial", "Maestro de Armas"],
-    "status": "Activo",
-
-    "dateOfBirth": "1998-04-03",
-    "age": 27,
-    "zodiac": "Aries ♈",
-    "mbti": "ISFJ",
-
-    "race": "Humano",
-    "dynamic": "Omega",
-
-    "orientation": "Pan",
-    "romantic_situation": "Soltero",
-    "poli": "Sí",
-
-    "hometown": { "label": "Junji, Sylmorien", "doc": "—" },
-    "actual_location": { "label": "—", "doc": "—" },
-
-    "realm": { "label": "Isla K'quor", "doc": "—" },
-
-    "class": "Fighter",
-    "subclass": "Battle Master",
-    "lvl": 8,
-
-    "firstAppearance": { "label": "Sesión 07", "doc": "campaign/sessions/07" },
-    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
-
-    "bonds": [
-      { "label": "Hongjoong", "doc": "characters/misc/ateez-hongjoong" },
-      { "label": "Yunho", "doc": "characters/misc/ateez-yunho" },
-      { "label": "Yeosang", "doc": "characters/misc/ateez-yeosang" },
-      { "label": "San", "doc": "characters/misc/ateez-san" },
-      { "label": "Mingi", "doc": "characters/misc/ateez-mingi" },
-      { "label": "Wooyoung", "doc": "characters/misc/ateez-wooyoung" },
-      { "label": "Jongho", "doc": "characters/misc/ateez-jongho" }
-    ],
-
-    "destinyCard": "As de Picas",
-    "images": []
-  },
-
-  "ateez-yunho": {
-    "id": "ateez-yunho",
-    "title": "Jeong Yunho",
-    "imageSrc": "/img/characters/ateez/yunho.png",
-    "subtitle": "El Cartografo Maestro",
-
-    "faction": { "label": "Los Piratas de la Marea Negra", "doc": "factions/marea-negra" },
-    "group": "misc",
-    "role": "Aliado (NPC)",
-
-    "occupation": ["Navegante Mayor", "Cartógrafo de la Tripulación"],
-    "status": "Activo",
-
-    "dateOfBirth": "1999-03-23",
-    "age": 26,
-    "zodiac": "Aries ♈",
-    "mbti": "ENTP",
-
-    "race": "Humano",
-    "dynamic": "Alfa",
-
-    "orientation": "Pan",
-    "romantic_situation": "Soltero",
-    "poli": "Sí",
-
-    "hometown": { "label": "Namjeo, Sylmorien", "doc": "—" },
-    "actual_location": { "label": "—", "doc": "—" },
-
-    "realm": { "label": "Isla K'quor", "doc": "—" },
-
-    "class": "Artificier",
-    "subclass": "Cartographer",
-    "lvl": 8,
-
-    "firstAppearance": { "label": "Sesión 04", "doc": "campaign/sessions/04" },
-    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
-
-    "bonds": [
-      { "label": "Seonghwa", "doc": "characters/misc/ateez-seonghwa" },
-      { "label": "Hongjoong", "doc": "characters/misc/ateez-hongjoong" },
-      { "label": "Yeosang", "doc": "characters/misc/ateez-yeosang" },
-      { "label": "San", "doc": "characters/misc/ateez-san" },
-      { "label": "Mingi", "doc": "characters/misc/ateez-mingi" },
-      { "label": "Wooyoung", "doc": "characters/misc/ateez-wooyoung" },
-      { "label": "Jongho", "doc": "characters/misc/ateez-jongho" }
-    ],
-
-    "destinyCard": "—",
-    "images": []
-  },
-
-  "ateez-yeosang": {
-    "id": "ateez-yeosang",
-    "title": "Kang Yeosang",
-    "imageSrc": "/img/characters/ateez/yeosang.png",
-    "subtitle": "El Ojo del Horizonte",
-
-    "faction": { "label": "Los Piratas de la Marea Negra", "doc": "factions/marea-negra" },
-    "group": "misc",
-    "role": "Aliado (NPC)",
-
-    "occupation": ["Vigía", "Explorador de Rutas"],
-    "status": "Activo",
-
-    "dateOfBirth": "1999-06-15",
-    "age": 26,
-    "zodiac": "Géminis ♊",
-    "mbti": "INTP",
-
-    "race": "Humano",
-    "dynamic": "Beta",
-
-    "orientation": "Pan",
-    "romantic_situation": "Soltero",
-    "poli": "Sí",
-
-    "hometown": { "label": "Aldea del Lago Celeste, Hyberia", "doc": "—" },
-    "actual_location": { "label": "—", "doc": "—" },
-
-    "realm": { "label": "Isla K'quor", "doc": "—" },
-
-    "class": "Ranger",
-    "subclass": "Gloom Stalker",
-    "lvl": 8,
-
-    "firstAppearance": { "label": "Sesión 07", "doc": "campaign/sessions/07" },
-    "lastSeen": { "label": "Sesión 09", "doc": "campaign/sessions/09" },
-
-    "bonds": [
-      { "label": "Seonghwa", "doc": "characters/misc/ateez-seonghwa" },
-      { "label": "Yunho", "doc": "characters/misc/ateez-yunho" },
-      { "label": "Hongjoong", "doc": "characters/misc/ateez-hongjoong" },
-      { "label": "San", "doc": "characters/misc/ateez-san" },
-      { "label": "Mingi", "doc": "characters/misc/ateez-mingi" },
-      { "label": "Wooyoung", "doc": "characters/misc/ateez-wooyoung" },
-      { "label": "Jongho", "doc": "characters/misc/ateez-jongho" }
-    ],
-
-    "destinyCard": "—",
-    "images": []
-  },
-
-  "ateez-san": {
-    "id": "ateez-san",
-    "title": "Choi San",
-    "imageSrc": "/img/characters/ateez/san.png",
-    "subtitle": "El Puño de la Tormenta",
-
-    "faction": { "label": "Los Piratas de la Marea Negra", "doc": "factions/marea-negra" },
-    "group": "misc",
-    "role": "Aliado (NPC)",
-
-    "occupation": ["Contramaestre", "Maestro de Abordaje"],
-    "status": "Activo",
-
-    "dateOfBirth": "1999-07-10",
-    "age": 26,
-    "zodiac": "Cáncer ♋",
-    "mbti": "ISFP",
-
-    "race": "Humano",
-    "dynamic": "Alfa",
-
-    "orientation": "Pan",
-    "romantic_situation": "Soltero",
-    "poli": "Sí",
-
-    "hometown": { "label": "Hamnae, Jeyperia", "doc": "—" },
-    "actual_location": { "label": "Neocity", "doc": "world/locations/neocity" },
-
-    "realm": { "label": "Isla K'quor", "doc": "—" },
-
-    "class": "Monk",
-    "subclass": "Way of the Drunken Master",
-    "lvl": 8,
-
-    "firstAppearance": { "label": "Sesión 04", "doc": "campaign/sessions/04" },
-    "lastSeen": { "label": "Sesión 10", "doc": "campaign/sessions/10" },
-
-    "bonds": [
-      { "label": "Seonghwa", "doc": "characters/misc/ateez-seonghwa" },
-      { "label": "Yunho", "doc": "characters/misc/ateez-yunho" },
-      { "label": "Yeosang", "doc": "characters/misc/ateez-yeosang" },
-      { "label": "Hongjoong", "doc": "characters/misc/ateez-hongjoong" },
-      { "label": "Mingi", "doc": "characters/misc/ateez-mingi" },
-      { "label": "Wooyoung", "doc": "characters/misc/ateez-wooyoung" },
-      { "label": "Jongho", "doc": "characters/misc/ateez-jongho" }
-    ],
-
-    "destinyCard": "—",
-    "images": []
-  },
-
-  "ateez-mingi": {
-    "id": "ateez-mingi",
-    "title": "Song Mingi",
-    "imageSrc": "/img/characters/ateez/mingi.png",
-    "subtitle": "El Incendiador del Abismo",
-
-    "faction": { "label": "Los Piratas de la Marea Negra", "doc": "factions/marea-negra" },
-    "group": "misc",
-    "role": "Aliado (NPC)",
-
-    "occupation": ["Artillero Mayor", "Ingeniero de Demoliciones"],
-    "status": "Activo",
-
-    "dateOfBirth": "1999-08-09",
-    "age": 26,
-    "zodiac": "Leo ♌",
-    "mbti": "ENTP",
-
-    "race": "Humano",
-    "dynamic": "Alfa",
-
-    "orientation": "Pan",
-    "romantic_situation": "Soltero",
-    "poli": "Sí",
-
-    "hometown": { "label": "Cheonin, Jeyperia", "doc": "—" },
-    "actual_location": { "label": "—", "doc": "—" },
-
-    "realm": { "label": "Isla K'quor", "doc": "—" },
-
-    "class": "Artificier",
-    "subclass": "Artillerist",
-    "lvl": 8,
-
-    "firstAppearance": { "label": "Sesión 07", "doc": "campaign/sessions/07" },
-    "lastSeen": { "label": "Sesión 07", "doc": "campaign/sessions/07" },
-
-    "bonds": [
-      { "label": "Seonghwa", "doc": "characters/misc/ateez-seonghwa" },
-      { "label": "Yunho", "doc": "characters/misc/ateez-yunho" },
-      { "label": "Yeosang", "doc": "characters/misc/ateez-yeosang" },
-      { "label": "San", "doc": "characters/misc/ateez-san" },
-      { "label": "Hongjoong", "doc": "characters/misc/ateez-hongjoong" },
-      { "label": "Wooyoung", "doc": "characters/misc/ateez-wooyoung" },
-      { "label": "Jongho", "doc": "characters/misc/ateez-jongho" }
-    ],
-
-    "destinyCard": "8 de Corazones",
-    "images": []
-  },
-
-  "ateez-wooyoung": {
-    "id": "ateez-wooyoung",
-    "title": "Jung Wooyoung",
-    "imageSrc": "/img/characters/ateez/wooyoung.png",
-    "subtitle": "El Infiltrador Danzante",
-
-    "faction": { "label": "Los Piratas de la Marea Negra", "doc": "factions/marea-negra" },
-    "group": "misc",
-    "role": "Aliado (NPC)",
-
-    "occupation": ["Espía de la Tripulación", "Maestro de Infiltración"],
-    "status": "Activo",
-
-    "dateOfBirth": "1999-11-26",
-    "age": 26,
-    "zodiac": "Sagitario ♐",
-    "mbti": "ESFP",
-
-    "race": "Humano",
-    "dynamic": "Omega",
-
-    "orientation": "Pan",
-    "romantic_situation": "Soltero",
-    "poli": "Sí",
-
-    "hometown": { "label": "Borasek, Hyberia", "doc": "world/locations/borasek" },
-    "actual_location": { "label": "—", "doc": "—" },
-
-    "realm": { "label": "Isla K'quor", "doc": "—" },
-
-    "class": "Rogue",
-    "subclass": "Arcane Trickster",
-    "lvl": 8,
-
-    "firstAppearance": { "label": "Sesión 06", "doc": "campaign/sessions/06" },
-    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
-
-    "bonds": [
-      { "label": "Seonghwa", "doc": "characters/misc/ateez-seonghwa" },
-      { "label": "Yunho", "doc": "characters/misc/ateez-yunho" },
-      { "label": "Yeosang", "doc": "characters/misc/ateez-yeosang" },
-      { "label": "San", "doc": "characters/misc/ateez-san" },
-      { "label": "Mingi", "doc": "characters/misc/ateez-mingi" },
-      { "label": "Hongjoong", "doc": "characters/misc/ateez-hongjoong" },
-      { "label": "Jongho", "doc": "characters/misc/ateez-jongho" }
-    ],
-
-    "destinyCard": "—",
-    "images": []
-  },
-
-  "ateez-jongho": {
-    "id": "ateez-jongho",
-    "title": "Choi Jongho",
-    "imageSrc": "/img/characters/ateez/jongho.png",
-    "subtitle": "El Bastión Inquebrantable",
-
-    "faction": { "label": "Los Piratas de la Marea Negra", "doc": "factions/marea-negra" },
-    "group": "misc",
-    "role": "Aliado (NPC)",
-
-    "occupation": ["Guardián del Casco", "Defensor de la Marea Negra"],
-    "status": "Activo",
-
-    "dateOfBirth": "2000-10-12",
-    "age": 25,
-    "zodiac": "Libra ♎",
-    "mbti": "ISTJ",
-
-    "race": "Humano",
-    "dynamic": "Alfa",
-
-    "orientation": "Hetero",
-    "romantic_situation": "Soltero",
-    "poli": "Sí",
-
-    "hometown": { "label": "Kwangya, Sylmorien", "doc": "—" },
-    "actual_location": { "label": "—", "doc": "—" },
-
-    "realm": { "label": "Isla K'quor", "doc": "—" },
-
-    "class": "Barbarian",
-    "subclass": "Path of the Wild Heart",
-    "lvl": 8,
-
-    "firstAppearance": { "label": "Sesión 06", "doc": "campaign/sessions/06" },
-    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
-
-    "bonds": [
-      { "label": "Hongjoong", "doc": "characters/misc/ateez-hongjoong" },
-      { "label": "Seonghwa", "doc": "characters/misc/ateez-seonghwa" },
-      { "label": "Yunho", "doc": "characters/misc/ateez-yunho" },
-      { "label": "Yeosang", "doc": "characters/misc/ateez-yeosang" },
-      { "label": "San", "doc": "characters/misc/ateez-san" },
-      { "label": "Mingi", "doc": "characters/misc/ateez-mingi" },
-      { "label": "Wooyoung", "doc": "characters/misc/ateez-wooyoung" }
-    ],
-
-    "destinyCard": "—",
-    "images": []
-  },
-  "mx-shownu": {
-    "id": "mx-shownu",
-    "title": "Son Hyunwoo (Shownu)",
-    "imageSrc": "/img/characters/mx/shownu.png",
-    "subtitle": "El Coloso del Juramento Roto",
-
-    "faction": { "label": "Los Monstruos X", "doc": "factions/monstruos-x" },
-    "group": "misc",
-    "role": "Aliado (NPC)",
-
-    "occupation": ["Libertador de Fronteras", "Jefe de Seguridad del Casino"],
-    "status": "Activo",
-
-    "dateOfBirth": "1492-06-18",
-    "age": 533,
-    "zodiac": "Géminis ♊",
-    "mbti": "—",
-
-    "race": "Semi-Tiefling",
-    "dynamic": "Alfa",
-
-    "orientation": "Pan",
-    "romantic_situation": "Soltero",
-    "poli": "Sí",
-
-    "hometown": { "label": "—", "doc": "—" },
-    "actual_location": { "label": "Pikotam, Hyberia", "doc": "—" },
-
-    "realm": { "label": "Isla Estelar", "doc": "world/locations/isla-estelar" },
-
-    "class": "Paladin",
-    "subclass": "Oath of Redemption",
-    "lvl": 10,
-
-    "firstAppearance": { "label": "Sesión 08", "doc": "campaign/sessions/08" },
-    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
-
-    "bonds": [
-      { "label": "Minhyuk", "doc": "characters/misc/mx-minhyuk" },
-      { "label": "Kihyun", "doc": "characters/misc/mx-kihyun" },
-      { "label": "Hyungwon", "doc": "characters/misc/mx-hyungwon" },
-      { "label": "Joohoney", "doc": "characters/misc/mx-joohoney" },
-      { "label": "I.M.", "doc": "characters/misc/mx-im" }
-    ],
-
-    "destinyCard": "—",
-    "images": []
-  },
-
-  "mx-minhyuk": {
-    "id": "mx-minhyuk",
-    "title": "Lee Minhyuk",
-    "imageSrc": "/img/characters/mx/minhyuk.png",
-    "subtitle": "La Sonrisa que Esconde Cuchillos",
-
-    "faction": { "label": "Los Monstruos X", "doc": "factions/monstruos-x" },
-    "group": "misc",
-    "role": "Aliado (NPC)",
-
-    "occupation": ["Mensajero de la Revuelta", "Animador, Tahúr y Rostro Público del Casino"],
-    "status": "Activo",
-
-    "dateOfBirth": "1493-11-03",
-    "age": 532,
-    "zodiac": "Escorpio ♏",
-    "mbti": "—",
-
-    "race": "Semi-Tiefling",
-    "dynamic": "Alfa",
-
-    "orientation": "Pan",
-    "romantic_situation": "Soltero",
-    "poli": "Sí",
-
-    "hometown": { "label": "—", "doc": "—" },
-    "actual_location": { "label": "Pikotam, Hyberia", "doc": "—" },
-
-    "realm": { "label": "Isla Estelar", "doc": "world/locations/isla-estelar" },
-
-    "class": "Rogue",
-    "subclass": "Swashbuckler",
-    "lvl": 11,
-
-    "firstAppearance": { "label": "Sesión 08", "doc": "campaign/sessions/08" },
-    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
-
-    "bonds": [
-      { "label": "Shownu", "doc": "characters/misc/mx-shownu" },
-      { "label": "Kihyun", "doc": "characters/misc/mx-kihyun" },
-      { "label": "Hyungwon", "doc": "characters/misc/mx-hyungwon" },
-      { "label": "Joohoney", "doc": "characters/misc/mx-joohoney" },
-      { "label": "I.M.", "doc": "characters/misc/mx-im" }
-    ],
-
-    "destinyCard": "—",
-    "images": []
-  },
-
-  "mx-kihyun": {
-    "id": "mx-kihyun",
-    "title": "Yoo Kihyun",
-    "imageSrc": "/img/characters/mx/kihyun.png",
-    "subtitle": "La Voz que Incendia la Noche",
-
-    "faction": { "label": "Los Monstruos X", "doc": "factions/monstruos-x" },
-    "group": "misc",
-    "role": "Aliado (NPC)",
-
-    "occupation": ["Artillero de la Resistencia", "Maestro del Escenario y Supervisor de Espectáculos"],
-    "status": "Activo",
-
-    "dateOfBirth": "1493-11-22",
-    "age": 532,
-    "zodiac": "Sagitario ♐",
-    "mbti": "—",
-
-    "race": "Semi-Tiefling",
-    "dynamic": "Beta",
-
-    "orientation": "Pan",
-    "romantic_situation": "Soltero",
-    "poli": "Sí",
-
-    "hometown": { "label": "—", "doc": "—" },
-    "actual_location": { "label": "Pikotam, Hyberia", "doc": "—" },
-
-    "realm": { "label": "Isla Estelar", "doc": "world/locations/isla-estelar" },
-
-    "class": "Wizard",
-    "subclass": "Evoker",
-    "lvl": 12,
-
-    "firstAppearance": { "label": "Sesión 08", "doc": "campaign/sessions/08" },
-    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
-
-    "bonds": [
-      { "label": "Minhyuk", "doc": "characters/misc/mx-minhyuk" },
-      { "label": "Shownu", "doc": "characters/misc/mx-shownu" },
-      { "label": "Hyungwon", "doc": "characters/misc/mx-hyungwon" },
-      { "label": "Joohoney", "doc": "characters/misc/mx-joohoney" },
-      { "label": "I.M.", "doc": "characters/misc/mx-im" }
-    ],
-
-    "destinyCard": "—",
-    "images": []
-  },
-
-  "mx-hyungwon": {
-    "id": "mx-hyungwon",
-    "title": "Chae Hyungwon",
-    "imageSrc": "/img/characters/mx/hyungwon.png",
-    "subtitle": "El Ente del Tiempo",
-
-    "faction": { "label": "Los Monstruos X", "doc": "factions/monstruos-x" },
-    "group": "misc",
-    "role": "Aliado (NPC)",
-
-    "occupation": ["Cronista de la Liberación", "Observador del Salón y Guardián del Reloj Oculto"],
-    "status": "Activo",
-
-    "dateOfBirth": "1494-01-15",
-    "age": 531,
-    "zodiac": "Capricornio ♑",
-    "mbti": "—",
-
-    "race": "Semi-Tiefling",
-    "dynamic": "Omega",
-
-    "orientation": "Pan",
-    "romantic_situation": "Soltero",
-    "poli": "Sí",
-
-    "hometown": { "label": "—", "doc": "—" },
-    "actual_location": { "label": "Pikotam, Hyberia", "doc": "—" },
-
-    "realm": { "label": "Isla Estelar", "doc": "world/locations/isla-estelar" },
-
-    "class": "Wizard",
-    "subclass": "Chronurgist",
-    "lvl": 11,
-
-    "firstAppearance": { "label": "Sesión 08", "doc": "campaign/sessions/08" },
-    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
-
-    "bonds": [
-      { "label": "Minhyuk", "doc": "characters/misc/mx-minhyuk" },
-      { "label": "Kihyun", "doc": "characters/misc/mx-kihyun" },
-      { "label": "Shownu", "doc": "characters/misc/mx-shownu" },
-      { "label": "Joohoney", "doc": "characters/misc/mx-joohoney" },
-      { "label": "I.M.", "doc": "characters/misc/mx-im" }
-    ],
-
-    "destinyCard": "—",
-    "images": []
-  },
-
-  "mx-joohoney": {
-    "id": "mx-joohoney",
-    "title": "Lee Jooheon (Joohoney)",
-    "imageSrc": "/img/characters/mx/joohoney.png",
-    "subtitle": "El Trueno de la Insurrección",
-
-    "faction": { "label": "Los Monstruos X", "doc": "factions/monstruos-x" },
-    "group": "misc",
-    "role": "Aliado (NPC)",
-
-    "occupation": ["Demoledor de Cadenas", "Cobrador, Gladiador y Rompehuesos del Casino"],
-    "status": "Activo",
-
-    "dateOfBirth": "1494-10-06",
-    "age": 531,
-    "zodiac": "Libra ♎",
-    "mbti": "—",
-
-    "race": "Semi-Tiefling",
-    "dynamic": "Alfa",
-
-    "orientation": "Pan",
-    "romantic_situation": "Soltero",
-    "poli": "Sí",
-
-    "hometown": { "label": "—", "doc": "—" },
-    "actual_location": { "label": "Pikotam, Hyberia", "doc": "—" },
-
-    "realm": { "label": "Isla Estelar", "doc": "world/locations/isla-estelar" },
-
-    "class": "Barbarian",
-    "subclass": "Path of the Zealot",
-    "lvl": 10,
-
-    "firstAppearance": { "label": "Sesión 08", "doc": "campaign/sessions/08" },
-    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
-
-    "bonds": [
-      { "label": "Minhyuk", "doc": "characters/misc/mx-minhyuk" },
-      { "label": "Kihyun", "doc": "characters/misc/mx-kihyun" },
-      { "label": "Hyungwon", "doc": "characters/misc/mx-hyungwon" },
-      { "label": "Shownu", "doc": "characters/misc/mx-shownu" },
-      { "label": "I.M.", "doc": "characters/misc/mx-im" }
-    ],
-
-    "destinyCard": "—",
-    "images": []
-  },
-
-  "mx-im": {
-    "id": "mx-im",
-    "title": "Im Changkyun (I.M)",
-    "imageSrc": "/img/characters/mx/im.png",
-    "subtitle": "El Murmullo del Abismo",
-
-    "faction": { "label": "Los Monstruos X", "doc": "factions/monstruos-x" },
-    "group": "misc",
-    "role": "Aliado (NPC)",
-
-    "occupation": ["Espía de los Libertadores", "Corredor de Información y Negociador de Deudas"],
-    "status": "Activo",
-
-    "dateOfBirth": "1496-01-26",
-    "age": 529,
-    "zodiac": "Capricornio ♑",
-    "mbti": "—",
-
-    "race": "Semi-Tiefling",
-    "dynamic": "Alfa",
-
-    "orientation": "Pan",
-    "romantic_situation": "Soltero",
-    "poli": "Sí",
-
-    "hometown": { "label": "—", "doc": "—" },
-    "actual_location": { "label": "Pikotam, Hyberia", "doc": "—" },
-
-    "realm": { "label": "Isla Estelar", "doc": "world/locations/isla-estelar" },
-
-    "class": "Warlock",
-    "subclass": "The Great Old One",
-    "lvl": 10,
-
-    "firstAppearance": { "label": "Sesión 08", "doc": "campaign/sessions/08" },
-    "lastSeen": { "label": "Sesión 11", "doc": "campaign/sessions/11" },
-
-    "bonds": [
-      { "label": "Minhyuk", "doc": "characters/misc/mx-minhyuk" },
-      { "label": "Kihyun", "doc": "characters/misc/mx-kihyun" },
-      { "label": "Hyungwon", "doc": "characters/misc/mx-hyungwon" },
-      { "label": "Joohoney", "doc": "characters/misc/mx-joohoney" },
-      { "label": "Shownu", "doc": "characters/misc/mx-shownu" }
-    ],
-
-    "destinyCard": "—",
-    "images": []
-  },
-
-  "mx-wonho": {
-    "id": "mx-wonho",
-    "title": "Lee Hoseok (Wonho)",
-    "imageSrc": "/img/characters/mx/wonho.png",
-    "subtitle": "El Titán de la Última Muralla",
-
-    "faction": { "label": "Los Monstruos X", "doc": "factions/monstruos-x" },
-    "group": "misc",
-    "role": "Aliado (NPC)",
-
-    "occupation": ["Rompeasedios de la Liberación"],
-    "status": "Fallecido",
-
-    "dateOfBirth": "1493-03-01",
-    "age": 532,
-    "zodiac": "Piscis ♓",
-    "mbti": "—",
-
-    "race": "Semi-Tiefling",
-    "dynamic": "Omega",
-
-    "orientation": "Pan",
-    "romantic_situation": "Soltero",
-    "poli": "Sí",
-
-    "hometown": { "label": "—", "doc": "—" },
-    "actual_location": { "label": "—", "doc": "—" },
-
-    "realm": { "label": "Isla Estelar", "doc": "world/locations/isla-estelar" },
-
-    "class": "Fighter",
-    "subclass": "Rune Knight",
-    "lvl": 10,
-
-    "firstAppearance": { "label": "—", "doc": "—" },
-    "lastSeen": { "label": "—", "doc": "—" },
-
-    "bonds": [
-      { "label": "Shownu", "doc": "characters/misc/mx-shownu" },
-      { "label": "Minhyuk", "doc": "characters/misc/mx-minhyuk" },
-      { "label": "Kihyun", "doc": "characters/misc/mx-kihyun" },
-      { "label": "Hyungwon", "doc": "characters/misc/mx-hyungwon" },
-      { "label": "Joohoney", "doc": "characters/misc/mx-joohoney" },
-      { "label": "I.M.", "doc": "characters/misc/mx-im" }
-    ],
-
-    "destinyCard": "2 de Picas",
     "images": []
   }
 }

@@ -32,7 +32,6 @@ type Character = {
 
   class?: string;
   subclass?: string;
-  lvl?: number;
 
   // si quieres permitir override:
   doc?: string;
@@ -135,44 +134,57 @@ export default function CharactersPage() {
   <div className={styles.sectionBody}>
     <div className={styles.grid}>
       {grouped[section].map(([id, c]) => {
-        const imgUrl = c.imageSrc ? useBaseUrl(c.imageSrc) : undefined;
-        const docPath = resolveCharacterDoc(id, c);
+  const imgUrl = c.imageSrc ? useBaseUrl(c.imageSrc) : undefined;
+  const docPath = resolveCharacterDoc(id, c);
+  const isDeceased = c.status?.trim().toLowerCase() === "fallecido";
 
-        const factionLabel = c.faction?.label?.trim();
-        const realmLabel = c.realm?.label?.trim();
+  const factionLabel = c.faction?.label?.trim();
+  const realmLabel = c.realm?.label?.trim();
 
-        const captionText =
-          factionLabel && realmLabel
-            ? `${factionLabel} — ${realmLabel}`
-            : factionLabel || realmLabel || undefined;
+  const captionText =
+    factionLabel && realmLabel
+      ? `${factionLabel} — ${realmLabel}`
+      : factionLabel || realmLabel || undefined;
 
-        return (
-          <Link
-            key={id}
-            to={useBaseUrl(`/${docPath}`)}
-            className={styles.cardLink}
-            aria-label={`Abrir ficha de ${c.title}`}
-          >
-            <article className={styles.card}>
-              <div className={styles.cardTop}>
-                <div className={styles.cardName}>{c.title}</div>
-              </div>
+  return (
+    <Link
+      key={id}
+      to={useBaseUrl(`/${docPath}`)}
+      className={styles.cardLink}
+      aria-label={`Abrir ficha de ${c.title}`}
+    >
+      <article
+        className={`${styles.card} ${isDeceased ? styles.cardDeceased : ""}`}
+      >
+        <div className={styles.cardTop}>
+          <div className={styles.cardName}>{c.title}</div>
+        </div>
 
-              <div className={styles.imageWrap}>
-                {imgUrl ? (
-                  <img className={styles.image} src={imgUrl} alt={c.title} loading="lazy" />
-                ) : (
-                  <div className={styles.imageFallback}>No image</div>
-                )}
-              </div>
+        <div className={styles.imageWrap}>
+          {imgUrl ? (
+            <>
+              <img
+                className={`${styles.image} ${isDeceased ? styles.imageDeceased : ""}`}
+                src={imgUrl}
+                alt={c.title}
+                loading="lazy"
+              />
+              {isDeceased ? (
+                <div className={styles.deceasedBadge}>✝ Fallecido</div>
+              ) : null}
+            </>
+          ) : (
+            <div className={styles.imageFallback}>No image</div>
+          )}
+        </div>
 
-              <div className={styles.cardBottom}>
-                {c.subtitle ? <div className={styles.subtitle}>{c.subtitle}</div> : null}
-                {captionText ? <div className={styles.caption}>{captionText}</div> : null}
-              </div>
-            </article>
-          </Link>
-        );
+        <div className={styles.cardBottom}>
+          {c.subtitle ? <div className={styles.subtitle}>{c.subtitle}</div> : null}
+          {captionText ? <div className={styles.caption}>{captionText}</div> : null}
+        </div>
+      </article>
+    </Link>
+  );
       })}
     </div>
   </div>
