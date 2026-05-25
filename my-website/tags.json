@@ -1,0 +1,506 @@
+{
+  "almas": {
+    "id": "almas",
+    "title": "Almas",
+    "category": "magic",
+    "status": "active",
+    "description": null
+  },
+  "amor": {
+    "id": "amor",
+    "title": "Amor",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "arco-personal": {
+    "id": "arco-personal",
+    "title": "Arco personal",
+    "category": "arc",
+    "status": "active",
+    "description": null
+  },
+  "baraja-del-destino": {
+    "id": "baraja-del-destino",
+    "title": "Baraja del Destino",
+    "category": "arc",
+    "status": "active",
+    "description": null
+  },
+  "caos": {
+    "id": "caos",
+    "title": "Caos",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "cartas": {
+    "id": "cartas",
+    "title": "Cartas",
+    "category": "lore",
+    "status": "active",
+    "description": null
+  },
+  "cartas-legendarias": {
+    "id": "cartas-legendarias",
+    "title": "Cartas legendarias",
+    "category": "lore",
+    "status": "active",
+    "description": null
+  },
+  "cartas-robadas": {
+    "id": "cartas-robadas",
+    "title": "Cartas robadas",
+    "category": "arc",
+    "status": "active",
+    "description": null
+  },
+  "casa-de-los-deseos": {
+    "id": "casa-de-los-deseos",
+    "title": "Casa de los Deseos",
+    "category": "faction",
+    "status": "active",
+    "description": null
+  },
+  "confianza": {
+    "id": "confianza",
+    "title": "Confianza",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "corrupcion": {
+    "id": "corrupcion",
+    "title": "Corrupcion",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "defensa": {
+    "id": "defensa",
+    "title": "Defensa",
+    "category": "narrative",
+    "status": "active",
+    "description": null
+  },
+  "demonio": {
+    "id": "demonio",
+    "title": "Demonio",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "destino": {
+    "id": "destino",
+    "title": "Destino",
+    "category": "lore",
+    "status": "active",
+    "description": null
+  },
+  "faccion-enemiga": {
+    "id": "faccion-enemiga",
+    "title": "Facción enemiga",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "faker": {
+    "id": "faker",
+    "title": "Faker",
+    "category": "character",
+    "status": "active",
+    "description": null
+  },
+  "familia": {
+    "id": "familia",
+    "title": "Familia",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "futuro": {
+    "id": "futuro",
+    "title": "Futuro",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "gremio": {
+    "id": "gremio",
+    "title": "Gremio",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "gremio-de-aventureros": {
+    "id": "gremio-de-aventureros",
+    "title": "Gremio de Aventureros",
+    "category": "faction",
+    "status": "active",
+    "description": null
+  },
+  "guerra": {
+    "id": "guerra",
+    "title": "Guerra",
+    "category": "narrative",
+    "status": "active",
+    "description": null
+  },
+  "heraldos-del-crepusculo": {
+    "id": "heraldos-del-crepusculo",
+    "title": "Heraldos del Crepúsculo",
+    "category": "faction",
+    "status": "active",
+    "description": null
+  },
+  "hogar": {
+    "id": "hogar",
+    "title": "Hogar",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "hotou": {
+    "id": "hotou",
+    "title": "Hotou",
+    "category": "region",
+    "status": "active",
+    "description": null
+  },
+  "hyungwon": {
+    "id": "hyungwon",
+    "title": "Hyungwon",
+    "category": "character",
+    "status": "active",
+    "description": null
+  },
+  "identidad": {
+    "id": "identidad",
+    "title": "Identidad",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "imugi": {
+    "id": "imugi",
+    "title": "Imugi",
+    "category": "character",
+    "status": "active",
+    "description": null
+  },
+  "investigacion": {
+    "id": "investigacion",
+    "title": "Investigacion",
+    "category": "narrative",
+    "status": "active",
+    "description": null
+  },
+  "jackson-wang": {
+    "id": "jackson-wang",
+    "title": "Jackson Wang",
+    "category": "character",
+    "status": "active",
+    "description": null
+  },
+  "jefe-enemigo": {
+    "id": "jefe-enemigo",
+    "title": "Jefe enemigo",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "joshua": {
+    "id": "joshua",
+    "title": "Joshua",
+    "category": "character",
+    "status": "active",
+    "description": null
+  },
+  "jungwoo-bebe": {
+    "id": "jungwoo-bebe",
+    "title": "Jungwoo bebé",
+    "category": "character",
+    "status": "active",
+    "description": null
+  },
+  "kiyori": {
+    "id": "kiyori",
+    "title": "Kiyori",
+    "category": "character",
+    "status": "active",
+    "description": null
+  },
+  "lealtad": {
+    "id": "lealtad",
+    "title": "Lealtad",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "legado": {
+    "id": "legado",
+    "title": "Legado",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "liberacion": {
+    "id": "liberacion",
+    "title": "Liberacion",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "liderazgo": {
+    "id": "liderazgo",
+    "title": "Liderazgo",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "linaje": {
+    "id": "linaje",
+    "title": "Linaje",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "luz-de-la-luna": {
+    "id": "luz-de-la-luna",
+    "title": "Luz de la Luna",
+    "category": "magic",
+    "status": "active",
+    "description": null
+  },
+  "magia": {
+    "id": "magia",
+    "title": "Magia",
+    "category": "magic",
+    "status": "active",
+    "description": null
+  },
+  "mark": {
+    "id": "mark",
+    "title": "Mark",
+    "category": "character",
+    "status": "active",
+    "description": null
+  },
+  "memoria": {
+    "id": "memoria",
+    "title": "Memoria",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "minjae": {
+    "id": "minjae",
+    "title": "Minjae",
+    "category": "character",
+    "status": "active",
+    "description": null
+  },
+  "monstruos-x": {
+    "id": "monstruos-x",
+    "title": "Monstruos X",
+    "category": "faction",
+    "status": "active",
+    "description": null
+  },
+  "neo-academia": {
+    "id": "neo-academia",
+    "title": "Neo Academia",
+    "category": "faction",
+    "status": "active",
+    "description": null
+  },
+  "omegas": {
+    "id": "omegas",
+    "title": "Omegas",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "pacto": {
+    "id": "pacto",
+    "title": "Pacto",
+    "category": "magic",
+    "status": "active",
+    "description": null
+  },
+  "pasado": {
+    "id": "pasado",
+    "title": "Pasado",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "piratas": {
+    "id": "piratas",
+    "title": "Piratas",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "poder": {
+    "id": "poder",
+    "title": "Poder",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "politica": {
+    "id": "politica",
+    "title": "Politica",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "portadores": {
+    "id": "portadores",
+    "title": "Portadores",
+    "category": "arc",
+    "status": "active",
+    "description": null
+  },
+  "proteccion": {
+    "id": "proteccion",
+    "title": "Proteccion",
+    "category": "narrative",
+    "status": "active",
+    "description": null
+  },
+  "radiancia-disenada": {
+    "id": "radiancia-disenada",
+    "title": "Radiancia Diseñada",
+    "category": "magic",
+    "status": "active",
+    "description": null
+  },
+  "recuperacion": {
+    "id": "recuperacion",
+    "title": "Recuperacion",
+    "category": "narrative",
+    "status": "active",
+    "description": null
+  },
+  "rescate": {
+    "id": "rescate",
+    "title": "Rescate",
+    "category": "narrative",
+    "status": "active",
+    "description": null
+  },
+  "rey-de-corazones": {
+    "id": "rey-de-corazones",
+    "title": "Rey de Corazones",
+    "category": "magic",
+    "status": "active",
+    "description": null
+  },
+  "ritual": {
+    "id": "ritual",
+    "title": "Ritual",
+    "category": "magic",
+    "status": "active",
+    "description": null
+  },
+  "secuestro": {
+    "id": "secuestro",
+    "title": "Secuestro",
+    "category": "narrative",
+    "status": "active",
+    "description": null
+  },
+  "seunghan": {
+    "id": "seunghan",
+    "title": "Seunghan",
+    "category": "character",
+    "status": "active",
+    "description": null
+  },
+  "seventeenos": {
+    "id": "seventeenos",
+    "title": "Seventeenos",
+    "category": "faction",
+    "status": "active",
+    "description": null
+  },
+  "simbolo": {
+    "id": "simbolo",
+    "title": "Simbolo",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "sol-ardiente": {
+    "id": "sol-ardiente",
+    "title": "Sol Ardiente",
+    "category": "faction",
+    "status": "active",
+    "description": null
+  },
+  "soobin": {
+    "id": "soobin",
+    "title": "Soobin",
+    "category": "character",
+    "status": "active",
+    "description": null
+  },
+  "sylmorien": {
+    "id": "sylmorien",
+    "title": "Sylmorien",
+    "category": "region",
+    "status": "active",
+    "description": null
+  },
+  "taeil": {
+    "id": "taeil",
+    "title": "Taeil",
+    "category": "character",
+    "status": "active",
+    "description": null
+  },
+  "vampiros": {
+    "id": "vampiros",
+    "title": "Vampiros",
+    "category": "species",
+    "status": "active",
+    "description": null
+  },
+  "venganza": {
+    "id": "venganza",
+    "title": "Venganza",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "verdad": {
+    "id": "verdad",
+    "title": "Verdad",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "vidas-pasadas": {
+    "id": "vidas-pasadas",
+    "title": "Vidas pasadas",
+    "category": "lore",
+    "status": "active",
+    "description": null
+  },
+  "vinculos": {
+    "id": "vinculos",
+    "title": "Vinculos",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "wishitos": {
+    "id": "wishitos",
+    "title": "Wishitos",
+    "category": "species",
+    "status": "active",
+    "description": null
+  }
+}

@@ -68,6 +68,8 @@ export type Character = {
 
   /** Region is intentionally broader than kingdom. Examples: sylmorien, hotou, yggdrasil. */
   regionId?: string | null;
+  locationIds?: string[];
+  questIds?: string[];
 
   hometown?: CharacterLocationLink | null;
   currentLocation?: CharacterLocationLink | null;
@@ -99,6 +101,17 @@ export const characterList = Object.values(characters);
 
 export function getCharacterById(id: string): Character | undefined {
   return characters[id];
+}
+
+export function getCharactersByFactionId(
+  factionId: string,
+  list: Character[] = characterList,
+): Character[] {
+  return list.filter((character) => character.factionId === factionId);
+}
+
+export function getCharacterDocPath(character: Character): string {
+  return `characters/${character.group}/${character.id}`;
 }
 
 export function calculateCharacterAge(

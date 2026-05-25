@@ -26,16 +26,16 @@
       "Acceso a la verdad sobre la Baraja del Destino",
       "Ventaja narrativa contra facciones enemigas"
     ],
-    "tags": [
+    "accent": "gold",
+    "isRepeatable": false,
+    "notes": "Quest principal de toda la campaña.",
+    "sortOrder": 1,
+    "tagIds": [
       "baraja-del-destino",
       "cartas-legendarias",
       "portadores",
       "destino"
-    ],
-    "accent": "gold",
-    "isRepeatable": false,
-    "notes": "Quest principal de toda la campaña.",
-    "sortOrder": 1
+    ]
   },
   "mq-protect-holders": {
     "id": "mq-protect-holders",
@@ -89,15 +89,15 @@
       "Nuevos aliados vinculados a cartas activas",
       "Mayor control narrativo sobre el destino de la Baraja"
     ],
-    "tags": [
-      "portadores",
-      "proteccion",
-      "baraja-del-destino"
-    ],
     "accent": "gold",
     "isRepeatable": false,
     "notes": "Quest paraguas centrada en la seguridad de los portadores.",
-    "sortOrder": 2
+    "sortOrder": 2,
+    "tagIds": [
+      "portadores",
+      "proteccion",
+      "baraja-del-destino"
+    ]
   },
   "mq-unlink-holders": {
     "id": "mq-unlink-holders",
@@ -123,16 +123,16 @@
       "Información crucial sobre la naturaleza real de la Baraja",
       "Ventaja contra rituales enemigos"
     ],
-    "tags": [
-      "almas",
-      "portadores",
-      "ritual",
-      "investigacion"
-    ],
     "accent": "gold",
     "isRepeatable": false,
     "notes": "Subquest de investigación mayor con implicaciones de late game.",
-    "sortOrder": 3
+    "sortOrder": 3,
+    "tagIds": [
+      "almas",
+      "portadores",
+      "rital",
+      "investigacion"
+    ]
   },
   "mq-protect-seunghan": {
     "id": "mq-protect-seunghan",
@@ -162,16 +162,16 @@
       "Posible aliado clave",
       "Avance en la protección de portadores"
     ],
-    "tags": [
-      "seunghan",
-      "proteccion",
-      "sylmorien",
-      "portadores"
-    ],
     "accent": "gold",
     "isRepeatable": false,
     "notes": "Quest centrada en personaje con peso emocional y político.",
-    "sortOrder": 4
+    "sortOrder": 4,
+    "tagIds": [
+      "senghan",
+      "proteccion",
+      "sylmorien",
+      "portadores"
+    ]
   },
   "mq-protect-wishies": {
     "id": "mq-protect-wishies",
@@ -233,16 +233,16 @@
       "Acceso a conocimiento sobre deseos y consecuencias",
       "Ventaja contra Taeil y sus planes"
     ],
-    "tags": [
+    "accent": "gold",
+    "isRepeatable": false,
+    "notes": "Quest de facción conectada a la seguridad de aliados excepcionales.",
+    "sortOrder": 5,
+    "tagIds": [
       "wishitos",
       "casa-de-los-deseos",
       "taeil",
       "proteccion"
-    ],
-    "accent": "gold",
-    "isRepeatable": false,
-    "notes": "Quest de facción conectada a la seguridad de aliados excepcionales.",
-    "sortOrder": 5
+    ]
   },
   "mq-recover-stolen-cards": {
     "id": "mq-recover-stolen-cards",
@@ -294,16 +294,16 @@
       "Información sobre el mercado o circulación de cartas robadas",
       "Avance directo en la main quest"
     ],
-    "tags": [
-      "cartas-robadas",
-      "baraja-del-destino",
-      "piratas",
-      "recuperacion"
-    ],
     "accent": "gold",
     "isRepeatable": false,
     "notes": "Quest de recuperación ligada al movimiento de cartas fuera del control de la party.",
-    "sortOrder": 6
+    "sortOrder": 6,
+    "tagIds": [
+      "cartas-robadas",
+      "baraja-del-destino",
+      "piratas",
+      "recperacion"
+    ]
   },
   "mq-defeat-burning-sun": {
     "id": "mq-defeat-burning-sun",
@@ -331,17 +331,17 @@
       "Salvar aliados y objetivos clave",
       "Reducir el alcance militar y ritual del Clan del Sol Ardiente"
     ],
-    "tags": [
-      "sol-ardiente",
-      "guerra",
-      "faccion-enemiga",
-      "radiancia-disenada",
-      "ritual"
-    ],
     "accent": "red",
     "isRepeatable": false,
     "notes": "Quest paraguas del arco contra el Sol Ardiente.",
-    "sortOrder": 20
+    "sortOrder": 20,
+    "tagIds": [
+      "sol-ardiente",
+      "gerra",
+      "accion-enemiga",
+      "radiancia-disenada",
+      "rital"
+    ]
   },
   "mq-defeat-taeil": {
     "id": "mq-defeat-taeil",
@@ -371,17 +371,17 @@
       "Recuperar conocimiento o tecnomagia robada",
       "Debilitar el liderazgo operativo del clan"
     ],
-    "tags": [
-      "taeil",
-      "neo-academia",
-      "sol-ardiente",
-      "corrupcion",
-      "jefe-enemigo"
-    ],
     "accent": "red",
     "isRepeatable": false,
     "notes": "Subquest centrada en una figura clave del arco enemigo.",
-    "sortOrder": 21
+    "sortOrder": 21,
+    "tagIds": [
+      "taeil",
+      "neo-academia",
+      "sol-ardiente",
+      "corrpcion",
+      "jee-enemigo"
+    ]
   },
   "mq-save-baby-jungwoo": {
     "id": "mq-save-baby-jungwoo",
@@ -412,17 +412,17 @@
       "Golpe estratégico contra el Clan del Sol Ardiente",
       "Mayor confianza de la Neo Academia"
     ],
-    "tags": [
-      "jungwoo-bebe",
-      "rescate",
-      "secuestro",
-      "sol-ardiente",
-      "wishitos"
-    ],
     "accent": "red",
     "isRepeatable": false,
     "notes": "Quest de rescate urgente dentro del arco del Sol Ardiente.",
-    "sortOrder": 22
+    "sortOrder": 22,
+    "tagIds": [
+      "jngwoo-bebe",
+      "rescate",
+      "secestro",
+      "sol-ardiente",
+      "wishitos"
+    ]
   },
   "mq-protect-guild": {
     "id": "mq-protect-guild",
@@ -480,17 +480,17 @@
       "Fortalecer la alianza con el Gremio de Aventureros",
       "Negar rehenes y recursos al enemigo"
     ],
-    "tags": [
-      "gremio-de-aventureros",
-      "proteccion",
-      "omegas",
-      "sol-ardiente",
-      "defensa"
-    ],
     "accent": "red",
     "isRepeatable": false,
     "notes": "Quest defensiva con peso político y comunitario.",
-    "sortOrder": 25
+    "sortOrder": 25,
+    "tagIds": [
+      "gremio-de-aventreros",
+      "proteccion",
+      "omegas",
+      "sol-ardiente",
+      "deensa"
+    ]
   },
   "mq-protect-vampires": {
     "id": "mq-protect-vampires",
@@ -564,17 +564,17 @@
       "Fortalecer la alianza con los Heraldos del Crepúsculo",
       "Reducir el impacto de la radiancia diseñada en el campo enemigo"
     ],
-    "tags": [
-      "vampiros",
-      "heraldos-del-crepusculo",
-      "proteccion",
-      "sol-ardiente",
-      "radiancia-disenada"
-    ],
     "accent": "red",
     "isRepeatable": false,
     "notes": "Quest de protección de aliados especialmente vulnerables al Sol Ardiente.",
-    "sortOrder": 24
+    "sortOrder": 24,
+    "tagIds": [
+      "vampiros",
+      "heraldos-del-crepsclo",
+      "proteccion",
+      "sol-ardiente",
+      "radiancia-disenada"
+    ]
   },
   "pq-minjae-personal-arc": {
     "id": "pq-minjae-personal-arc",
@@ -610,18 +610,18 @@
       "Definición de su legado fuera de Sylmorien",
       "Fortalecimiento de sus vínculos más importantes"
     ],
-    "tags": [
-      "minjae",
-      "arco-personal",
-      "identidad",
-      "familia",
-      "sylmorien",
-      "legado"
-    ],
     "accent": "blue",
     "isRepeatable": false,
     "notes": "Quest madre del arco personal de Minjae. Debajo de esta cuelgan sus conflictos de identidad, familia, poder y liberación.",
-    "sortOrder": 100
+    "sortOrder": 100,
+    "tagIds": [
+      "minjae",
+      "arco-personal",
+      "identidad",
+      "amilia",
+      "sylmorien",
+      "legado"
+    ]
   },
   "pq-kiyori-personal-arc": {
     "id": "pq-kiyori-personal-arc",
@@ -653,18 +653,18 @@
       "Mayor claridad sobre su identidad y legado",
       "Fortalecimiento de su vínculo con su propio poder"
     ],
-    "tags": [
-      "kiyori",
-      "arco-personal",
-      "neo-academia",
-      "hotou",
-      "magia",
-      "legado"
-    ],
     "accent": "purple",
     "isRepeatable": false,
     "notes": "Quest madre del arco personal de Kiyori. Debajo de esta cuelgan sus conflictos de origen, conocimiento, poder y autonomía.",
-    "sortOrder": 110
+    "sortOrder": 110,
+    "tagIds": [
+      "kiyori",
+      "arco-personal",
+      "neo-academia",
+      "hoto",
+      "magia",
+      "legado"
+    ]
   },
   "pq-imugi-personal-arc": {
     "id": "pq-imugi-personal-arc",
@@ -696,18 +696,18 @@
       "Mayor control sobre su poder y su naturaleza",
       "Avance en su conflicto con el caos y la venganza"
     ],
-    "tags": [
-      "imugi",
+    "accent": "green",
+    "isRepeatable": false,
+    "notes": "Quest madre del arco personal de Imugi. Debajo de esta cuelgan sus conflictos de linaje, venganza, control y destino.",
+    "sortOrder": 120,
+    "tagIds": [
+      "imgi",
       "arco-personal",
       "caos",
       "venganza",
       "linaje",
       "demonio"
-    ],
-    "accent": "green",
-    "isRepeatable": false,
-    "notes": "Quest madre del arco personal de Imugi. Debajo de esta cuelgan sus conflictos de linaje, venganza, control y destino.",
-    "sortOrder": 120
+    ]
   },
   "pq-soobin-personal-arc": {
     "id": "pq-soobin-personal-arc",
@@ -739,18 +739,18 @@
       "Recuperación de partes clave de su identidad",
       "Avance en la reconciliación con su pasado"
     ],
-    "tags": [
+    "accent": "pink",
+    "isRepeatable": false,
+    "notes": "Quest madre del arco personal de Soobin. Debajo de esta cuelgan sus conflictos de memoria, identidad, vínculos perdidos y verdad.",
+    "sortOrder": 130,
+    "tagIds": [
       "soobin",
       "arco-personal",
       "memoria",
       "identidad",
       "pasado",
       "destino"
-    ],
-    "accent": "pink",
-    "isRepeatable": false,
-    "notes": "Quest madre del arco personal de Soobin. Debajo de esta cuelgan sus conflictos de memoria, identidad, vínculos perdidos y verdad.",
-    "sortOrder": 130
+    ]
   },
   "pq-minjae-identity": {
     "id": "pq-minjae-identity",
@@ -808,16 +808,16 @@
       "Mayor claridad sobre la identidad de Minjae",
       "Crecimiento como líder fuera del sistema que lo formó"
     ],
-    "tags": [
+    "accent": "blue",
+    "isRepeatable": false,
+    "notes": "Quest de identidad y reconstrucción personal.",
+    "sortOrder": 101,
+    "tagIds": [
       "minjae",
       "identidad",
       "liderazgo",
       "sylmorien"
-    ],
-    "accent": "blue",
-    "isRepeatable": false,
-    "notes": "Quest de identidad y reconstrucción personal.",
-    "sortOrder": 101
+    ]
   },
   "pq-minjae-family": {
     "id": "pq-minjae-family",
@@ -885,17 +885,17 @@
       "Fortalecimiento del vínculo con Joshua y sus hijas",
       "Estabilidad emocional y sentido de hogar para Minjae"
     ],
-    "tags": [
-      "minjae",
-      "familia",
-      "joshua",
-      "hogar",
-      "amor"
-    ],
     "accent": "blue",
     "isRepeatable": false,
     "notes": "Quest emocional centrada en familia, amor y futuro compartido.",
-    "sortOrder": 102
+    "sortOrder": 102,
+    "tagIds": [
+      "minjae",
+      "amilia",
+      "josha",
+      "hogar",
+      "amor"
+    ]
   },
   "pq-minjae-sylmorien": {
     "id": "pq-minjae-sylmorien",
@@ -954,17 +954,17 @@
       "Autonomía frente a Sylmorien",
       "Avance en su liberación política y emocional"
     ],
-    "tags": [
+    "accent": "blue",
+    "isRepeatable": false,
+    "notes": "Quest de emancipación política y emocional.",
+    "sortOrder": 103,
+    "tagIds": [
       "minjae",
       "sylmorien",
       "liberacion",
       "politica",
       "lealtad"
-    ],
-    "accent": "blue",
-    "isRepeatable": false,
-    "notes": "Quest de emancipación política y emocional.",
-    "sortOrder": 103
+    ]
   },
   "pq-minjae-moonlight": {
     "id": "pq-minjae-moonlight",
@@ -1026,18 +1026,18 @@
       "Mayor comprensión de su poder",
       "Integración de su rol como protector y símbolo"
     ],
-    "tags": [
+    "accent": "blue",
+    "isRepeatable": false,
+    "notes": "Quest espiritual y simbólica ligada al poder, al liderazgo y al legado de Minjae.",
+    "sortOrder": 104,
+    "tagIds": [
       "minjae",
-      "luz-de-la-luna",
+      "lz-de-la-lna",
       "rey-de-corazones",
       "poder",
       "legado",
       "simbolo"
-    ],
-    "accent": "blue",
-    "isRepeatable": false,
-    "notes": "Quest espiritual y simbólica ligada al poder, al liderazgo y al legado de Minjae.",
-    "sortOrder": 104
+    ]
   },
   "pq-kiyori-origin": {
     "id": "pq-kiyori-origin",
@@ -1094,18 +1094,18 @@
       "Comprensión del costo real de su pacto",
       "Nuevas verdades sobre su linaje y destino"
     ],
-    "tags": [
-      "kiyori",
-      "vidas-pasadas",
-      "familia",
-      "faker",
-      "pacto",
-      "pasado"
-    ],
     "accent": "purple",
     "isRepeatable": false,
     "notes": "Quest de origen, memoria y verdad oculta.",
-    "sortOrder": 111
+    "sortOrder": 111,
+    "tagIds": [
+      "kiyori",
+      "vidas-pasadas",
+      "amilia",
+      "aker",
+      "pacto",
+      "pasado"
+    ]
   },
   "pq-kiyori-neo-academy": {
     "id": "pq-kiyori-neo-academy",
@@ -1163,18 +1163,18 @@
       "Información útil sobre las cartas y el robo",
       "Claridad sobre el vínculo de Kiyori con la Neo Academia"
     ],
-    "tags": [
+    "accent": "purple",
+    "isRepeatable": false,
+    "notes": "Quest de conocimiento, confianza y cuentas pendientes con la Neo Academia.",
+    "sortOrder": 112,
+    "tagIds": [
       "kiyori",
       "neo-academia",
       "mark",
       "taeil",
       "cartas",
-      "confianza"
-    ],
-    "accent": "purple",
-    "isRepeatable": false,
-    "notes": "Quest de conocimiento, confianza y cuentas pendientes con la Neo Academia.",
-    "sortOrder": 112
+      "conianza"
+    ]
   },
   "pq-kiyori-hyungwon-jackson": {
     "id": "pq-kiyori-hyungwon-jackson",
@@ -1223,18 +1223,18 @@
       "Verdades sobre su pasado relacional y emocional",
       "Cierre o ruptura con personas clave"
     ],
-    "tags": [
-      "kiyori",
-      "hyungwon",
-      "jackson-wang",
-      "verdad",
-      "pasado",
-      "vinculos"
-    ],
     "accent": "#EC4899",
     "isRepeatable": false,
     "notes": "Quest de vínculos rotos, manipulación y verdad emocional.",
-    "sortOrder": 113
+    "sortOrder": 113,
+    "tagIds": [
+      "kiyori",
+      "hyngwon",
+      "jackson-wang",
+      "verdad",
+      "pasado",
+      "vinclos"
+    ]
   },
   "pq-kiyori-legacy": {
     "id": "pq-kiyori-legacy",
@@ -1285,17 +1285,17 @@
       "Reconstrucción del rol de Kiyori como figura de cambio",
       "Fortalecimiento de lazos con facciones aliadas"
     ],
-    "tags": [
-      "kiyori",
-      "monstruos-x",
-      "seventeenos",
-      "gremio",
-      "legado",
-      "futuro"
-    ],
     "accent": "#22C55E",
     "isRepeatable": false,
     "notes": "Quest de legado, reparación y construcción de futuro.",
-    "sortOrder": 114
+    "sortOrder": 114,
+    "tagIds": [
+      "kiyori",
+      "monstros-x",
+      "seventeenos",
+      "gremio",
+      "legado",
+      "tro"
+    ]
   }
 }

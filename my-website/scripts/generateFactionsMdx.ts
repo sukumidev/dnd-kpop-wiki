@@ -1,48 +1,42 @@
 import path from "node:path";
 import fs from "node:fs/promises";
+import { runDataValidation } from "./preflight-validation";
 
-type Ref = { label?: string; doc?: string };
-
-type Subunit = {
-  name?: string;
-  role?: string;
-  leader?: Ref;
+type FactionSubunit = {
+  id?: string;
+  title?: string;
+  role?: string | null;
+  leaderCharacterId?: string | null;
+  memberIds?: string[];
   bullets?: string[];
-  members?: Ref[];
 };
 
 type FactionEntry = {
+  id?: string;
   title?: string;
   sidebar_label?: string;
-  subtitle?: string;
-
-  type?: string;
-  reputation?: string;
-
-  base?: Ref;
-  realm?: string;
-  realmRef?: Ref;
-
-  goal?: string;
-  methods?: string;
-
-  leader?: Ref;
-  keyMembers?: Ref[];
-  allies?: Ref[];
-  rivals?: Ref[];
-  subunits?: Subunit[];
-
-  imageSrc?: string;
-  caption?: string;
+  subtitle?: string | null;
+  imageSrc?: string | null;
+  caption?: string | null;
+  type?: string | null;
+  status?: string;
+  reputation?: string | null;
+  regionId?: string | null;
+  baseLocationId?: string | null;
+  leaderCharacterId?: string | null;
+  allyFactionIds?: string[];
+  rivalFactionIds?: string[];
+  subunits?: FactionSubunit[];
+  goal?: string | null;
+  methods?: string | null;
 };
 
 type FactionsJson = Record<string, FactionEntry>;
 
 const ROOT = process.cwd();
-const FACTIONS_JSON = path.join(ROOT, "src", "data", "factions.json"); // 👈 ajusta si tu file se llama distinto
+const FACTIONS_JSON = path.join(ROOT, "src", "data", "factions.json");
 const DOCS_ROOT = path.join(ROOT, "docs", "factions");
 
-// CLI flags
 const args = new Set(process.argv.slice(2));
 const DRY_RUN = args.has("--dry-run") || args.has("-n");
 const FORCE = args.has("--force") || args.has("-f");
@@ -62,59 +56,17 @@ factionId: "${escapeYaml(id)}"
 ---
 
 import FactionPageFromDoc from '@site/src/components/FactionPageFromDoc';
-import Link from '@docusaurus/Link';
-import factions from '@site/src/data/factions.json';
 
 <FactionPageFromDoc>
 
 ## Resumen
-- …
+- ...
 
-## Propósito
-- …
+## Proposito
+- ...
 
-## Miembros
-- **Liderazgo:** …
-
-## Sub-unidades
-
-{(factions["${escapeYaml(id)}"]?.subunits ?? []).map((u) => (
-  <div key={u.name} style={{ marginBottom: "1.25rem" }}>
-    <h3>{u.name}</h3>
-
-    {u.role ? <p><b>Rol:</b> {u.role}</p> : null}
-
-    {u.leader ? (
-      <p>
-        <b>Líder:</b>{" "}
-        <Link to={\`/\${u.leader.doc}\`}>{u.leader.label}</Link>
-      </p>
-    ) : null}
-
-    {u.bullets?.length ? (
-      <ul>
-        {u.bullets.map((b, i) => (
-          <li key={i}>{b}</li>
-        ))}
-      </ul>
-    ) : null}
-
-    {u.members?.length ? (
-      <p>
-        <b>Miembros:</b>{" "}
-        {u.members.map((m, i) => (
-          <span key={m.doc}>
-            <Link to={\`/\${m.doc}\`}>{m.label}</Link>
-            {i < u.members.length - 1 ? " · " : ""}
-          </span>
-        ))}
-      </p>
-    ) : null}
-  </div>
-))}
-
-## Apariciones en campaña
-- …
+## Apariciones en campana
+- ...
 
 </FactionPageFromDoc>
 `;
@@ -135,6 +87,8 @@ async function ensureDir(p: string) {
 }
 
 async function main() {
+  runDataValidation();
+
   const raw = await fs.readFile(FACTIONS_JSON, "utf8");
   const factions: FactionsJson = JSON.parse(raw);
 
@@ -164,9 +118,7 @@ async function main() {
     const content = mdxTemplate({ id, title, sidebarLabel });
 
     if (DRY_RUN) {
-      console.log(
-        `${exists ? "[WOULD OVERWRITE]" : "[WOULD CREATE]"} ${path.relative(ROOT, outFile)}`
-      );
+      console.log(`${exists ? "[WOULD OVERWRITE]" : "[WOULD CREATE]"} ${path.relative(ROOT, outFile)}`);
       continue;
     }
 
@@ -178,15 +130,13 @@ async function main() {
   }
 
   const mode = DRY_RUN ? "DRY RUN" : "WRITE";
-  console.log(`\n✅ ${mode} terminado`);
+  console.log(`\n${mode} terminado`);
   console.log(`Creado: ${created}`);
   console.log(`Sobrescritos: ${overwritten}`);
-  console.log(
-    `Omitidos: ${skipped} ${FORCE ? "(FORCE activo, no debería haber omitidos)" : "(ya existían)"}`
-  );
+  console.log(`Omitidos: ${skipped} ${FORCE ? "(FORCE activo, no deberia haber omitidos)" : "(ya existian)"}`);
 }
 
 main().catch((err) => {
-  console.error("❌ Error:", err);
+  console.error("Error:", err);
   process.exit(1);
 });

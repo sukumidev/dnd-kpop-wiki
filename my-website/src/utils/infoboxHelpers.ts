@@ -181,7 +181,6 @@ export type FactionInfoboxInput = {
   methods?: string;
 
   leader?: React.ReactNode; // linkable
-  keyMembers?: React.ReactNode; // JSX list
   allies?: React.ReactNode;
   rivals?: React.ReactNode;
 };
@@ -201,7 +200,6 @@ export function makeFactionSections(input: FactionInfoboxInput): Section[] {
 
   const s3 = section('Liderazgo', [
     row('Líder', input.leader),
-    row('Miembros clave', input.keyMembers),
     row('Aliados', input.allies),
     row('Rivales', input.rivals),
   ]);

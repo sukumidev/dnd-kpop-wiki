@@ -1,0 +1,523 @@
+{
+  "accion-enemiga": {
+    "id": "accion-enemiga",
+    "title": "Accion Enemiga",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "aker": {
+    "id": "aker",
+    "title": "Aker",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "almas": {
+    "id": "almas",
+    "title": "Almas",
+    "category": "magic",
+    "status": "active",
+    "description": null
+  },
+  "amilia": {
+    "id": "amilia",
+    "title": "Amilia",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "amor": {
+    "id": "amor",
+    "title": "Amor",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "arco-personal": {
+    "id": "arco-personal",
+    "title": "Arco Personal",
+    "category": "arc",
+    "status": "active",
+    "description": null
+  },
+  "baraja-del-destino": {
+    "id": "baraja-del-destino",
+    "title": "Baraja del Destino",
+    "category": "arc",
+    "status": "active",
+    "description": null
+  },
+  "caos": {
+    "id": "caos",
+    "title": "Caos",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "cartas": {
+    "id": "cartas",
+    "title": "Cartas",
+    "category": "lore",
+    "status": "active",
+    "description": null
+  },
+  "cartas-legendarias": {
+    "id": "cartas-legendarias",
+    "title": "Cartas Legendarias",
+    "category": "lore",
+    "status": "active",
+    "description": null
+  },
+  "cartas-robadas": {
+    "id": "cartas-robadas",
+    "title": "Cartas Robadas",
+    "category": "arc",
+    "status": "active",
+    "description": null
+  },
+  "casa-de-los-deseos": {
+    "id": "casa-de-los-deseos",
+    "title": "Casa de los Deseos",
+    "category": "faction",
+    "status": "active",
+    "description": null
+  },
+  "clones": {
+    "id": "clones",
+    "title": "Clones",
+    "category": "theme",
+    "description": "Contenido relacionado con clones, linajes artificiales o superhumanos.",
+    "color": "blue",
+    "status": "active"
+  },
+  "conianza": {
+    "id": "conianza",
+    "title": "Conianza",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "corrpcion": {
+    "id": "corrpcion",
+    "title": "Corrpcion",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "deensa": {
+    "id": "deensa",
+    "title": "Deensa",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "demonio": {
+    "id": "demonio",
+    "title": "Demonio",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "destino": {
+    "id": "destino",
+    "title": "Destino",
+    "category": "lore",
+    "status": "active",
+    "description": null
+  },
+  "dreamscape": {
+    "id": "dreamscape",
+    "title": "Dreamscape",
+    "category": "lore",
+    "description": "Contenido relacionado con el plano de los sueños.",
+    "color": "purple",
+    "status": "active"
+  },
+  "gerra": {
+    "id": "gerra",
+    "title": "Gerra",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "gremio": {
+    "id": "gremio",
+    "title": "Gremio",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "gremio-de-aventreros": {
+    "id": "gremio-de-aventreros",
+    "title": "Gremio De Aventreros",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "heraldos-del-crepsclo": {
+    "id": "heraldos-del-crepsclo",
+    "title": "Heraldos Del Crepsclo",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "hogar": {
+    "id": "hogar",
+    "title": "Hogar",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "hoto": {
+    "id": "hoto",
+    "title": "Hoto",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "hyngwon": {
+    "id": "hyngwon",
+    "title": "Hyngwon",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "identidad": {
+    "id": "identidad",
+    "title": "Identidad",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "imgi": {
+    "id": "imgi",
+    "title": "Imgi",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "investigacion": {
+    "id": "investigacion",
+    "title": "Investigacion",
+    "category": "narrative",
+    "status": "active",
+    "description": null
+  },
+  "jackson-wang": {
+    "id": "jackson-wang",
+    "title": "Jackson Wang",
+    "category": "character",
+    "status": "active",
+    "description": null
+  },
+  "jee-enemigo": {
+    "id": "jee-enemigo",
+    "title": "Jee Enemigo",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "jngwoo-bebe": {
+    "id": "jngwoo-bebe",
+    "title": "Jngwoo Bebe",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "josha": {
+    "id": "josha",
+    "title": "Josha",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "kiyori": {
+    "id": "kiyori",
+    "title": "Kiyori",
+    "category": "character",
+    "status": "active",
+    "description": null
+  },
+  "lealtad": {
+    "id": "lealtad",
+    "title": "Lealtad",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "legado": {
+    "id": "legado",
+    "title": "Legado",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "liberacion": {
+    "id": "liberacion",
+    "title": "Liberacion",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "liderazgo": {
+    "id": "liderazgo",
+    "title": "Liderazgo",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "linaje": {
+    "id": "linaje",
+    "title": "Linaje",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "lz-de-la-lna": {
+    "id": "lz-de-la-lna",
+    "title": "Lz De La Lna",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "magia": {
+    "id": "magia",
+    "title": "Magia",
+    "category": "magic",
+    "status": "active",
+    "description": null
+  },
+  "mark": {
+    "id": "mark",
+    "title": "Mark",
+    "category": "character",
+    "status": "active",
+    "description": null
+  },
+  "memoria": {
+    "id": "memoria",
+    "title": "Memoria",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "minjae": {
+    "id": "minjae",
+    "title": "Minjae",
+    "category": "character",
+    "status": "active",
+    "description": null
+  },
+  "monstros-x": {
+    "id": "monstros-x",
+    "title": "Monstros X",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "neo-academia": {
+    "id": "neo-academia",
+    "title": "Neo Academia",
+    "category": "faction",
+    "status": "active",
+    "description": null
+  },
+  "omegas": {
+    "id": "omegas",
+    "title": "Omegas",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "pacto": {
+    "id": "pacto",
+    "title": "Pacto",
+    "category": "magic",
+    "status": "active",
+    "description": null
+  },
+  "pasado": {
+    "id": "pasado",
+    "title": "Pasado",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "piratas": {
+    "id": "piratas",
+    "title": "Piratas",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "poder": {
+    "id": "poder",
+    "title": "Poder",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "politica": {
+    "id": "politica",
+    "title": "Politica",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "portadores": {
+    "id": "portadores",
+    "title": "Portadores",
+    "category": "arc",
+    "status": "active",
+    "description": null
+  },
+  "proteccion": {
+    "id": "proteccion",
+    "title": "Proteccion",
+    "category": "narrative",
+    "status": "active",
+    "description": null
+  },
+  "radiancia-disenada": {
+    "id": "radiancia-disenada",
+    "title": "Radiancia Diseñada",
+    "category": "magic",
+    "status": "active",
+    "description": null
+  },
+  "recperacion": {
+    "id": "recperacion",
+    "title": "Recperacion",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "rescate": {
+    "id": "rescate",
+    "title": "Rescate",
+    "category": "narrative",
+    "status": "active",
+    "description": null
+  },
+  "rey-de-corazones": {
+    "id": "rey-de-corazones",
+    "title": "Rey de Corazones",
+    "category": "magic",
+    "status": "active",
+    "description": null
+  },
+  "rital": {
+    "id": "rital",
+    "title": "Rital",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "secestro": {
+    "id": "secestro",
+    "title": "Secestro",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "senghan": {
+    "id": "senghan",
+    "title": "Senghan",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "seventeenos": {
+    "id": "seventeenos",
+    "title": "Seventeenos",
+    "category": "faction",
+    "status": "active",
+    "description": null
+  },
+  "simbolo": {
+    "id": "simbolo",
+    "title": "Simbolo",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "sol-ardiente": {
+    "id": "sol-ardiente",
+    "title": "Sol Ardiente",
+    "category": "faction",
+    "description": "Contenido relacionado con el Clan del Sol Ardiente.",
+    "color": "red",
+    "status": "active"
+  },
+  "soobin": {
+    "id": "soobin",
+    "title": "Soobin",
+    "category": "character",
+    "status": "active",
+    "description": null
+  },
+  "sylmorien": {
+    "id": "sylmorien",
+    "title": "Sylmorien",
+    "category": "region",
+    "status": "active",
+    "description": null
+  },
+  "taeil": {
+    "id": "taeil",
+    "title": "Taeil",
+    "category": "character",
+    "status": "active",
+    "description": null
+  },
+  "tro": {
+    "id": "tro",
+    "title": "Tro",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "vampiros": {
+    "id": "vampiros",
+    "title": "Vampiros",
+    "category": "species",
+    "status": "active",
+    "description": null
+  },
+  "venganza": {
+    "id": "venganza",
+    "title": "Venganza",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "verdad": {
+    "id": "verdad",
+    "title": "Verdad",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "vidas-pasadas": {
+    "id": "vidas-pasadas",
+    "title": "Vidas pasadas",
+    "category": "lore",
+    "status": "active",
+    "description": null
+  },
+  "vinclos": {
+    "id": "vinclos",
+    "title": "Vinclos",
+    "category": "theme",
+    "status": "active",
+    "description": null
+  },
+  "wishitos": {
+    "id": "wishitos",
+    "title": "Wishitos",
+    "category": "species",
+    "status": "active",
+    "description": null
+  }
+}

@@ -10,6 +10,9 @@ import {
   type LocationInfoboxInput,
   type FactionInfoboxInput,
 } from './infoboxHelpers';
+import { getCharacterById, getCharacterDocPath } from '../data/characters';
+import { getFactionById } from '../data/factions';
+import { getLocationById } from '../data/locations';
 
 /**
  * JSON-friendly references
@@ -17,8 +20,9 @@ import {
  * - external: optional external link
  */
 export type DocRef = { label: string; doc: string };
+export type DocPathRef = { label: string | null; docPath: string | null };
 export type ExternalRef = { label: string; href: string };
-export type Ref = DocRef | ExternalRef;
+export type Ref = DocRef | DocPathRef | ExternalRef;
 
 export type Value = string | number | Ref | Ref[];
 
@@ -40,6 +44,11 @@ function renderRef(ref: Ref): React.ReactNode {
   }
 
   // aquí TS ya sabe que es DocRef
+  if ('docPath' in ref) {
+    if (!ref.docPath) return ref.label ?? undefined;
+    return <Link to={`/${ref.docPath}`}>{ref.label ?? ref.docPath}</Link>;
+  }
+
   return <Link to={`/${ref.doc}`}>{ref.label}</Link>;
 }
 
@@ -53,7 +62,7 @@ function renderValue(v: Value | undefined): React.ReactNode | undefined {
     return (
       <>
         {v.map((x, i) => (
-          <React.Fragment key={(isDocRef(x) ? x.doc : x.href) + i}>
+          <React.Fragment key={(isDocRef(x) ? x.doc : isExternalRef(x) ? x.href : x.docPath ?? x.label ?? '') + i}>
             {renderRef(x)}
             {i < v.length - 1 ? ' • ' : null}
           </React.Fragment>
@@ -65,16 +74,47 @@ function renderValue(v: Value | undefined): React.ReactNode | undefined {
   return renderRef(v);
 }
 
+function renderDocLink(label: string, docPath: string): React.ReactNode {
+  return <Link to={`/${docPath}`}>{label}</Link>;
+}
+
+function renderFactionLinkFromId(factionId?: string | null): React.ReactNode | undefined {
+  if (!factionId) return undefined;
+
+  const faction = getFactionById(factionId);
+  if (!faction) return factionId;
+
+  return renderDocLink(faction.title, `factions/${faction.id}`);
+}
+
+function renderDelimitedValues(values: React.ReactNode[]): React.ReactNode | undefined {
+  const clean = values.filter(Boolean);
+  if (!clean.length) return undefined;
+
+  return (
+    <>
+      {clean.map((value, i) => (
+        <React.Fragment key={i}>
+          {value}
+          {i < clean.length - 1 ? ' • ' : null}
+        </React.Fragment>
+      ))}
+    </>
+  );
+}
+
 /* -----------------------------
    Character JSON + converter
 ------------------------------ */
 
 export type CharacterJson = {
+  id?: string;
   title: string;
   subtitle?: string;
   imageSrc?: string;
   imageAlt?: string;
   caption?: string;
+  group?: 'party' | 'npc' | string;
 
   // identity
   role?: string;
@@ -97,11 +137,16 @@ export type CharacterJson = {
 
   // ✅ nuevo: perfil
   orientation?: string;
+  romanticSituation?: string | null;
   romantic_situation?: string;
+  polyamoryStatus?: string | null;
   poli?: string; // "Sí", "No", "SUPER SÍ"
 
   // places & appearances (ahora refs)
   hometown?: Value;
+  regionId?: string | null;
+  locationIds?: string[];
+  questIds?: string[];
   realm?: Value; // ahora linkeable
   actual_location?: Value;
 
@@ -112,6 +157,7 @@ export type CharacterJson = {
   lastSeen?: Value;        // antes string
 
   // affiliation
+  factionId?: string | null;
   faction?: Value;
   factions?: string[];
 
@@ -127,7 +173,6 @@ export type CharacterJson = {
   theme?: string;
   alignment?: string;
 
-  group?: string;
   doc?: string;
 };
 
@@ -176,6 +221,9 @@ function calcAgeFromISO(iso?: string, atDate = new Date()): number | undefined {
 
 export function characterJsonToSections(data: CharacterJson): Section[] {
   const bondsNode = data.bonds ? (renderValue(data.bonds) as React.ReactNode) : undefined;
+  const factionNode =
+    renderFactionLinkFromId(data.factionId) ??
+    (renderValue(data.faction) as React.ReactNode | undefined);
 
   const derivedBirthday = data.birthday ?? formatBirthdayFromISO(data.dateOfBirth);
   const derivedAge =
@@ -196,8 +244,8 @@ export function characterJsonToSections(data: CharacterJson): Section[] {
 
     // ✅ nuevos campos
     orientation: data.orientation,
-    romantic_situation: data.romantic_situation,
-    poli: data.poli,
+    romantic_situation: data.romanticSituation ?? data.romantic_situation,
+    poli: data.polyamoryStatus ?? data.poli,
 
     hometown: renderValue(data.hometown) as any,
     realm: renderValue(data.realm) as any,
@@ -208,7 +256,7 @@ export function characterJsonToSections(data: CharacterJson): Section[] {
     firstAppearance: renderValue(data.firstAppearance) as any,
     lastSeen: renderValue(data.lastSeen) as any,
 
-    faction: renderValue(data.faction) as any,
+    faction: factionNode,
     bonds: bondsNode,
     destinyCard: renderValue(data.destinyCard) as any,
 
@@ -280,24 +328,39 @@ export type FactionJson = {
   goal?: string;
   methods?: string;
   leader?: Value;
-  keyMembers?: Ref[];
   allies?: Ref[];
   rivals?: Ref[];
 };
 
 export function factionJsonToSections(data: any): Section[] {
   if (!data) return [];
+
+  const leader = data.leaderCharacterId
+    ? getCharacterById(data.leaderCharacterId)
+    : undefined;
+  const base = data.baseLocationId ? getLocationById(data.baseLocationId) : undefined;
+  const region = data.regionId ? getLocationById(data.regionId) : undefined;
+  const allyIds = data.allyFactionIds ?? [];
+  const rivalIds = data.rivalFactionIds ?? data.enemyFactionIds ?? [];
+
   return makeFactionSections({
     type: data.type,
     reputation: data.reputation,
-    base: renderValue(data.base),
-    realm: (data.realmRef ? (renderValue(data.realmRef) as any) : data.realm),
+    base: base?.title ?? data.baseLabel ?? data.baseLocationId,
+    realm: region?.title ?? data.regionId,
     goal: data.goal,
     methods: data.methods,
-    leader: renderValue(data.leader),
-    keyMembers: renderValue(data.keyMembers),
-    allies: renderValue(data.allies),
-    rivals: renderValue(data.rivals),
+    leader: leader
+      ? renderDocLink(leader.title, getCharacterDocPath(leader))
+      : data.leaderCharacterId
+        ? 'Lider desconocido'
+        : undefined,
+    allies: renderDelimitedValues(
+      allyIds.map((id: string) => getFactionById(id)?.title ?? id),
+    ),
+    rivals: renderDelimitedValues(
+      rivalIds.map((id: string) => getFactionById(id)?.title ?? id),
+    ),
   });
 }
 

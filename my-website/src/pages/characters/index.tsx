@@ -5,101 +5,69 @@ import Link from "@docusaurus/Link";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./styles.module.css";
 
-// Ajusta el path según dónde lo tengas:
-import charactersJson from "@site/src/data/characters.json";
+import { characterList, type Character } from "@site/src/data/characters";
+import type { Faction } from "@site/src/data/factions";
+import {
+  getCharacterDocPath,
+  getFactionById,
+  getLocationById,
+} from "@site/src/data/relationships";
 
-type Ref = { label: string; doc?: string };
-
-type Character = {
-  id?: string;
-
-  title: string;
-  subtitle?: string;
-
-  // tu nuevo campo es imgSrc
-  imageSrc?: string;
-
-  caption?: string;
-
-  faction?: Ref;
-  realm?: Ref;
-
-  group?: string;
-  role?: string;
-
-  occupation?: string[];
-  status?: string;
-
-  class?: string;
-  subclass?: string;
-
-  // si quieres permitir override:
-  doc?: string;
+type CharacterGroup = {
+  faction?: Faction;
+  characters: Character[];
 };
 
-// El JSON está como objeto tipo { "svt-joshua": { ... } }
-type CharactersMap = Record<string, Character>;
+const OTHER_GROUP_ID = "otros";
 
-function groupBy<T>(items: Array<[string, T]>, getKey: (id: string, item: T) => string) {
-  return items.reduce<Record<string, Array<[string, T]>>>((acc, [id, item]) => {
-    const key = getKey(id, item) || "Otros";
-    acc[key] ??= [];
-    acc[key].push([id, item]);
-    return acc;
-  }, {});
-}
+const factionPageIds = new Set([
+  "gremio-de-aventureros",
+  "hijos-de-la-noche",
+  "lobos-perdidos",
+  "panes-del-destino",
+]);
 
-function slugifyFolder(input: string) {
-  return input
-    .trim()
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .replace(/[^a-z0-9_-]/g, "-")
-    .replace(/-+/g, "-")
-    .replace(/^-|-$/g, "");
-}
+function getCharacterCaption(character: Character) {
+  const faction = getFactionById(character.factionId);
+  const region = getLocationById(character.regionId);
 
-function resolveCharacterDoc(id: string, c: Character) {
-  if (c.doc) return c.doc;
-  const group = c.group ?? "misc";
-  return `characters/${group}/${id}`;
+  if (faction?.title && region?.title) {
+    return `${faction.title} — ${region.title}`;
+  }
+
+  return faction?.title ?? region?.title ?? "Otros";
 }
 
 export default function CharactersPage() {
-  const characters = charactersJson as CharactersMap;
+  const groupedCharacters = useMemo(() => {
+    return characterList.reduce<Record<string, CharacterGroup>>((groups, character) => {
+      const faction = getFactionById(character.factionId);
+      const groupKey = faction?.id ?? OTHER_GROUP_ID;
 
-  const entries = useMemo(() => Object.entries(characters), [characters]);
+      groups[groupKey] ??= {
+        faction,
+        characters: [],
+      };
 
-  // Agrupa por facción (label). Alternativa: c.caption
-  const grouped = useMemo(() => {
-    return groupBy(entries, (_id, c) => c.faction?.label || c.caption || "Otros");
-  }, [entries]);
+      groups[groupKey].characters.push(character);
+      return groups;
+    }, {});
+  }, []);
 
-  // Orden opcional de secciones (las que no estén aquí se van al final)
-  const sectionOrder = [
-    "Los Panes del Destino",
-    "Gremio de Aventureros",
-    "Los Lobos Perdidos",
-    "Los Hijos de la Noche",
-    "Los Neo Culturales Tecnológicos",
-    "Los Monstruos X",
-  ];
-
-  const sectionKeys = useMemo(() => {
-    const keys = Object.keys(grouped);
-
-    const ranked = keys
-      .map((k) => ({ k, i: sectionOrder.indexOf(k) }))
+  const sections = useMemo(() => {
+    return Object.entries(groupedCharacters)
+      .map(([id, group]) => ({ id, ...group }))
       .sort((a, b) => {
-        const ai = a.i === -1 ? Number.POSITIVE_INFINITY : a.i;
-        const bi = b.i === -1 ? Number.POSITIVE_INFINITY : b.i;
-        return ai - bi || a.k.localeCompare(b.k);
-      })
-      .map((x) => x.k);
+        if (a.id === OTHER_GROUP_ID) return 1;
+        if (b.id === OTHER_GROUP_ID) return -1;
 
-    return ranked;
-  }, [grouped]);
+        const aOrder = a.faction?.sortOrder ?? Number.MAX_SAFE_INTEGER;
+        const bOrder = b.faction?.sortOrder ?? Number.MAX_SAFE_INTEGER;
+
+        if (aOrder !== bOrder) return aOrder - bOrder;
+        return (a.faction?.title ?? a.id).localeCompare(b.faction?.title ?? b.id);
+      });
+  }, [groupedCharacters]);
 
   return (
     <Layout title="Characters" description="Personajes del universo">
@@ -108,88 +76,110 @@ export default function CharactersPage() {
           <div className={styles.pageHeader}>
             <h1 className={styles.pageTitle}>Todos los personajes</h1>
           </div>
-          {sectionKeys.map((section) => (
-            <details key={section} className={styles.section} open>
-  <summary className={styles.sectionHeader}>
-    <Heading as="h2" className={styles.sectionTitle}>
-      {section}
-    </Heading>
 
-    <div className={styles.sectionActions}>
-      {grouped[section]?.[0]?.[1]?.faction?.doc ? (
-        <Link
-          className={styles.sectionCta}
-          to={useBaseUrl(`/${grouped[section][0][1].faction!.doc}`)}
-          onClick={(e) => e.stopPropagation()}
-          onMouseDown={(e) => e.stopPropagation()}
-        >
-          Ver facción <span className={styles.arrow}>→</span>
-        </Link>
-      ) : null}
+          {sections.map((section) => {
+            const sectionTitle = section.faction?.title ?? "Otros";
+            const factionPath =
+              section.faction && factionPageIds.has(section.faction.id)
+                ? `/factions/${section.faction.id}`
+                : undefined;
 
-      <span className={styles.chevron} aria-hidden="true" />
-    </div>
-  </summary>
+            return (
+              <details key={section.id} className={styles.section} open>
+                <summary className={styles.sectionHeader}>
+                  <Heading as="h2" className={styles.sectionTitle}>
+                    {sectionTitle}
+                  </Heading>
 
-  <div className={styles.sectionBody}>
-    <div className={styles.grid}>
-      {grouped[section].map(([id, c]) => {
-  const imgUrl = c.imageSrc ? useBaseUrl(c.imageSrc) : undefined;
-  const docPath = resolveCharacterDoc(id, c);
-  const isDeceased = c.status?.trim().toLowerCase() === "fallecido";
+                  <div className={styles.sectionActions}>
+                    {factionPath ? (
+                      <Link
+                        className={styles.sectionCta}
+                        to={useBaseUrl(factionPath)}
+                        onClick={(event) => event.stopPropagation()}
+                        onMouseDown={(event) => event.stopPropagation()}
+                      >
+                        Ver facción <span className={styles.arrow}>→</span>
+                      </Link>
+                    ) : null}
 
-  const factionLabel = c.faction?.label?.trim();
-  const realmLabel = c.realm?.label?.trim();
+                    <span className={styles.chevron} aria-hidden="true" />
+                  </div>
+                </summary>
 
-  const captionText =
-    factionLabel && realmLabel
-      ? `${factionLabel} — ${realmLabel}`
-      : factionLabel || realmLabel || undefined;
+                <div className={styles.sectionBody}>
+                  <div className={styles.grid}>
+                    {section.characters.map((character) => {
+                      const imgUrl = character.imageSrc
+                        ? useBaseUrl(character.imageSrc)
+                        : undefined;
+                      const docPath = getCharacterDocPath(character);
+                      const isDeceased = character.status === "dead";
+                      const captionText = getCharacterCaption(character);
 
-  return (
-    <Link
-      key={id}
-      to={useBaseUrl(`/${docPath}`)}
-      className={styles.cardLink}
-      aria-label={`Abrir ficha de ${c.title}`}
-    >
-      <article
-        className={`${styles.card} ${isDeceased ? styles.cardDeceased : ""}`}
-      >
-        <div className={styles.cardTop}>
-          <div className={styles.cardName}>{c.title}</div>
-        </div>
+                      return (
+                        <Link
+                          key={character.id}
+                          to={useBaseUrl(`/${docPath}`)}
+                          className={styles.cardLink}
+                          aria-label={`Abrir ficha de ${character.title}`}
+                        >
+                          <article
+                            className={`${styles.card} ${
+                              isDeceased ? styles.cardDeceased : ""
+                            }`}
+                          >
+                            <div className={styles.cardTop}>
+                              <div className={styles.cardName}>
+                                {character.title}
+                              </div>
+                            </div>
 
-        <div className={styles.imageWrap}>
-          {imgUrl ? (
-            <>
-              <img
-                className={`${styles.image} ${isDeceased ? styles.imageDeceased : ""}`}
-                src={imgUrl}
-                alt={c.title}
-                loading="lazy"
-              />
-              {isDeceased ? (
-                <div className={styles.deceasedBadge}>✝ Fallecido</div>
-              ) : null}
-            </>
-          ) : (
-            <div className={styles.imageFallback}>No image</div>
-          )}
-        </div>
+                            <div className={styles.imageWrap}>
+                              {imgUrl ? (
+                                <>
+                                  <img
+                                    className={`${styles.image} ${
+                                      isDeceased ? styles.imageDeceased : ""
+                                    }`}
+                                    src={imgUrl}
+                                    alt={character.title}
+                                    loading="lazy"
+                                  />
+                                  {isDeceased ? (
+                                    <div className={styles.deceasedBadge}>
+                                      ✝ Fallecido
+                                    </div>
+                                  ) : null}
+                                </>
+                              ) : (
+                                <div className={styles.imageFallback}>
+                                  No image
+                                </div>
+                              )}
+                            </div>
 
-        <div className={styles.cardBottom}>
-          {c.subtitle ? <div className={styles.subtitle}>{c.subtitle}</div> : null}
-          {captionText ? <div className={styles.caption}>{captionText}</div> : null}
-        </div>
-      </article>
-    </Link>
-  );
-      })}
-    </div>
-  </div>
-</details>
-          ))}
+                            <div className={styles.cardBottom}>
+                              {character.subtitle ? (
+                                <div className={styles.subtitle}>
+                                  {character.subtitle}
+                                </div>
+                              ) : null}
+                              {captionText ? (
+                                <div className={styles.caption}>
+                                  {captionText}
+                                </div>
+                              ) : null}
+                            </div>
+                          </article>
+                        </Link>
+                      );
+                    })}
+                  </div>
+                </div>
+              </details>
+            );
+          })}
         </div>
       </main>
     </Layout>

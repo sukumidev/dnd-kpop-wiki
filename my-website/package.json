@@ -13,12 +13,16 @@
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
     "typecheck": "tsc",
+    "generate:characters": "tsx scripts/generate-character-pages.ts",
+    "generate:factions": "tsx scripts/generateFactionsMdx.ts",
+    "generate:docs": "npm run generate:characters && npm run generate:factions",
     "gen:characters": "tsx scripts/generate-character-pages.ts",
     "gen:characters:dry": "tsx scripts/generate-character-pages.ts --dry-run",
     "gen:characters:force": "tsx scripts/generate-character-pages.ts --force",
     "gen:factions": "tsx scripts/generateFactionsMdx.ts",
     "gen:factions:dry": "tsx scripts/generateFactionsMdx.ts --dry-run",
-    "gen:factions:force": "tsx scripts/generateFactionsMdx.ts --force"
+    "gen:factions:force": "tsx scripts/generateFactionsMdx.ts --force",
+    "validate:data": "tsx scripts/validate-data.ts"
   },
   "dependencies": {
     "@docusaurus/core": "3.9.2",

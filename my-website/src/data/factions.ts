@@ -58,6 +58,7 @@ export type Faction = {
 
   /** Faction-to-faction relationships. */
   allyFactionIds?: string[];
+  rivalFactionIds?: string[];
   enemyFactionIds?: string[];
 
   /** Optional character-level faction relationships, useful for special rivals/allies. */

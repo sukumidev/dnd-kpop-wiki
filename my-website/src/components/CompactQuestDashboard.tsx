@@ -3,12 +3,19 @@ import Link from "@docusaurus/Link";
 
 import questsJson from "@site/src/data/quests.json";
 import type { Quest, QuestMap } from "@site/src/data/quests";
+import { getFactionById } from "@site/src/data/factions";
 
 type QuestDashboardProps = {
   showHidden?: boolean;
 };
 
 const quests = questsJson as QuestMap;
+const factionPageIds = new Set([
+  "gremio-de-aventureros",
+  "hijos-de-la-noche",
+  "lobos-perdidos",
+  "panes-del-destino",
+]);
 
 function getQuestProgress(
   quest: Quest,
@@ -464,7 +471,7 @@ function renderQuestCard(
           </p>
         ) : null}
 
-        {quest.factions?.length ? (
+        {quest.factionIds?.length ? (
           <div
             style={{
               display: "flex",
@@ -473,24 +480,26 @@ function renderQuestCard(
               alignItems: "center",
             }}
           >
-            {quest.factions.map((faction) =>
-              faction.doc ? (
+            {quest.factionIds.map((factionId) => {
+              const faction = getFactionById(factionId);
+
+              return faction && factionPageIds.has(faction.id) ? (
                 <Link
-                  key={`${quest.id}-${faction.label}`}
-                  to={`/docs/${faction.doc}`}
+                  key={`${quest.id}-${factionId}`}
+                  to={`/factions/${faction.id}`}
                   style={{ fontSize: "0.92rem" }}
                 >
-                  #{faction.label}
+                  #{faction.title}
                 </Link>
               ) : (
                 <span
-                  key={`${quest.id}-${faction.label}`}
+                  key={`${quest.id}-${factionId}`}
                   style={{ fontSize: "0.92rem", opacity: 0.8 }}
                 >
-                  #{faction.label}
+                  #{faction?.title ?? factionId}
                 </span>
-              )
-            )}
+              );
+            })}
           </div>
         ) : null}
       </div>

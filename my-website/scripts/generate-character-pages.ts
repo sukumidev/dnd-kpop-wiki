@@ -1,14 +1,17 @@
 import path from "node:path";
 import fs from "node:fs/promises";
+import { runDataValidation } from "./preflight-validation";
 
 type CharacterEntry = {
+  id?: string;
   title?: string;
   sidebar_label?: string;
-  role?: string; // "Player", "NPC", etc.
-  group?: string; // opcional: "party", "npcs", ...
-  realm?: string;
-  faction?: { label?: string; doc?: string };
-  class?: string;
+  group?: "party" | "npc";
+  subtitle?: string | null;
+  imageSrc?: string | null;
+  status?: string;
+  factionId?: string | null;
+  regionId?: string | null;
 };
 
 type CharactersJson = Record<string, CharacterEntry>;
@@ -17,48 +20,15 @@ const ROOT = process.cwd();
 const CHARACTERS_JSON = path.join(ROOT, "src", "data", "characters.json");
 const DOCS_ROOT = path.join(ROOT, "docs", "characters");
 
-// CLI flags
 const args = new Set(process.argv.slice(2));
 const DRY_RUN = args.has("--dry-run") || args.has("-n");
 const FORCE = args.has("--force") || args.has("-f");
 
-function slugifyFolder(input: string) {
-  return input
-    .trim()
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .replace(/[^a-z0-9_-]/g, "-")
-    .replace(/-+/g, "-")
-    .replace(/^-|-$/g, "");
-}
-
-/**
- * Decide carpeta por personaje.
- * Prioridad:
- * 1) entry.group si existe
- * 2) por role
- * 3) fallback: "misc"
- */
-function getGroupFolder(id: string, entry: CharacterEntry): string {
-  if (entry.group) return slugifyFolder(entry.group);
-
-  const role = (entry.role ?? "").toLowerCase().trim();
-  if (role === "player" || role === "pc") return "party";
-  if (role === "npc") return "npcs";
-  if (role === "aliado" || role === "ally") return "allies";
-  if (role === "antagonista" || role === "villain") return "antagonists";
-  if (role === "neutral") return "neutral";
-
-  // Heurística por prefijo del id (por si tu naming ya trae pc-/npc-)
-  if (id.startsWith("pc-")) return "party";
-  if (id.startsWith("npc-")) return "npcs";
-
-  return "misc";
+function getGroupFolder(entry: CharacterEntry): "party" | "npc" {
+  return entry.group ?? "npc";
 }
 
 function escapeYaml(value: string) {
-  // YAML safe quoted string
   return value.replace(/"/g, '\\"');
 }
 
@@ -77,34 +47,34 @@ import CharacterImageCarousel from '@site/src/components/CharacterImageCarousel'
 
 <CharacterPageFromDoc>
 
-<!-- Escribe aquí tu lore en markdown -->
+<!-- Escribe aqui tu lore en markdown -->
 
 ## Resumen
-- …
+- ...
 
 ## Apariencia
 
 ### Otros Looks
 <CharacterImageCarousel />
-- …
+- ...
 
 ## Personalidad
-- …
+- ...
 
 ## Backstory
-- …
+- ...
 
 ## Vida actual
-- …
+- ...
 
 ## Relaciones
-- …
+- ...
 
 ## Apariciones
-- …
+- ...
 
 ## Datos curiosos
-- …
+- ...
 
 </CharacterPageFromDoc>
 `;
@@ -125,6 +95,8 @@ async function ensureDir(p: string) {
 }
 
 async function main() {
+  runDataValidation();
+
   const raw = await fs.readFile(CHARACTERS_JSON, "utf8");
   const characters: CharactersJson = JSON.parse(raw);
 
@@ -140,7 +112,7 @@ async function main() {
 
   for (const id of ids) {
     const entry = characters[id] ?? {};
-    const group = getGroupFolder(id, entry);
+    const group = getGroupFolder(entry);
 
     const folder = path.join(DOCS_ROOT, group);
     const outFile = path.join(folder, `${id}.mdx`);
@@ -170,13 +142,13 @@ async function main() {
   }
 
   const mode = DRY_RUN ? "DRY RUN" : "WRITE";
-  console.log(`\n✅ ${mode} terminado`);
+  console.log(`\n${mode} terminado`);
   console.log(`Creado: ${created}`);
   console.log(`Sobrescritos: ${overwritten}`);
-  console.log(`Omitidos: ${skipped} ${FORCE ? "(FORCE activo, no debería haber omitidos)" : "(ya existían)"}`);
+  console.log(`Omitidos: ${skipped} ${FORCE ? "(FORCE activo, no deberia haber omitidos)" : "(ya existian)"}`);
 }
 
 main().catch((err) => {
-  console.error("❌ Error:", err);
+  console.error("Error:", err);
   process.exit(1);
 });

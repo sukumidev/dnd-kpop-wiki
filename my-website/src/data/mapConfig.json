@@ -36,6 +36,11 @@
       "label": "Mazmorras",
       "visibleByDefault": false,
       "sortOrder": 5
+    },
+    {
+      "id": "landmarks",
+      "label": "Puntos de interés",
+      "visibleByDefault": true
     }
   ],
   "icons": [
@@ -78,6 +83,10 @@
       "id": "dungeon",
       "label": "Mazmorra",
       "imageSrc": null
+    },
+    {
+      "id": "landmark",
+      "label": "Punto de interés"
     }
   ]
 }
