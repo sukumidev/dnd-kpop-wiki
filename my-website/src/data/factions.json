@@ -1,252 +1,447 @@
 {
+  "panes-del-destino": {
+    "id": "panes-del-destino",
+    "title": "Panes del Destino",
+    "subtitle": "La party que el destino eligió (aunque el destino se arrepienta)",
+    "type": "party",
+    "status": "active",
+    "visibility": "public",
+    "summary": "Recuperar las Cartas del Destino, reconstruir sus recuerdos y evitar que las facciones mayores usen la Baraja para romper el mundo.",
+    "description": null,
+    "reputation": "Caóticos, pero sorprendentemente efectivos",
+    "goal": "Recuperar las Cartas del Destino, reconstruir sus recuerdos y evitar que las facciones mayores usen la Baraja para romper el mundo.",
+    "methods": "•Exploración •Detonaciones inoportunas •Alianzas incómodas •Improvisación •Combate cuando es necesario",
+    "regionId": "hyberia",
+    "baseLocationId": "hyberia",
+    "baseLabel": "Hyberia",
+    "locationIds": [
+      "hyberia"
+    ],
+    "leaderCharacterId": "pc-minjae",
+    "allyFactionIds": [
+      "gremio-de-aventureros",
+      "hijos-de-la-noche",
+      "neo-culturales-tecnologicos",
+      "lobos-perdidos"
+    ],
+    "enemyFactionIds": [
+      "clan-del-sol-ardiente",
+      "marea-negra"
+    ],
+    "allyCharacterIds": [],
+    "enemyCharacterIds": [],
+    "subunits": [],
+    "tags": [
+      "destiny-cards",
+      "hyberia",
+      "panes-del-destino",
+      "party"
+    ],
+    "imageSrc": "/img/factions/panes-del-destino.jpeg",
+    "imageCaption": "Portadores de la Baraja del Destino",
+    "accent": "gold",
+    "sortOrder": 1
+  },
   "gremio-de-aventureros": {
+    "id": "gremio-de-aventureros",
     "title": "Gremio de Aventureros",
     "subtitle": "La Orden que mueve Hyberia",
-    "imageSrc": "/img/factions/gremio-de-aventureros.png",
-    "caption": "Los Trece Soñadores",
-
-    "type": "Gremio / Facción",
+    "type": "guild",
+    "status": "active",
+    "visibility": "public",
+    "summary": "Proteger rutas, resolver crisis locales y mantener el balance de poder en Hyberia.",
+    "description": null,
     "reputation": "Respetados (y temidos cuando toca)",
-    "base": { "label": "Sector 17", "doc": "—" },
-    "realm": "Hyberia",
-    "realmRef": { "label": "Hyberia", "doc": "world/realms/hyberia" },
-
     "goal": "Proteger rutas, resolver crisis locales y mantener el balance de poder en Hyberia.",
     "methods": "Contratos • diplomacia • misiones • fuerza cuando es necesario",
-
-    "leader": { "label": "S.Coups", "doc": "characters/misc/svt-scoups" },
-    "keyMembers": [
-      { "label": "S.Coups", "doc": "characters/misc/svt-scoups" },
-      { "label": "Jeonghan", "doc": "characters/misc/svt-jeonghan" },
-      { "label": "Joshua", "doc": "characters/misc/svt-joshua" },
-      { "label": "Jun", "doc": "characters/misc/svt-jun" },
-      { "label": "Hoshi", "doc": "characters/misc/svt-hoshi" },
-      { "label": "Woozi", "doc": "characters/svt-woozi" },
-      { "label": "DK", "doc": "characters/misc/svt-dk" },
-      { "label": "Mingyu", "doc": "characters/misc/svt-mingyu" },
-      { "label": "Minghao", "doc": "characters/misc/svt-minghao" },
-      { "label": "Seungkwan", "doc": "characters/misc/svt-seungkwan" },
-      { "label": "Vernon", "doc": "characters/misc/svt-vernon" },
-      { "label": "Dino", "doc": "characters/misc/svt-dino" }
-
+    "regionId": "hyberia",
+    "baseLocationId": "sector-17",
+    "baseLabel": "Sector 17",
+    "locationIds": [
+      "sector-17"
     ],
-
-    "allies": [],
-    "rivals": [],
+    "leaderCharacterId": "svt-scoups",
+    "allyFactionIds": [
+      "panes-del-destino"
+    ],
+    "enemyFactionIds": [
+      "clan-del-sol-ardiente"
+    ],
+    "allyCharacterIds": [],
+    "enemyCharacterIds": [],
     "subunits": [
-  {
-    "name": "🛡️ Unidad de Defensa y Vanguardia",
-    "role": "Choque y mando táctico",
-    "leader": { "label": "S.Coups", "doc": "characters/svt-scoups" },
-    "bullets": [
-        "Primera línea en asedios y escoltas del Gremio",
-        "Encargados de proteger caravanas y la Casa del Gremio",
-        "Actúan como mando cuando hay crisis en Hyberia",
-        "Liderar batallas, escoltas peligrosas y asedios."
+      {
+        "id": "unidad-de-defensa-y-vanguardia",
+        "title": "🛡️ Unidad de Defensa y Vanguardia",
+        "role": "Choque y mando táctico",
+        "leaderCharacterId": "svt-scoups",
+        "memberIds": [
+          "svt-scoups",
+          "svt-mingyu",
+          "svt-wonwoo",
+          "svt-vernon"
+        ],
+        "bullets": [
+          "Primera línea en asedios y escoltas del Gremio",
+          "Encargados de proteger caravanas y la Casa del Gremio",
+          "Actúan como mando cuando hay crisis en Hyberia",
+          "Liderar batallas, escoltas peligrosas y asedios."
+        ]
+      },
+      {
+        "id": "unidad-de-relaciones-publicas-e-impacto-social",
+        "title": "🔰 Unidad de Relaciones Públicas e Impacto Social",
+        "role": "Diplomacia y política",
+        "leaderCharacterId": "svt-woozi",
+        "memberIds": [
+          "svt-woozi",
+          "svt-jeonghan",
+          "svt-joshua",
+          "svt-dk",
+          "svt-seungkwan"
+        ],
+        "bullets": [
+          "Son la voz y el rostro del Gremio ante el mundo.",
+          "Diplomacia con reinos y otras facciones.",
+          "Organizan ayuda para aldeas, refugiados y gente afectada por la guerra.",
+          "Se encargan de cuidar la reputación del Gremio (que se dice de ellos en tabernas y en cortes)."
+        ]
+      },
+      {
+        "id": "unidad-de-exploracion-y-expediciones",
+        "title": "🐯 Unidad de Exploración y Expediciones",
+        "role": "Movilidad, scouting y distracción elegante",
+        "leaderCharacterId": "svt-hoshi",
+        "memberIds": [
+          "svt-hoshi",
+          "svt-jun",
+          "svt-minghao",
+          "svt-dino"
+        ],
+        "bullets": [
+          "Son quienes van a lugares desconocidos y peligrosos.",
+          "Exploran ruinas, templos, bosques malditos y zonas llenas de monstruos.",
+          "Investigar reliquias, fenómenos extraños y posibles Cartas del Destino.",
+          "Abrir nuevas rutas seguras para viajeros y comerciantes."
+        ]
+      }
     ],
-    "members": [
-      { "label": "S.Coups", "doc": "characters/misc/svt-scoups" },
-      { "label": "Mingyu", "doc": "characters/misc/svt-mingyu" },
-      { "label": "Wonwoo", "doc": "characters/misc/svt-wonwoo" },
-      { "label": "Vernon", "doc": "characters/misc/svt-vernon" }
-    ]
-  },
-  {
-    "name": "🔰 Unidad de Relaciones Públicas e Impacto Social",
-    "role": "Diplomacia y política",
-    "leader": { "label": "Woozi", "doc": "characters/svt-woozi" },
-    "bullets": [
-        "Son la voz y el rostro del Gremio ante el mundo.",
-        "Diplomacia con reinos y otras facciones.",
-        "Organizan ayuda para aldeas, refugiados y gente afectada por la guerra.",
-        "Se encargan de cuidar la reputación del Gremio (que se dice de ellos en tabernas y en cortes)."
+    "tags": [
+      "gremio",
+      "gremio-de-aventureros",
+      "hyberia",
+      "seventeen"
     ],
-    "members": [
-      { "label": "Woozi", "doc": "characters/misc/svt-woozi" },
-      { "label": "Jeonghan", "doc": "characters/misc/svt-jeonghan" },
-      { "label": "Joshua", "doc": "characters/misc/svt-joshua" },
-      { "label": "DK", "doc": "characters/misc/svt-dk" },
-      { "label": "Seungkwan", "doc": "characters/misc/svt-seungkwan" }
-    ]
-  },
-  {
-    "name": "🐯 Unidad de Exploración y Expediciones",
-    "role": "Movilidad, scouting y distracción elegante",
-    "leader": { "label": "Hoshi", "doc": "characters/svt-hoshi" },
-    "bullets": [
-        "Son quienes van a lugares desconocidos y peligrosos.",
-        "Exploran ruinas, templos, bosques malditos y zonas llenas de monstruos.",
-        "Investigar reliquias, fenómenos extraños y posibles Cartas del Destino.",
-        "Abrir nuevas rutas seguras para viajeros y comerciantes."
-    ],
-    "members": [
-      { "label": "Hoshi", "doc": "characters/misc/svt-hoshi" },
-      { "label": "Jun", "doc": "characters/misc/svt-jun" },
-      { "label": "Minghao", "doc": "characters/misc/svt-minghao" },
-      { "label": "Dino", "doc": "characters/misc/svt-dino" }
-    ]
-  }
-]
-  },
-  "panes-del-destino": {
-  "title": "Panes del Destino",
-  "subtitle": "La party que el destino eligió (aunque el destino se arrepienta)",
-  "imageSrc": "/img/factions/panes-del-destino.jpeg",
-  "caption": "Portadores de la Baraja del Destino",
-
-  "type": "Party / Portadores",
-  "reputation": "Caóticos, pero sorprendentemente efectivos",
-  "base": { "label": "Hyberia", "doc": "world/realms/hyberia" },
-  "realm": "Hyberia",
-  "realmRef": { "label": "Hyberia", "doc": "world/realms/hyberia" },
-
-  "goal": "Recuperar las Cartas del Destino, reconstruir sus recuerdos y evitar que las facciones mayores usen la Baraja para romper el mundo.",
-  "methods": "•Exploración •Detonaciones inoportunas •Alianzas incómodas •Improvisación •Combate cuando es necesario",
-
-  "leader": { "label": "Yang Minjae", "doc": "characters/pc-minjae" },
-  "keyMembers": [
-    { "label": "Yang Minjae", "doc": "characters/party/pc-minjae" },
-    { "label": "Jang Soobin", "doc": "characters/party/pc-soobin" },
-    { "label": "Fenghuang Imugi", "doc": "characters/party/pc-imugi" },
-    { "label": "Kiyori Hoshizuki", "doc": "characters/party/pc-kiyori" }
-  ],
-
-  "allies": [
-    { "label": "El Gremio de Aventureros", "doc": "factions/gremio-de-aventureros" },
-    { "label": "Los Hijos de la Noche", "doc": "factions/hijos-de-la-noche" },
-    { "label": "Los Neo Culturales Tecnológicos", "doc": "factions/neo-culturales" },
-    { "label": "Los Lobos Perdidos", "doc": "factions/lobos-perdidos" }
-  ],
-  "rivals": [
-    { "label": "Clan del Sol Ardiente", "doc": "factions/clan-del-sol-ardiente" },
-    { "label": "Piratas de la Marea Negra", "doc": "factions/marea-negra" }
-  ]
-},
-  "hijos-de-la-noche": {
-    "title": "Hijos de la Noche",
-    "subtitle": "La Orden que lleva la noche consigo",
-    "imageSrc": "/img/factions/hijos-de-la-noche.png",
-    "caption": "El Pacto de la Oscuridad",
-
-    "type": "Orden oscuro-divina / Facción",
-    "reputation": "Temidos, perseguidos y malditamente eficaces",
-    "base": { "label": "Tierra Ilusoria", "doc": "world/realms/tierra-ilusoria" },
-    "realm": "Hyberia",
-    "realmRef": { "label": "Hyberia", "doc": "world/realms/hyberia" },
-
-    "goal": "Cumplir el pacto con Moonbin llevando la noche a donde vayan, invocar a los Nuevos Dioses y despertar al Rey Demonio Faker para ‘restaurar’ Hyberia bajo una oscuridad controlada.",
-    "methods": "Pacto lunar • disciplina • sacrificios • cacería • manipulación de Cartas del Destino • rituales e infiltración",
-
-    "leader": { "label": "Jungwon", "doc": "characters/misc/enha-jungwon" },
-    "keyMembers": [
-      { "label": "Jungwon", "doc": "characters/misc/enha-jungwon" },
-      { "label": "Heeseung", "doc": "characters/misc/enha-heeseung" },
-      { "label": "Jay", "doc": "characters/misc/enha-jay" },
-      { "label": "Jake", "doc": "characters/misc/enha-jake" },
-      { "label": "Sunghoon", "doc": "characters/misc/enha-sunghoon" },
-      { "label": "Sunoo", "doc": "characters/misc/enha-sunoo" },
-      { "label": "Ni-ki", "doc": "characters/misc/enha-niki" }
-    ],
-
-    "allies": [
-      { "label": "Cultos perdidos del Rey Demonio", "doc": "—" },
-      { "label": "Acólitos de la Luna Nueva (a veces)", "doc": "—" },
-      { "label": "Piratas de la Marea Negra (a veces)", "doc": "factions/marea-negra" },
-      { "label": "Panes del Destino (a veces)", "doc": "factions/panes-del-destino" }
-    ],
-    "rivals": [
-      { "label": "Todos los demás (nadie los quiere)", "doc": "—" }
-    ],
-
-    "subunits": []
+    "imageSrc": "/img/factions/gremio-de-aventureros.png",
+    "imageCaption": "Los Trece Soñadores",
+    "accent": "green",
+    "sortOrder": 10
   },
   "lobos-perdidos": {
-  "title": "Los Lobos Perdidos",
-  "subtitle": "La Manada de la Luna Nueva",
-  "imageSrc": "/img/factions/lobos-perdidos.jpeg",
-  "caption": "Los que aún corren bajo la luna rota",
-
-  "type": "Manada licántropa sombría / Facción",
-  "reputation": "Temidos, errantes y ferozmente leales entre sí",
-  "base": { "label": "Guarida de los Lobos", "doc": "world/locations/guarida-de-los-lobos" },
-  "realm": "Hyberia",
-  "realmRef": { "label": "Hyberia", "doc": "world/realms/hyberia" },
-
-  "goal": "Sobrevivir a la fractura de su manada, proteger a los suyos —especialmente a Felix—, custodiar a quienes cargan hilos importantes del destino y encontrar una forma de romper el ciclo de manipulación que los convirtió en armas.",
-  "methods": "Instinto de manada • rastreo de vínculos • infiltración • emboscadas • rescates • disciplina lunar • protección feroz de los suyos",
-
-  "leader": { "label": "Bang Chan", "doc": "characters/misc/skz-bangchan" },
-  "keyMembers": [
-    { "label": "Bang Chan", "doc": "characters/misc/skz-bangchan" },
-    { "label": "Lee Know", "doc": "characters/misc/skz-leeknow" },
-    { "label": "Changbin", "doc": "characters/misc/skz-changbin" },
-    { "label": "Hyunjin", "doc": "characters/misc/skz-hyunjin" },
-    { "label": "Han", "doc": "characters/misc/skz-han" },
-    { "label": "Felix", "doc": "characters/misc/skz-felix" },
-    { "label": "Seungmin", "doc": "characters/misc/skz-seungmin" },
-    { "label": "Jeongin (IN)", "doc": "characters/misc/skz-jeongin" }
-  ],
-
-  "allies": [
-    { "label": "Panes del Destino", "doc": "factions/panes-del-destino" },
-    { "label": "Gremio de Aventureros", "doc": "factions/gremio-de-aventureros" },
-    { "label": "Neo Culturales Tecnológicos", "doc": "factions/neo-culturales-tecnologicos" },
-    { "label": "Hijos de la Noche (alianzas incómodas)", "doc": "factions/hijos-de-la-noche" }
-  ],
-  "rivals": [
-    { "label": "Rey Bang PD", "doc": "characters/misc/bang-pd" },
-    { "label": "Clan del Sol Ardiente", "doc": "factions/clan-del-sol-ardiente" }
-      ],
-
-  "subunits": [
-  {
-    "name": "🔥 3RACHA — La Garra del Umbral",
-    "role": "Choque, estrategia y mando táctico",
-    "leader": { "label": "Bang Chan", "doc": "characters/misc/skz-bangchan" },
-    "bullets": [
-      "Funcionan como célula de decisión rápida cuando la manada entra en combate o persecución.",
-      "Coordinan emboscadas, rutas de escape y respuestas inmediatas ante amenazas mayores.",
-      "Son quienes toman el frente cuando hay que romper una línea enemiga o rescatar a uno de los suyos.",
-      "Mantienen a la manada unida en momentos de crisis, especialmente cuando el instinto supera la razón."
+    "id": "lobos-perdidos",
+    "title": "Los Lobos Perdidos",
+    "subtitle": "La Manada de la Luna Nueva",
+    "type": "pack",
+    "status": "active",
+    "visibility": "public",
+    "summary": "Sobrevivir a la fractura de su manada, proteger a los suyos —especialmente a Felix—, custodiar a quienes cargan hilos importantes del destino y encontrar una forma de romper el ciclo de manipulación que los convirtió en armas.",
+    "description": null,
+    "reputation": "Temidos, errantes y ferozmente leales entre sí",
+    "goal": "Sobrevivir a la fractura de su manada, proteger a los suyos —especialmente a Felix—, custodiar a quienes cargan hilos importantes del destino y encontrar una forma de romper el ciclo de manipulación que los convirtió en armas.",
+    "methods": "Instinto de manada • rastreo de vínculos • infiltración • emboscadas • rescates • disciplina lunar • protección feroz de los suyos",
+    "regionId": "jeyperia",
+    "baseLocationId": "guarida-de-los-lobos",
+    "baseLabel": "Guarida de los Lobos",
+    "locationIds": [
+      "guarida-de-los-lobos"
     ],
-    "members": [
-      { "label": "Bang Chan", "doc": "characters/misc/skz-bangchan" },
-      { "label": "Changbin", "doc": "characters/misc/skz-changbin" },
-      { "label": "Han", "doc": "characters/misc/skz-han" }
-    ]
+    "leaderCharacterId": "skz-bangchan",
+    "allyFactionIds": [
+      "panes-del-destino",
+      "gremio-de-aventureros",
+      "neo-culturales-tecnologicos",
+      "hijos-de-la-noche"
+    ],
+    "enemyFactionIds": [
+      "clan-del-sol-ardiente"
+    ],
+    "allyCharacterIds": [],
+    "enemyCharacterIds": [
+      "bang-pd"
+    ],
+    "subunits": [
+      {
+        "id": "3racha-la-garra-del-umbral",
+        "title": "🔥 3RACHA — La Garra del Umbral",
+        "role": "Choque, estrategia y mando táctico",
+        "leaderCharacterId": "skz-bangchan",
+        "memberIds": [
+          "skz-bangchan",
+          "skz-changbin",
+          "skz-han"
+        ],
+        "bullets": [
+          "Funcionan como célula de decisión rápida cuando la manada entra en combate o persecución.",
+          "Coordinan emboscadas, rutas de escape y respuestas inmediatas ante amenazas mayores.",
+          "Son quienes toman el frente cuando hay que romper una línea enemiga o rescatar a uno de los suyos.",
+          "Mantienen a la manada unida en momentos de crisis, especialmente cuando el instinto supera la razón."
+        ]
+      },
+      {
+        "id": "el-aullido-del-vinculo",
+        "title": "🎤 El Aullido del Vínculo",
+        "role": "Contención, rastreo emocional y sostén de la manada",
+        "leaderCharacterId": "skz-seungmin",
+        "memberIds": [
+          "skz-seungmin",
+          "skz-jeongin"
+        ],
+        "bullets": [
+          "Sostienen la cohesión emocional de la manada cuando las heridas del destino o la luna los desestabilizan.",
+          "Acompañan procesos de recuperación, resguardo y vigilancia de miembros vulnerables como Felix.",
+          "Son quienes perciben mejor los cambios en el ánimo, aroma e inestabilidad de los suyos.",
+          "Su presencia evita que el dolor colectivo fracture aún más a los Lobos Perdidos."
+        ]
+      },
+      {
+        "id": "las-sombras-que-cazan",
+        "title": "🗡️ Las Sombras que Cazan",
+        "role": "Rastreo, infiltración y ejecución móvil",
+        "leaderCharacterId": "skz-leeknow",
+        "memberIds": [
+          "skz-leeknow",
+          "skz-hyunjin",
+          "skz-felix"
+        ],
+        "bullets": [
+          "Se especializan en rastrear presas, seguir rastros mágicos y moverse sin ser detectados.",
+          "Operan como avanzadilla de la manada en misiones de infiltración, reconocimiento o cacería.",
+          "Son los más aptos para explorar territorios hostiles y detectar trampas, huellas o alteraciones en los hilos del destino.",
+          "Cuando una presa intenta huir, ellos son quienes la alcanzan primero."
+        ]
+      }
+    ],
+    "tags": [
+      "hyberia",
+      "jeyperia",
+      "lobos",
+      "lobos-perdidos",
+      "stray-wolves"
+    ],
+    "imageSrc": "/img/factions/lobos-perdidos.jpeg",
+    "imageCaption": "Los que aún corren bajo la luna rota",
+    "accent": "gray",
+    "sortOrder": 20
   },
-  {
-    "name": "🎤 El Aullido del Vínculo",
-    "role": "Contención, rastreo emocional y sostén de la manada",
-    "leader": { "label": "Seungmin", "doc": "characters/misc/skz-seungmin" },
-    "bullets": [
-      "Sostienen la cohesión emocional de la manada cuando las heridas del destino o la luna los desestabilizan.",
-      "Acompañan procesos de recuperación, resguardo y vigilancia de miembros vulnerables como Felix.",
-      "Son quienes perciben mejor los cambios en el ánimo, aroma e inestabilidad de los suyos.",
-      "Su presencia evita que el dolor colectivo fracture aún más a los Lobos Perdidos."
+  "hijos-de-la-noche": {
+    "id": "hijos-de-la-noche",
+    "title": "Hijos de la Noche",
+    "subtitle": "La Orden que lleva la noche consigo",
+    "type": "order",
+    "status": "active",
+    "visibility": "public",
+    "summary": "Cumplir el pacto con Moonbin llevando la noche a donde vayan, invocar a los Nuevos Dioses y despertar al Rey Demonio Faker para ‘restaurar’ Hyberia bajo una oscuridad controlada.",
+    "description": null,
+    "reputation": "Temidos, perseguidos y malditamente eficaces",
+    "goal": "Cumplir el pacto con Moonbin llevando la noche a donde vayan, invocar a los Nuevos Dioses y despertar al Rey Demonio Faker para ‘restaurar’ Hyberia bajo una oscuridad controlada.",
+    "methods": "Pacto lunar • disciplina • sacrificios • cacería • manipulación de Cartas del Destino • rituales e infiltración",
+    "regionId": "hyberia",
+    "baseLocationId": "tierra-ilusoria",
+    "baseLabel": "Tierra Ilusoria",
+    "locationIds": [
+      "tierra-ilusoria"
     ],
-    "members": [
-      { "label": "Seungmin", "doc": "characters/misc/skz-seungmin" },
-      { "label": "Yang Jeongin (IN)", "doc": "characters/misc/skz-jeongin" }
-    ]
+    "leaderCharacterId": "enha-jungwon",
+    "allyFactionIds": [
+      "marea-negra",
+      "panes-del-destino"
+    ],
+    "enemyFactionIds": [
+      "clan-del-sol-ardiente"
+    ],
+    "allyCharacterIds": [],
+    "enemyCharacterIds": [],
+    "subunits": [],
+    "tags": [
+      "hijos-de-la-noche",
+      "hyberia",
+      "moonbin",
+      "vampiros"
+    ],
+    "imageSrc": "/img/factions/hijos-de-la-noche.png",
+    "imageCaption": "El Pacto de la Oscuridad",
+    "accent": "purple",
+    "sortOrder": 30
   },
-  {
-    "name": "🗡️ Las Sombras que Cazan",
-    "role": "Rastreo, infiltración y ejecución móvil",
-    "leader": { "label": "Lee Know", "doc": "characters/misc/skz-leeknow" },
-    "bullets": [
-      "Se especializan en rastrear presas, seguir rastros mágicos y moverse sin ser detectados.",
-      "Operan como avanzadilla de la manada en misiones de infiltración, reconocimiento o cacería.",
-      "Son los más aptos para explorar territorios hostiles y detectar trampas, huellas o alteraciones en los hilos del destino.",
-      "Cuando una presa intenta huir, ellos son quienes la alcanzan primero."
+  "heraldos-del-crepusculo": {
+    "id": "heraldos-del-crepusculo",
+    "title": "Los Heraldos del Crepúsculo",
+    "subtitle": null,
+    "type": "order",
+    "status": "active",
+    "visibility": "public",
+    "summary": null,
+    "description": null,
+    "regionId": "hyberia",
+    "locationIds": [
+      "borasek"
     ],
-    "members": [
-      { "label": "Lee Know", "doc": "characters/misc/skz-leeknow" },
-      { "label": "Hyunjin", "doc": "characters/misc/skz-hyunjin" },
-      { "label": "Felix", "doc": "characters/misc/skz-felix" }
-    ]
+    "allyFactionIds": [],
+    "enemyFactionIds": [
+      "clan-del-sol-ardiente"
+    ],
+    "tags": [
+      "vampiros",
+      "crepusculo",
+      "hyberia"
+    ],
+    "imageSrc": null,
+    "accent": "purple",
+    "sortOrder": 31,
+    "reputation": null,
+    "goal": null,
+    "methods": null,
+    "baseLocationId": "borasek",
+    "baseLabel": null,
+    "leaderCharacterId": null,
+    "allyCharacterIds": [],
+    "enemyCharacterIds": [],
+    "subunits": [],
+    "imageCaption": null
+  },
+  "neo-culturales-tecnologicos": {
+    "id": "neo-culturales-tecnologicos",
+    "title": "Los Neo Culturales Tecnológicos",
+    "subtitle": "Neo Academia",
+    "type": "academy",
+    "status": "active",
+    "visibility": "public",
+    "summary": null,
+    "description": null,
+    "regionId": "sylmorien",
+    "locationIds": [
+      "neocity"
+    ],
+    "allyFactionIds": [
+      "panes-del-destino"
+    ],
+    "enemyFactionIds": [
+      "clan-del-sol-ardiente"
+    ],
+    "tags": [
+      "neo-academia",
+      "sylmorien",
+      "neovibra"
+    ],
+    "imageSrc": null,
+    "accent": "cyan",
+    "sortOrder": 40,
+    "reputation": null,
+    "goal": null,
+    "methods": null,
+    "baseLocationId": "neocity",
+    "baseLabel": null,
+    "leaderCharacterId": null,
+    "allyCharacterIds": [],
+    "enemyCharacterIds": [],
+    "subunits": [],
+    "imageCaption": null
+  },
+  "clan-del-sol-ardiente": {
+    "id": "clan-del-sol-ardiente",
+    "title": "Clan del Sol Ardiente",
+    "subtitle": null,
+    "type": "enemy",
+    "status": "active",
+    "visibility": "public",
+    "summary": null,
+    "description": null,
+    "regionId": null,
+    "locationIds": [],
+    "allyFactionIds": [],
+    "enemyFactionIds": [
+      "panes-del-destino",
+      "neo-culturales-tecnologicos",
+      "gremio-de-aventureros"
+    ],
+    "tags": [
+      "sol-ardiente",
+      "villanos",
+      "radiancia-disenada"
+    ],
+    "imageSrc": null,
+    "accent": "red",
+    "sortOrder": 50,
+    "reputation": null,
+    "goal": null,
+    "methods": null,
+    "baseLocationId": null,
+    "baseLabel": null,
+    "leaderCharacterId": null,
+    "allyCharacterIds": [],
+    "enemyCharacterIds": [],
+    "subunits": [],
+    "imageCaption": null
+  },
+  "guerreros-ascendidos": {
+    "id": "guerreros-ascendidos",
+    "title": "Los Guerreros Ascendidos",
+    "subtitle": null,
+    "type": "order",
+    "status": "active",
+    "visibility": "public",
+    "summary": null,
+    "description": null,
+    "regionId": null,
+    "locationIds": [],
+    "allyFactionIds": [],
+    "enemyFactionIds": [],
+    "tags": [
+      "guerreros-ascendidos"
+    ],
+    "imageSrc": null,
+    "accent": null,
+    "sortOrder": 60,
+    "reputation": null,
+    "goal": null,
+    "methods": null,
+    "baseLocationId": null,
+    "baseLabel": null,
+    "leaderCharacterId": null,
+    "allyCharacterIds": [],
+    "enemyCharacterIds": [],
+    "subunits": [],
+    "imageCaption": null
+  },
+  "marea-negra": {
+    "id": "marea-negra",
+    "title": "Los Piratas de la Marea Negra",
+    "subtitle": null,
+    "type": "pirates",
+    "status": "active",
+    "visibility": "public",
+    "summary": null,
+    "description": null,
+    "regionId": null,
+    "locationIds": [],
+    "allyFactionIds": [],
+    "enemyFactionIds": [],
+    "tags": [
+      "piratas",
+      "marea-negra"
+    ],
+    "imageSrc": null,
+    "accent": "black",
+    "sortOrder": 70,
+    "reputation": null,
+    "goal": null,
+    "methods": null,
+    "baseLocationId": null,
+    "baseLabel": null,
+    "leaderCharacterId": null,
+    "allyCharacterIds": [],
+    "enemyCharacterIds": [],
+    "subunits": [],
+    "imageCaption": null
   }
-]
-}
-
 }

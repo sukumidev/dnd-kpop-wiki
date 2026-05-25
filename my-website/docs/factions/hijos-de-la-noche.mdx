@@ -6,9 +6,8 @@ factionId: "hijos-de-la-noche"
 ---
 
 import FactionPageFromDoc from '@site/src/components/FactionPageFromDoc';
-import Link from '@docusaurus/Link';
-import factions from '@site/src/data/factions.json';
 import FactionMembersFromDoc from '@site/src/components/FactionMembersFromDoc';
+import FactionSubunitsFromDoc from '@site/src/components/FactionSubunitsFromDoc';
 
 <FactionPageFromDoc>
 
@@ -23,40 +22,7 @@ import FactionMembersFromDoc from '@site/src/components/FactionMembersFromDoc';
 
 ## Sub-unidades
 
-{(factions["hijos-de-la-noche"]?.subunits ?? []).map((u) => (
-  <div key={u.name} style={{ marginBottom: "1.25rem" }}>
-    <h3>{u.name}</h3>
-
-    {u.role ? <p><b>Rol:</b> {u.role}</p> : null}
-
-    {u.leader ? (
-      <p>
-        <b>Líder:</b>{" "}
-        <Link to={`/${u.leader.doc}`}>{u.leader.label}</Link>
-      </p>
-    ) : null}
-
-    {u.bullets?.length ? (
-      <ul>
-        {u.bullets.map((b, i) => (
-          <li key={i}>{b}</li>
-        ))}
-      </ul>
-    ) : null}
-
-    {u.members?.length ? (
-      <p>
-        <b>Miembros:</b>{" "}
-        {u.members.map((m, i) => (
-          <span key={m.doc}>
-            <Link to={`/${m.doc}`}>{m.label}</Link>
-            {i < u.members.length - 1 ? " · " : ""}
-          </span>
-        ))}
-      </p>
-    ) : null}
-  </div>
-))}
+<FactionSubunitsFromDoc />
 
 ## Apariciones en campaña
 - …

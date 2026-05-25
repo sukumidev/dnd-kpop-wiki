@@ -1,0 +1,1403 @@
+{
+  "mq-collect-cards": {
+    "id": "mq-collect-cards",
+    "sessionStarted": 1,
+    "lastUpdatedSession": 11,
+    "title": "Recolectar la Baraja del Destino",
+    "subtitle": "Las 54 cartas que decidirán el destino del mundo",
+    "types": ["main"],
+    "status": "active",
+    "visibility": "public",
+    "summary": "La party debe encontrar, proteger o reclamar las 54 cartas de la Baraja del Destino antes de que caigan en manos de facciones que buscan alterar el equilibrio del mundo.",
+    "description": "Las cartas de la Baraja del Destino están ligadas a almas, linajes y fuerzas antiguas. Algunas ya han despertado, otras siguen ocultas y varias están siendo perseguidas por enemigos que desean manipular el orden del mundo. Reunir la baraja no solo implica localizar cartas o portadores: también exige descubrir la verdad sobre el destino, los sacrificios y las consecuencias de alterar el equilibrio.",
+    "progress": {
+      "mode": "manual",
+      "current": 5,
+      "goal": 54
+    },
+    "questGiver": {
+      "label": "La Carta del Destino",
+      "doc": "lore/baraja-del-destino"
+    },
+    "factions": [],
+    "rewards": [
+      "Experiencia",
+      "Acceso a la verdad sobre la Baraja del Destino",
+      "Ventaja narrativa contra facciones enemigas"
+    ],
+    "tags": [
+      "baraja del destino",
+      "cartas legendarias",
+      "portadores",
+      "destino"
+    ],
+    "accent": "gold",
+    "isRepeatable": false,
+    "notes": "Quest principal de toda la campaña.",
+    "sortOrder": 1
+  },
+
+  "mq-protect-holders": {
+    "id": "mq-protect-holders",
+    "sessionStarted": 11,
+    "lastUpdatedSession": null,
+    "parentQuestId": "mq-collect-cards",
+    "title": "Proteger a los Portadores de la Baraja del Destino",
+    "subtitle": "Ningún alma marcada debe caer",
+    "types": ["main"],
+    "status": "active",
+    "visibility": "public",
+    "summary": "La party debe identificar, proteger y poner a salvo a los portadores conocidos de la Baraja del Destino antes de que facciones enemigas los capturen, corrompan o sacrifiquen.",
+    "description": "Muchas de las cartas de la Baraja del Destino están ligadas a almas vivas, lo que convierte a sus portadores en objetivos prioritarios para facciones que desean torcer el destino. Protegerlos implica encontrarlos, anticipar amenazas, frustrar intentos de captura y construir una red de apoyo capaz de mantenerlos con vida.",
+    "progress": {
+      "mode": "manual",
+      "current": 0,
+      "goal": 10
+    },
+    "factions": [],
+    "rewards": [
+      "Supervivencia de portadores clave",
+      "Nuevos aliados vinculados a cartas activas",
+      "Mayor control narrativo sobre el destino de la Baraja"
+    ],
+    "tags": [
+      "portadores",
+      "protección",
+      "baraja del destino"
+    ],
+    "objectives": [
+      {
+        "id": "protect-seunghan",
+        "label": "Proteger a Seunghan de los Guerreros Ascendentes",
+        "done": true
+      },
+      {
+        "id": "protect-wishies",
+        "label": "Proteger a los miembros de la Casa de los Deseos",
+        "done": true,
+        "weight": 6
+      },
+      {
+        "id": "protect-jeongin",
+        "label": "Proteger a Jeongin de los Lobos Perdidos",
+        "done": false
+      },
+      {
+        "id": "protect-taeyong",
+        "label": "Proteger a Taeyong de los Neo Culturales Tecnológicos",
+        "done": false
+      },
+      {
+        "id": "unlink-bearers",
+        "label": "Descubrir cómo Desvincular las Cartas del Destino del Alma de los Portadores",
+        "done": false
+      }
+    ],
+    "accent": "gold",
+    "isRepeatable": false,
+    "notes": "Quest paraguas centrada en la seguridad de los portadores.",
+    "sortOrder": 2
+  },
+
+  "mq-unlink-holders": {
+    "id": "mq-unlink-holders",
+    "sessionStarted": 12,
+    "lastUpdatedSession": null,
+    "parentQuestId": "mq-protect-holders",
+    "title": "Descubrir cómo Desvincular las Cartas del Destino del Alma de los Portadores",
+    "subtitle": "Romper el lazo entre destino y alma",
+    "types": ["main"],
+    "status": "active",
+    "visibility": "public",
+    "summary": "La party debe investigar si existe una forma de separar las cartas del destino de las almas a las que están vinculadas sin destruir a sus portadores.",
+    "description": "Las cartas no son simples reliquias: están unidas a almas vivas, pactos antiguos y fuerzas que parecen anteriores a la memoria misma. Si la party desea salvar a los portadores sin condenarlos a cargar con ese vínculo para siempre, deberá encontrar una forma de romper el lazo sin sacrificar la vida o la esencia de quienes portan el destino.",
+    "progress": {
+      "mode": "manual",
+      "current": 0,
+      "goal": 1
+    },
+    "factions": [],
+    "rewards": [
+      "Posible método para salvar portadores vinculados",
+      "Información crucial sobre la naturaleza real de la Baraja",
+      "Ventaja contra rituales enemigos"
+    ],
+    "tags": [
+      "almas",
+      "portadores",
+      "ritual",
+      "investigación"
+    ],
+    "accent": "gold",
+    "isRepeatable": false,
+    "notes": "Subquest de investigación mayor con implicaciones de late game.",
+    "sortOrder": 3
+  },
+
+  "mq-protect-seunghan": {
+    "id": "mq-protect-seunghan",
+    "sessionStarted": 11,
+    "lastUpdatedSession": 12,
+    "parentQuestId": "mq-protect-holders",
+    "title": "Proteger a Seunghan",
+    "subtitle": "Un alma sylmoriana que tiene que ser salvada",
+    "types": ["main", "faction"],
+    "status": "completed",
+    "visibility": "public",
+    "summary": "La party debe mantener a Seunghan a salvo mientras investiga por qué su alma parece estar ligada a un destino mayor y por qué se ha convertido en un objetivo vulnerable.",
+    "description": "Seunghan, un alma sylmoriana marcada por fuerzas que la party aún no comprende del todo, corre peligro de caer en manos enemigas. Protegerlo implica no solo esconderlo o escoltarlo, sino entender qué lo hace importante, quién podría querer usarlo y cómo evitar que se convierta en otra víctima del conflicto por la Baraja del Destino.",
+    "progress": {
+      "mode": "manual",
+      "current": 1,
+      "goal": 1
+    },
+    "factions": [
+      {
+        "label": "Los Guerreros Ascendidos",
+        "doc": "factions/guerreros-ascendidos"
+      }
+    ],
+    "rewards": [
+      "Supervivencia de Seunghan",
+      "Posible aliado clave",
+      "Avance en la protección de portadores"
+    ],
+    "tags": [
+      "seunghan",
+      "protección",
+      "sylmorien",
+      "portadores"
+    ],
+    "accent": "gold",
+    "isRepeatable": false,
+    "notes": "Quest centrada en personaje con peso emocional y político.",
+    "sortOrder": 4
+  },
+
+  "mq-protect-wishies": {
+    "id": "mq-protect-wishies",
+    "sessionStarted": 11,
+    "lastUpdatedSession": null,
+    "parentQuestId": "mq-protect-holders",
+    "title": "Proteger a los miembros de la Casa de los Deseos",
+    "subtitle": "Los Wishitos bajo la amenaza de Taeil",
+    "types": ["main", "faction"],
+    "status": "active",
+    "visibility": "public",
+    "summary": "La party debe proteger a los miembros de la Casa de los Deseos, cuya existencia y vínculos con los deseos los convierten en objetivos prioritarios para Taeil y otras fuerzas enemigas.",
+    "description": "Los wishitos no son solo seres extraordinarios: están profundamente ligados a deseos, consecuencias y fuerzas que podrían rozar la Baraja del Destino. Bajo la amenaza directa de Taeil, la party debe evitar que sean capturados, usados como moneda de cambio o sacrificados en planes mayores.",
+    "progress": {
+      "mode": "manual",
+      "current": 0,
+      "goal": 6
+    },
+    "factions": [
+      {
+        "label": "Los Neo Culturales Tecnológicos",
+        "doc": "factions/neo-culturales-tecnologicos"
+      }
+    ],
+    "rewards": [
+      "Supervivencia de aliados clave",
+      "Acceso a conocimiento sobre deseos y consecuencias",
+      "Ventaja contra Taeil y sus planes"
+    ],
+    "tags": [
+      "wishitos",
+      "casa de los deseos",
+      "taeil",
+      "protección"
+    ],
+    "objectives": [
+      {
+        "id": "protect-sion",
+        "label": "Proteger a Sion de la Casa de los Deseos",
+        "done": false
+      },
+      {
+        "id": "protect-riku",
+        "label": "Proteger a Riku de la Casa de los Deseos",
+        "done": false
+      },
+      {
+        "id": "protect-yushi",
+        "label": "Proteger a Yushi de la Casa de los Deseos",
+        "done": false
+      },
+      {
+        "id": "protect-taeyong",
+        "label": "Proteger a Jaehee de la Casa de los Deseos",
+        "done": false
+      },
+      {
+        "id": "protect-ryo",
+        "label": "Proteger a Ryo de la Casa de los Deseos",
+        "done": false
+      },
+      {
+        "id": "protect-sakuya",
+        "label": "Proteger a Sakuya de la Casa de los Deseos",
+        "done": false
+      }
+    ],
+    "accent": "gold",
+    "isRepeatable": false,
+    "notes": "Quest de facción conectada a la seguridad de aliados excepcionales.",
+    "sortOrder": 5
+  },
+
+  "mq-recover-stolen-cards": {
+    "id": "mq-recover-stolen-cards",
+    "sessionStarted": null,
+    "lastUpdatedSession": null,
+    "parentQuestId": "mq-collect-cards",
+    "title": "Recuperar las Cartas Robadas",
+    "subtitle": "Cartas robadas por los Piratas de la Dimensión Z",
+    "types": ["main", "faction"],
+    "status": "active",
+    "visibility": "public",
+    "summary": "La party debe rastrear y recuperar las cartas de la Baraja del Destino que fueron robadas por los Piratas de la Dimensión Z antes de que desaparezcan, sean vendidas o caigan en manos aún peores.",
+    "description": "No todas las cartas permanecen ocultas o ligadas a portadores indefensos: algunas ya fueron arrebatadas y ahora están en circulación entre fuerzas peligrosas. Los Piratas de la Dimensión Z han robado parte de la Baraja, y recuperarla exigirá rastreo, confrontación, negociación o infiltración, dependiendo de quién las posea y qué tan lejos estén dispuestos a llegar para conservarlas.",
+    "progress": {
+      "mode": "manual",
+      "current": 1,
+      "goal": 4
+    },
+    "factions": [
+      {
+        "label": "Los Piratas de la Marea Negra",
+        "doc": "factions/marea-negra"
+      }
+    ],
+    "rewards": [
+      "Recuperación de cartas activas de la Baraja",
+      "Información sobre el mercado o circulación de cartas robadas",
+      "Avance directo en la main quest"
+    ],
+    "tags": [
+      "cartas robadas",
+      "baraja del destino",
+      "piratas",
+      "recuperación"
+    ],
+    "accent": "gold",
+    "isRepeatable": false,
+    "notes": "Quest de recuperación ligada al movimiento de cartas fuera del control de la party.",
+    "sortOrder": 6,
+    "objectives": [
+      {
+        "id": "recover-1",
+        "label": "Recuperar el 8 de Corazones",
+        "done": true
+      },
+      {
+        "id": "recover-2",
+        "label": "Recuperar el 6 de Picas",
+        "done": false
+      },
+      {
+        "id": "recover-3",
+        "label": "Recueperar el 9 de Diamantes",
+        "done": false
+      },
+      {
+        "id": "recover-4",
+        "label": "Recuperar el ??? de Tréboles",
+        "done": false
+      }
+    ]
+  },
+  "mq-defeat-burning-sun": {
+    "id": "mq-defeat-burning-sun",
+    "sessionStarted": null,
+    "lastUpdatedSession": null,
+    "title": "Derrotar al Clan del Sol Ardiente",
+    "subtitle": "Antes de que el mundo arda bajo su eclipse",
+    "types": ["main"],
+    "status": "active",
+    "visibility": "public",
+    "summary": "La party debe impedir que el Clan del Sol Ardiente continúe capturando objetivos clave, persiguiendo portadores y consolidando su poder mediante violencia, radiancia diseñada y rituales.",
+    "description": "El Clan del Sol Ardiente se ha convertido en una de las amenazas más brutales del mundo. Su ideología fanática, su odio hacia la humanidad y su uso de tecnomagia robada los vuelve un enemigo capaz de desestabilizar regiones enteras. Derrotarlos implica frustrar sus secuestros, desmantelar sus planes, salvar a sus víctimas y confrontar a las figuras clave que sostienen su estructura.",
+    "progress": {
+      "mode": "manual",
+      "current": 0,
+      "goal": 4
+    },
+    "factions": [
+      {
+        "label": "Clan del Sol Ardiente",
+        "doc": "factions/clan-del-sol-ardiente"
+      }
+    ],
+    "rewards": [
+      "Debilitar una amenaza mayor contra el equilibrio del mundo",
+      "Salvar aliados y objetivos clave",
+      "Reducir el alcance militar y ritual del Clan del Sol Ardiente"
+    ],
+    "tags": [
+      "sol ardiente",
+      "guerra",
+      "facción enemiga",
+      "radiancia diseñada",
+      "ritual"
+    ],
+    "accent": "red",
+    "isRepeatable": false,
+    "notes": "Quest paraguas del arco contra el Sol Ardiente.",
+    "sortOrder": 20
+  },
+
+  "mq-defeat-taeil": {
+    "id": "mq-defeat-taeil",
+    "sessionStarted": 11.5,
+    "lastUpdatedSession": 11.5,
+    "parentQuestId": "mq-defeat-burning-sun",
+    "title": "Derrotar a Taeil",
+    "subtitle": "Ex Neo Académico corrupto",
+    "types": ["main"],
+    "status": "active",
+    "visibility": "public",
+    "summary": "La party debe detener a Taeil, antiguo miembro de la Neo Academia convertido en pieza clave del avance del Clan del Sol Ardiente.",
+    "description": "Taeil posee conocimiento robado, ambición peligrosa y vínculos con los planes más crueles del Clan del Sol Ardiente. Su pasado como Neo Académico lo vuelve especialmente peligroso, pues entiende tecnologías, pactos y estructuras que podrían inclinar la balanza del conflicto. Derrotarlo no solo significa eliminar un enemigo poderoso, sino cortar una de las mentes que alimentan la expansión del clan.",
+    "progress": {
+      "mode": "manual",
+      "current": 80,
+      "goal": 100
+    },
+    "factions": [
+      {
+        "label": "Clan del Sol Ardiente",
+        "doc": "factions/clan-del-sol-ardiente"
+      },
+      {
+        "label": "Los Neo Culturales Tecnológicos",
+        "doc": "factions/neo-culturales-tecnologicos"
+      }
+    ],
+    "rewards": [
+      "Eliminar a un enemigo clave del Sol Ardiente",
+      "Recuperar conocimiento o tecnomagia robada",
+      "Debilitar el liderazgo operativo del clan"
+    ],
+    "tags": [
+      "taeil",
+      "neo academia",
+      "sol ardiente",
+      "corrupción",
+      "jefe enemigo"
+    ],
+    "accent": "red",
+    "isRepeatable": false,
+    "notes": "Subquest centrada en una figura clave del arco enemigo.",
+    "sortOrder": 21
+  },
+
+  "mq-save-baby-jungwoo": {
+    "id": "mq-save-baby-jungwoo",
+    "sessionStarted": 11,
+    "lastUpdatedSession": 12,
+    "parentQuestId": "mq-defeat-burning-sun",
+    "title": "Salvar a Jungwoo bebé",
+    "subtitle": "Evitar que el Clan del Sol Ardiente lo utilice para negociar la vida de los wishitos",
+    "types": ["main", "faction"],
+    "status": "completed",
+    "visibility": "public",
+    "summary": "La party debe rescatar a Jungwoo bebé antes de que el Clan del Sol Ardiente lo use como rehén, moneda de cambio o víctima dentro de un plan mayor.",
+    "description": "Jungwoo bebé ha sido secuestrado por el Clan del Sol Ardiente y corre peligro inmediato. Su captura no es accidental: el enemigo pretende utilizarlo como pieza de negociación para presionar a la Neo Academia y a quienes desean proteger a los wishitos. Rescatarlo implica rastrear al enemigo, irrumpir o infiltrarse en su territorio y evacuarlo a un lugar seguro antes de que sea demasiado tarde.",
+    "progress": {
+      "mode": "manual",
+      "current": 1,
+      "goal": 1
+    },
+    "factions": [
+      {
+        "label": "Clan del Sol Ardiente",
+        "doc": "factions/clan-del-sol-ardiente"
+      },
+      {
+        "label": "Los Neo Culturales Tecnológicos",
+        "doc": "factions/neo-culturales-tecnologicos"
+      }
+    ],
+    "rewards": [
+      "Supervivencia de Jungwoo bebé",
+      "Golpe estratégico contra el Clan del Sol Ardiente",
+      "Mayor confianza de la Neo Academia"
+    ],
+    "tags": [
+      "jungwoo bebé",
+      "rescate",
+      "secuestro",
+      "sol ardiente",
+      "wishitos"
+    ],
+    "accent": "red",
+    "isRepeatable": false,
+    "notes": "Quest de rescate urgente dentro del arco del Sol Ardiente.",
+    "sortOrder": 22
+  },
+
+  "mq-protect-guild": {
+    "id": "mq-protect-guild",
+    "sessionStarted": 12,
+    "lastUpdatedSession": 12,
+    "parentQuestId": "mq-defeat-burning-sun",
+    "title": "Proteger al Gremio de Aventureros",
+    "subtitle": "Evitar que el Clan del Sol Ardiente capture a los omegas del Gremio de Aventureros",
+    "types": ["main", "faction"],
+    "status": "active",
+    "visibility": "public",
+    "summary": "La party debe impedir que el Clan del Sol Ardiente ataque al Gremio de Aventureros y capture a sus miembros más vulnerables.",
+    "description": "El Gremio de Aventureros se ha convertido en un objetivo para el Clan del Sol Ardiente, especialmente por la presencia de omegas y figuras valiosas dentro de su red. Protegerlo implica anticipar ataques, reforzar defensas, organizar evacuaciones y evitar que el enemigo utilice al gremio como fuente de rehenes o sacrificios.",
+    "progress": {
+      "mode": "manual",
+      "current": 0,
+      "goal": 1
+    },
+    "factions": [
+      {
+        "label": "El Gremio de Aventureros",
+        "doc": "factions/gremio-de-aventureros"
+      },
+      {
+        "label": "Clan del Sol Ardiente",
+        "doc": "factions/clan-del-sol-ardiente"
+      }
+    ],
+    "rewards": [
+      "Supervivencia de miembros clave del gremio",
+      "Fortalecer la alianza con el Gremio de Aventureros",
+      "Negar rehenes y recursos al enemigo"
+    ],
+    "tags": [
+      "gremio de aventureros",
+      "protección",
+      "omegas",
+      "sol ardiente",
+      "defensa"
+    ],
+    "accent": "red",
+    "isRepeatable": false,
+    "notes": "Quest defensiva con peso político y comunitario.",
+    "sortOrder": 25,
+    "objectives": [
+      {
+        "id": "protect-joshua",
+        "label": "Proteger a Joshua del Gremio de Aventureros de Hyberia",
+        "done": false
+      },
+      {
+        "id": "protect-hoshi",
+        "label": "Proteger a Hoshi del Gremio de Aventureros de Hyberia",
+        "done": true
+      },
+      {
+        "id": "protect-dokyeom",
+        "label": "Proteger a Dokyeom del Gremio de Aventureros de Hyberia",
+        "done": true
+      },
+      {
+        "id": "protect-seungkwan",
+        "label": "Proteger a Seungkwan del Gremio de Aventureros de Hyberia",
+        "done": false
+      },
+      {
+        "id": "protect-guild",
+        "label": "Mantener con vida a los miembros alfa y beta del Gremio de Aventureros",
+        "done": false
+      }
+    ]
+  },
+
+  "mq-protect-vampires": {
+    "id": "mq-protect-vampires",
+    "sessionStarted": null,
+    "lastUpdatedSession": null,
+    "parentQuestId": "mq-defeat-burning-sun",
+    "title": "Proteger a los Heraldos del Crepúsculo",
+    "subtitle": "Evitar que el Clan del Sol Ardiente capture a los aliados vampíricos vulnerables",
+    "types": ["main", "faction"],
+    "status": "active",
+    "visibility": "public",
+    "summary": "La party debe proteger a los Heraldos del Crepúsculo de la persecución del Clan del Sol Ardiente y evitar que sus miembros caigan en manos enemigas.",
+    "description": "Los Heraldos del Crepúsculo son especialmente vulnerables frente al Clan del Sol Ardiente, cuya tecnología y radiancia diseñada los convierten en presas prioritarias. Protegerlos implica impedir capturas, reforzar refugios, planear rutas seguras y sostener una alianza que podría resultar crucial en el conflicto mayor.",
+    "progress": {
+      "mode": "manual",
+      "current": 0,
+      "goal": 1
+    },
+    "factions": [
+      {
+        "label": "Los Heraldos del Crepúsculo",
+        "doc": "factions/heraldos-del-crepusculo"
+      },
+      {
+        "label": "Clan del Sol Ardiente",
+        "doc": "factions/clan-del-sol-ardiente"
+      }
+    ],
+    "rewards": [
+      "Supervivencia de aliados vampíricos clave",
+      "Fortalecer la alianza con los Heraldos del Crepúsculo",
+      "Reducir el impacto de la radiancia diseñada en el campo enemigo"
+    ],
+    "tags": [
+      "vampiros",
+      "heraldos del crepúsculo",
+      "protección",
+      "sol ardiente",
+      "radiancia diseñada"
+    ],
+    "accent": "red",
+    "isRepeatable": false,
+    "notes": "Quest de protección de aliados especialmente vulnerables al Sol Ardiente.",
+    "sortOrder": 24,
+    "objectives": [
+      {
+        "id": "protect-jungwon",
+        "label": "Proteger a Jungwon de los Hijos de la Noche",
+        "done": false
+      },
+      {
+        "id": "protect-heeseung",
+        "label": "Proteger a Heeseung de los Hijos de la Noche",
+        "done": false,
+        "failed": true
+      },
+      {
+        "id": "protect-jay",
+        "label": "Proteger a Jay de los Hijos de la Noche",
+        "done": false
+      },
+      {
+        "id": "protect-jake",
+        "label": "Proteger a Jake de los Hijos de la Noche",
+        "done": true
+      },
+      {
+        "id": "protect-sunghoon",
+        "label": "Proteger a Sunghoon de los Hijos de la Noche",
+        "done": false
+      },
+      {
+        "id": "protect-sunoo",
+        "label": "Proteger a Sunoo de los Hijos de la Noche",
+        "done": false
+      },
+      {
+        "id": "protect-niki",
+        "label": "Proteger a Ni-ki de los Hijos de la Noche",
+        "done": true
+      },
+      {
+        "id": "protect-pact",
+        "label": "Rehacer el pacto de oscuridad con la Entidad de la Luna",
+        "done": false
+      }
+    ]
+  },
+  "pq-minjae-personal-arc": {
+  "id": "pq-minjae-personal-arc",
+  "sessionStarted": null,
+  "lastUpdatedSession": null,
+  "title": "Arco Personal de Yang Minjae",
+  "subtitle": "Entre la luz de la luna, la sangre y la elección",
+  "types": ["personal", "main"],
+  "status": "active",
+  "visibility": "public",
+  "summary": "Minjae debe decidir quién será realmente más allá de los títulos que le impuso Sylmorien, el peso de su linaje y las expectativas que otros han depositado sobre él.",
+  "description": "Yang Minjae ha sido muchas cosas: capitán, símbolo, protector, arma del reino y líder de los Panes del Destino. Pero su verdadero viaje no consiste solo en sobrevivir a la guerra o cargar con el peso de la Baraja del Destino, sino en definir su propia identidad. Entre la lealtad, la familia, la luz de la luna y las heridas que dejó Sylmorien, Minjae deberá elegir qué legado quiere construir, qué vínculos proteger y qué partes de sí mismo está dispuesto a reclamar como verdaderamente suyas.",
+  "progress": {
+    "mode": "manual",
+    "current": 0,
+    "goal": 4
+  },
+  "factions": [
+    {
+      "label": "Los Panes del Destino",
+      "doc": "factions/panes-del-destino"
+    },
+    {
+      "label": "Sylmorien",
+      "doc": "realms/sylmorien"
+    }
+  ],
+  "characters": [
+    {
+      "id": "pc-minjae",
+      "label": "Yang Minjae",
+      "doc": "characters/party/pc-minjae"
+    },
+    {
+      "id": "joshua",
+      "label": "Joshua",
+      "doc": "characters/npc/joshua"
+    }
+  ],
+  "rewards": [
+    "Crecimiento personal de Minjae",
+    "Definición de su legado fuera de Sylmorien",
+    "Fortalecimiento de sus vínculos más importantes"
+  ],
+  "tags": [
+    "minjae",
+    "arco personal",
+    "identidad",
+    "familia",
+    "sylmorien",
+    "legado"
+  ],
+  "accent": "blue",
+  "isRepeatable": false,
+  "notes": "Quest madre del arco personal de Minjae. Debajo de esta cuelgan sus conflictos de identidad, familia, poder y liberación.",
+  "sortOrder": 100
+},
+"pq-kiyori-personal-arc": {
+  "id": "pq-kiyori-personal-arc",
+  "sessionStarted": null,
+  "lastUpdatedSession": null,
+  "title": "Arco Personal de Kiyori Hoshizuki",
+  "subtitle": "Entre estrellas, fuego y verdad",
+  "types": ["personal"],
+  "status": "active",
+  "visibility": "public",
+  "summary": "Kiyori debe definir quién será realmente más allá de la nobleza, la Neo Academia y los caminos que otros imaginaron para ella.",
+  "description": "Kiyori Hoshizuki nació rodeada de privilegio, expectativas y conocimiento, pero su destino no puede reducirse al papel que otros le asignaron. Entre la herencia de Hotou, la marca que dejó la Neo Academia y el fuego de su propia voluntad, Kiyori deberá decidir qué partes de su pasado honra, cuáles rechaza y qué clase de poder desea reclamar como verdaderamente suyo.",
+  "progress": {
+    "mode": "manual",
+    "current": 0,
+    "goal": 4
+  },
+  "factions": [
+    {
+      "label": "Los Panes del Destino",
+      "doc": "factions/panes-del-destino"
+    },
+    {
+      "label": "Los Neo Culturales Tecnológicos",
+      "doc": "factions/neo-culturales-tecnologicos"
+    }
+  ],
+  "characters": [
+    {
+      "id": "pc-kiyori",
+      "label": "Kiyori Hoshizuki",
+      "doc": "characters/party/pc-kiyori"
+    }
+  ],
+  "rewards": [
+    "Crecimiento personal de Kiyori",
+    "Mayor claridad sobre su identidad y legado",
+    "Fortalecimiento de su vínculo con su propio poder"
+  ],
+  "tags": [
+    "kiyori",
+    "arco personal",
+    "neo academia",
+    "hotou",
+    "magia",
+    "legado"
+  ],
+  "accent": "purple",
+  "isRepeatable": false,
+  "notes": "Quest madre del arco personal de Kiyori. Debajo de esta cuelgan sus conflictos de origen, conocimiento, poder y autonomía.",
+  "sortOrder": 110
+},
+"pq-imugi-personal-arc": {
+  "id": "pq-imugi-personal-arc",
+  "sessionStarted": null,
+  "lastUpdatedSession": null,
+  "title": "Arco Personal de Fenghuang Imugi",
+  "subtitle": "Entre sangre, venganza y poder prohibido",
+  "types": ["personal", "main"],
+  "status": "active",
+  "visibility": "public",
+  "summary": "Imugi debe decidir si será consumido por el caos de su linaje y su sed de venganza, o si logrará convertir ese poder en algo propio.",
+  "description": "Fenghuang Imugi carga con un linaje marcado por el caos, la pérdida y un poder que amenaza con devorarlo desde dentro. Como hijo del Demonio del Caos y portador de una carta crucial del destino, su camino no puede separarse ni de la violencia de su pasado ni de la tentación de su propia naturaleza. Entre venganza, control y deseo de sobrevivir como algo más que un arma, Imugi deberá elegir qué hacer con el fuego que lleva en la sangre.",
+  "progress": {
+    "mode": "manual",
+    "current": 0,
+    "goal": 4
+  },
+  "factions": [
+    {
+      "label": "Los Panes del Destino",
+      "doc": "factions/panes-del-destino"
+    }
+  ],
+  "characters": [
+    {
+      "id": "pc-imugi",
+      "label": "Fenghuang Imugi",
+      "doc": "characters/party/pc-imugi"
+    }
+  ],
+  "rewards": [
+    "Crecimiento personal de Imugi",
+    "Mayor control sobre su poder y su naturaleza",
+    "Avance en su conflicto con el caos y la venganza"
+  ],
+  "tags": [
+    "imugi",
+    "arco personal",
+    "caos",
+    "venganza",
+    "linaje",
+    "demonio"
+  ],
+  "accent": "green",
+  "isRepeatable": false,
+  "notes": "Quest madre del arco personal de Imugi. Debajo de esta cuelgan sus conflictos de linaje, venganza, control y destino.",
+  "sortOrder": 120
+},
+"pq-soobin-personal-arc": {
+  "id": "pq-soobin-personal-arc",
+  "sessionStarted": null,
+  "lastUpdatedSession": null,
+  "title": "Arco Personal de Jang Soobin",
+  "subtitle": "Entre recuerdos perdidos, reflejos rotos y verdad",
+  "types": ["personal", "main"],
+  "status": "active",
+  "visibility": "public",
+  "summary": "Soobin debe reconstruirse a sí mismo entre los recuerdos que perdió, los vínculos que olvidó y las verdades que aún no está listo para mirar de frente.",
+  "description": "Jang Soobin camina con el peso de una ausencia que no siempre puede nombrar. Sus recuerdos fragmentados, su vínculo roto con partes esenciales de su pasado y la presencia inquietante de aquello que olvidó lo convierten en una figura suspendida entre lo que fue y lo que podría volver a ser. Para reclamar su alma completa, Soobin deberá enfrentar el vacío, la verdad y los nombres que todavía duelen aunque no los recuerde del todo.",
+  "progress": {
+    "mode": "manual",
+    "current": 0,
+    "goal": 4
+  },
+  "factions": [
+    {
+      "label": "Los Panes del Destino",
+      "doc": "factions/panes-del-destino"
+    }
+  ],
+  "characters": [
+    {
+      "id": "pc-soobin",
+      "label": "Jang Soobin",
+      "doc": "characters/party/pc-soobin"
+    }
+  ],
+  "rewards": [
+    "Crecimiento personal de Soobin",
+    "Recuperación de partes clave de su identidad",
+    "Avance en la reconciliación con su pasado"
+  ],
+  "tags": [
+    "soobin",
+    "arco personal",
+    "memoria",
+    "identidad",
+    "pasado",
+    "destino"
+  ],
+  "accent": "pink",
+  "isRepeatable": false,
+  "notes": "Quest madre del arco personal de Soobin. Debajo de esta cuelgan sus conflictos de memoria, identidad, vínculos perdidos y verdad.",
+  "sortOrder": 130
+},
+"pq-minjae-identity": {
+  "id": "pq-minjae-identity",
+  "sessionStarted": null,
+  "lastUpdatedSession": null,
+  "parentQuestId": "pq-minjae-personal-arc",
+  "title": "Reclamar su Propio Nombre",
+  "subtitle": "Más allá del rango y la obediencia",
+  "types": ["personal"],
+  "status": "active",
+  "visibility": "public",
+  "summary": "Minjae debe redefinir quién es fuera de la Guardia Real, del prestigio de Sylmorien y de las expectativas que otros impusieron sobre él.",
+  "description": "Durante demasiado tiempo, Yang Minjae fue moldeado por deberes, rangos y la idea de que su valor dependía de servir como arma o símbolo. Ahora, lejos de la vida que una vez definió su identidad, debe descubrir qué significa existir como algo más que un título. Esta quest representa el proceso de construir una identidad propia, elegida y auténtica.",
+  "progress": {
+    "mode": "objectives"
+  },
+  "objectives": [
+    {
+      "id": "accept-life-beyond-rank",
+      "label": "Aceptar que su valor no depende de su antiguo rango",
+      "done": false,
+      "weight": 1
+    },
+    {
+      "id": "define-new-role",
+      "label": "Definir cuál será su nuevo papel fuera de Sylmorien",
+      "done": false,
+      "weight": 1
+    },
+    {
+      "id": "lead-by-choice",
+      "label": "Ejercer liderazgo por convicción y no por obligación",
+      "done": false,
+      "weight": 1
+    },
+    {
+      "id": "lead-party",
+      "label": "Ser el líder que guie a los Panes del Destino",
+      "done": false,
+      "weight": 1
+    }
+  ],
+  "factions": [
+    {
+      "label": "Los Panes del Destino",
+      "doc": "factions/panes-del-destino"
+    },
+    {
+      "label": "Sylmorien",
+      "doc": "realms/sylmorien"
+    }
+  ],
+  "characters": [
+    {
+      "id": "pc-minjae",
+      "label": "Yang Minjae",
+      "doc": "characters/party/pc-minjae"
+    }
+  ],
+  "rewards": [
+    "Mayor claridad sobre la identidad de Minjae",
+    "Crecimiento como líder fuera del sistema que lo formó"
+  ],
+  "tags": [
+    "minjae",
+    "identidad",
+    "liderazgo",
+    "sylmorien"
+  ],
+  "accent": "blue",
+  "isRepeatable": false,
+  "notes": "Quest de identidad y reconstrucción personal.",
+  "sortOrder": 101
+},
+
+  "pq-minjae-family": {
+  "id": "pq-minjae-family",
+  "sessionStarted": null,
+  "lastUpdatedSession": null,
+  "parentQuestId": "pq-minjae-personal-arc",
+  "title": "Proteger lo que Ama",
+  "subtitle": "El hogar que eligió",
+  "types": ["personal"],
+  "status": "active",
+  "visibility": "public",
+  "summary": "Minjae debe proteger a Joshua y a sus hijas mientras decide qué clase de familia quiere construir junto a ellos.",
+  "description": "Más allá del deber, de la guerra y del peso de la luna, existe una verdad íntima que Minjae ya no puede negar: hay personas a las que ama y que podrían convertirse en su verdadero hogar. Esta quest representa el deseo de proteger a Joshua y a sus hijas, pero también el miedo de fallarles y la necesidad de elegir una vida que no esté definida solo por la violencia.",
+  "progress": {
+    "mode": "objectives"
+  },
+  "objectives": [
+    {
+      "id": "keep-joshua-safe",
+      "label": "Mantener a Joshua a salvo de amenazas políticas y militares",
+      "done": false,
+      "weight": 1
+    },
+    {
+      "id": "protect-daughters",
+      "label": "Proteger a sus hijas y su futuro",
+      "done": false,
+      "weight": 1
+    },
+    {
+      "id": "safe-birth-for-joshua",
+      "label": "Asegurarse de que Joshua dé a luz y que sus hijas estén bien",
+      "done": false,
+      "weight": 1
+    },
+    {
+      "id": "choose-family-openly",
+      "label": "Elegir a su familia sin esconderse detrás del deber",
+      "done": false,
+      "weight": 1
+    },
+    {
+      "id": "marry-joshua",
+      "label": "Casarse con Joshua",
+      "done": false,
+      "weight": 1
+    },
+    {
+      "id": "find-felix-in-dreamscape",
+      "label": "Encontrar a Felix en el Dreamscape otra vez",
+      "done": false,
+      "weight": 1
+    }
+  ],
+  "factions": [
+    {
+      "label": "Los Panes del Destino",
+      "doc": "factions/panes-del-destino"
+    }
+  ],
+  "characters": [
+    {
+      "id": "pc-minjae",
+      "label": "Yang Minjae",
+      "doc": "characters/party/pc-minjae"
+    },
+    {
+      "id": "joshua",
+      "label": "Joshua",
+      "doc": "characters/npc/joshua"
+    }
+  ],
+  "rewards": [
+    "Fortalecimiento del vínculo con Joshua y sus hijas",
+    "Estabilidad emocional y sentido de hogar para Minjae"
+  ],
+  "tags": [
+    "minjae",
+    "familia",
+    "joshua",
+    "hogar",
+    "amor"
+  ],
+  "accent": "blue",
+  "isRepeatable": false,
+  "notes": "Quest emocional centrada en familia, amor y futuro compartido.",
+  "sortOrder": 102
+},
+
+  "pq-minjae-sylmorien": {
+  "id": "pq-minjae-sylmorien",
+  "sessionStarted": null,
+  "lastUpdatedSession": null,
+  "parentQuestId": "pq-minjae-personal-arc",
+  "title": "Romper las Cadenas de Sylmorien",
+  "subtitle": "El reino que quiso decidir su destino",
+  "types": ["personal", "faction"],
+  "status": "active",
+  "visibility": "public",
+  "summary": "Minjae debe liberarse del control político, emocional e ideológico que Sylmorien todavía ejerce sobre él.",
+  "description": "Aunque ya no ocupe el lugar que una vez tuvo dentro del reino, Sylmorien sigue presente en la mente y en la vida de Minjae: en su educación, en sus heridas, en sus reflejos de obediencia y en la amenaza que el reino representa para su futuro. Esta quest trata de romper con esa influencia, resistir la manipulación y decidir de una vez por todas a quién pertenece realmente su lealtad.",
+  "progress": {
+    "mode": "objectives"
+  },
+  "objectives": [
+    {
+      "id": "identify-sylmorien-control",
+      "label": "Identificar las formas en que Sylmorien aún intenta controlarlo",
+      "done": false,
+      "weight": 1
+    },
+    {
+      "id": "resist-political-pressure",
+      "label": "Resistir la presión política sobre su nombre, su linaje y su familia",
+      "done": false,
+      "weight": 1
+    },
+    {
+      "id": "resolve-royal-guard-future",
+      "label": "Resolver el tema de la Guardia Real de Sylmorien: quedarse bajo el mando de Chanyeol o renunciar y pedir trabajo a Scoups-hyung",
+      "done": false,
+      "weight": 1
+    },
+    {
+      "id": "choose-own-loyalty",
+      "label": "Elegir su propia lealtad aunque contradiga al reino",
+      "done": false,
+      "weight": 1
+    }
+  ],
+  "factions": [
+    {
+      "label": "Sylmorien",
+      "doc": "realms/sylmorien"
+    },
+    {
+      "label": "Los Panes del Destino",
+      "doc": "factions/panes-del-destino"
+    }
+  ],
+  "characters": [
+    {
+      "id": "pc-minjae",
+      "label": "Yang Minjae",
+      "doc": "characters/party/pc-minjae"
+    }
+  ],
+  "rewards": [
+    "Autonomía frente a Sylmorien",
+    "Avance en su liberación política y emocional"
+  ],
+  "tags": [
+    "minjae",
+    "sylmorien",
+    "liberación",
+    "política",
+    "lealtad"
+  ],
+  "accent": "blue",
+  "isRepeatable": false,
+  "notes": "Quest de emancipación política y emocional.",
+  "sortOrder": 103
+},
+
+  "pq-minjae-moonlight": {
+  "id": "pq-minjae-moonlight",
+  "sessionStarted": null,
+  "lastUpdatedSession": null,
+  "parentQuestId": "pq-minjae-personal-arc",
+  "title": "Honrar su fé",
+  "subtitle": "Sin convertirse en arma de nadie",
+  "types": ["personal", "main"],
+  "status": "active",
+  "visibility": "public",
+  "summary": "Minjae debe comprender qué significa realmente su vínculo con la Luz de la Luna y decidir qué clase de símbolo quiere ser.",
+  "description": "La Luz de la Luna ha marcado a Minjae como protector, símbolo y figura de poder, pero ese don también puede convertirse en carga o en cadena si otros deciden por él qué debe representar. Esta quest trata de aprender a habitar su luz con dignidad propia: no como un arma del reino, sino como una fuerza que él elige dirigir hacia aquello que realmente desea proteger.",
+  "progress": {
+    "mode": "objectives"
+  },
+  "objectives": [
+    {
+      "id": "understand-moonlight-bond",
+      "label": "Comprender el verdadero significado de su vínculo con la Luz de la Luna",
+      "done": false,
+      "weight": 1
+    },
+    {
+      "id": "use-king-of-hearts-card",
+      "label": "Aprender a usar la Carta del Rey de Corazones",
+      "done": false,
+      "weight": 1
+    },
+    {
+      "id": "form-hearts-squad",
+      "label": "Formar el squad de Corazones con Jeongin y los demás miembros del palo de Corazones",
+      "done": false,
+      "weight": 1
+    },
+    {
+      "id": "protect-with-light",
+      "label": "Usar su poder para proteger y no solo para obedecer",
+      "done": false,
+      "weight": 1
+    },
+    {
+      "id": "choose-symbol",
+      "label": "Decidir qué clase de símbolo quiere ser para otros",
+      "done": false,
+      "weight": 1
+    }
+  ],
+  "factions": [
+    {
+      "label": "Los Panes del Destino",
+      "doc": "factions/panes-del-destino"
+    }
+  ],
+  "characters": [
+    {
+      "id": "pc-minjae",
+      "label": "Yang Minjae",
+      "doc": "characters/party/pc-minjae"
+    }
+  ],
+  "rewards": [
+    "Mayor comprensión de su poder",
+    "Integración de su rol como protector y símbolo"
+  ],
+  "tags": [
+    "minjae",
+    "luz de la luna",
+    "rey de corazones",
+    "poder",
+    "legado",
+    "símbolo"
+  ],
+  "accent": "blue",
+  "isRepeatable": false,
+  "notes": "Quest espiritual y simbólica ligada al poder, al liderazgo y al legado de Minjae.",
+  "sortOrder": 104
+},
+  "pq-kiyori-origin": {
+    "id": "pq-kiyori-origin",
+    "sessionStarted": null,
+    "lastUpdatedSession": null,
+    "parentQuestId": "pq-kiyori-personal-arc",
+    "title": "Recordar lo que el Fuego Olvidó",
+    "subtitle": "Vidas pasadas, secretos familiares y el pacto con Faker",
+    "types": ["personal", "main"],
+    "status": "active",
+    "visibility": "public",
+    "summary": "Kiyori debe descubrir la verdad sobre su pasado, sus vidas anteriores, los secretos que su familia le ocultó y el verdadero alcance de su pacto con Hyungwon.",
+    "description": "El pasado de Kiyori no está muerto: arde debajo de cada decisión que toma. Entre reencarnaciones, memorias enterradas, silencios familiares y un pacto cuyo precio quizá aún no comprende del todo, Kiyori deberá mirar hacia atrás para entender quién ha sido realmente y qué parte de su destino fue elegida por ella... y cuál le fue impuesta.",
+    "progress": {
+      "mode": "objectives"
+    },
+    "objectives": [
+      {
+        "id": "learn-past-lives",
+        "label": "Saber de su pasado y entender lo que hizo en sus vidas pasadas",
+        "done": false,
+        "weight": 1
+      },
+      {
+        "id": "uncover-family-secrets",
+        "label": "Descubrir qué le ocultó su familia",
+        "done": false,
+        "weight": 1
+      },
+      {
+        "id": "understand-hyungwon-pact",
+        "label": "Comprender el verdadero alcance del pacto con Hyungwon",
+        "done": false,
+        "weight": 1
+      },
+      {
+        "id": "understand-faker-pact",
+        "label": "Comprender el verdadero alcance del pacto de su familia con Faker",
+        "done": false,
+        "weight": 1
+      }
+    ],
+    "factions": [
+      {
+        "label": "Hotou",
+        "doc": "realms/hotou"
+      }
+    ],
+    "characters": [
+      {
+        "id": "pc-kiyori",
+        "label": "Kiyori Hoshizuki",
+        "doc": "characters/party/pc-kiyori"
+      }
+    ],
+    "rewards": [
+      "Mayor claridad sobre el pasado de Kiyori",
+      "Comprensión del costo real de su pacto",
+      "Nuevas verdades sobre su linaje y destino"
+    ],
+    "tags": [
+      "kiyori",
+      "vidas pasadas",
+      "familia",
+      "faker",
+      "pacto",
+      "pasado"
+    ],
+    "accent": "purple",
+    "isRepeatable": false,
+    "notes": "Quest de origen, memoria y verdad oculta.",
+    "sortOrder": 111
+  },
+
+  "pq-kiyori-neo-academy": {
+    "id": "pq-kiyori-neo-academy",
+    "sessionStarted": null,
+    "lastUpdatedSession": null,
+    "parentQuestId": "pq-kiyori-personal-arc",
+    "title": "Volver a Mirar a la Neo Academia",
+    "subtitle": "Mark, el robo y las cartas robadas",
+    "types": ["personal", "faction"],
+    "status": "active",
+    "visibility": "public",
+    "summary": "Kiyori debe aclarar su situación con Mark y decidir si puede volver a confiar en la Neo Academia para enfrentar el robo de Taeil y el problema de las cartas.",
+    "description": "La Neo Academia marcó profundamente la vida de Kiyori, no solo como lugar de aprendizaje, sino como escenario de vínculos, traiciones y decisiones que aún pesan sobre ella. Con el robo de Taeil y el peligro creciente alrededor de las cartas, Kiyori deberá decidir si puede apoyarse de nuevo en Mark y en los restos de esa institución, o si la verdad exige cortar con ella para siempre.",
+    "progress": {
+      "mode": "objectives"
+    },
+    "objectives": [
+      {
+        "id": "clarify-mark-relationship",
+        "label": "Aclarar la situación con Mark, no solo en lo sentimental",
+        "done": false,
+        "weight": 1
+      },
+      {
+        "id": "seek-mark-help",
+        "label": "Buscar la ayuda de Mark para el tema de las cartas",
+        "done": false,
+        "weight": 1
+      },
+      {
+        "id": "understand-taeil-theft",
+        "label": "Profundizar en las consecuencias del robo en la Neo Academia cometido por Taeil",
+        "done": false,
+        "weight": 1
+      },
+      {
+        "id": "graduate-neoacademy",
+        "label": "Graduarse de la Neo Academia",
+        "done": false,
+        "weight": 1
+      }
+    ],
+    "factions": [
+      {
+        "label": "Los Neo Culturales Tecnológicos",
+        "doc": "factions/neo-culturales-tecnologicos"
+      }
+    ],
+    "characters": [
+      {
+        "id": "pc-kiyori",
+        "label": "Kiyori Hoshizuki",
+        "doc": "characters/party/pc-kiyori"
+      },
+      {
+        "id": "mark",
+        "label": "Mark",
+        "doc": "characters/npc/mark"
+      }
+    ],
+    "rewards": [
+      "Posible apoyo de Mark",
+      "Información útil sobre las cartas y el robo",
+      "Claridad sobre el vínculo de Kiyori con la Neo Academia"
+    ],
+    "tags": [
+      "kiyori",
+      "neo academia",
+      "mark",
+      "taeil",
+      "cartas",
+      "confianza"
+    ],
+    "accent": "purple",
+    "isRepeatable": false,
+    "notes": "Quest de conocimiento, confianza y cuentas pendientes con la Neo Academia.",
+    "sortOrder": 112
+  },
+
+  "pq-kiyori-hyungwon-jackson": {
+    "id": "pq-kiyori-hyungwon-jackson",
+    "sessionStarted": null,
+    "lastUpdatedSession": null,
+    "parentQuestId": "pq-kiyori-personal-arc",
+    "title": "Separar la Verdad de la Mentira",
+    "subtitle": "Hyungwon, Jackson Wang y las cuentas pendientes del corazón",
+    "types": ["personal"],
+    "status": "active",
+    "visibility": "public",
+    "summary": "Kiyori debe confrontar a Hyungwon, descubrir qué parte de su pasado la une a él y a Jackson Wang, y decidir quién le ha mentido realmente.",
+    "description": "No todo en el pasado de Kiyori está escrito en libros ni escondido en archivos. Algunas verdades viven en personas con las que todavía tiene cuentas abiertas. Hyungwon y Jackson Wang representan vínculos ambiguos, heridas viejas y versiones contradictorias de una historia que Kiyori aún no logra reconstruir por completo. Esta quest trata de mirar de frente esas relaciones y decidir a quién creer.",
+    "progress": {
+      "mode": "objectives"
+    },
+    "objectives": [
+      {
+        "id": "settle-things-with-hyungwon",
+        "label": "Aclarar las cuentas con Hyungwon",
+        "done": false,
+        "weight": 2
+      },
+      {
+        "id": "understand-hyungwon-past",
+        "label": "Entender qué la une realmente a Hyungwon a través de su pasado",
+        "done": false,
+        "weight": 2
+      },
+      {
+        "id": "speak-with-jackson",
+        "label": "Entender las cosas con Jackson Wang para saber quién le miente",
+        "done": false,
+        "weight": 3
+      }
+    ],
+    "factions": [],
+    "characters": [
+      {
+        "id": "pc-kiyori",
+        "label": "Kiyori Hoshizuki",
+        "doc": "characters/party/pc-kiyori"
+      },
+      {
+        "id": "hyungwon",
+        "label": "Hyungwon",
+        "doc": "characters/npc/hyungwon"
+      },
+      {
+        "id": "jackson-wang",
+        "label": "Jackson Wang",
+        "doc": "characters/npc/jackson-wang"
+      }
+    ],
+    "rewards": [
+      "Claridad sobre sus vínculos más ambiguos",
+      "Verdades sobre su pasado relacional y emocional",
+      "Cierre o ruptura con personas clave"
+    ],
+    "tags": [
+      "kiyori",
+      "hyungwon",
+      "jackson wang",
+      "verdad",
+      "pasado",
+      "vínculos"
+    ],
+    "accent": "#EC4899",
+    "isRepeatable": false,
+    "notes": "Quest de vínculos rotos, manipulación y verdad emocional.",
+    "sortOrder": 113
+  },
+
+  "pq-kiyori-legacy": {
+    "id": "pq-kiyori-legacy",
+    "sessionStarted": null,
+    "lastUpdatedSession": null,
+    "parentQuestId": "pq-kiyori-personal-arc",
+    "title": "Decidir Qué Hará con su Legado",
+    "subtitle": "Monstruos X, Seventeenos y el futuro que aún puede construir",
+    "types": ["personal", "faction"],
+    "status": "active",
+    "visibility": "public",
+    "summary": "Kiyori debe decidir si su conocimiento, su poder y su pasado servirán solo para entender lo que ocurrió, o también para ayudar a otros a levantarse de nuevo.",
+    "description": "Conocer la verdad no basta si no cambia nada. Kiyori siente el peso de su relación con héroes caídos, grupos incompletos y proyectos que aún podrían florecer. Los Monstruos X, marcados por su pasado, y los Seventeenos, con el sueño de levantar algo nuevo a través del gremio, representan la pregunta más profunda de esta quest: qué hará Kiyori con lo que sabe, con lo que fue y con el poder que aún tiene para cambiar el futuro.",
+    "progress": {
+      "mode": "objectives"
+    },
+    "objectives": [
+      {
+        "id": "help-monsta-x",
+        "label": "Descubrir si existe una forma de ayudar a los Monstruos X a recuperar parte de su grandeza como héroes",
+        "done": false,
+        "weight": 3
+      },
+      {
+        "id": "support-seventeen-guild",
+        "label": "Ayudar a los Seventeenos con su gremio",
+        "done": false,
+        "weight": 2
+      },
+      {
+        "id": "imagine-new-guard",
+        "label": "Explorar si los Seventeenos podrían llegar a convertirse en parte de una nueva guardia con renombre en Hotou o Jeyperia",
+        "done": false,
+        "weight": 2
+      }
+    ],
+    "factions": [
+      {
+        "label": "El Gremio de Aventureros",
+        "doc": "factions/gremio-de-aventureros"
+      }
+    ],
+    "characters": [
+      {
+        "id": "pc-kiyori",
+        "label": "Kiyori Hoshizuki",
+        "doc": "characters/party/pc-kiyori"
+      }
+    ],
+    "rewards": [
+      "Impacto directo en el futuro de aliados importantes",
+      "Reconstrucción del rol de Kiyori como figura de cambio",
+      "Fortalecimiento de lazos con facciones aliadas"
+    ],
+    "tags": [
+      "kiyori",
+      "monstruos x",
+      "seventeenos",
+      "gremio",
+      "legado",
+      "futuro"
+    ],
+    "accent": "#22C55E",
+    "isRepeatable": false,
+    "notes": "Quest de legado, reparación y construcción de futuro.",
+    "sortOrder": 114
+  }
+}

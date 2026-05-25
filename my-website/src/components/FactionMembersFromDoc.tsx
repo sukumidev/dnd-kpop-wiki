@@ -1,29 +1,14 @@
 import React from 'react';
 import Link from '@docusaurus/Link';
 import { useDoc } from '@docusaurus/plugin-content-docs/client';
-import characters from '@site/src/data/characters.json';
+import {
+  getCharacterDocPath,
+  getCharactersByFactionId,
+} from '@site/src/data/characters';
 
 type FactionDocFrontMatter = {
   factionId?: string;
 };
-
-type LinkRef = {
-  label?: string;
-  doc?: string;
-};
-
-type CharacterEntry = {
-  id?: string;
-  title?: string;
-  subtitle?: string;
-  role?: string;
-  group?: string;
-  imageSrc?: string;
-  faction?: LinkRef;
-  occupation?: string[];
-};
-
-type CharactersJson = Record<string, CharacterEntry>;
 
 export default function FactionMembersFromDoc() {
   const { frontMatter } = useDoc();
@@ -33,10 +18,7 @@ export default function FactionMembersFromDoc() {
     return <p>No se encontró <code>factionId</code> en el frontmatter.</p>;
   }
 
-  const factionDoc = `factions/${factionId}`;
-
-  const members = Object.entries(characters as CharactersJson)
-  .filter(([, character]) => character.faction?.doc === factionDoc);
+  const members = getCharactersByFactionId(factionId);
 
   if (!members.length) {
     return <p>Aún no hay miembros registrados para esta facción.</p>;
@@ -44,10 +26,10 @@ export default function FactionMembersFromDoc() {
 
   return (
     <ul>
-      {members.map(([id, character]) => (
-  <li key={id}>
-    <Link to={`/characters/${character.group ?? 'misc'}/${id}`}>
-      {character.title ?? id}
+      {members.map((character) => (
+  <li key={character.id}>
+    <Link to={`/${getCharacterDocPath(character)}`}>
+      {character.title}
     </Link>
     {(character.subtitle || character.role) ? (
       <> — {character.subtitle ?? character.role}</>
