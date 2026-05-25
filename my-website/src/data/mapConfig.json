@@ -1,0 +1,83 @@
+{
+  "defaultMap": {
+    "id": "hallyura-main",
+    "title": "Mapa de Hallyura",
+    "imageSrc": "/img/maps/hallyura-main.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "layers": [
+    {
+      "id": "regions",
+      "label": "Regiones",
+      "visibleByDefault": true,
+      "sortOrder": 1
+    },
+    {
+      "id": "cities",
+      "label": "Ciudades",
+      "visibleByDefault": true,
+      "sortOrder": 2
+    },
+    {
+      "id": "settlements",
+      "label": "Asentamientos",
+      "visibleByDefault": true,
+      "sortOrder": 3
+    },
+    {
+      "id": "tripuertos",
+      "label": "Tripuertos",
+      "visibleByDefault": true,
+      "sortOrder": 4
+    },
+    {
+      "id": "dungeons",
+      "label": "Mazmorras",
+      "visibleByDefault": false,
+      "sortOrder": 5
+    }
+  ],
+  "icons": [
+    {
+      "id": "region",
+      "label": "Región",
+      "imageSrc": null
+    },
+    {
+      "id": "city",
+      "label": "Ciudad",
+      "imageSrc": null
+    },
+    {
+      "id": "village",
+      "label": "Aldea",
+      "imageSrc": null
+    },
+    {
+      "id": "district",
+      "label": "Distrito",
+      "imageSrc": null
+    },
+    {
+      "id": "port",
+      "label": "Puerto",
+      "imageSrc": null
+    },
+    {
+      "id": "academy",
+      "label": "Academia",
+      "imageSrc": null
+    },
+    {
+      "id": "tripuerto",
+      "label": "Tripuerto",
+      "imageSrc": null
+    },
+    {
+      "id": "dungeon",
+      "label": "Mazmorra",
+      "imageSrc": null
+    }
+  ]
+}

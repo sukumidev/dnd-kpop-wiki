@@ -1,0 +1,376 @@
+{
+  "sylmorien": {
+    "id": "sylmorien",
+    "title": "Sylmorien",
+    "subtitle": null,
+    "type": "region",
+    "status": "active",
+    "visibility": "public",
+    "summary": null,
+    "description": null,
+    "regionId": null,
+    "parentLocationId": null,
+    "factionIds": [],
+    "characterIds": [],
+    "questIds": [],
+    "map": {
+      "visible": false,
+      "x": null,
+      "y": null,
+      "icon": "region",
+      "layer": "regions",
+      "label": "Sylmorien"
+    },
+    "tags": [
+      "sylmorien",
+      "region"
+    ],
+    "imageSrc": null,
+    "accent": "red",
+    "sortOrder": 1
+  },
+  "hyberia": {
+    "id": "hyberia",
+    "title": "Hyberia",
+    "subtitle": null,
+    "type": "region",
+    "status": "active",
+    "visibility": "public",
+    "summary": null,
+    "description": null,
+    "regionId": null,
+    "parentLocationId": null,
+    "factionIds": [],
+    "characterIds": [],
+    "questIds": [],
+    "map": {
+      "visible": false,
+      "x": null,
+      "y": null,
+      "icon": "region",
+      "layer": "regions",
+      "label": "Hyberia"
+    },
+    "tags": [
+      "hyberia",
+      "region"
+    ],
+    "imageSrc": null,
+    "accent": "blue",
+    "sortOrder": 2
+  },
+  "jeyperia": {
+    "id": "jeyperia",
+    "title": "Jeyperia",
+    "subtitle": null,
+    "type": "region",
+    "status": "active",
+    "visibility": "public",
+    "summary": null,
+    "description": null,
+    "regionId": null,
+    "parentLocationId": null,
+    "factionIds": [],
+    "characterIds": [],
+    "questIds": [],
+    "map": {
+      "visible": false,
+      "x": null,
+      "y": null,
+      "icon": "region",
+      "layer": "regions",
+      "label": "Jeyperia"
+    },
+    "tags": [
+      "jeyperia",
+      "region"
+    ],
+    "imageSrc": null,
+    "accent": "green",
+    "sortOrder": 3
+  },
+  "yggdrasil": {
+    "id": "yggdrasil",
+    "title": "Yggdrasil",
+    "subtitle": null,
+    "type": "region",
+    "status": "active",
+    "visibility": "public",
+    "summary": null,
+    "description": null,
+    "regionId": null,
+    "parentLocationId": null,
+    "factionIds": [],
+    "characterIds": [],
+    "questIds": [],
+    "map": {
+      "visible": false,
+      "x": null,
+      "y": null,
+      "icon": "region",
+      "layer": "regions",
+      "label": "Yggdrasil"
+    },
+    "tags": [
+      "yggdrasil",
+      "region"
+    ],
+    "imageSrc": null,
+    "accent": "emerald",
+    "sortOrder": 4
+  },
+  "hotou": {
+    "id": "hotou",
+    "title": "Hotou",
+    "subtitle": null,
+    "type": "region",
+    "status": "active",
+    "visibility": "public",
+    "summary": null,
+    "description": null,
+    "regionId": null,
+    "parentLocationId": "jeyperia",
+    "factionIds": [],
+    "characterIds": [],
+    "questIds": [],
+    "map": {
+      "visible": false,
+      "x": null,
+      "y": null,
+      "icon": "region",
+      "layer": "regions",
+      "label": "Hotou"
+    },
+    "tags": [
+      "hotou",
+      "region",
+      "jeyperia"
+    ],
+    "imageSrc": null,
+    "accent": "purple",
+    "sortOrder": 5
+  },
+  "neocity": {
+    "id": "neocity",
+    "title": "Neocity",
+    "subtitle": null,
+    "type": "city",
+    "status": "active",
+    "visibility": "public",
+    "summary": null,
+    "description": null,
+    "regionId": "sylmorien",
+    "parentLocationId": "sylmorien",
+    "factionIds": [
+      "neo-culturales-tecnologicos"
+    ],
+    "characterIds": [],
+    "questIds": [],
+    "map": {
+      "visible": false,
+      "x": null,
+      "y": null,
+      "icon": "city",
+      "layer": "cities",
+      "label": "Neocity"
+    },
+    "tags": [
+      "neocity",
+      "sylmorien",
+      "city"
+    ],
+    "imageSrc": null,
+    "accent": "cyan",
+    "sortOrder": 10
+  },
+  "borasek": {
+    "id": "borasek",
+    "title": "Borasek",
+    "subtitle": null,
+    "type": "city",
+    "status": "active",
+    "visibility": "public",
+    "summary": null,
+    "description": null,
+    "regionId": "hyberia",
+    "parentLocationId": "hyberia",
+    "factionIds": [
+      "hijos-de-la-noche",
+      "heraldos-del-crepusculo"
+    ],
+    "characterIds": [],
+    "questIds": [],
+    "map": {
+      "visible": false,
+      "x": null,
+      "y": null,
+      "icon": "city",
+      "layer": "cities",
+      "label": "Borasek"
+    },
+    "tags": [
+      "borasek",
+      "hyberia",
+      "city"
+    ],
+    "imageSrc": null,
+    "accent": "blue",
+    "sortOrder": 11
+  },
+  "serin": {
+    "id": "serin",
+    "title": "Aldea Serin",
+    "subtitle": null,
+    "type": "village",
+    "status": "active",
+    "visibility": "public",
+    "summary": null,
+    "description": null,
+    "regionId": "sylmorien",
+    "parentLocationId": "sylmorien",
+    "factionIds": [],
+    "characterIds": [],
+    "questIds": [],
+    "map": {
+      "visible": false,
+      "x": null,
+      "y": null,
+      "icon": "village",
+      "layer": "settlements",
+      "label": "Aldea Serin"
+    },
+    "tags": [
+      "serin",
+      "sylmorien",
+      "village"
+    ],
+    "imageSrc": null,
+    "accent": "red",
+    "sortOrder": 12
+  },
+  "sector-17": {
+    "id": "sector-17",
+    "title": "Sector 17",
+    "subtitle": null,
+    "type": "district",
+    "status": "active",
+    "visibility": "public",
+    "summary": null,
+    "description": null,
+    "regionId": "hyberia",
+    "parentLocationId": "hyberia",
+    "factionIds": [
+      "gremio-de-aventureros"
+    ],
+    "characterIds": [],
+    "questIds": [],
+    "map": {
+      "visible": false,
+      "x": null,
+      "y": null,
+      "icon": "district",
+      "layer": "settlements",
+      "label": "Sector 17"
+    },
+    "tags": [
+      "sector-17",
+      "gremio-de-aventureros",
+      "hyberia"
+    ],
+    "imageSrc": null,
+    "accent": "green",
+    "sortOrder": 13
+  },
+  "distrito-9": {
+    "id": "distrito-9",
+    "title": "Distrito 9",
+    "subtitle": null,
+    "type": "district",
+    "status": "active",
+    "visibility": "public",
+    "summary": null,
+    "description": null,
+    "regionId": "jeyperia",
+    "parentLocationId": "jeyperia",
+    "factionIds": [
+      "lobos-perdidos"
+    ],
+    "characterIds": [],
+    "questIds": [],
+    "map": {
+      "visible": false,
+      "x": null,
+      "y": null,
+      "icon": "district",
+      "layer": "settlements",
+      "label": "Distrito 9"
+    },
+    "tags": [
+      "distrito-9",
+      "lobos-perdidos",
+      "jeyperia"
+    ],
+    "imageSrc": null,
+    "accent": "gray",
+    "sortOrder": 14
+  },
+  "tierra-ilusoria": {
+    "id": "tierra-ilusoria",
+    "title": "Tierra Ilusoria",
+    "subtitle": null,
+    "type": "region",
+    "status": "active",
+    "visibility": "public",
+    "summary": null,
+    "description": null,
+    "regionId": "hyberia",
+    "parentLocationId": null,
+    "factionIds": [],
+    "characterIds": [],
+    "questIds": [],
+    "map": {
+      "visible": false,
+      "x": null,
+      "y": null,
+      "icon": "region",
+      "layer": "regions",
+      "label": "Tierra Ilusoria"
+    },
+    "tags": [
+      "tierra-ilusoria",
+      "hyberia",
+      "hijos-de-la-noche"
+    ],
+    "imageSrc": null,
+    "sortOrder": null
+  },
+  "guarida-de-los-lobos": {
+    "id": "guarida-de-los-lobos",
+    "title": "Guarida de los Lobos",
+    "subtitle": null,
+    "type": "landmark",
+    "status": "active",
+    "visibility": "public",
+    "summary": null,
+    "description": null,
+    "regionId": "hyberia",
+    "parentLocationId": null,
+    "factionIds": [],
+    "characterIds": [],
+    "questIds": [],
+    "map": {
+      "visible": false,
+      "x": null,
+      "y": null,
+      "icon": "landmark",
+      "layer": "landmarks",
+      "label": "Guarida de los Lobos"
+    },
+    "tags": [
+      "guarida-de-los-lobos",
+      "lobos-perdidos"
+    ],
+    "imageSrc": null,
+    "sortOrder": null
+  }
+}

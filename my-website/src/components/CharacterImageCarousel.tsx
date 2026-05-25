@@ -4,7 +4,11 @@ import charactersJson from "@site/src/data/characters.json";
 import styles from "../css/CharacterImageCarousel.module.css";
 import { useCharacterId } from "@site/src/components/CharacterContext";
 
-type CarouselImage = { img: string; caption?: string };
+type CarouselImage = {
+  src?: string;
+  img?: string; // legacy temporal
+  caption?: string;
+};
 type Character = { title?: string; images?: CarouselImage[] };
 type CharactersMap = Record<string, Character>;
 
@@ -36,13 +40,18 @@ export default function CharacterImageCarousel({
   const characters = charactersJson as CharactersMap;
   const c = finalId ? characters[finalId] : undefined;
 
-  const slides = useMemo(() => {
-    const imgs = (c?.images ?? []).filter((x) => x?.img);
-    return imgs.map((x) => ({
+const slides = useMemo(() => {
+  const imgs = (c?.images ?? []).filter((x) => x?.src ?? x?.img);
+
+  return imgs.map((x) => {
+    const rawSrc = x.src ?? x.img ?? "";
+
+    return {
       ...x,
-      src: joinBase(base, x.img),
-    }));
-  }, [c, base]);
+      src: joinBase(base, rawSrc),
+    };
+  });
+}, [c, base]);
 
   // Mantener active sincronizado con scroll-snap
   useEffect(() => {
