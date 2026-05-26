@@ -4,7 +4,7 @@ import { useDoc } from '@docusaurus/plugin-content-docs/client';
 import {
   getCharacterDocPath,
   getCharactersByFactionId,
-} from '@site/src/data/characters';
+} from '@site/src/data/relationships';
 
 type FactionDocFrontMatter = {
   factionId?: string;

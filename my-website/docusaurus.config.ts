@@ -2,14 +2,6 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
-const charactersJson = require('./src/data/characters.json') as Record<string, { group?: string }>;
-const npcCharacterRedirects = Object.entries(charactersJson)
-  .filter(([, character]) => character.group === 'npc')
-  .map(([id]) => ({
-    from: `/characters/npc/${id}`,
-    to: `/characters/misc/${id}`,
-  }));
-
 const config: Config = {
   title: 'My Site',
   tagline: 'Dinosaurs are cool',
@@ -59,14 +51,7 @@ const config: Config = {
     ],
   ],
 
-  plugins: [
-    [
-      '@docusaurus/plugin-client-redirects',
-      {
-        redirects: npcCharacterRedirects,
-      },
-    ],
-  ],
+  plugins: [],
 
   themes: [
     [

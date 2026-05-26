@@ -12,29 +12,50 @@
  * - Avoid duplicating faction membership in factions.json.
  */
 
-import {
-  characters,
-  characterList,
-  type Character,
-} from "./characters";
+import charactersJson from "./characters.json";
+import questsJson from "./quests.json";
+import factionsJson from "./factions.json";
+import locationsJson from "./locations.json";
+import type { Character, CharactersById } from "./characters";
+import type { Quest, QuestsById } from "./quests";
+import type { Faction, FactionsById } from "./factions";
+import type { Location, LocationsById } from "./locations";
 
-import {
-  quests,
-  questList,
-  type Quest,
-} from "./quests";
+export type { Character } from "./characters";
+export type { Quest, QuestMap } from "./quests";
+export type { Faction, FactionSubunit } from "./factions";
+export type { Location } from "./locations";
 
-import {
-  factions,
-  factionList,
-  type Faction,
-} from "./factions";
+export const characters = charactersJson as CharactersById;
+export const quests = questsJson as QuestsById;
+export const factions = factionsJson as FactionsById;
+export const locations = locationsJson as LocationsById;
 
-import {
-  locations,
-  locationList,
-  type Location,
-} from "./locations";
+export const characterList = Object.values(characters);
+
+export const questList = Object.values(quests).sort((a, b) => {
+  const aOrder = a.sortOrder ?? Number.MAX_SAFE_INTEGER;
+  const bOrder = b.sortOrder ?? Number.MAX_SAFE_INTEGER;
+
+  if (aOrder !== bOrder) return aOrder - bOrder;
+  return a.title.localeCompare(b.title);
+});
+
+export const factionList = Object.values(factions).sort((a, b) => {
+  const aOrder = a.sortOrder ?? Number.MAX_SAFE_INTEGER;
+  const bOrder = b.sortOrder ?? Number.MAX_SAFE_INTEGER;
+
+  if (aOrder !== bOrder) return aOrder - bOrder;
+  return a.title.localeCompare(b.title);
+});
+
+export const locationList = Object.values(locations).sort((a, b) => {
+  const aOrder = a.sortOrder ?? Number.MAX_SAFE_INTEGER;
+  const bOrder = b.sortOrder ?? Number.MAX_SAFE_INTEGER;
+
+  if (aOrder !== bOrder) return aOrder - bOrder;
+  return a.title.localeCompare(b.title);
+});
 
 export type EntityId = string;
 

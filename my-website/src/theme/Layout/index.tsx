@@ -39,8 +39,7 @@ export default function Layout(props: Props): ReactNode {
 
       <Navbar />
 
-      {/* DEBUG */}
-      
+      <SidebarToggle />
 
       <div
         id={SkipToContentFallbackId}

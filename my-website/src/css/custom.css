@@ -51,16 +51,16 @@
   color: rgba(0, 229, 255, 0.8);
 }
 
-@media (max-width: 1400px) {
-  /* Sidebar container real en tu DOM */
+@media (max-width: 1200px) {
+  /* Docusaurus docs sidebar: keep this breakpoint aligned with SidebarToggle.tsx. */
   .theme-doc-sidebar-container,
   [class*="docSidebarContainer"],
   [class*="theme-doc-sidebar-container"] {
     position: fixed !important;
-    top: var(--navbar-height);
+    top: var(--ifm-navbar-height);
     left: -320px;
     width: 300px;
-    height: calc(100vh - var(--navbar-height));
+    height: calc(100vh - var(--ifm-navbar-height));
     z-index: 9998;
     transition: left 0.2s ease;
     background: var(--ifm-background-color);

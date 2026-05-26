@@ -1,48 +1,60 @@
 import React, {useEffect, useState} from 'react';
+import {useLocation} from '@docusaurus/router';
 
-const BREAKPOINT = 1200;
+const SIDEBAR_DRAWER_BREAKPOINT = 1200;
+const DOCUSAURUS_MOBILE_BREAKPOINT = 996;
 
 export default function SidebarToggle() {
+  const location = useLocation();
   const [open, setOpen] = useState(false);
   const [shouldShow, setShouldShow] = useState(false);
 
   useEffect(() => {
     const onResize = () => {
-      const small = window.innerWidth <= BREAKPOINT;
-      setShouldShow(small);
-      if (!small) setOpen(false);
+      const sidebar =
+        document.querySelector('.theme-doc-sidebar-container') ??
+        document.querySelector('[class*="docSidebarContainer"]');
+      const needsDrawer =
+        window.innerWidth > DOCUSAURUS_MOBILE_BREAKPOINT &&
+        window.innerWidth <= SIDEBAR_DRAWER_BREAKPOINT &&
+        Boolean(sidebar);
+
+      setShouldShow(needsDrawer);
+      if (!needsDrawer) setOpen(false);
     };
 
     onResize();
     window.addEventListener('resize', onResize);
     return () => window.removeEventListener('resize', onResize);
-  }, []);
+  }, [location.pathname]);
 
   useEffect(() => {
     document.documentElement.classList.toggle('hally-sidebar-open', open);
     return () => document.documentElement.classList.remove('hally-sidebar-open');
   }, [open]);
 
-  // ESC para cerrar
   useEffect(() => {
-  if (!open) return;
+    if (!open) return;
 
-  const onPointerDown = (e: PointerEvent) => {
-    const sidebar =
-  document.querySelector('.theme-doc-sidebar-container') ??
-  document.querySelector('[class*="docSidebarContainer"]');
+    const onPointerDown = (e: PointerEvent) => {
+      const sidebar =
+        document.querySelector('.theme-doc-sidebar-container') ??
+        document.querySelector('[class*="docSidebarContainer"]');
 
-    if (sidebar && sidebar.contains(e.target as Node)) return;
+      if (sidebar && sidebar.contains(e.target as Node)) return;
 
-    const btn = document.getElementById('hally-sidebar-toggle-btn');
-    if (btn && btn.contains(e.target as Node)) return;
+      const btn = document.getElementById('hally-sidebar-toggle-btn');
+      if (btn && btn.contains(e.target as Node)) return;
 
-    setOpen(false);
-  };
+      setOpen(false);
+    };
 
-  window.addEventListener('pointerdown', onPointerDown);
-  return () => window.removeEventListener('pointerdown', onPointerDown);
-}, [open]);
+    window.addEventListener('pointerdown', onPointerDown);
+    return () => window.removeEventListener('pointerdown', onPointerDown);
+  }, [open]);
+
+  if (!shouldShow) return null;
+
   return (
     <button
       id="hally-sidebar-toggle-btn"
@@ -65,9 +77,8 @@ export default function SidebarToggle() {
         fontWeight: 900,
         backdropFilter: 'blur(8px)',
         cursor: 'pointer',
-      }}
-    >
-      {open ? '✕' : '☰'}
+      }}>
+      {open ? 'x' : '☰'}
     </button>
   );
 }

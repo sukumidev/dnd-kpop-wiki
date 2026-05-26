@@ -5,12 +5,13 @@ import Link from "@docusaurus/Link";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./styles.module.css";
 
-import { characterList, type Character } from "@site/src/data/characters";
-import type { Faction } from "@site/src/data/factions";
 import {
+  characterList,
   getCharacterDocPath,
   getFactionById,
   getLocationById,
+  type Character,
+  type Faction,
 } from "@site/src/data/relationships";
 
 type CharacterGroup = {

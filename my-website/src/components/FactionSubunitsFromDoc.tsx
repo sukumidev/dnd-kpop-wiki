@@ -4,12 +4,12 @@ import { useDoc } from '@docusaurus/plugin-content-docs/client';
 import {
   getFactionById,
   type FactionSubunit,
-} from '@site/src/data/factions';
+} from '@site/src/data/relationships';
 import {
   getCharacterById,
   getCharacterDocPath,
   type Character,
-} from '@site/src/data/characters';
+} from '@site/src/data/relationships';
 
 type FactionDocFrontMatter = {
   factionId?: string;

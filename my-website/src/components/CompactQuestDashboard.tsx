@@ -3,7 +3,7 @@ import Link from "@docusaurus/Link";
 
 import questsJson from "@site/src/data/quests.json";
 import type { Quest, QuestMap } from "@site/src/data/quests";
-import { getFactionById } from "@site/src/data/factions";
+import { getFactionById } from "@site/src/data/relationships";
 
 type QuestDashboardProps = {
   showHidden?: boolean;

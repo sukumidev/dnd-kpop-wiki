@@ -1,6 +1,7 @@
 import path from "node:path";
 import fs from "node:fs/promises";
 import { runDataValidation } from "./preflight-validation";
+import type { GenerateOptions, GenerateResult } from "./generate-types";
 
 type FactionSubunit = {
   id?: string;
@@ -37,9 +38,14 @@ const ROOT = process.cwd();
 const FACTIONS_JSON = path.join(ROOT, "src", "data", "factions.json");
 const DOCS_ROOT = path.join(ROOT, "docs", "factions");
 
-const args = new Set(process.argv.slice(2));
-const DRY_RUN = args.has("--dry-run") || args.has("-n");
-const FORCE = args.has("--force") || args.has("-f");
+function parseOptions(argv = process.argv.slice(2)): GenerateOptions {
+  const args = new Set(argv);
+
+  return {
+    dryRun: args.has("--dry-run") || args.has("-n"),
+    force: args.has("--force") || args.has("-f"),
+  };
+}
 
 function escapeYaml(value: string) {
   return value.replace(/"/g, '\\"');
@@ -81,21 +87,27 @@ async function fileExists(p: string) {
   }
 }
 
-async function ensureDir(p: string) {
-  if (DRY_RUN) return;
+async function ensureDir(p: string, options: GenerateOptions) {
+  if (options.dryRun) return;
   await fs.mkdir(p, { recursive: true });
 }
 
-async function main() {
-  runDataValidation();
+function printResult(result: GenerateResult, options: GenerateOptions) {
+  const mode = options.dryRun ? "DRY RUN" : "WRITE";
+  console.log(`\n${mode} terminado`);
+  console.log(`Creado: ${result.created}`);
+  console.log(`Sobrescritos: ${result.overwritten}`);
+  console.log(`Omitidos: ${result.skipped} ${options.force ? "(FORCE activo, no deberia haber omitidos)" : "(ya existian)"}`);
+}
 
+export async function generateFactionPages(options: GenerateOptions): Promise<GenerateResult> {
   const raw = await fs.readFile(FACTIONS_JSON, "utf8");
   const factions: FactionsJson = JSON.parse(raw);
 
   const ids = Object.keys(factions);
   if (!ids.length) {
     console.log("No hay facciones en factions.json");
-    return;
+    return { type: "factions", created: 0, overwritten: 0, skipped: 0 };
   }
 
   let created = 0;
@@ -110,33 +122,38 @@ async function main() {
     const sidebarLabel = entry.sidebar_label ?? entry.title ?? id;
 
     const exists = await fileExists(outFile);
-    if (exists && !FORCE) {
+    if (exists && !options.force) {
       skipped++;
       continue;
     }
 
     const content = mdxTemplate({ id, title, sidebarLabel });
 
-    if (DRY_RUN) {
+    if (options.dryRun) {
       console.log(`${exists ? "[WOULD OVERWRITE]" : "[WOULD CREATE]"} ${path.relative(ROOT, outFile)}`);
       continue;
     }
 
-    await ensureDir(DOCS_ROOT);
+    await ensureDir(DOCS_ROOT, options);
     await fs.writeFile(outFile, content, "utf8");
 
     if (exists) overwritten++;
     else created++;
   }
 
-  const mode = DRY_RUN ? "DRY RUN" : "WRITE";
-  console.log(`\n${mode} terminado`);
-  console.log(`Creado: ${created}`);
-  console.log(`Sobrescritos: ${overwritten}`);
-  console.log(`Omitidos: ${skipped} ${FORCE ? "(FORCE activo, no deberia haber omitidos)" : "(ya existian)"}`);
+  return { type: "factions", created, overwritten, skipped };
 }
 
-main().catch((err) => {
-  console.error("Error:", err);
-  process.exit(1);
-});
+async function main() {
+  const options = parseOptions();
+  runDataValidation();
+  const result = await generateFactionPages(options);
+  printResult(result, options);
+}
+
+if (path.basename(process.argv[1] ?? "") === "generateFactionsMdx.ts") {
+  main().catch((err) => {
+    console.error("Error:", err);
+    process.exit(1);
+  });
+}

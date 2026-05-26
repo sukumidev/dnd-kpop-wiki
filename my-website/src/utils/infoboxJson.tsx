@@ -10,9 +10,12 @@ import {
   type LocationInfoboxInput,
   type FactionInfoboxInput,
 } from './infoboxHelpers';
-import { getCharacterById, getCharacterDocPath } from '../data/characters';
-import { getFactionById } from '../data/factions';
-import { getLocationById } from '../data/locations';
+import {
+  getCharacterById,
+  getCharacterDocPath,
+  getFactionById,
+  getLocationById,
+} from '../data/relationships';
 
 /**
  * JSON-friendly references
