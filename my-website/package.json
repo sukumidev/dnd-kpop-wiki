@@ -22,6 +22,7 @@
     "gen:factions": "tsx scripts/generateFactionsMdx.ts",
     "gen:factions:dry": "tsx scripts/generateFactionsMdx.ts --dry-run",
     "gen:factions:force": "tsx scripts/generateFactionsMdx.ts --force",
+    "gen:documents": "tsx scripts/generate-document-pages.ts --clean",
     "validate:data": "tsx scripts/validate-data.ts"
   },
   "dependencies": {

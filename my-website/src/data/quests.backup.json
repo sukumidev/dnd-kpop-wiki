@@ -361,7 +361,7 @@
     "description": "Taeil posee conocimiento robado, ambición peligrosa y vínculos con los planes más crueles del Clan del Sol Ardiente. Su pasado como Neo Académico lo vuelve especialmente peligroso, pues entiende tecnologías, pactos y estructuras que podrían inclinar la balanza del conflicto. Derrotarlo no solo significa eliminar un enemigo poderoso, sino cortar una de las mentes que alimentan la expansión del clan.",
     "progress": {
       "mode": "manual",
-      "current": 80,
+      "current": 0,
       "goal": 100
     },
     "factions": [

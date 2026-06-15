@@ -1,0 +1,9 @@
+{
+  "label": "Documentos",
+  "position": 50,
+  "link": {
+    "type": "generated-index",
+    "title": "Documentos",
+    "description": "Cartas, rumores, anuncios, reportes y otros textos de Hallyura."
+  }
+}

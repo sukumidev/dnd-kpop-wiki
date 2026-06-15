@@ -81,6 +81,12 @@ const sidebars: SidebarsConfig = {
     },
 
     {
+      type: 'link',
+      label: 'Documentos',
+      href: '/documents',
+    },
+
+    {
       type: 'category',
       label: 'Sistemas y Objetos',
       collapsed: true,

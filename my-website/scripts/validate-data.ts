@@ -10,6 +10,7 @@
  * - locations.json
  * - mapConfig.json
  * - statblocks.json
+ * - documents.json
  *
  * Run with:
  *   npx tsx scripts/validate-data.ts
@@ -47,15 +48,36 @@ const DATA_FILES = {
   locations: "locations.json",
   mapConfig: "mapConfig.json",
   statblocks: "statblocks.json",
+  documents: "documents.json",
 } as const;
 
 const CHARACTER_STATUS = new Set(["active", "inactive", "dead", "missing", "unknown"]);
-const CHARACTER_GROUP = new Set(["party", "npc"]);
+const CHARACTER_GROUP = new Set(["party", "npc", "misc"]);
 const CHARACTER_DYNAMIC = new Set(["alpha", "beta", "omega", "unknown", "n/a"]);
 const POLYAMORY_STATUS = new Set(["yes", "no", "discovering", "unknown", "n/a"]);
 
 const QUEST_STATUS = new Set(["active", "completed", "failed", "paused", "hidden", "unknown"]);
 const QUEST_VISIBILITY = new Set(["public", "hidden", "dm-only"]);
+
+const DOCUMENT_TYPES = new Set([
+  "book",
+  "lore",
+  "rumor",
+  "guild-announcement",
+  "letter",
+  "note",
+  "newspaper",
+  "diary",
+  "report",
+  "decree",
+  "testimony",
+  "contract",
+  "prophecy",
+  "handout",
+  "other",
+]);
+const DOCUMENT_STATUSES = new Set(["draft", "published", "archived"]);
+const DOCUMENT_VISIBILITIES = new Set(["public", "hidden", "secret", "dm-only"]);
 
 const FACTION_STATUS = new Set(["active", "inactive", "destroyed", "disbanded", "hidden", "unknown"]);
 const LOCATION_STATUS = new Set(["active", "destroyed", "hidden", "lost", "unknown"]);
@@ -183,6 +205,22 @@ function validateRecordFile(file: string, data: unknown): JsonRecord {
   return data;
 }
 
+function validateArrayFile(file: string, data: unknown): JsonRecord[] {
+  if (!Array.isArray(data)) {
+    addError(file, `Expected ${file} to be an array.`);
+    return [];
+  }
+
+  return data.filter((entity, index): entity is JsonRecord => {
+    if (!isPlainObject(entity)) {
+      addError(file, `Expected item at index ${index} to be an object.`, String(index));
+      return false;
+    }
+
+    return true;
+  });
+}
+
 function validateNestedUniqueIds(
   file: string,
   parentId: string,
@@ -280,6 +318,14 @@ function validateTags(file: string, tags: unknown, entityId: string) {
 
     seen.add(tag);
   });
+}
+
+function validateOptionalArray(file: string, values: unknown, entityId: string, field: string) {
+  if (values == null) return;
+
+  if (!Array.isArray(values)) {
+    addError(file, `Expected ${field} to be an array.`, entityId, field);
+  }
 }
 
 function collectIds(record: JsonRecord) {
@@ -550,6 +596,52 @@ function validateLocations(locations: JsonRecord, mapConfig: any) {
   }
 }
 
+function validateDocuments(documents: JsonRecord[]) {
+  const file = DATA_FILES.documents;
+  const seen = new Set<string>();
+
+  documents.forEach((document, index) => {
+    const fallbackId = String(index);
+    const id = typeof document.id === "string" ? document.id : fallbackId;
+
+    validateIdValue(file, document.id, id, "id");
+
+    if (typeof document.id === "string") {
+      if (seen.has(document.id)) {
+        addError(file, `Duplicate document ID "${document.id}".`, document.id, "id");
+      }
+
+      seen.add(document.id);
+    }
+
+    if (typeof document.title !== "string" || document.title.trim() === "") {
+      addError(file, `Document is missing required "title".`, id, "title");
+    }
+
+    validateEnum(file, document.type, DOCUMENT_TYPES, id, "type", true);
+    validateEnum(file, document.status, DOCUMENT_STATUSES, id, "status", true);
+    validateEnum(file, document.visibility, DOCUMENT_VISIBILITIES, id, "visibility", true);
+
+    validateIdArray(file, document.recipientCharacterIds, id, "recipientCharacterIds");
+    validateIdArray(file, document.sessionIds, id, "sessionIds");
+    validateIdArray(file, document.characterIds, id, "characterIds");
+    validateIdArray(file, document.questIds, id, "questIds");
+    validateIdArray(file, document.factionIds, id, "factionIds");
+    validateIdArray(file, document.locationIds, id, "locationIds");
+    validateTags(file, document.tags, id);
+
+    validateOptionalArray(file, document.attachments, id, "attachments");
+
+    if (document.authorCharacterId != null) {
+      validateIdValue(file, document.authorCharacterId, id, "authorCharacterId");
+    }
+
+    if (document.metadata != null && !isPlainObject(document.metadata)) {
+      addError(file, `Expected metadata to be an object.`, id, "metadata");
+    }
+  });
+}
+
 function validateMapConfig(mapConfig: unknown) {
   const file = DATA_FILES.mapConfig;
 
@@ -669,6 +761,7 @@ function main() {
   const statblocks = fileExists(DATA_FILES.statblocks)
     ? validateRecordFile(DATA_FILES.statblocks, readJson(DATA_FILES.statblocks, false))
     : {};
+  const documents = validateArrayFile(DATA_FILES.documents, readJson(DATA_FILES.documents));
 
   validateMapConfig(mapConfig);
 
@@ -681,6 +774,7 @@ function main() {
   validateFactions(factions, characterIds, locationIds);
   validateLocations(locations, mapConfig);
   validateStatblocks(statblocks, characterIds);
+  validateDocuments(documents);
   detectQuestCycles(quests);
 
   printResults();

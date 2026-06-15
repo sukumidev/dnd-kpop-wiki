@@ -3,6 +3,7 @@ import React from "react";
 import Infobox from "@site/src/components/Infobox";
 import Statblock from "@site/src/components/Statblock";
 import CharacterSplitLayout from "@site/src/components/CharacterSplitLayout";
+import RelatedDocumentsSection from "@site/src/components/documents/RelatedDocumentsSection";
 import charactersJson from "@site/src/data/characters.json";
 import { characterJsonToSections } from "@site/src/utils/infoboxJson";
 import { CharacterProvider } from "@site/src/components/CharacterContext";
@@ -66,6 +67,7 @@ export default function CharacterPage({ id, children }: Props) {
         statblock={sb ? <Statblock id={id} /> : null}
       >
         {children}
+        <RelatedDocumentsSection characterId={id} />
       </CharacterSplitLayout>
     </CharacterProvider>
   );

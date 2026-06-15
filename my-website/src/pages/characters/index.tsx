@@ -2,7 +2,7 @@ import React, { useMemo } from "react";
 import Layout from "@theme/Layout";
 import Heading from "@theme/Heading";
 import Link from "@docusaurus/Link";
-import useBaseUrl from "@docusaurus/useBaseUrl";
+import { useBaseUrlUtils } from "@docusaurus/useBaseUrl";
 import styles from "./styles.module.css";
 
 import {
@@ -21,13 +21,6 @@ type CharacterGroup = {
 
 const OTHER_GROUP_ID = "otros";
 
-const factionPageIds = new Set([
-  "gremio-de-aventureros",
-  "hijos-de-la-noche",
-  "lobos-perdidos",
-  "panes-del-destino",
-]);
-
 function getCharacterCaption(character: Character) {
   const faction = getFactionById(character.factionId);
   const region = getLocationById(character.regionId);
@@ -40,6 +33,8 @@ function getCharacterCaption(character: Character) {
 }
 
 export default function CharactersPage() {
+  const { withBaseUrl } = useBaseUrlUtils();
+
   const groupedCharacters = useMemo(() => {
     return characterList.reduce<Record<string, CharacterGroup>>((groups, character) => {
       const faction = getFactionById(character.factionId);
@@ -80,10 +75,9 @@ export default function CharactersPage() {
 
           {sections.map((section) => {
             const sectionTitle = section.faction?.title ?? "Otros";
-            const factionPath =
-              section.faction && factionPageIds.has(section.faction.id)
-                ? `/factions/${section.faction.id}`
-                : undefined;
+            const factionPath = section.faction
+              ? `/factions/${section.faction.id}`
+              : undefined;
 
             return (
               <details key={section.id} className={styles.section} open>
@@ -96,7 +90,7 @@ export default function CharactersPage() {
                     {factionPath ? (
                       <Link
                         className={styles.sectionCta}
-                        to={useBaseUrl(factionPath)}
+                        to={withBaseUrl(factionPath)}
                         onClick={(event) => event.stopPropagation()}
                         onMouseDown={(event) => event.stopPropagation()}
                       >
@@ -112,7 +106,7 @@ export default function CharactersPage() {
                   <div className={styles.grid}>
                     {section.characters.map((character) => {
                       const imgUrl = character.imageSrc
-                        ? useBaseUrl(character.imageSrc)
+                        ? withBaseUrl(character.imageSrc)
                         : undefined;
                       const docPath = getCharacterDocPath(character);
                       const isDeceased = character.status === "dead";
@@ -121,7 +115,7 @@ export default function CharactersPage() {
                       return (
                         <Link
                           key={character.id}
-                          to={useBaseUrl(`/${docPath}`)}
+                          to={withBaseUrl(`/${docPath}`)}
                           className={styles.cardLink}
                           aria-label={`Abrir ficha de ${character.title}`}
                         >

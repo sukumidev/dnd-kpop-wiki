@@ -1,4 +1,4 @@
-import questsJson from "./quests.json";
+import questsJson from "./src/data/quests.json";
 
 export type QuestStatus =
   | "active"

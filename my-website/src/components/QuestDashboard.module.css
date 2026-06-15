@@ -1,0 +1,396 @@
+.questList {
+  display: grid;
+  gap: 1rem;
+}
+
+.questCard {
+  --quest-accent: #7c8aa5;
+  --quest-accent-soft: color-mix(in srgb, var(--quest-accent) 12%, transparent);
+  --quest-accent-border: var(--quest-accent);
+  --quest-progress-color: #7c8aa5;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-left: 6px solid var(--quest-accent-border);
+  border-radius: 18px;
+  background:
+    linear-gradient(90deg, var(--quest-accent-soft), transparent 42%),
+    var(--ifm-background-surface-color);
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.07);
+  overflow: hidden;
+}
+
+.questCardOpen {
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.12);
+}
+
+.questCardCompleted {
+  opacity: 0.92;
+}
+
+.questHeaderButton {
+  width: 100%;
+  border: none;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  text-align: left;
+  padding: 1.15rem 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.questHeaderButtonStatic {
+  cursor: default;
+}
+
+.questHeaderMain {
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+.questTitleRow {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.45rem;
+}
+
+.questTitle {
+  margin: 0;
+  font-size: clamp(1.12rem, 1.6vw, 1.38rem);
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+
+.questSubtitle {
+  margin: 0;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.95rem;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+.questBadges {
+  display: flex;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.questBadge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.65rem;
+  padding: 0.24rem 0.62rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  font-size: 0.76rem;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.typeMain {
+  color: #073b4c;
+  background: #a5f3fc;
+  border-color: #67e8f9;
+}
+
+.typePersonal {
+  color: #581c87;
+  background: #f5d0fe;
+  border-color: #e879f9;
+}
+
+.typeSide {
+  color: #78350f;
+  background: #fed7aa;
+  border-color: #fb923c;
+}
+
+.typeFaction {
+  color: #312e81;
+  background: #ddd6fe;
+  border-color: #a78bfa;
+}
+
+.typeDefault {
+  color: var(--ifm-color-emphasis-900);
+  background: var(--ifm-color-emphasis-200);
+  border-color: var(--ifm-color-emphasis-300);
+}
+
+.questHeaderMeta {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  flex: 0 0 auto;
+  padding-top: 0.08rem;
+}
+
+.progressPill {
+  min-width: 4.5rem;
+  border: 1px solid color-mix(in srgb, var(--quest-progress-color) 45%, var(--ifm-color-emphasis-300));
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--quest-progress-color) 15%, var(--ifm-background-surface-color));
+  color: var(--ifm-color-emphasis-900);
+  font-size: 0.86rem;
+  font-weight: 800;
+  line-height: 1;
+  padding: 0.45rem 0.65rem;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.collapseIcon {
+  width: 1.8rem;
+  height: 1.8rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ifm-color-emphasis-800);
+  background: var(--ifm-background-color);
+  font-size: 1rem;
+  line-height: 1;
+  transition: transform 0.2s ease;
+}
+
+.collapseIconOpen {
+  transform: rotate(180deg);
+}
+
+.collapsePlaceholder {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.questPanel {
+  padding: 1.15rem 1.25rem 1.25rem;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+  display: grid;
+  gap: 1.05rem;
+}
+
+.questSummary {
+  margin: 0;
+  color: var(--ifm-color-emphasis-800);
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
+
+.questSection {
+  padding-top: 1rem;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.questSection:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.progressHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 0.45rem;
+  font-size: 0.92rem;
+}
+
+.progressLabel {
+  color: var(--ifm-color-emphasis-800);
+  font-weight: 800;
+}
+
+.progressValue {
+  color: var(--ifm-color-emphasis-700);
+  font-weight: 700;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.progressTrack {
+  width: 100%;
+  height: 16px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 999px;
+  background: var(--ifm-color-emphasis-200);
+  overflow: hidden;
+}
+
+.progressFill {
+  min-width: 3px;
+  height: 100%;
+  width: var(--quest-progress-width);
+  background: var(--quest-progress-color);
+  border-radius: 999px;
+  transition: width 0.25s ease;
+}
+
+.progressFillEmpty {
+  opacity: 0;
+}
+
+.sectionTitle {
+  display: block;
+  margin-bottom: 0.55rem;
+  color: var(--ifm-color-emphasis-900);
+  font-size: 0.92rem;
+  font-weight: 800;
+}
+
+.objectiveList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.objectiveItem {
+  display: grid;
+  grid-template-columns: 1.35rem minmax(0, 1fr);
+  gap: 0.55rem;
+  align-items: start;
+  color: var(--ifm-color-emphasis-800);
+  line-height: 1.45;
+}
+
+.objectiveMarker {
+  width: 1.2rem;
+  height: 1.2rem;
+  border: 1px solid var(--ifm-color-emphasis-400);
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.08rem;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.72rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.objectiveDone {
+  color: var(--ifm-color-emphasis-600);
+}
+
+.objectiveDone .objectiveMarker {
+  border-color: #22c55e;
+  background: #22c55e;
+  color: white;
+}
+
+.objectiveFailed {
+  color: #dc2626;
+}
+
+.objectiveFailed .objectiveMarker {
+  border-color: #ef4444;
+  background: #ef4444;
+  color: white;
+}
+
+.metadataBlock {
+  display: flex;
+  gap: 0.55rem;
+  flex-wrap: wrap;
+  align-items: center;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.88rem;
+}
+
+.metadataLabel {
+  color: var(--ifm-color-emphasis-600);
+  font-weight: 800;
+}
+
+.tagList {
+  display: flex;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.tagChip {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 999px;
+  background: var(--ifm-color-emphasis-100);
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.82rem;
+  line-height: 1;
+  padding: 0.32rem 0.55rem;
+}
+
+:global([data-theme="dark"]) .questCard {
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.28);
+}
+
+:global([data-theme="dark"]) .typeMain {
+  color: #cffafe;
+  background: rgba(8, 145, 178, 0.32);
+  border-color: rgba(34, 211, 238, 0.55);
+}
+
+:global([data-theme="dark"]) .typePersonal {
+  color: #fae8ff;
+  background: rgba(168, 85, 247, 0.28);
+  border-color: rgba(232, 121, 249, 0.52);
+}
+
+:global([data-theme="dark"]) .typeSide {
+  color: #ffedd5;
+  background: rgba(234, 88, 12, 0.28);
+  border-color: rgba(251, 146, 60, 0.55);
+}
+
+:global([data-theme="dark"]) .typeFaction {
+  color: #ede9fe;
+  background: rgba(124, 58, 237, 0.32);
+  border-color: rgba(167, 139, 250, 0.58);
+}
+
+:global([data-theme="dark"]) .objectiveFailed {
+  color: #fca5a5;
+}
+
+@media (max-width: 640px) {
+  .questCard {
+    margin-left: 0 !important;
+    border-left-width: 5px;
+  }
+
+  .questHeaderButton {
+    padding: 1rem;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .questHeaderMeta {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .progressPill {
+    min-width: auto;
+  }
+
+  .questPanel {
+    padding: 1rem;
+  }
+
+  .progressHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+
+  .progressValue {
+    text-align: left;
+    white-space: normal;
+  }
+}

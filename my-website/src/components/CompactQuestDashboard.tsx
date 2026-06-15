@@ -1,9 +1,12 @@
 import React, { useMemo, useState } from "react";
 import Link from "@docusaurus/Link";
+import clsx from "clsx";
 
 import questsJson from "@site/src/data/quests.json";
+import RelatedDocumentsSection from "@site/src/components/documents/RelatedDocumentsSection";
 import type { Quest, QuestMap } from "@site/src/data/quests";
 import { getFactionById } from "@site/src/data/relationships";
+import styles from "./QuestDashboard.module.css";
 
 type QuestDashboardProps = {
   showHidden?: boolean;
@@ -86,29 +89,58 @@ function getAccentColor(accent?: string): string {
   switch (accent) {
     case "gold":
       return "#d4a017";
+    case "cyan":
+      return "#22d3ee";
     case "red":
-      return "#d9534f";
+      return "#ef4444";
     case "pink":
-      return "#d96bb3";
+      return "#d946ef";
     case "purple":
-      return "#8b6be8";
+      return "#8b5cf6";
     case "blue":
       return "#4a90e2";
     case "green":
-      return "#4caf50";
+      return "#22c55e";
+    case "amber":
+      return "#f59e0b";
+    case "orange":
+      return "#f97316";
+    case "teal":
+      return "#14b8a6";
+    case "silver":
+      return "#94a3b8";
+    case "gray":
+      return "#64748b";
     default:
       return "#7c8aa5";
   }
 }
 
-function getStatusLabel(status: Quest["status"]): string {
+function getQuestAccentVars(accent?: string | null): React.CSSProperties {
+  const accentColor = getAccentColor(accent ?? undefined);
+
+  return {
+    "--quest-accent": accentColor,
+    "--quest-accent-soft": `color-mix(in srgb, ${accentColor} 13%, transparent)`,
+    "--quest-accent-border": accentColor,
+    "--quest-progress-color": accentColor,
+  } as React.CSSProperties;
+}
+
+function getStatusLabel(status: Quest["status"] | string): string {
   switch (status) {
     case "active":
       return "Activa";
+    case "available":
+      return "Disponible";
     case "completed":
       return "Completada";
     case "failed":
       return "Fallida";
+    case "dormant":
+      return "Dormida";
+    case "hidden":
+      return "Oculta";
     case "paused":
       return "Pausada";
     case "locked":
@@ -151,18 +183,59 @@ function getTypeLabels(quest: Quest): string[] {
 function formatTypeLabel(type: string): string {
   switch (type) {
     case "main":
-      return "Main Quest";
+      return "Main";
     case "side":
-      return "Side Quest";
+      return "Side";
     case "faction":
-      return "Faction Quest";
+      return "Faction";
     case "personal":
-      return "Personal Quest";
+      return "Personal";
     case "event":
-      return "Event Quest";
+      return "Event";
     default:
       return type;
   }
+}
+
+function getStatusBadgeStyle(status: Quest["status"] | string): React.CSSProperties {
+  switch (status) {
+    case "active":
+      return { color: "#083344", background: "#a5f3fc", borderColor: "#22d3ee" };
+    case "available":
+      return { color: "#172554", background: "#bfdbfe", borderColor: "#60a5fa" };
+    case "completed":
+      return { color: "#052e16", background: "#bbf7d0", borderColor: "#22c55e" };
+    case "failed":
+      return { color: "#7f1d1d", background: "#fecaca", borderColor: "#ef4444" };
+    case "dormant":
+    case "paused":
+      return { color: "#78350f", background: "#fde68a", borderColor: "#f59e0b" };
+    case "hidden":
+      return { color: "#1f2937", background: "#e5e7eb", borderColor: "#9ca3af" };
+    case "locked":
+      return { color: "#2e1065", background: "#ddd6fe", borderColor: "#a78bfa" };
+    default:
+      return {};
+  }
+}
+
+function getTypeBadgeClass(type: string): string {
+  switch (type) {
+    case "main":
+      return styles.typeMain;
+    case "personal":
+      return styles.typePersonal;
+    case "side":
+      return styles.typeSide;
+    case "faction":
+      return styles.typeFaction;
+    default:
+      return styles.typeDefault;
+  }
+}
+
+function cleanObjectiveLabel(label: string): string {
+  return label.replace(/^\s*(?:[-*]\s*)?(?:\[[ xX]\]\s*)?(?:☑|✅|✔|✓|⬜|□|◻|❌|✗)\s*/u, "");
 }
 
 function isQuestVisible(
@@ -267,197 +340,131 @@ function renderQuestCard(
   const typeLabels = getTypeLabels(quest);
   const childrenExist = hasChildren(quest, questMap);
   const isCompleted = quest.status === "completed";
+  const questStyle = {
+    ...getQuestAccentVars(quest.accent),
+    marginLeft: `${depth * 28}px`,
+  } as React.CSSProperties;
 
   return (
     <article
       key={quest.id}
-      style={{
-        border: "1px solid var(--ifm-color-emphasis-300)",
-        borderRadius: "18px",
-        background: "var(--ifm-background-surface-color)",
-        marginLeft: `${depth * 28}px`,
-        overflow: "hidden",
-        boxShadow: isOpen ? "0 0 0 1px rgba(255,255,255,0.03)" : "none",
-        borderLeft: `4px solid ${getAccentColor(quest.accent)}`,
-        opacity: isCompleted ? 0.88 : 1,
-      }}
+      className={clsx(
+        styles.questCard,
+        isOpen && styles.questCardOpen,
+        isCompleted && styles.questCardCompleted
+      )}
+      data-accent={quest.accent ?? "fallback"}
+      style={questStyle}
     >
       <button
         type="button"
         onClick={() => (childrenExist ? toggleQuest(quest.id) : undefined)}
         aria-expanded={childrenExist ? isOpen : undefined}
         aria-controls={childrenExist ? `quest-panel-${quest.id}` : undefined}
-        style={{
-          width: "100%",
-          border: "none",
-          background: "transparent",
-          cursor: childrenExist ? "pointer" : "default",
-          textAlign: "left",
-          padding: "1rem 1.1rem",
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          gap: "1rem",
-        }}
+        className={clsx(
+          styles.questHeaderButton,
+          !childrenExist && styles.questHeaderButtonStatic
+        )}
       >
-        <div style={{ minWidth: 0 }}>
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: "0.6rem",
-              flexWrap: "wrap",
-              marginBottom: "0.35rem",
-            }}
-          >
-            <h3 style={{ margin: 0 }}>{quest.title}</h3>
+        <div className={styles.questHeaderMain}>
+          <div className={styles.questTitleRow}>
+            <h3 className={styles.questTitle}>{quest.title}</h3>
 
-            {typeLabels.map((type) => (
-              <span
-                key={`${quest.id}-${type}`}
-                style={{
-                  padding: "0.25rem 0.6rem",
-                  borderRadius: "999px",
-                  background: "var(--ifm-color-emphasis-200)",
-                  fontSize: "0.8rem",
-                }}
-              >
-                {formatTypeLabel(type)}
+            <div className={styles.questBadges}>
+              {typeLabels.map((type) => (
+                <span
+                  key={`${quest.id}-${type}`}
+                  className={clsx(styles.questBadge, getTypeBadgeClass(type))}
+                >
+                  {formatTypeLabel(type)}
+                </span>
+              ))}
+
+              <span className={styles.questBadge} style={getStatusBadgeStyle(quest.status)}>
+                {getStatusLabel(quest.status)}
               </span>
-            ))}
-
-            <span
-              style={{
-                padding: "0.25rem 0.6rem",
-                borderRadius: "999px",
-                background: "var(--ifm-color-emphasis-200)",
-                fontSize: "0.8rem",
-              }}
-            >
-              {getStatusLabel(quest.status)}
-            </span>
+            </div>
           </div>
 
           {quest.subtitle ? (
-            <p style={{ margin: 0, opacity: 0.72 }}>{quest.subtitle}</p>
+            <p className={styles.questSubtitle}>{quest.subtitle}</p>
           ) : null}
         </div>
 
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            gap: "0.75rem",
-            flexShrink: 0,
-          }}
-        >
-          <div
-            style={{
-              minWidth: "64px",
-              textAlign: "right",
-              fontSize: "0.9rem",
-              opacity: 0.85,
-            }}
-          >
-            {percent}%
-          </div>
+        <div className={styles.questHeaderMeta}>
+          <div className={styles.progressPill}>{percent}%</div>
 
           {childrenExist ? (
             <div
               aria-hidden="true"
-              style={{
-                fontSize: "1.2rem",
-                lineHeight: 1,
-                transition: "transform 0.2s ease",
-                transform: isOpen ? "rotate(180deg)" : "rotate(0deg)",
-                opacity: 0.8,
-              }}
+              className={clsx(styles.collapseIcon, isOpen && styles.collapseIconOpen)}
             >
-              ˅
+              v
             </div>
           ) : (
-            <div
-              aria-hidden="true"
-              style={{
-                width: "1rem",
-                opacity: 0.25,
-                textAlign: "center",
-              }}
-            >
-              •
-            </div>
+            <div aria-hidden="true" className={styles.collapsePlaceholder} />
           )}
         </div>
       </button>
 
       <div
         id={`quest-panel-${quest.id}`}
-        style={{
-          display: isOpen || !childrenExist ? "block" : "none",
-          padding: "0 1.1rem 1rem",
-          borderTop: "1px solid var(--ifm-color-emphasis-200)",
-        }}
+        className={styles.questPanel}
+        style={{ display: isOpen || !childrenExist ? "grid" : "none" }}
       >
-        <p style={{ marginTop: "1rem", marginBottom: "0.85rem" }}>{quest.summary}</p>
+        <p className={styles.questSummary}>{quest.description || quest.summary}</p>
 
-        <div style={{ marginBottom: "1rem" }}>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              marginBottom: "0.35rem",
-              fontSize: "0.9rem",
-            }}
-          >
-            <span>Progreso</span>
-            <span>
+        <div className={styles.questSection}>
+          <div className={styles.progressHeader}>
+            <span className={styles.progressLabel}>Progreso</span>
+            <span className={styles.progressValue}>
               {percent}% {progressGoal > 0 ? `(${progressCurrent}/${progressGoal})` : ""}
             </span>
           </div>
 
-          <div
-            style={{
-              width: "100%",
-              height: "12px",
-              borderRadius: "999px",
-              background: "var(--ifm-color-emphasis-200)",
-              overflow: "hidden",
-            }}
-          >
+          <div className={styles.progressTrack}>
             <div
-              style={{
-                width: `${percent}%`,
-                height: "100%",
-                background: getAccentColor(quest.accent),
-                borderRadius: "999px",
-                transition: "width 0.25s ease",
-              }}
+              className={clsx(
+                styles.progressFill,
+                percent === 0 && styles.progressFillEmpty
+              )}
+              style={{ "--quest-progress-width": `${percent}%` } as React.CSSProperties}
             />
           </div>
         </div>
 
         {quest.objectives?.length ? (
-          <div style={{ marginBottom: "1rem" }}>
-            <strong>Objetivos</strong>
-            <ul style={{ marginTop: "0.5rem", marginBottom: 0 }}>
+          <div className={styles.questSection}>
+            <strong className={styles.sectionTitle}>Objetivos</strong>
+            <ul className={styles.objectiveList}>
               {quest.objectives.map((objective, index) => {
                 if (typeof objective === "string") {
                   return (
-                    <li key={`${quest.id}-objective-${index}`}>
-                      ⬜ {objective}
+                    <li
+                      key={`${quest.id}-objective-${index}`}
+                      className={styles.objectiveItem}
+                    >
+                      <span className={styles.objectiveMarker} aria-hidden="true" />
+                      <span>{cleanObjectiveLabel(objective)}</span>
                     </li>
                   );
                 }
 
+                const isFailed = (objective as any).failed;
+
                 return (
                   <li
                     key={objective.id ?? `${quest.id}-objective-${index}`}
-                    style={{
-                      opacity: objective.done || (objective as any).failed ? 0.7 : 1,
-                    }}
+                    className={clsx(
+                      styles.objectiveItem,
+                      objective.done && styles.objectiveDone,
+                      isFailed && styles.objectiveFailed
+                    )}
                   >
-                    {objective.done ? "✅ " : (objective as any).failed ? "❌ " : "⬜ "}
-                    {objective.label}
+                    <span className={styles.objectiveMarker} aria-hidden="true">
+                      {objective.done ? "✓" : isFailed ? "!" : ""}
+                    </span>
+                    <span>{cleanObjectiveLabel(objective.label)}</span>
                   </li>
                 );
               })}
@@ -465,21 +472,32 @@ function renderQuestCard(
           </div>
         ) : null}
 
-        {quest.parentQuestId && questMap[quest.parentQuestId] ? (
-          <p style={{ marginBottom: "0.75rem", opacity: 0.78 }}>
-            <strong>Quest padre:</strong> {questMap[quest.parentQuestId].title}
-          </p>
+        {(quest.parentQuestId && questMap[quest.parentQuestId]) || quest.tags?.length ? (
+          <div className={styles.questSection}>
+            {quest.parentQuestId && questMap[quest.parentQuestId] ? (
+              <div className={styles.metadataBlock}>
+                <span className={styles.metadataLabel}>Quest padre</span>
+                <span>{questMap[quest.parentQuestId].title}</span>
+              </div>
+            ) : null}
+
+            {quest.tags?.length ? (
+              <div className={styles.metadataBlock}>
+                <span className={styles.metadataLabel}>Tags</span>
+                <div className={styles.tagList}>
+                  {quest.tags.map((tag) => (
+                    <span key={`${quest.id}-tag-${tag}`} className={styles.tagChip}>
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ) : null}
+          </div>
         ) : null}
 
         {quest.factionIds?.length ? (
-          <div
-            style={{
-              display: "flex",
-              gap: "0.5rem",
-              flexWrap: "wrap",
-              alignItems: "center",
-            }}
-          >
+          <div className={styles.metadataBlock}>
             {quest.factionIds.map((factionId) => {
               const faction = getFactionById(factionId);
 
@@ -502,6 +520,8 @@ function renderQuestCard(
             })}
           </div>
         ) : null}
+
+        <RelatedDocumentsSection questId={quest.id} />
       </div>
     </article>
   );
@@ -563,7 +583,7 @@ export default function CompactQuestDashboard({
               {activeQuests.length === 0 ? (
                 <p style={{ opacity: 0.7 }}>No hay quests activas por ahora.</p>
               ) : (
-                <div style={{ display: "grid", gap: "1rem" }}>
+                <div className={styles.questList}>
                   {activeQuests.map((quest) =>
                     renderQuestCard(quest, quests, openQuestIds, toggleQuest)
                   )}
@@ -586,7 +606,7 @@ export default function CompactQuestDashboard({
               {completedQuests.length === 0 ? (
                 <p style={{ opacity: 0.7 }}>Aún no hay quests completadas.</p>
               ) : (
-                <div style={{ display: "grid", gap: "1rem" }}>
+                <div className={styles.questList}>
                   {completedQuests.map((quest) =>
                     renderQuestCard(quest, quests, openQuestIds, toggleQuest)
                   )}

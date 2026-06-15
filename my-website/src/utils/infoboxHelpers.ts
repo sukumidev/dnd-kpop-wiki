@@ -80,7 +80,7 @@ export function makeCharacterSections(input: CharacterInfoboxInput): Section[] {
     row('Signo', input.zodiac),
     row('MBTI', input.mbti),
     row('Raza', input.race),
-    row('Dinámica', input.dynamic),
+    row('Subgénero', input.dynamic),
     row('Ocupación', input.occupation),
     row('Alineación', input.alignment),
     row('Tema', input.theme),

@@ -19,7 +19,7 @@
     ],
     "leaderCharacterId": "pc-minjae",
     "allyFactionIds": [
-      "gremio-de-aventureros",
+      "los-diecisiete-heroes",
       "hijos-de-la-noche",
       "neo-culturales-tecnologicos",
       "lobos-perdidos"
@@ -40,12 +40,19 @@
     "imageSrc": "/img/factions/panes-del-destino.jpeg",
     "imageCaption": "Portadores de la Baraja del Destino",
     "accent": "gold",
-    "sortOrder": 1
+    "sortOrder": 1,
+    "leaderId": "pc-minjae",
+    "memberIds": [
+      "pc-minjae",
+      "pc-kiyori",
+      "pc-imugi",
+      "pc-soobin"
+    ]
   },
-  "gremio-de-aventureros": {
-    "id": "gremio-de-aventureros",
-    "title": "Gremio de Aventureros",
-    "subtitle": "La Orden que mueve Hyberia",
+  "los-diecisiete-heroes": {
+    "id": "los-diecisiete-heroes",
+    "title": "Los Diecisiete Héroes del Gremio",
+    "subtitle": "Lo Fundadores del Gremio de Aventureros de Hyberia",
     "type": "guild",
     "status": "active",
     "visibility": "public",
@@ -128,14 +135,30 @@
     ],
     "tags": [
       "gremio",
-      "gremio-de-aventureros",
       "hyberia",
       "seventeen"
     ],
     "imageSrc": "/img/factions/gremio-de-aventureros.png",
     "imageCaption": "Los Trece Soñadores",
     "accent": "green",
-    "sortOrder": 10
+    "sortOrder": 10,
+    "realm": "Hyberia",
+    "leaderId": "svt-scoups",
+    "memberIds": [
+      "svt-scoups",
+      "svt-jeonghan",
+      "svt-joshua",
+      "svt-jun",
+      "svt-hoshi",
+      "svt-wonwoo",
+      "svt-woozi",
+      "svt-dk",
+      "svt-minghao",
+      "svt-mingyu",
+      "svt-seungkwan",
+      "svt-vernon",
+      "svt-dino"
+    ]
   },
   "lobos-perdidos": {
     "id": "lobos-perdidos",
@@ -158,7 +181,7 @@
     "leaderCharacterId": "skz-bangchan",
     "allyFactionIds": [
       "panes-del-destino",
-      "gremio-de-aventureros",
+      "los-diecisiete-heroes",
       "neo-culturales-tecnologicos",
       "hijos-de-la-noche"
     ],
@@ -362,7 +385,7 @@
     "enemyFactionIds": [
       "panes-del-destino",
       "neo-culturales-tecnologicos",
-      "gremio-de-aventureros"
+      "los-diecisiete-heroes"
     ],
     "tags": [
       "sol-ardiente",

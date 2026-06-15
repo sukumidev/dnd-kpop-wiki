@@ -4,3 +4,4 @@ export * from "./factions";
 export * from "./locations";
 export * from "./mapConfig";
 export * from "./statblocks";
+export * from "./documents";
