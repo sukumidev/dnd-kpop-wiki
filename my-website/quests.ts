@@ -34,7 +34,7 @@ export type QuestPriority =
   | "critical";
 
 export type QuestObjective = {
-  id: string;
+  id?: string;
   label: string;
   done: boolean;
   failed?: boolean;
@@ -60,7 +60,8 @@ export type Quest = {
   title: string;
 
   subtitle?: string;
-  types: QuestType[];
+  type?: QuestType;
+  types?: QuestType[];
   status: QuestStatus;
   visibility: QuestVisibility;
   priority?: QuestPriority;

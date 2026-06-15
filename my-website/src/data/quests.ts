@@ -14,7 +14,7 @@ export type QuestProgress = {
 };
 
 export type QuestObjective = {
-  id: string;
+  id?: string;
   label: string;
   done: boolean;
   failed?: boolean;
@@ -34,12 +34,13 @@ export type Quest = {
 
   title: string;
   subtitle?: string | null;
-  types: QuestType[];
+  type?: QuestType;
+  types?: QuestType[];
   status: QuestStatus;
   visibility: QuestVisibility;
   priority?: QuestPriority | null;
 
-  summary: string;
+  summary?: string | null;
   description?: string | null;
 
   progress?: QuestProgress;
@@ -109,7 +110,7 @@ export function getQuestDescendants(parentQuestId: string, list: Quest[] = quest
 }
 
 export function getQuestsByType(type: QuestType, list: Quest[] = questList): Quest[] {
-  return list.filter((quest) => quest.types.includes(type));
+  return list.filter((quest) => quest.types?.includes(type) || quest.type === type);
 }
 
 export function getQuestsByStatus(status: QuestStatus, list: Quest[] = questList): Quest[] {

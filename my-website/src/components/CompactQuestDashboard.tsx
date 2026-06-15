@@ -151,9 +151,46 @@ function getStatusLabel(status: Quest["status"] | string): string {
 }
 
 function buildQuestList(questMap: QuestMap, showHidden = false): Quest[] {
-  return Object.values(questMap)
-    .filter((quest) => showHidden || quest.visibility !== "hidden")
-    .sort((a, b) => (a.sortOrder ?? 9999) - (b.sortOrder ?? 9999));
+  const questsWithIndex = Object.values(questMap)
+    .map((quest, index) => ({ quest, index }))
+    .filter(({ quest }) => showHidden || quest.visibility !== "hidden");
+  const visibleQuestIds = new Set(questsWithIndex.map(({ quest }) => quest.id));
+  const originalIndexById = new Map(questsWithIndex.map(({ quest, index }) => [quest.id, index]));
+  const childrenByParentId = new Map<string, Quest[]>();
+
+  function compareQuests(a: Quest, b: Quest): number {
+    const orderA = a.sortOrder ?? Number.MAX_SAFE_INTEGER;
+    const orderB = b.sortOrder ?? Number.MAX_SAFE_INTEGER;
+
+    if (orderA !== orderB) return orderA - orderB;
+    return (originalIndexById.get(a.id) ?? 0) - (originalIndexById.get(b.id) ?? 0);
+  }
+
+  for (const { quest } of questsWithIndex) {
+    if (!quest.parentQuestId || !visibleQuestIds.has(quest.parentQuestId)) continue;
+
+    const siblings = childrenByParentId.get(quest.parentQuestId) ?? [];
+    siblings.push(quest);
+    childrenByParentId.set(quest.parentQuestId, siblings);
+  }
+
+  const roots = questsWithIndex
+    .map(({ quest }) => quest)
+    .filter((quest) => !quest.parentQuestId || !visibleQuestIds.has(quest.parentQuestId))
+    .sort(compareQuests);
+  const sortedQuests: Quest[] = [];
+
+  function appendQuestAndChildren(quest: Quest) {
+    sortedQuests.push(quest);
+
+    for (const child of (childrenByParentId.get(quest.id) ?? []).sort(compareQuests)) {
+      appendQuestAndChildren(child);
+    }
+  }
+
+  roots.forEach(appendQuestAndChildren);
+
+  return sortedQuests;
 }
 
 function getDepth(quest: Quest, questMap: QuestMap): number {

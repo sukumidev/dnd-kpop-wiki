@@ -780,5 +780,48 @@
     "types": [
       "main"
     ]
+  },
+  "pq-proteger-a-la-raza-dragonborn-y-a-los-dragones": {
+    "title": "Proteger a la raza Dragonborn y a los Dragones",
+    "status": "active",
+    "visibility": "public",
+    "id": "pq-proteger-a-la-raza-dragonborn-y-a-los-dragones",
+    "type": "personal",
+    "types": [
+      "personal"
+    ],
+    "priority": "high",
+    "accent": "green",
+    "subtitle": "Imugi debe de salvar a los suyos antes de que sean exterminados.",
+    "summary": "Imugi debe proteger a los Dragonborn y a los dragones antes de que sus enemigos terminen de exterminarlos.",
+    "parentQuestId": "pq-imugi-personal-arc",
+    "objectives": [
+      {
+        "id": "investigar-asesinos-de-dragones",
+        "label": "Encontrar a quienes están matando a los Dragones",
+        "done": false
+      },
+      {
+        "id": "vengar-clan-fenghuang",
+        "label": "Vengar al Clan Fenghuang",
+        "done": false
+      },
+      {
+        "id": "encontrar-dragonborn-supervivientes",
+        "label": "Encontrar a otros Dragonborn para evitar que mueran y resguardarlos en un lugar seguro.",
+        "done": false
+      },
+      {
+        "id": "proteger-a-matsuda",
+        "label": "Proteger a Matsuda, el Dragonborn",
+        "done": false
+      }
+    ],
+    "progress": {
+      "mode": "manual",
+      "current": 0,
+      "goal": 4
+    },
+    "sortOrder": 121
   }
 }

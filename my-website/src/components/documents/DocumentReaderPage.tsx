@@ -22,6 +22,10 @@ import DocumentEntryNavigation from "./DocumentEntryNavigation";
 import DocumentRelationshipsSection from "./DocumentRelationshipsSection";
 import styles from "@site/src/pages/documents/styles.module.css";
 
+type DocumentReaderPageProps = {
+  documentId?: string;
+};
+
 type MetaItem = {
   label: string;
   value: React.ReactNode;
@@ -278,9 +282,11 @@ function ReaderPage({ document }: { document: Document }) {
   );
 }
 
-export default function DocumentReaderPage(): React.ReactElement {
+export default function DocumentReaderPage({
+  documentId,
+}: DocumentReaderPageProps = {}): React.ReactElement {
   const location = useLocation();
-  const document = getPublicDocumentById(getDocumentIdFromPath(location.pathname));
+  const document = getPublicDocumentById(documentId ?? getDocumentIdFromPath(location.pathname));
 
   if (!document) {
     return <UnavailableDocument />;

@@ -49,6 +49,7 @@ export type DocumentCharacterRelationRole = "author" | "recipient" | "related";
 export type Document = {
   id: string;
   title: string;
+  slug?: string;
   type: DocumentType;
   status: DocumentStatus;
   visibility: DocumentVisibility;
@@ -177,8 +178,20 @@ export function getDocumentKind(document: Document): DocumentKind {
   return document.documentKind ?? "single";
 }
 
+function slugifyDocumentPathSegment(value: string): string {
+  return value
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
 export function getDocumentPath(document: Document): string {
-  return `/documents/${encodeURIComponent(document.id)}`;
+  const rawSlug = document.slug?.trim() || document.id;
+  const slug = slugifyDocumentPathSegment(rawSlug) || slugifyDocumentPathSegment(document.id);
+  return `/documents/${encodeURIComponent(slug)}`;
 }
 
 export function isDocumentCollection(document: Document): boolean {
