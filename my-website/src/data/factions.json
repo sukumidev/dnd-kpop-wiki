@@ -301,7 +301,7 @@
     "title": "Los Heraldos del Crepúsculo",
     "subtitle": null,
     "type": "order",
-    "status": "active",
+    "status": "hidden",
     "visibility": "public",
     "summary": null,
     "description": null,
@@ -356,7 +356,7 @@
       "sylmorien",
       "neovibra"
     ],
-    "imageSrc": null,
+    "imageSrc": "/img/factions/nct.png",
     "accent": "cyan",
     "sortOrder": 40,
     "reputation": null,
@@ -406,35 +406,36 @@
     "subunits": [],
     "imageCaption": null
   },
-  "guerreros-ascendidos": {
-    "id": "guerreros-ascendidos",
-    "title": "Los Guerreros Ascendidos",
-    "subtitle": null,
-    "type": "order",
+  "guerreros-ascendentes": {
+    "id": "guerreros-ascendentes",
+    "title": "Los Guerreros Ascendentes",
+    "subtitle": "(RIIZE)",
+    "type": "military",
     "status": "active",
     "visibility": "public",
-    "summary": null,
-    "description": null,
+    "summary": "Los Guerreros Ascendentes de Sylmorien son una facción de jóvenes combatientes arcanos surgidos de la órbita de la Neo Academia. Para el pueblo representan esperanza, renovación y orgullo nacional; para la Corona, una imagen perfecta de disciplina y futuro; y para los aventureros más atentos, una advertencia de lo peligroso que puede ser cuando Sylmorien convierte personas buenas en propaganda.",
+    "description": "Los Guerreros Ascendentes son una generación prodigio de Sylmorien: jóvenes, carismáticos, disciplinados y entrenados para pelear en la frontera entre el combate marcial y la magia práctica. No son magos académicos tradicionales ni soldados comunes; son combatientes formados para moverse, proteger, resistir y actuar cuando la teoría ya no basta.\n\nShotaro y Sungchan fueron compañeros de Kiyori en la Neo Academia y parte del círculo de aprendices de Mark. Aunque no destacaban por seguir el camino arcano más académico, sí demostraron una habilidad excepcional con las armas, el instinto de combate y la coordinación táctica. Con el tiempo, Sylmorien los reclutó como parte de un nuevo símbolo nacional: jóvenes héroes capaces de inspirar al pueblo y defender el reino.\n\nSu imagen pública es brillante, casi impecable. Aparecen en ceremonias, misiones visibles, panfletos mágicos y relatos heroicos. Sin embargo, bajo esa reputación existe una tensión constante: los Ascendentes no quieren ser solo herramientas de la Corona ni pósters vivientes de la Neo Academia. Son leales a Sylmorien, pero su verdadera lealtad parece estar primero entre ellos.",
     "regionId": null,
     "locationIds": [],
-    "allyFactionIds": [],
-    "enemyFactionIds": [],
-    "tags": [
-      "guerreros-ascendidos"
+    "allyFactionIds": [
+      "neo-culturales-tecnologicos"
     ],
-    "imageSrc": null,
+    "enemyFactionIds": [],
+    "tags": [],
+    "imageSrc": "/img/factions/riize.png",
     "accent": null,
     "sortOrder": 60,
     "reputation": null,
-    "goal": null,
-    "methods": null,
+    "goal": "Proteger Sylmorien y demostrar que una nueva generación puede defender el reino sin perder su humanidad, incluso cuando la Corona y la Neo Academia intentan convertirlos en símbolos controlables.",
+    "methods": "Entrenamiento marcial intensivo, magia práctica aplicada al combate, trabajo en equipo, misiones públicas de alto impacto, operaciones de rescate, defensa de rutas importantes y presencia simbólica en eventos oficiales. Su fuerza principal no está solo en el poder individual, sino en su coordinación: pelean como una unidad que entiende el ritmo de los demás casi sin hablar.",
     "baseLocationId": null,
     "baseLabel": null,
     "leaderCharacterId": null,
     "allyCharacterIds": [],
     "enemyCharacterIds": [],
     "subunits": [],
-    "imageCaption": null
+    "imageCaption": null,
+    "realm": "Sylmorien"
   },
   "marea-negra": {
     "id": "marea-negra",

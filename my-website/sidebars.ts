@@ -75,6 +75,11 @@ const sidebars: SidebarsConfig = {
       label: 'Facciones',
       collapsed: true,
       items: [
+        {
+          type: 'link',
+          label: 'Directorio de facciones',
+          href: '/factions',
+        },
         'factions/lobos-perdidos',
         // agrega más docs de facciones aquí
       ],

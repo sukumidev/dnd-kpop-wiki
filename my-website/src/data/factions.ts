@@ -2,7 +2,13 @@ import factionsJson from "./factions.json";
 import type { Character } from "./characters";
 import type { Quest } from "./quests";
 
-export type FactionStatus = "active" | "inactive" | "destroyed" | "unknown";
+export type FactionStatus =
+  | "active"
+  | "inactive"
+  | "destroyed"
+  | "disbanded"
+  | "hidden"
+  | "unknown";
 
 export type FactionType =
   | "party"
@@ -47,6 +53,7 @@ export type Faction = {
 
   /** Broad territorial anchor. This can reference a region/location entity such as sylmorien, hotou, hyberia, etc. */
   regionId?: string | null;
+  realm?: string | null;
 
   /** Primary base and extra locations tied to the faction. */
   baseLocationId?: string | null;

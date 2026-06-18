@@ -12,7 +12,7 @@
     "description": "Las cartas de la Baraja del Destino están ligadas a almas, linajes y fuerzas antiguas. Algunas ya han despertado, otras siguen ocultas y varias están siendo perseguidas por enemigos que desean manipular el orden del mundo. Reunir la baraja no solo implica localizar cartas o portadores: también exige descubrir la verdad sobre el destino, los sacrificios y las consecuencias de alterar el equilibrio.",
     "progress": {
       "mode": "manual",
-      "current": 5,
+      "current": 7,
       "goal": 54
     },
     "sessionStartedId": "01",
