@@ -52,7 +52,7 @@ const DATA_FILES = {
 } as const;
 
 const CHARACTER_STATUS = new Set(["active", "inactive", "dead", "missing", "unknown"]);
-const CHARACTER_GROUP = new Set(["party", "npc", "misc"]);
+const CHARACTER_GROUP = new Set(["party", "npc"]);
 const CHARACTER_DYNAMIC = new Set(["alpha", "beta", "omega", "unknown", "n/a"]);
 const POLYAMORY_STATUS = new Set(["yes", "no", "discovering", "unknown", "n/a"]);
 

@@ -36,6 +36,36 @@ export type MapPin = {
   mapId?: string | null;
 };
 
+export type LocationProfile = {
+  officialName?: string | null;
+  nickname?: string | null;
+  demonym?: string | null;
+
+  capital?: string | null;
+  founder?: string | null;
+  ruler?: string | null;
+
+  government?: string | null;
+  foundation?: string | null;
+
+  motto?: string | null;
+  currency?: string[] | null;
+  officialLanguages?: string[] | null;
+  majorityReligion?: string | null;
+
+  geography?: string | null;
+  climate?: string | null;
+
+  culturalIdentity?: string[] | null;
+  characteristicPower?: string | null;
+  currentSituation?: string | null;
+
+  additionalFacts?: {
+    label: string;
+    value: string;
+  }[];
+};
+
 export type Location = {
   id: string;
   title: string;
@@ -47,6 +77,7 @@ export type Location = {
 
   summary?: string | null;
   description?: string | null;
+  profile?: LocationProfile | null;
 
   /** For places inside a broader region. Region entries themselves can leave this null. */
   regionId?: string | null;

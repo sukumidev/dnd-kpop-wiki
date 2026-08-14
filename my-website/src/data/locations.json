@@ -6,11 +6,13 @@
     "type": "region",
     "status": "active",
     "visibility": "public",
-    "summary": null,
+    "summary": "La nación más avanzada de Hallyura, admirada por su progreso y temida por sus leyes y ambiciones",
     "description": null,
     "regionId": null,
     "parentLocationId": null,
-    "factionIds": [],
+    "factionIds": [
+      "nct"
+    ],
     "characterIds": [],
     "questIds": [],
     "map": {
@@ -26,6 +28,53 @@
       "region"
     ],
     "imageSrc": null,
+    "profile": {
+      "officialName": "Imperio de Sylmorien",
+      "nickname": "El Reino de la Excelencia",
+      "demonym": "Sylmoriano / sylmoriana",
+      "capital": "Ciudad de Kwangya",
+      "founder": "Lee Soo-Man",
+      "ruler": "Jang Cheol-Hyuk",
+      "government": "Monarquía imperialista arcano-militar",
+      "foundation": "Primera Era",
+      "motto": "«La Cultura, El Futuro»",
+      "currency": [
+        "Piezas de oro",
+        "Piezas de plata"
+      ],
+      "officialLanguages": [
+        "Común",
+        "Élfico",
+        "Enano",
+        "Mediano",
+        "Dracónico",
+        "Habla profunda",
+        "Celestial",
+        "Infracomún"
+      ],
+      "majorityReligion": "Panteón de los Dioses Resplandecientes",
+      "geography": "Grandes regiones desérticas, zonas tropicales, selvas húmedas, montañas y cumbres",
+      "culturalIdentity": [
+        "Disciplina",
+        "Perfección técnica",
+        "Innovación",
+        "Belleza",
+        "Prestigio",
+        "Utilidad"
+      ],
+      "characteristicPower": "Magia avanzada, tecnomagia e infraestructura especializada",
+      "currentSituation": "La nación más avanzada de Hallyura, admirada por su progreso y temida por sus leyes y ambiciones",
+      "additionalFacts": [
+        {
+          "label": "Ley fundamental",
+          "value": "Decreto Absoluto del Rey"
+        },
+        {
+          "label": "Sistema de sucesión",
+          "value": "El trono pertenece a quien tenga el poder suficiente para conquistarlo y sostenerlo"
+        }
+      ]
+    },
     "accent": "red",
     "sortOrder": 1
   },
@@ -36,11 +85,14 @@
     "type": "region",
     "status": "active",
     "visibility": "public",
-    "summary": null,
+    "summary": "Reino fértil y comercial, pero con numerosos pueblos y caminos abandonados por la corona",
     "description": null,
     "regionId": null,
     "parentLocationId": null,
-    "factionIds": [],
+    "factionIds": [
+      "bts",
+      "svt"
+    ],
     "characterIds": [],
     "questIds": [],
     "map": {
@@ -56,6 +108,40 @@
       "region"
     ],
     "imageSrc": null,
+    "profile": {
+      "officialName": "Reino Popular de Hyberia",
+      "nickname": "El Reino de los Héroes Olvidados",
+      "demonym": "Hyberiano / hyberiana",
+      "capital": "Ciudad de Borasek",
+      "founder": "Bang Si-hyuk, conocido como Bang PD",
+      "ruler": "Rey Bang Si-hyuk",
+      "government": "Reino unificado compuesto por regiones, pueblos e islas con cierta autonomía local",
+      "foundation": "Unificación de las islas durante la Cuarta Era",
+      "motto": "«Descubre un nuevo universo, desbloquea un viaje inmersivo»",
+      "currency": [
+        "Piezas de oro",
+        "Piezas de plata"
+      ],
+      "officialLanguages": [
+        "Común",
+        "Élfico",
+        "Enano",
+        "Orco",
+        "Gigante",
+        "Mediano"
+      ],
+      "majorityReligion": "La mayoría de la población es agnóstica o atea. Existen algunos cultos dedicados al Panteón de los Nuevos Dioses",
+      "geography": "Campos fértiles, valles agrícolas, lagos, ríos, bosques templados y costas frías",
+      "climate": "Estaciones marcadas, inviernos nevados y puertos cubiertos de niebla",
+      "culturalIdentity": [
+        "Comunidad",
+        "Hospitalidad",
+        "Resistencia popular",
+        "Ayuda mutua"
+      ],
+      "characteristicPower": "La organización y unión de su pueblo",
+      "currentSituation": "Reino fértil y comercial, pero con numerosos pueblos y caminos abandonados por la corona"
+    },
     "accent": "blue",
     "sortOrder": 2
   },
@@ -66,11 +152,15 @@
     "type": "region",
     "status": "active",
     "visibility": "public",
-    "summary": null,
+    "summary": "Reino estable en apariencia, pero dividido entre las exigencias de la corte y los vínculos personales de sus habitantes",
     "description": null,
     "regionId": null,
     "parentLocationId": null,
-    "factionIds": [],
+    "factionIds": [
+      "got7",
+      "twice",
+      "skz"
+    ],
     "characterIds": [],
     "questIds": [],
     "map": {
@@ -86,6 +176,46 @@
       "region"
     ],
     "imageSrc": null,
+    "profile": {
+      "officialName": "Reino de Jeyperia",
+      "nickname": "El Reino del Honor y los Linajes",
+      "demonym": "Jeyperiano / jeyperiana",
+      "capital": "Ciudad de Miroh",
+      "founder": "Park Jin-young, conocido como JYP",
+      "ruler": "Rey Park Jin-young",
+      "government": "Monarquía sostenida por leyes estrictas, casas nobles y protocolos de honor",
+      "foundation": "Primera Era",
+      "motto": "«Líderes en disciplina»",
+      "currency": [
+        "Piezas de oro",
+        "Piezas de plata"
+      ],
+      "officialLanguages": [
+        "Común",
+        "Élfico",
+        "Enano",
+        "Mediano"
+      ],
+      "majorityReligion": "Panteón de los Dioses Astronómicos",
+      "geography": "Bosques nevados, montañas, lagos helados y regiones templadas",
+      "climate": "Predominantemente frío, con inviernos largos y algunas islas cálidas, como Kotabas",
+      "culturalIdentity": [
+        "Deber",
+        "Disciplina",
+        "Reputación",
+        "Etiqueta",
+        "Familia",
+        "Linaje"
+      ],
+      "characteristicPower": "Alianzas dinásticas, nobleza militar y juramentos vinculantes",
+      "currentSituation": "Reino estable en apariencia, pero dividido entre las exigencias de la corte y los vínculos personales de sus habitantes",
+      "additionalFacts": [
+        {
+          "label": "Sistema diplomático",
+          "value": "Convenios de Sangre y matrimonios políticos"
+        }
+      ]
+    },
     "accent": "green",
     "sortOrder": 3
   },
@@ -96,7 +226,7 @@
     "type": "region",
     "status": "active",
     "visibility": "public",
-    "summary": null,
+    "summary": "Reino herido por la Gran Guerra que continúa recuperando los fragmentos robados del Árbol del Mundo",
     "description": null,
     "regionId": null,
     "parentLocationId": null,
@@ -116,6 +246,57 @@
       "region"
     ],
     "imageSrc": null,
+    "profile": {
+      "officialName": "Dominios de Yggdrasil",
+      "nickname": "El Reino donde la Magia Crece entre Raíces",
+      "demonym": "Yggdrasilense",
+      "capital": "Palacio de Jangmi-ui Bam",
+      "ruler": "Yang Min-suk",
+      "government": "Confederación de dominios y comunidades bajo la autoridad espiritual del Árbol del Mundo",
+      "foundation": "Primera Era",
+      "motto": "«Siente el nuevo flujo»",
+      "currency": [
+        "Piezas de oro",
+        "Piezas de plata"
+      ],
+      "officialLanguages": [
+        "Común —coreano—",
+        "Élfico",
+        "Enano",
+        "Orco",
+        "Gigante",
+        "Mediano"
+      ],
+      "majorityReligion": "Panteón de los Dioses de la Creación",
+      "geography": "Bosques antiguos, claros feéricos, ríos sagrados y montañas cubiertas de musgo",
+      "culturalIdentity": [
+        "Individualidad",
+        "Memoria",
+        "Naturaleza",
+        "Pactos",
+        "Equilibrio"
+      ],
+      "characteristicPower": "Magia primal y feérica vinculada al Árbol del Mundo",
+      "currentSituation": "Reino herido por la Gran Guerra que continúa recuperando los fragmentos robados del Árbol del Mundo",
+      "additionalFacts": [
+        {
+          "label": "Origen",
+          "value": "Territorios ancestrales surgidos alrededor del Árbol del Mundo"
+        },
+        {
+          "label": "Unificador político moderno",
+          "value": "Yang Hyun-suk"
+        },
+        {
+          "label": "Órganos de gobierno",
+          "value": "Consejos de guardianes, druidas, archifey, ancianos élficos, espíritus y representantes comunitarios"
+        },
+        {
+          "label": "Fenómenos naturales",
+          "value": "La magia puede alterar el clima, la luz, los caminos y el paso del tiempo"
+        }
+      ]
+    },
     "accent": "emerald",
     "sortOrder": 4
   },

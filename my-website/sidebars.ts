@@ -21,6 +21,19 @@ const sidebars: SidebarsConfig = {
 
     {
       type: 'category',
+      label: 'Cosmología',
+      collapsed: true,
+      items: [
+        {
+          type: 'link',
+          label: 'Directorio cosmológico',
+          href: '/cosmology',
+        },
+      ],
+    },
+
+    {
+      type: 'category',
       label: 'World',
       collapsed: true,
       items: [
@@ -89,6 +102,15 @@ const sidebars: SidebarsConfig = {
       type: 'link',
       label: 'Documentos',
       href: '/documents',
+    },
+
+    {
+      type: 'category',
+      label: 'Mecánicas',
+      collapsed: true,
+      items: [
+        { type: 'doc', id: 'mechanics/index', label: 'Índice general' },
+      ],
     },
 
     {

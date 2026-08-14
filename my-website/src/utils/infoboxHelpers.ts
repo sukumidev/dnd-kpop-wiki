@@ -128,6 +128,8 @@ export function makeCharacterSections(input: CharacterInfoboxInput): Section[] {
 -------------------------- */
 
 export type LocationInfoboxInput = {
+  hasProfile?: boolean;
+
   type?: string; // Reino / Ciudad / Dungeon / Isla / Templo...
   realm?: string; // Hyberia, Jeyperia...
   climate?: string;
@@ -141,9 +143,77 @@ export type LocationInfoboxInput = {
 
   pointsOfInterest?: React.ReactNode; // JSX list or bullet-like string
   activeFactions?: React.ReactNode; // JSX list
+
+  officialName?: string;
+  nickname?: string;
+  demonym?: string;
+  capital?: string;
+  founder?: string;
+  ruler?: string;
+  foundation?: string;
+  motto?: string;
+  currency?: React.ReactNode;
+  officialLanguages?: React.ReactNode;
+  majorityReligion?: string;
+  geography?: string;
+  culturalIdentity?: React.ReactNode;
+  characteristicPower?: string;
+  currentSituation?: string;
+  relatedFactions?: React.ReactNode;
+  additionalIdentityFacts?: { label: string; value: React.ReactNode }[];
+  additionalGovernmentFacts?: { label: string; value: React.ReactNode }[];
+  additionalTerritoryFacts?: { label: string; value: React.ReactNode }[];
 };
 
 export function makeLocationSections(input: LocationInfoboxInput): Section[] {
+  if (input.hasProfile) {
+    const identity = section('Identidad', [
+      row('Nombre oficial', input.officialName),
+      row('Sobrenombre', input.nickname),
+      row('Gentilicio', input.demonym),
+      row('Capital', input.capital),
+      row('Fundación', input.foundation),
+      row('Lema', input.motto),
+      ...(input.additionalIdentityFacts ?? []).map((fact) => row(fact.label, fact.value)),
+      row('Tipo', input.type),
+      row('Reino', input.realm),
+    ]);
+
+    const government = section('Gobierno', [
+      row('Forma de gobierno', input.government),
+      row('Gobernante actual', input.ruler),
+      row('Fundador', input.founder),
+      row('Autoridad', input.authority),
+      ...(input.additionalGovernmentFacts ?? []).map((fact) => row(fact.label, fact.value)),
+    ]);
+
+    const society = section('Sociedad y cultura', [
+      row('Moneda', input.currency),
+      row('Idiomas oficiales', input.officialLanguages),
+      row('Religión mayoritaria', input.majorityReligion),
+      row('Identidad cultural', input.culturalIdentity),
+      row('Población', input.population),
+      row('Economía', input.economy),
+    ]);
+
+    const territory = section('Territorio', [
+      row('Geografía', input.geography),
+      row('Clima', input.climate),
+      row('Peligro', input.danger),
+      row('Acceso', input.access),
+      row('Puntos de interés', input.pointsOfInterest),
+      ...(input.additionalTerritoryFacts ?? []).map((fact) => row(fact.label, fact.value)),
+    ]);
+
+    const influence = section('Poder e influencia', [
+      row('Poder característico', input.characteristicPower),
+      row('Facciones emblemáticas', input.relatedFactions ?? input.activeFactions),
+      row('Situación actual', input.currentSituation),
+    ]);
+
+    return cleanSections([identity, government, society, territory, influence]);
+  }
+
   const s1 = section('Información general', [
     row('Tipo', input.type),
     row('Reino', input.realm),

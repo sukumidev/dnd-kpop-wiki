@@ -1,34 +1,57 @@
 {
   "mq-collect-cards": {
     "id": "mq-collect-cards",
-    "title": "Recolectar la Baraja del Destino",
+    "title": "Continuar la búsqueda de las Cartas del Destino",
     "subtitle": "Las 54 cartas que decidirán el destino del mundo",
     "types": [
       "main"
     ],
     "status": "active",
     "visibility": "public",
-    "summary": "La party debe encontrar, proteger o reclamar las 54 cartas de la Baraja del Destino antes de que caigan en manos de facciones que buscan alterar el equilibrio del mundo.",
-    "description": "Las cartas de la Baraja del Destino están ligadas a almas, linajes y fuerzas antiguas. Algunas ya han despertado, otras siguen ocultas y varias están siendo perseguidas por enemigos que desean manipular el orden del mundo. Reunir la baraja no solo implica localizar cartas o portadores: también exige descubrir la verdad sobre el destino, los sacrificios y las consecuencias de alterar el equilibrio.",
+    "summary": "La party debe localizar, proteger o reclamar las 54 Cartas del Destino antes de que otras facciones las utilicen para alterar el equilibrio del mundo.",
+    "description": "Las Cartas del Destino están dispersas por Hallyura y vinculadas a almas, portadores y condiciones de liberación. Reunir la Baraja no consiste únicamente en encontrarlas: la party también deberá identificar a quienes están ligados a ellas, comprender cómo pueden ser liberadas y evitar que su poder sea utilizado contra el mundo.",
     "progress": {
       "mode": "manual",
       "current": 7,
       "goal": 54
     },
+    "objectives": [
+      {
+        "id": "locate-cards",
+        "label": "Localizar nuevas Cartas del Destino",
+        "done": false
+      },
+      {
+        "id": "identify-holders",
+        "label": "Identificar a sus portadores",
+        "done": false
+      },
+      {
+        "id": "discover-release-conditions",
+        "label": "Descubrir las condiciones necesarias para liberarlas",
+        "done": false
+      },
+      {
+        "id": "prevent-enemy-use",
+        "label": "Evitar que otras facciones utilicen las Cartas para alterar el destino",
+        "done": false
+      },
+      {
+        "id": "visit-boa-tower",
+        "label": "Investigar la Carta localizada en la Torre de la Bruja, hogar de BoA",
+        "done": false
+      }
+    ],
     "sessionStartedId": "01",
-    "lastUpdatedSessionId": "11",
-    "questGiver": {
-      "label": "La Carta del Destino",
-      "docPath": "lore/baraja-del-destino"
-    },
+    "lastUpdatedSessionId": "17",
     "rewards": [
-      "Experiencia",
       "Acceso a la verdad sobre la Baraja del Destino",
-      "Ventaja narrativa contra facciones enemigas"
+      "Nuevos aliados vinculados a las Cartas",
+      "Ventaja narrativa contra facciones que buscan alterar el destino"
     ],
     "accent": "gold",
     "isRepeatable": false,
-    "notes": "Quest principal de toda la campaña.",
+    "notes": "Quest central de toda la campaña. Progreso actual: 7 de 54 Cartas.",
     "sortOrder": 1,
     "tagIds": [
       "baraja-del-destino",
@@ -37,155 +60,717 @@
       "destino"
     ]
   },
-  "mq-protect-holders": {
-    "id": "mq-protect-holders",
+  "mq-temple-cards": {
+    "id": "mq-temple-cards",
     "parentQuestId": "mq-collect-cards",
-    "title": "Proteger a los Portadores de la Baraja del Destino",
-    "subtitle": "Ningún alma marcada debe caer",
+    "title": "Conseguir las tres Cartas del Templo del Sol Naciente",
+    "subtitle": "Tres Cartas bajo la custodia de Byeon Wooseok",
     "types": [
       "main"
     ],
     "status": "active",
     "visibility": "public",
-    "summary": "La party debe identificar, proteger y poner a salvo a los portadores conocidos de la Baraja del Destino antes de que facciones enemigas los capturen, corrompan o sacrifiquen.",
-    "description": "Muchas de las cartas de la Baraja del Destino están ligadas a almas vivas, lo que convierte a sus portadores en objetivos prioritarios para facciones que desean torcer el destino. Protegerlos implica encontrarlos, anticipar amenazas, frustrar intentos de captura y construir una red de apoyo capaz de mantenerlos con vida.",
+    "priority": "high",
+    "summary": "La party debe llegar a un acuerdo con Byeon Wooseok para asegurar las tres Cartas del Destino localizadas en el Templo del Sol Naciente.",
+    "description": "El mapa de las Cartas señaló tres presencias dentro del templo. Minjae confirmó que Wooseok las posee, pero él explicó que el Padre Kim Soohyun se las entregó para ayudarlo a proteger a los dragonborn refugiados. La party deberá averiguar qué Cartas son, a quiénes están vinculadas y cómo retirarlas sin dejar desprotegidas a las personas que dependen del templo.",
     "progress": {
       "mode": "manual",
       "current": 0,
-      "goal": 10
+      "goal": 4
     },
     "objectives": [
       {
-        "id": "protect-seunghan",
-        "label": "Proteger a Seunghan de los Guerreros Ascendentes",
-        "done": true
-      },
-      {
-        "id": "protect-wishies",
-        "label": "Proteger a los miembros de la Casa de los Deseos",
-        "done": true,
-        "weight": 6
-      },
-      {
-        "id": "protect-jeongin",
-        "label": "Proteger a Jeongin de los Lobos Perdidos",
+        "id": "reach-agreement-with-wooseok",
+        "label": "Convencer a Wooseok de entregar las Cartas o llegar a un acuerdo con él",
         "done": false
       },
       {
-        "id": "protect-taeyong",
-        "label": "Proteger a Taeyong de los Neo Culturales Tecnológicos",
+        "id": "identify-temple-cards",
+        "label": "Descubrir qué Cartas son y quiénes están vinculados a ellas",
         "done": false
       },
       {
-        "id": "unlink-bearers",
-        "label": "Descubrir cómo Desvincular las Cartas del Destino del Alma de los Portadores",
+        "id": "keep-away-from-burning-sun",
+        "label": "Evitar que caigan en manos del Clan del Sol Ardiente",
+        "done": false
+      },
+      {
+        "id": "protect-refugees",
+        "label": "Asegurarse de que retirar las Cartas no deje desprotegidos a los refugiados",
         "done": false
       }
     ],
-    "sessionStartedId": "11",
-    "lastUpdatedSessionId": null,
+    "sessionStartedId": "17",
+    "lastUpdatedSessionId": "17",
+    "factionIds": [
+      "clan-del-sol-ardiente"
+    ],
     "rewards": [
-      "Supervivencia de portadores clave",
-      "Nuevos aliados vinculados a cartas activas",
-      "Mayor control narrativo sobre el destino de la Baraja"
+      "Tres Cartas del Destino aseguradas",
+      "Información sobre sus portadores",
+      "Posible alianza con los refugiados del templo"
     ],
     "accent": "gold",
     "isRepeatable": false,
-    "notes": "Quest paraguas centrada en la seguridad de los portadores.",
+    "notes": "Subquest de la búsqueda de la Baraja del Destino.",
     "sortOrder": 2,
     "tagIds": [
-      "portadores",
-      "proteccion",
-      "baraja-del-destino"
+      "baraja-del-destino",
+      "templo-del-sol-naciente",
+      "byeon-wooseok",
+      "dragonborn"
     ]
   },
-  "mq-unlink-holders": {
-    "id": "mq-unlink-holders",
-    "parentQuestId": "mq-protect-holders",
-    "title": "Descubrir cómo Desvincular las Cartas del Destino del Alma de los Portadores",
-    "subtitle": "Romper el lazo entre destino y alma",
+  "mq-defeat-burning-sun": {
+    "id": "mq-defeat-burning-sun",
+    "title": "Detener al Clan del Sol Ardiente",
+    "subtitle": "Impedir que su purificación continúe",
     "types": [
       "main"
     ],
     "status": "active",
     "visibility": "public",
-    "summary": "La party debe investigar si existe una forma de separar las cartas del destino de las almas a las que están vinculadas sin destruir a sus portadores.",
-    "description": "Las cartas no son simples reliquias: están unidas a almas vivas, pactos antiguos y fuerzas que parecen anteriores a la memoria misma. Si la party desea salvar a los portadores sin condenarlos a cargar con ese vínculo para siempre, deberá encontrar una forma de romper el lazo sin sacrificar la vida o la esencia de quienes portan el destino.",
+    "priority": "high",
+    "summary": "La party debe impedir que el Clan del Sol Ardiente continúe persiguiendo, capturando y utilizando a quienes considera impuros o peligrosos.",
+    "description": "El Clan del Sol Ardiente persigue vampiros, seres lunares, dragonborn y otros grupos que considera amenazas. La party sabe que buscó a Joshua y a sus hijas, que Taeil y Kim Soohyun secuestraron a Jungwoo bebé para negociar por uno de los Wishitos y que el Padre Kim mantiene vínculos directos con el Clan. Detenerlo exige proteger a sus objetivos, frustrar sus planes y descubrir qué busca realmente.",
     "progress": {
       "mode": "manual",
       "current": 0,
-      "goal": 1
+      "goal": 5
     },
-    "sessionStartedId": "12",
-    "lastUpdatedSessionId": null,
-    "rewards": [
-      "Posible método para salvar portadores vinculados",
-      "Información crucial sobre la naturaleza real de la Baraja",
-      "Ventaja contra rituales enemigos"
+    "objectives": [
+      {
+        "id": "stop-taeil-and-kim",
+        "label": "Detener a Taeil y Kim Soohyun",
+        "done": false
+      },
+      {
+        "id": "protect-joshua-family",
+        "label": "Proteger a Joshua y a sus hijas",
+        "done": false
+      },
+      {
+        "id": "protect-persecuted",
+        "label": "Proteger a los Hijos de la Noche y a otros seres perseguidos",
+        "done": false
+      },
+      {
+        "id": "discover-burning-sun-goal",
+        "label": "Descubrir qué busca realmente el Clan del Sol Ardiente",
+        "done": false
+      },
+      {
+        "id": "deny-destiny-cards",
+        "label": "Impedir que el Clan consiga más Cartas del Destino",
+        "done": false
+      }
     ],
-    "accent": "gold",
+    "sessionStartedId": "10",
+    "lastUpdatedSessionId": "17",
+    "factionIds": [
+      "clan-del-sol-ardiente"
+    ],
+    "rewards": [
+      "Protección de comunidades perseguidas",
+      "Debilitamiento de una amenaza mayor",
+      "Información sobre los planes del Clan del Sol Ardiente"
+    ],
+    "accent": "red",
     "isRepeatable": false,
-    "notes": "Subquest de investigación mayor con implicaciones de late game.",
-    "sortOrder": 3,
+    "notes": "Quest paraguas del arco contra el Clan del Sol Ardiente.",
+    "sortOrder": 20,
     "tagIds": [
-      "almas",
-      "portadores",
-      "rital",
-      "investigacion"
+      "sol-ardiente",
+      "persecucion",
+      "proteccion",
+      "cartas-del-destino"
     ]
   },
-  "mq-protect-seunghan": {
-    "id": "mq-protect-seunghan",
-    "parentQuestId": "mq-protect-holders",
-    "title": "Proteger a Seunghan",
-    "subtitle": "Un alma sylmoriana que tiene que ser salvada",
+  "mq-protect-temple-girls": {
+    "id": "mq-protect-temple-girls",
+    "parentQuestId": "mq-defeat-burning-sun",
+    "title": "Proteger a las niñas del Templo del Sol Naciente",
+    "subtitle": "Cuatro niñas tiefling necesitan un lugar seguro",
     "types": [
-      "main",
-      "faction"
+      "main"
     ],
-    "status": "completed",
+    "status": "active",
     "visibility": "public",
-    "summary": "La party debe mantener a Seunghan a salvo mientras investiga por qué su alma parece estar ligada a un destino mayor y por qué se ha convertido en un objetivo vulnerable.",
-    "description": "Seunghan, un alma sylmoriana marcada por fuerzas que la party aún no comprende del todo, corre peligro de caer en manos enemigas. Protegerlo implica no solo esconderlo o escoltarlo, sino entender qué lo hace importante, quién podría querer usarlo y cómo evitar que se convierta en otra víctima del conflicto por la Baraja del Destino.",
+    "priority": "high",
+    "summary": "La party debe mantener a salvo a cuatro niñas tiefling que huyeron del Templo del Sol Naciente y averiguar si existen más personas en peligro.",
+    "description": "Las niñas revelaron que le tienen miedo al Padre Kim Soohyun y que este abusaba de ellas. Kiyori consiguió que hablaran al acercarse como otra tiefling, mientras Wooseok afirmó no saber qué ocurría dentro del templo. La prioridad de la party es protegerlas, investigar el lugar y decidir qué hacer con Kim Soohyun y con quienes administran el refugio.",
     "progress": {
       "mode": "manual",
-      "current": 1,
-      "goal": 1
+      "current": 0,
+      "goal": 5
     },
-    "sessionStartedId": "11",
-    "lastUpdatedSessionId": "12",
+    "objectives": [
+      {
+        "id": "keep-girls-safe",
+        "label": "Mantener a las niñas a salvo",
+        "done": false
+      },
+      {
+        "id": "find-other-victims",
+        "label": "Averiguar si existen más personas en peligro",
+        "done": false
+      },
+      {
+        "id": "investigate-temple",
+        "label": "Descubrir qué ocurrió dentro del templo",
+        "done": false
+      },
+      {
+        "id": "evaluate-wooseok",
+        "label": "Decidir si pueden confiar en Wooseok",
+        "done": false
+      },
+      {
+        "id": "decide-kim-soohyun",
+        "label": "Determinar qué hacer con el Padre Kim Soohyun",
+        "done": false
+      }
+    ],
+    "sessionStartedId": "17",
+    "lastUpdatedSessionId": "17",
     "factionIds": [
-      "guerreros-ascendidos"
+      "clan-del-sol-ardiente"
+    ],
+    "characterIds": [
+      "pc-kiyori"
     ],
     "rewards": [
-      "Supervivencia de Seunghan",
-      "Posible aliado clave",
-      "Avance en la protección de portadores"
+      "Seguridad para las niñas del templo",
+      "Información sobre las actividades del Padre Kim",
+      "Posible protección para otras víctimas"
     ],
-    "accent": "gold",
+    "accent": "red",
     "isRepeatable": false,
-    "notes": "Quest centrada en personaje con peso emocional y político.",
-    "sortOrder": 4,
+    "notes": "Subquest urgente de Detener al Clan del Sol Ardiente.",
+    "sortOrder": 21,
     "tagIds": [
-      "senghan",
-      "proteccion",
-      "sylmorien",
-      "portadores"
+      "templo-del-sol-naciente",
+      "tieflings",
+      "kim-soohyun",
+      "proteccion"
     ]
   },
   "mq-protect-wishies": {
     "id": "mq-protect-wishies",
-    "parentQuestId": "mq-protect-holders",
-    "title": "Proteger a los miembros de la Casa de los Deseos",
-    "subtitle": "Los Wishitos bajo la amenaza de Taeil",
+    "parentQuestId": "mq-collect-cards",
+    "title": "Proteger a los Wishitos y liberarlos de sus Cartas",
+    "subtitle": "La Casa de los Deseos no debe volver a ser utilizada",
     "types": [
       "main",
+      "personal",
       "faction"
     ],
     "status": "active",
     "visibility": "public",
-    "summary": "La party debe proteger a los miembros de la Casa de los Deseos, cuya existencia y vínculos con los deseos los convierten en objetivos prioritarios para Taeil y otras fuerzas enemigas.",
-    "description": "Los wishitos no son solo seres extraordinarios: están profundamente ligados a deseos, consecuencias y fuerzas que podrían rozar la Baraja del Destino. Bajo la amenaza directa de Taeil, la party debe evitar que sean capturados, usados como moneda de cambio o sacrificados en planes mayores.",
+    "priority": "high",
+    "summary": "La party debe proteger a los miembros de la Casa de los Deseos, confirmar que se encuentran a salvo y descubrir cómo liberarlos de las Cartas vinculadas a sus almas.",
+    "description": "Los Wishitos pueden conceder deseos y su poder puede superar incluso al de las Cartas del Destino. El Clan del Sol Ardiente ya intentó conseguir a uno de ellos utilizando a Jungwoo bebé como moneda de intercambio. Actualmente regresaron a Sylmorien acompañados por Jaehyun y Yuta. Para Kiyori, esta misión también implica proteger a Yushi como su hermano elegido y cumplir la promesa de permitirle vivir como una persona, no como una herramienta.",
+    "progress": {
+      "mode": "manual",
+      "current": 0,
+      "goal": 8
+    },
+    "objectives": [
+      {
+        "id": "protect-sion",
+        "label": "Confirmar que Sion se encuentra a salvo",
+        "done": false
+      },
+      {
+        "id": "protect-riku",
+        "label": "Confirmar que Riku se encuentra a salvo",
+        "done": false
+      },
+      {
+        "id": "protect-yushi",
+        "label": "Confirmar que Yushi se encuentra a salvo",
+        "done": false
+      },
+      {
+        "id": "protect-jaehee",
+        "label": "Confirmar que Jaehee se encuentra a salvo",
+        "done": false
+      },
+      {
+        "id": "protect-ryo",
+        "label": "Confirmar que Ryo se encuentra a salvo",
+        "done": false
+      },
+      {
+        "id": "protect-sakuya",
+        "label": "Confirmar que Sakuya se encuentra a salvo",
+        "done": false
+      },
+      {
+        "id": "discover-wishies-release",
+        "label": "Descubrir las condiciones de liberación de las Cartas de los Wishitos",
+        "done": false
+      },
+      {
+        "id": "investigate-panes-warning",
+        "label": "Averiguar qué quiso decir Mark al pedir que no entregaran sus Cartas a los «panes»",
+        "done": false
+      }
+    ],
+    "sessionStartedId": "11",
+    "lastUpdatedSessionId": "17",
+    "factionIds": [
+      "neo-culturales-tecnologicos",
+      "clan-del-sol-ardiente"
+    ],
+    "characterIds": [
+      "pc-kiyori"
+    ],
+    "rewards": [
+      "Seguridad de la Casa de los Deseos",
+      "Avance en la liberación de sus Cartas",
+      "Información sobre los deseos y sus consecuencias"
+    ],
+    "accent": "gold",
+    "isRepeatable": false,
+    "notes": "Quest compartida: principal para la campaña y personal para Kiyori.",
+    "sortOrder": 3,
+    "tagIds": [
+      "wishitos",
+      "casa-de-los-deseos",
+      "yushi",
+      "proteccion",
+      "liberacion"
+    ]
+  },
+  "pq-minjae-personal-arc": {
+    "id": "pq-minjae-personal-arc",
+    "title": "Arco Personal de Yang Minjae",
+    "subtitle": "Entre la luz de la luna, Sylmorien y la elección",
+    "types": [
+      "personal"
+    ],
+    "status": "active",
+    "visibility": "public",
+    "summary": "Minjae debe decidir quién quiere ser más allá de los títulos, juramentos y expectativas que Sylmorien depositó sobre él.",
+    "description": "Yang Minjae ha sido capitán, protector y representante de Sylmorien. Su camino personal consiste en comprender cuánto de esa identidad eligió, qué vínculos desea proteger y qué juramentos seguirá sosteniendo ahora que conoce nuevas verdades sobre el reino y sobre sí mismo.",
+    "progress": {
+      "mode": "manual",
+      "current": 0,
+      "goal": 5
+    },
+    "sessionStartedId": "01",
+    "lastUpdatedSessionId": "17",
+    "factionIds": [
+      "panes-del-destino"
+    ],
+    "regionIds": [
+      "sylmorien"
+    ],
+    "characterIds": [
+      "pc-minjae",
+      "svt-joshua"
+    ],
+    "rewards": [
+      "Crecimiento personal de Minjae",
+      "Definición de su identidad fuera de Sylmorien",
+      "Fortalecimiento de sus vínculos"
+    ],
+    "accent": "blue",
+    "isRepeatable": false,
+    "notes": "Quest madre del arco personal de Minjae.",
+    "sortOrder": 100,
+    "tagIds": [
+      "minjae",
+      "arco-personal",
+      "sylmorien",
+      "identidad",
+      "familia"
+    ]
+  },
+  "pq-soobin-personal-arc": {
+    "id": "pq-soobin-personal-arc",
+    "title": "Arco Personal de Jang Soobin",
+    "subtitle": "Entre recuerdos perdidos, linaje y verdad",
+    "types": [
+      "personal"
+    ],
+    "status": "active",
+    "visibility": "public",
+    "summary": "Soobin debe recuperar su historia, comprender su relación con la corona de Sylmorien y decidir qué hacer con la identidad que le fue ocultada.",
+    "description": "Jang Soobin inició su viaje sin recuerdos claros de quién era. Ahora sabe que su pasado está conectado con el rey de Sylmorien, un monasterio destruido y una orden de muerte. Reconstruir su identidad exigirá recuperar recuerdos, proteger las pruebas que posee y decidir qué lugar quiere ocupar frente a su familia y al reino.",
+    "progress": {
+      "mode": "manual",
+      "current": 0,
+      "goal": 4
+    },
+    "sessionStartedId": "01",
+    "lastUpdatedSessionId": "17",
+    "factionIds": [
+      "panes-del-destino"
+    ],
+    "regionIds": [
+      "sylmorien"
+    ],
+    "characterIds": [
+      "pc-soobin"
+    ],
+    "rewards": [
+      "Crecimiento personal de Soobin",
+      "Recuperación de recuerdos clave",
+      "Comprensión de su linaje"
+    ],
+    "accent": "pink",
+    "isRepeatable": false,
+    "notes": "Quest madre del arco personal de Soobin.",
+    "sortOrder": 110,
+    "tagIds": [
+      "soobin",
+      "arco-personal",
+      "memoria",
+      "linaje",
+      "sylmorien"
+    ]
+  },
+  "pq-imugi-personal-arc": {
+    "id": "pq-imugi-personal-arc",
+    "title": "Arco Personal de Fenghuang Imugi",
+    "subtitle": "Entre caos, pérdida y elección",
+    "types": [
+      "personal"
+    ],
+    "status": "active",
+    "visibility": "public",
+    "summary": "Imugi debe decidir qué clase de poder desea representar y aprender a vivir sin convertirse en una extensión de la voluntad de su patrón.",
+    "description": "Fenghuang Imugi carga con el poder del Caos, la pérdida de su clan y transformaciones que pueden poner en peligro tanto a enemigos como a aliados. Su viaje personal consiste en controlar su poder, proteger a los suyos, reparar los vínculos dañados y decidir qué relación mantendrá con su padre y patrón.",
+    "progress": {
+      "mode": "manual",
+      "current": 0,
+      "goal": 5
+    },
+    "sessionStartedId": "01",
+    "lastUpdatedSessionId": "17",
+    "factionIds": [
+      "panes-del-destino"
+    ],
+    "characterIds": [
+      "pc-imugi"
+    ],
+    "rewards": [
+      "Crecimiento personal de Imugi",
+      "Mayor control sobre sus transformaciones",
+      "Definición de su relación con el Caos"
+    ],
+    "accent": "green",
+    "isRepeatable": false,
+    "notes": "Quest madre del arco personal de Imugi.",
+    "sortOrder": 120,
+    "tagIds": [
+      "imugi",
+      "arco-personal",
+      "caos",
+      "dragonborn",
+      "control"
+    ]
+  },
+  "pq-kiyori-personal-arc": {
+    "id": "pq-kiyori-personal-arc",
+    "title": "Arco Personal de Kiyori Hoshizuki",
+    "subtitle": "Entre Hotou, la Neo Academia y su propia voluntad",
+    "types": [
+      "personal"
+    ],
+    "status": "active",
+    "visibility": "public",
+    "summary": "Kiyori debe descubrir la verdad sobre su familia, decidir cuánto puede confiar en la Neo Academia y construir un futuro que realmente le pertenezca.",
+    "description": "Kiyori creció bajo las expectativas del Clan Hoshizuki y encontró en la Neo Academia la posibilidad de convertirse en maga. Las revelaciones sobre su familia, los changelings y Sylmorien la obligan ahora a separar el cariño que siente por sus maestros de las instituciones que los rodean y a elegir qué responsabilidades desea conservar.",
+    "progress": {
+      "mode": "manual",
+      "current": 0,
+      "goal": 4
+    },
+    "sessionStartedId": "01",
+    "lastUpdatedSessionId": "17",
+    "factionIds": [
+      "panes-del-destino",
+      "neo-culturales-tecnologicos"
+    ],
+    "characterIds": [
+      "pc-kiyori"
+    ],
+    "rewards": [
+      "Crecimiento personal de Kiyori",
+      "Claridad sobre su familia y sus maestros",
+      "Definición de su lugar entre Hotou y la Neo Academia"
+    ],
+    "accent": "purple",
+    "isRepeatable": false,
+    "notes": "Quest madre del arco personal de Kiyori. La protección de los Wishitos se registra como quest compartida.",
+    "sortOrder": 130,
+    "tagIds": [
+      "kiyori",
+      "arco-personal",
+      "hotou",
+      "neo-academia",
+      "familia-hoshizuki"
+    ]
+  },
+  "pq-soobin-protect-from-guard": {
+    "id": "pq-soobin-protect-from-guard",
+    "parentQuestId": "pq-soobin-personal-arc",
+    "title": "Proteger a Soobin de la Guardia Real de Sylmorien",
+    "subtitle": "La hija bastarda del rey está siendo perseguida",
+    "types": [
+      "personal",
+      "main"
+    ],
+    "status": "active",
+    "visibility": "public",
+    "priority": "high",
+    "summary": "La party debe mantener oculta la identidad de Soobin mientras investiga por qué la Guardia Real recibió órdenes de matarla.",
+    "description": "Soldados de Sylmorien buscan a la hija bastarda del rey Jang Cheol-hyuk. La descripción que recibieron era incorrecta y la presentaba como una goblin llamada «Jang Soobaquin», por lo que no reconocieron a Soobin. La misión pertenece a su arco personal, pero afecta la seguridad de toda la party.",
+    "progress": {
+      "mode": "manual",
+      "current": 0,
+      "goal": 4
+    },
+    "objectives": [
+      {
+        "id": "hide-soobin-identity",
+        "label": "Mantener oculta la identidad de Soobin",
+        "done": false
+      },
+      {
+        "id": "discover-kill-order",
+        "label": "Descubrir por qué el rey quiere eliminarla",
+        "done": false
+      },
+      {
+        "id": "investigate-mother-monastery",
+        "label": "Averiguar qué ocurrió con su madre y con el monasterio",
+        "done": false
+      },
+      {
+        "id": "avoid-royal-detection",
+        "label": "Evitar que la Guardia Real descubra que viaja con la party",
+        "done": false
+      }
+    ],
+    "sessionStartedId": "17",
+    "lastUpdatedSessionId": "17",
+    "factionIds": [
+      "panes-del-destino"
+    ],
+    "regionIds": [
+      "sylmorien"
+    ],
+    "characterIds": [
+      "pc-soobin"
+    ],
+    "rewards": [
+      "Seguridad de Soobin",
+      "Información sobre la corona de Sylmorien",
+      "Avance en su historia familiar"
+    ],
+    "accent": "pink",
+    "isRepeatable": false,
+    "notes": "Quest personal de Soobin con repercusión grupal.",
+    "sortOrder": 111,
+    "tagIds": [
+      "soobin",
+      "guardia-real",
+      "sylmorien",
+      "persecucion"
+    ]
+  },
+  "pq-soobin-recover-memories": {
+    "id": "pq-soobin-recover-memories",
+    "parentQuestId": "pq-soobin-personal-arc",
+    "title": "Recuperar sus recuerdos",
+    "subtitle": "Reconstruir la vida que perdió",
+    "types": [
+      "personal"
+    ],
+    "status": "active",
+    "visibility": "public",
+    "priority": "high",
+    "summary": "Soobin debe recuperar las partes de su pasado que aún no recuerda y comprender cómo llegó al Valle Dorado.",
+    "description": "Soobin todavía desconoce aspectos importantes de su identidad, de su vida antes de conocer a la party y de lo ocurrido en el monasterio. Sus recuerdos podrían estar relacionados con las Cartas del Destino y con la forma en que el grupo llegó al Valle Dorado.",
+    "progress": {
+      "mode": "manual",
+      "current": 0,
+      "goal": 3
+    },
+    "objectives": [
+      {
+        "id": "remember-before-valley",
+        "label": "Descubrir quién era antes de perder la memoria",
+        "done": false
+      },
+      {
+        "id": "remember-monastery",
+        "label": "Averiguar qué ocurrió en el monasterio",
+        "done": false
+      },
+      {
+        "id": "connect-amnesia-cards",
+        "label": "Investigar qué relación tiene su amnesia con las Cartas del Destino",
+        "done": false
+      }
+    ],
+    "sessionStartedId": "01",
+    "lastUpdatedSessionId": "17",
+    "characterIds": [
+      "pc-soobin"
+    ],
+    "rewards": [
+      "Recuperación de recuerdos clave",
+      "Mayor comprensión de su identidad"
+    ],
+    "accent": "pink",
+    "isRepeatable": false,
+    "notes": "Misión personal activa de Soobin.",
+    "sortOrder": 112,
+    "tagIds": [
+      "soobin",
+      "memoria",
+      "monasterio",
+      "baraja-del-destino"
+    ]
+  },
+  "pq-soobin-family-truth": {
+    "id": "pq-soobin-family-truth",
+    "parentQuestId": "pq-soobin-personal-arc",
+    "title": "Descubrir la verdad sobre su familia",
+    "subtitle": "El linaje que Sylmorien intentó ocultar",
+    "types": [
+      "personal"
+    ],
+    "status": "active",
+    "visibility": "public",
+    "priority": "high",
+    "summary": "Soobin debe descubrir quién fue su madre, por qué su padre quiere matarla y qué significa su linaje para Sylmorien.",
+    "description": "Soobin sabe que es hija de Jang Cheol-hyuk y que la Guardia Real persigue a la hija bastarda del rey. Todavía desconoce la historia completa de su madre, la razón de la orden de muerte y las consecuencias políticas de su existencia.",
+    "progress": {
+      "mode": "manual",
+      "current": 0,
+      "goal": 4
+    },
+    "objectives": [
+      {
+        "id": "discover-mother",
+        "label": "Descubrir quién fue su madre",
+        "done": false
+      },
+      {
+        "id": "discover-father-motive",
+        "label": "Averiguar por qué su padre quiere matarla",
+        "done": false
+      },
+      {
+        "id": "understand-lineage",
+        "label": "Comprender qué significa su linaje para Sylmorien",
+        "done": false
+      },
+      {
+        "id": "choose-identity",
+        "label": "Decidir qué quiere hacer con esa identidad",
+        "done": false
+      }
+    ],
+    "sessionStartedId": null,
+    "lastUpdatedSessionId": "17",
+    "regionIds": [
+      "sylmorien"
+    ],
+    "characterIds": [
+      "pc-soobin"
+    ],
+    "rewards": [
+      "Verdad sobre su familia",
+      "Comprensión de su lugar frente a la corona"
+    ],
+    "accent": "pink",
+    "isRepeatable": false,
+    "notes": "Quest principal dentro del arco personal de Soobin.",
+    "sortOrder": 113,
+    "tagIds": [
+      "soobin",
+      "familia",
+      "jang-cheol-hyuk",
+      "linaje"
+    ]
+  },
+  "pq-soobin-protect-tadpole-samples": {
+    "id": "pq-soobin-protect-tadpole-samples",
+    "parentQuestId": "pq-soobin-personal-arc",
+    "title": "Proteger las muestras de los renacuajos",
+    "subtitle": "Tres pruebas dentro de frascos",
+    "types": [
+      "personal"
+    ],
+    "status": "active",
+    "visibility": "public",
+    "priority": "high",
+    "summary": "Soobin debe mantener a salvo los tres renacuajos encontrados en los soldados sylmorianos hasta que puedan ser estudiados.",
+    "description": "Soobin conserva las tres muestras que la party encontró dentro de los cráneos de soldados de Sylmorien. Las muestras podrían ayudar a comprender el Decreto Absoluto y lo que ocurre dentro de Minjae.",
+    "progress": {
+      "mode": "manual",
+      "current": 0,
+      "goal": 3
+    },
+    "objectives": [
+      {
+        "id": "keep-samples-safe",
+        "label": "Mantener las muestras a salvo",
+        "done": false
+      },
+      {
+        "id": "find-researcher",
+        "label": "Encontrar a alguien capaz de estudiarlas",
+        "done": false
+      },
+      {
+        "id": "prevent-loss",
+        "label": "Evitar que sean destruidas o robadas",
+        "done": false
+      }
+    ],
+    "sessionStartedId": "17",
+    "lastUpdatedSessionId": "17",
+    "characterIds": [
+      "pc-soobin",
+      "pc-minjae"
+    ],
+    "rewards": [
+      "Evidencia conservada",
+      "Posible avance en la investigación del Decreto Absoluto"
+    ],
+    "accent": "pink",
+    "isRepeatable": false,
+    "notes": "Quest personal de Soobin conectada con la misión de Minjae.",
+    "sortOrder": 114,
+    "tagIds": [
+      "soobin",
+      "renacuajos",
+      "decreto-absoluto",
+      "evidencia"
+    ]
+  },
+  "pq-minjae-investigate-tadpole": {
+    "id": "pq-minjae-investigate-tadpole",
+    "parentQuestId": "pq-minjae-personal-arc",
+    "title": "Investigar el Decreto Absoluto y el tadpole de Minjae",
+    "subtitle": "Una verdad implantada desde Sylmorien",
+    "types": [
+      "personal",
+      "main"
+    ],
+    "status": "active",
+    "visibility": "public",
+    "priority": "high",
+    "summary": "La party debe estudiar los renacuajos encontrados y descubrir cómo el parásito relacionado con el Decreto Absoluto afecta a Minjae.",
+    "description": "Dal aseguró que el Decreto Absoluto está relacionado con un parásito ilícido implantado en los habitantes de Sylmorien. La party encontró renacuajos dentro de tres soldados, lo que demuestra que los parásitos existen, aunque no confirma automáticamente todas las afirmaciones de Dal. La investigación deberá determinar qué hacen, cómo afectan a Minjae y si pueden retirarse sin dañarlo.",
     "progress": {
       "mode": "manual",
       "current": 0,
@@ -193,70 +778,1095 @@
     },
     "objectives": [
       {
-        "id": "protect-sion",
-        "label": "Proteger a Sion de la Casa de los Deseos",
+        "id": "study-three-samples",
+        "label": "Estudiar las tres muestras",
         "done": false
       },
       {
-        "id": "protect-riku",
-        "label": "Proteger a Riku de la Casa de los Deseos",
+        "id": "discover-tadpole-function",
+        "label": "Descubrir qué funciones tienen los parásitos",
         "done": false
       },
       {
-        "id": "protect-yushi",
-        "label": "Proteger a Yushi de la Casa de los Deseos",
+        "id": "assess-minjae-effects",
+        "label": "Averiguar cómo afectan a Minjae",
         "done": false
       },
       {
-        "id": "protect-taeyong",
-        "label": "Proteger a Jaehee de la Casa de los Deseos",
+        "id": "find-safe-removal",
+        "label": "Determinar si pueden retirarse sin causarle daño",
         "done": false
       },
       {
-        "id": "protect-ryo",
-        "label": "Proteger a Ryo de la Casa de los Deseos",
+        "id": "investigate-dal-claims",
+        "label": "Investigar las acusaciones de Dal sobre Lee Soo-man y la Neo Academia",
         "done": false
       },
       {
-        "id": "protect-sakuya",
-        "label": "Proteger a Sakuya de la Casa de los Deseos",
+        "id": "evaluate-dal-trust",
+        "label": "Decidir cuánto pueden confiar en Dal",
+        "done": false
+      }
+    ],
+    "sessionStartedId": "16",
+    "lastUpdatedSessionId": "17",
+    "regionIds": [
+      "sylmorien"
+    ],
+    "characterIds": [
+      "pc-minjae",
+      "pc-soobin"
+    ],
+    "rewards": [
+      "Información sobre el Decreto Absoluto",
+      "Posible método para ayudar a Minjae",
+      "Mayor claridad sobre las afirmaciones de Dal"
+    ],
+    "accent": "blue",
+    "isRepeatable": false,
+    "notes": "Quest personal de Minjae con repercusión grupal.",
+    "sortOrder": 101,
+    "tagIds": [
+      "minjae",
+      "tadpole",
+      "decreto-absoluto",
+      "dal",
+      "sylmorien"
+    ]
+  },
+  "pq-minjae-future-sylmorien": {
+    "id": "pq-minjae-future-sylmorien",
+    "parentQuestId": "pq-minjae-personal-arc",
+    "title": "Decidir su futuro con Sylmorien",
+    "subtitle": "Elegir qué juramentos todavía le pertenecen",
+    "types": [
+      "personal"
+    ],
+    "status": "active",
+    "visibility": "public",
+    "priority": "high",
+    "summary": "Minjae debe decidir si todavía se considera miembro de la Guardia Real y qué significa para él ser leal a Sylmorien.",
+    "description": "Minjae intentó renunciar a la Guardia Real, pero el proceso fue bloqueado mediante trámites y órdenes contradictorias. Durante la batalla más reciente se enfrentó a soldados sylmorianos mientras portaba la armadura de la División del Fuego.",
+    "progress": {
+      "mode": "manual",
+      "current": 0,
+      "goal": 3
+    },
+    "objectives": [
+      {
+        "id": "decide-guard-membership",
+        "label": "Decidir si todavía se considera miembro de la Guardia Real",
+        "done": false
+      },
+      {
+        "id": "define-loyalty",
+        "label": "Determinar qué significa para él ser leal a Sylmorien",
+        "done": false
+      },
+      {
+        "id": "choose-oaths",
+        "label": "Elegir qué juramentos desea conservar",
+        "done": false
+      }
+    ],
+    "sessionStartedId": null,
+    "lastUpdatedSessionId": "17",
+    "regionIds": [
+      "sylmorien"
+    ],
+    "characterIds": [
+      "pc-minjae"
+    ],
+    "rewards": [
+      "Definición de su identidad",
+      "Claridad sobre sus juramentos"
+    ],
+    "accent": "blue",
+    "isRepeatable": false,
+    "notes": "Misión personal activa de Minjae.",
+    "sortOrder": 102,
+    "tagIds": [
+      "minjae",
+      "sylmorien",
+      "guardia-real",
+      "juramentos"
+    ]
+  },
+  "pq-minjae-protect-joshua-daughters": {
+    "id": "pq-minjae-protect-joshua-daughters",
+    "parentQuestId": "pq-minjae-personal-arc",
+    "title": "Proteger a Joshua y a sus hijas",
+    "subtitle": "La familia de Minjae está en la mira del Sol Ardiente",
+    "types": [
+      "personal"
+    ],
+    "status": "active",
+    "visibility": "public",
+    "priority": "high",
+    "summary": "Minjae debe mantener a Joshua y a sus hijas fuera del alcance del Clan del Sol Ardiente y decidir cómo participará en su crianza.",
+    "description": "Joshua y sus bebés son objetivos conocidos del Clan del Sol Ardiente. Para Minjae, protegerlos también implica regresar con Joshua y definir qué lugar quiere ocupar dentro de su familia.",
+    "progress": {
+      "mode": "manual",
+      "current": 0,
+      "goal": 3
+    },
+    "objectives": [
+      {
+        "id": "keep-family-safe",
+        "label": "Mantenerlos fuera del alcance del Clan del Sol Ardiente",
+        "done": false
+      },
+      {
+        "id": "return-to-joshua",
+        "label": "Regresar con Joshua",
+        "done": false
+      },
+      {
+        "id": "choose-family-role",
+        "label": "Decidir cómo participará Minjae en la crianza y protección de su familia",
+        "done": false
+      }
+    ],
+    "sessionStartedId": "10",
+    "lastUpdatedSessionId": "17",
+    "factionIds": [
+      "clan-del-sol-ardiente"
+    ],
+    "characterIds": [
+      "pc-minjae",
+      "svt-joshua"
+    ],
+    "rewards": [
+      "Seguridad de su familia",
+      "Fortalecimiento del vínculo con Joshua"
+    ],
+    "accent": "blue",
+    "isRepeatable": false,
+    "notes": "Misión personal de Minjae vinculada al arco del Sol Ardiente.",
+    "sortOrder": 103,
+    "tagIds": [
+      "minjae",
+      "joshua",
+      "familia",
+      "sol-ardiente"
+    ]
+  },
+  "pq-minjae-card-connection": {
+    "id": "pq-minjae-card-connection",
+    "parentQuestId": "pq-minjae-personal-arc",
+    "title": "Comprender su conexión con las Cartas",
+    "subtitle": "Los rostros detrás de la Baraja",
+    "types": [
+      "personal"
+    ],
+    "status": "active",
+    "visibility": "public",
+    "priority": "medium",
+    "summary": "Minjae debe descubrir por qué puede reconocer las almas vinculadas a algunas Cartas del Destino.",
+    "description": "Minjae ha visto los rostros de almas vinculadas a Cartas como las de Seunghan y Heeseung. Todavía desconoce por qué posee esta capacidad, qué ocurre con un alma cuando una Carta se libera y cuál es su propio lugar dentro de la Baraja.",
+    "progress": {
+      "mode": "manual",
+      "current": 0,
+      "goal": 3
+    },
+    "objectives": [
+      {
+        "id": "discover-soul-sight",
+        "label": "Descubrir por qué puede ver las almas vinculadas",
+        "done": false
+      },
+      {
+        "id": "learn-release-effect",
+        "label": "Averiguar qué ocurre con un alma cuando una Carta se libera",
+        "done": false
+      },
+      {
+        "id": "understand-own-place",
+        "label": "Comprender su propio lugar dentro de la Baraja",
         "done": false
       }
     ],
     "sessionStartedId": "11",
-    "lastUpdatedSessionId": null,
+    "lastUpdatedSessionId": "17",
+    "characterIds": [
+      "pc-minjae"
+    ],
+    "rewards": [
+      "Mayor comprensión de la Baraja",
+      "Posible comunicación con almas vinculadas"
+    ],
+    "accent": "blue",
+    "isRepeatable": false,
+    "notes": "Misión personal de Minjae conectada con la quest central.",
+    "sortOrder": 104,
+    "tagIds": [
+      "minjae",
+      "baraja-del-destino",
+      "almas",
+      "portadores"
+    ]
+  },
+  "pq-minjae-felix-bond": {
+    "id": "pq-minjae-felix-bond",
+    "parentQuestId": "pq-minjae-personal-arc",
+    "title": "Comprender su vínculo con Felix",
+    "subtitle": "Almas predestinadas sin obligación",
+    "types": [
+      "personal"
+    ],
+    "status": "active",
+    "visibility": "public",
+    "priority": "medium",
+    "summary": "Minjae y Felix deben descubrir qué significa ser almas predestinadas sin convertir ese vínculo en una obligación.",
+    "description": "Minjae y Felix descubrieron que sus almas están predestinadas, pero ambos se niegan a tratar el destino como una orden. La relación deberá construirse a partir de sus propias decisiones.",
+    "progress": {
+      "mode": "manual",
+      "current": 0,
+      "goal": 3
+    },
+    "objectives": [
+      {
+        "id": "know-felix",
+        "label": "Conocer mejor a Felix",
+        "done": false
+      },
+      {
+        "id": "understand-destined-souls",
+        "label": "Descubrir qué significa realmente ser almas predestinadas",
+        "done": false
+      },
+      {
+        "id": "allow-free-relationship",
+        "label": "Permitir que su relación se construya sin imponerle una forma concreta",
+        "done": false
+      }
+    ],
+    "sessionStartedId": "17",
+    "lastUpdatedSessionId": "17",
+    "characterIds": [
+      "pc-minjae"
+    ],
+    "rewards": [
+      "Comprensión de su vínculo con Felix",
+      "Desarrollo de una relación elegida libremente"
+    ],
+    "accent": "blue",
+    "isRepeatable": false,
+    "notes": "Misión personal relacional de Minjae.",
+    "sortOrder": 105,
+    "tagIds": [
+      "minjae",
+      "felix",
+      "almas-predestinadas",
+      "consentimiento"
+    ]
+  },
+  "pq-imugi-control-cooler": {
+    "id": "pq-imugi-control-cooler",
+    "parentQuestId": "pq-imugi-personal-arc",
+    "title": "Controlar a The Cooler Imugi",
+    "subtitle": "Dominar la transformación antes de herir a alguien más",
+    "types": [
+      "personal"
+    ],
+    "status": "active",
+    "visibility": "public",
+    "priority": "high",
+    "summary": "Imugi debe identificar qué activa su transformación y aprender a conservar el control cuando esta aparece.",
+    "description": "Las transformaciones de Imugi han ocurrido de forma involuntaria y han puesto en peligro tanto a enemigos como a aliados. Comprenderlas es necesario para evitar nuevos ataques y descubrir el precio real de utilizar esa forma.",
+    "progress": {
+      "mode": "manual",
+      "current": 0,
+      "goal": 4
+    },
+    "objectives": [
+      {
+        "id": "identify-triggers",
+        "label": "Identificar qué activa la transformación",
+        "done": false
+      },
+      {
+        "id": "keep-control",
+        "label": "Aprender a conservar el control",
+        "done": false
+      },
+      {
+        "id": "avoid-allied-attacks",
+        "label": "Evitar atacar nuevamente a sus compañeros",
+        "done": false
+      },
+      {
+        "id": "understand-cost",
+        "label": "Comprender qué precio tiene utilizar esa forma",
+        "done": false
+      }
+    ],
+    "sessionStartedId": "15",
+    "lastUpdatedSessionId": "17",
+    "characterIds": [
+      "pc-imugi"
+    ],
+    "rewards": [
+      "Mayor control sobre The Cooler Imugi",
+      "Reducción del peligro para sus aliados"
+    ],
+    "accent": "green",
+    "isRepeatable": false,
+    "notes": "Misión personal activa de Imugi.",
+    "sortOrder": 121,
+    "tagIds": [
+      "imugi",
+      "transformacion",
+      "control",
+      "the-cooler-imugi"
+    ]
+  },
+  "pq-imugi-chaos-relationship": {
+    "id": "pq-imugi-chaos-relationship",
+    "parentQuestId": "pq-imugi-personal-arc",
+    "title": "Definir su relación con el Ente del Caos",
+    "subtitle": "Elegir qué clase de Caos quiere representar",
+    "types": [
+      "personal"
+    ],
+    "status": "active",
+    "visibility": "public",
+    "priority": "high",
+    "summary": "Imugi debe decidir qué relación desea mantener con su padre y patrón y qué clase de Caos quiere encarnar.",
+    "description": "El Ente del Caos le exige vengar a los dragones y ha intentado dirigir sus acciones mediante la ira. Imugi afirmó que no desea un caos que solo destruya, sino uno que abra paso al balance.",
+    "progress": {
+      "mode": "manual",
+      "current": 0,
+      "goal": 2
+    },
+    "objectives": [
+      {
+        "id": "choose-chaos",
+        "label": "Decidir qué clase de Caos quiere representar",
+        "done": false
+      },
+      {
+        "id": "understand-patron",
+        "label": "Comprender su relación con su padre y patrón",
+        "done": false
+      }
+    ],
+    "sessionStartedId": "16",
+    "lastUpdatedSessionId": "17",
+    "characterIds": [
+      "pc-imugi"
+    ],
+    "rewards": [
+      "Mayor autonomía frente a su patrón",
+      "Definición de su filosofía del Caos"
+    ],
+    "accent": "green",
+    "isRepeatable": false,
+    "notes": "Misión personal de Imugi.",
+    "sortOrder": 122,
+    "tagIds": [
+      "imugi",
+      "ente-del-caos",
+      "patron",
+      "balance"
+    ]
+  },
+  "pq-protect-dragons-dragonborn": {
+    "id": "pq-protect-dragons-dragonborn",
+    "parentQuestId": "pq-imugi-personal-arc",
+    "title": "Proteger a los dragonborn y a los dragones",
+    "subtitle": "Imugi debe salvar a los suyos antes de que sean exterminados",
+    "types": [
+      "personal"
+    ],
+    "status": "active",
+    "visibility": "public",
+    "priority": "high",
+    "summary": "Imugi debe proteger a los dragonborn y a los dragones de quienes los están persiguiendo y asesinando.",
+    "description": "Imugi sabe que existen grupos dedicados a cazar dragonborn y dragones. Su misión principal consiste en identificar a los responsables, proteger a los supervivientes y evitar nuevas matanzas.",
+    "progress": {
+      "mode": "manual",
+      "current": 0,
+      "goal": 4
+    },
+    "objectives": [
+      {
+        "id": "investigate-dragon-killers",
+        "label": "Investigar a Fenghuang y Wu y encontrar a quienes están matando dragones",
+        "done": false
+      },
+      {
+        "id": "avenge-fenghuang-clan",
+        "label": "Vengar al Clan Fenghuang",
+        "done": false
+      },
+      {
+        "id": "find-survivors",
+        "label": "Encontrar a otros dragonborn y resguardarlos en un lugar seguro",
+        "done": false
+      },
+      {
+        "id": "protect-matsuda",
+        "label": "Proteger a Matsuda",
+        "done": false
+      }
+    ],
+    "sessionStartedId": null,
+    "lastUpdatedSessionId": "17",
+    "characterIds": [
+      "pc-imugi"
+    ],
+    "rewards": [
+      "Protección de comunidades dragonborn",
+      "Información sobre sus perseguidores",
+      "Avance en la historia del Clan Fenghuang"
+    ],
+    "accent": "green",
+    "isRepeatable": false,
+    "notes": "Quest principal dentro del arco personal de Imugi.",
+    "sortOrder": 123,
+    "tagIds": [
+      "imugi",
+      "dragonborn",
+      "dragones",
+      "clan-fenghuang",
+      "proteccion"
+    ]
+  },
+  "pq-imugi-repair-jeongin": {
+    "id": "pq-imugi-repair-jeongin",
+    "parentQuestId": "pq-imugi-personal-arc",
+    "title": "Reparar su relación con Jeongin",
+    "subtitle": "Una tregua todavía no es confianza",
+    "types": [
+      "personal"
+    ],
+    "status": "active",
+    "visibility": "public",
+    "priority": "medium",
+    "summary": "Imugi debe hablar con Jeongin sobre el ataque, recuperar su confianza y establecer límites para evitar que vuelva a ocurrir.",
+    "description": "Imugi atacó a Jeongin durante una pérdida de control. Ambos acordaron una tregua, pero todavía no han resuelto lo ocurrido ni definido cómo actuarán si Imugi vuelve a transformarse.",
+    "progress": {
+      "mode": "manual",
+      "current": 0,
+      "goal": 3
+    },
+    "objectives": [
+      {
+        "id": "talk-jeongin",
+        "label": "Hablar con Jeongin",
+        "done": false
+      },
+      {
+        "id": "recover-trust",
+        "label": "Recuperar su confianza",
+        "done": false
+      },
+      {
+        "id": "set-limits",
+        "label": "Establecer límites para evitar otro ataque",
+        "done": false
+      }
+    ],
+    "sessionStartedId": "16",
+    "lastUpdatedSessionId": "17",
+    "characterIds": [
+      "pc-imugi"
+    ],
+    "rewards": [
+      "Posible reconciliación con Jeongin",
+      "Acuerdos para proteger a ambos"
+    ],
+    "accent": "green",
+    "isRepeatable": false,
+    "notes": "Misión personal relacional de Imugi.",
+    "sortOrder": 124,
+    "tagIds": [
+      "imugi",
+      "jeongin",
+      "confianza",
+      "reconciliacion"
+    ]
+  },
+  "pq-imugi-scoups-jeonghan": {
+    "id": "pq-imugi-scoups-jeonghan",
+    "parentQuestId": "pq-imugi-personal-arc",
+    "title": "Resolver sus sentimientos por S.Coups y Jeonghan",
+    "subtitle": "La conversación que el Caos interrumpió",
+    "types": [
+      "personal"
+    ],
+    "status": "active",
+    "visibility": "public",
+    "priority": "medium",
+    "summary": "Imugi debe decidir qué desea decirles a S.Coups y Jeonghan y tener la conversación que quedó pendiente.",
+    "description": "Imugi intentó enviarle una carta a S.Coups para hablar sobre sus sentimientos, pero su patrón la destruyó antes de que llegara. Además, todavía necesita procesar con ellos la pérdida de su embarazo.",
+    "progress": {
+      "mode": "manual",
+      "current": 0,
+      "goal": 3
+    },
+    "objectives": [
+      {
+        "id": "choose-words",
+        "label": "Decidir qué desea decirles",
+        "done": false
+      },
+      {
+        "id": "have-conversation",
+        "label": "Tener la conversación que quedó pendiente",
+        "done": false
+      },
+      {
+        "id": "process-loss",
+        "label": "Procesar junto a ellos la pérdida de su embarazo",
+        "done": false
+      }
+    ],
+    "sessionStartedId": "16",
+    "lastUpdatedSessionId": "17",
+    "characterIds": [
+      "pc-imugi"
+    ],
+    "rewards": [
+      "Claridad sobre sus vínculos",
+      "Apoyo durante su duelo"
+    ],
+    "accent": "green",
+    "isRepeatable": false,
+    "notes": "Misión personal relacional de Imugi.",
+    "sortOrder": 125,
+    "tagIds": [
+      "imugi",
+      "scoups",
+      "jeonghan",
+      "duelo",
+      "relaciones"
+    ]
+  },
+  "pq-kiyori-hoshizuki-changelings": {
+    "id": "pq-kiyori-hoshizuki-changelings",
+    "parentQuestId": "pq-kiyori-personal-arc",
+    "title": "Investigar a la familia Hoshizuki y a los changelings",
+    "subtitle": "Rostros prestados dentro de su propio hogar",
+    "types": [
+      "personal"
+    ],
+    "status": "active",
+    "visibility": "public",
+    "priority": "high",
+    "summary": "Kiyori debe descubrir qué ocurrió dentro de su familia, quién se infiltró en la casa Hoshizuki y por qué utilizaron su rostro.",
+    "description": "Kiyori descubrió que la mujer que la crió como Sae Jong es una changeling y que su hogar fue infiltrado por otras personas capaces de copiar identidades. Todavía desconoce qué ocurrió con la Sae Jong original, dónde están Ren y Yui y qué misión cumplían sus padres.",
+    "progress": {
+      "mode": "manual",
+      "current": 0,
+      "goal": 5
+    },
+    "objectives": [
+      {
+        "id": "discover-original-sae-jong",
+        "label": "Descubrir qué ocurrió con la Sae Jong original",
+        "done": false
+      },
+      {
+        "id": "identify-infiltrators",
+        "label": "Averiguar quién se infiltró en la casa Hoshizuki",
+        "done": false
+      },
+      {
+        "id": "find-ren-yui",
+        "label": "Encontrar a Ren y Yui",
+        "done": false
+      },
+      {
+        "id": "understand-parent-mission",
+        "label": "Comprender qué misión cumplían sus padres",
+        "done": false
+      },
+      {
+        "id": "discover-stolen-face-purpose",
+        "label": "Descubrir por qué alguien utilizó el rostro de Kiyori",
+        "done": false
+      }
+    ],
+    "sessionStartedId": "15",
+    "lastUpdatedSessionId": "17",
+    "characterIds": [
+      "pc-kiyori"
+    ],
+    "rewards": [
+      "Verdad sobre la familia Hoshizuki",
+      "Información sobre los changelings infiltrados",
+      "Posible reencuentro con Ren y Yui"
+    ],
+    "accent": "purple",
+    "isRepeatable": false,
+    "notes": "Quest principal dentro del arco personal de Kiyori.",
+    "sortOrder": 131,
+    "tagIds": [
+      "kiyori",
+      "hoshizuki",
+      "changelings",
+      "sae-jong",
+      "hotou"
+    ]
+  },
+  "pq-kiyori-trust-neo-academy": {
+    "id": "pq-kiyori-trust-neo-academy",
+    "parentQuestId": "pq-kiyori-personal-arc",
+    "title": "Decidir cuánto confía en la Neo Academia",
+    "subtitle": "Separar a su familia elegida del sistema de Sylmorien",
+    "types": [
+      "personal"
+    ],
+    "status": "active",
+    "visibility": "public",
+    "priority": "high",
+    "summary": "Kiyori debe investigar las advertencias contradictorias que ha recibido y decidir en quién confía por experiencia propia.",
+    "description": "Kiyori considera la Neo Academia su hogar, pero ha recibido acusaciones y advertencias sobre los Neos y Sylmorien. Resolver este conflicto exige hablar con sus maestros, investigar lo dicho por Dal sin aceptarlo automáticamente y distinguir a la Academia del gobierno que la rodea.",
+    "progress": {
+      "mode": "manual",
+      "current": 0,
+      "goal": 4
+    },
+    "objectives": [
+      {
+        "id": "talk-neo-mentors",
+        "label": "Hablar con Mark, Yuta y sus maestros",
+        "done": false
+      },
+      {
+        "id": "investigate-dal",
+        "label": "Investigar las acusaciones de Dal sin aceptarlas automáticamente",
+        "done": false
+      },
+      {
+        "id": "separate-academy-state",
+        "label": "Separar lo que pertenece a la Academia de lo que pertenece al gobierno de Sylmorien",
+        "done": false
+      },
+      {
+        "id": "choose-trust",
+        "label": "Decidir en quién confía por experiencia propia",
+        "done": false
+      }
+    ],
+    "sessionStartedId": "14",
+    "lastUpdatedSessionId": "17",
     "factionIds": [
       "neo-culturales-tecnologicos"
     ],
-    "rewards": [
-      "Supervivencia de aliados clave",
-      "Acceso a conocimiento sobre deseos y consecuencias",
-      "Ventaja contra Taeil y sus planes"
+    "regionIds": [
+      "sylmorien"
     ],
-    "accent": "gold",
+    "characterIds": [
+      "pc-kiyori"
+    ],
+    "rewards": [
+      "Claridad sobre la Neo Academia",
+      "Mayor autonomía para decidir sus alianzas"
+    ],
+    "accent": "purple",
     "isRepeatable": false,
-    "notes": "Quest de facción conectada a la seguridad de aliados excepcionales.",
-    "sortOrder": 5,
+    "notes": "Misión personal activa de Kiyori.",
+    "sortOrder": 132,
     "tagIds": [
-      "wishitos",
-      "casa-de-los-deseos",
-      "taeil",
-      "proteccion"
+      "kiyori",
+      "neo-academia",
+      "sylmorien",
+      "dal",
+      "confianza"
+    ]
+  },
+  "pq-kiyori-place-hoshizuki": {
+    "id": "pq-kiyori-place-hoshizuki",
+    "parentQuestId": "pq-kiyori-personal-arc",
+    "title": "Elegir su lugar dentro del Clan Hoshizuki",
+    "subtitle": "Ayudar a Hotou sin renunciar a su propia vida",
+    "types": [
+      "personal"
+    ],
+    "status": "active",
+    "visibility": "public",
+    "priority": "medium",
+    "summary": "Kiyori debe decidir qué relación desea conservar con su familia y cómo construir un futuro como maga.",
+    "description": "Su padre esperaba que abandonara su vida como maga y asumiera responsabilidades políticas dentro del clan. Kiyori dejó claro que ese no es el futuro que desea, pero todavía debe decidir si puede ayudar a Hotou y a su familia sin renunciar a sí misma.",
+    "progress": {
+      "mode": "manual",
+      "current": 0,
+      "goal": 3
+    },
+    "objectives": [
+      {
+        "id": "choose-family-relationship",
+        "label": "Decidir qué relación quiere conservar con su familia",
+        "done": false
+      },
+      {
+        "id": "build-mage-future",
+        "label": "Construir un futuro como maga",
+        "done": false
+      },
+      {
+        "id": "help-hotou-freely",
+        "label": "Determinar si puede ayudar a Hotou sin renunciar a su propia vida",
+        "done": false
+      }
+    ],
+    "sessionStartedId": "15",
+    "lastUpdatedSessionId": "17",
+    "regionIds": [
+      "hotou"
+    ],
+    "characterIds": [
+      "pc-kiyori"
+    ],
+    "rewards": [
+      "Definición de su futuro",
+      "Nueva relación con el Clan Hoshizuki"
+    ],
+    "accent": "purple",
+    "isRepeatable": false,
+    "notes": "Misión personal de Kiyori.",
+    "sortOrder": 133,
+    "tagIds": [
+      "kiyori",
+      "clan-hoshizuki",
+      "hotou",
+      "magia",
+      "autonomia"
+    ]
+  },
+  "sq-jeongin-arc": {
+    "id": "sq-jeongin-arc",
+    "title": "Ayudar a Yang Jeongin",
+    "subtitle": "El nuevo dios de la Luna todavía está aprendiendo a existir",
+    "types": [
+      "side"
+    ],
+    "status": "active",
+    "visibility": "public",
+    "priority": "medium",
+    "summary": "La party puede ayudar a Jeongin a recuperar sus poderes, comprender su reencarnación como Moonbin y decidir qué clase de dios quiere ser.",
+    "description": "Jeongin no forma parte de la party principal. Sus conflictos constituyen una cadena de misiones secundarias que el grupo puede elegir apoyar mientras él aprende a utilizar los poderes de Moonbin y construye sus propios principios.",
+    "progress": {
+      "mode": "manual",
+      "current": 0,
+      "goal": 4
+    },
+    "sessionStartedId": "11-5",
+    "lastUpdatedSessionId": "17",
+    "rewards": [
+      "Fortalecimiento de la alianza con Jeongin",
+      "Mayor comprensión de Moonbin y la magia lunar"
+    ],
+    "accent": "blue",
+    "isRepeatable": false,
+    "notes": "Quest madre de las misiones secundarias de Jeongin.",
+    "sortOrder": 200,
+    "tagIds": [
+      "jeongin",
+      "moonbin",
+      "mision-secundaria",
+      "lobos-perdidos"
+    ]
+  },
+  "sq-jeongin-recover-powers": {
+    "id": "sq-jeongin-recover-powers",
+    "parentQuestId": "sq-jeongin-arc",
+    "title": "Ayudar a Jeongin a recuperar sus poderes",
+    "subtitle": "Un ritual entre almas predestinadas",
+    "types": [
+      "side"
+    ],
+    "status": "active",
+    "visibility": "public",
+    "priority": "high",
+    "summary": "Jeongin necesita realizar un ritual de unión entre dos almas predestinadas que se amen y deseen casarse.",
+    "description": "Minjae y Felix son almas predestinadas, pero no desean convertir ese vínculo en una obligación. Shadowheart afirmó conocer a una pareja predestinada que sí está enamorada y desea casarse.",
+    "progress": {
+      "mode": "manual",
+      "current": 0,
+      "goal": 4
+    },
+    "objectives": [
+      {
+        "id": "find-shadowheart-couple",
+        "label": "Encontrar a la pareja mencionada por Shadowheart",
+        "done": false
+      },
+      {
+        "id": "confirm-consent",
+        "label": "Confirmar que ambas personas participan libremente",
+        "done": false
+      },
+      {
+        "id": "learn-ritual",
+        "label": "Aprender a realizar el ritual",
+        "done": false
+      },
+      {
+        "id": "restore-without-force",
+        "label": "Recuperar sus poderes sin obligar a Minjae y Felix",
+        "done": false
+      }
+    ],
+    "sessionStartedId": "17",
+    "lastUpdatedSessionId": "17",
+    "rewards": [
+      "Recuperación de los poderes de Jeongin",
+      "Mayor conocimiento sobre las almas predestinadas"
+    ],
+    "accent": "blue",
+    "isRepeatable": false,
+    "notes": "Misión secundaria de aliado.",
+    "sortOrder": 201,
+    "tagIds": [
+      "jeongin",
+      "ritual",
+      "almas-predestinadas",
+      "moonbin"
+    ]
+  },
+  "sq-jeongin-understand-reincarnation": {
+    "id": "sq-jeongin-understand-reincarnation",
+    "parentQuestId": "sq-jeongin-arc",
+    "title": "Comprender su reencarnación como Moonbin",
+    "subtitle": "Distinguir sus recuerdos de los de un dios",
+    "types": [
+      "side"
+    ],
+    "status": "active",
+    "visibility": "public",
+    "priority": "medium",
+    "summary": "Jeongin debe comprender qué significa ser la reencarnación de Moonbin y cuánto de ese legado desea recuperar.",
+    "description": "Jeongin conoce su vínculo con Moonbin, pero todavía no comprende completamente qué recuerdos, poderes o impulsos pertenecen al dios y cuáles son propios.",
+    "progress": {
+      "mode": "manual",
+      "current": 0,
+      "goal": 4
+    },
+    "objectives": [
+      {
+        "id": "identify-moonbin-memories",
+        "label": "Descubrir qué recuerdos o poderes pertenecen a Moonbin",
+        "done": false
+      },
+      {
+        "id": "understand-wolf-form",
+        "label": "Comprender su forma del Dios Lobo",
+        "done": false
+      },
+      {
+        "id": "discover-incomplete-form",
+        "label": "Averiguar por qué su manifestación está incompleta",
+        "done": false
+      },
+      {
+        "id": "choose-recovery",
+        "label": "Decidir cuánto de Moonbin desea recuperar",
+        "done": false
+      }
+    ],
+    "sessionStartedId": "11-5",
+    "lastUpdatedSessionId": "17",
+    "rewards": [
+      "Mayor dominio de sus poderes",
+      "Comprensión de su identidad como reencarnación"
+    ],
+    "accent": "blue",
+    "isRepeatable": false,
+    "notes": "Misión secundaria de aliado.",
+    "sortOrder": 202,
+    "tagIds": [
+      "jeongin",
+      "moonbin",
+      "reencarnacion",
+      "dios-lobo"
+    ]
+  },
+  "sq-jeongin-kind-of-god": {
+    "id": "sq-jeongin-kind-of-god",
+    "parentQuestId": "sq-jeongin-arc",
+    "title": "Decidir qué clase de dios quiere ser",
+    "subtitle": "Crear una fe que respete la libertad",
+    "types": [
+      "side"
+    ],
+    "status": "active",
+    "visibility": "public",
+    "priority": "medium",
+    "summary": "Jeongin debe construir sus propios principios y decidir qué significa proteger a una manada sin imponer destinos.",
+    "description": "Jeongin no desea repetir tradiciones que obliguen a otras personas a aceptar vínculos, matrimonios o caminos predestinados. Su nueva identidad divina dependerá de las decisiones que tome.",
+    "progress": {
+      "mode": "manual",
+      "current": 0,
+      "goal": 4
+    },
+    "objectives": [
+      {
+        "id": "build-principles",
+        "label": "Construir sus propios principios",
+        "done": false
+      },
+      {
+        "id": "define-pack-protection",
+        "label": "Decidir qué significa proteger a la manada",
+        "done": false
+      },
+      {
+        "id": "separate-wills",
+        "label": "Separar la voluntad de Moonbin de la suya",
+        "done": false
+      },
+      {
+        "id": "create-free-faith",
+        "label": "Crear una forma de fe que respete la libertad de los demás",
+        "done": false
+      }
+    ],
+    "sessionStartedId": "17",
+    "lastUpdatedSessionId": "17",
+    "rewards": [
+      "Definición de la nueva fe de Jeongin",
+      "Mayor confianza de sus aliados"
+    ],
+    "accent": "blue",
+    "isRepeatable": false,
+    "notes": "Misión secundaria de aliado.",
+    "sortOrder": 203,
+    "tagIds": [
+      "jeongin",
+      "dios",
+      "fe",
+      "libertad",
+      "moonbin"
+    ]
+  },
+  "sq-jeongin-imugi-relationship": {
+    "id": "sq-jeongin-imugi-relationship",
+    "parentQuestId": "sq-jeongin-arc",
+    "title": "Resolver su relación con Imugi",
+    "subtitle": "Decidir si una tregua puede convertirse en confianza",
+    "types": [
+      "side"
+    ],
+    "status": "active",
+    "visibility": "public",
+    "priority": "medium",
+    "summary": "Jeongin debe decidir si puede volver a confiar en Imugi y establecer límites claros después del ataque.",
+    "description": "Jeongin fue atacado por Imugi durante una pérdida de control. Ambos mantienen una tregua momentánea, pero todavía no han decidido cómo actuarán si la situación vuelve a repetirse.",
+    "progress": {
+      "mode": "manual",
+      "current": 0,
+      "goal": 3
+    },
+    "objectives": [
+      {
+        "id": "decide-trust",
+        "label": "Decidir si puede volver a confiar en Imugi",
+        "done": false
+      },
+      {
+        "id": "set-clear-limits",
+        "label": "Establecer límites claros",
+        "done": false
+      },
+      {
+        "id": "plan-next-transformation",
+        "label": "Determinar qué hará si Imugi vuelve a perder el control",
+        "done": false
+      }
+    ],
+    "sessionStartedId": "16",
+    "lastUpdatedSessionId": "17",
+    "characterIds": [
+      "pc-imugi"
+    ],
+    "rewards": [
+      "Posible reconciliación entre Jeongin e Imugi",
+      "Acuerdos para evitar nuevos daños"
+    ],
+    "accent": "blue",
+    "isRepeatable": false,
+    "notes": "Misión secundaria de aliado conectada con el arco personal de Imugi.",
+    "sortOrder": 204,
+    "tagIds": [
+      "jeongin",
+      "imugi",
+      "confianza",
+      "tregua"
+    ]
+  },
+  "sq-find-hyunjin": {
+    "id": "sq-find-hyunjin",
+    "title": "Encontrar a Hyunjin",
+    "subtitle": "Desapareció durante la noche en Puerto Bay Alta",
+    "types": [
+      "side"
+    ],
+    "status": "active",
+    "visibility": "public",
+    "priority": "medium",
+    "summary": "La party debe averiguar por qué Hyunjin desapareció y confirmar si se encuentra a salvo.",
+    "description": "Hyunjin desapareció durante la noche antes de que la party partiera hacia el Templo del Dios Lobo. No saben si se marchó voluntariamente, si siguió alguna pista o si se encuentra en peligro.",
+    "progress": {
+      "mode": "manual",
+      "current": 0,
+      "goal": 4
+    },
+    "objectives": [
+      {
+        "id": "discover-departure",
+        "label": "Averiguar cuándo y por qué se fue",
+        "done": false
+      },
+      {
+        "id": "ask-lost-wolves",
+        "label": "Preguntar a los Lobos Perdidos si han recibido noticias",
+        "done": false
+      },
+      {
+        "id": "follow-trail",
+        "label": "Seguir cualquier rastro que haya dejado",
+        "done": false
+      },
+      {
+        "id": "check-felix-link",
+        "label": "Confirmar si su desaparición está relacionada con Felix",
+        "done": false
+      }
+    ],
+    "sessionStartedId": "15",
+    "lastUpdatedSessionId": "17",
+    "rewards": [
+      "Conocer el destino de Hyunjin",
+      "Información sobre sus motivos o posibles perseguidores"
+    ],
+    "accent": "blue",
+    "isRepeatable": false,
+    "notes": "Misión secundaria activa.",
+    "sortOrder": 40,
+    "tagIds": [
+      "hyunjin",
+      "lobos-perdidos",
+      "desaparicion",
+      "felix"
     ]
   },
   "mq-recover-stolen-cards": {
     "id": "mq-recover-stolen-cards",
     "parentQuestId": "mq-collect-cards",
     "title": "Recuperar las Cartas Robadas",
-    "subtitle": "Cartas robadas por los Piratas de la Dimensión Z",
+    "subtitle": "Cartas robadas por los Piratas",
     "types": [
       "main",
       "faction"
     ],
     "status": "active",
     "visibility": "public",
-    "summary": "La party debe rastrear y recuperar las cartas de la Baraja del Destino que fueron robadas por los Piratas de la Dimensión Z antes de que desaparezcan, sean vendidas o caigan en manos aún peores.",
-    "description": "No todas las cartas permanecen ocultas o ligadas a portadores indefensos: algunas ya fueron arrebatadas y ahora están en circulación entre fuerzas peligrosas. Los Piratas de la Dimensión Z han robado parte de la Baraja, y recuperarla exigirá rastreo, confrontación, negociación o infiltración, dependiendo de quién las posea y qué tan lejos estén dispuestos a llegar para conservarlas.",
+    "summary": "La party debe rastrear y recuperar las cartas de la Baraja del Destino que fueron robadas por los Piratas antes de que desaparezcan, sean vendidas o caigan en manos aún peores.",
+    "description": "No todas las cartas permanecen ocultas o ligadas a portadores indefensos: algunas ya fueron arrebatadas y ahora están en circulación entre fuerzas peligrosas. Los Piratas de la Marea Negra han robado parte de la Baraja, y recuperarla exigirá rastreo, confrontación, negociación o infiltración, dependiendo de quién las posea y qué tan lejos estén dispuestos a llegar para conservarlas.",
     "progress": {
       "mode": "manual",
       "current": 1,
@@ -287,7 +1897,7 @@
     "sessionStartedId": null,
     "lastUpdatedSessionId": null,
     "factionIds": [
-      "marea-negra"
+      
     ],
     "rewards": [
       "Recuperación de cartas activas de la Baraja",
@@ -302,526 +1912,7 @@
       "cartas-robadas",
       "baraja-del-destino",
       "piratas",
-      "recperacion"
+      "recuperacion"
     ]
-  },
-  "mq-defeat-burning-sun": {
-    "id": "mq-defeat-burning-sun",
-    "title": "Derrotar al Clan del Sol Ardiente",
-    "subtitle": "Antes de que el mundo arda bajo su eclipse",
-    "types": [
-      "main"
-    ],
-    "status": "active",
-    "visibility": "public",
-    "summary": "La party debe impedir que el Clan del Sol Ardiente continúe capturando objetivos clave, persiguiendo portadores y consolidando su poder mediante violencia, radiancia diseñada y rituales.",
-    "description": "El Clan del Sol Ardiente se ha convertido en una de las amenazas más brutales del mundo. Su ideología fanática, su odio hacia la humanidad y su uso de tecnomagia robada los vuelve un enemigo capaz de desestabilizar regiones enteras. Derrotarlos implica frustrar sus secuestros, desmantelar sus planes, salvar a sus víctimas y confrontar a las figuras clave que sostienen su estructura.",
-    "progress": {
-      "mode": "manual",
-      "current": 0,
-      "goal": 4
-    },
-    "sessionStartedId": null,
-    "lastUpdatedSessionId": null,
-    "factionIds": [
-      "clan-del-sol-ardiente"
-    ],
-    "rewards": [
-      "Debilitar una amenaza mayor contra el equilibrio del mundo",
-      "Salvar aliados y objetivos clave",
-      "Reducir el alcance militar y ritual del Clan del Sol Ardiente"
-    ],
-    "accent": "red",
-    "isRepeatable": false,
-    "notes": "Quest paraguas del arco contra el Sol Ardiente.",
-    "sortOrder": 20,
-    "tagIds": [
-      "sol-ardiente",
-      "gerra",
-      "accion-enemiga",
-      "radiancia-disenada",
-      "rital"
-    ]
-  },
-  "mq-defeat-taeil": {
-    "id": "mq-defeat-taeil",
-    "parentQuestId": "mq-defeat-burning-sun",
-    "title": "Derrotar a Taeil",
-    "subtitle": "Ex Neo Académico corrupto",
-    "types": [
-      "main"
-    ],
-    "status": "active",
-    "visibility": "public",
-    "summary": "La party debe detener a Taeil, antiguo miembro de la Neo Academia convertido en pieza clave del avance del Clan del Sol Ardiente.",
-    "description": "Taeil posee conocimiento robado, ambición peligrosa y vínculos con los planes más crueles del Clan del Sol Ardiente. Su pasado como Neo Académico lo vuelve especialmente peligroso, pues entiende tecnologías, pactos y estructuras que podrían inclinar la balanza del conflicto. Derrotarlo no solo significa eliminar un enemigo poderoso, sino cortar una de las mentes que alimentan la expansión del clan.",
-    "progress": {
-      "mode": "manual",
-      "current": 80,
-      "goal": 100
-    },
-    "sessionStartedId": "11-5",
-    "lastUpdatedSessionId": "11-5",
-    "factionIds": [
-      "clan-del-sol-ardiente",
-      "neo-culturales-tecnologicos"
-    ],
-    "rewards": [
-      "Eliminar a un enemigo clave del Sol Ardiente",
-      "Recuperar conocimiento o tecnomagia robada",
-      "Debilitar el liderazgo operativo del clan"
-    ],
-    "accent": "red",
-    "isRepeatable": false,
-    "notes": "Subquest centrada en una figura clave del arco enemigo.",
-    "sortOrder": 21,
-    "tagIds": [
-      "taeil",
-      "neo-academia",
-      "sol-ardiente",
-      "corrpcion",
-      "jee-enemigo"
-    ]
-  },
-  "mq-save-baby-jungwoo": {
-    "id": "mq-save-baby-jungwoo",
-    "parentQuestId": "mq-defeat-burning-sun",
-    "title": "Salvar a Jungwoo bebé",
-    "subtitle": "Evitar que el Clan del Sol Ardiente lo utilice para negociar la vida de los wishitos",
-    "types": [
-      "main",
-      "faction"
-    ],
-    "status": "completed",
-    "visibility": "public",
-    "summary": "La party debe rescatar a Jungwoo bebé antes de que el Clan del Sol Ardiente lo use como rehén, moneda de cambio o víctima dentro de un plan mayor.",
-    "description": "Jungwoo bebé ha sido secuestrado por el Clan del Sol Ardiente y corre peligro inmediato. Su captura no es accidental: el enemigo pretende utilizarlo como pieza de negociación para presionar a la Neo Academia y a quienes desean proteger a los wishitos. Rescatarlo implica rastrear al enemigo, irrumpir o infiltrarse en su territorio y evacuarlo a un lugar seguro antes de que sea demasiado tarde.",
-    "progress": {
-      "mode": "manual",
-      "current": 1,
-      "goal": 1
-    },
-    "sessionStartedId": "11",
-    "lastUpdatedSessionId": "12",
-    "factionIds": [
-      "clan-del-sol-ardiente",
-      "neo-culturales-tecnologicos"
-    ],
-    "rewards": [
-      "Supervivencia de Jungwoo bebé",
-      "Golpe estratégico contra el Clan del Sol Ardiente",
-      "Mayor confianza de la Neo Academia"
-    ],
-    "accent": "red",
-    "isRepeatable": false,
-    "notes": "Quest de rescate urgente dentro del arco del Sol Ardiente.",
-    "sortOrder": 22,
-    "tagIds": [
-      "jngwoo-bebe",
-      "rescate",
-      "secestro",
-      "sol-ardiente",
-      "wishitos"
-    ]
-  },
-  "mq-protect-guild": {
-    "id": "mq-protect-guild",
-    "parentQuestId": "mq-defeat-burning-sun",
-    "title": "Proteger al Gremio de Aventureros",
-    "subtitle": "Evitar que el Clan del Sol Ardiente capture a los omegas del Gremio de Aventureros",
-    "types": [
-      "main",
-      "faction"
-    ],
-    "status": "active",
-    "visibility": "public",
-    "summary": "La party debe impedir que el Clan del Sol Ardiente ataque al Gremio de Aventureros y capture a sus miembros más vulnerables.",
-    "description": "El Gremio de Aventureros se ha convertido en un objetivo para el Clan del Sol Ardiente, especialmente por la presencia de omegas y figuras valiosas dentro de su red. Protegerlo implica anticipar ataques, reforzar defensas, organizar evacuaciones y evitar que el enemigo utilice al gremio como fuente de rehenes o sacrificios.",
-    "progress": {
-      "mode": "manual",
-      "current": 0,
-      "goal": 1
-    },
-    "objectives": [
-      {
-        "id": "protect-joshua",
-        "label": "Proteger a Joshua del Gremio de Aventureros de Hyberia",
-        "done": false
-      },
-      {
-        "id": "protect-hoshi",
-        "label": "Proteger a Hoshi del Gremio de Aventureros de Hyberia",
-        "done": true
-      },
-      {
-        "id": "protect-dokyeom",
-        "label": "Proteger a Dokyeom del Gremio de Aventureros de Hyberia",
-        "done": true
-      },
-      {
-        "id": "protect-seungkwan",
-        "label": "Proteger a Seungkwan del Gremio de Aventureros de Hyberia",
-        "done": false
-      },
-      {
-        "id": "protect-guild",
-        "label": "Mantener con vida a los miembros alfa y beta del Gremio de Aventureros",
-        "done": false
-      }
-    ],
-    "sessionStartedId": "12",
-    "lastUpdatedSessionId": "12",
-    "factionIds": [
-      "los-diecisiete-heroes",
-      "clan-del-sol-ardiente"
-    ],
-    "rewards": [
-      "Supervivencia de miembros clave del gremio",
-      "Fortalecer la alianza con el Gremio de Aventureros",
-      "Negar rehenes y recursos al enemigo"
-    ],
-    "accent": "red",
-    "isRepeatable": false,
-    "notes": "Quest defensiva con peso político y comunitario.",
-    "sortOrder": 25,
-    "tagIds": [
-      "gremio-de-aventreros",
-      "proteccion",
-      "omegas",
-      "sol-ardiente",
-      "deensa"
-    ]
-  },
-  "mq-protect-vampires": {
-    "id": "mq-protect-vampires",
-    "parentQuestId": "mq-defeat-burning-sun",
-    "title": "Proteger a los Heraldos del Crepúsculo",
-    "subtitle": "Evitar que el Clan del Sol Ardiente capture a los aliados vampíricos vulnerables",
-    "types": [
-      "main",
-      "faction"
-    ],
-    "status": "active",
-    "visibility": "public",
-    "summary": "La party debe proteger a los Heraldos del Crepúsculo de la persecución del Clan del Sol Ardiente y evitar que sus miembros caigan en manos enemigas.",
-    "description": "Los Heraldos del Crepúsculo son especialmente vulnerables frente al Clan del Sol Ardiente, cuya tecnología y radiancia diseñada los convierten en presas prioritarias. Protegerlos implica impedir capturas, reforzar refugios, planear rutas seguras y sostener una alianza que podría resultar crucial en el conflicto mayor.",
-    "progress": {
-      "mode": "manual",
-      "current": 0,
-      "goal": 1
-    },
-    "objectives": [
-      {
-        "id": "protect-jungwon",
-        "label": "Proteger a Jungwon de los Hijos de la Noche",
-        "done": false
-      },
-      {
-        "id": "protect-heeseung",
-        "label": "Proteger a Heeseung de los Hijos de la Noche",
-        "done": false,
-        "failed": true
-      },
-      {
-        "id": "protect-jay",
-        "label": "Proteger a Jay de los Hijos de la Noche",
-        "done": false
-      },
-      {
-        "id": "protect-jake",
-        "label": "Proteger a Jake de los Hijos de la Noche",
-        "done": true
-      },
-      {
-        "id": "protect-sunghoon",
-        "label": "Proteger a Sunghoon de los Hijos de la Noche",
-        "done": false
-      },
-      {
-        "id": "protect-sunoo",
-        "label": "Proteger a Sunoo de los Hijos de la Noche",
-        "done": false
-      },
-      {
-        "id": "protect-niki",
-        "label": "Proteger a Ni-ki de los Hijos de la Noche",
-        "done": true
-      },
-      {
-        "id": "protect-pact",
-        "label": "Rehacer el pacto de oscuridad con la Entidad de la Luna",
-        "done": false
-      }
-    ],
-    "sessionStartedId": null,
-    "lastUpdatedSessionId": null,
-    "factionIds": [
-      "heraldos-del-crepusculo",
-      "clan-del-sol-ardiente"
-    ],
-    "rewards": [
-      "Supervivencia de aliados vampíricos clave",
-      "Fortalecer la alianza con los Heraldos del Crepúsculo",
-      "Reducir el impacto de la radiancia diseñada en el campo enemigo"
-    ],
-    "accent": "red",
-    "isRepeatable": false,
-    "notes": "Quest de protección de aliados especialmente vulnerables al Sol Ardiente.",
-    "sortOrder": 24,
-    "tagIds": [
-      "vampiros",
-      "heraldos-del-crepsclo",
-      "proteccion",
-      "sol-ardiente",
-      "radiancia-disenada"
-    ]
-  },
-  "pq-minjae-personal-arc": {
-    "id": "pq-minjae-personal-arc",
-    "title": "Arco Personal de Yang Minjae",
-    "subtitle": "Entre la luz de la luna, la sangre y la elección",
-    "types": [
-      "personal",
-      "main"
-    ],
-    "status": "active",
-    "visibility": "public",
-    "summary": "Minjae debe decidir quién será realmente más allá de los títulos que le impuso Sylmorien, el peso de su linaje y las expectativas que otros han depositado sobre él.",
-    "description": "Yang Minjae ha sido muchas cosas: capitán, símbolo, protector, arma del reino y líder de los Panes del Destino. Pero su verdadero viaje no consiste solo en sobrevivir a la guerra o cargar con el peso de la Baraja del Destino, sino en definir su propia identidad. Entre la lealtad, la familia, la luz de la luna y las heridas que dejó Sylmorien, Minjae deberá elegir qué legado quiere construir, qué vínculos proteger y qué partes de sí mismo está dispuesto a reclamar como verdaderamente suyas.",
-    "progress": {
-      "mode": "manual",
-      "current": 0,
-      "goal": 4
-    },
-    "sessionStartedId": null,
-    "lastUpdatedSessionId": null,
-    "factionIds": [
-      "panes-del-destino"
-    ],
-    "regionIds": [
-      "sylmorien"
-    ],
-    "characterIds": [
-      "pc-minjae",
-      "svt-joshua"
-    ],
-    "rewards": [
-      "Crecimiento personal de Minjae",
-      "Definición de su legado fuera de Sylmorien",
-      "Fortalecimiento de sus vínculos más importantes"
-    ],
-    "accent": "blue",
-    "isRepeatable": false,
-    "notes": "Quest madre del arco personal de Minjae. Debajo de esta cuelgan sus conflictos de identidad, familia, poder y liberación.",
-    "sortOrder": 100,
-    "tagIds": [
-      "minjae",
-      "arco-personal",
-      "identidad",
-      "amilia",
-      "sylmorien",
-      "legado"
-    ]
-  },
-  "pq-kiyori-personal-arc": {
-    "id": "pq-kiyori-personal-arc",
-    "title": "Arco Personal de Kiyori Hoshizuki",
-    "subtitle": "Entre estrellas, fuego y verdad",
-    "types": [
-      "personal"
-    ],
-    "status": "active",
-    "visibility": "public",
-    "summary": "Kiyori debe definir quién será realmente más allá de la nobleza, la Neo Academia y los caminos que otros imaginaron para ella.",
-    "description": "Kiyori Hoshizuki nació rodeada de privilegio, expectativas y conocimiento, pero su destino no puede reducirse al papel que otros le asignaron. Entre la herencia de Hotou, la marca que dejó la Neo Academia y el fuego de su propia voluntad, Kiyori deberá decidir qué partes de su pasado honra, cuáles rechaza y qué clase de poder desea reclamar como verdaderamente suyo.",
-    "progress": {
-      "mode": "manual",
-      "current": 0,
-      "goal": 4
-    },
-    "sessionStartedId": null,
-    "lastUpdatedSessionId": null,
-    "factionIds": [
-      "panes-del-destino",
-      "neo-culturales-tecnologicos"
-    ],
-    "characterIds": [
-      "pc-kiyori"
-    ],
-    "rewards": [
-      "Crecimiento personal de Kiyori",
-      "Mayor claridad sobre su identidad y legado",
-      "Fortalecimiento de su vínculo con su propio poder"
-    ],
-    "accent": "purple",
-    "isRepeatable": false,
-    "notes": "Quest madre del arco personal de Kiyori. Debajo de esta cuelgan sus conflictos de origen, conocimiento, poder y autonomía.",
-    "sortOrder": 110,
-    "tagIds": [
-      "kiyori",
-      "arco-personal",
-      "neo-academia",
-      "hoto",
-      "magia",
-      "legado"
-    ]
-  },
-  "pq-imugi-personal-arc": {
-    "id": "pq-imugi-personal-arc",
-    "title": "Arco Personal de Fenghuang Imugi",
-    "subtitle": "Entre sangre, venganza y poder prohibido",
-    "types": [
-      "personal",
-      "main"
-    ],
-    "status": "active",
-    "visibility": "public",
-    "summary": "Imugi debe decidir si será consumido por el caos de su linaje y su sed de venganza, o si logrará convertir ese poder en algo propio.",
-    "description": "Fenghuang Imugi carga con un linaje marcado por el caos, la pérdida y un poder que amenaza con devorarlo desde dentro. Como hijo del Demonio del Caos y portador de una carta crucial del destino, su camino no puede separarse ni de la violencia de su pasado ni de la tentación de su propia naturaleza. Entre venganza, control y deseo de sobrevivir como algo más que un arma, Imugi deberá elegir qué hacer con el fuego que lleva en la sangre.",
-    "progress": {
-      "mode": "manual",
-      "current": 0,
-      "goal": 4
-    },
-    "sessionStartedId": null,
-    "lastUpdatedSessionId": null,
-    "factionIds": [
-      "panes-del-destino"
-    ],
-    "characterIds": [
-      "pc-imugi"
-    ],
-    "rewards": [
-      "Crecimiento personal de Imugi",
-      "Mayor control sobre su poder y su naturaleza",
-      "Avance en su conflicto con el caos y la venganza"
-    ],
-    "accent": "green",
-    "isRepeatable": false,
-    "notes": "Quest madre del arco personal de Imugi. Debajo de esta cuelgan sus conflictos de linaje, venganza, control y destino.",
-    "sortOrder": 120,
-    "tagIds": [
-      "imgi",
-      "arco-personal",
-      "caos",
-      "venganza",
-      "linaje",
-      "demonio"
-    ]
-  },
-  "pq-soobin-personal-arc": {
-    "id": "pq-soobin-personal-arc",
-    "title": "Arco Personal de Jang Soobin",
-    "subtitle": "Entre recuerdos perdidos, reflejos rotos y verdad",
-    "types": [
-      "personal",
-      "main"
-    ],
-    "status": "active",
-    "visibility": "public",
-    "summary": "Soobin debe reconstruirse a sí mismo entre los recuerdos que perdió, los vínculos que olvidó y las verdades que aún no está listo para mirar de frente.",
-    "description": "Jang Soobin camina con el peso de una ausencia que no siempre puede nombrar. Sus recuerdos fragmentados, su vínculo roto con partes esenciales de su pasado y la presencia inquietante de aquello que olvidó lo convierten en una figura suspendida entre lo que fue y lo que podría volver a ser. Para reclamar su alma completa, Soobin deberá enfrentar el vacío, la verdad y los nombres que todavía duelen aunque no los recuerde del todo.",
-    "progress": {
-      "mode": "manual",
-      "current": 0,
-      "goal": 4
-    },
-    "sessionStartedId": null,
-    "lastUpdatedSessionId": null,
-    "factionIds": [
-      "panes-del-destino"
-    ],
-    "characterIds": [
-      "pc-soobin"
-    ],
-    "rewards": [
-      "Crecimiento personal de Soobin",
-      "Recuperación de partes clave de su identidad",
-      "Avance en la reconciliación con su pasado"
-    ],
-    "accent": "pink",
-    "isRepeatable": false,
-    "notes": "Quest madre del arco personal de Soobin. Debajo de esta cuelgan sus conflictos de memoria, identidad, vínculos perdidos y verdad.",
-    "sortOrder": 130,
-    "tagIds": [
-      "soobin",
-      "arco-personal",
-      "memoria",
-      "identidad",
-      "pasado",
-      "destino"
-    ]
-  },
-  "sq-ayudar-jeongin": {
-    "id": "sq-ayudar-jeongin",
-    "title": "Ayudar a Jeongin a entender su poder",
-    "status": "active",
-    "visibility": "public",
-    "priority": "high",
-    "subtitle": "El lobo Yang Jeongin debe de aprender a usar los poderes de Moonbin correctamente.",
-    "summary": "Jeongin busca entender y controlar los poderes de Moonbin mientras sigue las pistas del Dreamscape.",
-    "objectives": [
-      {
-        "id": "buscar-informacion",
-        "done": true,
-        "label": "Buscar información sobre Moonbin en la Neo Academia y aprender sobre el Dreamscape"
-      },
-      {
-        "id": "encontrar-lobas",
-        "done": false,
-        "label": "Encontrar a las Lobas Extraordinarias en Hotou"
-      }
-    ],
-    "progress": {
-      "mode": "manual",
-      "current": 1,
-      "goal": 2
-    },
-    "types": [
-      "main"
-    ]
-  },
-  "pq-proteger-a-la-raza-dragonborn-y-a-los-dragones": {
-    "title": "Proteger a la raza Dragonborn y a los Dragones",
-    "status": "active",
-    "visibility": "public",
-    "id": "pq-proteger-a-la-raza-dragonborn-y-a-los-dragones",
-    "type": "personal",
-    "types": [
-      "personal"
-    ],
-    "priority": "high",
-    "accent": "green",
-    "subtitle": "Imugi debe de salvar a los suyos antes de que sean exterminados.",
-    "summary": "Imugi debe proteger a los Dragonborn y a los dragones antes de que sus enemigos terminen de exterminarlos.",
-    "parentQuestId": "pq-imugi-personal-arc",
-    "objectives": [
-      {
-        "id": "investigar-asesinos-de-dragones",
-        "label": "Encontrar a quienes están matando a los Dragones",
-        "done": false
-      },
-      {
-        "id": "vengar-clan-fenghuang",
-        "label": "Vengar al Clan Fenghuang",
-        "done": false
-      },
-      {
-        "id": "encontrar-dragonborn-supervivientes",
-        "label": "Encontrar a otros Dragonborn para evitar que mueran y resguardarlos en un lugar seguro.",
-        "done": false
-      },
-      {
-        "id": "proteger-a-matsuda",
-        "label": "Proteger a Matsuda, el Dragonborn",
-        "done": false
-      }
-    ],
-    "progress": {
-      "mode": "manual",
-      "current": 0,
-      "goal": 4
-    },
-    "sortOrder": 121
   }
 }

@@ -1,0 +1,23 @@
+.divider {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: var(--h-content-width);
+  margin-block: 2rem;
+  color: var(--h-primary-muted);
+}
+
+.line { flex: 1; height: 1px; background: var(--h-primary-muted); }
+.mark {
+  flex: 0 0 auto;
+  margin-inline: 0.85rem;
+  color: var(--h-primary-muted);
+  font-family: Georgia, serif;
+  font-size: 0.72rem;
+  line-height: 1;
+}
+.simple .line:last-child { display: none; }
+.diamond .line { max-width: 12rem; }
+.ornament { justify-content: center; }
+.ornament .line { display: none; }
+.ornament .mark { margin: 0; color: var(--h-purple-muted); font-size: 1.25rem; }

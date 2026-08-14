@@ -16,6 +16,7 @@ import {
   getFactionById,
   getLocationById,
 } from '../data/relationships';
+import type { LocationProfile } from '../data/locations';
 
 /**
  * JSON-friendly references
@@ -90,6 +91,11 @@ function renderFactionLinkFromId(factionId?: string | null): React.ReactNode | u
   return renderDocLink(faction.title, `factions/${faction.id}`);
 }
 
+function renderFactionNameFromId(factionId?: string | null): React.ReactNode | undefined {
+  if (!factionId) return undefined;
+  return getFactionById(factionId)?.title ?? factionId;
+}
+
 function renderDelimitedValues(values: React.ReactNode[]): React.ReactNode | undefined {
   const clean = values.filter(Boolean);
   if (!clean.length) return undefined;
@@ -104,6 +110,10 @@ function renderDelimitedValues(values: React.ReactNode[]): React.ReactNode | und
       ))}
     </>
   );
+}
+
+function renderStringList(values?: string[] | null): React.ReactNode | undefined {
+  return values?.length ? renderDelimitedValues(values) : undefined;
 }
 
 /* -----------------------------
@@ -297,13 +307,28 @@ export type LocationJson = {
 
   pointsOfInterest?: Ref[];
   activeFactions?: Ref[];
+  factionIds?: string[];
+  profile?: LocationProfile | null;
 };
 
 export function locationJsonToSections(data: LocationJson): Section[] {
+  const profile = data.profile;
+  const factionLinks = renderDelimitedValues(
+    (data.factionIds ?? []).map((factionId) => renderFactionNameFromId(factionId)),
+  );
+
+  const additionalFacts = profile?.additionalFacts ?? [];
+  const additionalIdentityFacts = additionalFacts.filter((fact) => fact.label === 'Origen');
+  const additionalTerritoryFacts = additionalFacts.filter((fact) => fact.label === 'Fenómenos naturales');
+  const additionalGovernmentFacts = additionalFacts.filter(
+    (fact) => !additionalIdentityFacts.includes(fact) && !additionalTerritoryFacts.includes(fact),
+  );
+
   const input: LocationInfoboxInput = {
+    hasProfile: Boolean(profile),
     type: data.type,
     realm: data.realm,
-    climate: data.climate,
+    climate: profile?.climate ?? data.climate,
     danger: data.danger,
     access: data.access,
 
@@ -314,6 +339,26 @@ export function locationJsonToSections(data: LocationJson): Section[] {
 
     pointsOfInterest: renderValue(data.pointsOfInterest as any) as any,
     activeFactions: renderValue(data.activeFactions as any) as any,
+
+    officialName: profile?.officialName ?? undefined,
+    nickname: profile?.nickname ?? undefined,
+    demonym: profile?.demonym ?? undefined,
+    capital: profile?.capital ?? undefined,
+    founder: profile?.founder ?? undefined,
+    ruler: profile?.ruler ?? undefined,
+    foundation: profile?.foundation ?? undefined,
+    motto: profile?.motto ?? undefined,
+    currency: renderStringList(profile?.currency),
+    officialLanguages: renderStringList(profile?.officialLanguages),
+    majorityReligion: profile?.majorityReligion ?? undefined,
+    geography: profile?.geography ?? undefined,
+    culturalIdentity: renderStringList(profile?.culturalIdentity),
+    characteristicPower: profile?.characteristicPower ?? undefined,
+    currentSituation: profile?.currentSituation ?? undefined,
+    relatedFactions: factionLinks,
+    additionalIdentityFacts,
+    additionalGovernmentFacts,
+    additionalTerritoryFacts,
   };
 
   return makeLocationSections(input);

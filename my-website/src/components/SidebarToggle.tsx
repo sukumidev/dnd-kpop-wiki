@@ -58,7 +58,7 @@ export default function SidebarToggle() {
   return (
     <button
       id="hally-sidebar-toggle-btn"
-      onClick={() => setOpen(v => !v)}
+      onClick={() => setOpen(value => !value)}
       aria-label={open ? 'Cerrar sidebar' : 'Abrir sidebar'}
       aria-pressed={open}
       style={{
@@ -66,19 +66,19 @@ export default function SidebarToggle() {
         left: 12,
         bottom: 12,
         zIndex: 9999,
-        borderRadius: 999,
         width: 44,
         height: 44,
         display: 'grid',
         placeItems: 'center',
-        border: '1px solid rgba(255,255,255,.12)',
-        background: 'rgba(20,20,20,.85)',
-        color: 'white',
+        border: '1px solid var(--h-border)',
+        borderRadius: 'var(--h-radius-ui)',
+        background: 'color-mix(in srgb, var(--h-bg-soft) 92%, transparent)',
+        color: 'var(--h-text)',
         fontWeight: 900,
         backdropFilter: 'blur(8px)',
         cursor: 'pointer',
       }}>
-      {open ? 'x' : '☰'}
+      {open ? '\u00d7' : '\u2630'}
     </button>
   );
 }

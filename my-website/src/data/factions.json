@@ -19,14 +19,14 @@
     ],
     "leaderCharacterId": "pc-minjae",
     "allyFactionIds": [
-      "los-diecisiete-heroes",
-      "hijos-de-la-noche",
-      "neo-culturales-tecnologicos",
-      "lobos-perdidos"
+      "svt",
+      "enhypen",
+      "nct",
+      "skz"
     ],
     "enemyFactionIds": [
       "clan-del-sol-ardiente",
-      "marea-negra"
+      "ateez"
     ],
     "allyCharacterIds": [],
     "enemyCharacterIds": [],
@@ -40,23 +40,286 @@
     "imageSrc": "/img/factions/panes-del-destino.jpeg",
     "imageCaption": "Portadores de la Baraja del Destino",
     "accent": "gold",
-    "sortOrder": 1,
+    "sortOrder": 0,
     "leaderId": "pc-minjae",
     "memberIds": [
       "pc-minjae",
       "pc-kiyori",
       "pc-imugi",
       "pc-soobin"
-    ]
+    ],
+    "realm": "no-aplica"
   },
-  "los-diecisiete-heroes": {
-    "id": "los-diecisiete-heroes",
+  "ciudadanos-de-hyberia": {
+    "id": "ciudadanos-de-hyberia",
+    "title": "Ciudadanos de Hyberia",
+    "type": "other",
+    "status": "active",
+    "realm": "hyberia",
+    "visibility": "public",
+    "sortOrder": 1
+  },
+  "ciudadanos-de-jeyperia": {
+    "id": "ciudadanos-de-jeyperia",
+    "title": "Ciudadanos de Jeyperia",
+    "type": "other",
+    "status": "active",
+    "realm": "jeyperia",
+    "visibility": "public",
+    "sortOrder": 2
+  },
+  "ciudadanos-de-sylmorien": {
+    "id": "ciudadanos-de-sylmorien",
+    "title": "Ciudadanos de Sylmorien",
+    "type": "other",
+    "status": "active",
+    "realm": "sylmorien",
+    "visibility": "public",
+    "sortOrder": 3
+  },
+  "clan-del-sol-ardiente": {
+    "id": "clan-del-sol-ardiente",
+    "title": "Clan del Sol Ardiente",
+    "subtitle": null,
+    "type": "enemy",
+    "status": "active",
+    "visibility": "public",
+    "summary": null,
+    "description": null,
+    "regionId": null,
+    "locationIds": [],
+    "allyFactionIds": [],
+    "enemyFactionIds": [
+      "panes-del-destino",
+      "nct",
+      "svt"
+    ],
+    "tags": [
+      "sol-ardiente",
+      "villanos",
+      "radiancia-disenada"
+    ],
+    "imageSrc": null,
+    "accent": "red",
+    "sortOrder": 4,
+    "reputation": null,
+    "goal": null,
+    "methods": null,
+    "baseLocationId": null,
+    "baseLabel": null,
+    "leaderCharacterId": null,
+    "allyCharacterIds": [],
+    "enemyCharacterIds": [],
+    "subunits": [],
+    "imageCaption": null
+  },
+  "dragonborns-del-clan-del-caos": {
+    "id": "dragonborns-del-clan-del-caos",
+    "title": "Dragonborns del Clan del Caos",
+    "type": "clan",
+    "status": "active",
+    "visibility": "public",
+    "sortOrder": 5
+  },
+  "adp": {
+    "id": "adp",
+    "title": "El Proyecto de Héroes de Todo el Día",
+    "type": "organization",
+    "status": "active",
+    "subtitle": "Allday Project",
+    "visibility": "public",
+    "sortOrder": 6,
+    "memberIds": [
+      "adp-annie",
+      "adp-tarzzan",
+      "adp-bailey",
+      "adp-woochan",
+      "adp-youngseo"
+    ],
+    "imageSrc": "/img/factions/adp.jpg",
+    "realm": "no-aplica"
+  },
+  "dragonborns-del-clan-del-orden": {
+    "id": "dragonborns-del-clan-del-orden",
+    "title": "Dragonborns del Clan del Orden",
+    "type": "clan",
+    "status": "active",
+    "visibility": "public",
+    "sortOrder": 7
+  },
+  "kiof": {
+    "id": "kiof",
+    "title": "El Clan del Beso de la Vida",
+    "type": "criminal",
+    "status": "active",
+    "visibility": "public",
+    "sortOrder": 8
+  },
+  "sj": {
+    "id": "sj",
+    "title": "El Super Consejo de Magia de Sylmorien",
+    "type": "organization",
+    "status": "active",
+    "subtitle": "SUPER JUNIOR",
+    "realm": "sylmorien",
+    "visibility": "public",
+    "sortOrder": 9,
+    "imageSrc": "/img/factions/sj.webp"
+  },
+  "ncit": {
+    "id": "ncit",
+    "title": "Instituto Neo Cultural Tecnológico",
+    "type": "academy",
+    "status": "active",
+    "subtitle": "Personal y Estudiantes de la Neo Academia",
+    "realm": "sylmorien",
+    "visibility": "public",
+    "sortOrder": 10
+  },
+  "viviz": {
+    "id": "viviz",
+    "title": "Las Clérigas Vívidas",
+    "type": "organization",
+    "status": "active",
+    "realm": "hyberia",
+    "visibility": "public",
+    "sortOrder": 11,
+    "imageSrc": "/img/factions/viviz.jpg"
+  },
+  "njz": {
+    "id": "njz",
+    "title": "Las Guardianas del Bosque Perdido",
+    "type": "clan",
+    "status": "active",
+    "subtitle": "NewJeans",
+    "realm": "hyberia",
+    "visibility": "public",
+    "sortOrder": 12
+  },
+  "katseye": {
+    "id": "katseye",
+    "title": "Las Hijas del Ojo de Gato",
+    "type": "criminal",
+    "status": "active",
+    "subtitle": "KATSEYE",
+    "realm": "hyberia",
+    "visibility": "public",
+    "sortOrder": 13,
+    "imageSrc": "/img/factions/katseye.jpg"
+  },
+  "xg": {
+    "id": "xg",
+    "title": "Las Lobas Extraordinarias",
+    "type": "clan",
+    "status": "active",
+    "realm": "hotou",
+    "visibility": "public",
+    "sortOrder": 14,
+    "imageSrc": "/img/factions/xg.jpg"
+  },
+  "twice": {
+    "id": "twice",
+    "title": "Las Princesas Guerreras",
+    "type": "organization",
+    "status": "active",
+    "subtitle": "TWICE",
+    "realm": "jeyperia",
+    "visibility": "public",
+    "sortOrder": 15,
+    "imageSrc": "/img/factions/twice.jpg"
+  },
+  "lsf": {
+    "id": "lsf",
+    "title": "Las Princesas Serafinas",
+    "type": "organization",
+    "status": "active",
+    "subtitle": "LE SSERAFIM",
+    "realm": "hyberia",
+    "visibility": "public",
+    "sortOrder": 16,
+    "imageSrc": "/img/factions/lsf.png"
+  },
+  "andteam": {
+    "id": "andteam",
+    "title": "Los Acólitos de la Luna Nueva",
+    "type": "organization",
+    "status": "active",
+    "subtitle": "&TEAM",
+    "realm": "hyberia",
+    "visibility": "public",
+    "sortOrder": 17,
+    "imageSrc": "/img/factions/andteam.jpg"
+  },
+  "psf": {
+    "id": "psf",
+    "title": "Los Bandidos de la Fiebre Psiquica",
+    "type": "criminal",
+    "status": "active",
+    "realm": "hotou",
+    "visibility": "public",
+    "sortOrder": 18
+  },
+  "bts": {
+    "id": "bts",
+    "title": "Los Caballeros Bangtan",
+    "type": "organization",
+    "status": "active",
+    "subtitle": "BTS",
+    "realm": "hyberia",
+    "visibility": "public",
+    "sortOrder": 19
+  },
+  "stbv": {
+    "id": "stbv",
+    "title": "Los Caballeros Santos pero Bravos",
+    "type": "military",
+    "status": "active",
+    "subtitle": "SANTOS BRAVOS",
+    "realm": "hyberia",
+    "visibility": "public",
+    "sortOrder": 20,
+    "imageSrc": "/img/factions/stbv.jpg"
+  },
+  "lngshot": {
+    "id": "lngshot",
+    "title": "Los Cazadores del Tiro Largo",
+    "type": "criminal",
+    "status": "active",
+    "visibility": "public",
+    "sortOrder": 21,
+    "imageSrc": "/img/factions/lngshot.jpg",
+    "realm": "no-aplica"
+  },
+  "bnd": {
+    "id": "bnd",
+    "title": "Los Chicos de la Puerta de al Lado",
+    "type": "guild",
+    "status": "active",
+    "subtitle": "BOYNEXTDOOR",
+    "realm": "hyberia",
+    "visibility": "public",
+    "sortOrder": 22,
+    "imageSrc": "/img/factions/bnd.webp"
+  },
+  "cortis": {
+    "id": "cortis",
+    "title": "Los Cortaditos del Casino",
+    "type": "criminal",
+    "status": "active",
+    "subtitle": "CORTIS",
+    "realm": "hyberia",
+    "visibility": "public",
+    "sortOrder": 23,
+    "imageSrc": "/img/factions/cortis.jpg"
+  },
+  "svt": {
+    "id": "svt",
     "title": "Los Diecisiete Héroes del Gremio",
-    "subtitle": "Lo Fundadores del Gremio de Aventureros de Hyberia",
+    "subtitle": "SEVENTEEN",
     "type": "guild",
     "status": "active",
     "visibility": "public",
-    "summary": "Proteger rutas, resolver crisis locales y mantener el balance de poder en Hyberia.",
+    "summary": "Trece campesinos abandonados por la corona de Hyberia que decidieron convertirse en los protectores que su pueblo nunca recibió, fundando el primer gremio abierto a cualquiera que quiera ayudar.",
     "description": null,
     "reputation": "Respetados (y temidos cuando toca)",
     "goal": "Proteger rutas, resolver crisis locales y mantener el balance de poder en Hyberia.",
@@ -138,11 +401,11 @@
       "hyberia",
       "seventeen"
     ],
-    "imageSrc": "/img/factions/gremio-de-aventureros.png",
+    "imageSrc": "/img/factions/svt.jpg",
     "imageCaption": "Los Trece Soñadores",
     "accent": "green",
-    "sortOrder": 10,
-    "realm": "Hyberia",
+    "sortOrder": 24,
+    "realm": "hyberia",
     "leaderId": "svt-scoups",
     "memberIds": [
       "svt-scoups",
@@ -160,10 +423,156 @@
       "svt-dino"
     ]
   },
-  "lobos-perdidos": {
-    "id": "lobos-perdidos",
+  "astro": {
+    "id": "astro",
+    "title": "Los Dioses Astronómicos",
+    "type": "religion",
+    "status": "active",
+    "realm": "fantagio",
+    "visibility": "public",
+    "sortOrder": 25
+  },
+  "shinee": {
+    "id": "shinee",
+    "title": "Los Dioses Resplandecientes",
+    "type": "religion",
+    "status": "active",
+    "subtitle": "SHINee",
+    "realm": "sylmorien",
+    "visibility": "public",
+    "sortOrder": 26
+  },
+  "got7": {
+    "id": "got7",
+    "title": "Los Ex Príncipes Herederos de Jeyperia",
+    "type": "organization",
+    "status": "active",
+    "subtitle": "GOT7",
+    "realm": "jeyperia",
+    "visibility": "public",
+    "sortOrder": 27,
+    "imageSrc": "/img/factions/got7.jpg"
+  },
+  "os-guild": {
+    "id": "os-guild",
+    "title": "Los Forasteros del Gremio de Aventureros",
+    "type": "guild",
+    "status": "active",
+    "visibility": "public",
+    "sortOrder": 28
+  },
+  "riize": {
+    "id": "riize",
+    "title": "Los Guerreros Ascendentes",
+    "subtitle": "(RIIZE)",
+    "type": "military",
+    "status": "active",
+    "visibility": "public",
+    "summary": "Los Guerreros Ascendentes de Sylmorien son una facción de jóvenes combatientes arcanos surgidos de la órbita de la Neo Academia. Para el pueblo representan esperanza, renovación y orgullo nacional; para la Corona, una imagen perfecta de disciplina y futuro; y para los aventureros más atentos, una advertencia de lo peligroso que puede ser cuando Sylmorien convierte personas buenas en propaganda.",
+    "description": "Los Guerreros Ascendentes son una generación prodigio de Sylmorien: jóvenes, carismáticos, disciplinados y entrenados para pelear en la frontera entre el combate marcial y la magia práctica. No son magos académicos tradicionales ni soldados comunes; son combatientes formados para moverse, proteger, resistir y actuar cuando la teoría ya no basta.\n\nShotaro y Sungchan fueron compañeros de Kiyori en la Neo Academia y parte del círculo de aprendices de Mark. Aunque no destacaban por seguir el camino arcano más académico, sí demostraron una habilidad excepcional con las armas, el instinto de combate y la coordinación táctica. Con el tiempo, Sylmorien los reclutó como parte de un nuevo símbolo nacional: jóvenes héroes capaces de inspirar al pueblo y defender el reino.\n\nSu imagen pública es brillante, casi impecable. Aparecen en ceremonias, misiones visibles, panfletos mágicos y relatos heroicos. Sin embargo, bajo esa reputación existe una tensión constante: los Ascendentes no quieren ser solo herramientas de la Corona ni pósters vivientes de la Neo Academia. Son leales a Sylmorien, pero su verdadera lealtad parece estar primero entre ellos.",
+    "regionId": null,
+    "locationIds": [],
+    "allyFactionIds": [
+      "nct"
+    ],
+    "enemyFactionIds": [],
+    "tags": [],
+    "imageSrc": "/img/factions/riize.jpg",
+    "accent": null,
+    "sortOrder": 29,
+    "reputation": null,
+    "goal": "Proteger Sylmorien y demostrar que una nueva generación puede defender el reino sin perder su humanidad, incluso cuando la Corona y la Neo Academia intentan convertirlos en símbolos controlables.",
+    "methods": "Entrenamiento marcial intensivo, magia práctica aplicada al combate, trabajo en equipo, misiones públicas de alto impacto, operaciones de rescate, defensa de rutas importantes y presencia simbólica en eventos oficiales. Su fuerza principal no está solo en el poder individual, sino en su coordinación: pelean como una unidad que entiende el ritmo de los demás casi sin hablar.",
+    "baseLocationId": null,
+    "baseLabel": null,
+    "leaderCharacterId": null,
+    "allyCharacterIds": [],
+    "enemyCharacterIds": [],
+    "subunits": [],
+    "imageCaption": null,
+    "realm": "sylmorien"
+  },
+  "heraldos-del-crepusculo": {
+    "id": "heraldos-del-crepusculo",
+    "title": "Los Heraldos del Crepúsculo",
+    "subtitle": null,
+    "type": "order",
+    "status": "archived",
+    "visibility": "public",
+    "summary": null,
+    "description": null,
+    "regionId": "hyberia",
+    "locationIds": [
+      "borasek"
+    ],
+    "allyFactionIds": [],
+    "enemyFactionIds": [
+      "clan-del-sol-ardiente"
+    ],
+    "tags": [
+      "vampiros",
+      "crepusculo",
+      "hyberia"
+    ],
+    "imageSrc": null,
+    "accent": "purple",
+    "sortOrder": 30,
+    "reputation": null,
+    "goal": null,
+    "methods": null,
+    "baseLocationId": "borasek",
+    "baseLabel": null,
+    "leaderCharacterId": null,
+    "allyCharacterIds": [],
+    "enemyCharacterIds": [],
+    "subunits": [],
+    "imageCaption": null
+  },
+  "enhypen": {
+    "id": "enhypen",
+    "title": "Los Hijos de la Noche",
+    "subtitle": "ENHYPEN",
+    "type": "order",
+    "status": "active",
+    "visibility": "public",
+    "summary": "Cumplir el pacto con Moonbin llevando la noche a donde vayan, invocar a los Nuevos Dioses y despertar al Rey Demonio Faker para ‘restaurar’ Hyberia bajo una oscuridad controlada.",
+    "description": null,
+    "reputation": "Temidos, perseguidos y malditamente eficaces",
+    "goal": "Cumplir el pacto con Moonbin llevando la noche a donde vayan, invocar a los Nuevos Dioses y despertar al Rey Demonio Faker para ‘restaurar’ Hyberia bajo una oscuridad controlada.",
+    "methods": "Pacto lunar • disciplina • sacrificios • cacería • manipulación de Cartas del Destino • rituales e infiltración",
+    "regionId": "hyberia",
+    "baseLocationId": "tierra-ilusoria",
+    "baseLabel": "Tierra Ilusoria",
+    "locationIds": [
+      "tierra-ilusoria"
+    ],
+    "leaderCharacterId": "enha-jungwon",
+    "allyFactionIds": [
+      "ateez",
+      "panes-del-destino"
+    ],
+    "enemyFactionIds": [
+      "clan-del-sol-ardiente"
+    ],
+    "allyCharacterIds": [],
+    "enemyCharacterIds": [],
+    "subunits": [],
+    "tags": [
+      "hijos-de-la-noche",
+      "hyberia",
+      "moonbin",
+      "vampiros"
+    ],
+    "imageSrc": "/img/factions/enhypen.png",
+    "imageCaption": "El Pacto de la Oscuridad",
+    "accent": "purple",
+    "sortOrder": 31,
+    "realm": "hyberia"
+  },
+  "skz": {
+    "id": "skz",
     "title": "Los Lobos Perdidos",
-    "subtitle": "La Manada de la Luna Nueva",
+    "subtitle": "Stray Kids",
     "type": "pack",
     "status": "active",
     "visibility": "public",
@@ -181,9 +590,9 @@
     "leaderCharacterId": "skz-bangchan",
     "allyFactionIds": [
       "panes-del-destino",
-      "los-diecisiete-heroes",
-      "neo-culturales-tecnologicos",
-      "hijos-de-la-noche"
+      "svt",
+      "nct",
+      "enhypen"
     ],
     "enemyFactionIds": [
       "clan-del-sol-ardiente"
@@ -254,86 +663,35 @@
     "imageSrc": "/img/factions/lobos-perdidos.jpeg",
     "imageCaption": "Los que aún corren bajo la luna rota",
     "accent": "gray",
-    "sortOrder": 20
+    "sortOrder": 32,
+    "realm": "jeyperia",
+    "leaderId": "skz-bangchan",
+    "memberIds": [
+      "skz-leeknow",
+      "skz-changbin",
+      "skz-hyunjin",
+      "skz-han",
+      "skz-felix",
+      "skz-seungmin",
+      "skz-jeongin"
+    ],
+    "exMemberIds": [
+      "skz-woojin"
+    ]
   },
-  "hijos-de-la-noche": {
-    "id": "hijos-de-la-noche",
-    "title": "Hijos de la Noche",
-    "subtitle": "La Orden que lleva la noche consigo",
-    "type": "order",
+  "monsta-x": {
+    "id": "monsta-x",
+    "title": "Los Monstruos X",
+    "type": "clan",
     "status": "active",
+    "subtitle": "MONSTA X",
+    "realm": "isla-estelar",
     "visibility": "public",
-    "summary": "Cumplir el pacto con Moonbin llevando la noche a donde vayan, invocar a los Nuevos Dioses y despertar al Rey Demonio Faker para ‘restaurar’ Hyberia bajo una oscuridad controlada.",
-    "description": null,
-    "reputation": "Temidos, perseguidos y malditamente eficaces",
-    "goal": "Cumplir el pacto con Moonbin llevando la noche a donde vayan, invocar a los Nuevos Dioses y despertar al Rey Demonio Faker para ‘restaurar’ Hyberia bajo una oscuridad controlada.",
-    "methods": "Pacto lunar • disciplina • sacrificios • cacería • manipulación de Cartas del Destino • rituales e infiltración",
-    "regionId": "hyberia",
-    "baseLocationId": "tierra-ilusoria",
-    "baseLabel": "Tierra Ilusoria",
-    "locationIds": [
-      "tierra-ilusoria"
-    ],
-    "leaderCharacterId": "enha-jungwon",
-    "allyFactionIds": [
-      "marea-negra",
-      "panes-del-destino"
-    ],
-    "enemyFactionIds": [
-      "clan-del-sol-ardiente"
-    ],
-    "allyCharacterIds": [],
-    "enemyCharacterIds": [],
-    "subunits": [],
-    "tags": [
-      "hijos-de-la-noche",
-      "hyberia",
-      "moonbin",
-      "vampiros"
-    ],
-    "imageSrc": "/img/factions/hijos-de-la-noche.png",
-    "imageCaption": "El Pacto de la Oscuridad",
-    "accent": "purple",
-    "sortOrder": 30
+    "sortOrder": 33,
+    "imageSrc": "/img/factions/monsta-x.jpg"
   },
-  "heraldos-del-crepusculo": {
-    "id": "heraldos-del-crepusculo",
-    "title": "Los Heraldos del Crepúsculo",
-    "subtitle": null,
-    "type": "order",
-    "status": "hidden",
-    "visibility": "public",
-    "summary": null,
-    "description": null,
-    "regionId": "hyberia",
-    "locationIds": [
-      "borasek"
-    ],
-    "allyFactionIds": [],
-    "enemyFactionIds": [
-      "clan-del-sol-ardiente"
-    ],
-    "tags": [
-      "vampiros",
-      "crepusculo",
-      "hyberia"
-    ],
-    "imageSrc": null,
-    "accent": "purple",
-    "sortOrder": 31,
-    "reputation": null,
-    "goal": null,
-    "methods": null,
-    "baseLocationId": "borasek",
-    "baseLabel": null,
-    "leaderCharacterId": null,
-    "allyCharacterIds": [],
-    "enemyCharacterIds": [],
-    "subunits": [],
-    "imageCaption": null
-  },
-  "neo-culturales-tecnologicos": {
-    "id": "neo-culturales-tecnologicos",
+  "nct": {
+    "id": "nct",
     "title": "Los Neo Culturales Tecnológicos",
     "subtitle": "Neo Academia",
     "type": "academy",
@@ -358,7 +716,7 @@
     ],
     "imageSrc": "/img/factions/nct.png",
     "accent": "cyan",
-    "sortOrder": 40,
+    "sortOrder": 34,
     "reputation": null,
     "goal": null,
     "methods": null,
@@ -368,77 +726,22 @@
     "allyCharacterIds": [],
     "enemyCharacterIds": [],
     "subunits": [],
-    "imageCaption": null
-  },
-  "clan-del-sol-ardiente": {
-    "id": "clan-del-sol-ardiente",
-    "title": "Clan del Sol Ardiente",
-    "subtitle": null,
-    "type": "enemy",
-    "status": "active",
-    "visibility": "public",
-    "summary": null,
-    "description": null,
-    "regionId": null,
-    "locationIds": [],
-    "allyFactionIds": [],
-    "enemyFactionIds": [
-      "panes-del-destino",
-      "neo-culturales-tecnologicos",
-      "los-diecisiete-heroes"
-    ],
-    "tags": [
-      "sol-ardiente",
-      "villanos",
-      "radiancia-disenada"
-    ],
-    "imageSrc": null,
-    "accent": "red",
-    "sortOrder": 50,
-    "reputation": null,
-    "goal": null,
-    "methods": null,
-    "baseLocationId": null,
-    "baseLabel": null,
-    "leaderCharacterId": null,
-    "allyCharacterIds": [],
-    "enemyCharacterIds": [],
-    "subunits": [],
-    "imageCaption": null
-  },
-  "guerreros-ascendentes": {
-    "id": "guerreros-ascendentes",
-    "title": "Los Guerreros Ascendentes",
-    "subtitle": "(RIIZE)",
-    "type": "military",
-    "status": "active",
-    "visibility": "public",
-    "summary": "Los Guerreros Ascendentes de Sylmorien son una facción de jóvenes combatientes arcanos surgidos de la órbita de la Neo Academia. Para el pueblo representan esperanza, renovación y orgullo nacional; para la Corona, una imagen perfecta de disciplina y futuro; y para los aventureros más atentos, una advertencia de lo peligroso que puede ser cuando Sylmorien convierte personas buenas en propaganda.",
-    "description": "Los Guerreros Ascendentes son una generación prodigio de Sylmorien: jóvenes, carismáticos, disciplinados y entrenados para pelear en la frontera entre el combate marcial y la magia práctica. No son magos académicos tradicionales ni soldados comunes; son combatientes formados para moverse, proteger, resistir y actuar cuando la teoría ya no basta.\n\nShotaro y Sungchan fueron compañeros de Kiyori en la Neo Academia y parte del círculo de aprendices de Mark. Aunque no destacaban por seguir el camino arcano más académico, sí demostraron una habilidad excepcional con las armas, el instinto de combate y la coordinación táctica. Con el tiempo, Sylmorien los reclutó como parte de un nuevo símbolo nacional: jóvenes héroes capaces de inspirar al pueblo y defender el reino.\n\nSu imagen pública es brillante, casi impecable. Aparecen en ceremonias, misiones visibles, panfletos mágicos y relatos heroicos. Sin embargo, bajo esa reputación existe una tensión constante: los Ascendentes no quieren ser solo herramientas de la Corona ni pósters vivientes de la Neo Academia. Son leales a Sylmorien, pero su verdadera lealtad parece estar primero entre ellos.",
-    "regionId": null,
-    "locationIds": [],
-    "allyFactionIds": [
-      "neo-culturales-tecnologicos"
-    ],
-    "enemyFactionIds": [],
-    "tags": [],
-    "imageSrc": "/img/factions/riize.png",
-    "accent": null,
-    "sortOrder": 60,
-    "reputation": null,
-    "goal": "Proteger Sylmorien y demostrar que una nueva generación puede defender el reino sin perder su humanidad, incluso cuando la Corona y la Neo Academia intentan convertirlos en símbolos controlables.",
-    "methods": "Entrenamiento marcial intensivo, magia práctica aplicada al combate, trabajo en equipo, misiones públicas de alto impacto, operaciones de rescate, defensa de rutas importantes y presencia simbólica en eventos oficiales. Su fuerza principal no está solo en el poder individual, sino en su coordinación: pelean como una unidad que entiende el ritmo de los demás casi sin hablar.",
-    "baseLocationId": null,
-    "baseLabel": null,
-    "leaderCharacterId": null,
-    "allyCharacterIds": [],
-    "enemyCharacterIds": [],
-    "subunits": [],
     "imageCaption": null,
-    "realm": "Sylmorien"
+    "realm": "sylmorien"
   },
-  "marea-negra": {
-    "id": "marea-negra",
+  "p1h": {
+    "id": "p1h",
+    "title": "Los Pioneros de la Armonía",
+    "type": "organization",
+    "status": "active",
+    "subtitle": "P1Harmony",
+    "realm": "fincaria",
+    "visibility": "public",
+    "sortOrder": 35,
+    "imageSrc": "/img/factions/p1h.jpg"
+  },
+  "ateez": {
+    "id": "ateez",
     "title": "Los Piratas de la Marea Negra",
     "subtitle": null,
     "type": "pirates",
@@ -454,9 +757,9 @@
       "piratas",
       "marea-negra"
     ],
-    "imageSrc": null,
+    "imageSrc": "/img/factions/ateez.jpg",
     "accent": "black",
-    "sortOrder": 70,
+    "sortOrder": 36,
     "reputation": null,
     "goal": null,
     "methods": null,
@@ -466,6 +769,49 @@
     "allyCharacterIds": [],
     "enemyCharacterIds": [],
     "subunits": [],
-    "imageCaption": null
+    "imageCaption": null,
+    "realm": "sin-reino"
+  },
+  "txt": {
+    "id": "txt",
+    "title": "Los Soñadores del Mañana",
+    "type": "clan",
+    "status": "active",
+    "subtitle": "TXT",
+    "realm": "hyberia",
+    "visibility": "public",
+    "sortOrder": 37,
+    "imageSrc": "/img/factions/txt.jpg"
+  },
+  "exo": {
+    "id": "exo",
+    "title": "Los EXO Caballeros",
+    "type": "military",
+    "status": "active",
+    "subtitle": "EXO",
+    "realm": "sylmorien",
+    "visibility": "public",
+    "sortOrder": 38,
+    "imageSrc": "/img/factions/exo.webp"
+  },
+  "tvxq": {
+    "id": "tvxq",
+    "title": "Los Dioses Nacientes del Oriente",
+    "type": "religion",
+    "status": "active",
+    "subtitle": "TVXQ",
+    "realm": "sylmorien",
+    "visibility": "public",
+    "sortOrder": 39,
+    "imageSrc": "/img/factions/tvxq.jpg"
+  },
+  "ciudadanos-de-hotou": {
+    "id": "ciudadanos-de-hotou",
+    "title": "Ciudadanos de Hotou",
+    "type": "other",
+    "status": "active",
+    "realm": "hotou",
+    "visibility": "public",
+    "sortOrder": 40
   }
 }

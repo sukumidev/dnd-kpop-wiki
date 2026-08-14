@@ -7,26 +7,29 @@
     "group": "party",
     "role": "protagonist",
     "race": "Half-Elf",
-    "factionId": "panes-del-destino",
-    "dynamic": "alpha",
-    "tags": [],
-    "imageSrc": "/img/characters/party/minjae-classic.jpeg",
-    "occupation": [
-      "Líder de los Panes del Destino",
-      "(Ex) Capitán de la Guardia Real de Sylmorien"
-    ],
-    "dateOfBirth": "1996-11-11",
-    "zodiac": "Escorpio ♏",
-    "mbti": "ENFJ",
-    "orientation": "Pan",
-    "romanticSituation": "En una relación con Joshua",
-    "polyamoryStatus": "yes",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Aldea Serin, Sylmorien",
       "locationId": "serin",
       "docPath": "world/locations/serin"
     },
+    "factionId": "panes-del-destino",
+    "dynamic": "alpha",
+    "orientation": "pansexual",
+    "romanticSituation": "En una relación con Joshua",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Líder de los Panes del Destino",
+      "(Ex) Capitán de la Guardia Real de Sylmorien"
+    ],
+    "tags": [],
+    "locationIds": [
+      "sylmorien"
+    ],
+    "imageSrc": "/img/characters/party/minjae-actual.png",
+    "dateOfBirth": "1996-11-11",
+    "zodiac": "Escorpio ♏",
+    "mbti": "ENFJ",
     "currentLocation": {
       "label": "Neocity",
       "locationId": "neocity",
@@ -127,7 +130,8 @@
         "caption": "Alter-Ego de Minjae"
       }
     ],
-    "summary": null
+    "summary": null,
+    "sortOrder": 0
   },
   "pc-kiyori": {
     "id": "pc-kiyori",
@@ -137,26 +141,26 @@
     "group": "party",
     "role": "protagonist",
     "race": "Tiefling",
-    "factionId": "panes-del-destino",
-    "dynamic": "omega",
-    "tags": [],
-    "imageSrc": "/img/characters/party/kiyori.png",
-    "occupation": [
-      "Estudiante de la Neo Academia",
-      "Primogénita del Clan Hoshizuki de Hotou"
-    ],
-    "dateOfBirth": "2000-10-05",
-    "zodiac": "Libra ♎",
-    "mbti": "INFP",
-    "orientation": "Pan",
-    "romanticSituation": "Sin compromisos",
-    "polyamoryStatus": "yes",
     "regionId": "hotou",
     "hometown": {
       "label": "Puerto Bay Alta, Hotou",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "panes-del-destino",
+    "dynamic": "omega",
+    "orientation": "Pan",
+    "romanticSituation": "Sin compromisos",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Estudiante de la Neo Academia",
+      "Primogénita del Clan Hoshizuki de Hotou"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/party/kiyori-actual.png",
+    "dateOfBirth": "2000-10-05",
+    "zodiac": "Libra ♎",
+    "mbti": "INFP",
     "currentLocation": {
       "label": "Neocity",
       "locationId": "neocity",
@@ -287,7 +291,8 @@
         "caption": "Alter-Ego de Kiyori"
       }
     ],
-    "summary": null
+    "summary": null,
+    "sortOrder": 1
   },
   "pc-imugi": {
     "id": "pc-imugi",
@@ -297,25 +302,25 @@
     "group": "party",
     "role": "protagonist",
     "race": "Elf",
-    "factionId": "panes-del-destino",
-    "dynamic": "omega",
-    "tags": [],
-    "imageSrc": "/img/characters/party/imugi.jpeg",
-    "occupation": [
-      "Heredero del Clan Fenghuang"
-    ],
-    "dateOfBirth": "1582-11-09",
-    "zodiac": "Escorpio ♏",
-    "mbti": "ESFP",
-    "orientation": "Pan",
-    "romanticSituation": "Es complicado",
-    "polyamoryStatus": "yes",
     "regionId": "yggdrasil",
     "hometown": {
       "label": "?",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "panes-del-destino",
+    "dynamic": "omega",
+    "orientation": "Pan",
+    "romanticSituation": "Es complicado",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Heredero del Clan Fenghuang"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/party/imugi-actual.png",
+    "dateOfBirth": "1582-11-09",
+    "zodiac": "Escorpio ♏",
+    "mbti": "ESFP",
     "currentLocation": {
       "label": "Neocity",
       "locationId": "neocity",
@@ -384,7 +389,8 @@
         "caption": "Imugi Rey de Treboles"
       }
     ],
-    "summary": null
+    "summary": null,
+    "sortOrder": 2
   },
   "pc-soobin": {
     "id": "pc-soobin",
@@ -394,26 +400,26 @@
     "group": "party",
     "role": "protagonist",
     "race": "Elf",
-    "factionId": "panes-del-destino",
-    "dynamic": "omega",
-    "tags": [],
-    "imageSrc": "/img/characters/party/soobin.jpeg",
-    "occupation": [
-      "Monje del Templo Astronómico",
-      "Aprendiz Becada de la Neo Academia"
-    ],
-    "dateOfBirth": "2001-08-08",
-    "zodiac": "Leo ♌",
-    "mbti": "ENFP",
-    "orientation": "Pan",
-    "romanticSituation": "Es complicado",
-    "polyamoryStatus": "yes",
     "regionId": "jeyperia",
     "hometown": {
       "label": "Villa Jangmi, Jeyperia",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "panes-del-destino",
+    "dynamic": "omega",
+    "orientation": "Pan",
+    "romanticSituation": "Es complicado",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Monje del Templo Astronómico",
+      "Aprendiz Becada de la Neo Academia"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/party/soobin-actual.png",
+    "dateOfBirth": "2001-08-08",
+    "zodiac": "Leo ♌",
+    "mbti": "ENFP",
     "currentLocation": {
       "label": "Neocity",
       "locationId": "neocity",
@@ -487,36 +493,37 @@
         "caption": "Soobin Reina de Espadas"
       }
     ],
-    "summary": null
+    "summary": null,
+    "sortOrder": 3
   },
   "svt-scoups": {
     "id": "svt-scoups",
     "title": "S.Coups (Choi Seungcheol)",
     "subtitle": "El Gran Maestro del Gremio de Aventureros",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Human",
-    "factionId": "los-diecisiete-heroes",
-    "dynamic": "alpha",
-    "tags": [],
-    "imageSrc": "/img/characters/svt/scoups.png",
-    "occupation": [
-      "Líder y Representante Legal del Gremio de Aventureros",
-      "Líder de la Unidad de Defensa y Vanguardia"
-    ],
-    "dateOfBirth": "1995-08-08",
-    "zodiac": "Leo ♌",
-    "mbti": "ESTP",
-    "orientation": "Bi",
-    "romanticSituation": "En una relación abierta con Jeonghan",
-    "polyamoryStatus": "yes",
     "regionId": "hyberia",
     "hometown": {
       "label": "Gudae, Hyberia",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "svt",
+    "dynamic": "alpha",
+    "orientation": "Bi",
+    "romanticSituation": "En una relación abierta con Jeonghan",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Líder y Representante Legal del Gremio de Aventureros",
+      "Líder de la Unidad de Defensa y Vanguardia"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/svt/scoups.png",
+    "dateOfBirth": "1995-08-08",
+    "zodiac": "Leo ♌",
+    "mbti": "ESTP",
     "currentLocation": {
       "label": "Sector 17",
       "locationId": null,
@@ -619,36 +626,37 @@
         "caption": "S.Coups durante el Solsticio de Invierno"
       }
     ],
-    "summary": null
+    "summary": null,
+    "sortOrder": 4
   },
   "svt-jeonghan": {
     "id": "svt-jeonghan",
     "title": "Yoon Jeonghan",
     "subtitle": "El Estratega de la Eternidad",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Human",
-    "factionId": "los-diecisiete-heroes",
-    "dynamic": "alpha",
-    "tags": [],
-    "imageSrc": "/img/characters/svt/jeonghan.png",
-    "occupation": [
-      "Sub Líder y Jefe de Operaciones del Gremio de Aventureros",
-      "Especialista en Relaciones con Entidades Oscuras de la Unidad de Relaciones Públicas e Impacto Social"
-    ],
-    "dateOfBirth": "1995-10-04",
-    "zodiac": "Libra ♎",
-    "mbti": "ISFJ",
-    "orientation": "Pan",
-    "romanticSituation": "En una relación abierta con S.Coups",
-    "polyamoryStatus": "yes",
     "regionId": "hyberia",
     "hometown": {
       "label": "Borasek, Hyberia",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "svt",
+    "dynamic": "alpha",
+    "orientation": "Pan",
+    "romanticSituation": "En una relación abierta con S.Coups",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Sub Líder y Jefe de Operaciones del Gremio de Aventureros",
+      "Especialista en Relaciones con Entidades Oscuras de la Unidad de Relaciones Públicas e Impacto Social"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/svt/jeonghan.png",
+    "dateOfBirth": "1995-10-04",
+    "zodiac": "Libra ♎",
+    "mbti": "ISFJ",
     "currentLocation": {
       "label": "Sector 17",
       "locationId": null,
@@ -751,36 +759,37 @@
         "caption": "Jeonghan durante el Solsticio de Invierno"
       }
     ],
-    "summary": null
+    "summary": null,
+    "sortOrder": 5
   },
   "svt-joshua": {
     "id": "svt-joshua",
     "title": "Joshua Hong",
     "subtitle": "El Portador del Milagro",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Human",
-    "factionId": "los-diecisiete-heroes",
-    "dynamic": "omega",
-    "tags": [],
-    "imageSrc": "/img/characters/svt/joshua.png",
-    "occupation": [
-      "Sub sub Líder del Gremio de Aventureros",
-      "Manager de Capital Humano del Gremio de Aventureros"
-    ],
-    "dateOfBirth": "1995-12-30",
-    "zodiac": "Capricornio ♑",
-    "mbti": "ISFJ",
-    "orientation": "Pan",
-    "romanticSituation": "Es complicado",
-    "polyamoryStatus": "yes",
     "regionId": "hyberia",
     "hometown": {
       "label": "Los Arcángeles, Tierra sin Nombre",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "svt",
+    "dynamic": "omega",
+    "orientation": "Pan",
+    "romanticSituation": "Es complicado",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Sub sub Líder del Gremio de Aventureros",
+      "Manager de Capital Humano del Gremio de Aventureros"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/svt/joshua.png",
+    "dateOfBirth": "1995-12-30",
+    "zodiac": "Capricornio ♑",
+    "mbti": "ISFJ",
     "currentLocation": {
       "label": "Sector 17",
       "locationId": null,
@@ -878,35 +887,36 @@
         "caption": "Joshua durante el Solsticio de Invierno"
       }
     ],
-    "summary": null
+    "summary": null,
+    "sortOrder": 6
   },
   "svt-jun": {
     "id": "svt-jun",
     "title": "Wen Junhui (Jun)",
     "subtitle": "El Explorador de Vanguardia",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Human",
-    "factionId": "los-diecisiete-heroes",
-    "dynamic": "beta",
-    "tags": [],
-    "imageSrc": "/img/characters/svt/jun.png",
-    "occupation": [
-      "Rastreador y Reconocimiento en la Unidad de Exploración y Expediciones"
-    ],
-    "dateOfBirth": "1996-06-10",
-    "zodiac": "Géminis ♊",
-    "mbti": "INFP",
-    "orientation": "Pan",
-    "romanticSituation": "Soltero",
-    "polyamoryStatus": "yes",
     "regionId": "hyberia",
     "hometown": {
       "label": "Zhenshen, Naxai",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "svt",
+    "dynamic": "beta",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Rastreador y Reconocimiento en la Unidad de Exploración y Expediciones"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/svt/jun.png",
+    "dateOfBirth": "1996-06-10",
+    "zodiac": "Géminis ♊",
+    "mbti": "INFP",
     "currentLocation": {
       "label": "Sector 17",
       "locationId": null,
@@ -999,36 +1009,37 @@
         "caption": "Jun durante el Solsticio de Invierno"
       }
     ],
-    "summary": null
+    "summary": null,
+    "sortOrder": 7
   },
   "svt-hoshi": {
     "id": "svt-hoshi",
     "title": "Hoshi (Kwon Soonyoung)",
     "subtitle": "El Guardián Ancestral",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Changeling",
-    "factionId": "los-diecisiete-heroes",
-    "dynamic": "omega",
-    "tags": [],
-    "imageSrc": "/img/characters/svt/hoshi.png",
-    "occupation": [
-      "Líder de la Unidad de Exploración y Expediciones",
-      "Guardian Espiritual de la Familia Hoshizuki"
-    ],
-    "dateOfBirth": "1996-06-15",
-    "zodiac": "Géminis ♊",
-    "mbti": "ENFP",
-    "orientation": "Pan",
-    "romanticSituation": "Soltero",
-    "polyamoryStatus": "yes",
     "regionId": "hyberia",
     "hometown": {
       "label": "Borasek, Hyberia",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "svt",
+    "dynamic": "omega",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Líder de la Unidad de Exploración y Expediciones",
+      "Guardian Espiritual de la Familia Hoshizuki"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/svt/hoshi.png",
+    "dateOfBirth": "1996-06-15",
+    "zodiac": "Géminis ♊",
+    "mbti": "ENFP",
     "currentLocation": {
       "label": "Sector 17",
       "locationId": null,
@@ -1121,35 +1132,36 @@
         "caption": "Hoshi durante el Solsticio de Invierno"
       }
     ],
-    "summary": null
+    "summary": null,
+    "sortOrder": 8
   },
   "svt-wonwoo": {
     "id": "svt-wonwoo",
     "title": "Jeon Wonwoo",
     "subtitle": "El Inventor Silencioso",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Human",
-    "factionId": "los-diecisiete-heroes",
-    "dynamic": "beta",
-    "tags": [],
-    "imageSrc": "/img/characters/svt/wonwoo.png",
-    "occupation": [
-      "Ingeniero de Armería Táctica en la Unidad de Defensa y Vanguardia"
-    ],
-    "dateOfBirth": "1996-07-17",
-    "zodiac": "Cáncer ♋",
-    "mbti": "INTP",
-    "orientation": "Hetero",
-    "romanticSituation": "Soltero",
-    "polyamoryStatus": "no",
     "regionId": "hyberia",
     "hometown": {
       "label": "Aldea Wongchang, Hyberia",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "svt",
+    "dynamic": "beta",
+    "orientation": "Hetero",
+    "romanticSituation": "Soltero",
+    "polyamoryStatus": "no",
+    "occupation": [
+      "Ingeniero de Armería Táctica en la Unidad de Defensa y Vanguardia"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/svt/wonwoo.png",
+    "dateOfBirth": "1996-07-17",
+    "zodiac": "Cáncer ♋",
+    "mbti": "INTP",
     "currentLocation": {
       "label": "Sector 17",
       "locationId": null,
@@ -1242,36 +1254,37 @@
         "caption": "Wonwoo durante el Solsticio de Invierno"
       }
     ],
-    "summary": null
+    "summary": null,
+    "sortOrder": 9
   },
   "svt-woozi": {
     "id": "svt-woozi",
     "title": "Woozi (Lee Jihoon)",
     "subtitle": "El Hechicero Pródigo",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Human",
-    "factionId": "los-diecisiete-heroes",
-    "dynamic": "beta",
-    "tags": [],
-    "imageSrc": "/img/characters/svt/woozi.png",
-    "occupation": [
-      "Director de Comunicación y Estratega de Imagen del Gremio de Aventureros",
-      "Líder de la Sub Unidad de Relaciones Públicas e Impacto Social"
-    ],
-    "dateOfBirth": "1996-11-22",
-    "zodiac": "Escorpio ♏",
-    "mbti": "INTJ",
-    "orientation": "Pan",
-    "romanticSituation": "Soltero",
-    "polyamoryStatus": "no",
     "regionId": "hyberia",
     "hometown": {
       "label": "Sanbu, Jeyperia",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "svt",
+    "dynamic": "beta",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "polyamoryStatus": "no",
+    "occupation": [
+      "Director de Comunicación y Estratega de Imagen del Gremio de Aventureros",
+      "Líder de la Sub Unidad de Relaciones Públicas e Impacto Social"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/svt/woozi.png",
+    "dateOfBirth": "1996-11-22",
+    "zodiac": "Escorpio ♏",
+    "mbti": "INTJ",
     "currentLocation": {
       "label": "Sector 17",
       "locationId": null,
@@ -1364,36 +1377,37 @@
         "caption": "Woozi durante el Solsticio de Invierno"
       }
     ],
-    "summary": null
+    "summary": null,
+    "sortOrder": 10
   },
   "svt-dk": {
     "id": "svt-dk",
     "title": "Dokyeom (Lee Seokmin)",
     "subtitle": "El Sanador de las Manitas Mágicas",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Human",
-    "factionId": "los-diecisiete-heroes",
-    "dynamic": "omega",
-    "tags": [],
-    "imageSrc": "/img/characters/svt/dk.png",
-    "occupation": [
-      "Sanador Oficial del Gremio de Aventureros",
-      "Enlace con Templos en la Unidad de Relaciones Públicas e Impacto Social"
-    ],
-    "dateOfBirth": "1997-02-18",
-    "zodiac": "Acuario ♒",
-    "mbti": "ESFP",
-    "orientation": "Pan",
-    "romanticSituation": "Soltero, Le gusta Soobin",
-    "polyamoryStatus": "yes",
     "regionId": "hyberia",
     "hometown": {
       "label": "Borasek, Hyberia",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "svt",
+    "dynamic": "omega",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero, Le gusta Soobin",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Sanador Oficial del Gremio de Aventureros",
+      "Enlace con Templos en la Unidad de Relaciones Públicas e Impacto Social"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/svt/dk.png",
+    "dateOfBirth": "1997-02-18",
+    "zodiac": "Acuario ♒",
+    "mbti": "ESFP",
     "currentLocation": {
       "label": "Sector 17",
       "locationId": null,
@@ -1486,36 +1500,37 @@
         "caption": "Dokyeom durante el Solsticio de Invierno"
       }
     ],
-    "summary": null
+    "summary": null,
+    "sortOrder": 11
   },
   "svt-mingyu": {
     "id": "svt-mingyu",
     "title": "Kim Mingyu",
     "subtitle": "El Titán del Arrozal",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Human",
-    "factionId": "los-diecisiete-heroes",
-    "dynamic": "alpha",
-    "tags": [],
-    "imageSrc": "/img/characters/svt/mingyu.png",
-    "occupation": [
-      "Chef Oficial del Gremio de Aventureros",
-      "Jefe de Seguridad en la Unidad de Defensa y Vanguardia"
-    ],
-    "dateOfBirth": "1997-04-06",
-    "zodiac": "Aries ♈",
-    "mbti": "ESFJ",
-    "orientation": "Pan",
-    "romanticSituation": "Soltero",
-    "polyamoryStatus": "yes",
     "regionId": "hyberia",
     "hometown": {
       "label": "Borasek, Hyberia",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "svt",
+    "dynamic": "alpha",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Chef Oficial del Gremio de Aventureros",
+      "Jefe de Seguridad en la Unidad de Defensa y Vanguardia"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/svt/mingyu.png",
+    "dateOfBirth": "1997-04-06",
+    "zodiac": "Aries ♈",
+    "mbti": "ESFJ",
     "currentLocation": {
       "label": "Sector 17",
       "locationId": null,
@@ -1608,35 +1623,36 @@
         "caption": "Mingyu durante el Solsticio de Invierno"
       }
     ],
-    "summary": null
+    "summary": null,
+    "sortOrder": 12
   },
   "svt-minghao": {
     "id": "svt-minghao",
     "title": "The8 (Xu Minghao)",
     "subtitle": "El Rastrador de la Fortuna",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Human",
-    "factionId": "los-diecisiete-heroes",
-    "dynamic": "beta",
-    "tags": [],
-    "imageSrc": "/img/characters/svt/minghao.png",
-    "occupation": [
-      "Encargado de Entrenamiento en la Unidad de Exploración y Expediciones"
-    ],
-    "dateOfBirth": "1997-11-07",
-    "zodiac": "Escorpio ♏",
-    "mbti": "ISFP",
-    "orientation": "Pan",
-    "romanticSituation": "Soltero",
-    "polyamoryStatus": "no",
     "regionId": "hyberia",
     "hometown": {
       "label": "Ningliao, Naxai",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "svt",
+    "dynamic": "beta",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "polyamoryStatus": "no",
+    "occupation": [
+      "Encargado de Entrenamiento en la Unidad de Exploración y Expediciones"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/svt/minghao.png",
+    "dateOfBirth": "1997-11-07",
+    "zodiac": "Escorpio ♏",
+    "mbti": "ISFP",
     "currentLocation": {
       "label": "Sector 17",
       "locationId": null,
@@ -1729,35 +1745,36 @@
         "caption": "Minghao durante el Solsticio de Invierno"
       }
     ],
-    "summary": null
+    "summary": null,
+    "sortOrder": 13
   },
   "svt-seungkwan": {
     "id": "svt-seungkwan",
     "title": "Boo Seungkwan",
     "subtitle": "El Entusiasta de los Duelos",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Human",
-    "factionId": "los-diecisiete-heroes",
-    "dynamic": "omega",
-    "tags": [],
-    "imageSrc": "/img/characters/svt/seungkwan.png",
-    "occupation": [
-      "Coordinador de Relaciones Comunitarias en la Unidad de Relaciones Públicas e Impacto Social"
-    ],
-    "dateOfBirth": "1998-01-16",
-    "zodiac": "Capricornio ♑",
-    "mbti": "ESFJ",
-    "orientation": "Gay",
-    "romanticSituation": "Soltero",
-    "polyamoryStatus": "no",
     "regionId": "hyberia",
     "hometown": {
       "label": "Isla Juju, Hyberia",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "svt",
+    "dynamic": "omega",
+    "orientation": "Gay",
+    "romanticSituation": "Soltero",
+    "polyamoryStatus": "no",
+    "occupation": [
+      "Coordinador de Relaciones Comunitarias en la Unidad de Relaciones Públicas e Impacto Social"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/svt/seungkwan.png",
+    "dateOfBirth": "1998-01-16",
+    "zodiac": "Capricornio ♑",
+    "mbti": "ESFJ",
     "currentLocation": {
       "label": "Sector 17",
       "locationId": null,
@@ -1850,35 +1867,36 @@
         "caption": "Seungkwan durante el Solsticio de Invierno"
       }
     ],
-    "summary": null
+    "summary": null,
+    "sortOrder": 14
   },
   "svt-vernon": {
     "id": "svt-vernon",
     "title": "Hansol Vernon Chwe",
     "subtitle": "El Ermitaño Imperturbable",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Human",
-    "factionId": "los-diecisiete-heroes",
-    "dynamic": "beta",
-    "tags": [],
-    "imageSrc": "/img/characters/svt/vernon.png",
-    "occupation": [
-      "Encargado de la Investigación de Artefactos Arcanos en la Unidad de Defensa y Vanguardia"
-    ],
-    "dateOfBirth": "1998-02-18",
-    "zodiac": "Acuario ♒",
-    "mbti": "ISFP",
-    "orientation": "Hetero",
-    "romanticSituation": "Soltero",
-    "polyamoryStatus": "yes",
     "regionId": "hyberia",
     "hometown": {
       "label": "Hanmattan, Tierra sin Nombre",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "svt",
+    "dynamic": "beta",
+    "orientation": "Hetero",
+    "romanticSituation": "Soltero",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Encargado de la Investigación de Artefactos Arcanos en la Unidad de Defensa y Vanguardia"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/svt/vernon.png",
+    "dateOfBirth": "1998-02-18",
+    "zodiac": "Acuario ♒",
+    "mbti": "ISFP",
     "currentLocation": {
       "label": "Sector 17",
       "locationId": null,
@@ -1971,35 +1989,36 @@
         "caption": "Vernon durante el Solsticio de Invierno"
       }
     ],
-    "summary": null
+    "summary": null,
+    "sortOrder": 15
   },
   "svt-dino": {
     "id": "svt-dino",
     "title": "Dino (Lee Chan)",
     "subtitle": "El Último en Rendirse",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Human",
-    "factionId": "los-diecisiete-heroes",
-    "dynamic": "alpha",
-    "tags": [],
-    "imageSrc": "/img/characters/svt/dino.png",
-    "occupation": [
-      "Encargado de la Recuperación de Activos en la Unidad de Exploración y Expediciones"
-    ],
-    "dateOfBirth": "1999-02-11",
-    "zodiac": "Aries ♈",
-    "mbti": "ESTJ",
-    "orientation": "Pan",
-    "romanticSituation": "Soltero",
-    "polyamoryStatus": "yes",
     "regionId": "hyberia",
     "hometown": {
       "label": "Aldea Sanik, Hyberia",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "svt",
+    "dynamic": "alpha",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Encargado de la Recuperación de Activos en la Unidad de Exploración y Expediciones"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/svt/dino.png",
+    "dateOfBirth": "1999-02-11",
+    "zodiac": "Aries ♈",
+    "mbti": "ESTJ",
     "currentLocation": {
       "label": "Sector 17",
       "locationId": null,
@@ -2092,36 +2111,37 @@
         "caption": "Dino durante el Solsticio de Invierno"
       }
     ],
-    "summary": null
+    "summary": null,
+    "sortOrder": 16
   },
   "skz-bangchan": {
     "id": "skz-bangchan",
     "title": "Bang Chan (Christopher Bang)",
     "subtitle": "El Alfa de Alfas",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Werewolf",
-    "factionId": "lobos-perdidos",
-    "dynamic": "alpha",
-    "tags": [],
-    "imageSrc": "/img/characters/skz/bangchan.png",
-    "occupation": [
-      "Líder de Manada",
-      "Comandante del Distrito 9"
-    ],
-    "dateOfBirth": "1997-10-03",
-    "zodiac": "Libra ♎",
-    "mbti": "ENFJ",
-    "orientation": "Pan",
-    "romanticSituation": "Soltero",
-    "polyamoryStatus": "yes",
     "regionId": "jeyperia",
     "hometown": {
       "label": "Neysyd, Tierra Canguro",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "skz",
+    "dynamic": "alpha",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Líder de Manada",
+      "Comandante del Distrito 9"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/skz/bangchan.png",
+    "dateOfBirth": "1997-10-03",
+    "zodiac": "Libra ♎",
+    "mbti": "ENFJ",
     "currentLocation": {
       "label": "Distrito 9",
       "locationId": null,
@@ -2176,36 +2196,37 @@
     ],
     "destinyCard": null,
     "images": [],
-    "summary": null
+    "summary": null,
+    "sortOrder": 17
   },
   "skz-leeknow": {
     "id": "skz-leeknow",
     "title": "Lee Know (Lee Minho)",
     "subtitle": "El Domador de Bestias",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Werewolf",
-    "factionId": "lobos-perdidos",
-    "dynamic": "alpha",
-    "tags": [],
-    "imageSrc": "/img/characters/skz/leeknow.png",
-    "occupation": [
-      "Maestro de Bestias",
-      "Encargado de rastreo y manejo de criaturas"
-    ],
-    "dateOfBirth": "1998-10-25",
-    "zodiac": "Escorpio ♏",
-    "mbti": "INTP",
-    "orientation": "Pan",
-    "romanticSituation": "Soltero",
-    "polyamoryStatus": "yes",
     "regionId": "jeyperia",
     "hometown": {
       "label": "Borasek, Hyberia",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "skz",
+    "dynamic": "alpha",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Maestro de Bestias",
+      "Encargado de rastreo y manejo de criaturas"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/skz/leeknow.png",
+    "dateOfBirth": "1998-10-25",
+    "zodiac": "Escorpio ♏",
+    "mbti": "INTP",
     "currentLocation": {
       "label": "Distrito 9",
       "locationId": null,
@@ -2260,36 +2281,37 @@
     ],
     "destinyCard": null,
     "images": [],
-    "summary": null
+    "summary": null,
+    "sortOrder": 18
   },
   "skz-changbin": {
     "id": "skz-changbin",
     "title": "Seo Changbin",
     "subtitle": "La Fuerza de la Ferocidad",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Werewolf",
-    "factionId": "lobos-perdidos",
-    "dynamic": "alpha",
-    "tags": [],
-    "imageSrc": "/img/characters/skz/changbin.png",
-    "occupation": [
-      "Vanguardia de Choque",
-      "Protector territorial"
-    ],
-    "dateOfBirth": "1999-08-11",
-    "zodiac": "Leo ♌",
-    "mbti": "ESFP",
-    "orientation": "Pan",
-    "romanticSituation": "Soltero",
-    "polyamoryStatus": "yes",
     "regionId": "jeyperia",
     "hometown": {
       "label": "Borasek, Hyberia",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "skz",
+    "dynamic": "alpha",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Vanguardia de Choque",
+      "Protector territorial"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/skz/changbin.png",
+    "dateOfBirth": "1999-08-11",
+    "zodiac": "Leo ♌",
+    "mbti": "ESFP",
     "currentLocation": {
       "label": "Distrito 9",
       "locationId": null,
@@ -2344,36 +2366,37 @@
     ],
     "destinyCard": null,
     "images": [],
-    "summary": null
+    "summary": null,
+    "sortOrder": 19
   },
   "skz-hyunjin": {
     "id": "skz-hyunjin",
     "title": "Hwang Hyunjin",
     "subtitle": "El Artista del Espejismo",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Werewolf",
-    "factionId": "lobos-perdidos",
-    "dynamic": "omega",
-    "tags": [],
-    "imageSrc": "/img/characters/skz/hyunjin.png",
-    "occupation": [
-      "Explorador táctico",
-      "Ilusionista de campo"
-    ],
-    "dateOfBirth": "2000-03-20",
-    "zodiac": "Piscis ♓",
-    "mbti": "ISFP",
-    "orientation": "Pan",
-    "romanticSituation": "Soltero",
-    "polyamoryStatus": "yes",
     "regionId": "jeyperia",
     "hometown": {
       "label": "Kwangya, Sylmorien",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "skz",
+    "dynamic": "omega",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Explorador táctico",
+      "Ilusionista de campo"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/skz/hyunjin.png",
+    "dateOfBirth": "2000-03-20",
+    "zodiac": "Piscis ♓",
+    "mbti": "ISFP",
     "currentLocation": {
       "label": "Distrito 9",
       "locationId": null,
@@ -2433,36 +2456,37 @@
     ],
     "destinyCard": null,
     "images": [],
-    "summary": null
+    "summary": null,
+    "sortOrder": 20
   },
   "skz-han": {
     "id": "skz-han",
     "title": "Han Jisung",
     "subtitle": "El Psíquico Rebelde",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Werewolf",
-    "factionId": "lobos-perdidos",
-    "dynamic": "omega",
-    "tags": [],
-    "imageSrc": "/img/characters/skz/han.png",
-    "occupation": [
-      "Enlace diplomático",
-      "Vocero de la manada"
-    ],
-    "dateOfBirth": "2000-09-14",
-    "zodiac": "Virgo ♍",
-    "mbti": "ENFP",
-    "orientation": "Pan",
-    "romanticSituation": "Soltero",
-    "polyamoryStatus": "yes",
     "regionId": "jeyperia",
     "hometown": {
       "label": "Cheonin, Jeyperia",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "skz",
+    "dynamic": "omega",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Enlace diplomático",
+      "Vocero de la manada"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/skz/han.png",
+    "dateOfBirth": "2000-09-14",
+    "zodiac": "Virgo ♍",
+    "mbti": "ENFP",
     "currentLocation": {
       "label": "Distrito 9",
       "locationId": null,
@@ -2517,36 +2541,37 @@
     ],
     "destinyCard": null,
     "images": [],
-    "summary": null
+    "summary": null,
+    "sortOrder": 21
   },
   "skz-felix": {
     "id": "skz-felix",
     "title": "Felix Lee",
     "subtitle": "El Ente de los Sueños",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Werewolf",
-    "factionId": "lobos-perdidos",
-    "dynamic": "beta",
-    "tags": [],
-    "imageSrc": "/img/characters/skz/felix.png",
-    "occupation": [
-      "Guardián onírico",
-      "Vigilante espiritual"
-    ],
-    "dateOfBirth": "2000-09-15",
-    "zodiac": "Virgo ♍",
-    "mbti": "ENFP",
-    "orientation": "Pan",
-    "romanticSituation": "Es complicado",
-    "polyamoryStatus": "yes",
     "regionId": "jeyperia",
     "hometown": {
       "label": "Neysyd, Tierra Canguro",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "skz",
+    "dynamic": "beta",
+    "orientation": "Pan",
+    "romanticSituation": "Es complicado",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Guardián onírico",
+      "Vigilante espiritual"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/skz/felix.png",
+    "dateOfBirth": "2000-09-15",
+    "zodiac": "Virgo ♍",
+    "mbti": "ENFP",
     "currentLocation": {
       "label": "Distrito 9",
       "locationId": null,
@@ -2606,36 +2631,37 @@
     ],
     "destinyCard": null,
     "images": [],
-    "summary": null
+    "summary": null,
+    "sortOrder": 22
   },
   "skz-seungmin": {
     "id": "skz-seungmin",
     "title": "Kim Seungmin",
     "subtitle": "La Sombra Ejecutora",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Werewolf",
-    "factionId": "lobos-perdidos",
-    "dynamic": "alpha",
-    "tags": [],
-    "imageSrc": "/img/characters/skz/seungmin.png",
-    "occupation": [
-      "Agente encubierto",
-      "Ejecutor de operaciones especiales"
-    ],
-    "dateOfBirth": "2000-09-22",
-    "zodiac": "Virgo ♍",
-    "mbti": "ISFJ",
-    "orientation": "Pan",
-    "romanticSituation": "Soltero",
-    "polyamoryStatus": "yes",
     "regionId": "jeyperia",
     "hometown": {
       "label": "Kwangya, Sylmorien",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "skz",
+    "dynamic": "alpha",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Agente encubierto",
+      "Ejecutor de operaciones especiales"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/skz/seungmin.png",
+    "dateOfBirth": "2000-09-22",
+    "zodiac": "Virgo ♍",
+    "mbti": "ISFJ",
     "currentLocation": {
       "label": "Distrito 9",
       "locationId": null,
@@ -2690,36 +2716,37 @@
     ],
     "destinyCard": null,
     "images": [],
-    "summary": null
+    "summary": null,
+    "sortOrder": 23
   },
   "skz-jeongin": {
     "id": "skz-jeongin",
     "title": "Yang Jeongin (I.N)",
     "subtitle": "La Reencarnación del Dios de la Luna",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Werewolf",
-    "factionId": "lobos-perdidos",
-    "dynamic": "alpha",
-    "tags": [],
-    "imageSrc": "/img/characters/skz/jeongin.png",
-    "occupation": [
-      "Guía espiritual",
-      "Guardián del vínculo lunar"
-    ],
-    "dateOfBirth": "2001-02-08",
-    "zodiac": "Acuario ♒",
-    "mbti": "INFJ",
-    "orientation": "Pan",
-    "romanticSituation": "Soltero",
-    "polyamoryStatus": "yes",
     "regionId": "jeyperia",
     "hometown": {
       "label": "Sanbu, Jeyperia",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "skz",
+    "dynamic": "alpha",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Guía espiritual",
+      "Guardián del vínculo lunar"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/skz/jeongin.png",
+    "dateOfBirth": "2001-02-08",
+    "zodiac": "Acuario ♒",
+    "mbti": "INFJ",
     "currentLocation": {
       "label": "Distrito 9",
       "locationId": null,
@@ -2794,35 +2821,36 @@
     ],
     "destinyCard": null,
     "images": [],
-    "summary": null
+    "summary": null,
+    "sortOrder": 24
   },
   "skz-woojin": {
     "id": "skz-woojin",
     "title": "Kim Woojin",
     "subtitle": "El Lobo Solitario",
     "status": "dead",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Werewolf",
-    "factionId": "lobos-perdidos",
-    "dynamic": "alpha",
-    "tags": [],
-    "imageSrc": "/img/characters/skz/woojin.png",
-    "occupation": [
-      "Protector de las fronteras"
-    ],
-    "dateOfBirth": "1997-04-08",
-    "zodiac": "Aries ♈",
-    "mbti": "ISFJ",
-    "orientation": null,
-    "romanticSituation": null,
-    "polyamoryStatus": null,
     "regionId": "jeyperia",
     "hometown": {
       "label": "Borasek, Hyberia",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "skz",
+    "dynamic": "alpha",
+    "orientation": null,
+    "romanticSituation": null,
+    "polyamoryStatus": null,
+    "occupation": [
+      "Protector de las fronteras"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/skz/woojin.png",
+    "dateOfBirth": "1997-04-08",
+    "zodiac": "Aries ♈",
+    "mbti": "ISFJ",
     "currentLocation": null,
     "firstAppearance": null,
     "lastSeen": null,
@@ -2870,36 +2898,37 @@
     ],
     "destinyCard": "9 de Picas",
     "images": [],
-    "summary": null
+    "summary": null,
+    "sortOrder": 25
   },
   "enha-jungwon": {
     "id": "enha-jungwon",
     "title": "Yang Jungwon",
     "subtitle": "El Heraldo del Crepúsculo",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Vampire",
-    "factionId": "hijos-de-la-noche",
-    "dynamic": "omega",
-    "tags": [],
-    "imageSrc": "/img/characters/enha/jungwon.png",
-    "occupation": [
-      "Guía espiritual de la orden",
-      "Portador del pacto con Moonbin"
-    ],
-    "dateOfBirth": "1904-02-09",
-    "zodiac": "Acuario ♒",
-    "mbti": "ISFJ",
-    "orientation": "Pan",
-    "romanticSituation": "Soltero",
-    "polyamoryStatus": "yes",
     "regionId": "hyberia",
     "hometown": {
       "label": "Kwangya, Sylmorien",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "enhypen",
+    "dynamic": "omega",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Guía espiritual de la orden",
+      "Portador del pacto con Moonbin"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/enha/jungwon.png",
+    "dateOfBirth": "1904-02-09",
+    "zodiac": "Acuario ♒",
+    "mbti": "ISFJ",
     "currentLocation": {
       "label": "Borasek",
       "locationId": "borasek",
@@ -2949,36 +2978,37 @@
     ],
     "destinyCard": null,
     "images": [],
-    "summary": null
+    "summary": null,
+    "sortOrder": 26
   },
   "enha-heeseung": {
     "id": "enha-heeseung",
     "title": "Lee Heeseung",
     "subtitle": "El Investigador de la Muerte",
     "status": "dead",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Vampire",
-    "factionId": "hijos-de-la-noche",
-    "dynamic": "beta",
-    "tags": [],
-    "imageSrc": "/img/characters/enha/heeseung.png",
-    "occupation": [
-      "Investigador arcano",
-      "Anatomista de la muerte"
-    ],
-    "dateOfBirth": "1901-10-15",
-    "zodiac": "Libra ♎",
-    "mbti": "INFJ",
-    "orientation": "Pan",
-    "romanticSituation": "Soltero",
-    "polyamoryStatus": "yes",
     "regionId": "hyberia",
     "hometown": {
       "label": "Borasek, Hyberia",
       "locationId": "borasek",
       "docPath": "world/locations/borasek"
     },
+    "factionId": "enhypen",
+    "dynamic": "beta",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Investigador arcano",
+      "Anatomista de la muerte"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/enha/heeseung.png",
+    "dateOfBirth": "1901-10-15",
+    "zodiac": "Libra ♎",
+    "mbti": "INFJ",
     "currentLocation": {
       "label": "Borasek",
       "locationId": "borasek",
@@ -3028,35 +3058,36 @@
     ],
     "destinyCard": null,
     "images": [],
-    "summary": null
+    "summary": null,
+    "sortOrder": 27
   },
   "enha-jay": {
     "id": "enha-jay",
     "title": "Jay Park",
     "subtitle": "El Abogado del Rey Demonio",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Vampire",
-    "factionId": "hijos-de-la-noche",
-    "dynamic": "alpha",
-    "tags": [],
-    "imageSrc": "/img/characters/enha/jay.png",
-    "occupation": [
-      "Estratega de la corte nocturna"
-    ],
-    "dateOfBirth": "1902-04-20",
-    "zodiac": "Tauro ♉",
-    "mbti": "ENTP",
-    "orientation": "Pan",
-    "romanticSituation": "Soltero",
-    "polyamoryStatus": "yes",
     "regionId": "hyberia",
     "hometown": {
       "label": "Hanmattan, Tierra sin Nombre",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "enhypen",
+    "dynamic": "alpha",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Estratega de la corte nocturna"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/enha/jay.png",
+    "dateOfBirth": "1902-04-20",
+    "zodiac": "Tauro ♉",
+    "mbti": "ENTP",
     "currentLocation": {
       "label": "Borasek",
       "locationId": "borasek",
@@ -3106,36 +3137,37 @@
     ],
     "destinyCard": null,
     "images": [],
-    "summary": null
+    "summary": null,
+    "sortOrder": 28
   },
   "enha-jake": {
     "id": "enha-jake",
     "title": "Jake Sim",
     "subtitle": "El Vampiro que Volvió a Vivir",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Vampire",
-    "factionId": "hijos-de-la-noche",
-    "dynamic": "alpha",
-    "tags": [],
-    "imageSrc": "/img/characters/enha/jake.png",
-    "occupation": [
-      "Operativo espectral",
-      "Sabueso de rastreo y cacería"
-    ],
-    "dateOfBirth": "1902-11-15",
-    "zodiac": "Escorpio ♏",
-    "mbti": "ESTP",
-    "orientation": "Pan",
-    "romanticSituation": "En una relación con derechos con Soobin",
-    "polyamoryStatus": "yes",
     "regionId": "hyberia",
     "hometown": {
       "label": "Neysyd, Tierra Canguro",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "enhypen",
+    "dynamic": "alpha",
+    "orientation": "Pan",
+    "romanticSituation": "En una relación con derechos con Soobin",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Operativo espectral",
+      "Sabueso de rastreo y cacería"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/enha/jake.png",
+    "dateOfBirth": "1902-11-15",
+    "zodiac": "Escorpio ♏",
+    "mbti": "ESTP",
     "currentLocation": {
       "label": "Borasek",
       "locationId": "borasek",
@@ -3190,36 +3222,37 @@
     ],
     "destinyCard": null,
     "images": [],
-    "summary": null
+    "summary": null,
+    "sortOrder": 29
   },
   "enha-sunghoon": {
     "id": "enha-sunghoon",
     "title": "Park Sunghoon",
     "subtitle": "El Loco del Machete",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Vampire",
-    "factionId": "hijos-de-la-noche",
-    "dynamic": "alpha",
-    "tags": [],
-    "imageSrc": "/img/characters/enha/sunghoon.png",
-    "occupation": [
-      "Verdugo de la noche",
-      "Ejecutor de campo"
-    ],
-    "dateOfBirth": "1902-12-08",
-    "zodiac": "Sagitario ♐",
-    "mbti": "ISTJ",
-    "orientation": "Pan",
-    "romanticSituation": "Soltero",
-    "polyamoryStatus": "yes",
     "regionId": "hyberia",
     "hometown": {
       "label": "Neocity, Sylmorien",
       "locationId": "neocity",
       "docPath": "world/locations/neocity"
     },
+    "factionId": "enhypen",
+    "dynamic": "alpha",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Verdugo de la noche",
+      "Ejecutor de campo"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/enha/sunghoon.png",
+    "dateOfBirth": "1902-12-08",
+    "zodiac": "Sagitario ♐",
+    "mbti": "ISTJ",
     "currentLocation": {
       "label": "Borasek",
       "locationId": "borasek",
@@ -3269,36 +3302,37 @@
     ],
     "destinyCard": null,
     "images": [],
-    "summary": null
+    "summary": null,
+    "sortOrder": 30
   },
   "enha-sunoo": {
     "id": "enha-sunoo",
     "title": "Kim Sunoo",
     "subtitle": "El Asesino de Monstruos",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Vampire",
-    "factionId": "hijos-de-la-noche",
-    "dynamic": "omega",
-    "tags": [],
-    "imageSrc": "/img/characters/enha/sunoo.jpeg",
-    "occupation": [
-      "Cazador de aberraciones",
-      "Purificador nocturno"
-    ],
-    "dateOfBirth": "1903-06-24",
-    "zodiac": "Cáncer ♋",
-    "mbti": "ENFP",
-    "orientation": "Pan",
-    "romanticSituation": "Soltero",
-    "polyamoryStatus": "yes",
     "regionId": "hyberia",
     "hometown": {
       "label": "Borasek, Hyberia",
       "locationId": "borasek",
       "docPath": "world/locations/borasek"
     },
+    "factionId": "enhypen",
+    "dynamic": "omega",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Cazador de aberraciones",
+      "Purificador nocturno"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/enha/sunoo.jpeg",
+    "dateOfBirth": "1903-06-24",
+    "zodiac": "Cáncer ♋",
+    "mbti": "ENFP",
     "currentLocation": {
       "label": "Borasek",
       "locationId": "borasek",
@@ -3348,36 +3382,37 @@
     ],
     "destinyCard": null,
     "images": [],
-    "summary": null
+    "summary": null,
+    "sortOrder": 31
   },
   "enha-niki": {
     "id": "enha-niki",
     "title": "Ni-ki (Nishimura Riki)",
     "subtitle": "El Pequeño Dictador",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Vampire",
-    "factionId": "hijos-de-la-noche",
-    "dynamic": "alpha",
-    "tags": [],
-    "imageSrc": "/img/characters/enha/niki.png",
-    "occupation": [
-      "Táctico de sombras",
-      "Comandante de incursión"
-    ],
-    "dateOfBirth": "1905-12-09",
-    "zodiac": "Sagitario ♐",
-    "mbti": "ENTJ",
-    "orientation": "Pan",
-    "romanticSituation": "Soltero",
-    "polyamoryStatus": "yes",
     "regionId": "hyberia",
     "hometown": {
       "label": "Puerto Nawaki, Hotou",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "enhypen",
+    "dynamic": "alpha",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Táctico de sombras",
+      "Comandante de incursión"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/enha/niki.png",
+    "dateOfBirth": "1905-12-09",
+    "zodiac": "Sagitario ♐",
+    "mbti": "ENTJ",
     "currentLocation": {
       "label": "Borasek",
       "locationId": "borasek",
@@ -3427,35 +3462,36 @@
     ],
     "destinyCard": null,
     "images": [],
-    "summary": null
+    "summary": null,
+    "sortOrder": 32
   },
   "nct-johnny": {
     "id": "nct-johnny",
     "title": "Johnny Suh",
     "subtitle": "El Maestro que Despeja Caminos",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Superhuman",
-    "factionId": "neo-culturales-tecnologicos",
-    "dynamic": "alpha",
-    "tags": [],
-    "imageSrc": "/img/characters/nct/johnny.png",
-    "occupation": [
-      "Profesor de Defensa Arcana y Apertura de Portales"
-    ],
-    "dateOfBirth": "1495-02-09",
-    "zodiac": "Acuario ♒",
-    "mbti": "ENTP",
-    "orientation": "Pan",
-    "romanticSituation": "Soltero",
-    "polyamoryStatus": "yes",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Cagochi, EU",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "nct",
+    "dynamic": "alpha",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Profesor de Defensa Arcana y Apertura de Portales"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/nct/johnny.png",
+    "dateOfBirth": "1495-02-09",
+    "zodiac": "Acuario ♒",
+    "mbti": "ENTP",
     "currentLocation": {
       "label": "Neocity",
       "locationId": "neocity",
@@ -3515,36 +3551,37 @@
     ],
     "destinyCard": null,
     "images": [],
-    "summary": null
+    "summary": null,
+    "sortOrder": 33
   },
   "nct-taeyong": {
     "id": "nct-taeyong",
     "title": "Lee Taeyong",
     "subtitle": "El Padre de la Neovibra",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Aasimar",
-    "factionId": "neo-culturales-tecnologicos",
-    "dynamic": "omega",
-    "tags": [],
-    "imageSrc": "/img/characters/nct/taeyong.png",
-    "occupation": [
-      "Director de la Neo Academia",
-      "Fundador de los Neo Culturales"
-    ],
-    "dateOfBirth": "0995-07-01",
-    "zodiac": "Cáncer ♋",
-    "mbti": "ISFP",
-    "orientation": "Pan",
-    "romanticSituation": "Soltero",
-    "polyamoryStatus": "no",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Kwangya, Sylmorien",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "nct",
+    "dynamic": "omega",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "polyamoryStatus": "no",
+    "occupation": [
+      "Director de la Neo Academia",
+      "Fundador de los Neo Culturales"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/nct/taeyong.png",
+    "dateOfBirth": "0995-07-01",
+    "zodiac": "Cáncer ♋",
+    "mbti": "ISFP",
     "currentLocation": {
       "label": "Neocity",
       "locationId": "neocity",
@@ -3609,35 +3646,36 @@
     ],
     "destinyCard": null,
     "images": [],
-    "summary": null
+    "summary": null,
+    "sortOrder": 34
   },
   "nct-yuta": {
     "id": "nct-yuta",
     "title": "Yuta Nakamoto",
     "subtitle": "El Maestro de la Espada",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Superhuman",
-    "factionId": "neo-culturales-tecnologicos",
-    "dynamic": "omega",
-    "tags": [],
-    "imageSrc": "/img/characters/misc/nct-yuta.png",
-    "occupation": [
-      "Profesor de Esgrima Arcana y Combate de Vanguardia"
-    ],
-    "dateOfBirth": "1895-10-26",
-    "zodiac": "Escorpio ♏",
-    "mbti": "ESTP",
-    "orientation": "Pan",
-    "romanticSituation": "Soltero",
-    "polyamoryStatus": "yes",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Puerto Nawaki, Hotou",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "nct",
+    "dynamic": "omega",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Profesor de Esgrima Arcana y Combate de Vanguardia"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/nct/nct-yuta.png",
+    "dateOfBirth": "1895-10-26",
+    "zodiac": "Escorpio ♏",
+    "mbti": "ESTP",
     "currentLocation": {
       "label": "Neocity",
       "locationId": "neocity",
@@ -3702,35 +3740,36 @@
     ],
     "destinyCard": null,
     "images": [],
-    "summary": null
+    "summary": null,
+    "sortOrder": 35
   },
   "nct-kun": {
     "id": "nct-kun",
     "title": "Qian Kun",
     "subtitle": "El Maestro de la Tierra",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Human",
-    "factionId": "neo-culturales-tecnologicos",
-    "dynamic": "beta",
-    "tags": [],
-    "imageSrc": "/img/characters/nct/kun.png",
-    "occupation": [
-      "Profesor de Geomancia y Equilibrio Elemental"
-    ],
-    "dateOfBirth": "1796-01-01",
-    "zodiac": "Capricornio ♑",
-    "mbti": "ESFJ",
-    "orientation": "Pan",
-    "romanticSituation": "Soltero",
-    "polyamoryStatus": "yes",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Ningtai, Naxai",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "nct",
+    "dynamic": "beta",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Profesor de Geomancia y Equilibrio Elemental"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/nct/kun.png",
+    "dateOfBirth": "1796-01-01",
+    "zodiac": "Capricornio ♑",
+    "mbti": "ESFJ",
     "currentLocation": {
       "label": "Neocity",
       "locationId": "neocity",
@@ -3772,35 +3811,36 @@
     ],
     "destinyCard": null,
     "images": [],
-    "summary": null
+    "summary": null,
+    "sortOrder": 36
   },
   "nct-doyoung": {
     "id": "nct-doyoung",
     "title": "Kim Doyoung",
     "subtitle": "El Maestro de la Magia Salvaje",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Superhuman",
-    "factionId": "neo-culturales-tecnologicos",
-    "dynamic": "beta",
-    "tags": [],
-    "imageSrc": "/img/characters/nct/doyoung.png",
-    "occupation": [
-      "Profesor de Teoría de la Neovibra y Regulación Mágica"
-    ],
-    "dateOfBirth": "1596-02-01",
-    "zodiac": "Acuario ♒",
-    "mbti": "ESTJ",
-    "orientation": "Pan",
-    "romanticSituation": "En una polícula con Jaehyun y Jungwoo",
-    "polyamoryStatus": "yes",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Borasek, Hyberia",
       "locationId": "borasek",
       "docPath": "world/locations/borasek"
     },
+    "factionId": "nct",
+    "dynamic": "beta",
+    "orientation": "Pan",
+    "romanticSituation": "En una polícula con Jaehyun y Jungwoo",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Profesor de Teoría de la Neovibra y Regulación Mágica"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/nct/doyoung.png",
+    "dateOfBirth": "1596-02-01",
+    "zodiac": "Acuario ♒",
+    "mbti": "ESTJ",
     "currentLocation": {
       "label": "Neocity",
       "locationId": "neocity",
@@ -3860,35 +3900,36 @@
     ],
     "destinyCard": null,
     "images": [],
-    "summary": null
+    "summary": null,
+    "sortOrder": 37
   },
   "nct-ten": {
     "id": "nct-ten",
     "title": "Ten Lee",
     "subtitle": "El Maestro del Agua",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Superhuman",
-    "factionId": "neo-culturales-tecnologicos",
-    "dynamic": "omega",
-    "tags": [],
-    "imageSrc": "/img/characters/nct/ten.png",
-    "occupation": [
-      "Profesor de Artes Fluídicas y Combate Elemental"
-    ],
-    "dateOfBirth": "1596-02-27",
-    "zodiac": "Piscis ♓",
-    "mbti": "ISFP",
-    "orientation": "Pan",
-    "romanticSituation": "Soltero",
-    "polyamoryStatus": "yes",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Kokbang, Landtai",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "nct",
+    "dynamic": "omega",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Profesor de Artes Fluídicas y Combate Elemental"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/nct/ten.png",
+    "dateOfBirth": "1596-02-27",
+    "zodiac": "Piscis ♓",
+    "mbti": "ISFP",
     "currentLocation": {
       "label": "Neocity",
       "locationId": "neocity",
@@ -3938,35 +3979,36 @@
     ],
     "destinyCard": null,
     "images": [],
-    "summary": null
+    "summary": null,
+    "sortOrder": 38
   },
   "nct-jaehyun": {
     "id": "nct-jaehyun",
     "title": "Jeong Jaehyun",
     "subtitle": "El Maestro de Combate",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Superhuman",
-    "factionId": "neo-culturales-tecnologicos",
-    "dynamic": "alpha",
-    "tags": [],
-    "imageSrc": "/img/characters/nct/jaehyun.png",
-    "occupation": [
-      "Profesor de Estrategia de Combate y Formación de Guardianes"
-    ],
-    "dateOfBirth": "1597-02-14",
-    "zodiac": "Acuario ♒",
-    "mbti": "ESTP",
-    "orientation": "Pan",
-    "romanticSituation": "En una polícula con Doyoung y Jungwoo",
-    "polyamoryStatus": "yes",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Kwangya, Sylmorien",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "nct",
+    "dynamic": "alpha",
+    "orientation": "Pan",
+    "romanticSituation": "En una polícula con Doyoung y Jungwoo",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Profesor de Estrategia de Combate y Formación de Guardianes"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/nct/jaehyun.png",
+    "dateOfBirth": "1597-02-14",
+    "zodiac": "Acuario ♒",
+    "mbti": "ESTP",
     "currentLocation": {
       "label": "Neocity",
       "locationId": "neocity",
@@ -4031,35 +4073,36 @@
     ],
     "destinyCard": null,
     "images": [],
-    "summary": null
+    "summary": null,
+    "sortOrder": 39
   },
   "nct-winwin": {
     "id": "nct-winwin",
     "title": "Winwin (Dong Sicheng)",
     "subtitle": "El Maestro de la Luz",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Superhuman",
-    "factionId": "neo-culturales-tecnologicos",
-    "dynamic": "beta",
-    "tags": [],
-    "imageSrc": "/img/characters/nct/winwin.png",
-    "occupation": [
-      "Profesor de Luminomancia y Protección Sagrada"
-    ],
-    "dateOfBirth": "1897-10-28",
-    "zodiac": "Escorpio ♏",
-    "mbti": "INFJ",
-    "orientation": "Pan",
-    "romanticSituation": "Soltero",
-    "polyamoryStatus": "yes",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Wenzhou, Naxai",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "nct",
+    "dynamic": "beta",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Profesor de Luminomancia y Protección Sagrada"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/nct/winwin.png",
+    "dateOfBirth": "1897-10-28",
+    "zodiac": "Escorpio ♏",
+    "mbti": "INFJ",
     "currentLocation": {
       "label": "Neocity",
       "locationId": "neocity",
@@ -4114,35 +4157,36 @@
     ],
     "destinyCard": null,
     "images": [],
-    "summary": null
+    "summary": null,
+    "sortOrder": 40
   },
   "nct-jungwoo": {
     "id": "nct-jungwoo",
     "title": "Kim Jungwoo",
     "subtitle": "El Maestro de la Innovación",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Superhuman",
-    "factionId": "neo-culturales-tecnologicos",
-    "dynamic": "omega",
-    "tags": [],
-    "imageSrc": "/img/characters/nct/jungwoo.png",
-    "occupation": [
-      "Profesor de Ingeniería de Sistemas Tecnomágicos Automatizados"
-    ],
-    "dateOfBirth": "1898-02-19",
-    "zodiac": "Piscis ♓",
-    "mbti": "ESFJ",
-    "orientation": "Pan",
-    "romanticSituation": "En una polícula con Jaehyun y Doyoung",
-    "polyamoryStatus": "yes",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Borasek, Hyberia",
       "locationId": "borasek",
       "docPath": "world/locations/borasek"
     },
+    "factionId": "nct",
+    "dynamic": "omega",
+    "orientation": "Pan",
+    "romanticSituation": "En una polícula con Jaehyun y Doyoung",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Profesor de Ingeniería de Sistemas Tecnomágicos Automatizados"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/nct/jungwoo.png",
+    "dateOfBirth": "1898-02-19",
+    "zodiac": "Piscis ♓",
+    "mbti": "ESFJ",
     "currentLocation": {
       "label": "Neocity",
       "locationId": "neocity",
@@ -4202,35 +4246,36 @@
     ],
     "destinyCard": null,
     "images": [],
-    "summary": null
+    "summary": null,
+    "sortOrder": 41
   },
   "nct-lucas": {
     "id": "nct-lucas",
     "title": "Lucas Wong",
     "subtitle": "El Maestro de las Sombras",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Superhuman",
-    "factionId": "neo-culturales-tecnologicos",
-    "dynamic": "alpha",
-    "tags": [],
-    "imageSrc": "/img/characters/nct/lucas.png",
-    "occupation": [
-      "Profesor de Magia Umbría y Tácticas de Infiltración"
-    ],
-    "dateOfBirth": "1899-01-25",
-    "zodiac": "Acuario ♒",
-    "mbti": "ESTP",
-    "orientation": "Pan",
-    "romanticSituation": "Soltero",
-    "polyamoryStatus": "yes",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Kong Kong, Naxai",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "nct",
+    "dynamic": "alpha",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Profesor de Magia Umbría y Tácticas de Infiltración"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/nct/lucas.png",
+    "dateOfBirth": "1899-01-25",
+    "zodiac": "Acuario ♒",
+    "mbti": "ESTP",
     "currentLocation": {
       "label": "Neocity",
       "locationId": "neocity",
@@ -4280,35 +4325,36 @@
     ],
     "destinyCard": null,
     "images": [],
-    "summary": null
+    "summary": null,
+    "sortOrder": 42
   },
   "nct-mark": {
     "id": "nct-mark",
     "title": "Mark Lee",
     "subtitle": "El Maestro Prodigioso",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Superhuman",
-    "factionId": "neo-culturales-tecnologicos",
-    "dynamic": "alpha",
-    "tags": [],
-    "imageSrc": "/img/characters/nct/mark.png",
-    "occupation": [
-      "Profesor de Historia Arcana, Runas de Combate y Sistemas de Artillería Tecnomágica"
-    ],
-    "dateOfBirth": "1899-08-02",
-    "zodiac": "Leo ♌",
-    "mbti": "ESFJ",
-    "orientation": "Pan",
-    "romanticSituation": "Soltero",
-    "polyamoryStatus": "yes",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Totonto, República del Maple",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "nct",
+    "dynamic": "alpha",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Profesor de Historia Arcana, Runas de Combate y Sistemas de Artillería Tecnomágica"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/nct/mark.png",
+    "dateOfBirth": "1899-08-02",
+    "zodiac": "Leo ♌",
+    "mbti": "ESFJ",
     "currentLocation": {
       "label": "Neocity",
       "locationId": "neocity",
@@ -4398,35 +4444,36 @@
     ],
     "destinyCard": "Rey de Corazones",
     "images": [],
-    "summary": null
+    "summary": null,
+    "sortOrder": 43
   },
   "nct-xiaojun": {
     "id": "nct-xiaojun",
     "title": "Xiaojun (Xiao Dejun)",
     "subtitle": "El Maestro del Fuego",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Superhuman",
-    "factionId": "neo-culturales-tecnologicos",
-    "dynamic": "alpha",
-    "tags": [],
-    "imageSrc": "/img/characters/nct/xiaojun.png",
-    "occupation": [
-      "Profesor de Pirodinámica y Combate Elemental Ígneo"
-    ],
-    "dateOfBirth": "1899-08-08",
-    "zodiac": "Leo ♌",
-    "mbti": "INFJ",
-    "orientation": "Pan",
-    "romanticSituation": "Soltero",
-    "polyamoryStatus": "yes",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Dong Dong, Naxai",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "nct",
+    "dynamic": "alpha",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Profesor de Pirodinámica y Combate Elemental Ígneo"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/nct/xiaojun.png",
+    "dateOfBirth": "1899-08-08",
+    "zodiac": "Leo ♌",
+    "mbti": "INFJ",
     "currentLocation": {
       "label": "Neocity",
       "locationId": "neocity",
@@ -4481,35 +4528,36 @@
     ],
     "destinyCard": null,
     "images": [],
-    "summary": null
+    "summary": null,
+    "sortOrder": 44
   },
   "nct-hendery": {
     "id": "nct-hendery",
     "title": "Hendery (Huang Guanheng)",
     "subtitle": "El Maestro del Metal",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Superhuman",
-    "factionId": "neo-culturales-tecnologicos",
-    "dynamic": "beta",
-    "tags": [],
-    "imageSrc": "/img/characters/nct/hendery.png",
-    "occupation": [
-      "Profesor de Ingeniería Metalomágica y Forja de Constructos"
-    ],
-    "dateOfBirth": "1899-09-28",
-    "zodiac": "Libra ♎",
-    "mbti": "INTP",
-    "orientation": "Pan",
-    "romanticSituation": "Soltero",
-    "polyamoryStatus": "yes",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Isla de Macacau, Nacai",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "nct",
+    "dynamic": "beta",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Profesor de Ingeniería Metalomágica y Forja de Constructos"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/nct/hendery.png",
+    "dateOfBirth": "1899-09-28",
+    "zodiac": "Libra ♎",
+    "mbti": "INTP",
     "currentLocation": {
       "label": "Neocity",
       "locationId": "neocity",
@@ -4559,35 +4607,36 @@
     ],
     "destinyCard": null,
     "images": [],
-    "summary": null
+    "summary": null,
+    "sortOrder": 45
   },
   "nct-renjun": {
     "id": "nct-renjun",
     "title": "Huang Renjun",
     "subtitle": "El Oráculo del Anochecer",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Superhuman",
-    "factionId": "neo-culturales-tecnologicos",
-    "dynamic": "omega",
-    "tags": [],
-    "imageSrc": "/img/characters/nct/renjun.png",
-    "occupation": [
-      "Guardián de los Archivos Proféticos"
-    ],
-    "dateOfBirth": "1900-03-23",
-    "zodiac": "Aries ♈",
-    "mbti": "INTP",
-    "orientation": "Pan",
-    "romanticSituation": "Soltero",
-    "polyamoryStatus": "yes",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Linji, Naxai",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "nct",
+    "dynamic": "omega",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Guardián de los Archivos Proféticos"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/nct/renjun.png",
+    "dateOfBirth": "1900-03-23",
+    "zodiac": "Aries ♈",
+    "mbti": "INTP",
     "currentLocation": {
       "label": "Neocity",
       "locationId": "neocity",
@@ -4629,35 +4678,36 @@
     ],
     "destinyCard": null,
     "images": [],
-    "summary": null
+    "summary": null,
+    "sortOrder": 46
   },
   "nct-jeno": {
     "id": "nct-jeno",
     "title": "Lee Jeno",
     "subtitle": "El Centinela de los Sueños",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Superhuman",
-    "factionId": "neo-culturales-tecnologicos",
-    "dynamic": "alpha",
-    "tags": [],
-    "imageSrc": "/img/characters/nct/jeno.png",
-    "occupation": [
-      "Guardián de Defensa Táctica de la Neo Academia"
-    ],
-    "dateOfBirth": "1900-04-23",
-    "zodiac": "Tauro ♉",
-    "mbti": "ISTP",
-    "orientation": "Pan",
-    "romanticSituation": "Soltero",
-    "polyamoryStatus": "no",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Cheonin, Jeyperia",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "nct",
+    "dynamic": "alpha",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "polyamoryStatus": "no",
+    "occupation": [
+      "Guardián de Defensa Táctica de la Neo Academia"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/nct/jeno.png",
+    "dateOfBirth": "1900-04-23",
+    "zodiac": "Tauro ♉",
+    "mbti": "ISTP",
     "currentLocation": {
       "label": "Neocity",
       "locationId": "neocity",
@@ -4707,35 +4757,36 @@
     ],
     "destinyCard": null,
     "images": [],
-    "summary": null
+    "summary": null,
+    "sortOrder": 47
   },
   "nct-haechan": {
     "id": "nct-haechan",
     "title": "Haechan (Lee Donghyuck)",
     "subtitle": "El Maestro de las Pesadilas",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Superhuman",
-    "factionId": "neo-culturales-tecnologicos",
-    "dynamic": "omega",
-    "tags": [],
-    "imageSrc": "/img/characters/nct/haechan.png",
-    "occupation": [
-      "Profesor de Oniromancia, Ilusiones Cognitivas e Interpretación de Pesadillas"
-    ],
-    "dateOfBirth": "1500-06-06",
-    "zodiac": "Géminis ♊",
-    "mbti": "ESFP",
-    "orientation": "Pan",
-    "romanticSituation": "Soltero",
-    "polyamoryStatus": "no",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Kwangya, Sylmorien",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "nct",
+    "dynamic": "omega",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "polyamoryStatus": "no",
+    "occupation": [
+      "Profesor de Oniromancia, Ilusiones Cognitivas e Interpretación de Pesadillas"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/nct/haechan.png",
+    "dateOfBirth": "1500-06-06",
+    "zodiac": "Géminis ♊",
+    "mbti": "ESFP",
     "currentLocation": {
       "label": "Neocity",
       "locationId": "neocity",
@@ -4820,35 +4871,36 @@
     ],
     "destinyCard": null,
     "images": [],
-    "summary": null
+    "summary": null,
+    "sortOrder": 48
   },
   "nct-jaemin": {
     "id": "nct-jaemin",
     "title": "Na Jaemin",
     "subtitle": "El Guardián del Plano Onírico",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Superhuman",
-    "factionId": "neo-culturales-tecnologicos",
-    "dynamic": "omega",
-    "tags": [],
-    "imageSrc": "/img/characters/nct/jaemin.png",
-    "occupation": [
-      "Guardián de Contención del Plano Onírico (Dreamscape)"
-    ],
-    "dateOfBirth": "1900-08-13",
-    "zodiac": "Leo ♌",
-    "mbti": "ISFJ",
-    "orientation": "Pan",
-    "romanticSituation": "Soltero",
-    "polyamoryStatus": "no",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Sanbu, Jeyperia",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "nct",
+    "dynamic": "omega",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "polyamoryStatus": "no",
+    "occupation": [
+      "Guardián de Contención del Plano Onírico (Dreamscape)"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/nct/jaemin.png",
+    "dateOfBirth": "1900-08-13",
+    "zodiac": "Leo ♌",
+    "mbti": "ISFJ",
     "currentLocation": {
       "label": "Neocity",
       "locationId": "neocity",
@@ -4903,35 +4955,36 @@
     ],
     "destinyCard": null,
     "images": [],
-    "summary": null
+    "summary": null,
+    "sortOrder": 49
   },
   "nct-yangyang": {
     "id": "nct-yangyang",
     "title": "Liu Yangyang",
     "subtitle": "El Maestro del Viento",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Superhuman",
-    "factionId": "neo-culturales-tecnologicos",
-    "dynamic": "omega",
-    "tags": [],
-    "imageSrc": "/img/characters/nct/yangyang.png",
-    "occupation": [
-      "Profesor de Aerodinámica Arcana y Movilidad de Combate"
-    ],
-    "dateOfBirth": "1910-10-10",
-    "zodiac": "Libra ♎",
-    "mbti": "INTJ",
-    "orientation": "Pan",
-    "romanticSituation": "Soltero",
-    "polyamoryStatus": "yes",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Peitai, Wantai",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "nct",
+    "dynamic": "omega",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Profesor de Aerodinámica Arcana y Movilidad de Combate"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/nct/yangyang.png",
+    "dateOfBirth": "1910-10-10",
+    "zodiac": "Libra ♎",
+    "mbti": "INTJ",
     "currentLocation": {
       "label": "Neocity",
       "locationId": "neocity",
@@ -4973,35 +5026,36 @@
     ],
     "destinyCard": null,
     "images": [],
-    "summary": null
+    "summary": null,
+    "sortOrder": 50
   },
   "nct-chenle": {
     "id": "nct-chenle",
     "title": "Zhong Chenle",
     "subtitle": "El Arquitecto de Sueños",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Superhuman",
-    "factionId": "neo-culturales-tecnologicos",
-    "dynamic": "omega",
-    "tags": [],
-    "imageSrc": "/img/characters/nct/chenle.png",
-    "occupation": [
-      "Guardián de Infraestructura de Redes Oníricas"
-    ],
-    "dateOfBirth": "1901-11-22",
-    "zodiac": "Sagitario ♐",
-    "mbti": "ESTP",
-    "orientation": "Hetero",
-    "romanticSituation": "Soltero",
-    "polyamoryStatus": "yes",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Haishang, Naxai",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "nct",
+    "dynamic": "omega",
+    "orientation": "Hetero",
+    "romanticSituation": "Soltero",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Guardián de Infraestructura de Redes Oníricas"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/nct/chenle.png",
+    "dateOfBirth": "1901-11-22",
+    "zodiac": "Sagitario ♐",
+    "mbti": "ESTP",
     "currentLocation": {
       "label": "Neocity",
       "locationId": "neocity",
@@ -5056,35 +5110,36 @@
     ],
     "destinyCard": null,
     "images": [],
-    "summary": null
+    "summary": null,
+    "sortOrder": 51
   },
   "nct-jisung": {
     "id": "nct-jisung",
     "title": "Park Jisung",
     "subtitle": "El Vigilante del Subconsciente",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Superhuman",
-    "factionId": "neo-culturales-tecnologicos",
-    "dynamic": "alpha",
-    "tags": [],
-    "imageSrc": "/img/characters/nct/jisung.png",
-    "occupation": [
-      "Guardián de Vigilancia Subconsciente e Infiltración Mental"
-    ],
-    "dateOfBirth": "1902-02-05",
-    "zodiac": "Acuario ♒",
-    "mbti": "INFP",
-    "orientation": "Pan",
-    "romanticSituation": "Soltero",
-    "polyamoryStatus": "yes",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Kwangya, Sylmorien",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "nct",
+    "dynamic": "alpha",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Guardián de Vigilancia Subconsciente e Infiltración Mental"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/nct/jisung.png",
+    "dateOfBirth": "1902-02-05",
+    "zodiac": "Acuario ♒",
+    "mbti": "INFP",
     "currentLocation": {
       "label": "Neocity",
       "locationId": "neocity",
@@ -5139,36 +5194,37 @@
     ],
     "destinyCard": null,
     "images": [],
-    "summary": null
+    "summary": null,
+    "sortOrder": 52
   },
   "nct-sion": {
     "id": "nct-sion",
     "title": "Oh Sion",
     "subtitle": "El Prodigio de la Evocación",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Superhuman",
-    "factionId": "neo-culturales-tecnologicos",
-    "dynamic": "alpha",
-    "tags": [],
-    "imageSrc": "/img/characters/nct/sion.png",
-    "occupation": [
-      "Nuevo Defensor de Sylmorien",
-      "Especialista en Evocación Táctica"
-    ],
-    "dateOfBirth": "2002-05-11",
-    "zodiac": "Tauro ♉",
-    "mbti": "INTJ",
-    "orientation": "Pan",
-    "romanticSituation": "Soltero",
-    "polyamoryStatus": "discovering",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Namjeo, Sylmorien",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "nct",
+    "dynamic": "alpha",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "polyamoryStatus": "discovering",
+    "occupation": [
+      "Nuevo Defensor de Sylmorien",
+      "Especialista en Evocación Táctica"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/nct/sion.png",
+    "dateOfBirth": "2002-05-11",
+    "zodiac": "Tauro ♉",
+    "mbti": "INTJ",
     "currentLocation": {
       "label": "Neocity",
       "locationId": "neocity",
@@ -5223,36 +5279,37 @@
     ],
     "destinyCard": "2 de Corazones",
     "images": [],
-    "summary": null
+    "summary": null,
+    "sortOrder": 53
   },
   "nct-riku": {
     "id": "nct-riku",
     "title": "Riku Maeda",
     "subtitle": "El Prodigio de Gravitacional",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Superhuman",
-    "factionId": "neo-culturales-tecnologicos",
-    "dynamic": "beta",
-    "tags": [],
-    "imageSrc": "/img/characters/nct/riku.png",
-    "occupation": [
-      "Nuevo Defensor de Sylmorien",
-      "Especialista en Dinámica Gravitacional"
-    ],
-    "dateOfBirth": "2003-06-28",
-    "zodiac": "Cáncer ♋",
-    "mbti": "ISFP",
-    "orientation": "Pan",
-    "romanticSituation": "Soltero",
-    "polyamoryStatus": "discovering",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Kuifu, Hotou",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "nct",
+    "dynamic": "beta",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "polyamoryStatus": "discovering",
+    "occupation": [
+      "Nuevo Defensor de Sylmorien",
+      "Especialista en Dinámica Gravitacional"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/nct/riku.png",
+    "dateOfBirth": "2003-06-28",
+    "zodiac": "Cáncer ♋",
+    "mbti": "ISFP",
     "currentLocation": {
       "label": "Neocity",
       "locationId": "neocity",
@@ -5294,36 +5351,37 @@
     ],
     "destinyCard": "3 de Corazones",
     "images": [],
-    "summary": null
+    "summary": null,
+    "sortOrder": 54
   },
   "nct-yushi": {
     "id": "nct-yushi",
     "title": "Yushi Tokuno",
     "subtitle": "El Prodigio de la Abjuración",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Superhuman",
-    "factionId": "neo-culturales-tecnologicos",
-    "dynamic": "beta",
-    "tags": [],
-    "imageSrc": "/img/characters/nct/yushi.png",
-    "occupation": [
-      "Nuevo Defensor de Sylmorien",
-      "Especialista en Protección Abjurativa"
-    ],
-    "dateOfBirth": "2004-04-05",
-    "zodiac": "Aries ♈",
-    "mbti": "ISTJ",
-    "orientation": "Pan",
-    "romanticSituation": "Soltero",
-    "polyamoryStatus": "discovering",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Kyokyo, Hotou",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "nct",
+    "dynamic": "beta",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "polyamoryStatus": "discovering",
+    "occupation": [
+      "Nuevo Defensor de Sylmorien",
+      "Especialista en Protección Abjurativa"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/nct/yushi.png",
+    "dateOfBirth": "2004-04-05",
+    "zodiac": "Aries ♈",
+    "mbti": "ISTJ",
     "currentLocation": {
       "label": "Neocity",
       "locationId": "neocity",
@@ -5370,36 +5428,37 @@
     ],
     "destinyCard": "4 de Corazones",
     "images": [],
-    "summary": null
+    "summary": null,
+    "sortOrder": 55
   },
   "nct-jaehee": {
     "id": "nct-jaehee",
     "title": "Kim Jaehee",
     "subtitle": "El Prodigio de la Creación",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Superhuman",
-    "factionId": "neo-culturales-tecnologicos",
-    "dynamic": "omega",
-    "tags": [],
-    "imageSrc": "/img/characters/nct/jaehee.png",
-    "occupation": [
-      "Nuevo Defensor de Sylmorien",
-      "Especialista en Creación Arcanotécnica"
-    ],
-    "dateOfBirth": "2005-06-21",
-    "zodiac": "Cáncer ♋",
-    "mbti": "INFJ",
-    "orientation": "Pan",
-    "romanticSituation": "Soltero",
-    "polyamoryStatus": "discovering",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Gudae, Hyberia",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "nct",
+    "dynamic": "omega",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "polyamoryStatus": "discovering",
+    "occupation": [
+      "Nuevo Defensor de Sylmorien",
+      "Especialista en Creación Arcanotécnica"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/nct/jaehee.png",
+    "dateOfBirth": "2005-06-21",
+    "zodiac": "Cáncer ♋",
+    "mbti": "INFJ",
     "currentLocation": {
       "label": "Neocity",
       "locationId": "neocity",
@@ -5449,36 +5508,37 @@
     ],
     "destinyCard": "5 de Corazones",
     "images": [],
-    "summary": null
+    "summary": null,
+    "sortOrder": 56
   },
   "nct-ryo": {
     "id": "nct-ryo",
     "title": "Ryo Hirose",
     "subtitle": "El Prodigio de la Alquimia",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Superhuman",
-    "factionId": "neo-culturales-tecnologicos",
-    "dynamic": "beta",
-    "tags": [],
-    "imageSrc": "/img/characters/nct/ryo.png",
-    "occupation": [
-      "Nuevo Defensor de Sylmorien",
-      "Especialista en Alquimia Aplicada"
-    ],
-    "dateOfBirth": "2007-08-04",
-    "zodiac": "Leo ♌",
-    "mbti": "ENTP",
-    "orientation": "Pan",
-    "romanticSituation": "Soltero",
-    "polyamoryStatus": "discovering",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Kyokyo, Hotou",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "nct",
+    "dynamic": "beta",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "polyamoryStatus": "discovering",
+    "occupation": [
+      "Nuevo Defensor de Sylmorien",
+      "Especialista en Alquimia Aplicada"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/nct/ryo.png",
+    "dateOfBirth": "2007-08-04",
+    "zodiac": "Leo ♌",
+    "mbti": "ENTP",
     "currentLocation": {
       "label": "Neocity",
       "locationId": "neocity",
@@ -5525,36 +5585,37 @@
     ],
     "destinyCard": "6 de Corazones",
     "images": [],
-    "summary": null
+    "summary": null,
+    "sortOrder": 57
   },
   "nct-sakuya": {
     "id": "nct-sakuya",
     "title": "Sakuya Fujinaga",
     "subtitle": "El Prodigio de las Armas",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "supporting",
     "race": "Superhuman",
-    "factionId": "neo-culturales-tecnologicos",
-    "dynamic": "alpha",
-    "tags": [],
-    "imageSrc": "/img/characters/nct/sakuya.png",
-    "occupation": [
-      "Nuevo Defensor de Sylmorien",
-      "Especialista en Armamento Arcano"
-    ],
-    "dateOfBirth": "2007-11-18",
-    "zodiac": "Escorpio ♏",
-    "mbti": "ENFP",
-    "orientation": "Pan",
-    "romanticSituation": "Soltero",
-    "polyamoryStatus": "discovering",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Tamasai, Hotou",
       "locationId": null,
       "docPath": null
     },
+    "factionId": "nct",
+    "dynamic": "alpha",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "polyamoryStatus": "discovering",
+    "occupation": [
+      "Nuevo Defensor de Sylmorien",
+      "Especialista en Armamento Arcano"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/nct/sakuya.png",
+    "dateOfBirth": "2007-11-18",
+    "zodiac": "Escorpio ♏",
+    "mbti": "ENFP",
     "currentLocation": {
       "label": "Neocity",
       "locationId": "neocity",
@@ -5609,36 +5670,37 @@
     ],
     "destinyCard": "7 de Corazones",
     "images": [],
-    "summary": null
+    "summary": null,
+    "sortOrder": 58
   },
   "nct-baby": {
     "id": "nct-baby",
     "title": "Jeong Jaewoo",
     "subtitle": "La Clave de Sylmorien",
     "status": "active",
-    "group": "misc",
+    "group": "npc",
     "role": "npc",
     "race": "Superhuman",
-    "factionId": "neo-culturales-tecnologicos",
-    "dynamic": "n/a",
-    "tags": [],
-    "imageSrc": "/img/characters/nct/baby.png",
-    "occupation": [
-      "Clave de Sylmorien",
-      "Custodia Especial de la Neo Academia"
-    ],
-    "dateOfBirth": "2024-06-30",
-    "zodiac": "Cáncer ♋",
-    "mbti": null,
-    "orientation": null,
-    "romanticSituation": null,
-    "polyamoryStatus": null,
     "regionId": "sylmorien",
     "hometown": {
       "label": "Neocity, Sylmorien",
       "locationId": "neocity",
       "docPath": "world/locations/neocity"
     },
+    "factionId": "nct",
+    "dynamic": "n/a",
+    "orientation": null,
+    "romanticSituation": null,
+    "polyamoryStatus": null,
+    "occupation": [
+      "Clave de Sylmorien",
+      "Custodia Especial de la Neo Academia"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/nct/baby.png",
+    "dateOfBirth": "2024-06-30",
+    "zodiac": "Cáncer ♋",
+    "mbti": null,
     "currentLocation": {
       "label": "Neocity",
       "locationId": "neocity",
@@ -5673,6 +5735,727 @@
     ],
     "destinyCard": null,
     "images": [],
-    "summary": null
+    "summary": null,
+    "sortOrder": 59
+  },
+  "andteam-nicholas": {
+    "id": "andteam-nicholas",
+    "title": "Nicholas Wang",
+    "status": "active",
+    "group": "npc",
+    "factionId": "andteam",
+    "tags": [],
+    "imageSrc": "/img/characters/andteam/andteam-nicholas.png",
+    "sortOrder": 60
+  },
+  "andteam-ej": {
+    "id": "andteam-ej",
+    "title": "EJ (Byun Euijoo)",
+    "status": "active",
+    "group": "npc",
+    "factionId": "andteam",
+    "tags": [],
+    "imageSrc": "/img/characters/andteam/andteam-ej.png",
+    "sortOrder": 61
+  },
+  "andteam-fuma": {
+    "id": "andteam-fuma",
+    "title": "Murata Fuma",
+    "status": "active",
+    "group": "npc",
+    "factionId": "andteam",
+    "tags": [],
+    "imageSrc": "/img/characters/andteam/andteam-fuma.png",
+    "sortOrder": 62
+  },
+  "andteam-k": {
+    "id": "andteam-k",
+    "title": "K (Koga Yudai)",
+    "status": "active",
+    "group": "npc",
+    "factionId": "andteam",
+    "tags": [],
+    "imageSrc": "/img/characters/andteam/andteam-k.png",
+    "sortOrder": 63
+  },
+  "adp-annie": {
+    "id": "adp-annie",
+    "title": "Annie Moon",
+    "status": "active",
+    "group": "npc",
+    "factionId": "adp",
+    "tags": [],
+    "imageSrc": "/img/characters/adp/adp-annie.png",
+    "sortOrder": 64
+  },
+  "adp-bailey": {
+    "id": "adp-bailey",
+    "title": "Bailey Sok",
+    "status": "active",
+    "group": "npc",
+    "factionId": "adp",
+    "tags": [],
+    "imageSrc": "/img/characters/adp/adp-bailey.png",
+    "sortOrder": 65
+  },
+  "adp-tarzzan": {
+    "id": "adp-tarzzan",
+    "title": "Tarzzan (Lee Chaewon",
+    "status": "active",
+    "group": "npc",
+    "factionId": "adp",
+    "tags": [],
+    "imageSrc": "/img/characters/adp/adp-tarzzan.png",
+    "sortOrder": 66
+  },
+  "adp-woochan": {
+    "id": "adp-woochan",
+    "title": "Jo Woochan",
+    "status": "active",
+    "group": "npc",
+    "factionId": "adp",
+    "tags": [],
+    "imageSrc": "/img/characters/adp/adp-woochan.png",
+    "sortOrder": 67
+  },
+  "adp-youngseo": {
+    "id": "adp-youngseo",
+    "title": "Lee Youngseo",
+    "status": "active",
+    "group": "npc",
+    "factionId": "adp",
+    "tags": [],
+    "imageSrc": "/img/characters/adp/adp-youngseo.png",
+    "sortOrder": 68
+  },
+  "astro-eunwoo": {
+    "id": "astro-eunwoo",
+    "title": "Cha Eunwoo",
+    "status": "active",
+    "group": "npc",
+    "factionId": "astro",
+    "tags": [],
+    "imageSrc": "/img/characters/astro/astro-eunwoo.png",
+    "sortOrder": 69
+  },
+  "astro-jinjin": {
+    "id": "astro-jinjin",
+    "title": "Jinjin (Park Jinwoo)",
+    "status": "active",
+    "group": "npc",
+    "factionId": "astro",
+    "tags": [],
+    "imageSrc": "/img/characters/astro/astro-jinjin.png",
+    "sortOrder": 70
+  },
+  "astro-mj": {
+    "id": "astro-mj",
+    "title": "MJ (Kim Myungjun)",
+    "status": "active",
+    "group": "npc",
+    "factionId": "astro",
+    "tags": [],
+    "imageSrc": "/img/characters/astro/astro-mj.png",
+    "sortOrder": 71
+  },
+  "astro-moonbin": {
+    "id": "astro-moonbin",
+    "title": "Moon Bin",
+    "status": "active",
+    "group": "npc",
+    "factionId": "astro",
+    "tags": [],
+    "imageSrc": "/img/characters/astro/astro-moonbin.png",
+    "sortOrder": 72
+  },
+  "astro-rocky": {
+    "id": "astro-rocky",
+    "title": "Rocky (Park Minhyuk",
+    "status": "active",
+    "group": "npc",
+    "factionId": "astro",
+    "tags": [],
+    "imageSrc": "/img/characters/astro/astro-rocky.png",
+    "sortOrder": 73
+  },
+  "astro-sanha": {
+    "id": "astro-sanha",
+    "title": "Yoon Sanha",
+    "status": "active",
+    "group": "npc",
+    "factionId": "astro",
+    "tags": [],
+    "imageSrc": "/img/characters/astro/astro-sanha.png",
+    "sortOrder": 74
+  },
+  "bnd-leehan": {
+    "id": "bnd-leehan",
+    "title": "Leehan (Kim Donghyun)",
+    "group": "npc",
+    "status": "active",
+    "factionId": "bnd",
+    "imageSrc": "/img/characters/bnd/bnd-leehan.png",
+    "tags": [],
+    "sortOrder": 75
+  },
+  "bnd-taesan": {
+    "id": "bnd-taesan",
+    "title": "Taesan (Han Dong-min)",
+    "group": "npc",
+    "status": "active",
+    "factionId": "bnd",
+    "imageSrc": "/img/characters/bnd/bnd-taesan.png",
+    "tags": [],
+    "sortOrder": 76
+  },
+  "ateez-hongjoong": {
+    "id": "ateez-hongjoong",
+    "title": "Kim Hongjoong",
+    "group": "npc",
+    "status": "active",
+    "factionId": "ateez",
+    "imageSrc": "/img/characters/ateez/ateez-hongjoong.png",
+    "tags": [],
+    "sortOrder": 77
+  },
+  "ateez-jongho": {
+    "id": "ateez-jongho",
+    "title": "Choi Jongho",
+    "group": "npc",
+    "status": "active",
+    "factionId": "ateez",
+    "imageSrc": "/img/characters/ateez/ateez-jongho.png",
+    "tags": [],
+    "sortOrder": 78
+  },
+  "ateez-san": {
+    "id": "ateez-san",
+    "title": "Choi San",
+    "group": "npc",
+    "status": "active",
+    "factionId": "ateez",
+    "imageSrc": "/img/characters/ateez/ateez-san.png",
+    "tags": [],
+    "sortOrder": 79
+  },
+  "bts-agust-d": {
+    "id": "bts-agust-d",
+    "title": "Agust D",
+    "group": "npc",
+    "status": "active",
+    "factionId": "bts",
+    "imageSrc": "/img/characters/bts/bts-agust-d.png",
+    "tags": [],
+    "sortOrder": 80
+  },
+  "bts-v": {
+    "id": "bts-v",
+    "title": "V (Kim Taehyung)",
+    "group": "npc",
+    "status": "active",
+    "factionId": "bts",
+    "imageSrc": "/img/characters/bts/bts-v.png",
+    "tags": [],
+    "sortOrder": 81
+  },
+  "cortis-james": {
+    "id": "cortis-james",
+    "title": "James Chao",
+    "group": "npc",
+    "status": "active",
+    "factionId": "cortis",
+    "imageSrc": "/img/characters/cortis/cortis-james.png",
+    "tags": [],
+    "sortOrder": 82
+  },
+  "cortis-juhoon": {
+    "id": "cortis-juhoon",
+    "title": "Kim Juhoon",
+    "group": "npc",
+    "status": "active",
+    "factionId": "cortis",
+    "imageSrc": "/img/characters/cortis/cortis-juhoon.png",
+    "tags": [],
+    "sortOrder": 83
+  },
+  "cortis-keonho": {
+    "id": "cortis-keonho",
+    "title": "Ahn Keonho",
+    "group": "npc",
+    "status": "active",
+    "factionId": "cortis",
+    "imageSrc": "/img/characters/cortis/cortis-keonho.png",
+    "tags": [],
+    "sortOrder": 84
+  },
+  "cortis-martin": {
+    "id": "cortis-martin",
+    "title": "Martin Jonathan Edwards",
+    "group": "npc",
+    "status": "active",
+    "factionId": "cortis",
+    "imageSrc": "/img/characters/cortis/cortis-martin.png",
+    "tags": [],
+    "sortOrder": 85
+  },
+  "cortis-seonghyeon": {
+    "id": "cortis-seonghyeon",
+    "title": "Eom Seonghyeon",
+    "group": "party",
+    "status": "active",
+    "factionId": "cortis",
+    "imageSrc": "/img/characters/cortis/cortis-seonghyeon.png",
+    "tags": [],
+    "sortOrder": 86
+  },
+  "os-asuka": {
+    "id": "os-asuka",
+    "title": "Asuka Arai",
+    "group": "party",
+    "status": "active",
+    "factionId": "os-guild",
+    "imageSrc": "/img/characters/os-guild/os-asuka.jpeg",
+    "tags": [],
+    "sortOrder": 87
+  },
+  "os-eris": {
+    "id": "os-eris",
+    "title": "Baek Eris",
+    "group": "party",
+    "status": "active",
+    "factionId": "os-guild",
+    "imageSrc": "/img/characters/os-guild/os-eris.jpeg",
+    "tags": [],
+    "sortOrder": 88
+  },
+  "os-lira": {
+    "id": "os-lira",
+    "title": "Lira",
+    "group": "party",
+    "status": "active",
+    "factionId": "os-guild",
+    "imageSrc": "/img/characters/os-guild/os-lira.jpeg",
+    "tags": [],
+    "sortOrder": 89
+  },
+  "os-mimira": {
+    "id": "os-mimira",
+    "title": "Mimira",
+    "group": "party",
+    "status": "active",
+    "factionId": "os-guild",
+    "imageSrc": "/img/characters/os-guild/os-mimira.jpeg",
+    "tags": [],
+    "sortOrder": 90
+  },
+  "os-lu-yan": {
+    "id": "os-lu-yan",
+    "title": "Lu Yan",
+    "group": "party",
+    "status": "active",
+    "factionId": "os-guild",
+    "imageSrc": "/img/characters/os-guild/os-lu-yan.jpeg",
+    "tags": [],
+    "sortOrder": 91
+  },
+  "os-jiwon": {
+    "id": "os-jiwon",
+    "title": "Seo Jiwon",
+    "group": "party",
+    "status": "active",
+    "factionId": "os-guild",
+    "imageSrc": "/img/characters/os-guild/os-jiwon.jpeg",
+    "tags": [],
+    "sortOrder": 92
+  },
+  "kiof-natty": {
+    "id": "kiof-natty",
+    "title": "Natty (Anatchaya Suputhipong)",
+    "group": "npc",
+    "status": "active",
+    "factionId": "kiof",
+    "imageSrc": "/img/characters/kiof/kiof-natty.png",
+    "tags": [],
+    "sortOrder": 93
+  },
+  "katseye-sophia": {
+    "id": "katseye-sophia",
+    "title": "Sophia Laforteza",
+    "group": "npc",
+    "status": "active",
+    "factionId": "katseye",
+    "imageSrc": "/img/characters/katseye/katseye-sophia.png",
+    "tags": [],
+    "sortOrder": 94
+  },
+  "katseye-daniela": {
+    "id": "katseye-daniela",
+    "title": "Daniela Avanzini",
+    "group": "npc",
+    "status": "active",
+    "factionId": "katseye",
+    "imageSrc": "/img/characters/katseye/katseye-daniela.png",
+    "tags": [],
+    "sortOrder": 95
+  },
+  "katseye-megan": {
+    "id": "katseye-megan",
+    "title": "Megan Skiendiel",
+    "group": "npc",
+    "status": "active",
+    "factionId": "katseye",
+    "imageSrc": "/img/characters/katseye/katseye-megan.png",
+    "tags": [],
+    "sortOrder": 96
+  },
+  "lsf-yunjin": {
+    "id": "lsf-yunjin",
+    "title": "Huh Yunjin",
+    "group": "npc",
+    "status": "active",
+    "factionId": "lsf",
+    "imageSrc": "/img/characters/lsf/lsf-yunjin.png",
+    "tags": [],
+    "sortOrder": 97
+  },
+  "lsf-chaewon": {
+    "id": "lsf-chaewon",
+    "title": "Kim Chaewon",
+    "group": "npc",
+    "status": "active",
+    "factionId": "lsf",
+    "imageSrc": "/img/characters/lsf/lsf-chaewon.png",
+    "tags": [],
+    "sortOrder": 98
+  },
+  "lsf-eunchae": {
+    "id": "lsf-eunchae",
+    "title": "Hong Eunchae",
+    "group": "npc",
+    "status": "active",
+    "factionId": "lsf",
+    "imageSrc": "/img/characters/lsf/lsf-eunchae.png",
+    "tags": [],
+    "sortOrder": 99
+  },
+  "lsf-kazuha": {
+    "id": "lsf-kazuha",
+    "title": "Kazuha Nakamura",
+    "group": "npc",
+    "status": "active",
+    "factionId": "lsf",
+    "imageSrc": "/img/characters/lsf/lsf-kazuha.png",
+    "tags": [],
+    "sortOrder": 100
+  },
+  "lsf-sakura": {
+    "id": "lsf-sakura",
+    "title": "Sakura Miyawaki",
+    "group": "npc",
+    "status": "active",
+    "factionId": "lsf",
+    "imageSrc": "/img/characters/lsf/lsf-sakura.png",
+    "tags": [],
+    "sortOrder": 101
+  },
+  "katseye-manon": {
+    "id": "katseye-manon",
+    "title": "Manon Bannerman",
+    "group": "npc",
+    "status": "active",
+    "factionId": "katseye",
+    "imageSrc": "/img/characters/katseye/katseye-manon.png",
+    "tags": [],
+    "sortOrder": 102
+  },
+  "katseye-lara": {
+    "id": "katseye-lara",
+    "title": "Lara Raj",
+    "group": "npc",
+    "status": "active",
+    "factionId": "katseye",
+    "imageSrc": "/img/characters/katseye/katseye-lara.png",
+    "tags": [],
+    "sortOrder": 103
+  },
+  "katseye-yoonchae": {
+    "id": "katseye-yoonchae",
+    "title": "Jeung Yoonchae",
+    "group": "npc",
+    "status": "active",
+    "factionId": "katseye",
+    "imageSrc": "/img/characters/katseye/katseye-yoonchae.png",
+    "tags": [],
+    "sortOrder": 104
+  },
+  "lngshot-woojin": {
+    "id": "lngshot-woojin",
+    "title": "Jung Woojin",
+    "group": "npc",
+    "status": "active",
+    "factionId": "lngshot",
+    "imageSrc": "/img/characters/lngshot/lngshot-woojin.png",
+    "tags": [],
+    "sortOrder": 105
+  },
+  "lngshot-ryul": {
+    "id": "lngshot-ryul",
+    "title": "Kim Ryul",
+    "group": "npc",
+    "status": "active",
+    "factionId": "lngshot",
+    "imageSrc": "/img/characters/lngshot/lngshot-ryul.png",
+    "tags": [],
+    "sortOrder": 106
+  },
+  "lngshot-ohyul": {
+    "id": "lngshot-ohyul",
+    "title": "Kwon Ohyul",
+    "group": "npc",
+    "status": "active",
+    "factionId": "lngshot",
+    "imageSrc": "/img/characters/lngshot/lngshot-ohyul.png",
+    "tags": [],
+    "sortOrder": 107
+  },
+  "lngshot-louis": {
+    "id": "lngshot-louis",
+    "title": "Louis Jourdain Lim",
+    "group": "npc",
+    "status": "active",
+    "factionId": "lngshot",
+    "imageSrc": "/img/characters/lngshot/lngshot-louis.png",
+    "tags": [],
+    "sortOrder": 108
+  },
+  "ncit-tata": {
+    "id": "ncit-tata",
+    "title": "Tata",
+    "group": "npc",
+    "status": "active",
+    "factionId": "ncit",
+    "imageSrc": "/img/characters/ncit/ncit-tata.jpg",
+    "tags": [],
+    "sortOrder": 109
+  },
+  "ncit-hamin": {
+    "id": "ncit-hamin",
+    "title": "Hamin",
+    "group": "npc",
+    "status": "active",
+    "factionId": "ncit",
+    "imageSrc": "/img/characters/ncit/ncit-hamin.jpg",
+    "tags": [],
+    "sortOrder": 110
+  },
+  "ncit-hyunjun": {
+    "id": "ncit-hyunjun",
+    "title": "Hyunjun",
+    "group": "npc",
+    "status": "active",
+    "factionId": "ncit",
+    "imageSrc": "/img/characters/ncit/ncit-hyunjun.jpg",
+    "tags": [],
+    "sortOrder": 111
+  },
+  "ncit-nicholas": {
+    "id": "ncit-nicholas",
+    "title": "Nicholas",
+    "group": "npc",
+    "status": "active",
+    "factionId": "ncit",
+    "imageSrc": "/img/characters/ncit/ncit-nicholas.jpg",
+    "tags": [],
+    "sortOrder": 112
+  },
+  "ncit-haruta": {
+    "id": "ncit-haruta",
+    "title": "Haruta",
+    "group": "npc",
+    "status": "active",
+    "factionId": "ncit",
+    "imageSrc": "/img/characters/ncit/ncit-haruta.jpg",
+    "tags": [],
+    "sortOrder": 113
+  },
+  "ncit-sadaharu": {
+    "id": "ncit-sadaharu",
+    "title": "Sadaharu",
+    "group": "npc",
+    "status": "active",
+    "factionId": "ncit",
+    "imageSrc": "/img/characters/ncit/ncit-sadaharu.jpg",
+    "tags": [],
+    "sortOrder": 114
+  },
+  "ncit-charlie": {
+    "id": "ncit-charlie",
+    "title": "Charlie",
+    "group": "npc",
+    "status": "active",
+    "factionId": "ncit",
+    "imageSrc": "/img/characters/ncit/ncit-charlie.jpg",
+    "tags": [],
+    "sortOrder": 115
+  },
+  "ncit-hanbi": {
+    "id": "ncit-hanbi",
+    "title": "Hanbi",
+    "group": "npc",
+    "status": "active",
+    "factionId": "ncit",
+    "imageSrc": "/img/characters/ncit/ncit-hanbi.jpg",
+    "tags": [],
+    "sortOrder": 116
+  },
+  "ncit-daniel": {
+    "id": "ncit-daniel",
+    "title": "Daniel",
+    "group": "npc",
+    "status": "active",
+    "factionId": "ncit",
+    "imageSrc": "/img/characters/ncit/ncit-daniel.jpg",
+    "tags": [],
+    "sortOrder": 117
+  },
+  "ncit-songha": {
+    "id": "ncit-songha",
+    "title": "Songha",
+    "group": "npc",
+    "status": "active",
+    "factionId": "ncit",
+    "imageSrc": "/img/characters/ncit/ncit-songha.jpg",
+    "tags": [],
+    "sortOrder": 118
+  },
+  "ncit-justin": {
+    "id": "ncit-justin",
+    "title": "Justin Jay",
+    "group": "npc",
+    "status": "active",
+    "factionId": "ncit",
+    "imageSrc": "/img/characters/ncit/ncit-justin.jpg",
+    "tags": [],
+    "sortOrder": 119
+  },
+  "ncit-kachin": {
+    "id": "ncit-kachin",
+    "title": "Kachin",
+    "group": "npc",
+    "status": "active",
+    "factionId": "ncit",
+    "imageSrc": "/img/characters/ncit/ncit-kachin.jpg",
+    "tags": [],
+    "sortOrder": 120
+  },
+  "ncit-woolin": {
+    "id": "ncit-woolin",
+    "title": "Woolin",
+    "group": "npc",
+    "status": "active",
+    "factionId": "ncit",
+    "imageSrc": "/img/characters/ncit/ncit-woolin.jpg",
+    "tags": [],
+    "sortOrder": 121
+  },
+  "ncit-kassho": {
+    "id": "ncit-kassho",
+    "title": "Kassho",
+    "group": "npc",
+    "status": "active",
+    "factionId": "ncit",
+    "imageSrc": "/img/characters/ncit/ncit-kassho.jpg",
+    "tags": [],
+    "sortOrder": 122
+  },
+  "ncit-jaewon": {
+    "id": "ncit-jaewon",
+    "title": "Jaewon",
+    "group": "npc",
+    "status": "active",
+    "factionId": "ncit",
+    "imageSrc": "/img/characters/ncit/ncit-jaewon.jpg",
+    "tags": [],
+    "sortOrder": 123
+  },
+  "njz-hanni": {
+    "id": "njz-hanni",
+    "title": "Hanni",
+    "group": "npc",
+    "status": "active",
+    "factionId": "njz",
+    "imageSrc": "/img/characters/njz/njz-hanni.png",
+    "tags": [],
+    "sortOrder": 124
+  },
+  "njz-minji": {
+    "id": "njz-minji",
+    "title": "Kim Minji",
+    "group": "npc",
+    "status": "active",
+    "factionId": "njz",
+    "imageSrc": "/img/characters/njz/njz-minji.png",
+    "tags": [],
+    "sortOrder": 125
+  },
+  "njz-danielle": {
+    "id": "njz-danielle",
+    "title": "Danielle Marsh",
+    "group": "npc",
+    "status": "active",
+    "factionId": "njz",
+    "imageSrc": "/img/characters/njz/njz-danielle.png",
+    "tags": [],
+    "sortOrder": 126
+  },
+  "p1h-keeho": {
+    "id": "p1h-keeho",
+    "title": "Yoon Keeho",
+    "group": "npc",
+    "status": "active",
+    "factionId": "p1h",
+    "imageSrc": "/img/characters/p1h/p1h-keeho.png",
+    "tags": [],
+    "sortOrder": 127
+  },
+  "psf-jimmy": {
+    "id": "psf-jimmy",
+    "title": "Jimmy",
+    "group": "npc",
+    "status": "active",
+    "factionId": "psf",
+    "imageSrc": "/img/characters/psf/psf-jimmy.png",
+    "tags": [],
+    "sortOrder": 128
+  },
+  "psf-kokoro": {
+    "id": "psf-kokoro",
+    "title": "Kokoro",
+    "group": "npc",
+    "status": "active",
+    "factionId": "psf",
+    "imageSrc": "/img/characters/psf/psf-kokoro.png",
+    "tags": [],
+    "sortOrder": 129
+  },
+  "psf-tsurugi": {
+    "id": "psf-tsurugi",
+    "title": "Tsurugi",
+    "group": "npc",
+    "status": "active",
+    "factionId": "psf",
+    "imageSrc": "/img/characters/psf/psf-tsurugi.png",
+    "tags": [],
+    "sortOrder": 130
+  },
+  "psf-weesa": {
+    "id": "psf-weesa",
+    "title": "Weesa",
+    "group": "npc",
+    "status": "active",
+    "factionId": "psf",
+    "imageSrc": "/img/characters/psf/psf-weesa.png",
+    "tags": [],
+    "sortOrder": 131
   }
 }

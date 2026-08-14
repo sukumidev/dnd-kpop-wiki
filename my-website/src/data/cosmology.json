@@ -1,0 +1,38 @@
+{
+  "astro-eunwoo": {
+    "id": "astro-eunwoo",
+    "characterId": "astro-eunwoo",
+    "pantheon": "Los Dioses Astronómicos",
+    "sortOrder": 1
+  },
+  "astro-jinjin": {
+    "id": "astro-jinjin",
+    "characterId": "astro-jinjin",
+    "pantheon": "Los Dioses Astronómicos",
+    "sortOrder": 2
+  },
+  "astro-mj": {
+    "id": "astro-mj",
+    "characterId": "astro-mj",
+    "pantheon": "Los Dioses Astronómicos",
+    "sortOrder": 3
+  },
+  "astro-moonbin": {
+    "id": "astro-moonbin",
+    "characterId": "astro-moonbin",
+    "pantheon": "Los Dioses Astronómicos",
+    "sortOrder": 4
+  },
+  "astro-rocky": {
+    "id": "astro-rocky",
+    "characterId": "astro-rocky",
+    "pantheon": "Los Dioses Astronómicos",
+    "sortOrder": 5
+  },
+  "astro-sanha": {
+    "id": "astro-sanha",
+    "characterId": "astro-sanha",
+    "pantheon": "Los Dioses Astronómicos",
+    "sortOrder": 6
+  }
+}
