@@ -156,6 +156,17 @@ Validar:
 - IDs únicos en `layers`
 - IDs únicos en `icons`
 
+### `sessions.json`
+
+Validar:
+
+- `id` y `number` únicos
+- `title`
+- `sessionDate` en formato ISO `YYYY-MM-DD`
+- `locationIds` y sus referencias a `locations.json`
+- `characterIds` y sus referencias a `characters.json`
+- warnings no bloqueantes por fechas, lugares, personajes o imagen ausentes
+
 ## Comportamiento esperado de scripts
 
 ### Ante error crítico

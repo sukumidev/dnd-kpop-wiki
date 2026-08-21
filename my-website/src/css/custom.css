@@ -409,36 +409,131 @@ h1[class*='docTitle'] {
   outline-offset: 3px;
 }
 
-@media (max-width: 1200px) {
-  .theme-doc-sidebar-container,
-  [class*='docSidebarContainer'],
-  [class*='theme-doc-sidebar-container'] {
-    position: fixed !important;
-    top: var(--ifm-navbar-height);
-    left: -320px;
-    z-index: 9998;
-    width: 300px;
-    height: calc(100vh - var(--ifm-navbar-height));
-    overflow-y: auto;
-    border-right: 1px solid var(--h-border-soft);
-    background: var(--h-bg-page);
-    transition: left var(--h-motion-fast) ease;
-  }
-
-  html.hally-sidebar-open .theme-doc-sidebar-container,
-  html.hally-sidebar-open [class*='docSidebarContainer'],
-  html.hally-sidebar-open [class*='theme-doc-sidebar-container'] { left: 0; }
-
-  html.hally-sidebar-open::before {
-    content: '';
-    position: fixed;
-    z-index: 9997;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.58);
-  }
-}
-
 @media (max-width: 996px) {
+  :root {
+    --ifm-navbar-sidebar-width: min(88vw, 360px);
+  }
+
+  /* Keep the fixed mobile drawer relative to the viewport. A backdrop filter on
+     its navbar ancestor otherwise constrains it to the navbar's 60px height. */
+  .navbar {
+    background: var(--h-bg-deep);
+    backdrop-filter: none;
+  }
+
+  .navbar__toggle {
+    width: 44px;
+    height: 44px;
+    margin-left: -0.45rem;
+    padding: 7px;
+    place-items: center;
+    border-radius: var(--h-radius-ui);
+  }
+
+  .navbar-sidebar {
+    width: var(--ifm-navbar-sidebar-width);
+    height: 100vh;
+    height: 100dvh;
+    max-height: 100vh;
+    max-height: 100dvh;
+    border: 0;
+    border-right: 1px solid var(--h-border-soft);
+    border-radius: 0;
+    overflow: hidden;
+    background: var(--h-bg-page);
+    box-shadow: 16px 0 42px rgba(0, 0, 0, 0.34);
+  }
+
+  .navbar-sidebar__brand {
+    width: 100%;
+    min-width: 0;
+    height: var(--ifm-navbar-height);
+    flex: 0 0 var(--ifm-navbar-height);
+    border-bottom: 1px solid var(--h-border-soft);
+    background: var(--h-bg-deep);
+    box-shadow: none;
+  }
+
+  .navbar-sidebar__brand .navbar__brand {
+    min-width: 0;
+  }
+
+  .navbar-sidebar__brand .navbar__title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .navbar-sidebar__close {
+    display: grid;
+    width: 44px;
+    height: 44px;
+    flex: 0 0 44px;
+    margin-left: auto;
+    padding: 10px;
+    place-items: center;
+    border-radius: var(--h-radius-ui);
+  }
+
+  .navbar-sidebar__items {
+    width: calc(var(--ifm-navbar-sidebar-width) * 2);
+    height: calc(100vh - var(--ifm-navbar-height));
+    height: calc(100dvh - var(--ifm-navbar-height));
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  .navbar-sidebar__item {
+    width: var(--ifm-navbar-sidebar-width);
+    height: 100%;
+    min-width: var(--ifm-navbar-sidebar-width);
+    padding: 0.75rem 0.65rem max(1rem, env(safe-area-inset-bottom));
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scrollbar-color: var(--h-primary-muted) transparent;
+    scrollbar-width: thin;
+  }
+
+  .navbar-sidebar__item::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  .navbar-sidebar__item::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .navbar-sidebar__item::-webkit-scrollbar-thumb {
+    border: 2px solid transparent;
+    background: var(--h-primary-muted);
+    background-clip: padding-box;
+  }
+
+  .navbar-sidebar .menu {
+    min-width: 0;
+    padding-block: 0;
+  }
+
+  .navbar-sidebar .menu__link,
+  .navbar-sidebar .menu__caret {
+    min-height: 44px;
+  }
+
+  .navbar-sidebar .menu__link {
+    padding: 0.65rem 0.75rem;
+  }
+
+  .navbar-sidebar .menu__caret {
+    width: 44px;
+    min-width: 44px;
+    padding: 0.65rem;
+    justify-content: center;
+  }
+
+  body:has(.navbar-sidebar--show) {
+    overflow: hidden;
+  }
+
   body { font-size: 16px; }
   .theme-doc-markdown h1,
   h1[class*='docTitle'] { font-size: clamp(2.25rem, 11vw, 3rem); }

@@ -1,8 +1,13 @@
 import React, { useMemo } from "react";
-import Layout from "@theme/Layout";
 import Heading from "@theme/Heading";
 import Link from "@docusaurus/Link";
 import { useBaseUrlUtils } from "@docusaurus/useBaseUrl";
+import WikiSidebarPageLayout from "@site/src/components/WikiSidebarPageLayout";
+import {
+  NO_REALM_GROUP_ID,
+  compareRealmGroups,
+  sortFactionsByPriority,
+} from "@site/src/utils/directoryOrdering";
 import styles from "../characters/styles.module.css";
 
 import {
@@ -22,8 +27,6 @@ type FactionGroup = {
   factions: Faction[];
 };
 
-const OTHER_GROUP_ID = "otros";
-const REGION_ORDER = ["hyberia", "sylmorien", "jeyperia", "yggdrasil"];
 const REGION_DOC_PATHS: Record<string, string> = {
   hyberia: "/world/realms/hyberia",
   jeyperia: "/world/realms/jeyperia",
@@ -69,12 +72,21 @@ function normalizeRealmId(realm?: string | null) {
 }
 
 function getFactionRealm(faction: Faction) {
-  const realmId = normalizeRealmId(faction.realm) ?? faction.regionId ?? OTHER_GROUP_ID;
+  const normalizedRealm = normalizeRealmId(faction.realm);
+  const realmId =
+    !normalizedRealm ||
+    normalizedRealm === "no-aplica" ||
+    normalizedRealm === "sin-reino"
+      ? NO_REALM_GROUP_ID
+      : normalizedRealm;
   const region = getLocationById(realmId);
 
   return {
     id: region?.id ?? realmId,
-    title: faction.realm ?? region?.title ?? "Otros",
+    title:
+      realmId === NO_REALM_GROUP_ID
+        ? "Sin reino"
+        : region?.title ?? faction.realm ?? realmId,
     region,
   };
 }
@@ -83,30 +95,29 @@ function getFactionCaption(faction: Faction) {
   const region = getLocationById(faction.regionId);
   const base = getFactionBase(faction);
   const leader = getFactionLeader(faction);
-  const type = faction.type ? factionTypeLabels[faction.type] ?? faction.type : null;
-  const status = factionStatusLabels[faction.status] ?? faction.status;
-
-  const context = [type, status].filter(Boolean).join(" - ");
   const place = faction.baseLabel ?? base?.title ?? region?.title ?? faction.realm;
 
   if (leader?.title && place) {
-    return `${context} - ${place} - Lidera ${leader.title}`;
+    return `${place} · Lidera ${leader.title}`;
   }
 
   if (place) {
-    return context ? `${context} - ${place}` : place;
+    return place;
   }
 
-  return context || "Otros";
+  return leader?.title ? `Lidera ${leader.title}` : "Sin sede registrada";
 }
 
 export default function FactionsPage() {
   const { withBaseUrl } = useBaseUrlUtils();
+  const directoryFactions = useMemo(
+    () => factionList.filter((faction) => !isArchivedFaction(faction)),
+    [],
+  );
 
   const groupedFactions = useMemo(() => {
-    return factionList
-      .filter((faction) => !isArchivedFaction(faction))
-      .reduce<Record<string, FactionGroup>>((groups, faction) => {
+    return directoryFactions.reduce<Record<string, FactionGroup>>(
+      (groups, faction) => {
         const realm = getFactionRealm(faction);
         const groupKey = realm.id;
 
@@ -119,35 +130,41 @@ export default function FactionsPage() {
 
         groups[groupKey].factions.push(faction);
         return groups;
-      }, {});
-  }, []);
+      },
+      {},
+    );
+  }, [directoryFactions]);
 
   const sections = useMemo(() => {
     return Object.entries(groupedFactions)
-      .map(([id, group]) => ({ id, ...group }))
-      .sort((a, b) => {
-        if (a.id === OTHER_GROUP_ID) return 1;
-        if (b.id === OTHER_GROUP_ID) return -1;
-
-        const aOrder = REGION_ORDER.includes(a.id)
-          ? REGION_ORDER.indexOf(a.id)
-          : Number.MAX_SAFE_INTEGER;
-        const bOrder = REGION_ORDER.includes(b.id)
-          ? REGION_ORDER.indexOf(b.id)
-          : Number.MAX_SAFE_INTEGER;
-
-        if (aOrder !== bOrder) return aOrder - bOrder;
-        return (a.region?.title ?? a.id).localeCompare(b.region?.title ?? b.id);
-      });
+      .map(([id, group]) => ({
+        id,
+        ...group,
+        factions: sortFactionsByPriority(group.factions),
+      }))
+      .sort(compareRealmGroups);
   }, [groupedFactions]);
 
   return (
-    <Layout title="Facciones" description="Facciones del universo">
+    <WikiSidebarPageLayout title="Facciones" description="Facciones del universo">
       <main className={styles.page}>
         <div className="container">
-          <div className={styles.pageHeader}>
-            <h1 className={styles.pageTitle}>Todas las facciones</h1>
-          </div>
+          <header className={styles.pageHeader}>
+            <div className={styles.headerContent}>
+              <div className={styles.kicker}>Atlas de poderes</div>
+              <h1 className={styles.pageTitle}>Directorio de facciones</h1>
+              <p className={styles.pageSubtitle}>
+                Reinos, gremios, clanes y alianzas que disputan el destino de Hallyura.
+              </p>
+            </div>
+            <div
+              className={styles.total}
+              aria-label={`${directoryFactions.length} facciones`}
+            >
+              <strong>{directoryFactions.length}</strong>
+              <span>facciones</span>
+            </div>
+          </header>
 
           {sections.map((section) => {
             const sectionTitle = section.title;
@@ -156,9 +173,17 @@ export default function FactionsPage() {
             return (
               <details key={section.id} className={styles.section} open>
                 <summary className={styles.sectionHeader}>
-                  <Heading as="h2" className={styles.sectionTitle}>
-                    {sectionTitle}
-                  </Heading>
+                  <div className={styles.sectionHeading}>
+                    <div className={styles.sectionEyebrow}>Reino</div>
+                    <Heading as="h2" className={styles.sectionTitle}>
+                      {sectionTitle}
+                      <span className={styles.count}>{section.factions.length}</span>
+                    </Heading>
+                    <p className={styles.sectionDescription}>
+                      {section.region?.summary ??
+                        `Facciones vinculadas a ${sectionTitle}.`}
+                    </p>
+                  </div>
 
                   <div className={styles.sectionActions}>
                     {regionPath ? (
@@ -168,7 +193,7 @@ export default function FactionsPage() {
                         onClick={(event) => event.stopPropagation()}
                         onMouseDown={(event) => event.stopPropagation()}
                       >
-                        Ver region <span className={styles.arrow}>-&gt;</span>
+                        Ver reino <span className={styles.arrow}>→</span>
                       </Link>
                     ) : null}
 
@@ -185,6 +210,11 @@ export default function FactionsPage() {
                       const memberCount = getFactionMembers(faction.id).length;
                       const isDestroyed = faction.status === "destroyed";
                       const captionText = getFactionCaption(faction);
+                      const typeLabel = faction.type
+                        ? factionTypeLabels[faction.type] ?? faction.type
+                        : "Facción";
+                      const statusLabel =
+                        factionStatusLabels[faction.status] ?? faction.status;
 
                       return (
                         <Link
@@ -198,12 +228,6 @@ export default function FactionsPage() {
                               isDestroyed ? styles.cardDeceased : ""
                             }`}
                           >
-                            <div className={styles.cardTop}>
-                              <div className={styles.cardName}>
-                                {faction.title}
-                              </div>
-                            </div>
-
                             <div className={styles.imageWrap}>
                               {imgUrl ? (
                                 <>
@@ -217,33 +241,42 @@ export default function FactionsPage() {
                                   />
                                   {isDestroyed ? (
                                     <div className={styles.deceasedBadge}>
-                                      Destruida
+                                      ✦ Destruida
                                     </div>
                                   ) : null}
                                 </>
                               ) : (
-                                <div className={styles.imageFallback}>
-                                  No image
+                                <div className={styles.imageFallback} aria-hidden="true">
+                                  <span className={styles.fallbackMark}>✦</span>
                                 </div>
                               )}
                             </div>
 
                             <div className={styles.cardBottom}>
+                              <Heading as="h3" className={styles.cardName}>
+                                {faction.title}
+                              </Heading>
                               {faction.subtitle ? (
                                 <div className={styles.subtitle}>
                                   {faction.subtitle}
                                 </div>
                               ) : null}
-                              {captionText ? (
-                                <div className={styles.caption}>
-                                  {captionText}
-                                </div>
-                              ) : null}
-                              {memberCount > 0 ? (
-                                <div className={styles.caption}>
-                                  {memberCount} miembros registrados
-                                </div>
-                              ) : null}
+                              <div
+                                className={styles.classList}
+                                aria-label="Tipo y estado"
+                              >
+                                <span className={styles.classEntry}>
+                                  <strong>{typeLabel}</strong>
+                                  <span>{statusLabel}</span>
+                                </span>
+                                {memberCount > 0 ? (
+                                  <span className={styles.classEntry}>
+                                    <strong>{memberCount}</strong>
+                                    <span>{memberCount === 1 ? "miembro" : "miembros"}</span>
+                                  </span>
+                                ) : null}
+                              </div>
+                              <div className={styles.caption}>{captionText}</div>
                             </div>
                           </article>
                         </Link>
@@ -256,6 +289,6 @@ export default function FactionsPage() {
           })}
         </div>
       </main>
-    </Layout>
+    </WikiSidebarPageLayout>
   );
 }

@@ -10,6 +10,13 @@
   margin: 14px 0 22px;
 }
 
+.wrap.withIntroduction{
+  grid-template-areas:
+    "introduction side"
+    "stat side"
+    "body side";
+}
+
 .side{
   grid-area: side;
   position: sticky;
@@ -17,14 +24,22 @@
 }
 
 .stat{ grid-area: stat; min-width:0; }
+.introduction{ grid-area: introduction; min-width:0; }
 .body{ grid-area: body; min-width:0; }
 
-/* MOBILE: Infobox -> Statblock -> Body */
+/* MOBILE: Infobox -> Introduction -> Statblock -> Body */
 @media (max-width: 860px){
   .wrap{
     grid-template-columns: 1fr;
     grid-template-areas:
       "side"
+      "stat"
+      "body";
+  }
+  .wrap.withIntroduction{
+    grid-template-areas:
+      "side"
+      "introduction"
       "stat"
       "body";
   }

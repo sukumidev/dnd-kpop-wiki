@@ -11,6 +11,7 @@ import { getStatblock } from "@site/src/data/statblocks"; // ✅ NEW
 
 type Props = {
   id: string;
+  introduction?: React.ReactNode;
   children: React.ReactNode;
 };
 
@@ -30,7 +31,7 @@ function normalizeClass(value: unknown) {
 type Character = any;
 type CharactersMap = Record<string, Character>;
 
-export default function CharacterPage({ id, children }: Props) {
+export default function CharacterPage({ id, introduction, children }: Props) {
   const characters = charactersJson as CharactersMap;
   const c = characters[id];
 
@@ -64,6 +65,7 @@ export default function CharacterPage({ id, children }: Props) {
             accentClass={accentClass}
           />
         }
+        introduction={introduction}
         statblock={sb ? <Statblock id={id} /> : null}
       >
         {children}

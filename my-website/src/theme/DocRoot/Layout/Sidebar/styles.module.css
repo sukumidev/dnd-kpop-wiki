@@ -1,0 +1,36 @@
+:root {
+  --doc-sidebar-width: 300px;
+  --doc-sidebar-hidden-width: 64px;
+}
+
+.docSidebarContainer {
+  display: none;
+}
+
+@media (min-width: 997px) {
+  .docSidebarContainer {
+    display: block;
+    width: var(--doc-sidebar-width);
+    min-width: var(--doc-sidebar-width);
+    margin-top: calc(-1 * var(--ifm-navbar-height));
+    border-right: 1px solid var(--ifm-toc-border-color);
+    overflow: visible;
+    transition:
+      width var(--h-motion-fast) ease,
+      min-width var(--h-motion-fast) ease;
+  }
+
+  .docSidebarContainerCollapsed {
+    width: var(--doc-sidebar-hidden-width);
+    min-width: var(--doc-sidebar-hidden-width);
+  }
+
+  .sidebarViewport {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    min-width: 0;
+  }
+}

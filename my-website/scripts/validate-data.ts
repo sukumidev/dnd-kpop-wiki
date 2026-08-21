@@ -11,6 +11,7 @@
  * - mapConfig.json
  * - statblocks.json
  * - documents.json
+ * - sessions.json
  *
  * Run with:
  *   npx tsx scripts/validate-data.ts
@@ -49,6 +50,7 @@ const DATA_FILES = {
   mapConfig: "mapConfig.json",
   statblocks: "statblocks.json",
   documents: "documents.json",
+  sessions: "sessions.json",
 } as const;
 
 const CHARACTER_STATUS = new Set(["active", "inactive", "dead", "missing", "unknown"]);
@@ -363,6 +365,102 @@ function warnMissingReference(
   if (!targetIds.has(sourceId)) {
     addWarning(file, `Reference "${sourceId}" does not exist yet.`, entityId, field);
   }
+}
+
+function errorMissingReferences(
+  file: string,
+  sourceIds: unknown,
+  targetIds: Set<string>,
+  entityId: string,
+  field: string,
+) {
+  if (!Array.isArray(sourceIds)) return;
+
+  sourceIds.forEach((id, index) => {
+    if (typeof id !== "string") return;
+
+    if (!targetIds.has(id)) {
+      addError(file, `Reference "${id}" does not exist.`, entityId, `${field}[${index}]`);
+    }
+  });
+}
+
+function isValidIsoDate(value: unknown): value is string {
+  if (typeof value !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
+
+  const date = new Date(`${value}T00:00:00Z`);
+  return !Number.isNaN(date.getTime()) && date.toISOString().slice(0, 10) === value;
+}
+
+function validateSessions(
+  sessions: JsonRecord[],
+  characterIds: Set<string>,
+  locationIds: Set<string>,
+) {
+  const file = DATA_FILES.sessions;
+  const seenIds = new Set<string>();
+  const seenNumbers = new Set<number>();
+
+  sessions.forEach((session, index) => {
+    const fallbackId = String(index);
+    const id = typeof session.id === "string" && session.id ? session.id : fallbackId;
+
+    validateIdValue(file, session.id, id, "id");
+    if (typeof session.id === "string") {
+      if (seenIds.has(session.id)) {
+        addError(file, `Duplicate session ID "${session.id}".`, id, "id");
+      }
+      seenIds.add(session.id);
+    }
+
+    if (typeof session.number !== "number" || !Number.isFinite(session.number)) {
+      addError(file, `Session is missing required numeric "number".`, id, "number");
+    } else {
+      if (seenNumbers.has(session.number)) {
+        addError(file, `Duplicate session number "${session.number}".`, id, "number");
+      }
+      seenNumbers.add(session.number);
+    }
+
+    if (typeof session.title !== "string" || session.title.trim() === "") {
+      addError(file, `Session is missing required "title".`, id, "title");
+    }
+
+    if (session.sessionDate == null || session.sessionDate === "") {
+      addWarning(file, `Session has no sessionDate.`, id, "sessionDate");
+    } else if (!isValidIsoDate(session.sessionDate)) {
+      addError(file, `sessionDate must be a valid ISO date (YYYY-MM-DD).`, id, "sessionDate");
+    }
+
+    if (!session.campaignDate) {
+      addWarning(file, `Session has no campaignDate.`, id, "campaignDate");
+    }
+
+    if (session.locationIds === null) {
+      addError(file, `Expected locationIds to be an array of IDs.`, id, "locationIds");
+    } else {
+      validateIdArray(file, session.locationIds, id, "locationIds");
+    }
+    if (session.characterIds === null) {
+      addError(file, `Expected characterIds to be an array of IDs.`, id, "characterIds");
+    } else {
+      validateIdArray(file, session.characterIds, id, "characterIds");
+    }
+
+    if (!Array.isArray(session.locationIds) || session.locationIds.length === 0) {
+      addWarning(file, `Session has no locations.`, id, "locationIds");
+    }
+    if (!Array.isArray(session.characterIds) || session.characterIds.length === 0) {
+      addWarning(file, `Session has no characters.`, id, "characterIds");
+    }
+
+    errorMissingReferences(file, session.locationIds, locationIds, id, "locationIds");
+    errorMissingReferences(file, session.characterIds, characterIds, id, "characterIds");
+
+    if (!session.imageSrc) {
+      addWarning(file, `Session has no imageSrc.`, id, "imageSrc");
+    }
+  });
 }
 
 function validateCharacters(characters: JsonRecord, factionIds: Set<string>, locationIds: Set<string>) {
@@ -762,6 +860,7 @@ function main() {
     ? validateRecordFile(DATA_FILES.statblocks, readJson(DATA_FILES.statblocks, false))
     : {};
   const documents = validateArrayFile(DATA_FILES.documents, readJson(DATA_FILES.documents));
+  const sessions = validateArrayFile(DATA_FILES.sessions, readJson(DATA_FILES.sessions));
 
   validateMapConfig(mapConfig);
 
@@ -775,6 +874,7 @@ function main() {
   validateLocations(locations, mapConfig);
   validateStatblocks(statblocks, characterIds);
   validateDocuments(documents);
+  validateSessions(sessions, characterIds, locationIds);
   detectQuestCycles(quests);
 
   printResults();

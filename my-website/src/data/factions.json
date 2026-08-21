@@ -813,5 +813,85 @@
     "realm": "hotou",
     "visibility": "public",
     "sortOrder": 40
+  },
+  "ampersone": {
+    "id": "ampersone",
+    "title": "Los Unificadores",
+    "type": "organization",
+    "status": "active",
+    "subtitle": "AMPERS&ONE",
+    "realm": "fincaria",
+    "visibility": "public",
+    "imageSrc": "/img/factions/ampersone.jpg"
+  },
+  "loossemble": {
+    "id": "loossemble",
+    "title": "La Asamblea de la Luna",
+    "type": "religion",
+    "status": "active",
+    "subtitle": "LOOSSEMBLE",
+    "realm": "sin-reino",
+    "visibility": "public",
+    "imageSrc": "/img/factions/loossemble.jpg"
+  },
+  "nct-127": {
+    "id": "nct-127",
+    "title": "Los Neo Culturales Tecnológicos: La Casa Ilichil",
+    "type": "academy",
+    "status": "active",
+    "subtitle": "NCT 127",
+    "realm": "sylmorien",
+    "visibility": "public",
+    "imageSrc": "/img/factions/nct-127.jpg"
+  },
+  "nct-dream": {
+    "id": "nct-dream",
+    "title": "Los Neo Culturales Tecnológicos: La Casa de los Sueños",
+    "type": "academy",
+    "status": "active",
+    "subtitle": "NCT DREAM",
+    "realm": "sylmorien",
+    "visibility": "public",
+    "imageSrc": "/img/factions/nct-dream.jpg"
+  },
+  "wayv": {
+    "id": "wayv",
+    "title": "Los Neo Culturales Tecnológicos: La Casa Weishen",
+    "type": "academy",
+    "status": "active",
+    "subtitle": "WayV",
+    "realm": "sylmorien",
+    "visibility": "public",
+    "imageSrc": "/img/factions/wayv.jpg"
+  },
+  "nct-wish": {
+    "id": "nct-wish",
+    "title": "Los Neo Culturales Tecnológicos: La Casa de los Deseos",
+    "type": "academy",
+    "status": "active",
+    "subtitle": "NCT WISH",
+    "realm": "sylmorien",
+    "visibility": "public",
+    "imageSrc": "/img/factions/nct-wish.webp"
+  },
+  "omega-x": {
+    "id": "omega-x",
+    "title": "La Orden de la Décima Luna",
+    "type": "organization",
+    "status": "active",
+    "subtitle": "OMEGA X",
+    "realm": "no-aplica",
+    "visibility": "public",
+    "imageSrc": "/img/factions/omega-x.jpg"
+  },
+  "morat": {
+    "id": "morat",
+    "title": "La Cuadrilla que No se va",
+    "type": "military",
+    "status": "active",
+    "subtitle": "MORAT",
+    "realm": "sylmorien",
+    "visibility": "public",
+    "imageSrc": "/img/factions/morat.jpg"
   }
 }

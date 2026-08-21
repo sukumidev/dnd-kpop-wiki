@@ -10,11 +10,7 @@ import {
 import styles from "@site/src/pages/documents/styles.module.css";
 
 function getEntryDisplayTitle(document: Document): string {
-  const title = document.chapterTitle || document.title;
-  const marker = document.chapterNumber ?? document.order;
-
-  if (marker === undefined) return title;
-  return `Capitulo ${marker}: ${title}`;
+  return document.chapterTitle || document.title;
 }
 
 function EntryNavLink({
@@ -34,7 +30,7 @@ function EntryNavLink({
       aria-label={`${isPrevious ? "Entrada anterior" : "Siguiente entrada"}: ${document.title}`}
     >
       <span className={styles.entryNavLabel}>
-        {isPrevious ? "<- Entrada anterior" : "Siguiente entrada ->"}
+        {isPrevious ? "← Anterior" : "Siguiente →"}
       </span>
       <span className={styles.entryNavTitle}>{getEntryDisplayTitle(document)}</span>
     </Link>
@@ -50,7 +46,7 @@ export default function DocumentEntryNavigation({
   const publicParent = getPublicParentDocument(document);
   const { previous, next } = getPreviousAndNextDocumentEntries(document);
 
-  if (!publicParent && !previous && !next) return null;
+  if (!previous && !next) return null;
 
   return (
     <nav className={styles.entryNav} aria-label="Navegacion de entradas">
@@ -58,20 +54,15 @@ export default function DocumentEntryNavigation({
         {previous ? <EntryNavLink direction="previous" document={previous} /> : null}
       </div>
 
-      <div className={styles.entryNavCenter}>
-        {publicParent ? (
-          <Link
-            className={styles.entryNavBack}
-            to={withBaseUrl(getDocumentPath(publicParent))}
-          >
-            Volver a {publicParent.title}
-          </Link>
-        ) : null}
-      </div>
-
       <div className={styles.entryNavSide}>
         {next ? <EntryNavLink direction="next" document={next} /> : null}
       </div>
+
+      {publicParent ? (
+        <Link className={styles.entryNavBack} to={withBaseUrl(getDocumentPath(publicParent))}>
+          Ver índice de {publicParent.title}
+        </Link>
+      ) : null}
     </nav>
   );
 }

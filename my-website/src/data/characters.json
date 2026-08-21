@@ -49,22 +49,22 @@
       {
         "label": "Joshua",
         "characterId": "svt-joshua",
-        "docPath": "characters/misc/svt-joshua"
+        "docPath": "characters/npc/svt-joshua"
       },
       {
         "label": "I.N.",
         "characterId": "skz-jeongin",
-        "docPath": "characters/misc/skz-jeongin"
+        "docPath": "characters/npc/skz-jeongin"
       },
       {
         "label": "Hyunjin",
         "characterId": "skz-hyunjin",
-        "docPath": "characters/misc/skz-hyunjin"
+        "docPath": "characters/npc/skz-hyunjin"
       },
       {
         "label": "S.Coups",
         "characterId": "svt-scoups",
-        "docPath": "characters/misc/svt-scoups"
+        "docPath": "characters/npc/svt-scoups"
       },
       {
         "label": "Kiyori",
@@ -84,27 +84,27 @@
       {
         "label": "Chen",
         "characterId": "exo-chen",
-        "docPath": "characters/misc/exo-chen"
+        "docPath": "characters/npc/exo-chen"
       },
       {
         "label": "Kai",
         "characterId": "exo-kai",
-        "docPath": "characters/misc/exo-kai"
+        "docPath": "characters/npc/exo-kai"
       },
       {
         "label": "Jaehyun",
         "characterId": "nct-jaehyun",
-        "docPath": "characters/misc/nct-jaehyun"
+        "docPath": "characters/npc/nct-jaehyun"
       },
       {
         "label": "Johnny",
         "characterId": "nct-johnny",
-        "docPath": "characters/misc/nct-johnny"
+        "docPath": "characters/npc/nct-johnny"
       },
       {
         "label": "Jaemin",
         "characterId": "nct-jaemin",
-        "docPath": "characters/misc/nct-jaemin"
+        "docPath": "characters/npc/nct-jaemin"
       }
     ],
     "destinyCard": null,
@@ -195,57 +195,57 @@
       {
         "label": "Mark",
         "characterId": "nct-mark",
-        "docPath": "characters/misc/nct-mark"
+        "docPath": "characters/npc/nct-mark"
       },
       {
         "label": "Yushi",
         "characterId": "nct-yushi",
-        "docPath": "characters/misc/nct-yushi"
+        "docPath": "characters/npc/nct-yushi"
       },
       {
         "label": "Sion",
         "characterId": "nct-sion",
-        "docPath": "characters/misc/nct-sion"
+        "docPath": "characters/npc/nct-sion"
       },
       {
         "label": "Riku",
         "characterId": "nct-riku",
-        "docPath": "characters/misc/nct-riku"
+        "docPath": "characters/npc/nct-riku"
       },
       {
         "label": "Jaehee",
         "characterId": "nct-jaehee",
-        "docPath": "characters/misc/nct-jaehee"
+        "docPath": "characters/npc/nct-jaehee"
       },
       {
         "label": "Ryo",
         "characterId": "nct-ryo",
-        "docPath": "characters/misc/nct-ryo"
+        "docPath": "characters/npc/nct-ryo"
       },
       {
         "label": "Sakuya",
         "characterId": "nct-sakuya",
-        "docPath": "characters/misc/nct-sakuya"
+        "docPath": "characters/npc/nct-sakuya"
       },
       {
         "label": "Yuta",
         "characterId": "nct-yuta",
-        "docPath": "characters/misc/nct-yuta"
+        "docPath": "characters/npc/nct-yuta"
       },
       {
         "label": "Haechan",
         "characterId": "nct-haechan",
-        "docPath": "characters/misc/nct-haechan"
+        "docPath": "characters/npc/nct-haechan"
       },
       {
         "label": "Chenle",
         "characterId": "nct-chenle",
-        "docPath": "characters/misc/nct-chenle"
+        "docPath": "characters/npc/nct-chenle"
       },
       {
         "label": "Taeyong",
         "characterId": "nct-taeyong",
-        "docPath": "characters/misc/nct-taeyong"
+        "docPath": "characters/npc/nct-taeyong"
       },
       {
         "label": "Jackson Wang",
@@ -355,27 +355,27 @@
       {
         "label": "S.Coups",
         "characterId": "svt-scoups",
-        "docPath": "characters/misc/svt-scoups"
+        "docPath": "characters/npc/svt-scoups"
       },
       {
         "label": "Jeonghan",
         "characterId": "svt-jeonghan",
-        "docPath": "characters/misc/svt-jeonghan"
+        "docPath": "characters/npc/svt-jeonghan"
       },
       {
         "label": "Dino",
         "characterId": "svt-dino",
-        "docPath": "characters/misc/svt-dino"
+        "docPath": "characters/npc/svt-dino"
       },
       {
         "label": "San",
         "characterId": "ateez-san",
-        "docPath": "characters/misc/ateez-san"
+        "docPath": "characters/npc/ateez-san"
       },
       {
         "label": "Chenle",
         "characterId": "nct-chenle",
-        "docPath": "characters/misc/nct-chenle"
+        "docPath": "characters/npc/nct-chenle"
       }
     ],
     "destinyCard": null,
@@ -454,32 +454,32 @@
       {
         "label": "Dokyeom",
         "characterId": "svt-dk",
-        "docPath": "characters/misc/svt-dk"
+        "docPath": "characters/npc/svt-dk"
       },
       {
         "label": "Jake",
         "characterId": "enha-jake",
-        "docPath": "characters/misc/enha-jake"
+        "docPath": "characters/npc/enha-jake"
       },
       {
         "label": "Yunho",
         "characterId": "ateez-yunho",
-        "docPath": "characters/misc/ateez-yunho"
+        "docPath": "characters/npc/ateez-yunho"
       },
       {
         "label": "Jongho",
         "characterId": "ateez-jongho",
-        "docPath": "characters/misc/ateez-jongho"
+        "docPath": "characters/npc/ateez-jongho"
       },
       {
         "label": "San",
         "characterId": "ateez-san",
-        "docPath": "characters/misc/ateez-san"
+        "docPath": "characters/npc/ateez-san"
       },
       {
         "label": "Jisung",
         "characterId": "nct-jisung",
-        "docPath": "characters/misc/nct-jisung"
+        "docPath": "characters/npc/nct-jisung"
       }
     ],
     "destinyCard": null,
@@ -553,62 +553,62 @@
       {
         "label": "Jeonghan",
         "characterId": "svt-jeonghan",
-        "docPath": "characters/misc/svt-jeonghan"
+        "docPath": "characters/npc/svt-jeonghan"
       },
       {
         "label": "Joshua",
         "characterId": "svt-joshua",
-        "docPath": "characters/misc/svt-joshua"
+        "docPath": "characters/npc/svt-joshua"
       },
       {
         "label": "Jun",
         "characterId": "svt-jun",
-        "docPath": "characters/misc/svt-jun"
+        "docPath": "characters/npc/svt-jun"
       },
       {
         "label": "Hoshi",
         "characterId": "svt-hoshi",
-        "docPath": "characters/misc/svt-hoshi"
+        "docPath": "characters/npc/svt-hoshi"
       },
       {
         "label": "Wonwoo",
         "characterId": "svt-wonwoo",
-        "docPath": "characters/misc/svt-wonwoo"
+        "docPath": "characters/npc/svt-wonwoo"
       },
       {
         "label": "Woozi",
         "characterId": "svt-woozi",
-        "docPath": "characters/misc/svt-woozi"
+        "docPath": "characters/npc/svt-woozi"
       },
       {
         "label": "Dokyeom",
         "characterId": "svt-dk",
-        "docPath": "characters/misc/svt-dk"
+        "docPath": "characters/npc/svt-dk"
       },
       {
         "label": "Mingyu",
         "characterId": "svt-mingyu",
-        "docPath": "characters/misc/svt-mingyu"
+        "docPath": "characters/npc/svt-mingyu"
       },
       {
         "label": "Minghao",
         "characterId": "svt-minghao",
-        "docPath": "characters/misc/svt-minghao"
+        "docPath": "characters/npc/svt-minghao"
       },
       {
         "label": "Seungkwan",
         "characterId": "svt-seungkwan",
-        "docPath": "characters/misc/svt-seungkwan"
+        "docPath": "characters/npc/svt-seungkwan"
       },
       {
         "label": "Vernon",
         "characterId": "svt-vernon",
-        "docPath": "characters/misc/svt-vernon"
+        "docPath": "characters/npc/svt-vernon"
       },
       {
         "label": "Dino",
         "characterId": "svt-dino",
-        "docPath": "characters/misc/svt-dino"
+        "docPath": "characters/npc/svt-dino"
       }
     ],
     "destinyCard": null,
@@ -686,62 +686,62 @@
       {
         "label": "S.Coups",
         "characterId": "svt-scoups",
-        "docPath": "characters/misc/svt-scoups"
+        "docPath": "characters/npc/svt-scoups"
       },
       {
         "label": "Joshua",
         "characterId": "svt-joshua",
-        "docPath": "characters/misc/svt-joshua"
+        "docPath": "characters/npc/svt-joshua"
       },
       {
         "label": "Jun",
         "characterId": "svt-jun",
-        "docPath": "characters/misc/svt-jun"
+        "docPath": "characters/npc/svt-jun"
       },
       {
         "label": "Hoshi",
         "characterId": "svt-hoshi",
-        "docPath": "characters/misc/svt-hoshi"
+        "docPath": "characters/npc/svt-hoshi"
       },
       {
         "label": "Wonwoo",
         "characterId": "svt-wonwoo",
-        "docPath": "characters/misc/svt-wonwoo"
+        "docPath": "characters/npc/svt-wonwoo"
       },
       {
         "label": "Woozi",
         "characterId": "svt-woozi",
-        "docPath": "characters/misc/svt-woozi"
+        "docPath": "characters/npc/svt-woozi"
       },
       {
         "label": "Dokyeom",
         "characterId": "svt-dk",
-        "docPath": "characters/misc/svt-dk"
+        "docPath": "characters/npc/svt-dk"
       },
       {
         "label": "Mingyu",
         "characterId": "svt-mingyu",
-        "docPath": "characters/misc/svt-mingyu"
+        "docPath": "characters/npc/svt-mingyu"
       },
       {
         "label": "Minghao",
         "characterId": "svt-minghao",
-        "docPath": "characters/misc/svt-minghao"
+        "docPath": "characters/npc/svt-minghao"
       },
       {
         "label": "Seungkwan",
         "characterId": "svt-seungkwan",
-        "docPath": "characters/misc/svt-seungkwan"
+        "docPath": "characters/npc/svt-seungkwan"
       },
       {
         "label": "Vernon",
         "characterId": "svt-vernon",
-        "docPath": "characters/misc/svt-vernon"
+        "docPath": "characters/npc/svt-vernon"
       },
       {
         "label": "Dino",
         "characterId": "svt-dino",
-        "docPath": "characters/misc/svt-dino"
+        "docPath": "characters/npc/svt-dino"
       }
     ],
     "destinyCard": null,
@@ -814,62 +814,62 @@
       {
         "label": "S.Coups",
         "characterId": "svt-scoups",
-        "docPath": "characters/misc/svt-scoups"
+        "docPath": "characters/npc/svt-scoups"
       },
       {
         "label": "Jeonghan",
         "characterId": "svt-jeonghan",
-        "docPath": "characters/misc/svt-jeonghan"
+        "docPath": "characters/npc/svt-jeonghan"
       },
       {
         "label": "Jun",
         "characterId": "svt-jun",
-        "docPath": "characters/misc/svt-jun"
+        "docPath": "characters/npc/svt-jun"
       },
       {
         "label": "Hoshi",
         "characterId": "svt-hoshi",
-        "docPath": "characters/misc/svt-hoshi"
+        "docPath": "characters/npc/svt-hoshi"
       },
       {
         "label": "Wonwoo",
         "characterId": "svt-wonwoo",
-        "docPath": "characters/misc/svt-wonwoo"
+        "docPath": "characters/npc/svt-wonwoo"
       },
       {
         "label": "Woozi",
         "characterId": "svt-woozi",
-        "docPath": "characters/misc/svt-woozi"
+        "docPath": "characters/npc/svt-woozi"
       },
       {
         "label": "Dokyeom",
         "characterId": "svt-dk",
-        "docPath": "characters/misc/svt-dk"
+        "docPath": "characters/npc/svt-dk"
       },
       {
         "label": "Mingyu",
         "characterId": "svt-mingyu",
-        "docPath": "characters/misc/svt-mingyu"
+        "docPath": "characters/npc/svt-mingyu"
       },
       {
         "label": "Minghao",
         "characterId": "svt-minghao",
-        "docPath": "characters/misc/svt-minghao"
+        "docPath": "characters/npc/svt-minghao"
       },
       {
         "label": "Seungkwan",
         "characterId": "svt-seungkwan",
-        "docPath": "characters/misc/svt-seungkwan"
+        "docPath": "characters/npc/svt-seungkwan"
       },
       {
         "label": "Vernon",
         "characterId": "svt-vernon",
-        "docPath": "characters/misc/svt-vernon"
+        "docPath": "characters/npc/svt-vernon"
       },
       {
         "label": "Dino",
         "characterId": "svt-dino",
-        "docPath": "characters/misc/svt-dino"
+        "docPath": "characters/npc/svt-dino"
       }
     ],
     "destinyCard": null,
@@ -936,62 +936,62 @@
       {
         "label": "S.Coups",
         "characterId": "svt-scoups",
-        "docPath": "characters/misc/svt-scoups"
+        "docPath": "characters/npc/svt-scoups"
       },
       {
         "label": "Jeonghan",
         "characterId": "svt-jeonghan",
-        "docPath": "characters/misc/svt-jeonghan"
+        "docPath": "characters/npc/svt-jeonghan"
       },
       {
         "label": "Joshua",
         "characterId": "svt-joshua",
-        "docPath": "characters/misc/svt-joshua"
+        "docPath": "characters/npc/svt-joshua"
       },
       {
         "label": "Hoshi",
         "characterId": "svt-hoshi",
-        "docPath": "characters/misc/svt-hoshi"
+        "docPath": "characters/npc/svt-hoshi"
       },
       {
         "label": "Wonwoo",
         "characterId": "svt-wonwoo",
-        "docPath": "characters/misc/svt-wonwoo"
+        "docPath": "characters/npc/svt-wonwoo"
       },
       {
         "label": "Woozi",
         "characterId": "svt-woozi",
-        "docPath": "characters/misc/svt-woozi"
+        "docPath": "characters/npc/svt-woozi"
       },
       {
         "label": "Dokyeom",
         "characterId": "svt-dk",
-        "docPath": "characters/misc/svt-dk"
+        "docPath": "characters/npc/svt-dk"
       },
       {
         "label": "Mingyu",
         "characterId": "svt-mingyu",
-        "docPath": "characters/misc/svt-mingyu"
+        "docPath": "characters/npc/svt-mingyu"
       },
       {
         "label": "Minghao",
         "characterId": "svt-minghao",
-        "docPath": "characters/misc/svt-minghao"
+        "docPath": "characters/npc/svt-minghao"
       },
       {
         "label": "Seungkwan",
         "characterId": "svt-seungkwan",
-        "docPath": "characters/misc/svt-seungkwan"
+        "docPath": "characters/npc/svt-seungkwan"
       },
       {
         "label": "Vernon",
         "characterId": "svt-vernon",
-        "docPath": "characters/misc/svt-vernon"
+        "docPath": "characters/npc/svt-vernon"
       },
       {
         "label": "Dino",
         "characterId": "svt-dino",
-        "docPath": "characters/misc/svt-dino"
+        "docPath": "characters/npc/svt-dino"
       }
     ],
     "destinyCard": null,
@@ -1059,62 +1059,62 @@
       {
         "label": "S.Coups",
         "characterId": "svt-scoups",
-        "docPath": "characters/misc/svt-scoups"
+        "docPath": "characters/npc/svt-scoups"
       },
       {
         "label": "Jeonghan",
         "characterId": "svt-jeonghan",
-        "docPath": "characters/misc/svt-jeonghan"
+        "docPath": "characters/npc/svt-jeonghan"
       },
       {
         "label": "Joshua",
         "characterId": "svt-joshua",
-        "docPath": "characters/misc/svt-joshua"
+        "docPath": "characters/npc/svt-joshua"
       },
       {
         "label": "Jun",
         "characterId": "svt-jun",
-        "docPath": "characters/misc/svt-jun"
+        "docPath": "characters/npc/svt-jun"
       },
       {
         "label": "Wonwoo",
         "characterId": "svt-wonwoo",
-        "docPath": "characters/misc/svt-wonwoo"
+        "docPath": "characters/npc/svt-wonwoo"
       },
       {
         "label": "Woozi",
         "characterId": "svt-woozi",
-        "docPath": "characters/misc/svt-woozi"
+        "docPath": "characters/npc/svt-woozi"
       },
       {
         "label": "Dokyeom",
         "characterId": "svt-dk",
-        "docPath": "characters/misc/svt-dk"
+        "docPath": "characters/npc/svt-dk"
       },
       {
         "label": "Mingyu",
         "characterId": "svt-mingyu",
-        "docPath": "characters/misc/svt-mingyu"
+        "docPath": "characters/npc/svt-mingyu"
       },
       {
         "label": "Minghao",
         "characterId": "svt-minghao",
-        "docPath": "characters/misc/svt-minghao"
+        "docPath": "characters/npc/svt-minghao"
       },
       {
         "label": "Seungkwan",
         "characterId": "svt-seungkwan",
-        "docPath": "characters/misc/svt-seungkwan"
+        "docPath": "characters/npc/svt-seungkwan"
       },
       {
         "label": "Vernon",
         "characterId": "svt-vernon",
-        "docPath": "characters/misc/svt-vernon"
+        "docPath": "characters/npc/svt-vernon"
       },
       {
         "label": "Dino",
         "characterId": "svt-dino",
-        "docPath": "characters/misc/svt-dino"
+        "docPath": "characters/npc/svt-dino"
       }
     ],
     "destinyCard": null,
@@ -1181,62 +1181,62 @@
       {
         "label": "S.Coups",
         "characterId": "svt-scoups",
-        "docPath": "characters/misc/svt-scoups"
+        "docPath": "characters/npc/svt-scoups"
       },
       {
         "label": "Jeonghan",
         "characterId": "svt-jeonghan",
-        "docPath": "characters/misc/svt-jeonghan"
+        "docPath": "characters/npc/svt-jeonghan"
       },
       {
         "label": "Joshua",
         "characterId": "svt-joshua",
-        "docPath": "characters/misc/svt-joshua"
+        "docPath": "characters/npc/svt-joshua"
       },
       {
         "label": "Hoshi",
         "characterId": "svt-hoshi",
-        "docPath": "characters/misc/svt-hoshi"
+        "docPath": "characters/npc/svt-hoshi"
       },
       {
         "label": "Jun",
         "characterId": "svt-jun",
-        "docPath": "characters/misc/svt-jun"
+        "docPath": "characters/npc/svt-jun"
       },
       {
         "label": "Woozi",
         "characterId": "svt-woozi",
-        "docPath": "characters/misc/svt-woozi"
+        "docPath": "characters/npc/svt-woozi"
       },
       {
         "label": "Dokyeom",
         "characterId": "svt-dk",
-        "docPath": "characters/misc/svt-dk"
+        "docPath": "characters/npc/svt-dk"
       },
       {
         "label": "Mingyu",
         "characterId": "svt-mingyu",
-        "docPath": "characters/misc/svt-mingyu"
+        "docPath": "characters/npc/svt-mingyu"
       },
       {
         "label": "Minghao",
         "characterId": "svt-minghao",
-        "docPath": "characters/misc/svt-minghao"
+        "docPath": "characters/npc/svt-minghao"
       },
       {
         "label": "Seungkwan",
         "characterId": "svt-seungkwan",
-        "docPath": "characters/misc/svt-seungkwan"
+        "docPath": "characters/npc/svt-seungkwan"
       },
       {
         "label": "Vernon",
         "characterId": "svt-vernon",
-        "docPath": "characters/misc/svt-vernon"
+        "docPath": "characters/npc/svt-vernon"
       },
       {
         "label": "Dino",
         "characterId": "svt-dino",
-        "docPath": "characters/misc/svt-dino"
+        "docPath": "characters/npc/svt-dino"
       }
     ],
     "destinyCard": null,
@@ -1304,62 +1304,62 @@
       {
         "label": "S.Coups",
         "characterId": "svt-scoups",
-        "docPath": "characters/misc/svt-scoups"
+        "docPath": "characters/npc/svt-scoups"
       },
       {
         "label": "Jeonghan",
         "characterId": "svt-jeonghan",
-        "docPath": "characters/misc/svt-jeonghan"
+        "docPath": "characters/npc/svt-jeonghan"
       },
       {
         "label": "Joshua",
         "characterId": "svt-joshua",
-        "docPath": "characters/misc/svt-joshua"
+        "docPath": "characters/npc/svt-joshua"
       },
       {
         "label": "Hoshi",
         "characterId": "svt-hoshi",
-        "docPath": "characters/misc/svt-hoshi"
+        "docPath": "characters/npc/svt-hoshi"
       },
       {
         "label": "Wonwoo",
         "characterId": "svt-wonwoo",
-        "docPath": "characters/misc/svt-wonwoo"
+        "docPath": "characters/npc/svt-wonwoo"
       },
       {
         "label": "Jun",
         "characterId": "svt-jun",
-        "docPath": "characters/misc/svt-jun"
+        "docPath": "characters/npc/svt-jun"
       },
       {
         "label": "Dokyeom",
         "characterId": "svt-dk",
-        "docPath": "characters/misc/svt-dk"
+        "docPath": "characters/npc/svt-dk"
       },
       {
         "label": "Mingyu",
         "characterId": "svt-mingyu",
-        "docPath": "characters/misc/svt-mingyu"
+        "docPath": "characters/npc/svt-mingyu"
       },
       {
         "label": "Minghao",
         "characterId": "svt-minghao",
-        "docPath": "characters/misc/svt-minghao"
+        "docPath": "characters/npc/svt-minghao"
       },
       {
         "label": "Seungkwan",
         "characterId": "svt-seungkwan",
-        "docPath": "characters/misc/svt-seungkwan"
+        "docPath": "characters/npc/svt-seungkwan"
       },
       {
         "label": "Vernon",
         "characterId": "svt-vernon",
-        "docPath": "characters/misc/svt-vernon"
+        "docPath": "characters/npc/svt-vernon"
       },
       {
         "label": "Dino",
         "characterId": "svt-dino",
-        "docPath": "characters/misc/svt-dino"
+        "docPath": "characters/npc/svt-dino"
       }
     ],
     "destinyCard": null,
@@ -1427,62 +1427,62 @@
       {
         "label": "S.Coups",
         "characterId": "svt-scoups",
-        "docPath": "characters/misc/svt-scoups"
+        "docPath": "characters/npc/svt-scoups"
       },
       {
         "label": "Jeonghan",
         "characterId": "svt-jeonghan",
-        "docPath": "characters/misc/svt-jeonghan"
+        "docPath": "characters/npc/svt-jeonghan"
       },
       {
         "label": "Joshua",
         "characterId": "svt-joshua",
-        "docPath": "characters/misc/svt-joshua"
+        "docPath": "characters/npc/svt-joshua"
       },
       {
         "label": "Hoshi",
         "characterId": "svt-hoshi",
-        "docPath": "characters/misc/svt-hoshi"
+        "docPath": "characters/npc/svt-hoshi"
       },
       {
         "label": "Wonwoo",
         "characterId": "svt-wonwoo",
-        "docPath": "characters/misc/svt-wonwoo"
+        "docPath": "characters/npc/svt-wonwoo"
       },
       {
         "label": "Woozi",
         "characterId": "svt-woozi",
-        "docPath": "characters/misc/svt-woozi"
+        "docPath": "characters/npc/svt-woozi"
       },
       {
         "label": "Jun",
         "characterId": "svt-jun",
-        "docPath": "characters/misc/svt-jun"
+        "docPath": "characters/npc/svt-jun"
       },
       {
         "label": "Mingyu",
         "characterId": "svt-mingyu",
-        "docPath": "characters/misc/svt-mingyu"
+        "docPath": "characters/npc/svt-mingyu"
       },
       {
         "label": "Minghao",
         "characterId": "svt-minghao",
-        "docPath": "characters/misc/svt-minghao"
+        "docPath": "characters/npc/svt-minghao"
       },
       {
         "label": "Seungkwan",
         "characterId": "svt-seungkwan",
-        "docPath": "characters/misc/svt-seungkwan"
+        "docPath": "characters/npc/svt-seungkwan"
       },
       {
         "label": "Vernon",
         "characterId": "svt-vernon",
-        "docPath": "characters/misc/svt-vernon"
+        "docPath": "characters/npc/svt-vernon"
       },
       {
         "label": "Dino",
         "characterId": "svt-dino",
-        "docPath": "characters/misc/svt-dino"
+        "docPath": "characters/npc/svt-dino"
       }
     ],
     "destinyCard": null,
@@ -1550,62 +1550,62 @@
       {
         "label": "S.Coups",
         "characterId": "svt-scoups",
-        "docPath": "characters/misc/svt-scoups"
+        "docPath": "characters/npc/svt-scoups"
       },
       {
         "label": "Jeonghan",
         "characterId": "svt-jeonghan",
-        "docPath": "characters/misc/svt-jeonghan"
+        "docPath": "characters/npc/svt-jeonghan"
       },
       {
         "label": "Joshua",
         "characterId": "svt-joshua",
-        "docPath": "characters/misc/svt-joshua"
+        "docPath": "characters/npc/svt-joshua"
       },
       {
         "label": "Hoshi",
         "characterId": "svt-hoshi",
-        "docPath": "characters/misc/svt-hoshi"
+        "docPath": "characters/npc/svt-hoshi"
       },
       {
         "label": "Wonwoo",
         "characterId": "svt-wonwoo",
-        "docPath": "characters/misc/svt-wonwoo"
+        "docPath": "characters/npc/svt-wonwoo"
       },
       {
         "label": "Woozi",
         "characterId": "svt-woozi",
-        "docPath": "characters/misc/svt-woozi"
+        "docPath": "characters/npc/svt-woozi"
       },
       {
         "label": "Dokyeom",
         "characterId": "svt-dk",
-        "docPath": "characters/misc/svt-dk"
+        "docPath": "characters/npc/svt-dk"
       },
       {
         "label": "Jun",
         "characterId": "svt-jun",
-        "docPath": "characters/misc/svt-jun"
+        "docPath": "characters/npc/svt-jun"
       },
       {
         "label": "Minghao",
         "characterId": "svt-minghao",
-        "docPath": "characters/misc/svt-minghao"
+        "docPath": "characters/npc/svt-minghao"
       },
       {
         "label": "Seungkwan",
         "characterId": "svt-seungkwan",
-        "docPath": "characters/misc/svt-seungkwan"
+        "docPath": "characters/npc/svt-seungkwan"
       },
       {
         "label": "Vernon",
         "characterId": "svt-vernon",
-        "docPath": "characters/misc/svt-vernon"
+        "docPath": "characters/npc/svt-vernon"
       },
       {
         "label": "Dino",
         "characterId": "svt-dino",
-        "docPath": "characters/misc/svt-dino"
+        "docPath": "characters/npc/svt-dino"
       }
     ],
     "destinyCard": null,
@@ -1672,62 +1672,62 @@
       {
         "label": "S.Coups",
         "characterId": "svt-scoups",
-        "docPath": "characters/misc/svt-scoups"
+        "docPath": "characters/npc/svt-scoups"
       },
       {
         "label": "Jeonghan",
         "characterId": "svt-jeonghan",
-        "docPath": "characters/misc/svt-jeonghan"
+        "docPath": "characters/npc/svt-jeonghan"
       },
       {
         "label": "Joshua",
         "characterId": "svt-joshua",
-        "docPath": "characters/misc/svt-joshua"
+        "docPath": "characters/npc/svt-joshua"
       },
       {
         "label": "Hoshi",
         "characterId": "svt-hoshi",
-        "docPath": "characters/misc/svt-hoshi"
+        "docPath": "characters/npc/svt-hoshi"
       },
       {
         "label": "Wonwoo",
         "characterId": "svt-wonwoo",
-        "docPath": "characters/misc/svt-wonwoo"
+        "docPath": "characters/npc/svt-wonwoo"
       },
       {
         "label": "Woozi",
         "characterId": "svt-woozi",
-        "docPath": "characters/misc/svt-woozi"
+        "docPath": "characters/npc/svt-woozi"
       },
       {
         "label": "Dokyeom",
         "characterId": "svt-dk",
-        "docPath": "characters/misc/svt-dk"
+        "docPath": "characters/npc/svt-dk"
       },
       {
         "label": "Mingyu",
         "characterId": "svt-mingyu",
-        "docPath": "characters/misc/svt-mingyu"
+        "docPath": "characters/npc/svt-mingyu"
       },
       {
         "label": "Jun",
         "characterId": "svt-jun",
-        "docPath": "characters/misc/svt-jun"
+        "docPath": "characters/npc/svt-jun"
       },
       {
         "label": "Seungkwan",
         "characterId": "svt-seungkwan",
-        "docPath": "characters/misc/svt-seungkwan"
+        "docPath": "characters/npc/svt-seungkwan"
       },
       {
         "label": "Vernon",
         "characterId": "svt-vernon",
-        "docPath": "characters/misc/svt-vernon"
+        "docPath": "characters/npc/svt-vernon"
       },
       {
         "label": "Dino",
         "characterId": "svt-dino",
-        "docPath": "characters/misc/svt-dino"
+        "docPath": "characters/npc/svt-dino"
       }
     ],
     "destinyCard": null,
@@ -1794,62 +1794,62 @@
       {
         "label": "S.Coups",
         "characterId": "svt-scoups",
-        "docPath": "characters/misc/svt-scoups"
+        "docPath": "characters/npc/svt-scoups"
       },
       {
         "label": "Jeonghan",
         "characterId": "svt-jeonghan",
-        "docPath": "characters/misc/svt-jeonghan"
+        "docPath": "characters/npc/svt-jeonghan"
       },
       {
         "label": "Joshua",
         "characterId": "svt-joshua",
-        "docPath": "characters/misc/svt-joshua"
+        "docPath": "characters/npc/svt-joshua"
       },
       {
         "label": "Hoshi",
         "characterId": "svt-hoshi",
-        "docPath": "characters/misc/svt-hoshi"
+        "docPath": "characters/npc/svt-hoshi"
       },
       {
         "label": "Wonwoo",
         "characterId": "svt-wonwoo",
-        "docPath": "characters/misc/svt-wonwoo"
+        "docPath": "characters/npc/svt-wonwoo"
       },
       {
         "label": "Woozi",
         "characterId": "svt-woozi",
-        "docPath": "characters/misc/svt-woozi"
+        "docPath": "characters/npc/svt-woozi"
       },
       {
         "label": "Dokyeom",
         "characterId": "svt-dk",
-        "docPath": "characters/misc/svt-dk"
+        "docPath": "characters/npc/svt-dk"
       },
       {
         "label": "Mingyu",
         "characterId": "svt-mingyu",
-        "docPath": "characters/misc/svt-mingyu"
+        "docPath": "characters/npc/svt-mingyu"
       },
       {
         "label": "Minghao",
         "characterId": "svt-minghao",
-        "docPath": "characters/misc/svt-minghao"
+        "docPath": "characters/npc/svt-minghao"
       },
       {
         "label": "Jun",
         "characterId": "svt-jun",
-        "docPath": "characters/misc/svt-jun"
+        "docPath": "characters/npc/svt-jun"
       },
       {
         "label": "Vernon",
         "characterId": "svt-vernon",
-        "docPath": "characters/misc/svt-vernon"
+        "docPath": "characters/npc/svt-vernon"
       },
       {
         "label": "Dino",
         "characterId": "svt-dino",
-        "docPath": "characters/misc/svt-dino"
+        "docPath": "characters/npc/svt-dino"
       }
     ],
     "destinyCard": null,
@@ -1916,62 +1916,62 @@
       {
         "label": "S.Coups",
         "characterId": "svt-scoups",
-        "docPath": "characters/misc/svt-scoups"
+        "docPath": "characters/npc/svt-scoups"
       },
       {
         "label": "Jeonghan",
         "characterId": "svt-jeonghan",
-        "docPath": "characters/misc/svt-jeonghan"
+        "docPath": "characters/npc/svt-jeonghan"
       },
       {
         "label": "Joshua",
         "characterId": "svt-joshua",
-        "docPath": "characters/misc/svt-joshua"
+        "docPath": "characters/npc/svt-joshua"
       },
       {
         "label": "Hoshi",
         "characterId": "svt-hoshi",
-        "docPath": "characters/misc/svt-hoshi"
+        "docPath": "characters/npc/svt-hoshi"
       },
       {
         "label": "Wonwoo",
         "characterId": "svt-wonwoo",
-        "docPath": "characters/misc/svt-wonwoo"
+        "docPath": "characters/npc/svt-wonwoo"
       },
       {
         "label": "Woozi",
         "characterId": "svt-woozi",
-        "docPath": "characters/misc/svt-woozi"
+        "docPath": "characters/npc/svt-woozi"
       },
       {
         "label": "Dokyeom",
         "characterId": "svt-dk",
-        "docPath": "characters/misc/svt-dk"
+        "docPath": "characters/npc/svt-dk"
       },
       {
         "label": "Mingyu",
         "characterId": "svt-mingyu",
-        "docPath": "characters/misc/svt-mingyu"
+        "docPath": "characters/npc/svt-mingyu"
       },
       {
         "label": "Minghao",
         "characterId": "svt-minghao",
-        "docPath": "characters/misc/svt-minghao"
+        "docPath": "characters/npc/svt-minghao"
       },
       {
         "label": "Seungkwan",
         "characterId": "svt-seungkwan",
-        "docPath": "characters/misc/svt-seungkwan"
+        "docPath": "characters/npc/svt-seungkwan"
       },
       {
         "label": "Jun",
         "characterId": "svt-jun",
-        "docPath": "characters/misc/svt-jun"
+        "docPath": "characters/npc/svt-jun"
       },
       {
         "label": "Dino",
         "characterId": "svt-dino",
-        "docPath": "characters/misc/svt-dino"
+        "docPath": "characters/npc/svt-dino"
       }
     ],
     "destinyCard": null,
@@ -2038,62 +2038,62 @@
       {
         "label": "S.Coups",
         "characterId": "svt-scoups",
-        "docPath": "characters/misc/svt-scoups"
+        "docPath": "characters/npc/svt-scoups"
       },
       {
         "label": "Jeonghan",
         "characterId": "svt-jeonghan",
-        "docPath": "characters/misc/svt-jeonghan"
+        "docPath": "characters/npc/svt-jeonghan"
       },
       {
         "label": "Joshua",
         "characterId": "svt-joshua",
-        "docPath": "characters/misc/svt-joshua"
+        "docPath": "characters/npc/svt-joshua"
       },
       {
         "label": "Hoshi",
         "characterId": "svt-hoshi",
-        "docPath": "characters/misc/svt-hoshi"
+        "docPath": "characters/npc/svt-hoshi"
       },
       {
         "label": "Wonwoo",
         "characterId": "svt-wonwoo",
-        "docPath": "characters/misc/svt-wonwoo"
+        "docPath": "characters/npc/svt-wonwoo"
       },
       {
         "label": "Woozi",
         "characterId": "svt-woozi",
-        "docPath": "characters/misc/svt-woozi"
+        "docPath": "characters/npc/svt-woozi"
       },
       {
         "label": "Dokyeom",
         "characterId": "svt-dk",
-        "docPath": "characters/misc/svt-dk"
+        "docPath": "characters/npc/svt-dk"
       },
       {
         "label": "Mingyu",
         "characterId": "svt-mingyu",
-        "docPath": "characters/misc/svt-mingyu"
+        "docPath": "characters/npc/svt-mingyu"
       },
       {
         "label": "Minghao",
         "characterId": "svt-minghao",
-        "docPath": "characters/misc/svt-minghao"
+        "docPath": "characters/npc/svt-minghao"
       },
       {
         "label": "Seungkwan",
         "characterId": "svt-seungkwan",
-        "docPath": "characters/misc/svt-seungkwan"
+        "docPath": "characters/npc/svt-seungkwan"
       },
       {
         "label": "Vernon",
         "characterId": "svt-vernon",
-        "docPath": "characters/misc/svt-vernon"
+        "docPath": "characters/npc/svt-vernon"
       },
       {
         "label": "Jun",
         "characterId": "svt-jun",
-        "docPath": "characters/misc/svt-jun"
+        "docPath": "characters/npc/svt-jun"
       }
     ],
     "destinyCard": null,
@@ -2161,37 +2161,37 @@
       {
         "label": "Lee Know",
         "characterId": "skz-leeknow",
-        "docPath": "characters/misc/skz-leeknow"
+        "docPath": "characters/npc/skz-leeknow"
       },
       {
         "label": "Changbin",
         "characterId": "skz-changbin",
-        "docPath": "characters/misc/skz-changbin"
+        "docPath": "characters/npc/skz-changbin"
       },
       {
         "label": "Hyunjin",
         "characterId": "skz-hyunjin",
-        "docPath": "characters/misc/skz-hyunjin"
+        "docPath": "characters/npc/skz-hyunjin"
       },
       {
         "label": "Han",
         "characterId": "skz-han",
-        "docPath": "characters/misc/skz-han"
+        "docPath": "characters/npc/skz-han"
       },
       {
         "label": "Felix",
         "characterId": "skz-felix",
-        "docPath": "characters/misc/skz-felix"
+        "docPath": "characters/npc/skz-felix"
       },
       {
         "label": "Seungmin",
         "characterId": "skz-seungmin",
-        "docPath": "characters/misc/skz-seungmin"
+        "docPath": "characters/npc/skz-seungmin"
       },
       {
         "label": "I.N.",
         "characterId": "skz-jeongin",
-        "docPath": "characters/misc/skz-jeongin"
+        "docPath": "characters/npc/skz-jeongin"
       }
     ],
     "destinyCard": null,
@@ -2246,37 +2246,37 @@
       {
         "label": "Bang Chan",
         "characterId": "skz-bangchan",
-        "docPath": "characters/misc/skz-bangchan"
+        "docPath": "characters/npc/skz-bangchan"
       },
       {
         "label": "Changbin",
         "characterId": "skz-changbin",
-        "docPath": "characters/misc/skz-changbin"
+        "docPath": "characters/npc/skz-changbin"
       },
       {
         "label": "Hyunjin",
         "characterId": "skz-hyunjin",
-        "docPath": "characters/misc/skz-hyunjin"
+        "docPath": "characters/npc/skz-hyunjin"
       },
       {
         "label": "Han",
         "characterId": "skz-han",
-        "docPath": "characters/misc/skz-han"
+        "docPath": "characters/npc/skz-han"
       },
       {
         "label": "Felix",
         "characterId": "skz-felix",
-        "docPath": "characters/misc/skz-felix"
+        "docPath": "characters/npc/skz-felix"
       },
       {
         "label": "Seungmin",
         "characterId": "skz-seungmin",
-        "docPath": "characters/misc/skz-seungmin"
+        "docPath": "characters/npc/skz-seungmin"
       },
       {
         "label": "I.N.",
         "characterId": "skz-jeongin",
-        "docPath": "characters/misc/skz-jeongin"
+        "docPath": "characters/npc/skz-jeongin"
       }
     ],
     "destinyCard": null,
@@ -2331,37 +2331,37 @@
       {
         "label": "Lee Know",
         "characterId": "skz-leeknow",
-        "docPath": "characters/misc/skz-leeknow"
+        "docPath": "characters/npc/skz-leeknow"
       },
       {
         "label": "Bang Chan",
         "characterId": "skz-bangchan",
-        "docPath": "characters/misc/skz-bangchan"
+        "docPath": "characters/npc/skz-bangchan"
       },
       {
         "label": "Hyunjin",
         "characterId": "skz-hyunjin",
-        "docPath": "characters/misc/skz-hyunjin"
+        "docPath": "characters/npc/skz-hyunjin"
       },
       {
         "label": "Han",
         "characterId": "skz-han",
-        "docPath": "characters/misc/skz-han"
+        "docPath": "characters/npc/skz-han"
       },
       {
         "label": "Felix",
         "characterId": "skz-felix",
-        "docPath": "characters/misc/skz-felix"
+        "docPath": "characters/npc/skz-felix"
       },
       {
         "label": "Seungmin",
         "characterId": "skz-seungmin",
-        "docPath": "characters/misc/skz-seungmin"
+        "docPath": "characters/npc/skz-seungmin"
       },
       {
         "label": "I.N.",
         "characterId": "skz-jeongin",
-        "docPath": "characters/misc/skz-jeongin"
+        "docPath": "characters/npc/skz-jeongin"
       }
     ],
     "destinyCard": null,
@@ -2416,37 +2416,37 @@
       {
         "label": "Lee Know",
         "characterId": "skz-leeknow",
-        "docPath": "characters/misc/skz-leeknow"
+        "docPath": "characters/npc/skz-leeknow"
       },
       {
         "label": "Changbin",
         "characterId": "skz-changbin",
-        "docPath": "characters/misc/skz-changbin"
+        "docPath": "characters/npc/skz-changbin"
       },
       {
         "label": "Bang Chan",
         "characterId": "skz-bangchan",
-        "docPath": "characters/misc/skz-bangchan"
+        "docPath": "characters/npc/skz-bangchan"
       },
       {
         "label": "Han",
         "characterId": "skz-han",
-        "docPath": "characters/misc/skz-han"
+        "docPath": "characters/npc/skz-han"
       },
       {
         "label": "Felix",
         "characterId": "skz-felix",
-        "docPath": "characters/misc/skz-felix"
+        "docPath": "characters/npc/skz-felix"
       },
       {
         "label": "Seungmin",
         "characterId": "skz-seungmin",
-        "docPath": "characters/misc/skz-seungmin"
+        "docPath": "characters/npc/skz-seungmin"
       },
       {
         "label": "I.N.",
         "characterId": "skz-jeongin",
-        "docPath": "characters/misc/skz-jeongin"
+        "docPath": "characters/npc/skz-jeongin"
       },
       {
         "label": "Minjae",
@@ -2506,37 +2506,37 @@
       {
         "label": "Lee Know",
         "characterId": "skz-leeknow",
-        "docPath": "characters/misc/skz-leeknow"
+        "docPath": "characters/npc/skz-leeknow"
       },
       {
         "label": "Changbin",
         "characterId": "skz-changbin",
-        "docPath": "characters/misc/skz-changbin"
+        "docPath": "characters/npc/skz-changbin"
       },
       {
         "label": "Hyunjin",
         "characterId": "skz-hyunjin",
-        "docPath": "characters/misc/skz-hyunjin"
+        "docPath": "characters/npc/skz-hyunjin"
       },
       {
         "label": "Bang Chan",
         "characterId": "skz-bangchan",
-        "docPath": "characters/misc/skz-bangchan"
+        "docPath": "characters/npc/skz-bangchan"
       },
       {
         "label": "Felix",
         "characterId": "skz-felix",
-        "docPath": "characters/misc/skz-felix"
+        "docPath": "characters/npc/skz-felix"
       },
       {
         "label": "Seungmin",
         "characterId": "skz-seungmin",
-        "docPath": "characters/misc/skz-seungmin"
+        "docPath": "characters/npc/skz-seungmin"
       },
       {
         "label": "I.N.",
         "characterId": "skz-jeongin",
-        "docPath": "characters/misc/skz-jeongin"
+        "docPath": "characters/npc/skz-jeongin"
       }
     ],
     "destinyCard": null,
@@ -2591,37 +2591,37 @@
       {
         "label": "Lee Know",
         "characterId": "skz-leeknow",
-        "docPath": "characters/misc/skz-leeknow"
+        "docPath": "characters/npc/skz-leeknow"
       },
       {
         "label": "Changbin",
         "characterId": "skz-changbin",
-        "docPath": "characters/misc/skz-changbin"
+        "docPath": "characters/npc/skz-changbin"
       },
       {
         "label": "Hyunjin",
         "characterId": "skz-hyunjin",
-        "docPath": "characters/misc/skz-hyunjin"
+        "docPath": "characters/npc/skz-hyunjin"
       },
       {
         "label": "Han",
         "characterId": "skz-han",
-        "docPath": "characters/misc/skz-han"
+        "docPath": "characters/npc/skz-han"
       },
       {
         "label": "Bang Chan",
         "characterId": "skz-bangchan",
-        "docPath": "characters/misc/skz-bangchan"
+        "docPath": "characters/npc/skz-bangchan"
       },
       {
         "label": "Seungmin",
         "characterId": "skz-seungmin",
-        "docPath": "characters/misc/skz-seungmin"
+        "docPath": "characters/npc/skz-seungmin"
       },
       {
         "label": "I.N.",
         "characterId": "skz-jeongin",
-        "docPath": "characters/misc/skz-jeongin"
+        "docPath": "characters/npc/skz-jeongin"
       },
       {
         "label": "Minjae",
@@ -2681,37 +2681,37 @@
       {
         "label": "Lee Know",
         "characterId": "skz-leeknow",
-        "docPath": "characters/misc/skz-leeknow"
+        "docPath": "characters/npc/skz-leeknow"
       },
       {
         "label": "Changbin",
         "characterId": "skz-changbin",
-        "docPath": "characters/misc/skz-changbin"
+        "docPath": "characters/npc/skz-changbin"
       },
       {
         "label": "Hyunjin",
         "characterId": "skz-hyunjin",
-        "docPath": "characters/misc/skz-hyunjin"
+        "docPath": "characters/npc/skz-hyunjin"
       },
       {
         "label": "Han",
         "characterId": "skz-han",
-        "docPath": "characters/misc/skz-han"
+        "docPath": "characters/npc/skz-han"
       },
       {
         "label": "Felix",
         "characterId": "skz-felix",
-        "docPath": "characters/misc/skz-felix"
+        "docPath": "characters/npc/skz-felix"
       },
       {
         "label": "Bang Chan",
         "characterId": "skz-bangchan",
-        "docPath": "characters/misc/skz-bangchan"
+        "docPath": "characters/npc/skz-bangchan"
       },
       {
         "label": "I.N.",
         "characterId": "skz-jeongin",
-        "docPath": "characters/misc/skz-jeongin"
+        "docPath": "characters/npc/skz-jeongin"
       }
     ],
     "destinyCard": null,
@@ -2786,37 +2786,37 @@
       {
         "label": "Lee Know",
         "characterId": "skz-leeknow",
-        "docPath": "characters/misc/skz-leeknow"
+        "docPath": "characters/npc/skz-leeknow"
       },
       {
         "label": "Changbin",
         "characterId": "skz-changbin",
-        "docPath": "characters/misc/skz-changbin"
+        "docPath": "characters/npc/skz-changbin"
       },
       {
         "label": "Hyunjin",
         "characterId": "skz-hyunjin",
-        "docPath": "characters/misc/skz-hyunjin"
+        "docPath": "characters/npc/skz-hyunjin"
       },
       {
         "label": "Han",
         "characterId": "skz-han",
-        "docPath": "characters/misc/skz-han"
+        "docPath": "characters/npc/skz-han"
       },
       {
         "label": "Felix",
         "characterId": "skz-felix",
-        "docPath": "characters/misc/skz-felix"
+        "docPath": "characters/npc/skz-felix"
       },
       {
         "label": "Seungmin",
         "characterId": "skz-seungmin",
-        "docPath": "characters/misc/skz-seungmin"
+        "docPath": "characters/npc/skz-seungmin"
       },
       {
         "label": "Bang Chan",
         "characterId": "skz-bangchan",
-        "docPath": "characters/misc/skz-bangchan"
+        "docPath": "characters/npc/skz-bangchan"
       }
     ],
     "destinyCard": null,
@@ -2858,42 +2858,42 @@
       {
         "label": "Bang Chan",
         "characterId": "skz-bangchan",
-        "docPath": "characters/misc/skz-bangchan"
+        "docPath": "characters/npc/skz-bangchan"
       },
       {
         "label": "Lee Know",
         "characterId": "skz-leeknow",
-        "docPath": "characters/misc/skz-leeknow"
+        "docPath": "characters/npc/skz-leeknow"
       },
       {
         "label": "Changbin",
         "characterId": "skz-changbin",
-        "docPath": "characters/misc/skz-changbin"
+        "docPath": "characters/npc/skz-changbin"
       },
       {
         "label": "Hyunjin",
         "characterId": "skz-hyunjin",
-        "docPath": "characters/misc/skz-hyunjin"
+        "docPath": "characters/npc/skz-hyunjin"
       },
       {
         "label": "Han",
         "characterId": "skz-han",
-        "docPath": "characters/misc/skz-han"
+        "docPath": "characters/npc/skz-han"
       },
       {
         "label": "Felix",
         "characterId": "skz-felix",
-        "docPath": "characters/misc/skz-felix"
+        "docPath": "characters/npc/skz-felix"
       },
       {
         "label": "Seungmin",
         "characterId": "skz-seungmin",
-        "docPath": "characters/misc/skz-seungmin"
+        "docPath": "characters/npc/skz-seungmin"
       },
       {
         "label": "I.N.",
         "characterId": "skz-jeongin",
-        "docPath": "characters/misc/skz-jeongin"
+        "docPath": "characters/npc/skz-jeongin"
       }
     ],
     "destinyCard": "9 de Picas",
@@ -2948,32 +2948,32 @@
       {
         "label": "Heeseung",
         "characterId": "enha-heeseung",
-        "docPath": "characters/misc/enha-heeseung"
+        "docPath": "characters/npc/enha-heeseung"
       },
       {
         "label": "Jay",
         "characterId": "enha-jay",
-        "docPath": "characters/misc/enha-jay"
+        "docPath": "characters/npc/enha-jay"
       },
       {
         "label": "Jake",
         "characterId": "enha-jake",
-        "docPath": "characters/misc/enha-jake"
+        "docPath": "characters/npc/enha-jake"
       },
       {
         "label": "Sunghoon",
         "characterId": "enha-sunghoon",
-        "docPath": "characters/misc/enha-sunghoon"
+        "docPath": "characters/npc/enha-sunghoon"
       },
       {
         "label": "Sunoo",
         "characterId": "enha-sunoo",
-        "docPath": "characters/misc/enha-sunoo"
+        "docPath": "characters/npc/enha-sunoo"
       },
       {
         "label": "Ni-ki",
         "characterId": "enha-niki",
-        "docPath": "characters/misc/enha-niki"
+        "docPath": "characters/npc/enha-niki"
       }
     ],
     "destinyCard": null,
@@ -3028,32 +3028,32 @@
       {
         "label": "Jungwon",
         "characterId": "enha-jungwon",
-        "docPath": "characters/misc/enha-jungwon"
+        "docPath": "characters/npc/enha-jungwon"
       },
       {
         "label": "Jay",
         "characterId": "enha-jay",
-        "docPath": "characters/misc/enha-jay"
+        "docPath": "characters/npc/enha-jay"
       },
       {
         "label": "Jake",
         "characterId": "enha-jake",
-        "docPath": "characters/misc/enha-jake"
+        "docPath": "characters/npc/enha-jake"
       },
       {
         "label": "Sunghoon",
         "characterId": "enha-sunghoon",
-        "docPath": "characters/misc/enha-sunghoon"
+        "docPath": "characters/npc/enha-sunghoon"
       },
       {
         "label": "Sunoo",
         "characterId": "enha-sunoo",
-        "docPath": "characters/misc/enha-sunoo"
+        "docPath": "characters/npc/enha-sunoo"
       },
       {
         "label": "Ni-ki",
         "characterId": "enha-niki",
-        "docPath": "characters/misc/enha-niki"
+        "docPath": "characters/npc/enha-niki"
       }
     ],
     "destinyCard": null,
@@ -3107,32 +3107,32 @@
       {
         "label": "Jungwon",
         "characterId": "enha-jungwon",
-        "docPath": "characters/misc/enha-jungwon"
+        "docPath": "characters/npc/enha-jungwon"
       },
       {
         "label": "Heeseung",
         "characterId": "enha-heeseung",
-        "docPath": "characters/misc/enha-heeseung"
+        "docPath": "characters/npc/enha-heeseung"
       },
       {
         "label": "Jake",
         "characterId": "enha-jake",
-        "docPath": "characters/misc/enha-jake"
+        "docPath": "characters/npc/enha-jake"
       },
       {
         "label": "Sunghoon",
         "characterId": "enha-sunghoon",
-        "docPath": "characters/misc/enha-sunghoon"
+        "docPath": "characters/npc/enha-sunghoon"
       },
       {
         "label": "Sunoo",
         "characterId": "enha-sunoo",
-        "docPath": "characters/misc/enha-sunoo"
+        "docPath": "characters/npc/enha-sunoo"
       },
       {
         "label": "Ni-ki",
         "characterId": "enha-niki",
-        "docPath": "characters/misc/enha-niki"
+        "docPath": "characters/npc/enha-niki"
       }
     ],
     "destinyCard": null,
@@ -3187,32 +3187,32 @@
       {
         "label": "Jungwon",
         "characterId": "enha-jungwon",
-        "docPath": "characters/misc/enha-jungwon"
+        "docPath": "characters/npc/enha-jungwon"
       },
       {
         "label": "Heeseung",
         "characterId": "enha-heeseung",
-        "docPath": "characters/misc/enha-heeseung"
+        "docPath": "characters/npc/enha-heeseung"
       },
       {
         "label": "Jay",
         "characterId": "enha-jay",
-        "docPath": "characters/misc/enha-jay"
+        "docPath": "characters/npc/enha-jay"
       },
       {
         "label": "Sunghoon",
         "characterId": "enha-sunghoon",
-        "docPath": "characters/misc/enha-sunghoon"
+        "docPath": "characters/npc/enha-sunghoon"
       },
       {
         "label": "Sunoo",
         "characterId": "enha-sunoo",
-        "docPath": "characters/misc/enha-sunoo"
+        "docPath": "characters/npc/enha-sunoo"
       },
       {
         "label": "Ni-ki",
         "characterId": "enha-niki",
-        "docPath": "characters/misc/enha-niki"
+        "docPath": "characters/npc/enha-niki"
       },
       {
         "label": "Soobin",
@@ -3272,32 +3272,32 @@
       {
         "label": "Jungwon",
         "characterId": "enha-jungwon",
-        "docPath": "characters/misc/enha-jungwon"
+        "docPath": "characters/npc/enha-jungwon"
       },
       {
         "label": "Heeseung",
         "characterId": "enha-heeseung",
-        "docPath": "characters/misc/enha-heeseung"
+        "docPath": "characters/npc/enha-heeseung"
       },
       {
         "label": "Jay",
         "characterId": "enha-jay",
-        "docPath": "characters/misc/enha-jay"
+        "docPath": "characters/npc/enha-jay"
       },
       {
         "label": "Jake",
         "characterId": "enha-jake",
-        "docPath": "characters/misc/enha-jake"
+        "docPath": "characters/npc/enha-jake"
       },
       {
         "label": "Sunoo",
         "characterId": "enha-sunoo",
-        "docPath": "characters/misc/enha-sunoo"
+        "docPath": "characters/npc/enha-sunoo"
       },
       {
         "label": "Ni-ki",
         "characterId": "enha-niki",
-        "docPath": "characters/misc/enha-niki"
+        "docPath": "characters/npc/enha-niki"
       }
     ],
     "destinyCard": null,
@@ -3352,32 +3352,32 @@
       {
         "label": "Jungwon",
         "characterId": "enha-jungwon",
-        "docPath": "characters/misc/enha-jungwon"
+        "docPath": "characters/npc/enha-jungwon"
       },
       {
         "label": "Heeseung",
         "characterId": "enha-heeseung",
-        "docPath": "characters/misc/enha-heeseung"
+        "docPath": "characters/npc/enha-heeseung"
       },
       {
         "label": "Jay",
         "characterId": "enha-jay",
-        "docPath": "characters/misc/enha-jay"
+        "docPath": "characters/npc/enha-jay"
       },
       {
         "label": "Jake",
         "characterId": "enha-jake",
-        "docPath": "characters/misc/enha-jake"
+        "docPath": "characters/npc/enha-jake"
       },
       {
         "label": "Sunghoon",
         "characterId": "enha-sunghoon",
-        "docPath": "characters/misc/enha-sunghoon"
+        "docPath": "characters/npc/enha-sunghoon"
       },
       {
         "label": "Ni-ki",
         "characterId": "enha-niki",
-        "docPath": "characters/misc/enha-niki"
+        "docPath": "characters/npc/enha-niki"
       }
     ],
     "destinyCard": null,
@@ -3432,32 +3432,32 @@
       {
         "label": "Jungwon",
         "characterId": "enha-jungwon",
-        "docPath": "characters/misc/enha-jungwon"
+        "docPath": "characters/npc/enha-jungwon"
       },
       {
         "label": "Heeseung",
         "characterId": "enha-heeseung",
-        "docPath": "characters/misc/enha-heeseung"
+        "docPath": "characters/npc/enha-heeseung"
       },
       {
         "label": "Jay",
         "characterId": "enha-jay",
-        "docPath": "characters/misc/enha-jay"
+        "docPath": "characters/npc/enha-jay"
       },
       {
         "label": "Jake",
         "characterId": "enha-jake",
-        "docPath": "characters/misc/enha-jake"
+        "docPath": "characters/npc/enha-jake"
       },
       {
         "label": "Sunghoon",
         "characterId": "enha-sunghoon",
-        "docPath": "characters/misc/enha-sunghoon"
+        "docPath": "characters/npc/enha-sunghoon"
       },
       {
         "label": "Sunoo",
         "characterId": "enha-sunoo",
-        "docPath": "characters/misc/enha-sunoo"
+        "docPath": "characters/npc/enha-sunoo"
       }
     ],
     "destinyCard": null,
@@ -3511,42 +3511,42 @@
       {
         "label": "Taeyong",
         "characterId": "nct-taeyong",
-        "docPath": "characters/misc/nct-taeyong"
+        "docPath": "characters/npc/nct-taeyong"
       },
       {
         "label": "Yuta",
         "characterId": "nct-yuta",
-        "docPath": "characters/misc/nct-yuta"
+        "docPath": "characters/npc/nct-yuta"
       },
       {
         "label": "Doyoung",
         "characterId": "nct-doyoung",
-        "docPath": "characters/misc/nct-doyoung"
+        "docPath": "characters/npc/nct-doyoung"
       },
       {
         "label": "Jaehyun",
         "characterId": "nct-jaehyun",
-        "docPath": "characters/misc/nct-jaehyun"
+        "docPath": "characters/npc/nct-jaehyun"
       },
       {
         "label": "Jungwoo",
         "characterId": "nct-jungwoo",
-        "docPath": "characters/misc/nct-jungwoo"
+        "docPath": "characters/npc/nct-jungwoo"
       },
       {
         "label": "Mark",
         "characterId": "nct-mark",
-        "docPath": "characters/misc/nct-mark"
+        "docPath": "characters/npc/nct-mark"
       },
       {
         "label": "Haechan",
         "characterId": "nct-haechan",
-        "docPath": "characters/misc/nct-haechan"
+        "docPath": "characters/npc/nct-haechan"
       },
       {
         "label": "Yushi",
         "characterId": "nct-yushi",
-        "docPath": "characters/misc/nct-yushi"
+        "docPath": "characters/npc/nct-yushi"
       }
     ],
     "destinyCard": null,
@@ -3578,7 +3578,7 @@
       "Fundador de los Neo Culturales"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/nct/taeyong.png",
+    "imageSrc": "/img/characters/nct/nct-taeyong.png",
     "dateOfBirth": "0995-07-01",
     "zodiac": "Cáncer ♋",
     "mbti": "ISFP",
@@ -3601,37 +3601,37 @@
       {
         "label": "Johnny",
         "characterId": "nct-johnny",
-        "docPath": "characters/misc/nct-johnny"
+        "docPath": "characters/npc/nct-johnny"
       },
       {
         "label": "Yuta",
         "characterId": "nct-yuta",
-        "docPath": "characters/misc/nct-yuta"
+        "docPath": "characters/npc/nct-yuta"
       },
       {
         "label": "Doyoung",
         "characterId": "nct-doyoung",
-        "docPath": "characters/misc/nct-doyoung"
+        "docPath": "characters/npc/nct-doyoung"
       },
       {
         "label": "Jaehyun",
         "characterId": "nct-jaehyun",
-        "docPath": "characters/misc/nct-jaehyun"
+        "docPath": "characters/npc/nct-jaehyun"
       },
       {
         "label": "Jungwoo",
         "characterId": "nct-jungwoo",
-        "docPath": "characters/misc/nct-jungwoo"
+        "docPath": "characters/npc/nct-jungwoo"
       },
       {
         "label": "Mark",
         "characterId": "nct-mark",
-        "docPath": "characters/misc/nct-mark"
+        "docPath": "characters/npc/nct-mark"
       },
       {
         "label": "Haechan",
         "characterId": "nct-haechan",
-        "docPath": "characters/misc/nct-haechan"
+        "docPath": "characters/npc/nct-haechan"
       },
       {
         "label": "Kiyori",
@@ -3641,11 +3641,17 @@
       {
         "label": "Ryo",
         "characterId": "nct-ryo",
-        "docPath": "characters/misc/nct-ryo"
+        "docPath": "characters/npc/nct-ryo"
       }
     ],
     "destinyCard": null,
-    "images": [],
+    "images": [
+      {
+        "src": "/img/characters/nct/taeyong.png",
+        "alt": "Lee Taeyong",
+        "caption": ""
+      }
+    ],
     "summary": null,
     "sortOrder": 34
   },
@@ -3700,46 +3706,52 @@
       {
         "label": "Johnny",
         "characterId": "nct-johnny",
-        "docPath": "characters/misc/nct-johnny"
+        "docPath": "characters/npc/nct-johnny"
       },
       {
         "label": "Taeyong",
         "characterId": "nct-taeyong",
-        "docPath": "characters/misc/nct-taeyong"
+        "docPath": "characters/npc/nct-taeyong"
       },
       {
         "label": "Doyoung",
         "characterId": "nct-doyoung",
-        "docPath": "characters/misc/nct-doyoung"
+        "docPath": "characters/npc/nct-doyoung"
       },
       {
         "label": "Jaehyun",
         "characterId": "nct-jaehyun",
-        "docPath": "characters/misc/nct-jaehyun"
+        "docPath": "characters/npc/nct-jaehyun"
       },
       {
         "label": "Jungwoo",
         "characterId": "nct-jungwoo",
-        "docPath": "characters/misc/nct-jungwoo"
+        "docPath": "characters/npc/nct-jungwoo"
       },
       {
         "label": "Mark",
         "characterId": "nct-mark",
-        "docPath": "characters/misc/nct-mark"
+        "docPath": "characters/npc/nct-mark"
       },
       {
         "label": "Haechan",
         "characterId": "nct-haechan",
-        "docPath": "characters/misc/nct-haechan"
+        "docPath": "characters/npc/nct-haechan"
       },
       {
         "label": "Sakuya",
         "characterId": "nct-sakuya",
-        "docPath": "characters/misc/nct-sakuya"
+        "docPath": "characters/npc/nct-sakuya"
       }
     ],
     "destinyCard": null,
-    "images": [],
+    "images": [
+      {
+        "src": "/img/characters/nct/nct-yuta.png",
+        "alt": "Yuta Nakamoto",
+        "caption": ""
+      }
+    ],
     "summary": null,
     "sortOrder": 35
   },
@@ -3766,7 +3778,7 @@
       "Profesor de Geomancia y Equilibrio Elemental"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/nct/kun.png",
+    "imageSrc": "/img/characters/nct/nct-kun.png",
     "dateOfBirth": "1796-01-01",
     "zodiac": "Capricornio ♑",
     "mbti": "ESFJ",
@@ -3781,36 +3793,42 @@
       {
         "label": "Ten",
         "characterId": "nct-ten",
-        "docPath": "characters/misc/nct-ten"
+        "docPath": "characters/npc/nct-ten"
       },
       {
         "label": "Winwin",
         "characterId": "nct-winwin",
-        "docPath": "characters/misc/nct-winwin"
+        "docPath": "characters/npc/nct-winwin"
       },
       {
         "label": "Lucas",
         "characterId": "nct-lucas",
-        "docPath": "characters/misc/nct-lucas"
+        "docPath": "characters/npc/nct-lucas"
       },
       {
         "label": "Xiaojun",
         "characterId": "nct-xiaojun",
-        "docPath": "characters/misc/nct-xiaojun"
+        "docPath": "characters/npc/nct-xiaojun"
       },
       {
         "label": "Hendery",
         "characterId": "nct-hendery",
-        "docPath": "characters/misc/nct-hendery"
+        "docPath": "characters/npc/nct-hendery"
       },
       {
         "label": "Yangyang",
         "characterId": "nct-yangyang",
-        "docPath": "characters/misc/nct-yangyang"
+        "docPath": "characters/npc/nct-yangyang"
       }
     ],
     "destinyCard": null,
-    "images": [],
+    "images": [
+      {
+        "src": "/img/characters/nct/kun.png",
+        "alt": "Qian Kun",
+        "caption": ""
+      }
+    ],
     "summary": null,
     "sortOrder": 36
   },
@@ -3860,37 +3878,37 @@
       {
         "label": "Taeyong",
         "characterId": "nct-taeyong",
-        "docPath": "characters/misc/nct-taeyong"
+        "docPath": "characters/npc/nct-taeyong"
       },
       {
         "label": "Yuta",
         "characterId": "nct-yuta",
-        "docPath": "characters/misc/nct-yuta"
+        "docPath": "characters/npc/nct-yuta"
       },
       {
         "label": "Johnny",
         "characterId": "nct-johnny",
-        "docPath": "characters/misc/nct-johnny"
+        "docPath": "characters/npc/nct-johnny"
       },
       {
         "label": "Jaehyun",
         "characterId": "nct-jaehyun",
-        "docPath": "characters/misc/nct-jaehyun"
+        "docPath": "characters/npc/nct-jaehyun"
       },
       {
         "label": "Jungwoo",
         "characterId": "nct-jungwoo",
-        "docPath": "characters/misc/nct-jungwoo"
+        "docPath": "characters/npc/nct-jungwoo"
       },
       {
         "label": "Mark",
         "characterId": "nct-mark",
-        "docPath": "characters/misc/nct-mark"
+        "docPath": "characters/npc/nct-mark"
       },
       {
         "label": "Haechan",
         "characterId": "nct-haechan",
-        "docPath": "characters/misc/nct-haechan"
+        "docPath": "characters/npc/nct-haechan"
       },
       {
         "label": "Jaewoo",
@@ -3926,7 +3944,7 @@
       "Profesor de Artes Fluídicas y Combate Elemental"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/nct/ten.png",
+    "imageSrc": "/img/characters/nct/nct-ten.png",
     "dateOfBirth": "1596-02-27",
     "zodiac": "Piscis ♓",
     "mbti": "ISFP",
@@ -3949,36 +3967,42 @@
       {
         "label": "Kun",
         "characterId": "nct-kun",
-        "docPath": "characters/misc/nct-kun"
+        "docPath": "characters/npc/nct-kun"
       },
       {
         "label": "Winwin",
         "characterId": "nct-winwin",
-        "docPath": "characters/misc/nct-winwin"
+        "docPath": "characters/npc/nct-winwin"
       },
       {
         "label": "Lucas",
         "characterId": "nct-lucas",
-        "docPath": "characters/misc/nct-lucas"
+        "docPath": "characters/npc/nct-lucas"
       },
       {
         "label": "Xiaojun",
         "characterId": "nct-xiaojun",
-        "docPath": "characters/misc/nct-xiaojun"
+        "docPath": "characters/npc/nct-xiaojun"
       },
       {
         "label": "Hendery",
         "characterId": "nct-hendery",
-        "docPath": "characters/misc/nct-hendery"
+        "docPath": "characters/npc/nct-hendery"
       },
       {
         "label": "Yangyang",
         "characterId": "nct-yangyang",
-        "docPath": "characters/misc/nct-yangyang"
+        "docPath": "characters/npc/nct-yangyang"
       }
     ],
     "destinyCard": null,
-    "images": [],
+    "images": [
+      {
+        "src": "/img/characters/nct/ten.png",
+        "alt": "Ten Lee",
+        "caption": ""
+      }
+    ],
     "summary": null,
     "sortOrder": 38
   },
@@ -4005,7 +4029,7 @@
       "Profesor de Estrategia de Combate y Formación de Guardianes"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/nct/jaehyun.png",
+    "imageSrc": "/img/characters/nct/nct-jaehyun.png",
     "dateOfBirth": "1597-02-14",
     "zodiac": "Acuario ♒",
     "mbti": "ESTP",
@@ -4028,42 +4052,42 @@
       {
         "label": "Taeyong",
         "characterId": "nct-taeyong",
-        "docPath": "characters/misc/nct-taeyong"
+        "docPath": "characters/npc/nct-taeyong"
       },
       {
         "label": "Yuta",
         "characterId": "nct-yuta",
-        "docPath": "characters/misc/nct-yuta"
+        "docPath": "characters/npc/nct-yuta"
       },
       {
         "label": "Doyoung",
         "characterId": "nct-doyoung",
-        "docPath": "characters/misc/nct-doyoung"
+        "docPath": "characters/npc/nct-doyoung"
       },
       {
         "label": "Johnny",
         "characterId": "nct-johnny",
-        "docPath": "characters/misc/nct-johnny"
+        "docPath": "characters/npc/nct-johnny"
       },
       {
         "label": "Jungwoo",
         "characterId": "nct-jungwoo",
-        "docPath": "characters/misc/nct-jungwoo"
+        "docPath": "characters/npc/nct-jungwoo"
       },
       {
         "label": "Mark",
         "characterId": "nct-mark",
-        "docPath": "characters/misc/nct-mark"
+        "docPath": "characters/npc/nct-mark"
       },
       {
         "label": "Haechan",
         "characterId": "nct-haechan",
-        "docPath": "characters/misc/nct-haechan"
+        "docPath": "characters/npc/nct-haechan"
       },
       {
         "label": "Sion",
         "characterId": "nct-sion",
-        "docPath": "characters/misc/nct-sion"
+        "docPath": "characters/npc/nct-sion"
       },
       {
         "label": "Jaewoo",
@@ -4072,7 +4096,13 @@
       }
     ],
     "destinyCard": null,
-    "images": [],
+    "images": [
+      {
+        "src": "/img/characters/nct/jaehyun.png",
+        "alt": "Jeong Jaehyun",
+        "caption": ""
+      }
+    ],
     "summary": null,
     "sortOrder": 39
   },
@@ -4122,37 +4152,37 @@
       {
         "label": "Kun",
         "characterId": "nct-kun",
-        "docPath": "characters/misc/nct-kun"
+        "docPath": "characters/npc/nct-kun"
       },
       {
         "label": "Ten",
         "characterId": "nct-ten",
-        "docPath": "characters/misc/nct-ten"
+        "docPath": "characters/npc/nct-ten"
       },
       {
         "label": "Yuta",
         "characterId": "nct-yuta",
-        "docPath": "characters/misc/nct-yuta"
+        "docPath": "characters/npc/nct-yuta"
       },
       {
         "label": "Lucas",
         "characterId": "nct-lucas",
-        "docPath": "characters/misc/nct-lucas"
+        "docPath": "characters/npc/nct-lucas"
       },
       {
         "label": "Xiaojun",
         "characterId": "nct-xiaojun",
-        "docPath": "characters/misc/nct-xiaojun"
+        "docPath": "characters/npc/nct-xiaojun"
       },
       {
         "label": "Hendery",
         "characterId": "nct-hendery",
-        "docPath": "characters/misc/nct-hendery"
+        "docPath": "characters/npc/nct-hendery"
       },
       {
         "label": "Yangyang",
         "characterId": "nct-yangyang",
-        "docPath": "characters/misc/nct-yangyang"
+        "docPath": "characters/npc/nct-yangyang"
       }
     ],
     "destinyCard": null,
@@ -4183,7 +4213,7 @@
       "Profesor de Ingeniería de Sistemas Tecnomágicos Automatizados"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/nct/jungwoo.png",
+    "imageSrc": "/img/characters/nct/nct-jungwoo.png",
     "dateOfBirth": "1898-02-19",
     "zodiac": "Piscis ♓",
     "mbti": "ESFJ",
@@ -4206,37 +4236,37 @@
       {
         "label": "Johnny",
         "characterId": "nct-johnny",
-        "docPath": "characters/misc/nct-johnny"
+        "docPath": "characters/npc/nct-johnny"
       },
       {
         "label": "Taeyong",
         "characterId": "nct-taeyong",
-        "docPath": "characters/misc/nct-taeyong"
+        "docPath": "characters/npc/nct-taeyong"
       },
       {
         "label": "Yuta",
         "characterId": "nct-yuta",
-        "docPath": "characters/misc/nct-yuta"
+        "docPath": "characters/npc/nct-yuta"
       },
       {
         "label": "Doyoung",
         "characterId": "nct-doyoung",
-        "docPath": "characters/misc/nct-doyoung"
+        "docPath": "characters/npc/nct-doyoung"
       },
       {
         "label": "Jaehyun",
         "characterId": "nct-jaehyun",
-        "docPath": "characters/misc/nct-jaehyun"
+        "docPath": "characters/npc/nct-jaehyun"
       },
       {
         "label": "Mark",
         "characterId": "nct-mark",
-        "docPath": "characters/misc/nct-mark"
+        "docPath": "characters/npc/nct-mark"
       },
       {
         "label": "Haechan",
         "characterId": "nct-haechan",
-        "docPath": "characters/misc/nct-haechan"
+        "docPath": "characters/npc/nct-haechan"
       },
       {
         "label": "Jaewoo",
@@ -4245,7 +4275,13 @@
       }
     ],
     "destinyCard": null,
-    "images": [],
+    "images": [
+      {
+        "src": "/img/characters/nct/jungwoo.png",
+        "alt": "Kim Jungwoo",
+        "caption": ""
+      }
+    ],
     "summary": null,
     "sortOrder": 41
   },
@@ -4295,32 +4331,32 @@
       {
         "label": "Kun",
         "characterId": "nct-kun",
-        "docPath": "characters/misc/nct-kun"
+        "docPath": "characters/npc/nct-kun"
       },
       {
         "label": "Ten",
         "characterId": "nct-ten",
-        "docPath": "characters/misc/nct-ten"
+        "docPath": "characters/npc/nct-ten"
       },
       {
         "label": "Winwin",
         "characterId": "nct-winwin",
-        "docPath": "characters/misc/nct-winwin"
+        "docPath": "characters/npc/nct-winwin"
       },
       {
         "label": "Xiaojun",
         "characterId": "nct-xiaojun",
-        "docPath": "characters/misc/nct-xiaojun"
+        "docPath": "characters/npc/nct-xiaojun"
       },
       {
         "label": "Hendery",
         "characterId": "nct-hendery",
-        "docPath": "characters/misc/nct-hendery"
+        "docPath": "characters/npc/nct-hendery"
       },
       {
         "label": "Yangyang",
         "characterId": "nct-yangyang",
-        "docPath": "characters/misc/nct-yangyang"
+        "docPath": "characters/npc/nct-yangyang"
       }
     ],
     "destinyCard": null,
@@ -4351,7 +4387,7 @@
       "Profesor de Historia Arcana, Runas de Combate y Sistemas de Artillería Tecnomágica"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/nct/mark.png",
+    "imageSrc": "/img/characters/nct/nct-mark.png",
     "dateOfBirth": "1899-08-02",
     "zodiac": "Leo ♌",
     "mbti": "ESFJ",
@@ -4379,62 +4415,62 @@
       {
         "label": "Johnny",
         "characterId": "nct-johnny",
-        "docPath": "characters/misc/nct-johnny"
+        "docPath": "characters/npc/nct-johnny"
       },
       {
         "label": "Taeyong",
         "characterId": "nct-taeyong",
-        "docPath": "characters/misc/nct-taeyong"
+        "docPath": "characters/npc/nct-taeyong"
       },
       {
         "label": "Yuta",
         "characterId": "nct-yuta",
-        "docPath": "characters/misc/nct-yuta"
+        "docPath": "characters/npc/nct-yuta"
       },
       {
         "label": "Doyoung",
         "characterId": "nct-doyoung",
-        "docPath": "characters/misc/nct-doyoung"
+        "docPath": "characters/npc/nct-doyoung"
       },
       {
         "label": "Jaehyun",
         "characterId": "nct-jaehyun",
-        "docPath": "characters/misc/nct-jaehyun"
+        "docPath": "characters/npc/nct-jaehyun"
       },
       {
         "label": "Jungwoo",
         "characterId": "nct-jungwoo",
-        "docPath": "characters/misc/nct-jungwoo"
+        "docPath": "characters/npc/nct-jungwoo"
       },
       {
         "label": "Haechan",
         "characterId": "nct-haechan",
-        "docPath": "characters/misc/nct-haechan"
+        "docPath": "characters/npc/nct-haechan"
       },
       {
         "label": "Renjun",
         "characterId": "nct-renjun",
-        "docPath": "characters/misc/nct-renjun"
+        "docPath": "characters/npc/nct-renjun"
       },
       {
         "label": "Jeno",
         "characterId": "nct-jeno",
-        "docPath": "characters/misc/nct-jeno"
+        "docPath": "characters/npc/nct-jeno"
       },
       {
         "label": "Jaemin",
         "characterId": "nct-jaemin",
-        "docPath": "characters/misc/nct-jaemin"
+        "docPath": "characters/npc/nct-jaemin"
       },
       {
         "label": "Chenle",
         "characterId": "nct-chenle",
-        "docPath": "characters/misc/nct-chenle"
+        "docPath": "characters/npc/nct-chenle"
       },
       {
         "label": "Jisung",
         "characterId": "nct-jisung",
-        "docPath": "characters/misc/nct-jisung"
+        "docPath": "characters/npc/nct-jisung"
       },
       {
         "label": "Sungchan",
@@ -4443,7 +4479,13 @@
       }
     ],
     "destinyCard": "Rey de Corazones",
-    "images": [],
+    "images": [
+      {
+        "src": "/img/characters/nct/mark.png",
+        "alt": "Mark Lee",
+        "caption": ""
+      }
+    ],
     "summary": null,
     "sortOrder": 43
   },
@@ -4470,7 +4512,7 @@
       "Profesor de Pirodinámica y Combate Elemental Ígneo"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/nct/xiaojun.png",
+    "imageSrc": "/img/characters/nct/nct-xiaojun.png",
     "dateOfBirth": "1899-08-08",
     "zodiac": "Leo ♌",
     "mbti": "INFJ",
@@ -4493,32 +4535,32 @@
       {
         "label": "Kun",
         "characterId": "nct-kun",
-        "docPath": "characters/misc/nct-kun"
+        "docPath": "characters/npc/nct-kun"
       },
       {
         "label": "Ten",
         "characterId": "nct-ten",
-        "docPath": "characters/misc/nct-ten"
+        "docPath": "characters/npc/nct-ten"
       },
       {
         "label": "Winwin",
         "characterId": "nct-winwin",
-        "docPath": "characters/misc/nct-winwin"
+        "docPath": "characters/npc/nct-winwin"
       },
       {
         "label": "Lucas",
         "characterId": "nct-lucas",
-        "docPath": "characters/misc/nct-lucas"
+        "docPath": "characters/npc/nct-lucas"
       },
       {
         "label": "Hendery",
         "characterId": "nct-hendery",
-        "docPath": "characters/misc/nct-hendery"
+        "docPath": "characters/npc/nct-hendery"
       },
       {
         "label": "Yangyang",
         "characterId": "nct-yangyang",
-        "docPath": "characters/misc/nct-yangyang"
+        "docPath": "characters/npc/nct-yangyang"
       },
       {
         "label": "Bella",
@@ -4527,7 +4569,13 @@
       }
     ],
     "destinyCard": null,
-    "images": [],
+    "images": [
+      {
+        "src": "/img/characters/nct/xiaojun.png",
+        "alt": "Xiaojun (Xiao Dejun)",
+        "caption": ""
+      }
+    ],
     "summary": null,
     "sortOrder": 44
   },
@@ -4554,7 +4602,7 @@
       "Profesor de Ingeniería Metalomágica y Forja de Constructos"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/nct/hendery.png",
+    "imageSrc": "/img/characters/nct/nct-hendery.png",
     "dateOfBirth": "1899-09-28",
     "zodiac": "Libra ♎",
     "mbti": "INTP",
@@ -4577,36 +4625,42 @@
       {
         "label": "Kun",
         "characterId": "nct-kun",
-        "docPath": "characters/misc/nct-kun"
+        "docPath": "characters/npc/nct-kun"
       },
       {
         "label": "Ten",
         "characterId": "nct-ten",
-        "docPath": "characters/misc/nct-ten"
+        "docPath": "characters/npc/nct-ten"
       },
       {
         "label": "Winwin",
         "characterId": "nct-winwin",
-        "docPath": "characters/misc/nct-winwin"
+        "docPath": "characters/npc/nct-winwin"
       },
       {
         "label": "Lucas",
         "characterId": "nct-lucas",
-        "docPath": "characters/misc/nct-lucas"
+        "docPath": "characters/npc/nct-lucas"
       },
       {
         "label": "Xiaojun",
         "characterId": "nct-xiaojun",
-        "docPath": "characters/misc/nct-xiaojun"
+        "docPath": "characters/npc/nct-xiaojun"
       },
       {
         "label": "Yangyang",
         "characterId": "nct-yangyang",
-        "docPath": "characters/misc/nct-yangyang"
+        "docPath": "characters/npc/nct-yangyang"
       }
     ],
     "destinyCard": null,
-    "images": [],
+    "images": [
+      {
+        "src": "/img/characters/nct/hendery.png",
+        "alt": "Hendery (Huang Guanheng)",
+        "caption": ""
+      }
+    ],
     "summary": null,
     "sortOrder": 45
   },
@@ -4648,32 +4702,32 @@
       {
         "label": "Mark",
         "characterId": "nct-mark",
-        "docPath": "characters/misc/nct-mark"
+        "docPath": "characters/npc/nct-mark"
       },
       {
         "label": "Haechan",
         "characterId": "nct-haechan",
-        "docPath": "characters/misc/nct-haechan"
+        "docPath": "characters/npc/nct-haechan"
       },
       {
         "label": "Jeno",
         "characterId": "nct-jeno",
-        "docPath": "characters/misc/nct-jeno"
+        "docPath": "characters/npc/nct-jeno"
       },
       {
         "label": "Jaemin",
         "characterId": "nct-jaemin",
-        "docPath": "characters/misc/nct-jaemin"
+        "docPath": "characters/npc/nct-jaemin"
       },
       {
         "label": "Chenle",
         "characterId": "nct-chenle",
-        "docPath": "characters/misc/nct-chenle"
+        "docPath": "characters/npc/nct-chenle"
       },
       {
         "label": "Jisung",
         "characterId": "nct-jisung",
-        "docPath": "characters/misc/nct-jisung"
+        "docPath": "characters/npc/nct-jisung"
       }
     ],
     "destinyCard": null,
@@ -4704,7 +4758,7 @@
       "Guardián de Defensa Táctica de la Neo Academia"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/nct/jeno.png",
+    "imageSrc": "/img/characters/nct/nct-jeno.png",
     "dateOfBirth": "1900-04-23",
     "zodiac": "Tauro ♉",
     "mbti": "ISTP",
@@ -4727,36 +4781,42 @@
       {
         "label": "Mark",
         "characterId": "nct-mark",
-        "docPath": "characters/misc/nct-mark"
+        "docPath": "characters/npc/nct-mark"
       },
       {
         "label": "Haechan",
         "characterId": "nct-haechan",
-        "docPath": "characters/misc/nct-haechan"
+        "docPath": "characters/npc/nct-haechan"
       },
       {
         "label": "Renjun",
         "characterId": "nct-renjun",
-        "docPath": "characters/misc/nct-renjun"
+        "docPath": "characters/npc/nct-renjun"
       },
       {
         "label": "Jaemin",
         "characterId": "nct-jaemin",
-        "docPath": "characters/misc/nct-jaemin"
+        "docPath": "characters/npc/nct-jaemin"
       },
       {
         "label": "Chenle",
         "characterId": "nct-chenle",
-        "docPath": "characters/misc/nct-chenle"
+        "docPath": "characters/npc/nct-chenle"
       },
       {
         "label": "Jisung",
         "characterId": "nct-jisung",
-        "docPath": "characters/misc/nct-jisung"
+        "docPath": "characters/npc/nct-jisung"
       }
     ],
     "destinyCard": null,
-    "images": [],
+    "images": [
+      {
+        "src": "/img/characters/nct/jeno.png",
+        "alt": "Lee Jeno",
+        "caption": ""
+      }
+    ],
     "summary": null,
     "sortOrder": 47
   },
@@ -4783,7 +4843,7 @@
       "Profesor de Oniromancia, Ilusiones Cognitivas e Interpretación de Pesadillas"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/nct/haechan.png",
+    "imageSrc": "/img/characters/nct/nct-haechan.png",
     "dateOfBirth": "1500-06-06",
     "zodiac": "Géminis ♊",
     "mbti": "ESFP",
@@ -4811,66 +4871,72 @@
       {
         "label": "Johnny",
         "characterId": "nct-johnny",
-        "docPath": "characters/misc/nct-johnny"
+        "docPath": "characters/npc/nct-johnny"
       },
       {
         "label": "Taeyong",
         "characterId": "nct-taeyong",
-        "docPath": "characters/misc/nct-taeyong"
+        "docPath": "characters/npc/nct-taeyong"
       },
       {
         "label": "Yuta",
         "characterId": "nct-yuta",
-        "docPath": "characters/misc/nct-yuta"
+        "docPath": "characters/npc/nct-yuta"
       },
       {
         "label": "Doyoung",
         "characterId": "nct-doyoung",
-        "docPath": "characters/misc/nct-doyoung"
+        "docPath": "characters/npc/nct-doyoung"
       },
       {
         "label": "Jaehyun",
         "characterId": "nct-jaehyun",
-        "docPath": "characters/misc/nct-jaehyun"
+        "docPath": "characters/npc/nct-jaehyun"
       },
       {
         "label": "Jungwoo",
         "characterId": "nct-jungwoo",
-        "docPath": "characters/misc/nct-jungwoo"
+        "docPath": "characters/npc/nct-jungwoo"
       },
       {
         "label": "Mark",
         "characterId": "nct-mark",
-        "docPath": "characters/misc/nct-mark"
+        "docPath": "characters/npc/nct-mark"
       },
       {
         "label": "Renjun",
         "characterId": "nct-renjun",
-        "docPath": "characters/misc/nct-renjun"
+        "docPath": "characters/npc/nct-renjun"
       },
       {
         "label": "Jeno",
         "characterId": "nct-jeno",
-        "docPath": "characters/misc/nct-jeno"
+        "docPath": "characters/npc/nct-jeno"
       },
       {
         "label": "Jaemin",
         "characterId": "nct-jaemin",
-        "docPath": "characters/misc/nct-jaemin"
+        "docPath": "characters/npc/nct-jaemin"
       },
       {
         "label": "Chenle",
         "characterId": "nct-chenle",
-        "docPath": "characters/misc/nct-chenle"
+        "docPath": "characters/npc/nct-chenle"
       },
       {
         "label": "Jisung",
         "characterId": "nct-jisung",
-        "docPath": "characters/misc/nct-jisung"
+        "docPath": "characters/npc/nct-jisung"
       }
     ],
     "destinyCard": null,
-    "images": [],
+    "images": [
+      {
+        "src": "/img/characters/nct/haechan.png",
+        "alt": "Haechan (Lee Donghyuck)",
+        "caption": ""
+      }
+    ],
     "summary": null,
     "sortOrder": 48
   },
@@ -4897,7 +4963,7 @@
       "Guardián de Contención del Plano Onírico (Dreamscape)"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/nct/jaemin.png",
+    "imageSrc": "/img/characters/nct/nct-jaemin.png",
     "dateOfBirth": "1900-08-13",
     "zodiac": "Leo ♌",
     "mbti": "ISFJ",
@@ -4920,32 +4986,32 @@
       {
         "label": "Mark",
         "characterId": "nct-mark",
-        "docPath": "characters/misc/nct-mark"
+        "docPath": "characters/npc/nct-mark"
       },
       {
         "label": "Haechan",
         "characterId": "nct-haechan",
-        "docPath": "characters/misc/nct-haechan"
+        "docPath": "characters/npc/nct-haechan"
       },
       {
         "label": "Jeno",
         "characterId": "nct-jeno",
-        "docPath": "characters/misc/nct-jeno"
+        "docPath": "characters/npc/nct-jeno"
       },
       {
         "label": "Renjun",
         "characterId": "nct-renjun",
-        "docPath": "characters/misc/nct-renjun"
+        "docPath": "characters/npc/nct-renjun"
       },
       {
         "label": "Chenle",
         "characterId": "nct-chenle",
-        "docPath": "characters/misc/nct-chenle"
+        "docPath": "characters/npc/nct-chenle"
       },
       {
         "label": "Jisung",
         "characterId": "nct-jisung",
-        "docPath": "characters/misc/nct-jisung"
+        "docPath": "characters/npc/nct-jisung"
       },
       {
         "label": "Minjae",
@@ -4954,7 +5020,13 @@
       }
     ],
     "destinyCard": null,
-    "images": [],
+    "images": [
+      {
+        "src": "/img/characters/nct/jaemin.png",
+        "alt": "Na Jaemin",
+        "caption": ""
+      }
+    ],
     "summary": null,
     "sortOrder": 49
   },
@@ -4981,7 +5053,7 @@
       "Profesor de Aerodinámica Arcana y Movilidad de Combate"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/nct/yangyang.png",
+    "imageSrc": "/img/characters/nct/nct-yangyang.png",
     "dateOfBirth": "1910-10-10",
     "zodiac": "Libra ♎",
     "mbti": "INTJ",
@@ -4996,36 +5068,42 @@
       {
         "label": "Kun",
         "characterId": "nct-kun",
-        "docPath": "characters/misc/nct-kun"
+        "docPath": "characters/npc/nct-kun"
       },
       {
         "label": "Ten",
         "characterId": "nct-ten",
-        "docPath": "characters/misc/nct-ten"
+        "docPath": "characters/npc/nct-ten"
       },
       {
         "label": "Winwin",
         "characterId": "nct-winwin",
-        "docPath": "characters/misc/nct-winwin"
+        "docPath": "characters/npc/nct-winwin"
       },
       {
         "label": "Lucas",
         "characterId": "nct-lucas",
-        "docPath": "characters/misc/nct-lucas"
+        "docPath": "characters/npc/nct-lucas"
       },
       {
         "label": "Xiaojun",
         "characterId": "nct-xiaojun",
-        "docPath": "characters/misc/nct-xiaojun"
+        "docPath": "characters/npc/nct-xiaojun"
       },
       {
         "label": "Hendery",
         "characterId": "nct-hendery",
-        "docPath": "characters/misc/nct-hendery"
+        "docPath": "characters/npc/nct-hendery"
       }
     ],
     "destinyCard": null,
-    "images": [],
+    "images": [
+      {
+        "src": "/img/characters/nct/yangyang.png",
+        "alt": "Liu Yangyang",
+        "caption": ""
+      }
+    ],
     "summary": null,
     "sortOrder": 50
   },
@@ -5075,32 +5153,32 @@
       {
         "label": "Mark",
         "characterId": "nct-mark",
-        "docPath": "characters/misc/nct-mark"
+        "docPath": "characters/npc/nct-mark"
       },
       {
         "label": "Haechan",
         "characterId": "nct-haechan",
-        "docPath": "characters/misc/nct-haechan"
+        "docPath": "characters/npc/nct-haechan"
       },
       {
         "label": "Jeno",
         "characterId": "nct-jeno",
-        "docPath": "characters/misc/nct-jeno"
+        "docPath": "characters/npc/nct-jeno"
       },
       {
         "label": "Renjun",
         "characterId": "nct-renjun",
-        "docPath": "characters/misc/nct-renjun"
+        "docPath": "characters/npc/nct-renjun"
       },
       {
         "label": "Jaemin",
         "characterId": "nct-jaemin",
-        "docPath": "characters/misc/nct-jaemin"
+        "docPath": "characters/npc/nct-jaemin"
       },
       {
         "label": "Jisung",
         "characterId": "nct-jisung",
-        "docPath": "characters/misc/nct-jisung"
+        "docPath": "characters/npc/nct-jisung"
       },
       {
         "label": "Imugi",
@@ -5159,32 +5237,32 @@
       {
         "label": "Mark",
         "characterId": "nct-mark",
-        "docPath": "characters/misc/nct-mark"
+        "docPath": "characters/npc/nct-mark"
       },
       {
         "label": "Haechan",
         "characterId": "nct-haechan",
-        "docPath": "characters/misc/nct-haechan"
+        "docPath": "characters/npc/nct-haechan"
       },
       {
         "label": "Jeno",
         "characterId": "nct-jeno",
-        "docPath": "characters/misc/nct-jeno"
+        "docPath": "characters/npc/nct-jeno"
       },
       {
         "label": "Renjun",
         "characterId": "nct-renjun",
-        "docPath": "characters/misc/nct-renjun"
+        "docPath": "characters/npc/nct-renjun"
       },
       {
         "label": "Chenle",
         "characterId": "nct-chenle",
-        "docPath": "characters/misc/nct-chenle"
+        "docPath": "characters/npc/nct-chenle"
       },
       {
         "label": "Jaemin",
         "characterId": "nct-jaemin",
-        "docPath": "characters/misc/nct-jaemin"
+        "docPath": "characters/npc/nct-jaemin"
       },
       {
         "label": "Soobin",
@@ -5249,32 +5327,32 @@
       {
         "label": "Riku",
         "characterId": "nct-riku",
-        "docPath": "characters/misc/nct-riku"
+        "docPath": "characters/npc/nct-riku"
       },
       {
         "label": "Yushi",
         "characterId": "nct-yushi",
-        "docPath": "characters/misc/nct-yushi"
+        "docPath": "characters/npc/nct-yushi"
       },
       {
         "label": "Jaehee",
         "characterId": "nct-jaehee",
-        "docPath": "characters/misc/nct-jaehee"
+        "docPath": "characters/npc/nct-jaehee"
       },
       {
         "label": "Ryo",
         "characterId": "nct-ryo",
-        "docPath": "characters/misc/nct-ryo"
+        "docPath": "characters/npc/nct-ryo"
       },
       {
         "label": "Sakuya",
         "characterId": "nct-sakuya",
-        "docPath": "characters/misc/nct-sakuya"
+        "docPath": "characters/npc/nct-sakuya"
       },
       {
         "label": "Jaehyun",
         "characterId": "nct-jaehyun",
-        "docPath": "characters/misc/nct-jaehyun"
+        "docPath": "characters/npc/nct-jaehyun"
       }
     ],
     "destinyCard": "2 de Corazones",
@@ -5326,27 +5404,27 @@
       {
         "label": "Sion",
         "characterId": "nct-sion",
-        "docPath": "characters/misc/nct-sion"
+        "docPath": "characters/npc/nct-sion"
       },
       {
         "label": "Yushi",
         "characterId": "nct-yushi",
-        "docPath": "characters/misc/nct-yushi"
+        "docPath": "characters/npc/nct-yushi"
       },
       {
         "label": "Jaehee",
         "characterId": "nct-jaehee",
-        "docPath": "characters/misc/nct-jaehee"
+        "docPath": "characters/npc/nct-jaehee"
       },
       {
         "label": "Ryo",
         "characterId": "nct-ryo",
-        "docPath": "characters/misc/nct-ryo"
+        "docPath": "characters/npc/nct-ryo"
       },
       {
         "label": "Sakuya",
         "characterId": "nct-sakuya",
-        "docPath": "characters/misc/nct-sakuya"
+        "docPath": "characters/npc/nct-sakuya"
       }
     ],
     "destinyCard": "3 de Corazones",
@@ -5398,32 +5476,32 @@
       {
         "label": "Sion",
         "characterId": "nct-sion",
-        "docPath": "characters/misc/nct-sion"
+        "docPath": "characters/npc/nct-sion"
       },
       {
         "label": "Riku",
         "characterId": "nct-riku",
-        "docPath": "characters/misc/nct-riku"
+        "docPath": "characters/npc/nct-riku"
       },
       {
         "label": "Jaehee",
         "characterId": "nct-jaehee",
-        "docPath": "characters/misc/nct-jaehee"
+        "docPath": "characters/npc/nct-jaehee"
       },
       {
         "label": "Ryo",
         "characterId": "nct-ryo",
-        "docPath": "characters/misc/nct-ryo"
+        "docPath": "characters/npc/nct-ryo"
       },
       {
         "label": "Sakuya",
         "characterId": "nct-sakuya",
-        "docPath": "characters/misc/nct-sakuya"
+        "docPath": "characters/npc/nct-sakuya"
       },
       {
         "label": "Johnny",
         "characterId": "nct-johnny",
-        "docPath": "characters/misc/nct-johnny"
+        "docPath": "characters/npc/nct-johnny"
       }
     ],
     "destinyCard": "4 de Corazones",
@@ -5483,27 +5561,27 @@
       {
         "label": "Sion",
         "characterId": "nct-sion",
-        "docPath": "characters/misc/nct-sion"
+        "docPath": "characters/npc/nct-sion"
       },
       {
         "label": "Riku",
         "characterId": "nct-riku",
-        "docPath": "characters/misc/nct-riku"
+        "docPath": "characters/npc/nct-riku"
       },
       {
         "label": "Yushi",
         "characterId": "nct-yushi",
-        "docPath": "characters/misc/nct-yushi"
+        "docPath": "characters/npc/nct-yushi"
       },
       {
         "label": "Ryo",
         "characterId": "nct-ryo",
-        "docPath": "characters/misc/nct-ryo"
+        "docPath": "characters/npc/nct-ryo"
       },
       {
         "label": "Sakuya",
         "characterId": "nct-sakuya",
-        "docPath": "characters/misc/nct-sakuya"
+        "docPath": "characters/npc/nct-sakuya"
       }
     ],
     "destinyCard": "5 de Corazones",
@@ -5555,32 +5633,32 @@
       {
         "label": "Sion",
         "characterId": "nct-sion",
-        "docPath": "characters/misc/nct-sion"
+        "docPath": "characters/npc/nct-sion"
       },
       {
         "label": "Riku",
         "characterId": "nct-riku",
-        "docPath": "characters/misc/nct-riku"
+        "docPath": "characters/npc/nct-riku"
       },
       {
         "label": "Yushi",
         "characterId": "nct-yushi",
-        "docPath": "characters/misc/nct-yushi"
+        "docPath": "characters/npc/nct-yushi"
       },
       {
         "label": "Jaehee",
         "characterId": "nct-jaehee",
-        "docPath": "characters/misc/nct-jaehee"
+        "docPath": "characters/npc/nct-jaehee"
       },
       {
         "label": "Sakuya",
         "characterId": "nct-sakuya",
-        "docPath": "characters/misc/nct-sakuya"
+        "docPath": "characters/npc/nct-sakuya"
       },
       {
         "label": "Taeyong",
         "characterId": "nct-taeyong",
-        "docPath": "characters/misc/nct-taeyong"
+        "docPath": "characters/npc/nct-taeyong"
       }
     ],
     "destinyCard": "6 de Corazones",
@@ -5640,32 +5718,32 @@
       {
         "label": "Sion",
         "characterId": "nct-sion",
-        "docPath": "characters/misc/nct-sion"
+        "docPath": "characters/npc/nct-sion"
       },
       {
         "label": "Riku",
         "characterId": "nct-riku",
-        "docPath": "characters/misc/nct-riku"
+        "docPath": "characters/npc/nct-riku"
       },
       {
         "label": "Yushi",
         "characterId": "nct-yushi",
-        "docPath": "characters/misc/nct-yushi"
+        "docPath": "characters/npc/nct-yushi"
       },
       {
         "label": "Jaehee",
         "characterId": "nct-jaehee",
-        "docPath": "characters/misc/nct-jaehee"
+        "docPath": "characters/npc/nct-jaehee"
       },
       {
         "label": "Ryo",
         "characterId": "nct-ryo",
-        "docPath": "characters/misc/nct-ryo"
+        "docPath": "characters/npc/nct-ryo"
       },
       {
         "label": "Yuta",
         "characterId": "nct-yuta",
-        "docPath": "characters/misc/nct-yuta"
+        "docPath": "characters/npc/nct-yuta"
       }
     ],
     "destinyCard": "7 de Corazones",
@@ -5720,17 +5798,17 @@
       {
         "label": "Jungwoo",
         "characterId": "nct-jungwoo",
-        "docPath": "characters/misc/nct-jungwoo"
+        "docPath": "characters/npc/nct-jungwoo"
       },
       {
         "label": "Jaehyun",
         "characterId": "nct-jaehyun",
-        "docPath": "characters/misc/nct-jaehyun"
+        "docPath": "characters/npc/nct-jaehyun"
       },
       {
         "label": "Doyoung",
         "characterId": "nct-doyoung",
-        "docPath": "characters/misc/nct-doyoung"
+        "docPath": "characters/npc/nct-doyoung"
       }
     ],
     "destinyCard": null,

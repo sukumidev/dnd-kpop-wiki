@@ -48,39 +48,36 @@ displayed_sidebar: wiki
 characterId: "${escapeYaml(id)}"
 ---
 
-import CharacterPageFromDoc from '@site/src/components/CharacterPageFromDoc';
+import CharacterPageFromDoc, { CharacterIntroduction } from '@site/src/components/CharacterPageFromDoc';
 import CharacterImageCarousel from '@site/src/components/CharacterImageCarousel';
 
 <CharacterPageFromDoc>
 
-<!-- Escribe aqui tu lore en markdown -->
+<CharacterIntroduction>
 
-## Resumen
+<!-- Introducción sin encabezado -->
 - ...
 
-## Apariencia
+</CharacterIntroduction>
 
-### Otros Looks
-<CharacterImageCarousel />
+## Backstory
+- ...
+
+## Campaña
 - ...
 
 ## Personalidad
 - ...
 
-## Backstory
-- ...
-
-## Vida actual
-- ...
-
-## Relaciones
-- ...
-
-## Apariciones
-- ...
-
 ## Datos curiosos
 - ...
+
+## Apariencia
+- ...
+
+### Otros looks
+
+<CharacterImageCarousel />
 
 </CharacterPageFromDoc>
 `;

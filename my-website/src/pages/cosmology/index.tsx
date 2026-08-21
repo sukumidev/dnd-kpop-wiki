@@ -1,8 +1,8 @@
 import React, {useMemo} from "react";
-import Layout from "@theme/Layout";
 import Heading from "@theme/Heading";
 import Link from "@docusaurus/Link";
 import {useBaseUrlUtils} from "@docusaurus/useBaseUrl";
+import WikiSidebarPageLayout from "@site/src/components/WikiSidebarPageLayout";
 import {
   mythicEntityList,
   type MythicEntity,
@@ -84,7 +84,7 @@ export default function CosmologyPage() {
   }, []);
 
   return (
-    <Layout
+    <WikiSidebarPageLayout
       title="Cosmología"
       description="Entidades, dioses y fuerzas mitológicas del universo"
     >
@@ -141,6 +141,6 @@ export default function CosmologyPage() {
           ) : null}
         </div>
       </main>
-    </Layout>
+    </WikiSidebarPageLayout>
   );
 }

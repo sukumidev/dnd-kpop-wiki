@@ -68,6 +68,11 @@ const sidebars: SidebarsConfig = {
           type: 'category',
           label: 'Sessions',
           items: [
+            {
+              type: 'link',
+              label: 'Crónica de sesiones',
+              href: '/sessions',
+            },
             'campaign/sessions/01',
             // cuando tengas más: 'campaign/sessions/02', etc.
           ],

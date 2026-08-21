@@ -59,6 +59,10 @@ function slugFromDoc(doc: string | null | undefined): string | null {
   return cleanDoc.replace(/\/$/, "").split("/").at(-1) ?? null;
 }
 
+function normalizeCharacterDocPath(doc: string | null | undefined): string | null {
+  return clean(doc)?.replace(/^characters\/misc\//, "characters/npc/") ?? null;
+}
+
 function slugify(value: string | null | undefined): string | null {
   const cleanValue = clean(value);
   if (!cleanValue) return null;
@@ -149,7 +153,7 @@ function sessionLink(link?: OldDocLink) {
 
 function bondLink(link?: OldDocLink) {
   const label = clean(link?.label);
-  const docPath = clean(link?.doc);
+  const docPath = normalizeCharacterDocPath(link?.doc);
   if (!label && !docPath) return null;
 
   return {

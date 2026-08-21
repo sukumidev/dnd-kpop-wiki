@@ -9,6 +9,7 @@ Archivos:
 - `faction.md`
 - `location.md`
 - `map-config.md`
+- `session.md`
 
 Ubicación esperada en el repo:
 
@@ -20,4 +21,5 @@ dev-docs/
     faction.md
     location.md
     map-config.md
+    session.md
 ```

@@ -31,6 +31,7 @@ const config: Config = {
         docs: {
           routeBasePath: '/', // ✅ wiki en home
           sidebarPath: require.resolve('./sidebars.ts'),
+          exclude: ['characters/misc/**'],
         },
         blog: {
           showReadingTime: true,
@@ -67,6 +68,11 @@ const config: Config = {
 
   themeConfig: {
     image: 'img/docusaurus-social-card.jpg',
+    docs: {
+      sidebar: {
+        hideable: true,
+      },
+    },
     colorMode: {
       defaultMode: 'dark',
       respectPrefersColorScheme: true,
