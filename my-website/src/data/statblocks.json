@@ -467,7 +467,7 @@
 "skz-bangchan": {
   "id": "skz-bangchan",
   "classes": [
-    { "name": "Fighter", "level": 11, "subclass": "Psi Warrior" }
+    { "name": "Fighter", "level": 11, "subclass": "Battle Master" }
   ],
   "race": "Human",
   "alignment": "Lawful Good",
@@ -527,76 +527,6 @@
     "int": 0,
     "wis": 7,
     "cha": 0
-  },
-
-  "resistances": [],
-  "vulnerability": [],
-  "immunity": []
-},
-
-"skz-hyunjin": {
-  "id": "skz-hyunjin",
-  "classes": [
-    { "name": "Fighter", "level": 11, "subclass": "Battle Master" }
-  ],
-  "race": "Human",
-  "alignment": "Chaotic Good",
-  "proficiencyBonus": 4,
-  "initiative": 4,
-  "ac": 17,
-  "hp": 95,
-  "speed": "30 ft",
-  "passivePerception": 12,
-
-  "str": 16,
-  "dex": 18,
-  "con": 14,
-  "int": 12,
-  "wis": 10,
-  "cha": 13,
-
-  "savingThrows": {
-    "str": 7,
-    "dex": 4,
-    "con": 6,
-    "int": 1,
-    "wis": 0,
-    "cha": 1
-  },
-
-  "resistances": [],
-  "vulnerability": [],
-  "immunity": []
-},
-
-"skz-felix": {
-  "id": "skz-felix",
-  "classes": [
-    { "name": "Monk", "level": 11, "subclass": "Way of the Astral Self" }
-  ],
-  "race": "Human",
-  "alignment": "Neutral Good",
-  "proficiencyBonus": 4,
-  "initiative": 5,
-  "ac": 18,
-  "hp": 88,
-  "speed": "50 ft",
-  "passivePerception": 15,
-
-  "str": 10,
-  "dex": 20,
-  "con": 14,
-  "int": 11,
-  "wis": 18,
-  "cha": 12,
-
-  "savingThrows": {
-    "str": 0,
-    "dex": 9,
-    "con": 2,
-    "int": 0,
-    "wis": 8,
-    "cha": 1
   },
 
   "resistances": [],
