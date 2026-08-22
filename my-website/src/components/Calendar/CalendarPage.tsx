@@ -189,7 +189,7 @@ export default function CalendarPage() {
   const [viewYear, setViewYear] = useState<number>(defaultYear);
 
   const events = useMemo(() => {
-    const characters = characterRegistry as CharactersMap;
+    const characters = characterRegistry as unknown as CharactersMap;
     const bdays = buildBirthdayEvents(characters, viewYear).map(normalize);
     return [...manualEvents, ...bdays];
   }, [manualEvents, viewYear]);
