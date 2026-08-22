@@ -5,7 +5,7 @@ import Statblock from "@site/src/components/Statblock";
 import CharacterSplitLayout from "@site/src/components/CharacterSplitLayout";
 import RelatedDocumentsSection from "@site/src/components/documents/RelatedDocumentsSection";
 import { getCharacterById } from "@site/src/data/characters";
-import { characterJsonToSections } from "@site/src/utils/infoboxJson";
+import { characterJsonToSections, type CharacterJson } from "@site/src/utils/infoboxJson";
 import { CharacterProvider } from "@site/src/components/CharacterContext";
 import { getStatblock } from "@site/src/data/statblocks"; // ✅ NEW
 
@@ -58,7 +58,7 @@ export default function CharacterPage({ id, introduction, children }: Props) {
             subtitle={c.subtitle}
             imageSrc={c.imageSrc}
             caption={legacyCharacter.caption}
-            sections={characterJsonToSections(c)}
+            sections={characterJsonToSections(c as unknown as CharacterJson)}
             accentClass={accentClass}
           />
         }
