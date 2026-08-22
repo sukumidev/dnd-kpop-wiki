@@ -12,11 +12,11 @@
  * - Avoid duplicating faction membership in factions.json.
  */
 
-import charactersJson from "./characters.json";
+import { characters, characterList } from "./characters";
 import questsJson from "./quests.json";
 import factionsJson from "./factions.json";
 import locationsJson from "./locations.json";
-import type { Character, CharactersById } from "./characters";
+import type { Character } from "./characters";
 import type { Quest, QuestsById } from "./quests";
 import type { Faction, FactionsById } from "./factions";
 import type { Location, LocationsById } from "./locations";
@@ -26,12 +26,10 @@ export type { Quest, QuestMap } from "./quests";
 export type { Faction, FactionSubunit } from "./factions";
 export type { Location } from "./locations";
 
-export const characters = charactersJson as CharactersById;
+export { characters, characterList };
 export const quests = questsJson as QuestsById;
 export const factions = factionsJson as FactionsById;
 export const locations = locationsJson as LocationsById;
-
-export const characterList = Object.values(characters);
 
 export const questList = Object.values(quests).sort((a, b) => {
   const aOrder = a.sortOrder ?? Number.MAX_SAFE_INTEGER;
@@ -237,7 +235,7 @@ export function getQuestRelations(questId: EntityId) {
 
   return {
     quest,
-    parent: getQuestParent(quest),
+    parent: getQuestParent(quest.parentQuestId ? quest.parentQuestId : quest.id) && getQuestParent(quest),
     children: getQuestChildren(quest.id),
     characters: (quest.characterIds ?? [])
       .map(getCharacterById)
