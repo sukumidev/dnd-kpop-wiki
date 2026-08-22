@@ -235,7 +235,7 @@ export function getQuestRelations(questId: EntityId) {
 
   return {
     quest,
-    parent: getQuestParent(quest.parentQuestId ? quest.parentQuestId : quest.id) && getQuestParent(quest),
+    parent: getQuestParent(quest),
     children: getQuestChildren(quest.id),
     characters: (quest.characterIds ?? [])
       .map(getCharacterById)
