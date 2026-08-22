@@ -55,8 +55,8 @@ export default function CharacterPage({ id, introduction, children }: Props) {
         side={
           <Infobox
             title={c.title ?? id}
-            subtitle={c.subtitle}
-            imageSrc={c.imageSrc}
+            subtitle={c.subtitle ?? undefined}
+            imageSrc={c.imageSrc ?? undefined}
             caption={legacyCharacter.caption}
             sections={characterJsonToSections(c as unknown as CharacterJson)}
             accentClass={accentClass}
