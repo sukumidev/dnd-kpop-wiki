@@ -22,6 +22,7 @@
 
 import fs from "node:fs";
 import path from "node:path";
+import { characters as characterRegistry } from "../src/data/characters";
 
 type Severity = "error" | "warning";
 
@@ -851,7 +852,7 @@ function printResults() {
 }
 
 function main() {
-  const characters = validateRecordFile(DATA_FILES.characters, readJson(DATA_FILES.characters));
+  const characters = validateRecordFile(DATA_FILES.characters, characterRegistry);
   const quests = validateRecordFile(DATA_FILES.quests, readJson(DATA_FILES.quests));
   const factions = validateRecordFile(DATA_FILES.factions, readJson(DATA_FILES.factions));
   const locations = validateRecordFile(DATA_FILES.locations, readJson(DATA_FILES.locations));
