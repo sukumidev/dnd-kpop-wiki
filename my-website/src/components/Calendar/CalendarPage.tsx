@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from "react";
 import Link from "@docusaurus/Link";
 import rawEvents from "@site/static/data/events.json";
-import charactersJson from "@site/src/data/characters.json";
+import { characters as characterRegistry } from "@site/src/data/characters";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 
 type EventType =
@@ -189,7 +189,7 @@ export default function CalendarPage() {
   const [viewYear, setViewYear] = useState<number>(defaultYear);
 
   const events = useMemo(() => {
-    const characters = charactersJson as CharactersMap;
+    const characters = characterRegistry as unknown as CharactersMap;
     const bdays = buildBirthdayEvents(characters, viewYear).map(normalize);
     return [...manualEvents, ...bdays];
   }, [manualEvents, viewYear]);

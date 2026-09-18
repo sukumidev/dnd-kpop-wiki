@@ -4,36 +4,40 @@
 
 El contrato `Character` define los datos biográficos, narrativos y visuales de un personaje de la Wiki de Hallyura.
 
-`characters.json` no debe almacenar información de combate. Los datos de clase, subclase, nivel, estadísticas, resistencias y habilidades viven en `statblocks.json`.
+Las fuentes de personajes no deben almacenar información de combate. Los datos de clase, subclase, nivel, estadísticas, resistencias y habilidades viven en `statblocks.json`.
 
 ## Fuente de verdad
 
-Archivo oficial:
-
-```txt
-src/data/characters.json
-```
-
-Contrato TypeScript:
+Registro oficial consumido por la aplicación:
 
 ```txt
 src/data/characters.ts
 ```
 
+Fuentes de datos durante la migración:
+
+```txt
+src/data/characters.json       # fuente legacy
+src/data/characters/*.json     # fuentes migradas por facción
+```
+
+`characters.ts` combina todas las fuentes en un único registro `characters` y una única lista `characterList`. Las fuentes por facción se aplican después de la fuente legacy, por lo que una entrada migrada reemplaza a su versión legacy por `id` sin duplicarse en el directorio.
+
 ## Decisiones del Sprint 0
 
-- `id` usa lowercase kebab-case y debe ser único dentro de `characters.json`.
+- `id` usa lowercase kebab-case y debe ser único dentro del registro unificado de personajes.
 - `group` se normaliza a `party` o `npc`.
 - `misc` queda deprecado.
 - `regionId` reemplaza `kingdomId` y `realmId`.
 - `dateOfBirth` es la fuente de verdad para calcular edad.
 - `age` no debe guardarse manualmente.
-- `class`, `subclass` y `lvl` no pertenecen a `characters.json`.
+- `class`, `subclass` y `lvl` no pertenecen a las fuentes biográficas de personajes.
 - `polyamoryStatus` se normaliza como enum técnico.
 - Los valores técnicos van en inglés; la UI puede traducirlos a español.
 - Los placeholders `-` y `—` deben migrar a `null`.
 - El `docPath` del personaje no se guarda aquí. El CMS debe generarlo como `characters/[group]/[id]`.
 - Los links internos dentro de `bonds`, `hometown`, `currentLocation`, `firstAppearance` y `lastSeen` pueden conservar `docPath` como fallback navegable.
+- La UI, los índices, los scripts de generación y los validadores deben consumir el registro unificado en lugar de importar una fuente JSON concreta.
 
 ## Campos requeridos
 
@@ -125,7 +129,7 @@ export type CharacterBond = {
 | `regionId` | `locations.json[id]` | Región amplia, no necesariamente reino. |
 | `hometown.locationId` | `locations.json[id]` | Lugar de origen si existe. |
 | `currentLocation.locationId` | `locations.json[id]` | Ubicación actual si existe. |
-| `bonds[].characterId` | `characters.json[id]` | Vínculo a otro personaje. |
+| `bonds[].characterId` | `characters[id]` | Vínculo a otro personaje del registro unificado. |
 | `firstAppearance.sessionId` | futura fuente de sesiones | Debe usar ID técnico. |
 | `lastSeen.sessionId` | futura fuente de sesiones | Debe usar ID técnico. |
 
