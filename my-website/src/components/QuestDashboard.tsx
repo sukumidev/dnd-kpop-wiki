@@ -350,7 +350,7 @@ export default function QuestDashboard({
   return (
     <section>
       <div style={{ marginBottom: "1.5rem" }}>
-        <h1 style={{ marginBottom: "0.5rem" }}>Quest Log</h1>
+        <h1 className="wiki-page-title" style={{ marginBottom: "0.5rem" }}>Quest Log</h1>
         <p style={{ opacity: 0.8 }}>
           Seguimiento del progreso de las quests principales, de facción y personales.
         </p>
@@ -365,7 +365,7 @@ export default function QuestDashboard({
           background: "var(--ifm-background-surface-color)",
         }}
       >
-        <h2 style={{ marginBottom: "1rem" }}>Progreso general</h2>
+        <h2 className="wiki-section-heading" style={{ marginBottom: "1rem" }}>Progreso general</h2>
 
         <div style={{ width: "100%", height: 360 }}>
           <ResponsiveContainer width="100%" height="100%">

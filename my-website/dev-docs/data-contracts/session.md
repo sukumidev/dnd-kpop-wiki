@@ -32,6 +32,27 @@ El archivo usa un array de sesiones. `id` y `number` deben ser únicos.
 | `imageSrc` | `string` | Opcional; portada. |
 | `imagePosition` | `string` | Opcional; valor compatible con `object-position` o `background-position`. |
 
+## Session cover guideline
+
+```yaml
+Recommended source:
+  dimensions: 1600 × 900 px
+  aspect ratio: 16:9
+  format: WebP
+  ideal weight: 150–300 KB
+  max recommended weight: ~400 KB
+```
+
+The same asset is reused for:
+
+- session index thumbnails
+- individual session cover
+
+Cropping is controlled by `imagePosition`; its fallback is `center center`. Legacy
+images can keep their original dimensions because both views render the asset with
+`object-fit: cover`. Store new covers under `/static/img/sessions/` (served as
+`/img/sessions/`) and do not duplicate the path in session MDX.
+
 ## Relaciones derivadas
 
 - La card del índice resuelve únicamente `locationIds[0]` como lugar inicial.

@@ -15,9 +15,13 @@ import {
 import {getCharacterDocPath, type Character} from "@site/src/data/relationships";
 import DocumentEntryNavigation from "./DocumentEntryNavigation";
 import DocumentRelationshipsSection from "./DocumentRelationshipsSection";
+import {selectDocumentNarrativeContent} from "./documentContent";
 import styles from "@site/src/pages/documents/styles.module.css";
 
-type DocumentReaderPageProps = {documentId?: string};
+type DocumentReaderPageProps = {
+  documentId?: string;
+  content?: React.ReactNode | React.ComponentType;
+};
 
 function getDocumentIdFromPath(pathname: string): string {
   const segments = pathname.split("/").filter(Boolean);
@@ -108,14 +112,27 @@ function MarkdownContent({content}: {content: string}) {
   );
 }
 
-function DocumentBody({document, includeSummary = true}: {document: Document; includeSummary?: boolean}) {
+function DocumentBody({
+  document,
+  content,
+  includeSummary = true,
+}: {
+  document: Document;
+  content?: React.ReactNode | React.ComponentType;
+  includeSummary?: boolean;
+}) {
   const summary = document.summary || document.excerpt;
-  if (!document.content && (!includeSummary || !summary) && !document.imageSrc) return null;
+  const compiledContent = typeof content === "function" ? React.createElement(content) : content;
+  const narrative = selectDocumentNarrativeContent(document, compiledContent);
+  if (narrative.kind === "none" && (!includeSummary || !summary) && !document.imageSrc) return null;
   return (
     <section className={styles.bodySection} aria-label="Contenido del documento">
       {includeSummary && summary ? <p className={styles.summaryBlock}>{summary}</p> : null}
       {document.imageSrc ? <figure className={styles.documentImage}><img src={document.imageSrc} alt={`Ilustración de ${document.title}`} /></figure> : null}
-      {document.content ? <MarkdownContent content={document.content} /> : null}
+      {narrative.kind === "mdx" ? (
+        <div className={styles.documentReaderContent} data-document-reader-content>{narrative.content}</div>
+      ) : null}
+      {narrative.kind === "legacy" ? <MarkdownContent content={narrative.content} /> : null}
     </section>
   );
 }
@@ -149,7 +166,7 @@ function CollectionContents({collection}: {collection: Document}) {
   );
 }
 
-function ReaderShell({document}: {document: Document}) {
+function ReaderShell({document, content}: {document: Document; content?: React.ReactNode | React.ComponentType}) {
   const kind = getDocumentKind(document);
   const parent = kind === "entry" ? getPublicParentDocument(document) : undefined;
   const summary = document.summary || document.excerpt;
@@ -163,9 +180,9 @@ function ReaderShell({document}: {document: Document}) {
             <DocumentMetadata document={document} />
             {kind === "collection" ? <>
               {summary ? <p className={styles.collectionSummary}>{summary}</p> : null}
-              <DocumentBody document={document} includeSummary={false} />
+              <DocumentBody document={document} content={content} includeSummary={false} />
               <CollectionContents collection={document} />
-            </> : <DocumentBody document={document} />}
+            </> : <DocumentBody document={document} content={content} />}
             <DocumentRelationshipsSection document={document} />
             {kind === "entry" ? <DocumentEntryNavigation document={document} /> : null}
           </article>
@@ -179,8 +196,8 @@ function UnavailableDocument() {
   return <Layout title="Documento no disponible" description="Documento no disponible"><main className={styles.page}><div className={styles.readerFrame}><Link className={styles.backLink} to="/documents">← Archivo de documentos</Link><section className={styles.emptyState}><h1>Documento no disponible</h1><p>No existe un documento público publicado para esta dirección.</p></section></div></main></Layout>;
 }
 
-export default function DocumentReaderPage({documentId}: DocumentReaderPageProps = {}): React.ReactElement {
+export default function DocumentReaderPage({documentId, content}: DocumentReaderPageProps = {}): React.ReactElement {
   const location = useLocation();
   const document = getPublicDocumentById(documentId ?? getDocumentIdFromPath(location.pathname));
-  return document ? <ReaderShell document={document} /> : <UnavailableDocument />;
+  return document ? <ReaderShell document={document} content={content} /> : <UnavailableDocument />;
 }

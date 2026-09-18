@@ -39,11 +39,13 @@ export const DOCUMENT_VISIBILITIES = [
 ] as const;
 
 export const DOCUMENT_KINDS = ["single", "collection", "entry"] as const;
+export const DOCUMENT_CONTENT_FORMATS = ["markdown", "mdx"] as const;
 
 export type DocumentType = (typeof DOCUMENT_TYPES)[number];
 export type DocumentStatus = (typeof DOCUMENT_STATUSES)[number];
 export type DocumentVisibility = (typeof DOCUMENT_VISIBILITIES)[number];
 export type DocumentKind = (typeof DOCUMENT_KINDS)[number];
+export type DocumentContentFormat = (typeof DOCUMENT_CONTENT_FORMATS)[number];
 export type DocumentCharacterRelationRole = "author" | "recipient" | "related";
 
 export type Document = {
@@ -62,6 +64,8 @@ export type Document = {
   subtitle?: string;
   summary?: string;
   content?: string;
+  contentFormat?: DocumentContentFormat;
+  contentPath?: string;
   excerpt?: string;
 
   authorName?: string;
@@ -176,6 +180,33 @@ export function getPublicDocuments(list: Document[] = documents): Document[] {
 
 export function getDocumentKind(document: Document): DocumentKind {
   return document.documentKind ?? "single";
+}
+
+/** MDX is opt-in. An omitted contentFormat always retains legacy Markdown behavior. */
+export function isMdxDocument(document: Document): boolean {
+  return document.contentFormat === "mdx";
+}
+
+/** True only when the legacy inline body is the selected narrative source. */
+export function usesLegacyInlineContent(document: Document): boolean {
+  return !isMdxDocument(document) && typeof document.content === "string" && document.content.length > 0;
+}
+
+/**
+ * Returns a normalized path relative to src/content/documents when it is
+ * lexically safe, or undefined for missing/absolute/traversing/non-MDX paths.
+ * File existence is checked by build-time scripts, never in browser code.
+ */
+export function getValidDocumentMdxPath(document: Document): string | undefined {
+  if (!isMdxDocument(document) || typeof document.contentPath !== "string") return undefined;
+
+  const contentPath = document.contentPath.trim();
+  if (!contentPath || !contentPath.toLowerCase().endsWith(".mdx")) return undefined;
+  if (/^(?:[a-zA-Z]:[\\/]|[\\/]{1,2})/.test(contentPath)) return undefined;
+
+  const segments = contentPath.split(/[\\/]+/);
+  if (segments.includes("..")) return undefined;
+  return segments.join("/");
 }
 
 function slugifyDocumentPathSegment(value: string): string {

@@ -2,6 +2,7 @@ import React from "react";
 import { useDoc } from "@docusaurus/plugin-content-docs/client";
 import Infobox from "@site/src/components/Infobox";
 import RelatedDocumentsSection from "@site/src/components/documents/RelatedDocumentsSection";
+import CampaignAppearancesSection from "@site/src/components/CampaignAppearancesSection";
 import locations from "@site/src/data/locations.json";
 import { locationJsonToSections } from "@site/src/utils/infoboxJson";
 
@@ -24,6 +25,7 @@ export default function LocationPageFromDoc({
         sections={data ? locationJsonToSections(data) : []}
       />
       {children}
+      {locationId ? <CampaignAppearancesSection locationId={locationId} /> : null}
       {locationId ? <RelatedDocumentsSection locationId={locationId} /> : null}
     </>
   );

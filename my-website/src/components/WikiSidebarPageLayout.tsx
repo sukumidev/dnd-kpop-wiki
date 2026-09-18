@@ -5,6 +5,7 @@ import {DocsSidebarProvider} from '@docusaurus/plugin-content-docs/client';
 import {useLocation} from '@docusaurus/router';
 import type {PropSidebar} from '@docusaurus/plugin-content-docs';
 import SidebarRail from './SidebarRail';
+import {getSessionHref, sessionList} from '@site/src/data/sessions';
 import styles from './WikiSidebarPageLayout.module.css';
 
 const link = (label: string, href: string) => ({
@@ -44,7 +45,9 @@ const wikiSidebar: PropSidebar = [
   category('Campaign', [
     category('Sessions', [
       link('Crónica de sesiones', '/sessions'),
-      link('Sesión 01', '/campaign/sessions/01'),
+      ...sessionList.map((session) =>
+        link(`Sesión ${String(session.number).padStart(2, '0')}`, getSessionHref(session)),
+      ),
     ]),
     category('Arcs', [link('Acto 1', '/campaign/arcs/acto-1')]),
   ]),

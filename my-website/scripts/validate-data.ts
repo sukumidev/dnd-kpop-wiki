@@ -22,6 +22,7 @@
 
 import fs from "node:fs";
 import path from "node:path";
+import {getDocumentContentFormat, validateDocumentMdxFile} from "./document-content";
 
 type Severity = "error" | "warning";
 
@@ -80,6 +81,7 @@ const DOCUMENT_TYPES = new Set([
 ]);
 const DOCUMENT_STATUSES = new Set(["draft", "published", "archived"]);
 const DOCUMENT_VISIBILITIES = new Set(["public", "hidden", "secret", "dm-only"]);
+const DOCUMENT_CONTENT_FORMATS = new Set(["markdown", "mdx"]);
 
 const FACTION_STATUS = new Set(["active", "inactive", "destroyed", "disbanded", "hidden", "unknown"]);
 const LOCATION_STATUS = new Set(["active", "destroyed", "hidden", "lost", "unknown"]);
@@ -719,6 +721,25 @@ function validateDocuments(documents: JsonRecord[]) {
     validateEnum(file, document.type, DOCUMENT_TYPES, id, "type", true);
     validateEnum(file, document.status, DOCUMENT_STATUSES, id, "status", true);
     validateEnum(file, document.visibility, DOCUMENT_VISIBILITIES, id, "visibility", true);
+
+    const contentFormat = getDocumentContentFormat(document);
+    if (document.contentFormat !== undefined) {
+      validateEnum(file, document.contentFormat, DOCUMENT_CONTENT_FORMATS, id, "contentFormat", true);
+    }
+
+    if (contentFormat === "mdx") {
+      for (const message of validateDocumentMdxFile(document, PROJECT_ROOT)) {
+        addError(file, message, id, "contentPath");
+      }
+    }
+
+    const hasInlineContent = contentFormat === "markdown"
+      && typeof document.content === "string"
+      && document.content.trim() !== "";
+    const hasMdxSource = contentFormat === "mdx" && typeof document.contentPath === "string";
+    if (document.documentKind !== "collection" && !hasInlineContent && !hasMdxSource) {
+      addWarning(file, `Document has no inline content or MDX content source.`, id, "content");
+    }
 
     validateIdArray(file, document.recipientCharacterIds, id, "recipientCharacterIds");
     validateIdArray(file, document.sessionIds, id, "sessionIds");

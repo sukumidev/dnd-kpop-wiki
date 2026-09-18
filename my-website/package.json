@@ -5,6 +5,7 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
+    "prebuild": "npm run gen:documents",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
@@ -23,7 +24,10 @@
     "gen:factions:dry": "tsx scripts/generateFactionsMdx.ts --dry-run",
     "gen:factions:force": "tsx scripts/generateFactionsMdx.ts --force",
     "gen:documents": "tsx scripts/generate-document-pages.ts --clean",
-    "validate:data": "tsx scripts/validate-data.ts"
+    "migrate:documents:mdx": "tsx scripts/migrate-document-content-to-mdx.ts",
+    "test": "tsx --test tests/document-mdx.test.ts",
+    "validate:data": "tsx scripts/validate-data.ts",
+    "images:webp": "node scripts/convert-images-to-webp.mjs"
   },
   "dependencies": {
     "@docusaurus/core": "3.9.2",
@@ -41,6 +45,7 @@
     "@docusaurus/module-type-aliases": "3.9.2",
     "@docusaurus/tsconfig": "3.9.2",
     "@docusaurus/types": "3.9.2",
+    "sharp": "^0.35.4",
     "tsx": "^4.21.0",
     "typescript": "~5.6.2"
   },
