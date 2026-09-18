@@ -4,6 +4,7 @@ import Infobox from "@site/src/components/Infobox";
 import Statblock from "@site/src/components/Statblock";
 import CharacterSplitLayout from "@site/src/components/CharacterSplitLayout";
 import RelatedDocumentsSection from "@site/src/components/documents/RelatedDocumentsSection";
+import CampaignAppearancesSection from "@site/src/components/CampaignAppearancesSection";
 import { getCharacterById } from "@site/src/data/characters";
 import { characterJsonToSections, type CharacterJson } from "@site/src/utils/infoboxJson";
 import { CharacterProvider } from "@site/src/components/CharacterContext";
@@ -66,6 +67,7 @@ export default function CharacterPage({ id, introduction, children }: Props) {
         statblock={sb ? <Statblock id={id} /> : null}
       >
         {children}
+        <CampaignAppearancesSection characterId={id} />
         <RelatedDocumentsSection characterId={id} />
       </CharacterSplitLayout>
     </CharacterProvider>

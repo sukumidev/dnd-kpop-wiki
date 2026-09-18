@@ -553,5 +553,467 @@
     ],
     "imageSrc": null,
     "sortOrder": null
+  },
+  "aguas-termales-del-casino": {
+    "id": "aguas-termales-del-casino",
+    "title": "Aguas termales del Casino",
+    "type": "landmark",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "aldea-del-lago-celeste": {
+    "id": "aldea-del-lago-celeste",
+    "title": "Aldea del Lago Celeste",
+    "type": "village",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "altar-de-la-luna-creciente": {
+    "id": "altar-de-la-luna-creciente",
+    "title": "Altar de la Luna Creciente",
+    "type": "landmark",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "barco-hacia-jeyperia": {
+    "id": "barco-hacia-jeyperia",
+    "title": "Barco hacia Jeyperia",
+    "type": "landmark",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "templo-del-dios-lobo": {
+    "id": "templo-del-dios-lobo",
+    "title": "Templo del Dios Lobo",
+    "type": "landmark",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "biblioteca-de-la-mansion-radiante": {
+    "id": "biblioteca-de-la-mansion-radiante",
+    "title": "Biblioteca de la Mansión Radiante",
+    "type": "landmark",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "bodega-abandonada": {
+    "id": "bodega-abandonada",
+    "title": "Bodega abandonada",
+    "type": "landmark",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "bosque-nevado": {
+    "id": "bosque-nevado",
+    "title": "Bosque nevado",
+    "type": "wilderness",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "cabana-de-joshua": {
+    "id": "cabana-de-joshua",
+    "title": "Cabaña de Joshua",
+    "type": "landmark",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "cafe-del-rio": {
+    "id": "cafe-del-rio",
+    "title": "Café del Río",
+    "type": "landmark",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "caminos-de-borasek": {
+    "id": "caminos-de-borasek",
+    "title": "Caminos de Borasek",
+    "type": "wilderness",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "camino-al-templo-del-sol-naciente": {
+    "id": "camino-al-templo-del-sol-naciente",
+    "title": "Camino al Templo del Sol Naciente",
+    "type": "wilderness",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "camino-de-la-montana": {
+    "id": "camino-de-la-montana",
+    "title": "Camino de la montaña",
+    "type": "wilderness",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "caminos-de-hyberia": {
+    "id": "caminos-de-hyberia",
+    "title": "Caminos de Hyberia",
+    "type": "wilderness",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "campamento-de-kai": {
+    "id": "campamento-de-kai",
+    "title": "Campamento de Kai",
+    "type": "landmark",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "campamento-de-goblins": {
+    "id": "campamento-de-goblins",
+    "title": "Campamento de goblins",
+    "type": "landmark",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "casa-k": {
+    "id": "casa-k",
+    "title": "Casa K",
+    "type": "landmark",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "casa-de-minjae-y-joshua": {
+    "id": "casa-de-minjae-y-joshua",
+    "title": "Casa de Minjae y Joshua",
+    "type": "landmark",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "casa-de-yuta": {
+    "id": "casa-de-yuta",
+    "title": "Casa de Yuta",
+    "type": "landmark",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "casino-clandestino": {
+    "id": "casino-clandestino",
+    "title": "Casino Clandestino",
+    "type": "landmark",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "castillo-flotante": {
+    "id": "castillo-flotante",
+    "title": "Castillo Flotante",
+    "type": "landmark",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "centro-de-puerto-bay-alta": {
+    "id": "centro-de-puerto-bay-alta",
+    "title": "Centro de Puerto Bay Alta",
+    "type": "port",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "club-del-sol-ardiente": {
+    "id": "club-del-sol-ardiente",
+    "title": "Club del Sol Ardiente",
+    "type": "landmark",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "cuartel-de-los-hijos-de-la-noche": {
+    "id": "cuartel-de-los-hijos-de-la-noche",
+    "title": "Cuartel de los Hijos de la Noche",
+    "type": "landmark",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "cueva": {
+    "id": "cueva",
+    "title": "Cueva",
+    "type": "dungeon",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "cueva-de-los-kobolds": {
+    "id": "cueva-de-los-kobolds",
+    "title": "Cueva de los kobolds",
+    "type": "dungeon",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "cuevas-hacia-el-underdark": {
+    "id": "cuevas-hacia-el-underdark",
+    "title": "Cuevas hacia el Underdark",
+    "type": "dungeon",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "despacho-de-taeyong": {
+    "id": "despacho-de-taeyong",
+    "title": "Despacho de Taeyong",
+    "type": "landmark",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "dreamscape": {
+    "id": "dreamscape",
+    "title": "Dreamscape",
+    "type": "plane",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "exterior-del-templo-del-sol-naciente": {
+    "id": "exterior-del-templo-del-sol-naciente",
+    "title": "Exterior del Templo del Sol Naciente",
+    "type": "landmark",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "granero": {
+    "id": "granero",
+    "title": "Granero",
+    "type": "landmark",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "granja-de-dorian-hotou": {
+    "id": "granja-de-dorian-hotou",
+    "title": "Granja de Dorian, Hotou",
+    "type": "landmark",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "gremio-de-aventureros": {
+    "id": "gremio-de-aventureros",
+    "title": "Gremio de Aventureros de Hyberia",
+    "type": "landmark",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "interior-del-templo-del-sol-naciente": {
+    "id": "interior-del-templo-del-sol-naciente",
+    "title": "Interior del Templo del Sol Naciente",
+    "type": "landmark",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "isla-wang": {
+    "id": "isla-wang",
+    "title": "Isla Wang",
+    "type": "landmark",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "lago-celeste": {
+    "id": "lago-celeste",
+    "title": "Lago Celeste",
+    "type": "wilderness",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "mansion-radiante": {
+    "id": "mansion-radiante",
+    "title": "Mansión Radiante",
+    "type": "landmark",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "mansion-wang": {
+    "id": "mansion-wang",
+    "title": "Mansión Wang",
+    "type": "landmark",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "mar-entre-jeyperia-y-sylmorien": {
+    "id": "mar-entre-jeyperia-y-sylmorien",
+    "title": "Mar entre Jeyperia y Sylmorien",
+    "type": "wilderness",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "mazmorra-sangrienta": {
+    "id": "mazmorra-sangrienta",
+    "title": "Mazmorra Sangrienta",
+    "type": "dungeon",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "mazmorra-de-los-hijos-de-la-noche": {
+    "id": "mazmorra-de-los-hijos-de-la-noche",
+    "title": "Mazmorra de los Hijos de la Noche",
+    "type": "dungeon",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "mazmorra-subterranea-de-borasek": {
+    "id": "mazmorra-subterranea-de-borasek",
+    "title": "Mazmorra subterránea de Borasek",
+    "type": "dungeon",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "muelle-de-hotou": {
+    "id": "muelle-de-hotou",
+    "title": "Muelle de Hotou",
+    "type": "port",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "muelle-de-isla-wang": {
+    "id": "muelle-de-isla-wang",
+    "title": "Muelle de Isla Wang",
+    "type": "port",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "muelle-de-mareas-silentes": {
+    "id": "muelle-de-mareas-silentes",
+    "title": "Muelle de Mareas Silentes",
+    "type": "port",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "muelle-de-puerto-bay-alta": {
+    "id": "muelle-de-puerto-bay-alta",
+    "title": "Muelle de Puerto Bay Alta",
+    "type": "port",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "murallas-de-borasek": {
+    "id": "murallas-de-borasek",
+    "title": "Murallas de Borasek",
+    "type": "landmark",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "neo-academia": {
+    "id": "neo-academia",
+    "title": "Neo Academia",
+    "type": "academy",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "plaza-principal-de-neocity": {
+    "id": "plaza-principal-de-neocity",
+    "title": "Plaza principal de Neocity",
+    "type": "landmark",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "prision-de-los-hijos-de-la-noche": {
+    "id": "prision-de-los-hijos-de-la-noche",
+    "title": "Prisión de los Hijos de la Noche",
+    "type": "landmark",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "pueblo-abandonado-cercano": {
+    "id": "pueblo-abandonado-cercano",
+    "title": "Pueblo abandonado cercano",
+    "type": "village",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "puerto-bay-alta": {
+    "id": "puerto-bay-alta",
+    "title": "Puerto Bay Alta",
+    "type": "port",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "refugio-de-los-sonadores-del-arrozal": {
+    "id": "refugio-de-los-sonadores-del-arrozal",
+    "title": "Refugio de los Soñadores del Arrozal",
+    "type": "landmark",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "residencia-castillo-hoshizuki": {
+    "id": "residencia-castillo-hoshizuki",
+    "title": "Residencia / Castillo Hoshizuki",
+    "type": "landmark",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "santuario-de-felix": {
+    "id": "santuario-de-felix",
+    "title": "Santuario de Felix",
+    "type": "landmark",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "santuario-sumergido": {
+    "id": "santuario-sumergido",
+    "title": "Santuario sumergido",
+    "type": "landmark",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "subasta-del-pacto-de-ceniza": {
+    "id": "subasta-del-pacto-de-ceniza",
+    "title": "Subasta del Pacto de Ceniza",
+    "type": "landmark",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "taberna": {
+    "id": "taberna",
+    "title": "Taberna",
+    "type": "landmark",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "taberna-pab": {
+    "id": "taberna-pab",
+    "title": "Taberna PAB",
+    "type": "landmark",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "taberna-del-muelle": {
+    "id": "taberna-del-muelle",
+    "title": "Taberna del muelle",
+    "type": "port",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "tianguis-de-neocity": {
+    "id": "tianguis-de-neocity",
+    "title": "Tianguis de Neocity",
+    "type": "landmark",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "torre-de-los-cazadores-de-tiro-largo": {
+    "id": "torre-de-los-cazadores-de-tiro-largo",
+    "title": "Torre de los Cazadores de Tiro Largo",
+    "type": "landmark",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "tripuerto": {
+    "id": "tripuerto",
+    "title": "Tripuerto",
+    "type": "port",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "tripuerto-del-gremio": {
+    "id": "tripuerto-del-gremio",
+    "title": "Tripuerto del Gremio",
+    "type": "port",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "underdark": {
+    "id": "underdark",
+    "title": "Underdark",
+    "type": "dungeon",
+    "status": "unknown",
+    "visibility": "public"
+  },
+  "valle-dorado": {
+    "id": "valle-dorado",
+    "title": "Valle Dorado / Valle del Arrozal",
+    "type": "wilderness",
+    "status": "unknown",
+    "visibility": "public"
   }
 }

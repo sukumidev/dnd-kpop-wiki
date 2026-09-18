@@ -9,8 +9,6 @@ import {
 } from "@site/src/data/sessions";
 import styles from "./styles.module.css";
 
-type SortOrder = "newest" | "oldest";
-
 function normalizeSearchValue(value: string) {
   return value
     .normalize("NFD")
@@ -20,7 +18,6 @@ function normalizeSearchValue(value: string) {
 
 export default function SessionsIndex(): React.ReactElement {
   const [query, setQuery] = useState("");
-  const [sortOrder, setSortOrder] = useState<SortOrder>("newest");
 
   const visibleSessions = useMemo(() => {
     const normalizedQuery = normalizeSearchValue(query.trim());
@@ -42,13 +39,8 @@ export default function SessionsIndex(): React.ReactElement {
 
         return searchableText.includes(normalizedQuery);
       })
-      .sort((a, b) => {
-        const dateDifference = (b.sessionDate ? new Date(b.sessionDate).getTime() : 0)
-          - (a.sessionDate ? new Date(a.sessionDate).getTime() : 0);
-        const newestFirst = dateDifference || b.number - a.number;
-        return sortOrder === "newest" ? newestFirst : -newestFirst;
-      });
-  }, [query, sortOrder]);
+      .sort((a, b) => Number(a.number) - Number(b.number));
+  }, [query]);
 
   return (
     <WikiSidebarPageLayout
@@ -79,12 +71,8 @@ export default function SessionsIndex(): React.ReactElement {
 
             <label>
               <span className="sr-only">Ordenar sesiones</span>
-              <select
-                className={styles.orderSelect}
-                value={sortOrder}
-                onChange={(event) => setSortOrder(event.target.value as SortOrder)}>
-                <option value="newest">Más recientes primero</option>
-                <option value="oldest">Más antiguas primero</option>
+              <select className={styles.orderSelect} defaultValue="ascending">
+                <option value="ascending">Más antiguas primero</option>
               </select>
             </label>
           </div>

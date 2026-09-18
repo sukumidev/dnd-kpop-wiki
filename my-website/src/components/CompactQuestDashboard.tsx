@@ -1,658 +1,126 @@
-import React, { useMemo, useState } from "react";
+import React from "react";
 import Link from "@docusaurus/Link";
-import clsx from "clsx";
 
-import questsJson from "@site/src/data/quests.json";
-import RelatedDocumentsSection from "@site/src/components/documents/RelatedDocumentsSection";
-import type { Quest, QuestMap } from "@site/src/data/quests";
-import { getFactionById } from "@site/src/data/relationships";
-import styles from "./QuestDashboard.module.css";
+import {
+  calculateQuestProgress,
+  getQuestById,
+  getQuestChildren,
+  getQuestsByStatus,
+  type Quest,
+} from "@site/src/data/quests";
+import {featuredQuestIds} from "@site/src/data/home";
+import styles from "./CompactQuestDashboard.module.css";
 
-type QuestDashboardProps = {
-  showHidden?: boolean;
-};
+function getTypeLabel(type: string) {
+  const labels: Record<string, string> = {
+    main: "Main",
+    side: "Secundaria",
+    faction: "Facción",
+    personal: "Personal",
+    event: "Evento",
+  };
+  return labels[type] ?? type;
+}
 
-const quests = questsJson as QuestMap;
-const factionPageIds = new Set([
-  "gremio-de-aventureros",
-  "hijos-de-la-noche",
-  "lobos-perdidos",
-  "panes-del-destino",
-]);
-
-function getQuestProgress(
-  quest: Quest,
-  questMap: QuestMap
-): { current: number; goal: number; percent: number } {
+function getProgressCounter(quest: Quest): string | null {
   if (quest.progress?.mode === "children") {
-    const children = Object.values(questMap).filter(
-      (candidate) => candidate.parentQuestId === quest.id
-    );
-
-    const goal = children.length;
-    const current = children.filter(
-      (child) => child.status === "completed"
-    ).length;
-
-    const percent = goal > 0 ? Math.round((current / goal) * 100) : 0;
-
-    return { current, goal, percent };
-  }
-
-  if (quest.progress?.mode === "manual") {
-    const current = quest.progress.current ?? 0;
-    const goal = quest.progress.goal ?? 0;
-    const percent =
-      typeof quest.progress.percent === "number"
-        ? quest.progress.percent
-        : goal > 0
-        ? Math.round((current / goal) * 100)
-        : 0;
-
-    return { current, goal, percent };
+    const children = getQuestChildren(quest.id);
+    if (!children.length) return null;
+    return `${children.filter((child) => child.status === "completed").length}/${children.length}`;
   }
 
   if (quest.progress?.mode === "objectives" && quest.objectives?.length) {
-    const normalizedObjectives = quest.objectives.filter(
-      (obj): obj is Exclude<typeof obj, string> => typeof obj !== "string"
+    const total = quest.objectives.reduce((sum, objective) => sum + (objective.weight ?? 1), 0);
+    const complete = quest.objectives.reduce(
+      (sum, objective) => sum + (objective.done ? objective.weight ?? 1 : 0),
+      0,
     );
-
-    const goal = normalizedObjectives.reduce(
-      (sum, obj) => sum + (obj.weight ?? 1),
-      0
-    );
-
-    const current = normalizedObjectives.reduce(
-      (sum, obj) => sum + (obj.done ? obj.weight ?? 1 : 0),
-      0
-    );
-
-    const percent = goal > 0 ? Math.round((current / goal) * 100) : 0;
-
-    return { current, goal, percent };
+    return `${complete}/${total}`;
   }
 
-  const current = quest.progress?.current ?? 0;
-  const goal = quest.progress?.goal ?? 0;
-  const percent = goal > 0 ? Math.round((current / goal) * 100) : 0;
-
-  return { current, goal, percent };
-}
-
-function getAccentColor(accent?: string): string {
-  if (!accent) return "#7c8aa5";
-
-  if (accent.startsWith("#")) {
-    return accent;
+  if (typeof quest.progress?.current === "number" && typeof quest.progress?.goal === "number") {
+    return `${quest.progress.current}/${quest.progress.goal}`;
   }
-
-  switch (accent) {
-    case "gold":
-      return "#d4a017";
-    case "cyan":
-      return "#22d3ee";
-    case "red":
-      return "#ef4444";
-    case "pink":
-      return "#d946ef";
-    case "purple":
-      return "#8b5cf6";
-    case "blue":
-      return "#4a90e2";
-    case "green":
-      return "#22c55e";
-    case "amber":
-      return "#f59e0b";
-    case "orange":
-      return "#f97316";
-    case "teal":
-      return "#14b8a6";
-    case "silver":
-      return "#94a3b8";
-    case "gray":
-      return "#64748b";
-    default:
-      return "#7c8aa5";
-  }
+  return null;
 }
 
-function getQuestAccentVars(accent?: string | null): React.CSSProperties {
-  const accentColor = getAccentColor(accent ?? undefined);
+function getFeaturedQuests(): Quest[] {
+  const configured = featuredQuestIds
+    .map((id) => getQuestById(id))
+    .filter((quest): quest is Quest => quest?.status === "active" && quest.visibility === "public");
 
-  return {
-    "--quest-accent": accentColor,
-    "--quest-accent-soft": `color-mix(in srgb, ${accentColor} 13%, transparent)`,
-    "--quest-accent-border": accentColor,
-    "--quest-progress-color": accentColor,
-  } as React.CSSProperties;
+  if (configured.length >= 3) return configured.slice(0, 3);
+
+  const configuredIds = new Set(configured.map((quest) => quest.id));
+  const fallback = getQuestsByStatus("active")
+    .filter((quest) => quest.visibility === "public" && !configuredIds.has(quest.id))
+    .sort((a, b) => (a.sortOrder ?? Number.MAX_SAFE_INTEGER) - (b.sortOrder ?? Number.MAX_SAFE_INTEGER));
+
+  return [...configured, ...fallback].slice(0, 3);
 }
 
-function getStatusLabel(status: Quest["status"] | string): string {
-  switch (status) {
-    case "active":
-      return "Activa";
-    case "available":
-      return "Disponible";
-    case "completed":
-      return "Completada";
-    case "failed":
-      return "Fallida";
-    case "dormant":
-      return "Dormida";
-    case "hidden":
-      return "Oculta";
-    case "paused":
-      return "Pausada";
-    case "locked":
-      return "Bloqueada";
-    default:
-      return status;
-  }
+export function getActiveQuestCount() {
+  return getQuestsByStatus("active").filter((quest) => quest.visibility === "public").length;
 }
 
-function buildQuestList(questMap: QuestMap, showHidden = false): Quest[] {
-  const questsWithIndex = Object.values(questMap)
-    .map((quest, index) => ({ quest, index }))
-    .filter(({ quest }) => showHidden || quest.visibility !== "hidden");
-  const visibleQuestIds = new Set(questsWithIndex.map(({ quest }) => quest.id));
-  const originalIndexById = new Map(questsWithIndex.map(({ quest, index }) => [quest.id, index]));
-  const childrenByParentId = new Map<string, Quest[]>();
-
-  function compareQuests(a: Quest, b: Quest): number {
-    const orderA = a.sortOrder ?? Number.MAX_SAFE_INTEGER;
-    const orderB = b.sortOrder ?? Number.MAX_SAFE_INTEGER;
-
-    if (orderA !== orderB) return orderA - orderB;
-    return (originalIndexById.get(a.id) ?? 0) - (originalIndexById.get(b.id) ?? 0);
-  }
-
-  for (const { quest } of questsWithIndex) {
-    if (!quest.parentQuestId || !visibleQuestIds.has(quest.parentQuestId)) continue;
-
-    const siblings = childrenByParentId.get(quest.parentQuestId) ?? [];
-    siblings.push(quest);
-    childrenByParentId.set(quest.parentQuestId, siblings);
-  }
-
-  const roots = questsWithIndex
-    .map(({ quest }) => quest)
-    .filter((quest) => !quest.parentQuestId || !visibleQuestIds.has(quest.parentQuestId))
-    .sort(compareQuests);
-  const sortedQuests: Quest[] = [];
-
-  function appendQuestAndChildren(quest: Quest) {
-    sortedQuests.push(quest);
-
-    for (const child of (childrenByParentId.get(quest.id) ?? []).sort(compareQuests)) {
-      appendQuestAndChildren(child);
-    }
-  }
-
-  roots.forEach(appendQuestAndChildren);
-
-  return sortedQuests;
-}
-
-function getDepth(quest: Quest, questMap: QuestMap): number {
-  let depth = 0;
-  let current = quest;
-
-  while (current.parentQuestId && questMap[current.parentQuestId]) {
-    depth += 1;
-    current = questMap[current.parentQuestId];
-  }
-
-  return depth;
-}
-
-function getTypeLabels(quest: Quest): string[] {
-  if ("types" in quest && Array.isArray((quest as any).types)) {
-    return (quest as any).types;
-  }
-
-  if ("type" in quest && (quest as any).type) {
-    return [(quest as any).type];
-  }
-
-  return [];
-}
-
-function formatTypeLabel(type: string): string {
-  switch (type) {
-    case "main":
-      return "Main";
-    case "side":
-      return "Side";
-    case "faction":
-      return "Faction";
-    case "personal":
-      return "Personal";
-    case "event":
-      return "Event";
-    default:
-      return type;
-  }
-}
-
-function getStatusBadgeStyle(status: Quest["status"] | string): React.CSSProperties {
-  switch (status) {
-    case "active":
-      return { color: "#083344", background: "#a5f3fc", borderColor: "#22d3ee" };
-    case "available":
-      return { color: "#172554", background: "#bfdbfe", borderColor: "#60a5fa" };
-    case "completed":
-      return { color: "#052e16", background: "#bbf7d0", borderColor: "#22c55e" };
-    case "failed":
-      return { color: "#7f1d1d", background: "#fecaca", borderColor: "#ef4444" };
-    case "dormant":
-    case "paused":
-      return { color: "#78350f", background: "#fde68a", borderColor: "#f59e0b" };
-    case "hidden":
-      return { color: "#1f2937", background: "#e5e7eb", borderColor: "#9ca3af" };
-    case "locked":
-      return { color: "#2e1065", background: "#ddd6fe", borderColor: "#a78bfa" };
-    default:
-      return {};
-  }
-}
-
-function getTypeBadgeClass(type: string): string {
-  switch (type) {
-    case "main":
-      return styles.typeMain;
-    case "personal":
-      return styles.typePersonal;
-    case "side":
-      return styles.typeSide;
-    case "faction":
-      return styles.typeFaction;
-    default:
-      return styles.typeDefault;
-  }
-}
-
-function cleanObjectiveLabel(label: string): string {
-  return label.replace(/^\s*(?:[-*]\s*)?(?:\[[ xX]\]\s*)?(?:☑|✅|✔|✓|⬜|□|◻|❌|✗)\s*/u, "");
-}
-
-function isQuestVisible(
-  quest: Quest,
-  questMap: QuestMap,
-  openQuestIds: Record<string, boolean>
-): boolean {
-  let current = quest;
-
-  while (current.parentQuestId) {
-    const parent = questMap[current.parentQuestId];
-    if (!parent) return true;
-
-    if (!openQuestIds[parent.id]) {
-      return false;
-    }
-
-    current = parent;
-  }
-
-  return true;
-}
-
-function hasChildren(quest: Quest, questMap: QuestMap): boolean {
-  return Object.values(questMap).some(
-    (candidate) => candidate.parentQuestId === quest.id
-  );
-}
-
-function SectionToggle({
-  title,
-  count,
-  isOpen,
-  onToggle,
-}: {
-  title: string;
-  count: number;
-  isOpen: boolean;
-  onToggle: () => void;
-}): React.ReactElement {
-  return (
-    <button
-      type="button"
-      onClick={onToggle}
-      aria-expanded={isOpen}
-      style={{
-        width: "100%",
-        border: "1px solid var(--ifm-color-emphasis-300)",
-        background: "var(--ifm-background-surface-color)",
-        borderRadius: "14px",
-        padding: "0.9rem 1rem",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "space-between",
-        gap: "1rem",
-        cursor: "pointer",
-        textAlign: "left",
-      }}
-    >
-      <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", flexWrap: "wrap" }}>
-        <h2 style={{ margin: 0, fontSize: "1.1rem" }}>{title}</h2>
-        <span
-          style={{
-            padding: "0.2rem 0.55rem",
-            borderRadius: "999px",
-            background: "var(--ifm-color-emphasis-200)",
-            fontSize: "0.8rem",
-            opacity: 0.85,
-          }}
-        >
-          {count}
-        </span>
-      </div>
-
-      <div
-        aria-hidden="true"
-        style={{
-          fontSize: "1.2rem",
-          lineHeight: 1,
-          transition: "transform 0.2s ease",
-          transform: isOpen ? "rotate(180deg)" : "rotate(0deg)",
-          opacity: 0.8,
-        }}
-      >
-        ˅
-      </div>
-    </button>
-  );
-}
-
-function renderQuestCard(
-  quest: Quest,
-  questMap: QuestMap,
-  openQuestIds: Record<string, boolean>,
-  toggleQuest: (questId: string) => void
-): React.ReactElement {
-  const { current: progressCurrent, goal: progressGoal, percent } =
-    getQuestProgress(quest, questMap);
-
-  const depth = getDepth(quest, questMap);
-  const isOpen = !!openQuestIds[quest.id];
-  const typeLabels = getTypeLabels(quest);
-  const childrenExist = hasChildren(quest, questMap);
-  const isCompleted = quest.status === "completed";
-  const questStyle = {
-    ...getQuestAccentVars(quest.accent),
-    marginLeft: `${depth * 28}px`,
-  } as React.CSSProperties;
+export default function CompactQuestDashboard(): React.ReactElement {
+  const featuredQuests = getFeaturedQuests();
 
   return (
-    <article
-      key={quest.id}
-      className={clsx(
-        styles.questCard,
-        isOpen && styles.questCardOpen,
-        isCompleted && styles.questCardCompleted
-      )}
-      data-accent={quest.accent ?? "fallback"}
-      style={questStyle}
-    >
-      <button
-        type="button"
-        onClick={() => (childrenExist ? toggleQuest(quest.id) : undefined)}
-        aria-expanded={childrenExist ? isOpen : undefined}
-        aria-controls={childrenExist ? `quest-panel-${quest.id}` : undefined}
-        className={clsx(
-          styles.questHeaderButton,
-          !childrenExist && styles.questHeaderButtonStatic
-        )}
-      >
-        <div className={styles.questHeaderMain}>
-          <div className={styles.questTitleRow}>
-            <h3 className={styles.questTitle}>{quest.title}</h3>
-
-            <div className={styles.questBadges}>
-              {typeLabels.map((type) => (
-                <span
-                  key={`${quest.id}-${type}`}
-                  className={clsx(styles.questBadge, getTypeBadgeClass(type))}
-                >
-                  {formatTypeLabel(type)}
-                </span>
-              ))}
-
-              <span className={styles.questBadge} style={getStatusBadgeStyle(quest.status)}>
-                {getStatusLabel(quest.status)}
-              </span>
-            </div>
-          </div>
-
-          {quest.subtitle ? (
-            <p className={styles.questSubtitle}>{quest.subtitle}</p>
-          ) : null}
+    <section className={styles.wrapper} aria-labelledby="featured-quests-title">
+      <div className={styles.headingRow}>
+        <div>
+          <span className={styles.eyebrow}>Hilos del destino</span>
+          <h2 id="featured-quests-title" className={styles.heading}>Quests destacadas</h2>
         </div>
+        <span className={styles.count}>{getActiveQuestCount()} activas</span>
+      </div>
 
-        <div className={styles.questHeaderMeta}>
-          <div className={styles.progressPill}>{percent}%</div>
+      <div className={styles.list}>
+        {featuredQuests.map((quest) => {
+          const percent = calculateQuestProgress(quest) ?? 0;
+          const counter = getProgressCounter(quest);
+          const types = quest.types ?? (quest.type ? [quest.type] : []);
 
-          {childrenExist ? (
-            <div
-              aria-hidden="true"
-              className={clsx(styles.collapseIcon, isOpen && styles.collapseIconOpen)}
-            >
-              v
-            </div>
-          ) : (
-            <div aria-hidden="true" className={styles.collapsePlaceholder} />
-          )}
-        </div>
-      </button>
-
-      <div
-        id={`quest-panel-${quest.id}`}
-        className={styles.questPanel}
-        style={{ display: isOpen || !childrenExist ? "grid" : "none" }}
-      >
-        <p className={styles.questSummary}>{quest.description || quest.summary}</p>
-
-        <div className={styles.questSection}>
-          <div className={styles.progressHeader}>
-            <span className={styles.progressLabel}>Progreso</span>
-            <span className={styles.progressValue}>
-              {percent}% {progressGoal > 0 ? `(${progressCurrent}/${progressGoal})` : ""}
-            </span>
-          </div>
-
-          <div className={styles.progressTrack}>
-            <div
-              className={clsx(
-                styles.progressFill,
-                percent === 0 && styles.progressFillEmpty
-              )}
-              style={{ "--quest-progress-width": `${percent}%` } as React.CSSProperties}
-            />
-          </div>
-        </div>
-
-        {quest.objectives?.length ? (
-          <div className={styles.questSection}>
-            <strong className={styles.sectionTitle}>Objetivos</strong>
-            <ul className={styles.objectiveList}>
-              {quest.objectives.map((objective, index) => {
-                if (typeof objective === "string") {
-                  return (
-                    <li
-                      key={`${quest.id}-objective-${index}`}
-                      className={styles.objectiveItem}
-                    >
-                      <span className={styles.objectiveMarker} aria-hidden="true" />
-                      <span>{cleanObjectiveLabel(objective)}</span>
-                    </li>
-                  );
-                }
-
-                const isFailed = (objective as any).failed;
-
-                return (
-                  <li
-                    key={objective.id ?? `${quest.id}-objective-${index}`}
-                    className={clsx(
-                      styles.objectiveItem,
-                      objective.done && styles.objectiveDone,
-                      isFailed && styles.objectiveFailed
-                    )}
-                  >
-                    <span className={styles.objectiveMarker} aria-hidden="true">
-                      {objective.done ? "✓" : isFailed ? "!" : ""}
-                    </span>
-                    <span>{cleanObjectiveLabel(objective.label)}</span>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-        ) : null}
-
-        {(quest.parentQuestId && questMap[quest.parentQuestId]) || quest.tags?.length ? (
-          <div className={styles.questSection}>
-            {quest.parentQuestId && questMap[quest.parentQuestId] ? (
-              <div className={styles.metadataBlock}>
-                <span className={styles.metadataLabel}>Quest padre</span>
-                <span>{questMap[quest.parentQuestId].title}</span>
-              </div>
-            ) : null}
-
-            {quest.tags?.length ? (
-              <div className={styles.metadataBlock}>
-                <span className={styles.metadataLabel}>Tags</span>
-                <div className={styles.tagList}>
-                  {quest.tags.map((tag) => (
-                    <span key={`${quest.id}-tag-${tag}`} className={styles.tagChip}>
-                      {tag}
-                    </span>
+          return (
+            <article className={styles.card} key={quest.id}>
+              <div className={styles.cardTop}>
+                <div className={styles.badges}>
+                  {types.slice(0, 2).map((type) => (
+                    <span className={styles.typeBadge} key={type}>{getTypeLabel(type)}</span>
                   ))}
+                  <span className={styles.statusBadge}>Activa</span>
                 </div>
+                <span className={styles.percent}>{percent}%</span>
               </div>
-            ) : null}
-          </div>
-        ) : null}
 
-        {quest.factionIds?.length ? (
-          <div className={styles.metadataBlock}>
-            {quest.factionIds.map((factionId) => {
-              const faction = getFactionById(factionId);
-
-              return faction && factionPageIds.has(faction.id) ? (
-                <Link
-                  key={`${quest.id}-${factionId}`}
-                  to={`/factions/${faction.id}`}
-                  style={{ fontSize: "0.92rem" }}
-                >
-                  #{faction.title}
-                </Link>
-              ) : (
-                <span
-                  key={`${quest.id}-${factionId}`}
-                  style={{ fontSize: "0.92rem", opacity: 0.8 }}
-                >
-                  #{faction?.title ?? factionId}
-                </span>
-              );
-            })}
-          </div>
-        ) : null}
-
-        <RelatedDocumentsSection questId={quest.id} />
-      </div>
-    </article>
-  );
-}
-
-export default function CompactQuestDashboard({
-  showHidden = false,
-}: QuestDashboardProps): React.ReactElement {
-  const [openQuestIds, setOpenQuestIds] = useState<Record<string, boolean>>({
-    "mq-collect-cards": true,
-  });
-
-  const [isActiveSectionOpen, setIsActiveSectionOpen] = useState(true);
-  const [isCompletedSectionOpen, setIsCompletedSectionOpen] = useState(true);
-
-  const questList = useMemo(() => buildQuestList(quests, showHidden), [showHidden]);
-
-  const visibleByTree = useMemo(
-    () => questList.filter((quest) => isQuestVisible(quest, quests, openQuestIds)),
-    [questList, openQuestIds]
-  );
-
-  const activeQuests = useMemo(
-    () => visibleByTree.filter((quest) => quest.status !== "completed"),
-    [visibleByTree]
-  );
-
-  const completedQuests = useMemo(
-    () => questList.filter((quest) => quest.status === "completed"),
-    [questList]
-  );
-
-  function toggleQuest(questId: string) {
-    setOpenQuestIds((prev) => ({
-      ...prev,
-      [questId]: !prev[questId],
-    }));
-  }
-
-  return (
-    <section>
-      <div style={{ marginBottom: "1.5rem" }}>
-        <p style={{ opacity: 0.8 }}>
-          Seguimiento del progreso de las quests principales, de facción y personales.
-        </p>
-      </div>
-
-      <div style={{ display: "grid", gap: "2rem" }}>
-        <section>
-          <SectionToggle
-            title="Quests activas"
-            count={activeQuests.length}
-            isOpen={isActiveSectionOpen}
-            onToggle={() => setIsActiveSectionOpen((prev) => !prev)}
-          />
-
-          {isActiveSectionOpen ? (
-            <div style={{ marginTop: "1rem" }}>
-              {activeQuests.length === 0 ? (
-                <p style={{ opacity: 0.7 }}>No hay quests activas por ahora.</p>
-              ) : (
-                <div className={styles.questList}>
-                  {activeQuests.map((quest) =>
-                    renderQuestCard(quest, quests, openQuestIds, toggleQuest)
-                  )}
-                </div>
+              <h3 className={styles.title}>{quest.title}</h3>
+              {(quest.subtitle || quest.summary) && (
+                <p className={styles.summary}>{quest.subtitle || quest.summary}</p>
               )}
-            </div>
-          ) : null}
-        </section>
 
-        <section>
-          <SectionToggle
-            title="Quests completadas"
-            count={completedQuests.length}
-            isOpen={isCompletedSectionOpen}
-            onToggle={() => setIsCompletedSectionOpen((prev) => !prev)}
-          />
-
-          {isCompletedSectionOpen ? (
-            <div style={{ marginTop: "1rem" }}>
-              {completedQuests.length === 0 ? (
-                <p style={{ opacity: 0.7 }}>Aún no hay quests completadas.</p>
-              ) : (
-                <div className={styles.questList}>
-                  {completedQuests.map((quest) =>
-                    renderQuestCard(quest, quests, openQuestIds, toggleQuest)
-                  )}
-                </div>
-              )}
-            </div>
-          ) : null}
-        </section>
+              <div className={styles.progressMeta}>
+                <span>Progreso</span>
+                <span>{counter ? `${percent}% · ${counter}` : `${percent}%`}</span>
+              </div>
+              <div
+                className={styles.progressTrack}
+                role="progressbar"
+                aria-label={`Progreso de ${quest.title}`}
+                aria-valuemin={0}
+                aria-valuemax={100}
+                aria-valuenow={percent}
+              >
+                <span className={styles.progressFill} style={{width: `${percent}%`}} />
+              </div>
+            </article>
+          );
+        })}
       </div>
+
+      <Link className={styles.allLink} to="/quests">
+        Ver todas las quests activas <span aria-hidden="true">→</span>
+      </Link>
     </section>
   );
 }
