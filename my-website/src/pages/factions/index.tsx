@@ -7,13 +7,12 @@ import {
   NO_REALM_GROUP_ID,
   compareRealmGroups,
   sortFactionsByPriority,
+  sortByExplicitOrderThenTitle,
 } from "@site/src/utils/directoryOrdering";
 import styles from "../characters/styles.module.css";
 
 import {
   factionList,
-  getFactionBase,
-  getFactionLeader,
   getFactionMembers,
   getLocationById,
   type Faction,
@@ -27,35 +26,13 @@ type FactionGroup = {
   factions: Faction[];
 };
 
+const PARTY_GROUP_ID = "__parties__";
+
 const REGION_DOC_PATHS: Record<string, string> = {
   hyberia: "/world/realms/hyberia",
   jeyperia: "/world/realms/jeyperia",
   sylmorien: "/world/realms/sylmorien",
   yggdrasil: "/world/realms/ygdrassil",
-};
-
-const factionTypeLabels: Record<string, string> = {
-  academy: "Academia",
-  alliance: "Alianza",
-  clan: "Clan",
-  enemy: "Enemigos",
-  guild: "Gremio",
-  kingdom: "Reino",
-  order: "Orden",
-  other: "Otra",
-  pack: "Manada",
-  party: "Party",
-  pirates: "Piratas",
-};
-
-const factionStatusLabels: Record<string, string> = {
-  active: "Activa",
-  archived: "Archivada",
-  disbanded: "Disuelta",
-  destroyed: "Destruida",
-  hidden: "Archivada",
-  inactive: "Inactiva",
-  unknown: "Estado desconocido",
 };
 
 function isArchivedFaction(faction: Faction) {
@@ -72,6 +49,10 @@ function normalizeRealmId(realm?: string | null) {
 }
 
 function getFactionRealm(faction: Faction) {
+  if (faction.type === "party") {
+    return { id: PARTY_GROUP_ID, title: "Parties", region: undefined };
+  }
+
   const normalizedRealm = normalizeRealmId(faction.realm);
   const realmId =
     !normalizedRealm ||
@@ -89,23 +70,6 @@ function getFactionRealm(faction: Faction) {
         : region?.title ?? faction.realm ?? realmId,
     region,
   };
-}
-
-function getFactionCaption(faction: Faction) {
-  const region = getLocationById(faction.regionId);
-  const base = getFactionBase(faction);
-  const leader = getFactionLeader(faction);
-  const place = faction.baseLabel ?? base?.title ?? region?.title ?? faction.realm;
-
-  if (leader?.title && place) {
-    return `${place} · Lidera ${leader.title}`;
-  }
-
-  if (place) {
-    return place;
-  }
-
-  return leader?.title ? `Lidera ${leader.title}` : "Sin sede registrada";
 }
 
 export default function FactionsPage() {
@@ -140,9 +104,15 @@ export default function FactionsPage() {
       .map(([id, group]) => ({
         id,
         ...group,
-        factions: sortFactionsByPriority(group.factions),
+        factions: id === PARTY_GROUP_ID
+          ? sortByExplicitOrderThenTitle(group.factions)
+          : sortFactionsByPriority(group.factions),
       }))
-      .sort(compareRealmGroups);
+      .sort((a, b) => {
+        if (a.id === PARTY_GROUP_ID) return -1;
+        if (b.id === PARTY_GROUP_ID) return 1;
+        return compareRealmGroups(a, b);
+      });
   }, [groupedFactions]);
 
   return (
@@ -174,15 +144,13 @@ export default function FactionsPage() {
               <details key={section.id} className={styles.section} open>
                 <summary className={styles.sectionHeader}>
                   <div className={styles.sectionHeading}>
-                    <div className={styles.sectionEyebrow}>Reino</div>
+                    <div className={styles.sectionEyebrow}>
+                      {section.id === PARTY_GROUP_ID ? "Aventureros" : "Reino"}
+                    </div>
                     <Heading as="h2" className={styles.sectionTitle}>
                       {sectionTitle}
                       <span className={styles.count}>{section.factions.length}</span>
                     </Heading>
-                    <p className={styles.sectionDescription}>
-                      {section.region?.summary ??
-                        `Facciones vinculadas a ${sectionTitle}.`}
-                    </p>
                   </div>
 
                   <div className={styles.sectionActions}>
@@ -209,12 +177,6 @@ export default function FactionsPage() {
                         : undefined;
                       const memberCount = getFactionMembers(faction.id).length;
                       const isDestroyed = faction.status === "destroyed";
-                      const captionText = getFactionCaption(faction);
-                      const typeLabel = faction.type
-                        ? factionTypeLabels[faction.type] ?? faction.type
-                        : "Facción";
-                      const statusLabel =
-                        factionStatusLabels[faction.status] ?? faction.status;
 
                       return (
                         <Link
@@ -261,22 +223,14 @@ export default function FactionsPage() {
                                   {faction.subtitle}
                                 </div>
                               ) : null}
-                              <div
-                                className={styles.classList}
-                                aria-label="Tipo y estado"
-                              >
-                                <span className={styles.classEntry}>
-                                  <strong>{typeLabel}</strong>
-                                  <span>{statusLabel}</span>
-                                </span>
-                                {memberCount > 0 ? (
+                              {memberCount > 0 ? (
+                                <div className={styles.classList} aria-label="Miembros">
                                   <span className={styles.classEntry}>
                                     <strong>{memberCount}</strong>
                                     <span>{memberCount === 1 ? "miembro" : "miembros"}</span>
                                   </span>
-                                ) : null}
-                              </div>
-                              <div className={styles.caption}>{captionText}</div>
+                                </div>
+                              ) : null}
                             </div>
                           </article>
                         </Link>

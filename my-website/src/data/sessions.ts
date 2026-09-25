@@ -32,6 +32,13 @@ const compactDateFormatter = new Intl.DateTimeFormat("es-MX", {
   timeZone: "UTC",
 });
 
+const longDateFormatter = new Intl.DateTimeFormat("es-MX", {
+  day: "numeric",
+  month: "long",
+  year: "numeric",
+  timeZone: "UTC",
+});
+
 export function formatSessionDate(date: string) {
   const parsedDate = new Date(`${date}T00:00:00Z`);
 
@@ -43,8 +50,21 @@ export function formatSessionDate(date: string) {
     .toLocaleUpperCase("es-MX");
 }
 
+export function formatSessionDateLong(date: string) {
+  const parsedDate = new Date(`${date}T00:00:00Z`);
+
+  if (Number.isNaN(parsedDate.getTime())) return date;
+
+  return longDateFormatter.format(parsedDate);
+}
+
 export function getSessionHref(session: Session) {
-  return `/campaign/sessions/${String(session.number).padStart(2, "0")}`;
+  const idSlug = session.id.startsWith("session-")
+    ? session.id.slice("session-".length)
+    : undefined;
+  const numberSlug = String(session.number).padStart(2, "0").replace(".", "-");
+
+  return `/campaign/sessions/${idSlug || numberSlug}`;
 }
 
 export function getSessionLocations(session: Session) {
@@ -70,9 +90,26 @@ export function getSessionCover(session: Session) {
   return session.imageSrc;
 }
 
+/** Resolves a docs ID such as campaign/sessions/01 without copying session data to MDX. */
+export function getSessionByDocId(docId: string) {
+  const docSlug = docId.split("/").at(-1);
+  if (!docSlug) return undefined;
+
+  return sessionList.find((session) =>
+    session.id === `session-${docSlug}` || getSessionHref(session).endsWith(`/${docSlug}`),
+  );
+}
+
 /** Campaign appearances are always derived from Session -> characterIds. */
 export function getSessionsByCharacterId(characterId: string, list: Session[] = sessionList) {
   return list
     .filter((session) => session.characterIds?.includes(characterId))
+    .sort((a, b) => a.number - b.number);
+}
+
+/** Location appearances are derived from Session -> locationIds. */
+export function getSessionsByLocationId(locationId: string, list: Session[] = sessionList) {
+  return list
+    .filter((session) => session.locationIds?.includes(locationId))
     .sort((a, b) => a.number - b.number);
 }

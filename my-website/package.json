@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "docusaurus": "docusaurus",
-    "start": "docusaurus start",
-    "build": "docusaurus build",
+    "docusaurus": "node --require ./scripts/limit-file-reads.cjs node_modules/@docusaurus/core/bin/docusaurus.mjs",
+    "start": "npm run docusaurus -- start",
+    "build": "npm run docusaurus -- build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",

@@ -5,31 +5,15 @@ const sidebars: SidebarsConfig = {
     'start-here',
 
     {
-      type: 'category',
+      type: 'link',
       label: 'Personajes',
-      collapsed: false,
-      items: [
-        {
-          type: 'link',
-          label: 'Directorio de personajes',
-          href: '/characters',
-        },
-        // opcional: atajos a cosas “top”
-        // { type: 'doc', id: 'characters/party/index', label: 'Party' },
-      ],
+      href: '/characters',
     },
 
     {
-      type: 'category',
+      type: 'link',
       label: 'Cosmología',
-      collapsed: true,
-      items: [
-        {
-          type: 'link',
-          label: 'Directorio cosmológico',
-          href: '/cosmology',
-        },
-      ],
+      href: '/cosmology',
     },
 
     {
@@ -74,7 +58,24 @@ const sidebars: SidebarsConfig = {
               href: '/sessions',
             },
             'campaign/sessions/01',
-            // cuando tengas más: 'campaign/sessions/02', etc.
+            'campaign/sessions/02',
+            'campaign/sessions/03',
+            'campaign/sessions/04',
+            'campaign/sessions/05',
+            'campaign/sessions/06',
+            'campaign/sessions/07',
+            'campaign/sessions/08',
+            'campaign/sessions/09',
+            'campaign/sessions/10',
+            'campaign/sessions/11',
+            'campaign/sessions/11-5',
+            'campaign/sessions/12',
+            'campaign/sessions/13',
+            'campaign/sessions/14',
+            'campaign/sessions/14-5',
+            'campaign/sessions/15',
+            'campaign/sessions/16',
+            'campaign/sessions/17',
           ],
         },
         {
@@ -89,18 +90,9 @@ const sidebars: SidebarsConfig = {
     },
 
     {
-      type: 'category',
+      type: 'link',
       label: 'Facciones',
-      collapsed: true,
-      items: [
-        {
-          type: 'link',
-          label: 'Directorio de facciones',
-          href: '/factions',
-        },
-        'factions/lobos-perdidos',
-        // agrega más docs de facciones aquí
-      ],
+      href: '/factions',
     },
 
     {

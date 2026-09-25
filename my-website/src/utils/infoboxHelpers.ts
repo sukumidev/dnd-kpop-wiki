@@ -75,7 +75,6 @@ export function makeCharacterSections(input: CharacterInfoboxInput): Section[] {
   const s1 = section('Identidad', [
     row('Rol', input.role),
     row('Estado', input.status),
-    row('Edad', input.age),
     row('Cumpleaños', input.birthday),
     row('Signo', input.zodiac),
     row('MBTI', input.mbti),
@@ -120,7 +119,9 @@ export function makeCharacterSections(input: CharacterInfoboxInput): Section[] {
   // Tip: si ya mostramos nivel en Perfil, Combate podría repetirse.
   // cleanSections() quitará secciones vacías, pero no elimina duplicados.
   // Para evitar duplicado visual, puedes comentar s4 si no lo quieres.
-  return cleanSections([s1, sProfile, s2, s3]);
+  // Oculto temporalmente; cambiar a true para volver a mostrar la sección.
+  const showOriginAndWhereabouts = false;
+  return cleanSections([s1, sProfile, showOriginAndWhereabouts ? s2 : null, s3]);
 }
 
 /* -------------------------
@@ -242,6 +243,12 @@ export function makeLocationSections(input: LocationInfoboxInput): Section[] {
 -------------------------- */
 
 export type FactionInfoboxInput = {
+  name?: string;
+  origin?: string;
+  knownMembers?: string;
+  affiliation?: string;
+  activityArea?: string;
+  status?: string;
   type?: string; // Facción / Gremio / Orden / Manada...
   reputation?: string; // Proscritos, venerados...
   base?: React.ReactNode; // base principal (linkable)
@@ -257,10 +264,14 @@ export type FactionInfoboxInput = {
 
 export function makeFactionSections(input: FactionInfoboxInput): Section[] {
   const s1 = section('Resumen', [
+    row('Nombre', input.name),
     row('Tipo', input.type),
+    row('Origen', input.origin),
+    row('Estado', input.status),
     row('Reputación', input.reputation),
-    row('Base', input.base),
+    row('Base principal', input.base),
     row('Territorio', input.realm),
+    row('Área de actividad', input.activityArea),
   ]);
 
   const s2 = section('Agenda', [
@@ -269,7 +280,9 @@ export function makeFactionSections(input: FactionInfoboxInput): Section[] {
   ]);
 
   const s3 = section('Liderazgo', [
-    row('Líder', input.leader),
+    row('Liderazgo', input.leader),
+    row('Miembros conocidos', input.knownMembers),
+    row('Afiliación', input.affiliation),
     row('Aliados', input.allies),
     row('Rivales', input.rivals),
   ]);

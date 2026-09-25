@@ -392,17 +392,23 @@ export function factionJsonToSections(data: any): Section[] {
   const rivalIds = data.rivalFactionIds ?? data.enemyFactionIds ?? [];
 
   return makeFactionSections({
-    type: data.type,
+    name: data.name,
+    type: data.typeLabel ?? data.type,
+    origin: data.origin,
+    knownMembers: data.knownMembers,
+    affiliation: data.affiliation,
+    activityArea: data.activityArea,
+    status: data.statusLabel ?? ({ active: 'Activo', inactive: 'Inactivo', destroyed: 'Destruida', disbanded: 'Disuelta', hidden: 'Oculta', unknown: 'Desconocido' }[data.status as string]),
     reputation: data.reputation,
-    base: base?.title ?? data.baseLabel ?? data.baseLocationId,
-    realm: region?.title ?? data.regionId,
+    base: data.baseLabel ?? base?.title ?? data.baseLocationId,
+    realm: data.origin ? undefined : region?.title ?? data.regionId,
     goal: data.goal,
     methods: data.methods,
     leader: leader
-      ? renderDocLink(leader.title, getCharacterDocPath(leader))
-      : data.leaderCharacterId
+      ? renderDocLink(data.leaderLabel ?? leader.title, getCharacterDocPath(leader))
+      : data.leaderLabel ?? (data.leaderCharacterId
         ? 'Lider desconocido'
-        : undefined,
+        : undefined),
     allies: renderDelimitedValues(
       allyIds.map((id: string) => getFactionById(id)?.title ?? id),
     ),

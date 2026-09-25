@@ -38,6 +38,15 @@ export type Faction = {
   id: string;
   title: string;
 
+  name?: string;
+  typeLabel?: string;
+  origin?: string;
+  leaderLabel?: string;
+  knownMembers?: string;
+  affiliation?: string;
+  activityArea?: string;
+  statusLabel?: string;
+
   subtitle?: string | null;
   type?: FactionType | string | null;
   status: FactionStatus;

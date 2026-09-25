@@ -5,6 +5,7 @@ import {DocsSidebarProvider} from '@docusaurus/plugin-content-docs/client';
 import {useLocation} from '@docusaurus/router';
 import type {PropSidebar} from '@docusaurus/plugin-content-docs';
 import SidebarRail from './SidebarRail';
+import {getSessionHref, sessionList} from '@site/src/data/sessions';
 import styles from './WikiSidebarPageLayout.module.css';
 
 const link = (label: string, href: string) => ({
@@ -29,8 +30,8 @@ const category = (
 // part of the docs route tree, so Docusaurus does not provide sidebar props.
 const wikiSidebar: PropSidebar = [
   link('Start Here', '/'),
-  category('Personajes', [link('Directorio de personajes', '/characters')], false),
-  category('Cosmología', [link('Directorio cosmológico', '/cosmology')]),
+  link('Personajes', '/characters'),
+  link('Cosmología', '/cosmology'),
   category('World', [
     category('Realms', [
       link('Hyberia', '/world/realms/hyberia'),
@@ -44,14 +45,13 @@ const wikiSidebar: PropSidebar = [
   category('Campaign', [
     category('Sessions', [
       link('Crónica de sesiones', '/sessions'),
-      link('Sesión 01', '/campaign/sessions/01'),
+      ...sessionList.map((session) =>
+        link(`Sesión ${String(session.number).padStart(2, '0')}`, getSessionHref(session)),
+      ),
     ]),
     category('Arcs', [link('Acto 1', '/campaign/arcs/acto-1')]),
   ]),
-  category('Facciones', [
-    link('Directorio de facciones', '/factions'),
-    link('Los Lobos Perdidos', '/factions/lobos-perdidos'),
-  ]),
+  link('Facciones', '/factions'),
   link('Documentos', '/documents'),
   category('Mecánicas', [link('Índice general', '/mechanics/')]),
   category('Sistemas y Objetos', [link('Deck of Fate', '/systems/deck-of-fate')]),

@@ -6,7 +6,6 @@ import WikiSidebarPageLayout from "@site/src/components/WikiSidebarPageLayout";
 import {getStatblock} from "@site/src/data/statblocks";
 import {mythicCharacterIds} from "@site/src/data/cosmology";
 import {
-  FEATURED_CHARACTER_FACTION_ID,
   NO_REALM_GROUP_ID,
   compareFactionsByPriority,
   compareRealmGroups,
@@ -16,6 +15,7 @@ import styles from "./styles.module.css";
 
 import {
   characterList,
+  factionList,
   getCharacterDocPath,
   getFactionById,
   getLocationById,
@@ -38,17 +38,6 @@ type RealmSection = {
 
 const NO_FACTION_GROUP_ID = "__no-faction__";
 
-function getCharacterCaption(character: Character) {
-  const faction = getFactionById(character.factionId);
-  const region = getLocationById(character.regionId);
-
-  if (faction?.title && region?.title) {
-    return `${faction.title} — ${region.title}`;
-  }
-
-  return faction?.title ?? region?.title ?? "Otros";
-}
-
 export default function CharactersPage() {
   const {withBaseUrl} = useBaseUrlUtils();
 
@@ -57,24 +46,28 @@ export default function CharactersPage() {
     [],
   );
 
-  const featuredCharacters = useMemo(() => {
+  const partyGroups = useMemo(() => {
     return sortByExplicitOrderThenTitle(
-      directoryCharacters.filter(
-        (character) => character.factionId === FEATURED_CHARACTER_FACTION_ID,
+      factionList.filter((faction) => faction.type === "party"),
+    ).map((faction) => ({
+      faction,
+      characters: sortByExplicitOrderThenTitle(
+        directoryCharacters.filter((character) => character.factionId === faction.id),
       ),
-    );
+    })).filter((group) => group.characters.length > 0);
   }, [directoryCharacters]);
-
-  const featuredFaction = getFactionById(FEATURED_CHARACTER_FACTION_ID);
 
   const realmSections = useMemo(() => {
     const realms = new Map<string, Map<string, CharacterGroup>>();
 
     for (const character of directoryCharacters) {
-      if (character.factionId === FEATURED_CHARACTER_FACTION_ID) continue;
-
-      const realmId = character.regionId ?? NO_REALM_GROUP_ID;
       const faction = getFactionById(character.factionId);
+      if (faction?.type === "party") continue;
+
+      const assignedRealm = faction?.realm ?? faction?.regionId ?? character.regionId;
+      const realmId = !assignedRealm || ["sin-reino", "no-aplica"].includes(assignedRealm)
+        ? NO_REALM_GROUP_ID
+        : assignedRealm;
       const factionGroupId = faction?.id ?? NO_FACTION_GROUP_ID;
       const realmGroups = realms.get(realmId) ?? new Map<string, CharacterGroup>();
       const group = realmGroups.get(factionGroupId) ?? {
@@ -126,7 +119,6 @@ export default function CharactersPage() {
             : undefined;
           const docPath = getCharacterDocPath(character);
           const isDeceased = character.status === "dead";
-          const captionText = getCharacterCaption(character);
           const classEntries = getStatblock(character.id)?.classes ?? [];
 
           return (
@@ -181,7 +173,6 @@ export default function CharactersPage() {
                       ))}
                     </div>
                   ) : null}
-                  <div className={styles.caption}>{captionText}</div>
                 </div>
               </article>
             </Link>
@@ -212,20 +203,17 @@ export default function CharactersPage() {
             </div>
           </header>
 
-          {featuredCharacters.length ? (
-            <details className={styles.section} open>
+          {partyGroups.map(({faction: featuredFaction, characters: featuredCharacters}) => (
+            <details key={featuredFaction.id} className={styles.section} open>
               <summary className={styles.sectionHeader}>
                 <div className={styles.sectionHeading}>
                   <div className={styles.sectionEyebrow}>
-                    {featuredFaction?.subtitle ?? featuredFaction?.type}
+                    Party
                   </div>
                   <Heading as="h2" className={styles.sectionTitle}>
-                    {featuredFaction?.title ?? FEATURED_CHARACTER_FACTION_ID}
+                    {featuredFaction.title}
                     <span className={styles.count}>{featuredCharacters.length}</span>
                   </Heading>
-                  <p className={styles.sectionDescription}>
-                    {featuredFaction?.summary ?? featuredFaction?.description}
-                  </p>
                 </div>
                 <div className={styles.sectionActions}>
                   {featuredFaction ? (
@@ -235,7 +223,7 @@ export default function CharactersPage() {
                       onClick={(event) => event.stopPropagation()}
                       onMouseDown={(event) => event.stopPropagation()}
                     >
-                      Ver facción <span className={styles.arrow}>→</span>
+                      Ver party <span className={styles.arrow}>→</span>
                     </Link>
                   ) : null}
                   <span className={styles.chevron} aria-hidden="true" />
@@ -245,7 +233,7 @@ export default function CharactersPage() {
                 {renderCharacterGrid(featuredCharacters)}
               </div>
             </details>
-          ) : null}
+          ))}
 
           {realmSections.map((realm) => (
             <details key={realm.id} className={styles.section} open>
@@ -274,12 +262,6 @@ export default function CharactersPage() {
                             {title}
                             <span className={styles.count}>{group.characters.length}</span>
                           </Heading>
-                          <p className={styles.factionGroupDescription}>
-                            {group.faction?.summary ??
-                              (group.faction
-                                ? `Personajes vinculados a ${group.faction.title}.`
-                                : "Personajes sin una facción registrada válida.")}
-                          </p>
                         </div>
                         {group.faction ? (
                           <Link

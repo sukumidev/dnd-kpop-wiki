@@ -52,7 +52,17 @@ const config: Config = {
     ],
   ],
 
-  plugins: [],
+  plugins: [
+    ['@docusaurus/plugin-client-redirects', {
+      redirects: [
+        {from: '/factions/los-diecisiete-heroes', to: '/factions/svt'},
+        {from: '/factions/neo-culturales-tecnologicos', to: '/factions/nct'},
+        {from: '/factions/lobos-perdidos', to: '/factions/skz'},
+        {from: '/factions/hijos-de-la-noche', to: '/factions/enhypen'},
+        {from: '/factions/marea-negra', to: '/factions/ateez'},
+      ],
+    }],
+  ],
 
   themes: [
     [

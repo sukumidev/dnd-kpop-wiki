@@ -2,848 +2,1382 @@
   "pc-minjae": {
     "id": "pc-minjae",
     "classes": [
-      { "name": "Paladin", "level": 4, "subclass": "Oath of Devotion" }
+      {
+        "name": "Paladin",
+        "level": 6,
+        "subclass": "Oath of Devotion"
+      }
     ],
     "race": "Half-Elf",
     "alignment": "Neutral Good",
-    "proficiencyBonus": 2,
+    "proficiencyBonus": 3,
     "initiative": 4,
     "ac": 19,
-    "hp": 36,
+    "hp": 68,
     "speed": "30 ft",
-    "passivePerception": 11,
-    "str": 17,
-    "dex": 14,
-    "con": 15,
-    "int": 12,
-    "wis": 8,
-    "cha": 15,
+    "passivePerception": 14,
+    "str": 18,
+    "dex": 13,
+    "con": 16,
+    "int": 8,
+    "wis": 12,
+    "cha": 14,
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": [
+      "Magical Sleep"
+    ]
+  },
+  "svt-scoups": {
+    "id": "svt-scoups",
+    "classes": [
+      {
+        "name": "Paladin",
+        "level": 6,
+        "subclass": "Oath of the Ancients"
+      }
+    ],
+    "race": "Human",
+    "alignment": "Lawful Good",
+    "proficiencyBonus": 3,
+    "initiative": 0,
+    "ac": 20,
+    "hp": 49,
+    "speed": "30 ft",
+    "passivePerception": 14,
+    "str": 18,
+    "dex": 10,
+    "con": 16,
+    "int": 10,
+    "wis": 12,
+    "cha": 16,
+    "savingThrows": {
+      "str": 3,
+      "dex": 0,
+      "con": 0,
+      "int": 0,
+      "wis": 4,
+      "cha": 5
+    },
     "resistances": [],
     "vulnerability": [],
     "immunity": []
   },
-  "svt-scoups": {
-  "id": "svt-scoups",
-  "classes": [
-    { "name": "Paladin", "level": 5, "subclass": "Oath of the Ancients" }
-  ],
-  "race": "Human",
-  "alignment": "Lawful Good",
-  "proficiencyBonus": 3,
-  "initiative": 3,
-  "ac": 18,
-  "hp": 44,
-  "speed": "30 ft",
-  "passivePerception": 11,
-
-  "str": 17,
-  "dex": 10,
-  "con": 11,
-  "int": 10,
-  "wis": 12,
-  "cha": 15,
-
-  "savingThrows": {
-    "str": 3,
-    "dex": 0,
-    "con": 0,
-    "int": 0,
-    "wis": 4,
-    "cha": 5
-  },
-
-  "resistances": [],
-  "vulnerability": [],
-  "immunity": []
-},
-"svt-jeonghan": {
-  "id": "svt-jeonghan",
-  "classes": [
-    { "name": "Warlock", "level": 4, "subclass": "The Timeless Patron" }
-  ],
-  "race": "Human",
-  "alignment": "Chaotic Good",
-  "proficiencyBonus": 2,
-  "initiative": 0,
-  "ac": 10,
-  "hp": 39,
-  "speed": "30 ft",
-  "passivePerception": 13,
-
-  "str": 10,
-  "dex": 11,
-  "con": 14,
-  "int": 7,
-  "wis": 16,
-  "cha": 13,
-
-  "savingThrows": {
-    "str": 0,
-    "dex": 0,
-    "con": 2,
-    "int": -2,
-    "wis": 5,
-    "cha": 3
-  },
-
-  "resistances": [],
-  "vulnerability": [],
-  "immunity": []
-},
-"svt-joshua": {
-  "id": "svt-joshua",
-  "classes": [
-    { "name": "Bard", "level": 4, "subclass": "College of Valor" }
-  ],
-  "race": "Human",
-  "alignment": "Neutral Good",
-  "proficiencyBonus": 2,
-  "initiative": 3,
-  "ac": 13,
-  "hp": 23,
-  "speed": "30 ft",
-  "passivePerception": 16,
-
-  "str": 11,
-  "dex": 16,
-  "con": 7,
-  "int": 12,
-  "wis": 14,
-  "cha": 18,
-
-  "savingThrows": {
-    "str": 0,
-    "dex": 5,
-    "con": -2,
-    "int": 1,
-    "wis": 2,
-    "cha": 6
-  },
-
-  "resistances": [],
-  "vulnerability": [],
-  "immunity": []
-},
-"svt-jun": {
-  "id": "svt-jun",
-  "classes": [
-    { "name": "Ranger", "level": 4, "subclass": "Swarmkeeper" }
-  ],
-  "race": "Human",
-  "alignment": "Chaotic Neutral",
-  "proficiencyBonus": 2,
-  "initiative": 1,
-  "ac": 11,
-  "hp": 40,
-  "speed": "30 ft",
-  "passivePerception": 15,
-
-  "str": 10,
-  "dex": 12,
-  "con": 13,
-  "int": 11,
-  "wis": 12,
-  "cha": 8,
-
-  "savingThrows": {
-    "str": 2,
-    "dex": 3,
-    "con": 1,
-    "int": 0,
-    "wis": 1,
-    "cha": -1
-  },
-
-  "resistances": [],
-  "vulnerability": [],
-  "immunity": []
-},
-"svt-hoshi": {
-  "id": "svt-hoshi",
-  "classes": [
-    { "name": "Druid", "level": 4, "subclass": "Circle of the Moon" }
-  ],
-  "race": "Changeling",
-  "alignment": "Chaotic Good",
-  "proficiencyBonus": 2,
-  "initiative": 0,
-  "ac": 10,
-  "hp": 45,
-  "speed": "30 ft",
-  "passivePerception": 12,
-
-  "str": 11,
-  "dex": 10,
-  "con": 13,
-  "int": 13,
-  "wis": 15,
-  "cha": 12,
-
-  "savingThrows": {
-    "str": 0,
-    "dex": 0,
-    "con": 1,
-    "int": 3,
-    "wis": 4,
-    "cha": 1
-  },
-
-  "resistances": [],
-  "vulnerability": [],
-  "immunity": []
-},
-"svt-wonwoo": {
-  "id": "svt-wonwoo",
-  "classes": [
-    { "name": "Artificer", "level": 4, "subclass": "Battle Smith" }
-  ],
-  "race": "Human",
-  "alignment": "Lawful Neutral",
-  "proficiencyBonus": 2,
-  "initiative": 1,
-  "ac": 11,
-  "hp": 35,
-  "speed": "30 ft",
-  "passivePerception": 12,
-
-  "str": 13,
-  "dex": 13,
-  "con": 13,
-  "int": 16,
-  "wis": 15,
-  "cha": 10,
-
-  "savingThrows": {
-    "str": 1,
-    "dex": 1,
-    "con": 3,
-    "int": 5,
-    "wis": 2,
-    "cha": 0
-  },
-
-  "resistances": [],
-  "vulnerability": [],
-  "immunity": []
-},
-"svt-woozi": {
-  "id": "svt-woozi",
-  "classes": [
-    { "name": "Sorcerer", "level": 4, "subclass": "Wild Magic Sorcery" }
-  ],
-  "race": "Human",
-  "alignment": "Lawful Neutral",
-  "proficiencyBonus": 2,
-  "initiative": 1,
-  "ac": 11,
-  "hp": 34,
-  "speed": "30 ft",
-  "passivePerception": 13,
-
-  "str": 8,
-  "dex": 12,
-  "con": 14,
-  "int": 9,
-  "wis": 16,
-  "cha": 15,
-
-  "savingThrows": {
-    "str": -1,
-    "dex": 1,
-    "con": 4,
-    "int": -1,
-    "wis": 3,
-    "cha": 4
-  },
-
-  "resistances": [],
-  "vulnerability": [],
-  "immunity": []
-},
-"svt-dk": {
-  "id": "svt-dk",
-  "classes": [
-    { "name": "Cleric", "level": 4, "subclass": "Life Domain" }
-  ],
-  "race": "Human",
-  "alignment": "Chaotic Good",
-  "proficiencyBonus": 2,
-  "initiative": 1,
-  "ac": 11,
-  "hp": 39,
-  "speed": "30 ft",
-  "passivePerception": 11,
-
-  "str": 14,
-  "dex": 12,
-  "con": 15,
-  "int": 12,
-  "wis": 13,
-  "cha": 16,
-
-  "savingThrows": {
-    "str": 2,
-    "dex": 1,
-    "con": 2,
-    "int": 1,
-    "wis": 3,
-    "cha": 5
-  },
-
-  "resistances": [],
-  "vulnerability": [],
-  "immunity": []
-},
-"svt-minghao": {
-  "id": "svt-minghao",
-  "classes": [
-    { "name": "Fighter", "level": 4, "subclass": "Eldritch Knight" }
-  ],
-  "race": "Human",
-  "alignment": "True Neutral",
-  "proficiencyBonus": 2,
-  "initiative": 2,
-  "ac": 12,
-  "hp": 48,
-  "speed": "30 ft",
-  "passivePerception": 12,
-
-  "str": 19,
-  "dex": 14,
-  "con": 17,
-  "int": 13,
-  "wis": 14,
-  "cha": 13,
-
-  "savingThrows": {
-    "str": 6,
-    "dex": 2,
-    "con": 5,
-    "int": 1,
-    "wis": 2,
-    "cha": 1
-  },
-
-  "resistances": [],
-  "vulnerability": [],
-  "immunity": []
-},
-"svt-mingyu": {
-  "id": "svt-mingyu",
-  "classes": [
-    { "name": "Barbarian", "level": 4, "subclass": "Path of the Berserker" }
-  ],
-  "race": "Human",
-  "alignment": "Chaotic Good",
-  "proficiencyBonus": 2,
-  "initiative": 2,
-  "ac": 15,
-  "hp": 53,
-  "speed": "30 ft",
-  "passivePerception": 10,
-
-  "str": 19,
-  "dex": 15,
-  "con": 17,
-  "int": 10,
-  "wis": 11,
-  "cha": 11,
-
-  "savingThrows": {
-    "str": 6,
-    "dex": 2,
-    "con": 5,
-    "int": 0,
-    "wis": 0,
-    "cha": 0
-  },
-
-  "resistances": [],
-  "vulnerability": [],
-  "immunity": []
-},
-"svt-vernon": {
-  "id": "svt-vernon",
-  "classes": [
-    { "name": "Wizard", "level": 4, "subclass": "Evoker" }
-  ],
-  "race": "Human",
-  "alignment": "True Neutral",
-  "proficiencyBonus": 2,
-  "initiative": 0,
-  "ac": 10,
-  "hp": 38,
-  "speed": "30 ft",
-  "passivePerception": 14,
-
-  "str": 7,
-  "dex": 11,
-  "con": 16,
-  "int": 16,
-  "wis": 14,
-  "cha": 14,
-
-  "savingThrows": {
-    "str": -2,
-    "dex": 0,
-    "con": 3,
-    "int": 5,
-    "wis": 4,
-    "cha": 2
-  },
-
-  "resistances": [],
-  "vulnerability": [],
-  "immunity": []
-},
-"svt-seungkwan": {
-  "id": "svt-seungkwan",
-  "classes": [
-    { "name": "Monk", "level": 5, "subclass": "Way of Mercy" }
-  ],
-  "race": "Human",
-  "alignment": "Chaotic Good",
-  "proficiencyBonus": 3,
-  "initiative": 3,
-  "ac": 15,
-  "hp": 48,
-  "speed": "40 ft",
-  "passivePerception": 12,
-
-  "str": 13,
-  "dex": 16,
-  "con": 11,
-  "int": 8,
-  "wis": 15,
-  "cha": 9,
-
-  "savingThrows": {
-    "str": 4,
-    "dex": 6,
-    "con": 0,
-    "int": -1,
-    "wis": 2,
-    "cha": -1
-  },
-
-  "resistances": [],
-  "vulnerability": [],
-  "immunity": []
-},
-"svt-dino": {
-  "id": "svt-dino",
-  "classes": [
-    { "name": "Rogue", "level": 4, "subclass": "Thief" }
-  ],
-  "race": "Human",
-  "alignment": "Neutral Good",
-  "proficiencyBonus": 2,
-  "initiative": 5,
-  "ac": 13,
-  "hp": 35,
-  "speed": "30 ft",
-  "passivePerception": 13,
-
-  "str": 11,
-  "dex": 17,
-  "con": 13,
-  "int": 16,
-  "wis": 13,
-  "cha": 11,
-
-  "savingThrows": {
-    "str": 0,
-    "dex": 5,
-    "con": 1,
-    "int": 5,
-    "wis": 1,
-    "cha": 0
-  },
-
-  "resistances": [],
-  "vulnerability": [],
-  "immunity": []
-},
-"skz-bangchan": {
-  "id": "skz-bangchan",
-  "classes": [
-    { "name": "Fighter", "level": 11, "subclass": "Psi Warrior" }
-  ],
-  "race": "Human",
-  "alignment": "Lawful Good",
-  "proficiencyBonus": 4,
-  "initiative": 2,
-  "ac": 18,
-  "hp": 98,
-  "speed": "30 ft",
-  "passivePerception": 13,
-
-  "str": 18,
-  "dex": 14,
-  "con": 16,
-  "int": 14,
-  "wis": 12,
-  "cha": 13,
-
-  "savingThrows": {
+  "svt-jeonghan": {
+    "id": "svt-jeonghan",
+    "classes": [
+      {
+        "name": "Warlock",
+        "level": 6,
+        "subclass": "Vestige Patron"
+      }
+    ],
+    "race": "Human",
+    "alignment": "Chaotic Neutral",
+    "proficiencyBonus": 3,
+    "initiative": 2,
+    "ac": 14,
+    "hp": 38,
+    "speed": "30 ft",
+    "passivePerception": 11,
     "str": 8,
-    "dex": 2,
-    "con": 7,
-    "int": 2,
-    "wis": 1,
-    "cha": 1
+    "dex": 14,
+    "con": 14,
+    "int": 14,
+    "wis": 12,
+    "cha": 18,
+    "savingThrows": {
+      "str": 0,
+      "dex": 0,
+      "con": 2,
+      "int": -2,
+      "wis": 5,
+      "cha": 3
+    },
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": []
   },
-
-  "resistances": ["Psychic"],
-  "vulnerability": [],
-  "immunity": []
-},
-
-"skz-leeknow": {
-  "id": "skz-leeknow",
-  "classes": [
-    { "name": "Ranger", "level": 11, "subclass": "Beast Master" }
-  ],
-  "race": "Human",
-  "alignment": "Neutral Good",
-  "proficiencyBonus": 4,
-  "initiative": 4,
-  "ac": 16,
-  "hp": 92,
-  "speed": "30 ft",
-  "passivePerception": 16,
-
-  "str": 12,
-  "dex": 18,
-  "con": 14,
-  "int": 11,
-  "wis": 16,
-  "cha": 10,
-
-  "savingThrows": {
-    "str": 1,
-    "dex": 4,
-    "con": 2,
-    "int": 0,
-    "wis": 7,
-    "cha": 0
+  "svt-joshua": {
+    "id": "svt-joshua",
+    "classes": [
+      {
+        "name": "Bard",
+        "level": 6,
+        "subclass": "College of Valor"
+      }
+    ],
+    "race": "Human",
+    "alignment": "Neutral Good",
+    "proficiencyBonus": 3,
+    "initiative": 2,
+    "ac": 14,
+    "hp": 38,
+    "speed": "30 ft",
+    "passivePerception": 15,
+    "str": 8,
+    "dex": 14,
+    "con": 14,
+    "int": 12,
+    "wis": 14,
+    "cha": 18,
+    "savingThrows": {
+      "str": 0,
+      "dex": 5,
+      "con": -2,
+      "int": 1,
+      "wis": 2,
+      "cha": 6
+    },
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": []
   },
-
-  "resistances": [],
-  "vulnerability": [],
-  "immunity": []
-},
-
-"skz-hyunjin": {
-  "id": "skz-hyunjin",
-  "classes": [
-    { "name": "Fighter", "level": 11, "subclass": "Battle Master" }
-  ],
-  "race": "Human",
-  "alignment": "Chaotic Good",
-  "proficiencyBonus": 4,
-  "initiative": 4,
-  "ac": 17,
-  "hp": 95,
-  "speed": "30 ft",
-  "passivePerception": 12,
-
-  "str": 16,
-  "dex": 18,
-  "con": 14,
-  "int": 12,
-  "wis": 10,
-  "cha": 13,
-
-  "savingThrows": {
-    "str": 7,
-    "dex": 4,
-    "con": 6,
-    "int": 1,
-    "wis": 0,
-    "cha": 1
+  "svt-jun": {
+    "id": "svt-jun",
+    "classes": [
+      {
+        "name": "Ranger",
+        "level": 6,
+        "subclass": "Swarmkeeper"
+      }
+    ],
+    "race": "Human",
+    "alignment": "Neutral Good",
+    "proficiencyBonus": 3,
+    "initiative": 4,
+    "ac": 16,
+    "hp": 44,
+    "speed": "30 ft",
+    "passivePerception": 19,
+    "str": 12,
+    "dex": 18,
+    "con": 14,
+    "int": 12,
+    "wis": 16,
+    "cha": 10,
+    "savingThrows": {
+      "str": 2,
+      "dex": 3,
+      "con": 1,
+      "int": 0,
+      "wis": 1,
+      "cha": -1
+    },
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": []
   },
-
-  "resistances": [],
-  "vulnerability": [],
-  "immunity": []
-},
-
-"skz-felix": {
-  "id": "skz-felix",
-  "classes": [
-    { "name": "Monk", "level": 11, "subclass": "Way of the Astral Self" }
-  ],
-  "race": "Human",
-  "alignment": "Neutral Good",
-  "proficiencyBonus": 4,
-  "initiative": 5,
-  "ac": 18,
-  "hp": 88,
-  "speed": "50 ft",
-  "passivePerception": 15,
-
-  "str": 10,
-  "dex": 20,
-  "con": 14,
-  "int": 11,
-  "wis": 18,
-  "cha": 12,
-
-  "savingThrows": {
-    "str": 0,
-    "dex": 9,
-    "con": 2,
-    "int": 0,
-    "wis": 8,
-    "cha": 1
+  "svt-hoshi": {
+    "id": "svt-hoshi",
+    "classes": [
+      {
+        "name": "Druid",
+        "level": 6,
+        "subclass": "Circle of the Moon"
+      }
+    ],
+    "race": "Human",
+    "alignment": "Chaotic Good",
+    "proficiencyBonus": 3,
+    "initiative": 2,
+    "ac": 14,
+    "hp": 43,
+    "speed": "30 ft",
+    "passivePerception": 17,
+    "str": 12,
+    "dex": 14,
+    "con": 16,
+    "int": 10,
+    "wis": 18,
+    "cha": 12,
+    "savingThrows": {
+      "str": 0,
+      "dex": 0,
+      "con": 1,
+      "int": 3,
+      "wis": 4,
+      "cha": 1
+    },
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": []
   },
-
-  "resistances": [],
-  "vulnerability": [],
-  "immunity": []
-},
-"enha-jungwon": {
-  "id": "enha-jungwon",
-  "classes": [
-    { "name": "Cleric", "level": 9, "subclass": "Twilight Domain" }
-  ],
-  "race": "Human",
-  "alignment": "Lawful Neutral",
-  "proficiencyBonus": 4,
-  "initiative": 1,
-  "ac": 18,
-  "hp": 276,
-  "speed": "30 ft",
-  "passivePerception": 15,
-
-  "str": 12,
-  "dex": 12,
-  "con": 14,
-  "int": 11,
-  "wis": 18,
-  "cha": 14,
-
-  "savingThrows": {
-    "str": 1,
-    "dex": 1,
-    "con": 2,
-    "int": 0,
-    "wis": 8,
-    "cha": 6
+  "svt-wonwoo": {
+    "id": "svt-wonwoo",
+    "classes": [
+      {
+        "name": "Artificer",
+        "level": 6,
+        "subclass": "Armorer"
+      }
+    ],
+    "race": "Human",
+    "alignment": "Neutral Good",
+    "proficiencyBonus": 3,
+    "initiative": 2,
+    "ac": 20,
+    "hp": 43,
+    "speed": "30 ft",
+    "passivePerception": 11,
+    "str": 8,
+    "dex": 14,
+    "con": 16,
+    "int": 18,
+    "wis": 12,
+    "cha": 10,
+    "savingThrows": {
+      "str": 1,
+      "dex": 1,
+      "con": 3,
+      "int": 5,
+      "wis": 2,
+      "cha": 0
+    },
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": []
   },
-
-  "resistances": ["Radiant"],
-  "vulnerability": [],
-  "immunity": []
-},
-
-"enha-heeseung": {
-  "id": "enha-heeseung",
-  "classes": [
-    { "name": "Wizard", "level": 9, "subclass": "Necromancer" }
-  ],
-  "race": "Human",
-  "alignment": "Neutral Evil",
-  "proficiencyBonus": 4,
-  "initiative": 2,
-  "ac": 14,
-  "hp": 258,
-  "speed": "30 ft",
-  "passivePerception": 12,
-
-  "str": 8,
-  "dex": 14,
-  "con": 14,
-  "int": 18,
-  "wis": 12,
-  "cha": 13,
-
-  "savingThrows": {
-    "str": -1,
-    "dex": 2,
-    "con": 2,
+  "svt-woozi": {
+    "id": "svt-woozi",
+    "classes": [
+      {
+        "name": "Wizard",
+        "level": 6,
+        "subclass": "Order of the Scribes"
+      }
+    ],
+    "race": "Human",
+    "alignment": "Lawful Neutral",
+    "proficiencyBonus": 3,
+    "initiative": 2,
+    "ac": 15,
+    "hp": 32,
+    "speed": "30 ft",
+    "passivePerception": 16,
+    "str": 8,
+    "dex": 14,
+    "con": 14,
+    "int": 18,
+    "wis": 16,
+    "cha": 10,
+    "savingThrows": {
+      "str": -1,
+      "dex": 1,
+      "con": 4,
+      "int": -1,
+      "wis": 3,
+      "cha": 4
+    },
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "svt-dk": {
+    "id": "svt-dk",
+    "classes": [
+      {
+        "name": "Cleric",
+        "level": 6,
+        "subclass": "Light Domain"
+      }
+    ],
+    "race": "Human",
+    "alignment": "Lawful Good",
+    "proficiencyBonus": 3,
+    "initiative": 1,
+    "ac": 18,
+    "hp": 43,
+    "speed": "30 ft",
+    "passivePerception": 17,
+    "str": 12,
+    "dex": 12,
+    "con": 16,
+    "int": 10,
+    "wis": 18,
+    "cha": 14,
+    "savingThrows": {
+      "str": 2,
+      "dex": 1,
+      "con": 2,
+      "int": 1,
+      "wis": 3,
+      "cha": 5
+    },
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "svt-minghao": {
+    "id": "svt-minghao",
+    "classes": [
+      {
+        "name": "Fighter",
+        "level": 6,
+        "subclass": "Eldritch Knight"
+      }
+    ],
+    "race": "Human",
+    "alignment": "Neutral",
+    "proficiencyBonus": 3,
+    "initiative": 4,
+    "ac": 17,
+    "hp": 44,
+    "speed": "30 ft",
+    "passivePerception": 15,
+    "str": 10,
+    "dex": 18,
+    "con": 14,
+    "int": 16,
+    "wis": 14,
+    "cha": 12,
+    "savingThrows": {
+      "str": 6,
+      "dex": 2,
+      "con": 5,
+      "int": 1,
+      "wis": 2,
+      "cha": 1
+    },
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "svt-mingyu": {
+    "id": "svt-mingyu",
+    "classes": [
+      {
+        "name": "Barbarian",
+        "level": 6,
+        "subclass": "Path of the Berserker"
+      }
+    ],
+    "race": "Human",
+    "alignment": "Chaotic Good",
+    "proficiencyBonus": 3,
+    "initiative": 2,
+    "ac": 16,
+    "hp": 60,
+    "speed": "40 ft",
+    "passivePerception": 14,
+    "str": 20,
+    "dex": 14,
+    "con": 18,
     "int": 8,
-    "wis": 5,
-    "cha": 1
+    "wis": 12,
+    "cha": 10,
+    "savingThrows": {
+      "str": 6,
+      "dex": 2,
+      "con": 5,
+      "int": 0,
+      "wis": 0,
+      "cha": 0
+    },
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": []
   },
-
-  "resistances": ["Necrotic"],
-  "vulnerability": ["Radiant"],
-  "immunity": []
-},
-
-"enha-jay": {
-  "id": "enha-jay",
-  "classes": [
-    { "name": "Paladin", "level": 9, "subclass": "Oath of Vengeance" }
-  ],
-  "race": "Human",
-  "alignment": "Lawful Good",
-  "proficiencyBonus": 4,
-  "initiative": 0,
-  "ac": 19,
-  "hp": 289,
-  "speed": "30 ft",
-  "passivePerception": 12,
-
-  "str": 18,
-  "dex": 10,
-  "con": 16,
-  "int": 10,
-  "wis": 12,
-  "cha": 16,
-
-  "savingThrows": {
+  "svt-vernon": {
+    "id": "svt-vernon",
+    "classes": [
+      {
+        "name": "Sorcerer",
+        "level": 6,
+        "subclass": "Wild Magic Sorcery"
+      }
+    ],
+    "race": "Human",
+    "alignment": "Chaotic Neutral",
+    "proficiencyBonus": 3,
+    "initiative": 2,
+    "ac": 15,
+    "hp": 32,
+    "speed": "30 ft",
+    "passivePerception": 11,
     "str": 8,
-    "dex": 0,
-    "con": 3,
-    "int": 0,
-    "wis": 5,
-    "cha": 7
+    "dex": 14,
+    "con": 14,
+    "int": 12,
+    "wis": 12,
+    "cha": 18,
+    "savingThrows": {
+      "str": -2,
+      "dex": 0,
+      "con": 3,
+      "int": 5,
+      "wis": 4,
+      "cha": 2
+    },
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": []
   },
-
-  "resistances": [],
-  "vulnerability": ["Radiant"],
-  "immunity": []
-},
-
-"enha-sunghoon": {
-  "id": "enha-sunghoon",
-  "classes": [
-    { "name": "Fighter", "level": 9, "subclass": "Champion" }
-  ],
-  "race": "Human",
-  "alignment": "Neutral",
-  "proficiencyBonus": 4,
-  "initiative": 3,
-  "ac": 18,
-  "hp": 292,
-  "speed": "30 ft",
-  "passivePerception": 13,
-
-  "str": 18,
-  "dex": 16,
-  "con": 16,
-  "int": 10,
-  "wis": 12,
-  "cha": 11,
-
-  "savingThrows": {
+  "svt-seungkwan": {
+    "id": "svt-seungkwan",
+    "classes": [
+      {
+        "name": "Monk",
+        "level": 6,
+        "subclass": "Warrior of Mercy"
+      }
+    ],
+    "race": "Human",
+    "alignment": "Neutral Good",
+    "proficiencyBonus": 3,
+    "initiative": 4,
+    "ac": 17,
+    "hp": 38,
+    "speed": "40 ft",
+    "passivePerception": 16,
+    "str": 10,
+    "dex": 18,
+    "con": 14,
+    "int": 10,
+    "wis": 16,
+    "cha": 14,
+    "savingThrows": {
+      "str": 4,
+      "dex": 6,
+      "con": 0,
+      "int": -1,
+      "wis": 2,
+      "cha": -1
+    },
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "svt-dino": {
+    "id": "svt-dino",
+    "classes": [
+      {
+        "name": "Rogue",
+        "level": 6,
+        "subclass": "Thief"
+      }
+    ],
+    "race": "Human",
+    "alignment": "Chaotic Good",
+    "proficiencyBonus": 3,
+    "initiative": 4,
+    "ac": 16,
+    "hp": 38,
+    "speed": "30 ft",
+    "passivePerception": 17,
+    "str": 10,
+    "dex": 18,
+    "con": 14,
+    "int": 14,
+    "wis": 12,
+    "cha": 14,
+    "savingThrows": {
+      "str": 0,
+      "dex": 5,
+      "con": 1,
+      "int": 5,
+      "wis": 1,
+      "cha": 0
+    },
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "skz-bangchan": {
+    "id": "skz-bangchan",
+    "classes": [
+      {
+        "name": "Blood Hunter",
+        "level": 11,
+        "subclass": "Order of the Lycan"
+      }
+    ],
+    "race": "Werewolf",
+    "alignment": "Lawful Good",
+    "proficiencyBonus": 4,
+    "initiative": 2,
+    "ac": 18,
+    "hp": 114,
+    "speed": "30 ft",
+    "passivePerception": 17,
+    "str": 20,
+    "dex": 14,
+    "con": 18,
+    "int": 14,
+    "wis": 16,
+    "cha": 16,
+    "savingThrows": {
+      "str": 8,
+      "dex": 2,
+      "con": 7,
+      "int": 2,
+      "wis": 1,
+      "cha": 1
+    },
+    "resistances": [
+      "Bludgeoning, Piercing, and Slashing from Nonmagical Attacks not made with Silvered Weapons"
+    ],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "skz-leeknow": {
+    "id": "skz-leeknow",
+    "classes": [
+      {
+        "name": "Ranger",
+        "level": 11,
+        "subclass": "Beast Master"
+      }
+    ],
+    "race": "Werewolf",
+    "alignment": "Neutral Good",
+    "proficiencyBonus": 4,
+    "initiative": 5,
+    "ac": 17,
+    "hp": 103,
+    "speed": "35 ft",
+    "passivePerception": 22,
+    "str": 12,
+    "dex": 20,
+    "con": 16,
+    "int": 14,
+    "wis": 18,
+    "cha": 10,
+    "savingThrows": {
+      "str": 1,
+      "dex": 4,
+      "con": 2,
+      "int": 0,
+      "wis": 7,
+      "cha": 0
+    },
+    "resistances": [
+      "Bludgeoning, Piercing, and Slashing from Nonmagical Attacks not made with Silvered Weapons"
+    ],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "skz-hyunjin": {
+    "id": "skz-hyunjin",
+    "classes": [
+      {
+        "name": "Sorcerer",
+        "level": 11,
+        "subclass": "Shadow Magic"
+      }
+    ],
+    "race": "Werewolf",
+    "alignment": "Chaotic Good",
+    "proficiencyBonus": 4,
+    "initiative": 4,
+    "ac": 17,
+    "hp": 80,
+    "speed": "30 ft",
+    "passivePerception": 15,
     "str": 8,
-    "dex": 3,
-    "con": 7,
-    "int": 0,
-    "wis": 1,
-    "cha": 0
+    "dex": 18,
+    "con": 16,
+    "int": 14,
+    "wis": 12,
+    "cha": 20,
+    "savingThrows": {
+      "str": 7,
+      "dex": 4,
+      "con": 6,
+      "int": 1,
+      "wis": 0,
+      "cha": 1
+    },
+    "resistances": [
+      "Bludgeoning, Piercing, and Slashing from Nonmagical Attacks not made with Silvered Weapons"
+    ],
+    "vulnerability": [],
+    "immunity": []
   },
-
-  "resistances": [],
-  "vulnerability": ["Radiant"],
-  "immunity": []
-},
-"enha-niki": {
-  "id": "enha-niki",
-  "classes": [
-    { "name": "Monk", "level": 9, "subclass": "Warrior of Shadow" }
-  ],
-  "race": "Vampire",
-  "alignment": "Neutral",
-  "proficiencyBonus": 4,
-  "initiative": 5,
-  "ac": 16,
-  "hp": 275,
-  "speed": "45 ft",
-  "passivePerception": 11,
-
-  "str": 15,
-  "dex": 20,
-  "con": 16,
-  "int": 11,
-  "wis": 13,
-  "cha": 12,
-
-  "savingThrows": {
-    "str": 6,
-    "dex": 9,
-    "con": 3,
-    "int": 0,
-    "wis": 1,
-    "cha": 1
+  "skz-felix": {
+    "id": "skz-felix",
+    "classes": [
+      {
+        "name": "Cleric",
+        "level": 11,
+        "subclass": "Trickery Domain"
+      }
+    ],
+    "race": "Aasimar Werewolf",
+    "alignment": "Neutral Good",
+    "proficiencyBonus": 4,
+    "initiative": 2,
+    "ac": 19,
+    "hp": 91,
+    "speed": "30 ft",
+    "passivePerception": 19,
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 12,
+    "wis": 20,
+    "cha": 18,
+    "savingThrows": {
+      "str": 0,
+      "dex": 9,
+      "con": 2,
+      "int": 0,
+      "wis": 8,
+      "cha": 1
+    },
+    "resistances": [
+      "Necrotic",
+      "Radiant",
+      "Bludgeoning, Piercing, and Slashing from Nonmagical Attacks not made with Silvered Weapons"
+    ],
+    "vulnerability": [],
+    "immunity": []
   },
-
-  "resistances": ["Necrotic"],
-  "vulnerability": [],
-  "immunity": []
-},
-
-"enha-jake": {
-  "id": "enha-jake",
-  "classes": [
-    { "name": "Rogue", "level": 9, "subclass": "Phantom" }
-  ],
-  "race": "Vampire",
-  "alignment": "Chaotic Neutral",
-  "proficiencyBonus": 4,
-  "initiative": 7,
-  "ac": 20,
-  "hp": 257,
-  "speed": "30 ft",
-  "passivePerception": 15,
-
-  "str": 13,
-  "dex": 16,
-  "con": 12,
-  "int": 14,
-  "wis": 12,
-  "cha": 13,
-
-  "savingThrows": {
-    "str": 1,
-    "dex": 7,
-    "con": 1,
-    "int": 6,
-    "wis": 1,
-    "cha": 1
+  "enha-jungwon": {
+    "id": "enha-jungwon",
+    "classes": [
+      {
+        "name": "Cleric",
+        "level": 9,
+        "subclass": "Twilight Domain"
+      }
+    ],
+    "race": "Vampire",
+    "alignment": "Lawful Good",
+    "proficiencyBonus": 4,
+    "initiative": 2,
+    "ac": 19,
+    "hp": 291,
+    "speed": "30 ft",
+    "passivePerception": 19,
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 12,
+    "wis": 20,
+    "cha": 16,
+    "savingThrows": {
+      "str": 1,
+      "dex": 1,
+      "con": 2,
+      "int": 0,
+      "wis": 8,
+      "cha": 6
+    },
+    "resistances": [
+      "Necrotic",
+      "Bludgeoning, Piercing, and Slashing from Nonmagical Attacks"
+    ],
+    "vulnerability": [],
+    "immunity": []
   },
-
-  "resistances": ["Necrotic"],
-  "vulnerability": [],
-  "immunity": []
-},
-
-"enha-sunoo": {
-  "id": "enha-sunoo",
-  "classes": [
-    { "name": "Blood Hunter", "level": 9, "subclass": "Order of the Ghostslayer" }
-  ],
-  "race": "Vampire",
-  "alignment": "Neutral Evil",
-  "proficiencyBonus": 4,
-  "initiative": 3,
-  "ac": 13,
-  "hp": 276,
-  "speed": "30 ft",
-  "passivePerception": 10,
-
-  "str": 9,
-  "dex": 17,
-  "con": 14,
-  "int": 16,
-  "wis": 10,
-  "cha": 13,
-
-  "savingThrows": {
-    "str": -1,
-    "dex": 7,
-    "con": 2,
-    "int": 7,
-    "wis": 0,
-    "cha": 1
+  "enha-heeseung": {
+    "id": "enha-heeseung",
+    "classes": [
+      {
+        "name": "Wizard",
+        "level": 9,
+        "subclass": "Necromancer"
+      }
+    ],
+    "race": "Vampire",
+    "alignment": "True Neutral",
+    "proficiencyBonus": 4,
+    "initiative": 3,
+    "ac": 15,
+    "hp": 279,
+    "speed": "30 ft",
+    "passivePerception": 16,
+    "str": 8,
+    "dex": 16,
+    "con": 16,
+    "int": 20,
+    "wis": 14,
+    "cha": 12,
+    "savingThrows": {
+      "str": -1,
+      "dex": 2,
+      "con": 2,
+      "int": 8,
+      "wis": 5,
+      "cha": 1
+    },
+    "resistances": [
+      "Necrotic",
+      "Bludgeoning, Piercing, and Slashing from Nonmagical Attacks"
+    ],
+    "vulnerability": [],
+    "immunity": []
   },
-
-  "resistances": ["Necrotic"],
-  "vulnerability": [],
-  "immunity": []
-}
+  "enha-jay": {
+    "id": "enha-jay",
+    "classes": [
+      {
+        "name": "Blood Hunter",
+        "level": 9,
+        "subclass": "Order of the Profane Soul"
+      }
+    ],
+    "race": "Vampire",
+    "alignment": "Lawful Neutral",
+    "proficiencyBonus": 4,
+    "initiative": 2,
+    "ac": 19,
+    "hp": 303,
+    "speed": "30 ft",
+    "passivePerception": 11,
+    "str": 18,
+    "dex": 14,
+    "con": 16,
+    "int": 18,
+    "wis": 12,
+    "cha": 12,
+    "savingThrows": {
+      "str": 8,
+      "dex": 0,
+      "con": 3,
+      "int": 0,
+      "wis": 5,
+      "cha": 7
+    },
+    "resistances": [
+      "Necrotic",
+      "Bludgeoning, Piercing, and Slashing from Nonmagical Attacks"
+    ],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "enha-sunghoon": {
+    "id": "enha-sunghoon",
+    "classes": [
+      {
+        "name": "Fighter",
+        "level": 9,
+        "subclass": "Champion"
+      }
+    ],
+    "race": "Vampire",
+    "alignment": "Lawful Neutral",
+    "proficiencyBonus": 4,
+    "initiative": 2,
+    "ac": 20,
+    "hp": 314,
+    "speed": "30 ft",
+    "passivePerception": 15,
+    "str": 20,
+    "dex": 14,
+    "con": 18,
+    "int": 10,
+    "wis": 12,
+    "cha": 14,
+    "savingThrows": {
+      "str": 8,
+      "dex": 3,
+      "con": 7,
+      "int": 0,
+      "wis": 1,
+      "cha": 0
+    },
+    "resistances": [
+      "Necrotic",
+      "Bludgeoning, Piercing, and Slashing from Nonmagical Attacks"
+    ],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "enha-niki": {
+    "id": "enha-niki",
+    "classes": [
+      {
+        "name": "Monk",
+        "level": 9,
+        "subclass": "Warrior of Shadow"
+      }
+    ],
+    "race": "Vampire",
+    "alignment": "Chaotic Neutral",
+    "proficiencyBonus": 4,
+    "initiative": 5,
+    "ac": 18,
+    "hp": 291,
+    "speed": "50 ft",
+    "passivePerception": 18,
+    "str": 10,
+    "dex": 20,
+    "con": 16,
+    "int": 14,
+    "wis": 18,
+    "cha": 12,
+    "savingThrows": {
+      "str": 6,
+      "dex": 9,
+      "con": 3,
+      "int": 0,
+      "wis": 1,
+      "cha": 1
+    },
+    "resistances": [
+      "Necrotic",
+      "Bludgeoning, Piercing, and Slashing from Nonmagical Attacks"
+    ],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "enha-jake": {
+    "id": "enha-jake",
+    "classes": [
+      {
+        "name": "Rogue",
+        "level": 9,
+        "subclass": "Phantom"
+      }
+    ],
+    "race": "Vampire",
+    "alignment": "Chaotic Good",
+    "proficiencyBonus": 4,
+    "initiative": 5,
+    "ac": 17,
+    "hp": 291,
+    "speed": "30 ft",
+    "passivePerception": 21,
+    "str": 10,
+    "dex": 20,
+    "con": 16,
+    "int": 14,
+    "wis": 16,
+    "cha": 14,
+    "savingThrows": {
+      "str": 1,
+      "dex": 7,
+      "con": 1,
+      "int": 6,
+      "wis": 1,
+      "cha": 1
+    },
+    "resistances": [
+      "Necrotic",
+      "Bludgeoning, Piercing, and Slashing from Nonmagical Attacks"
+    ],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "enha-sunoo": {
+    "id": "enha-sunoo",
+    "classes": [
+      {
+        "name": "Blood Hunter",
+        "level": 9,
+        "subclass": "Order of the Ghostslayer"
+      }
+    ],
+    "race": "Vampire",
+    "alignment": "Neutral Good",
+    "proficiencyBonus": 4,
+    "initiative": 5,
+    "ac": 18,
+    "hp": 303,
+    "speed": "30 ft",
+    "passivePerception": 18,
+    "str": 10,
+    "dex": 20,
+    "con": 16,
+    "int": 18,
+    "wis": 14,
+    "cha": 12,
+    "savingThrows": {
+      "str": -1,
+      "dex": 7,
+      "con": 2,
+      "int": 7,
+      "wis": 0,
+      "cha": 1
+    },
+    "resistances": [
+      "Necrotic",
+      "Bludgeoning, Piercing, and Slashing from Nonmagical Attacks"
+    ],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "pc-kiyori": {
+    "id": "pc-kiyori",
+    "classes": [
+      {
+        "name": "Wizard",
+        "level": 6,
+        "subclass": "School of Divination"
+      }
+    ],
+    "race": "Tiefling",
+    "alignment": "Neutral Good",
+    "proficiencyBonus": 3,
+    "initiative": 2,
+    "ac": 12,
+    "hp": 50,
+    "speed": "30 ft",
+    "passivePerception": 13,
+    "str": 10,
+    "dex": 15,
+    "con": 19,
+    "int": 20,
+    "wis": 16,
+    "cha": 13,
+    "resistances": [
+      "Fire"
+    ],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "pc-imugi": {
+    "id": "pc-imugi",
+    "classes": [
+      {
+        "name": "Warlock",
+        "level": 6,
+        "subclass": "Great Old One Patron"
+      }
+    ],
+    "race": "Elf",
+    "alignment": "Chaotic Neutral",
+    "proficiencyBonus": 3,
+    "initiative": 1,
+    "ac": 12,
+    "hp": 57,
+    "speed": "30 ft",
+    "passivePerception": 13,
+    "str": 8,
+    "dex": 12,
+    "con": 19,
+    "int": 10,
+    "wis": 16,
+    "cha": 20,
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": [
+      "Magical Sleep"
+    ]
+  },
+  "pc-soobin": {
+    "id": "pc-soobin",
+    "classes": [
+      {
+        "name": "Monk",
+        "level": 6,
+        "subclass": "Way of the Open Hand"
+      }
+    ],
+    "race": "Wood Elf",
+    "alignment": "Neutral Good",
+    "proficiencyBonus": 3,
+    "initiative": 3,
+    "ac": 16,
+    "hp": 38,
+    "speed": "50 ft",
+    "passivePerception": 16,
+    "str": 13,
+    "dex": 17,
+    "con": 13,
+    "int": 13,
+    "wis": 17,
+    "cha": 12,
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": [
+      "Magical Sleep"
+    ]
+  },
+  "pc-kao": {
+    "id": "pc-kao",
+    "classes": [
+      {
+        "name": "Druid",
+        "level": 3,
+        "subclass": "Circle of Stars"
+      },
+      {
+        "name": "Bard",
+        "level": 3,
+        "subclass": "College of the Moon"
+      }
+    ],
+    "race": "Human",
+    "alignment": "Lawful Good",
+    "proficiencyBonus": 3,
+    "initiative": 5,
+    "ac": 15,
+    "hp": 39,
+    "speed": "30 ft",
+    "passivePerception": 14,
+    "str": 11,
+    "dex": 14,
+    "con": 13,
+    "int": 10,
+    "wis": 16,
+    "cha": 18,
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "skz-changbin": {
+    "id": "skz-changbin",
+    "classes": [
+      {
+        "name": "Barbarian",
+        "level": 11,
+        "subclass": "Path of the Beast"
+      }
+    ],
+    "race": "Werewolf",
+    "alignment": "Chaotic Good",
+    "proficiencyBonus": 4,
+    "initiative": 2,
+    "ac": 17,
+    "hp": 137,
+    "speed": "40 ft",
+    "passivePerception": 16,
+    "str": 20,
+    "dex": 14,
+    "con": 20,
+    "int": 8,
+    "wis": 14,
+    "cha": 12,
+    "resistances": [
+      "Bludgeoning, Piercing, and Slashing from Nonmagical Attacks not made with Silvered Weapons"
+    ],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "skz-han": {
+    "id": "skz-han",
+    "classes": [
+      {
+        "name": "Bard",
+        "level": 11,
+        "subclass": "College of Eloquence"
+      }
+    ],
+    "race": "Werewolf",
+    "alignment": "Chaotic Good",
+    "proficiencyBonus": 4,
+    "initiative": 3,
+    "ac": 15,
+    "hp": 80,
+    "speed": "30 ft",
+    "passivePerception": 16,
+    "str": 8,
+    "dex": 16,
+    "con": 14,
+    "int": 16,
+    "wis": 14,
+    "cha": 20,
+    "resistances": [
+      "Necrotic",
+      "Bludgeoning, Piercing, and Slashing from Nonmagical Attacks not made with Silvered Weapons"
+    ],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "skz-seungmin": {
+    "id": "skz-seungmin",
+    "classes": [
+      {
+        "name": "Rogue",
+        "level": 11,
+        "subclass": "Inquisitive"
+      }
+    ],
+    "race": "Werewolf",
+    "alignment": "Lawful Neutral",
+    "proficiencyBonus": 4,
+    "initiative": 5,
+    "ac": 17,
+    "hp": 91,
+    "speed": "30 ft",
+    "passivePerception": 21,
+    "str": 10,
+    "dex": 20,
+    "con": 16,
+    "int": 18,
+    "wis": 16,
+    "cha": 12,
+    "resistances": [
+      "Bludgeoning, Piercing, and Slashing from Nonmagical Attacks not made with Silvered Weapons"
+    ],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "skz-jeongin": {
+    "id": "skz-jeongin",
+    "classes": [
+      {
+        "name": "Druid",
+        "level": 11,
+        "subclass": "Circle of the Moon"
+      }
+    ],
+    "race": "Werewolf",
+    "alignment": "Neutral Good",
+    "proficiencyBonus": 4,
+    "initiative": 3,
+    "ac": 16,
+    "hp": 102,
+    "speed": "30 ft",
+    "passivePerception": 19,
+    "str": 10,
+    "dex": 16,
+    "con": 18,
+    "int": 14,
+    "wis": 20,
+    "cha": 14,
+    "resistances": [
+      "Bludgeoning, Piercing, and Slashing from Nonmagical Attacks not made with Silvered Weapons"
+    ],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "skz-woojin": {
+    "id": "skz-woojin",
+    "classes": [
+      {
+        "name": "Fighter",
+        "level": 11,
+        "subclass": "Champion"
+      }
+    ],
+    "race": "Werewolf",
+    "alignment": "Lawful Good",
+    "proficiencyBonus": 4,
+    "initiative": 2,
+    "ac": 20,
+    "hp": 114,
+    "speed": "30 ft",
+    "passivePerception": 16,
+    "str": 20,
+    "dex": 14,
+    "con": 18,
+    "int": 10,
+    "wis": 14,
+    "cha": 12,
+    "resistances": [
+      "Bludgeoning, Piercing, and Slashing from Nonmagical Attacks not made with Silvered Weapons"
+    ],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "ateez-hongjoong": {
+    "id": "ateez-hongjoong",
+    "classes": [
+      {
+        "name": "Artificer",
+        "level": 8,
+        "subclass": "Cartographer"
+      }
+    ],
+    "race": "Human",
+    "alignment": "Chaotic Good",
+    "proficiencyBonus": 3,
+    "initiative": 3,
+    "ac": 19,
+    "hp": 59,
+    "speed": "30 ft",
+    "passivePerception": 15,
+    "str": 8,
+    "dex": 16,
+    "con": 14,
+    "int": 20,
+    "wis": 14,
+    "cha": 16,
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "ateez-seonghwa": {
+    "id": "ateez-seonghwa",
+    "classes": [
+      {
+        "name": "Fighter",
+        "level": 8,
+        "subclass": "Battle Master"
+      }
+    ],
+    "race": "Human",
+    "alignment": "Lawful Neutral",
+    "proficiencyBonus": 3,
+    "initiative": 5,
+    "ac": 18,
+    "hp": 76,
+    "speed": "30 ft",
+    "passivePerception": 16,
+    "str": 14,
+    "dex": 20,
+    "con": 16,
+    "int": 12,
+    "wis": 16,
+    "cha": 10,
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "ateez-yunho": {
+    "id": "ateez-yunho",
+    "classes": [
+      {
+        "name": "Warlock",
+        "level": 8,
+        "subclass": "The Fathomless"
+      }
+    ],
+    "race": "Human",
+    "alignment": "Chaotic Good",
+    "proficiencyBonus": 3,
+    "initiative": 2,
+    "ac": 14,
+    "hp": 67,
+    "speed": "30 ft",
+    "passivePerception": 15,
+    "str": 14,
+    "dex": 14,
+    "con": 16,
+    "int": 10,
+    "wis": 14,
+    "cha": 18,
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "ateez-yeosang": {
+    "id": "ateez-yeosang",
+    "classes": [
+      {
+        "name": "Ranger",
+        "level": 8,
+        "subclass": "Horizon Walker"
+      }
+    ],
+    "race": "Human",
+    "alignment": "Neutral Good",
+    "proficiencyBonus": 3,
+    "initiative": 5,
+    "ac": 17,
+    "hp": 68,
+    "speed": "30 ft",
+    "passivePerception": 20,
+    "str": 10,
+    "dex": 20,
+    "con": 14,
+    "int": 12,
+    "wis": 18,
+    "cha": 8,
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "ateez-mingi": {
+    "id": "ateez-mingi",
+    "classes": [
+      {
+        "name": "Artificer",
+        "level": 8,
+        "subclass": "Artillerist"
+      }
+    ],
+    "race": "Human",
+    "alignment": "Chaotic Good",
+    "proficiencyBonus": 3,
+    "initiative": 2,
+    "ac": 19,
+    "hp": 67,
+    "speed": "30 ft",
+    "passivePerception": 14,
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 20,
+    "wis": 12,
+    "cha": 14,
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "ateez-san": {
+    "id": "ateez-san",
+    "classes": [
+      {
+        "name": "Monk",
+        "level": 8,
+        "subclass": "Way of the Drunken Master"
+      }
+    ],
+    "race": "Human",
+    "alignment": "Chaotic Good",
+    "proficiencyBonus": 3,
+    "initiative": 4,
+    "ac": 18,
+    "hp": 67,
+    "speed": "30 ft",
+    "passivePerception": 17,
+    "str": 10,
+    "dex": 18,
+    "con": 13,
+    "int": 8,
+    "wis": 18,
+    "cha": 12,
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "ateez-wooyoung": {
+    "id": "ateez-wooyoung",
+    "classes": [
+      {
+        "name": "Rogue",
+        "level": 8,
+        "subclass": "Arcane Trickster"
+      }
+    ],
+    "race": "Human",
+    "alignment": "Chaotic Neutral",
+    "proficiencyBonus": 3,
+    "initiative": 5,
+    "ac": 17,
+    "hp": 59,
+    "speed": "30 ft",
+    "passivePerception": 17,
+    "str": 10,
+    "dex": 20,
+    "con": 14,
+    "int": 18,
+    "wis": 12,
+    "cha": 16,
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "ateez-jongho": {
+    "id": "ateez-jongho",
+    "classes": [
+      {
+        "name": "Barbarian",
+        "level": 8,
+        "subclass": "Path of the Totem Warrior"
+      }
+    ],
+    "race": "Human",
+    "alignment": "Neutral Good",
+    "proficiencyBonus": 3,
+    "initiative": 2,
+    "ac": 16,
+    "hp": 93,
+    "speed": "40 ft",
+    "passivePerception": 15,
+    "str": 20,
+    "dex": 14,
+    "con": 18,
+    "int": 8,
+    "wis": 14,
+    "cha": 12,
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": []
+  }
 }

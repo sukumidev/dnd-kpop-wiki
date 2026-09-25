@@ -168,6 +168,8 @@ h1[class*='docTitle'] {
 }
 
 .theme-doc-markdown h2 {
+  /* Fit the heading and its rule beside floats, then expand below them. */
+  display: flow-root;
   position: relative;
   margin-block: 2.8rem 1.25rem;
   padding-bottom: 0.65rem;
@@ -274,18 +276,16 @@ h1[class*='docTitle'] {
   font-size: 0.9rem;
 }
 
-.menu__list-item-collapsible > .menu__link {
-  color: var(--h-text-muted);
+/* Shared typography for direct links and expandable sidebar entries. */
+.menu__link {
+  font-family: var(--h-font-ui);
   font-size: 0.73rem;
   font-weight: 700;
   letter-spacing: 0.11em;
   text-transform: uppercase;
-}
-
-.menu__link {
   border-left: 1px solid transparent;
   border-radius: 0;
-  color: var(--h-text-secondary);
+  color: var(--h-text-muted);
   line-height: 1.45;
   transition: color var(--h-motion-fast) ease, border-color var(--h-motion-fast) ease,
     background-color var(--h-motion-fast) ease;

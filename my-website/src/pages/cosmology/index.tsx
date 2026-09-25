@@ -116,9 +116,6 @@ export default function CosmologyPage() {
                     {pantheon.title}
                     <span className={styles.count}>{pantheon.entities.length}</span>
                   </Heading>
-                  <p className={styles.sectionDescription}>
-                    Entidades vinculadas a este panteón.
-                  </p>
                 </div>
                 <span className={styles.chevron} aria-hidden="true" />
               </summary>

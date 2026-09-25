@@ -11,7 +11,7 @@
     "reputation": "Caóticos, pero sorprendentemente efectivos",
     "goal": "Recuperar las Cartas del Destino, reconstruir sus recuerdos y evitar que las facciones mayores usen la Baraja para romper el mundo.",
     "methods": "•Exploración •Detonaciones inoportunas •Alianzas incómodas •Improvisación •Combate cuando es necesario",
-    "regionId": "hyberia",
+    "regionId": null,
     "baseLocationId": "hyberia",
     "baseLabel": "Hyberia",
     "locationIds": [
@@ -48,7 +48,7 @@
       "pc-imugi",
       "pc-soobin"
     ],
-    "realm": "no-aplica"
+    "realm": "sin-reino"
   },
   "ciudadanos-de-hyberia": {
     "id": "ciudadanos-de-hyberia",
@@ -84,8 +84,8 @@
     "type": "enemy",
     "status": "active",
     "visibility": "public",
-    "summary": null,
-    "description": null,
+    "summary": "El Clan del Sol Ardiente es una organización de cazadores y purificadores que considera determinadas criaturas sobrenaturales una amenaza para el futuro de Hallyura.",
+    "description": "El Clan del Sol Ardiente es una organización de cazadores y purificadores que considera determinadas criaturas sobrenaturales una amenaza para el futuro de Hallyura.\n\nUtilizan especialmente:\n\nmagia radiante;\n\narmamento especializado;\n\nartefactos tecnomágicos;\n\ntácticas militares;\n\ninformación recopilada sobre criaturas sobrenaturales.\n\nEntre sus objetivos conocidos se encuentran vampiros, licántropos, criaturas lunares y diferentes linajes vinculados con fuerzas que consideran peligrosas o corruptoras.",
     "regionId": null,
     "locationIds": [],
     "allyFactionIds": [],
@@ -106,12 +106,20 @@
     "goal": null,
     "methods": null,
     "baseLocationId": null,
-    "baseLabel": null,
+    "baseLabel": "Desconocida",
     "leaderCharacterId": null,
     "allyCharacterIds": [],
     "enemyCharacterIds": [],
     "subunits": [],
-    "imageCaption": null
+    "imageCaption": null,
+    "name": "Clan del Sol Ardiente",
+    "typeLabel": "Organización militante y religiosa",
+    "origin": "Desconocido públicamente",
+    "leaderLabel": "Seungri",
+    "knownMembers": "Diversos cazadores y agentes del Clan",
+    "affiliation": "Independiente",
+    "activityArea": "Múltiples reinos de Hallyura",
+    "statusLabel": "Activo"
   },
   "dragonborns-del-clan-del-caos": {
     "id": "dragonborns-del-clan-del-caos",
@@ -137,7 +145,8 @@
       "adp-youngseo"
     ],
     "imageSrc": "/img/factions/adp.jpg",
-    "realm": "no-aplica"
+    "realm": "yggdrasil",
+    "regionId": "yggdrasil"
   },
   "dragonborns-del-clan-del-orden": {
     "id": "dragonborns-del-clan-del-orden",
@@ -153,7 +162,9 @@
     "type": "criminal",
     "status": "active",
     "visibility": "public",
-    "sortOrder": 8
+    "sortOrder": 8,
+    "realm": "jeyperia",
+    "regionId": "jeyperia"
   },
   "sj": {
     "id": "sj",
@@ -174,7 +185,8 @@
     "subtitle": "Personal y Estudiantes de la Neo Academia",
     "realm": "sylmorien",
     "visibility": "public",
-    "sortOrder": 10
+    "sortOrder": 10,
+    "regionId": "sylmorien"
   },
   "viviz": {
     "id": "viviz",
@@ -194,7 +206,8 @@
     "subtitle": "NewJeans",
     "realm": "hyberia",
     "visibility": "public",
-    "sortOrder": 12
+    "sortOrder": 12,
+    "regionId": "hyberia"
   },
   "katseye": {
     "id": "katseye",
@@ -205,7 +218,8 @@
     "realm": "hyberia",
     "visibility": "public",
     "sortOrder": 13,
-    "imageSrc": "/img/factions/katseye.jpg"
+    "imageSrc": "/img/factions/katseye.jpg",
+    "regionId": "hyberia"
   },
   "xg": {
     "id": "xg",
@@ -237,7 +251,8 @@
     "realm": "hyberia",
     "visibility": "public",
     "sortOrder": 16,
-    "imageSrc": "/img/factions/lsf.png"
+    "imageSrc": "/img/factions/lsf.png",
+    "regionId": "hyberia"
   },
   "andteam": {
     "id": "andteam",
@@ -248,7 +263,8 @@
     "realm": "hyberia",
     "visibility": "public",
     "sortOrder": 17,
-    "imageSrc": "/img/factions/andteam.jpg"
+    "imageSrc": "/img/factions/andteam.jpg",
+    "regionId": "hyberia"
   },
   "psf": {
     "id": "psf",
@@ -257,7 +273,8 @@
     "status": "active",
     "realm": "hotou",
     "visibility": "public",
-    "sortOrder": 18
+    "sortOrder": 18,
+    "regionId": "hotou"
   },
   "bts": {
     "id": "bts",
@@ -267,7 +284,8 @@
     "subtitle": "BTS",
     "realm": "hyberia",
     "visibility": "public",
-    "sortOrder": 19
+    "sortOrder": 19,
+    "regionId": "hyberia"
   },
   "stbv": {
     "id": "stbv",
@@ -288,7 +306,8 @@
     "visibility": "public",
     "sortOrder": 21,
     "imageSrc": "/img/factions/lngshot.jpg",
-    "realm": "no-aplica"
+    "realm": "jeyperia",
+    "regionId": "jeyperia"
   },
   "bnd": {
     "id": "bnd",
@@ -299,7 +318,8 @@
     "realm": "hyberia",
     "visibility": "public",
     "sortOrder": 22,
-    "imageSrc": "/img/factions/bnd.webp"
+    "imageSrc": "/img/factions/bnd.webp",
+    "regionId": "hyberia"
   },
   "cortis": {
     "id": "cortis",
@@ -310,23 +330,24 @@
     "realm": "hyberia",
     "visibility": "public",
     "sortOrder": 23,
-    "imageSrc": "/img/factions/cortis.jpg"
+    "imageSrc": "/img/factions/cortis.jpg",
+    "regionId": "hyberia"
   },
   "svt": {
     "id": "svt",
-    "title": "Los Diecisiete Héroes del Gremio",
+    "title": "Los Diecisiete Héroes",
     "subtitle": "SEVENTEEN",
     "type": "guild",
     "status": "active",
     "visibility": "public",
-    "summary": "Trece campesinos abandonados por la corona de Hyberia que decidieron convertirse en los protectores que su pueblo nunca recibió, fundando el primer gremio abierto a cualquiera que quiera ayudar.",
-    "description": null,
-    "reputation": "Respetados (y temidos cuando toca)",
-    "goal": "Proteger rutas, resolver crisis locales y mantener el balance de poder en Hyberia.",
-    "methods": "Contratos • diplomacia • misiones • fuerza cuando es necesario",
+    "summary": "El Gremio de Aventureros de Hyberia es una organización joven nacida en el Valle Dorado como respuesta al abandono de muchas comunidades rurales por parte de la corona.",
+    "description": "El Gremio de Aventureros de Hyberia es una organización joven nacida en el Valle Dorado como respuesta al abandono de muchas comunidades rurales por parte de la corona.\n\nSus fundadores no eran nobles, soldados profesionales ni descendientes de grandes héroes. Eran trece trabajadores del campo que aprendieron a defenderse cuando los caminos, monstruos, funcionarios corruptos y otras amenazas comenzaron a superar la protección que recibían del reino.\n\nLo que comenzó como una forma de proteger su propio hogar terminó convirtiéndose en una red de aventureros que acepta solicitudes de comunidades que no tienen a quién más recurrir.\n\nSu principio es bastante sencillo:\n\nSi alguien pide ayuda y el reino no responde, el Gremio intentará hacerlo.",
+    "reputation": null,
+    "goal": null,
+    "methods": null,
     "regionId": "hyberia",
     "baseLocationId": "sector-17",
-    "baseLabel": "Sector 17",
+    "baseLabel": "Sector 17, Hyberia",
     "locationIds": [
       "sector-17"
     ],
@@ -421,7 +442,15 @@
       "svt-seungkwan",
       "svt-vernon",
       "svt-dino"
-    ]
+    ],
+    "name": "Los Diecisiete Héroes",
+    "typeLabel": "Gremio de aventureros",
+    "origin": "Hyberia",
+    "leaderLabel": "Choi Seungcheol (S.Coups)",
+    "knownMembers": "Los Trece Héroes de Hyberia",
+    "affiliation": "Independiente",
+    "activityArea": "Hyberia y territorios donde reciben solicitudes",
+    "statusLabel": "Activo"
   },
   "astro": {
     "id": "astro",
@@ -456,10 +485,12 @@
   "os-guild": {
     "id": "os-guild",
     "title": "Los Forasteros del Gremio de Aventureros",
-    "type": "guild",
+    "type": "party",
     "status": "active",
     "visibility": "public",
-    "sortOrder": 28
+    "sortOrder": 1,
+    "realm": "sin-reino",
+    "regionId": null
   },
   "riize": {
     "id": "riize",
@@ -530,19 +561,19 @@
   },
   "enhypen": {
     "id": "enhypen",
-    "title": "Los Hijos de la Noche",
+    "title": "Hijos de la Noche",
     "subtitle": "ENHYPEN",
     "type": "order",
     "status": "active",
     "visibility": "public",
-    "summary": "Cumplir el pacto con Moonbin llevando la noche a donde vayan, invocar a los Nuevos Dioses y despertar al Rey Demonio Faker para ‘restaurar’ Hyberia bajo una oscuridad controlada.",
-    "description": null,
-    "reputation": "Temidos, perseguidos y malditamente eficaces",
-    "goal": "Cumplir el pacto con Moonbin llevando la noche a donde vayan, invocar a los Nuevos Dioses y despertar al Rey Demonio Faker para ‘restaurar’ Hyberia bajo una oscuridad controlada.",
-    "methods": "Pacto lunar • disciplina • sacrificios • cacería • manipulación de Cartas del Destino • rituales e infiltración",
+    "summary": "Los Hijos de la Noche son siete vampiros que llevan existiendo desde la Cuarta Era.",
+    "description": "Los Hijos de la Noche son siete vampiros que llevan existiendo desde la Cuarta Era.\n\nA diferencia de muchas organizaciones actuales, no son herederos de una antigua orden.\n\nSon los mismos siete individuos.\n\nDurante generaciones se han convertido en figuras casi legendarias: aparecen en relatos de cazadores, aldeas atacadas durante la noche, enfrentamientos contra criaturas sobrenaturales y rumores de viajeros que aseguran haber conocido a alguien que tenía exactamente el mismo rostro décadas atrás.",
+    "reputation": null,
+    "goal": null,
+    "methods": null,
     "regionId": "hyberia",
-    "baseLocationId": "tierra-ilusoria",
-    "baseLabel": "Tierra Ilusoria",
+    "baseLocationId": null,
+    "baseLabel": "Sin sede pública permanente",
     "locationIds": [
       "tierra-ilusoria"
     ],
@@ -567,23 +598,31 @@
     "imageCaption": "El Pacto de la Oscuridad",
     "accent": "purple",
     "sortOrder": 31,
-    "realm": "hyberia"
+    "realm": "hyberia",
+    "name": "Hijos de la Noche",
+    "typeLabel": "Grupo de vampiros",
+    "origin": "Hyberia",
+    "leaderLabel": "Yang Jungwon",
+    "knownMembers": "Jungwon, Heeseung, Jay, Jake, Sunghoon, Sunoo y Ni-ki",
+    "affiliation": "Independiente",
+    "activityArea": "Diversos territorios de Hallyura",
+    "statusLabel": "Activos"
   },
   "skz": {
     "id": "skz",
-    "title": "Los Lobos Perdidos",
+    "title": "Lobos Perdidos",
     "subtitle": "Stray Kids",
     "type": "pack",
     "status": "active",
     "visibility": "public",
-    "summary": "Sobrevivir a la fractura de su manada, proteger a los suyos —especialmente a Felix—, custodiar a quienes cargan hilos importantes del destino y encontrar una forma de romper el ciclo de manipulación que los convirtió en armas.",
-    "description": null,
-    "reputation": "Temidos, errantes y ferozmente leales entre sí",
-    "goal": "Sobrevivir a la fractura de su manada, proteger a los suyos —especialmente a Felix—, custodiar a quienes cargan hilos importantes del destino y encontrar una forma de romper el ciclo de manipulación que los convirtió en armas.",
-    "methods": "Instinto de manada • rastreo de vínculos • infiltración • emboscadas • rescates • disciplina lunar • protección feroz de los suyos",
+    "summary": "Los Lobos Perdidos son una manada de licántropos que opera principalmente en regiones de Jeyperia donde la autoridad oficial tiene poca presencia o es recibida con desconfianza.",
+    "description": "Los Lobos Perdidos son una manada de licántropos que opera principalmente en regiones de Jeyperia donde la autoridad oficial tiene poca presencia o es recibida con desconfianza.\n\nSu nombre proviene de antiguas redes formadas por licántropos y shifters que habían perdido sus territorios, clanes o reconocimiento legal y comenzaron a crear sus propias rutas, refugios y sistemas de protección.\n\nLa manada actual fue reunida alrededor de Bang Chan y terminó estableciéndose en el Distrito Nueve, donde protege a comunidades marginadas, refugiados y habitantes de zonas que rara vez reciben ayuda institucional.",
+    "reputation": null,
+    "goal": null,
+    "methods": null,
     "regionId": "jeyperia",
-    "baseLocationId": "guarida-de-los-lobos",
-    "baseLabel": "Guarida de los Lobos",
+    "baseLocationId": "distrito-9",
+    "baseLabel": "Distrito 9",
     "locationIds": [
       "guarida-de-los-lobos"
     ],
@@ -677,7 +716,15 @@
     ],
     "exMemberIds": [
       "skz-woojin"
-    ]
+    ],
+    "name": "Lobos Perdidos",
+    "typeLabel": "Manada de licántropos",
+    "origin": "Jeyperia",
+    "leaderLabel": "Bang Chan",
+    "knownMembers": "Bang Chan, Lee Know, Changbin, Hyunjin, Han, Felix, Seungmin y Jeongin",
+    "affiliation": "Independiente",
+    "activityArea": "Principalmente Jeyperia",
+    "statusLabel": "Activos"
   },
   "monsta-x": {
     "id": "monsta-x",
@@ -692,13 +739,13 @@
   },
   "nct": {
     "id": "nct",
-    "title": "Los Neo Culturales Tecnológicos",
+    "title": "Neo Culturales Tecnológicos",
     "subtitle": "Neo Academia",
     "type": "academy",
     "status": "active",
     "visibility": "public",
-    "summary": null,
-    "description": null,
+    "summary": "Los Neo Culturales Tecnológicos, llamados comúnmente Neos, son una extensa red de magos, guerreros, artificieros, psiónicos, investigadores y estudiantes asociados con la Neo Academia de Sylmorien.",
+    "description": "Los Neo Culturales Tecnológicos, llamados comúnmente Neos, son una extensa red de magos, guerreros, artificieros, psiónicos, investigadores y estudiantes asociados con la Neo Academia de Sylmorien.\n\nSu mayor contribución a la historia moderna fue el desarrollo de la Teoría de la Neovibra, según la cual diferentes manifestaciones de magia pueden estudiarse como expresiones de una misma fuerza capaz de resonar con cuerpos, objetos, pensamientos y otros fenómenos.\n\nLa Neo Academia fue fundada bajo una idea poco habitual para Sylmorien:\n\nel conocimiento debería servir para liberar a las personas, no para decidir qué deben convertirse.",
     "regionId": "sylmorien",
     "locationIds": [
       "neocity"
@@ -721,13 +768,21 @@
     "goal": null,
     "methods": null,
     "baseLocationId": "neocity",
-    "baseLabel": null,
-    "leaderCharacterId": null,
+    "baseLabel": "Neocity, Sylmorien",
+    "leaderCharacterId": "nct-taeyong",
     "allyCharacterIds": [],
     "enemyCharacterIds": [],
     "subunits": [],
     "imageCaption": null,
-    "realm": "sylmorien"
+    "realm": "sylmorien",
+    "name": "Neo Culturales Tecnológicos",
+    "typeLabel": "Institución Académica Mágica",
+    "origin": "Sylmorien",
+    "leaderLabel": "Lee Taeyong",
+    "knownMembers": "Neos de las distintas Casas y generaciones",
+    "affiliation": "Consejo Arcano de Sylmorien",
+    "activityArea": "Principalmente Sylmorien",
+    "statusLabel": "Activos"
   },
   "p1h": {
     "id": "p1h",
@@ -738,17 +793,18 @@
     "realm": "fincaria",
     "visibility": "public",
     "sortOrder": 35,
-    "imageSrc": "/img/factions/p1h.jpg"
+    "imageSrc": "/img/factions/p1h.jpg",
+    "regionId": "fincaria"
   },
   "ateez": {
     "id": "ateez",
-    "title": "Los Piratas de la Marea Negra",
+    "title": "Marea Negra",
     "subtitle": null,
     "type": "pirates",
     "status": "active",
     "visibility": "public",
-    "summary": null,
-    "description": null,
+    "summary": "La Marea Negra es mucho más antigua que su tripulación actual.",
+    "description": "La Marea Negra es mucho más antigua que su tripulación actual.\n\nSus primeras tripulaciones aparecieron cuando coronas y grandes compañías comenzaron a controlar puertos, imponer permisos, privatizar rutas marítimas y utilizar bloqueos comerciales contra comunidades enteras.\n\nPiratas, contrabandistas, pescadores y navegantes independientes comenzaron a compartir refugios, rutas e información bajo una misma promesa:\n\n«Ninguna corona poseerá el mar.»\n\nLa antigua red terminó fragmentándose con el paso de las generaciones.\n\nHongjoong recuperó posteriormente el nombre y reunió una nueva tripulación alrededor de sus principios originales.",
     "regionId": null,
     "locationIds": [],
     "allyFactionIds": [],
@@ -764,13 +820,21 @@
     "goal": null,
     "methods": null,
     "baseLocationId": null,
-    "baseLabel": null,
-    "leaderCharacterId": null,
+    "baseLabel": "Flota de la Marea Negra",
+    "leaderCharacterId": "ateez-hongjoong",
     "allyCharacterIds": [],
     "enemyCharacterIds": [],
     "subunits": [],
     "imageCaption": null,
-    "realm": "sin-reino"
+    "realm": "sin-reino",
+    "name": "Marea Negra",
+    "typeLabel": "Confederación pirata y red marítima",
+    "origin": "Rutas marítimas de Hallyura",
+    "leaderLabel": "Kim Hongjoong",
+    "knownMembers": "Hongjoong, Seonghwa, Yunho, Yeosang, San, Mingi, Wooyoung y Jongho",
+    "affiliation": "Independiente",
+    "activityArea": "Mares, puertos y rutas comerciales de Hallyura",
+    "statusLabel": "Activa"
   },
   "txt": {
     "id": "txt",
@@ -785,14 +849,31 @@
   },
   "exo": {
     "id": "exo",
-    "title": "Los EXO Caballeros",
+    "title": "EXO-Caballeros",
     "type": "military",
     "status": "active",
     "subtitle": "EXO",
     "realm": "sylmorien",
     "visibility": "public",
     "sortOrder": 38,
-    "imageSrc": "/img/factions/exo.webp"
+    "imageSrc": "/img/factions/exo.webp",
+    "name": "EXO-Caballeros",
+    "typeLabel": "Orden militar de élite",
+    "origin": "Sylmorien",
+    "baseLabel": "Kwangya, Sylmorien",
+    "leaderLabel": "Kim Junmyeon (Suho)",
+    "knownMembers": "Suho, Lay, Chanyeol, D.O., Kai, Sehun, Xiumin, Chen, Baekhyun",
+    "affiliation": "Consejo Militar de Sylmorien",
+    "activityArea": "Sylmorien y antiguas campañas imperiales",
+    "statusLabel": "Activos",
+    "leaderCharacterId": null,
+    "baseLocationId": null,
+    "regionId": "sylmorien",
+    "description": "Los EXO-Caballeros fueron durante generaciones la fuerza militar más prestigiosa de Sylmorien.\n\nSus integrantes son guerreros extraordinarios asociados con diferentes poderes y especializaciones, y durante la Gran Guerra de la Tercera Era encabezaron muchas de las campañas militares más importantes del Imperio.\n\nPara la historia oficial sylmoriana representan la culminación de su tradición heroica: disciplina, poder, coordinación y excelencia.\n\nPara otros pueblos —especialmente aquellos que combatieron contra Sylmorien— el nombre EXO puede despertar recuerdos bastante menos gloriosos.",
+    "summary": "Los EXO-Caballeros fueron durante generaciones la fuerza militar más prestigiosa de Sylmorien.",
+    "reputation": null,
+    "goal": null,
+    "methods": null
   },
   "tvxq": {
     "id": "tvxq",

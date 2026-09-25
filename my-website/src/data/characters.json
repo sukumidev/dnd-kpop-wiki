@@ -2743,7 +2743,7 @@
       "Guardián del vínculo lunar"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/skz/jeongin.png",
+    "imageSrc": "/img/characters/skz/skz-jeongin.png",
     "dateOfBirth": "2001-02-08",
     "zodiac": "Acuario ♒",
     "mbti": "INFJ",
@@ -2820,7 +2820,13 @@
       }
     ],
     "destinyCard": null,
-    "images": [],
+    "images": [
+      {
+        "src": "/img/characters/skz/jeongin.png",
+        "alt": "Yang Jeongin (I.N)",
+        "caption": ""
+      }
+    ],
     "summary": null,
     "sortOrder": 24
   },
@@ -3855,7 +3861,7 @@
       "Profesor de Teoría de la Neovibra y Regulación Mágica"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/nct/doyoung.png",
+    "imageSrc": "/img/characters/nct/nct-doyoung.png",
     "dateOfBirth": "1596-02-01",
     "zodiac": "Acuario ♒",
     "mbti": "ESTJ",
@@ -3917,7 +3923,13 @@
       }
     ],
     "destinyCard": null,
-    "images": [],
+    "images": [
+      {
+        "src": "/img/characters/nct/doyoung.png",
+        "alt": "Kim Doyoung",
+        "caption": ""
+      }
+    ],
     "summary": null,
     "sortOrder": 37
   },
@@ -4099,6 +4111,11 @@
     "images": [
       {
         "src": "/img/characters/nct/jaehyun.png",
+        "alt": "Jeong Jaehyun",
+        "caption": ""
+      },
+      {
+        "src": "/img/characters/nct/nct-jaehyun.png",
         "alt": "Jeong Jaehyun",
         "caption": ""
       }
@@ -4308,7 +4325,7 @@
       "Profesor de Magia Umbría y Tácticas de Infiltración"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/nct/lucas.png",
+    "imageSrc": "/img/characters/nct/nct-lucas.png",
     "dateOfBirth": "1899-01-25",
     "zodiac": "Acuario ♒",
     "mbti": "ESTP",
@@ -4360,7 +4377,13 @@
       }
     ],
     "destinyCard": null,
-    "images": [],
+    "images": [
+      {
+        "src": "/img/characters/nct/lucas.png",
+        "alt": "Lucas Wong",
+        "caption": ""
+      }
+    ],
     "summary": null,
     "sortOrder": 42
   },
@@ -4482,6 +4505,11 @@
     "images": [
       {
         "src": "/img/characters/nct/mark.png",
+        "alt": "Mark Lee",
+        "caption": ""
+      },
+      {
+        "src": "/img/characters/npc/nct-mark.png",
         "alt": "Mark Lee",
         "caption": ""
       }
@@ -5214,7 +5242,7 @@
       "Guardián de Vigilancia Subconsciente e Infiltración Mental"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/nct/jisung.png",
+    "imageSrc": "/img/characters/nct/nct-jisung.png",
     "dateOfBirth": "1902-02-05",
     "zodiac": "Acuario ♒",
     "mbti": "INFP",
@@ -5271,7 +5299,13 @@
       }
     ],
     "destinyCard": null,
-    "images": [],
+    "images": [
+      {
+        "src": "/img/characters/nct/jisung.png",
+        "alt": "Park Jisung",
+        "caption": ""
+      }
+    ],
     "summary": null,
     "sortOrder": 52
   },
@@ -5969,571 +6003,1647 @@
   "bnd-leehan": {
     "id": "bnd-leehan",
     "title": "Leehan (Kim Donghyun)",
-    "group": "npc",
     "status": "active",
+    "group": "npc",
     "factionId": "bnd",
-    "imageSrc": "/img/characters/bnd/bnd-leehan.png",
     "tags": [],
+    "imageSrc": "/img/characters/bnd/bnd-leehan.png",
     "sortOrder": 75
   },
   "bnd-taesan": {
     "id": "bnd-taesan",
     "title": "Taesan (Han Dong-min)",
-    "group": "npc",
     "status": "active",
+    "group": "npc",
     "factionId": "bnd",
-    "imageSrc": "/img/characters/bnd/bnd-taesan.png",
     "tags": [],
+    "imageSrc": "/img/characters/bnd/bnd-taesan.png",
     "sortOrder": 76
   },
   "ateez-hongjoong": {
     "id": "ateez-hongjoong",
     "title": "Kim Hongjoong",
-    "group": "npc",
     "status": "active",
+    "group": "npc",
     "factionId": "ateez",
-    "imageSrc": "/img/characters/ateez/ateez-hongjoong.png",
     "tags": [],
+    "imageSrc": "/img/characters/ateez/ateez-hongjoong.png",
     "sortOrder": 77
   },
   "ateez-jongho": {
     "id": "ateez-jongho",
     "title": "Choi Jongho",
-    "group": "npc",
     "status": "active",
+    "group": "npc",
     "factionId": "ateez",
-    "imageSrc": "/img/characters/ateez/ateez-jongho.png",
     "tags": [],
+    "imageSrc": "/img/characters/ateez/ateez-jongho.png",
     "sortOrder": 78
   },
   "ateez-san": {
     "id": "ateez-san",
     "title": "Choi San",
-    "group": "npc",
     "status": "active",
+    "group": "npc",
     "factionId": "ateez",
-    "imageSrc": "/img/characters/ateez/ateez-san.png",
     "tags": [],
+    "imageSrc": "/img/characters/ateez/ateez-san.png",
     "sortOrder": 79
   },
   "bts-agust-d": {
     "id": "bts-agust-d",
     "title": "Agust D",
-    "group": "npc",
     "status": "active",
+    "group": "npc",
     "factionId": "bts",
-    "imageSrc": "/img/characters/bts/bts-agust-d.png",
     "tags": [],
+    "imageSrc": "/img/characters/bts/bts-agust-d.png",
     "sortOrder": 80
   },
   "bts-v": {
     "id": "bts-v",
     "title": "V (Kim Taehyung)",
-    "group": "npc",
     "status": "active",
+    "group": "npc",
     "factionId": "bts",
-    "imageSrc": "/img/characters/bts/bts-v.png",
     "tags": [],
+    "imageSrc": "/img/characters/bts/bts-v.png",
     "sortOrder": 81
   },
   "cortis-james": {
     "id": "cortis-james",
     "title": "James Chao",
-    "group": "npc",
     "status": "active",
+    "group": "npc",
     "factionId": "cortis",
-    "imageSrc": "/img/characters/cortis/cortis-james.png",
     "tags": [],
+    "imageSrc": "/img/characters/cortis/cortis-james.png",
     "sortOrder": 82
   },
   "cortis-juhoon": {
     "id": "cortis-juhoon",
     "title": "Kim Juhoon",
-    "group": "npc",
     "status": "active",
+    "group": "npc",
     "factionId": "cortis",
-    "imageSrc": "/img/characters/cortis/cortis-juhoon.png",
     "tags": [],
+    "imageSrc": "/img/characters/cortis/cortis-juhoon.png",
     "sortOrder": 83
   },
   "cortis-keonho": {
     "id": "cortis-keonho",
     "title": "Ahn Keonho",
-    "group": "npc",
     "status": "active",
+    "group": "npc",
     "factionId": "cortis",
-    "imageSrc": "/img/characters/cortis/cortis-keonho.png",
     "tags": [],
+    "imageSrc": "/img/characters/cortis/cortis-keonho.png",
     "sortOrder": 84
   },
   "cortis-martin": {
     "id": "cortis-martin",
     "title": "Martin Jonathan Edwards",
-    "group": "npc",
     "status": "active",
+    "group": "npc",
     "factionId": "cortis",
-    "imageSrc": "/img/characters/cortis/cortis-martin.png",
     "tags": [],
+    "imageSrc": "/img/characters/cortis/cortis-martin.png",
     "sortOrder": 85
   },
   "cortis-seonghyeon": {
     "id": "cortis-seonghyeon",
     "title": "Eom Seonghyeon",
-    "group": "party",
     "status": "active",
+    "group": "party",
     "factionId": "cortis",
-    "imageSrc": "/img/characters/cortis/cortis-seonghyeon.png",
     "tags": [],
+    "imageSrc": "/img/characters/cortis/cortis-seonghyeon.png",
     "sortOrder": 86
   },
   "os-asuka": {
     "id": "os-asuka",
     "title": "Asuka Arai",
-    "group": "party",
     "status": "active",
+    "group": "party",
     "factionId": "os-guild",
-    "imageSrc": "/img/characters/os-guild/os-asuka.jpeg",
     "tags": [],
+    "imageSrc": "/img/characters/os-guild/os-asuka.jpeg",
     "sortOrder": 87
   },
   "os-eris": {
     "id": "os-eris",
     "title": "Baek Eris",
-    "group": "party",
     "status": "active",
+    "group": "party",
     "factionId": "os-guild",
-    "imageSrc": "/img/characters/os-guild/os-eris.jpeg",
     "tags": [],
+    "imageSrc": "/img/characters/os-guild/os-eris.jpeg",
     "sortOrder": 88
   },
   "os-lira": {
     "id": "os-lira",
     "title": "Lira",
-    "group": "party",
     "status": "active",
+    "group": "party",
     "factionId": "os-guild",
-    "imageSrc": "/img/characters/os-guild/os-lira.jpeg",
     "tags": [],
+    "imageSrc": "/img/characters/os-guild/os-lira.jpeg",
     "sortOrder": 89
   },
   "os-mimira": {
     "id": "os-mimira",
     "title": "Mimira",
-    "group": "party",
     "status": "active",
+    "group": "party",
     "factionId": "os-guild",
-    "imageSrc": "/img/characters/os-guild/os-mimira.jpeg",
     "tags": [],
+    "imageSrc": "/img/characters/os-guild/os-mimira.jpeg",
     "sortOrder": 90
   },
   "os-lu-yan": {
     "id": "os-lu-yan",
     "title": "Lu Yan",
-    "group": "party",
     "status": "active",
+    "group": "party",
     "factionId": "os-guild",
-    "imageSrc": "/img/characters/os-guild/os-lu-yan.jpeg",
     "tags": [],
+    "imageSrc": "/img/characters/os-guild/os-lu-yan.jpeg",
     "sortOrder": 91
   },
   "os-jiwon": {
     "id": "os-jiwon",
     "title": "Seo Jiwon",
-    "group": "party",
     "status": "active",
+    "group": "party",
     "factionId": "os-guild",
-    "imageSrc": "/img/characters/os-guild/os-jiwon.jpeg",
     "tags": [],
+    "imageSrc": "/img/characters/os-guild/os-jiwon.jpeg",
     "sortOrder": 92
   },
   "kiof-natty": {
     "id": "kiof-natty",
     "title": "Natty (Anatchaya Suputhipong)",
-    "group": "npc",
     "status": "active",
+    "group": "npc",
     "factionId": "kiof",
-    "imageSrc": "/img/characters/kiof/kiof-natty.png",
     "tags": [],
+    "imageSrc": "/img/characters/kiof/kiof-natty.png",
     "sortOrder": 93
   },
   "katseye-sophia": {
     "id": "katseye-sophia",
     "title": "Sophia Laforteza",
-    "group": "npc",
     "status": "active",
+    "group": "npc",
     "factionId": "katseye",
-    "imageSrc": "/img/characters/katseye/katseye-sophia.png",
     "tags": [],
+    "imageSrc": "/img/characters/katseye/katseye-sophia.png",
     "sortOrder": 94
   },
   "katseye-daniela": {
     "id": "katseye-daniela",
     "title": "Daniela Avanzini",
-    "group": "npc",
     "status": "active",
+    "group": "npc",
     "factionId": "katseye",
-    "imageSrc": "/img/characters/katseye/katseye-daniela.png",
     "tags": [],
+    "imageSrc": "/img/characters/katseye/katseye-daniela.png",
     "sortOrder": 95
   },
   "katseye-megan": {
     "id": "katseye-megan",
     "title": "Megan Skiendiel",
-    "group": "npc",
     "status": "active",
+    "group": "npc",
     "factionId": "katseye",
-    "imageSrc": "/img/characters/katseye/katseye-megan.png",
     "tags": [],
+    "imageSrc": "/img/characters/katseye/katseye-megan.png",
     "sortOrder": 96
   },
   "lsf-yunjin": {
     "id": "lsf-yunjin",
     "title": "Huh Yunjin",
-    "group": "npc",
     "status": "active",
+    "group": "npc",
     "factionId": "lsf",
-    "imageSrc": "/img/characters/lsf/lsf-yunjin.png",
     "tags": [],
+    "imageSrc": "/img/characters/lsf/lsf-yunjin.png",
     "sortOrder": 97
   },
   "lsf-chaewon": {
     "id": "lsf-chaewon",
     "title": "Kim Chaewon",
-    "group": "npc",
     "status": "active",
+    "group": "npc",
     "factionId": "lsf",
-    "imageSrc": "/img/characters/lsf/lsf-chaewon.png",
     "tags": [],
+    "imageSrc": "/img/characters/lsf/lsf-chaewon.png",
     "sortOrder": 98
   },
   "lsf-eunchae": {
     "id": "lsf-eunchae",
     "title": "Hong Eunchae",
-    "group": "npc",
     "status": "active",
+    "group": "npc",
     "factionId": "lsf",
-    "imageSrc": "/img/characters/lsf/lsf-eunchae.png",
     "tags": [],
+    "imageSrc": "/img/characters/lsf/lsf-eunchae.png",
     "sortOrder": 99
   },
   "lsf-kazuha": {
     "id": "lsf-kazuha",
     "title": "Kazuha Nakamura",
-    "group": "npc",
     "status": "active",
+    "group": "npc",
     "factionId": "lsf",
-    "imageSrc": "/img/characters/lsf/lsf-kazuha.png",
     "tags": [],
+    "imageSrc": "/img/characters/lsf/lsf-kazuha.png",
     "sortOrder": 100
   },
   "lsf-sakura": {
     "id": "lsf-sakura",
     "title": "Sakura Miyawaki",
-    "group": "npc",
     "status": "active",
+    "group": "npc",
     "factionId": "lsf",
-    "imageSrc": "/img/characters/lsf/lsf-sakura.png",
     "tags": [],
+    "imageSrc": "/img/characters/lsf/lsf-sakura.png",
     "sortOrder": 101
   },
   "katseye-manon": {
     "id": "katseye-manon",
     "title": "Manon Bannerman",
-    "group": "npc",
     "status": "active",
+    "group": "npc",
     "factionId": "katseye",
-    "imageSrc": "/img/characters/katseye/katseye-manon.png",
     "tags": [],
+    "imageSrc": "/img/characters/katseye/katseye-manon.png",
     "sortOrder": 102
   },
   "katseye-lara": {
     "id": "katseye-lara",
     "title": "Lara Raj",
-    "group": "npc",
     "status": "active",
+    "group": "npc",
     "factionId": "katseye",
-    "imageSrc": "/img/characters/katseye/katseye-lara.png",
     "tags": [],
+    "imageSrc": "/img/characters/katseye/katseye-lara.png",
     "sortOrder": 103
   },
   "katseye-yoonchae": {
     "id": "katseye-yoonchae",
     "title": "Jeung Yoonchae",
-    "group": "npc",
     "status": "active",
+    "group": "npc",
     "factionId": "katseye",
-    "imageSrc": "/img/characters/katseye/katseye-yoonchae.png",
     "tags": [],
+    "imageSrc": "/img/characters/katseye/katseye-yoonchae.png",
     "sortOrder": 104
   },
   "lngshot-woojin": {
     "id": "lngshot-woojin",
     "title": "Jung Woojin",
-    "group": "npc",
     "status": "active",
+    "group": "npc",
     "factionId": "lngshot",
-    "imageSrc": "/img/characters/lngshot/lngshot-woojin.png",
     "tags": [],
+    "imageSrc": "/img/characters/lngshot/lngshot-woojin.png",
     "sortOrder": 105
   },
   "lngshot-ryul": {
     "id": "lngshot-ryul",
     "title": "Kim Ryul",
-    "group": "npc",
     "status": "active",
+    "group": "npc",
     "factionId": "lngshot",
-    "imageSrc": "/img/characters/lngshot/lngshot-ryul.png",
     "tags": [],
+    "imageSrc": "/img/characters/lngshot/lngshot-ryul.png",
     "sortOrder": 106
   },
   "lngshot-ohyul": {
     "id": "lngshot-ohyul",
     "title": "Kwon Ohyul",
-    "group": "npc",
     "status": "active",
+    "group": "npc",
     "factionId": "lngshot",
-    "imageSrc": "/img/characters/lngshot/lngshot-ohyul.png",
     "tags": [],
+    "imageSrc": "/img/characters/lngshot/lngshot-ohyul.png",
     "sortOrder": 107
   },
   "lngshot-louis": {
     "id": "lngshot-louis",
     "title": "Louis Jourdain Lim",
-    "group": "npc",
     "status": "active",
+    "group": "npc",
     "factionId": "lngshot",
-    "imageSrc": "/img/characters/lngshot/lngshot-louis.png",
     "tags": [],
+    "imageSrc": "/img/characters/lngshot/lngshot-louis.png",
     "sortOrder": 108
   },
   "ncit-tata": {
     "id": "ncit-tata",
     "title": "Tata",
-    "group": "npc",
     "status": "active",
+    "group": "npc",
     "factionId": "ncit",
-    "imageSrc": "/img/characters/ncit/ncit-tata.jpg",
     "tags": [],
+    "imageSrc": "/img/characters/ncit/ncit-tata.jpg",
     "sortOrder": 109
   },
   "ncit-hamin": {
     "id": "ncit-hamin",
     "title": "Hamin",
-    "group": "npc",
     "status": "active",
+    "group": "npc",
     "factionId": "ncit",
-    "imageSrc": "/img/characters/ncit/ncit-hamin.jpg",
     "tags": [],
+    "imageSrc": "/img/characters/ncit/ncit-hamin.jpg",
     "sortOrder": 110
   },
   "ncit-hyunjun": {
     "id": "ncit-hyunjun",
     "title": "Hyunjun",
-    "group": "npc",
     "status": "active",
+    "group": "npc",
     "factionId": "ncit",
-    "imageSrc": "/img/characters/ncit/ncit-hyunjun.jpg",
     "tags": [],
+    "imageSrc": "/img/characters/ncit/ncit-hyunjun.jpg",
     "sortOrder": 111
   },
   "ncit-nicholas": {
     "id": "ncit-nicholas",
     "title": "Nicholas",
-    "group": "npc",
     "status": "active",
+    "group": "npc",
     "factionId": "ncit",
-    "imageSrc": "/img/characters/ncit/ncit-nicholas.jpg",
     "tags": [],
+    "imageSrc": "/img/characters/ncit/ncit-nicholas.jpg",
     "sortOrder": 112
   },
   "ncit-haruta": {
     "id": "ncit-haruta",
     "title": "Haruta",
-    "group": "npc",
     "status": "active",
+    "group": "npc",
     "factionId": "ncit",
-    "imageSrc": "/img/characters/ncit/ncit-haruta.jpg",
     "tags": [],
+    "imageSrc": "/img/characters/ncit/ncit-haruta.jpg",
     "sortOrder": 113
   },
   "ncit-sadaharu": {
     "id": "ncit-sadaharu",
     "title": "Sadaharu",
-    "group": "npc",
     "status": "active",
+    "group": "npc",
     "factionId": "ncit",
-    "imageSrc": "/img/characters/ncit/ncit-sadaharu.jpg",
     "tags": [],
+    "imageSrc": "/img/characters/ncit/ncit-sadaharu.jpg",
     "sortOrder": 114
   },
   "ncit-charlie": {
     "id": "ncit-charlie",
     "title": "Charlie",
-    "group": "npc",
     "status": "active",
+    "group": "npc",
     "factionId": "ncit",
-    "imageSrc": "/img/characters/ncit/ncit-charlie.jpg",
     "tags": [],
+    "imageSrc": "/img/characters/ncit/ncit-charlie.jpg",
     "sortOrder": 115
   },
   "ncit-hanbi": {
     "id": "ncit-hanbi",
     "title": "Hanbi",
-    "group": "npc",
     "status": "active",
+    "group": "npc",
     "factionId": "ncit",
-    "imageSrc": "/img/characters/ncit/ncit-hanbi.jpg",
     "tags": [],
+    "imageSrc": "/img/characters/ncit/ncit-hanbi.jpg",
     "sortOrder": 116
   },
   "ncit-daniel": {
     "id": "ncit-daniel",
     "title": "Daniel",
-    "group": "npc",
     "status": "active",
+    "group": "npc",
     "factionId": "ncit",
-    "imageSrc": "/img/characters/ncit/ncit-daniel.jpg",
     "tags": [],
+    "imageSrc": "/img/characters/ncit/ncit-daniel.jpg",
     "sortOrder": 117
   },
   "ncit-songha": {
     "id": "ncit-songha",
     "title": "Songha",
-    "group": "npc",
     "status": "active",
+    "group": "npc",
     "factionId": "ncit",
-    "imageSrc": "/img/characters/ncit/ncit-songha.jpg",
     "tags": [],
+    "imageSrc": "/img/characters/ncit/ncit-songha.jpg",
     "sortOrder": 118
   },
   "ncit-justin": {
     "id": "ncit-justin",
     "title": "Justin Jay",
-    "group": "npc",
     "status": "active",
+    "group": "npc",
     "factionId": "ncit",
-    "imageSrc": "/img/characters/ncit/ncit-justin.jpg",
     "tags": [],
+    "imageSrc": "/img/characters/ncit/ncit-justin.jpg",
     "sortOrder": 119
   },
   "ncit-kachin": {
     "id": "ncit-kachin",
     "title": "Kachin",
-    "group": "npc",
     "status": "active",
+    "group": "npc",
     "factionId": "ncit",
-    "imageSrc": "/img/characters/ncit/ncit-kachin.jpg",
     "tags": [],
+    "imageSrc": "/img/characters/ncit/ncit-kachin.jpg",
     "sortOrder": 120
   },
   "ncit-woolin": {
     "id": "ncit-woolin",
     "title": "Woolin",
-    "group": "npc",
     "status": "active",
+    "group": "npc",
     "factionId": "ncit",
-    "imageSrc": "/img/characters/ncit/ncit-woolin.jpg",
     "tags": [],
+    "imageSrc": "/img/characters/ncit/ncit-woolin.jpg",
     "sortOrder": 121
   },
   "ncit-kassho": {
     "id": "ncit-kassho",
     "title": "Kassho",
-    "group": "npc",
     "status": "active",
+    "group": "npc",
     "factionId": "ncit",
-    "imageSrc": "/img/characters/ncit/ncit-kassho.jpg",
     "tags": [],
+    "imageSrc": "/img/characters/ncit/ncit-kassho.jpg",
     "sortOrder": 122
   },
   "ncit-jaewon": {
     "id": "ncit-jaewon",
     "title": "Jaewon",
-    "group": "npc",
     "status": "active",
+    "group": "npc",
     "factionId": "ncit",
-    "imageSrc": "/img/characters/ncit/ncit-jaewon.jpg",
     "tags": [],
+    "imageSrc": "/img/characters/ncit/ncit-jaewon.jpg",
     "sortOrder": 123
   },
   "njz-hanni": {
     "id": "njz-hanni",
     "title": "Hanni",
-    "group": "npc",
     "status": "active",
+    "group": "npc",
     "factionId": "njz",
-    "imageSrc": "/img/characters/njz/njz-hanni.png",
     "tags": [],
+    "imageSrc": "/img/characters/njz/njz-hanni.png",
     "sortOrder": 124
   },
   "njz-minji": {
     "id": "njz-minji",
     "title": "Kim Minji",
-    "group": "npc",
     "status": "active",
+    "group": "npc",
     "factionId": "njz",
-    "imageSrc": "/img/characters/njz/njz-minji.png",
     "tags": [],
+    "imageSrc": "/img/characters/njz/njz-minji.png",
     "sortOrder": 125
   },
   "njz-danielle": {
     "id": "njz-danielle",
     "title": "Danielle Marsh",
-    "group": "npc",
     "status": "active",
+    "group": "npc",
     "factionId": "njz",
-    "imageSrc": "/img/characters/njz/njz-danielle.png",
     "tags": [],
+    "imageSrc": "/img/characters/njz/njz-danielle.png",
     "sortOrder": 126
   },
   "p1h-keeho": {
     "id": "p1h-keeho",
     "title": "Yoon Keeho",
-    "group": "npc",
     "status": "active",
+    "group": "npc",
     "factionId": "p1h",
-    "imageSrc": "/img/characters/p1h/p1h-keeho.png",
     "tags": [],
+    "imageSrc": "/img/characters/p1h/p1h-keeho.png",
     "sortOrder": 127
   },
   "psf-jimmy": {
     "id": "psf-jimmy",
     "title": "Jimmy",
-    "group": "npc",
     "status": "active",
+    "group": "npc",
     "factionId": "psf",
-    "imageSrc": "/img/characters/psf/psf-jimmy.png",
     "tags": [],
+    "imageSrc": "/img/characters/psf/psf-jimmy.png",
     "sortOrder": 128
   },
   "psf-kokoro": {
     "id": "psf-kokoro",
     "title": "Kokoro",
-    "group": "npc",
     "status": "active",
+    "group": "npc",
     "factionId": "psf",
-    "imageSrc": "/img/characters/psf/psf-kokoro.png",
     "tags": [],
+    "imageSrc": "/img/characters/psf/psf-kokoro.png",
     "sortOrder": 129
   },
   "psf-tsurugi": {
     "id": "psf-tsurugi",
     "title": "Tsurugi",
-    "group": "npc",
     "status": "active",
+    "group": "npc",
     "factionId": "psf",
-    "imageSrc": "/img/characters/psf/psf-tsurugi.png",
     "tags": [],
+    "imageSrc": "/img/characters/psf/psf-tsurugi.png",
     "sortOrder": 130
   },
   "psf-weesa": {
     "id": "psf-weesa",
     "title": "Weesa",
+    "status": "active",
+    "group": "npc",
+    "factionId": "psf",
+    "tags": [],
+    "imageSrc": "/img/characters/psf/psf-weesa.png",
+    "sortOrder": 131
+  },
+  "ado": {
+    "id": "ado",
+    "title": "Ado",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 132
+  },
+  "anton": {
+    "id": "anton",
+    "title": "Anton",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 133
+  },
+  "ario": {
+    "id": "ario",
+    "title": "Ario",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 134
+  },
+  "arturo": {
+    "id": "arturo",
+    "title": "Arturo",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 135
+  },
+  "arven": {
+    "id": "arven",
+    "title": "Arven",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 136
+  },
+  "baekho": {
+    "id": "baekho",
+    "title": "Baekho",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 137
+  },
+  "bahiyyih": {
+    "id": "bahiyyih",
+    "title": "Bahiyyih",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 138
+  },
+  "benny": {
+    "id": "benny",
+    "title": "Benny",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 139
+  },
+  "beomgyu": {
+    "id": "beomgyu",
+    "title": "Beomgyu",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 140
+  },
+  "biagi": {
+    "id": "biagi",
+    "title": "Biagi",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 141
+  },
+  "brandom-lee": {
+    "id": "brandom-lee",
+    "title": "Brandom Lee",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 142
+  },
+  "brian-ho": {
+    "id": "brian-ho",
+    "title": "Brian Ho",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 143
+  },
+  "bruno": {
+    "id": "bruno",
+    "title": "Bruno",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 144
+  },
+  "byeon-wooseok": {
+    "id": "byeon-wooseok",
+    "title": "Byeon Wooseok",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 145
+  },
+  "camerino": {
+    "id": "camerino",
+    "title": "Camerino",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 146
+  },
+  "camerino-jr": {
+    "id": "camerino-jr",
+    "title": "Camerino Jr.",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 147
+  },
+  "capitana-lim": {
+    "id": "capitana-lim",
+    "title": "Capitana Lim",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 148
+  },
+  "capitana-merry": {
+    "id": "capitana-merry",
+    "title": "Capitana Merry",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 149
+  },
+  "carlos": {
+    "id": "carlos",
+    "title": "Carlos",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 150
+  },
+  "castro": {
+    "id": "castro",
+    "title": "Castro",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 151
+  },
+  "chayanne": {
+    "id": "chayanne",
+    "title": "Chayanne",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 152
+  },
+  "choi-soobin": {
+    "id": "choi-soobin",
+    "title": "Choi Soobin",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 153
+  },
+  "church": {
+    "id": "church",
+    "title": "Church",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 154
+  },
+  "cristian": {
+    "id": "cristian",
+    "title": "Cristian",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 155
+  },
+  "dj-tony-mix": {
+    "id": "dj-tony-mix",
+    "title": "DJ Tony Mix",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 156
+  },
+  "dahyun": {
+    "id": "dahyun",
+    "title": "Dahyun",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 157
+  },
+  "dal": {
+    "id": "dal",
+    "title": "Dal",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 158
+  },
+  "delkhan": {
+    "id": "delkhan",
+    "title": "Delkhan",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 159
+  },
+  "demetrio": {
+    "id": "demetrio",
+    "title": "Demetrio",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 160
+  },
+  "don-jose": {
+    "id": "don-jose",
+    "title": "Don José",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 161
+  },
+  "donatella-versace": {
+    "id": "donatella-versace",
+    "title": "Donatella Versace",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 162
+  },
+  "dorian": {
+    "id": "dorian",
+    "title": "Dorian",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 163
+  },
+  "emi": {
+    "id": "emi",
+    "title": "Emi",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 164
+  },
+  "eunbi": {
+    "id": "eunbi",
+    "title": "Eunbi",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 165
+  },
+  "eunha": {
+    "id": "eunha",
+    "title": "Eunha",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 166
+  },
+  "eunseok": {
+    "id": "eunseok",
+    "title": "Eunseok",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 167
+  },
+  "evan": {
+    "id": "evan",
+    "title": "Evan",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 168
+  },
+  "felixia": {
+    "id": "felixia",
+    "title": "Felixia",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 169
+  },
+  "g-dragon": {
+    "id": "g-dragon",
+    "title": "G-Dragon",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 170
+  },
+  "gabri": {
+    "id": "gabri",
+    "title": "Gabri",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 171
+  },
+  "hangyeom": {
+    "id": "hangyeom",
+    "title": "Hangyeom",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 172
+  },
+  "hanjun": {
+    "id": "hanjun",
+    "title": "Hanjun",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 173
+  },
+  "heechul": {
+    "id": "heechul",
+    "title": "Heechul",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 174
+  },
+  "hilario": {
+    "id": "hilario",
+    "title": "Hilario",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 175
+  },
+  "honda": {
+    "id": "honda",
+    "title": "Honda",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 176
+  },
+  "hueningkai": {
+    "id": "hueningkai",
+    "title": "Hueningkai",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 177
+  },
+  "hwang": {
+    "id": "hwang",
+    "title": "Hwang",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 178
+  },
+  "hwasa": {
+    "id": "hwasa",
+    "title": "Hwasa",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 179
+  },
+  "hwichan": {
+    "id": "hwichan",
+    "title": "Hwichan",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 180
+  },
+  "hyein": {
+    "id": "hyein",
+    "title": "Hyein",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 181
+  },
+  "mx-hyungwon": {
+    "id": "mx-hyungwon",
+    "title": "Chae Hyungwon",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 182
+  },
+  "jackson-wang": {
+    "id": "jackson-wang",
+    "title": "Jackson Wang",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 183
+  },
+  "jacob": {
+    "id": "jacob",
+    "title": "Jacob",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 184
+  },
+  "jaehan": {
+    "id": "jaehan",
+    "title": "Jaehan",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 185
+  },
+  "jeongyeon": {
+    "id": "jeongyeon",
+    "title": "Jeongyeon",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 186
+  },
+  "jeronimo": {
+    "id": "jeronimo",
+    "title": "Jerónimo",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 187
+  },
+  "jiho": {
+    "id": "jiho",
+    "title": "Jiho",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 188
+  },
+  "juanga": {
+    "id": "juanga",
+    "title": "Juanga",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 189
+  },
+  "junho": {
+    "id": "junho",
+    "title": "Junho",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 190
+  },
+  "kar-niss": {
+    "id": "kar-niss",
+    "title": "Kar'niss",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 191
+  },
+  "kim-soohyun": {
+    "id": "kim-soohyun",
+    "title": "Kim Soohyun",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 192
+  },
+  "kunno": {
+    "id": "kunno",
+    "title": "Kunno",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 193
+  },
+  "kyuhyun": {
+    "id": "kyuhyun",
+    "title": "Kyuhyun",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 194
+  },
+  "lady-isuna": {
+    "id": "lady-isuna",
+    "title": "Lady Isuna",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 195
+  },
+  "lady-myeonghwa": {
+    "id": "lady-myeonghwa",
+    "title": "Lady Myeonghwa",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 196
+  },
+  "leliana": {
+    "id": "leliana",
+    "title": "Leliana",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 197
+  },
+  "lesath": {
+    "id": "lesath",
+    "title": "Lesath",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 198
+  },
+  "lin-dareum": {
+    "id": "lin-dareum",
+    "title": "Lin Dareum",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 199
+  },
+  "logan": {
+    "id": "logan",
+    "title": "Logan",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 200
+  },
+  "lumira": {
+    "id": "lumira",
+    "title": "Lumira",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 201
+  },
+  "lupin": {
+    "id": "lupin",
+    "title": "Lupin",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 202
+  },
+  "mario": {
+    "id": "mario",
+    "title": "Mario",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 203
+  },
+  "matsuda": {
+    "id": "matsuda",
+    "title": "Matsuda",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 204
+  },
+  "mephisto": {
+    "id": "mephisto",
+    "title": "Mephisto",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 205
+  },
+  "mina": {
+    "id": "mina",
+    "title": "Mina",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 206
+  },
+  "ming-yua": {
+    "id": "ming-yua",
+    "title": "Ming Yua",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 207
+  },
+  "misa": {
+    "id": "misa",
+    "title": "Misa",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 208
+  },
+  "mitsubishi": {
+    "id": "mitsubishi",
+    "title": "Mitsubishi",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 209
+  },
+  "moai": {
+    "id": "moai",
+    "title": "Moai",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 210
+  },
+  "mr-fenghuang": {
+    "id": "mr-fenghuang",
+    "title": "Mr. Fenghuang",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 211
+  },
+  "mr-wu": {
+    "id": "mr-wu",
+    "title": "Mr. Wu",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 212
+  },
+  "neorayita": {
+    "id": "neorayita",
+    "title": "Neorayita",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 213
+  },
+  "omar": {
+    "id": "omar",
+    "title": "Omar",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 214
+  },
+  "qin-shen-yu": {
+    "id": "qin-shen-yu",
+    "title": "Qín Shen Yù",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 215
+  },
+  "ren": {
+    "id": "ren",
+    "title": "Ren",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 216
+  },
+  "ricky": {
+    "id": "ricky",
+    "title": "Ricky",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 217
+  },
+  "rio": {
+    "id": "rio",
+    "title": "Rio",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 218
+  },
+  "rogelio": {
+    "id": "rogelio",
+    "title": "Rogelio",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 219
+  },
+  "sae-jong": {
+    "id": "sae-jong",
+    "title": "Sae Jong",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 220
+  },
+  "salim": {
+    "id": "salim",
+    "title": "Salim",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 221
+  },
+  "sario": {
+    "id": "sario",
+    "title": "Sario",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 222
+  },
+  "scrompy-lee": {
+    "id": "scrompy-lee",
+    "title": "Scrompy Lee",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 223
+  },
+  "sebas": {
+    "id": "sebas",
+    "title": "Sebas",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 224
+  },
+  "ateez-seonghwa": {
+    "id": "ateez-seonghwa",
+    "title": "Park Seonghwa",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 225
+  },
+  "seulgi": {
+    "id": "seulgi",
+    "title": "Seulgi",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 226
+  },
+  "seunghan": {
+    "id": "seunghan",
+    "title": "Seunghan",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 227
+  },
+  "shadowheart": {
+    "id": "shadowheart",
+    "title": "Shadowheart",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 228
+  },
+  "shindong": {
+    "id": "shindong",
+    "title": "Shindong",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 229
+  },
+  "shotaro": {
+    "id": "shotaro",
+    "title": "Shotaro",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 230
+  },
+  "mx-shownu": {
+    "id": "mx-shownu",
+    "title": "Son Hyunwoo (Shownu)",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 231
+  },
+  "sinb": {
+    "id": "sinb",
+    "title": "SinB",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 232
+  },
+  "sir-baekjin": {
+    "id": "sir-baekjin",
+    "title": "Sir Baekjin",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 233
+  },
+  "siwon": {
+    "id": "siwon",
+    "title": "Siwon",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 234
+  },
+  "sohee": {
+    "id": "sohee",
+    "title": "Sohee",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 235
+  },
+  "subaru": {
+    "id": "subaru",
+    "title": "Subaru",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 236
+  },
+  "sungchan": {
+    "id": "sungchan",
+    "title": "Sungchan",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 237
+  },
+  "suzuki": {
+    "id": "suzuki",
+    "title": "Suzuki",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 238
+  },
+  "taehyun": {
+    "id": "taehyun",
+    "title": "Taehyun",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 239
+  },
+  "taeil": {
+    "id": "taeil",
+    "title": "Taeil",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 240
+  },
+  "tencha": {
+    "id": "tencha",
+    "title": "Tencha",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 241
+  },
+  "tere": {
+    "id": "tere",
+    "title": "Tere",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 242
+  },
+  "umji": {
+    "id": "umji",
+    "title": "Umji",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 243
+  },
+  "uzari": {
+    "id": "uzari",
+    "title": "Uzari",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 244
+  },
+  "valko": {
+    "id": "valko",
+    "title": "Valko",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 245
+  },
+  "wonbin": {
+    "id": "wonbin",
+    "title": "Wonbin",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 246
+  },
+  "ateez-wooyoung": {
+    "id": "ateez-wooyoung",
+    "title": "Jung Wooyoung",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 247
+  },
+  "xiantao-klau": {
+    "id": "xiantao-klau",
+    "title": "XianTao Klau",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 248
+  },
+  "xue-long": {
+    "id": "xue-long",
+    "title": "Xue Long",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 249
+  },
+  "yechan": {
+    "id": "yechan",
+    "title": "Yechan",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 250
+  },
+  "yeonjun": {
+    "id": "yeonjun",
+    "title": "Yeonjun",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 251
+  },
+  "yeontan": {
+    "id": "yeontan",
+    "title": "Yeontan",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 252
+  },
+  "ateez-yeosang": {
+    "id": "ateez-yeosang",
+    "title": "Kang Yeosang",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 253
+  },
+  "yorihiko": {
+    "id": "yorihiko",
+    "title": "Yorihiko",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 254
+  },
+  "youngok": {
+    "id": "youngok",
+    "title": "Youngok",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 255
+  },
+  "yui": {
+    "id": "yui",
+    "title": "Yui",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 256
+  },
+  "ateez-yunho": {
+    "id": "ateez-yunho",
+    "title": "Jeong Yunho",
+    "status": "unknown",
+    "group": "npc",
+    "imageSrc": null,
+    "sortOrder": 257
+  },
+  "exo-kai": {
+    "id": "exo-kai",
+    "title": "Kim Jongin (Kai)",
+    "status": "unknown",
+    "group": "npc",
+    "factionId": "exo",
+    "imageSrc": "/img/characters/exo/exo-kai.png",
+    "sortOrder": 258,
+    "images": []
+  },
+  "exo-chanyeol": {
+    "id": "exo-chanyeol",
+    "title": "Park Chanyeol",
+    "status": "active",
+    "group": "npc",
+    "factionId": "exo",
+    "tags": [],
+    "imageSrc": "/img/characters/exo/exo-chanyeol.png",
+    "sortOrder": 259
+  },
+  "exo-kyungsoo": {
+    "id": "exo-kyungsoo",
+    "title": "Do Kyungsoo",
+    "status": "active",
+    "group": "npc",
+    "factionId": "exo",
+    "tags": [],
+    "imageSrc": "/img/characters/exo/exo-kyungsoo.png",
+    "sortOrder": 260
+  },
+  "exo-lay": {
+    "id": "exo-lay",
+    "title": "Zhang Yixing (Lay)",
+    "status": "active",
+    "group": "npc",
+    "factionId": "exo",
+    "tags": [],
+    "imageSrc": "/img/characters/exo/exo-lay.png",
+    "sortOrder": 261
+  },
+  "exo-sehun": {
+    "id": "exo-sehun",
+    "title": "Oh Sehun",
+    "status": "active",
+    "group": "npc",
+    "factionId": "exo",
+    "tags": [],
+    "imageSrc": "/img/characters/exo/exo-sehun.png",
+    "sortOrder": 262
+  },
+  "exo-xiumin": {
+    "id": "exo-xiumin",
+    "title": "Kim Minseok (Xiumin)",
     "group": "npc",
     "status": "active",
-    "factionId": "psf",
-    "imageSrc": "/img/characters/psf/psf-weesa.png",
-    "tags": [],
-    "sortOrder": 131
+    "factionId": "exo",
+    "imageSrc": "/img/characters/exo/exo-xiumin.png",
+    "tags": []
+  },
+  "exo-suho": {
+    "id": "exo-suho",
+    "title": "Kim Junmyeon (Suho)",
+    "group": "npc",
+    "status": "active",
+    "factionId": "exo",
+    "imageSrc": "/img/characters/exo/exo-suho.png",
+    "tags": []
   }
 }
