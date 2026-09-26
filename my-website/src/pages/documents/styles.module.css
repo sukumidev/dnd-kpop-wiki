@@ -27,7 +27,10 @@
 
 .pageTitle {
   margin: 0;
-  font-size: clamp(1.8rem, 2.6vw, 2.5rem);
+  font-family: var(--h-font-editorial);
+  font-size: var(--h-text-page-title);
+  font-weight: 600;
+  letter-spacing: -0.025em;
   line-height: 1.05;
 }
 
@@ -401,7 +404,7 @@
   display: table;
   margin: 1.5rem auto 0.65rem;
   color: #aab7d5;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--h-font-editorial);
   font-size: 1rem;
   letter-spacing: 0.04em;
 }
@@ -411,11 +414,11 @@
 .readerTitle {
   margin: 1.1rem 0 0;
   color: #edf0fa;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(2.15rem, 6vw, 4rem);
-  font-weight: 500;
+  font-family: var(--h-font-editorial);
+  font-size: var(--h-text-page-title);
+  font-weight: 600;
   letter-spacing: -0.025em;
-  line-height: 1.04;
+  line-height: 1.05;
 }
 
 .chapterNumber + .readerTitle { margin-top: 0; }
@@ -423,7 +426,7 @@
 .chapterTitle {
   margin: 0.75rem 0 0;
   color: #d8def0;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--h-font-editorial);
   font-size: clamp(1.2rem, 3vw, 1.55rem);
   line-height: 1.4;
 }
@@ -492,29 +495,38 @@
   max-width: 700px;
   margin: 0 auto;
   color: #d4d8e5;
-  font-family: "Inter", system-ui, sans-serif;
-  font-size: 1.03rem;
+  font-family: var(--h-font-ui);
+  font-size: var(--h-text-body);
   font-weight: 400;
-  line-height: 1.8;
+  line-height: var(--h-leading-body);
   letter-spacing: 0;
 }
 .documentReaderContent p,
 .documentReaderContent li,
 .documentReaderContent blockquote {
-  font-family: "Inter", system-ui, sans-serif;
-  font-size: 1.03rem;
+  font-family: var(--h-font-ui);
+  font-size: var(--h-text-body);
   font-weight: 400;
-  line-height: 1.8;
+  line-height: var(--h-leading-body);
   letter-spacing: 0;
 }
-.documentReaderContent :where(strong, em, ul, ol) { font-family: "Inter", system-ui, sans-serif; letter-spacing: 0; }
+.documentReaderContent :where(strong, em, ul, ol) { font-family: var(--h-font-ui); letter-spacing: 0; }
 .documentReaderContent p { margin: 0 0 1.45em; }
 .documentReaderContent p:last-child { margin-bottom: 0; }
 .documentReaderContent h2,
-.documentReaderContent h3 { color: #e5e9f5; font-family: Georgia, "Times New Roman", serif; font-weight: 500; }
-.documentReaderContent h2 { margin: 2.2rem 0 1rem; font-size: 1.65rem; }
-.documentReaderContent h3 { margin: 1.8rem 0 0.8rem; font-size: 1.3rem; }
+.documentReaderContent h3 { color: #e5e9f5; font-family: var(--h-font-editorial); font-weight: 600; }
+.documentReaderContent h2 { position: relative; margin: 2.2rem 0 1rem; padding-bottom: 0.65rem; border-bottom: 0; font-size: var(--h-text-heading-2); letter-spacing: 0.06em; line-height: 1.25; text-transform: uppercase; }
+.documentReaderContent h2::after { position: absolute; bottom: -0.45rem; left: 0; width: min(100%, var(--h-heading-divider-width)); height: 1rem; background-image: linear-gradient(90deg, var(--h-border-strong), var(--h-border)); background-position: 1.15rem center; background-repeat: no-repeat; background-size: calc(100% - 1.15rem) 1px; color: var(--h-primary-muted); content: "✦"; font-family: var(--h-font-editorial); font-size: 0.8rem; line-height: 1rem; }
+.documentReaderContent h3 { margin: 1.8rem 0 0.8rem; font-size: var(--h-text-heading-3); line-height: 1.25; }
 .documentReaderContent li { margin: 0.35rem 0; }
+.documentReaderContent :where(ul, ol) { margin: 0 0 1.45rem; padding-left: 1.5rem; }
+.documentReaderContent a { color: #b9c9ed; text-decoration-color: rgba(185, 201, 237, 0.4); text-underline-offset: 0.18em; }
+.documentReaderContent blockquote { margin: 1.6rem 0; padding: 0.25rem 0 0.25rem 1.1rem; border-left: 2px solid var(--document-accent); color: #bec7dc; }
+.documentReaderContent table { display: block; width: 100%; margin: 1.6rem 0; overflow-x: auto; border-collapse: collapse; }
+.documentReaderContent :where(th, td) { padding: 0.65rem 0.8rem; border: 1px solid rgba(112, 132, 184, 0.25); text-align: left; }
+.documentReaderContent th { color: #e5e9f5; background: rgba(112, 132, 184, 0.1); }
+.documentReaderContent > img,
+.documentReaderContent p > img { display: block; width: auto; max-width: 100%; max-height: 680px; margin: 1.8rem auto; border: 1px solid rgba(124, 143, 193, 0.22); }
 
 .documentImage { margin: 0 auto 2.25rem; }
 .documentImage img { display: block; width: auto; max-width: 100%; max-height: 680px; margin: auto; border: 1px solid rgba(124, 143, 193, 0.22); }

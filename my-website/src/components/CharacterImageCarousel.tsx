@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import useBaseUrl from "@docusaurus/useBaseUrl";
-import charactersJson from "@site/src/data/characters.json";
+import { getCharacterById } from "@site/src/data/characters";
 import styles from "../css/CharacterImageCarousel.module.css";
 import { useCharacterId } from "@site/src/components/CharacterContext";
 
@@ -9,8 +9,7 @@ type CarouselImage = {
   img?: string; // legacy temporal
   caption?: string;
 };
-type Character = { title?: string; images?: CarouselImage[] };
-type CharactersMap = Record<string, Character>;
+type CarouselCharacter = { title?: string; images?: CarouselImage[] };
 
 function joinBase(base: string, p: string) {
   // base suele ser "/wiki/" o "/"
@@ -37,8 +36,7 @@ export default function CharacterImageCarousel({
   const [active, setActive] = useState(0);
   const trackRef = useRef<HTMLDivElement | null>(null);
 
-  const characters = charactersJson as CharactersMap;
-  const c = finalId ? characters[finalId] : undefined;
+  const c = (finalId ? getCharacterById(finalId) : undefined) as CarouselCharacter | undefined;
 
 const slides = useMemo(() => {
   const imgs = (c?.images ?? []).filter((x) => x?.src ?? x?.img);

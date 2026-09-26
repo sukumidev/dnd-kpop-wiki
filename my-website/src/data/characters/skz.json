@@ -1,0 +1,708 @@
+{
+  "skz-bangchan": {
+    "id": "skz-bangchan",
+    "title": "Bang Chan (Christopher Bang)",
+    "subtitle": "El Alfa de Alfas",
+    "status": "active",
+    "group": "npc",
+    "role": "supporting",
+    "race": "Licántropo de nacimiento",
+    "regionId": "jeyperia",
+    "hometown": {
+      "label": "Fuera de Jeyperia",
+      "locationId": null,
+      "docPath": null
+    },
+    "factionId": "skz",
+    "dynamic": "alpha",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Líder de Manada",
+      "Comandante del Distrito 9"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/skz/bangchan.png",
+    "dateOfBirth": "1997-10-03",
+    "zodiac": "Libra ♎",
+    "mbti": "ENFJ",
+    "currentLocation": {
+      "label": "Distrito 9",
+      "locationId": null,
+      "docPath": null
+    },
+    "firstAppearance": {
+      "label": "Sesión 11.5",
+      "sessionId": "11-5",
+      "docPath": "campaign/sessions/11-5"
+    },
+    "lastSeen": {
+      "label": "Sesión 11.5",
+      "sessionId": "11-5",
+      "docPath": "campaign/sessions/11-5"
+    },
+    "bonds": [
+      {
+        "label": "Lee Know",
+        "characterId": "skz-leeknow",
+        "docPath": "characters/npc/skz-leeknow"
+      },
+      {
+        "label": "Changbin",
+        "characterId": "skz-changbin",
+        "docPath": "characters/npc/skz-changbin"
+      },
+      {
+        "label": "Hyunjin",
+        "characterId": "skz-hyunjin",
+        "docPath": "characters/npc/skz-hyunjin"
+      },
+      {
+        "label": "Han",
+        "characterId": "skz-han",
+        "docPath": "characters/npc/skz-han"
+      },
+      {
+        "label": "Felix",
+        "characterId": "skz-felix",
+        "docPath": "characters/npc/skz-felix"
+      },
+      {
+        "label": "Seungmin",
+        "characterId": "skz-seungmin",
+        "docPath": "characters/npc/skz-seungmin"
+      },
+      {
+        "label": "I.N.",
+        "characterId": "skz-jeongin",
+        "docPath": "characters/npc/skz-jeongin"
+      }
+    ],
+    "destinyCard": null,
+    "images": [],
+    "summary": null,
+    "sortOrder": 17
+  },
+  "skz-leeknow": {
+    "id": "skz-leeknow",
+    "title": "Lee Know (Lee Minho)",
+    "subtitle": "El Domador de Bestias",
+    "status": "active",
+    "group": "npc",
+    "role": "supporting",
+    "race": "Licántropo + Humano",
+    "regionId": "jeyperia",
+    "hometown": {
+      "label": "Jeyperia",
+      "locationId": null,
+      "docPath": null
+    },
+    "factionId": "skz",
+    "dynamic": "alpha",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Maestro de Bestias",
+      "Encargado de rastreo y manejo de criaturas"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/skz/leeknow.png",
+    "dateOfBirth": "1998-10-25",
+    "zodiac": "Escorpio ♏",
+    "mbti": "INTP",
+    "currentLocation": {
+      "label": "Distrito 9",
+      "locationId": null,
+      "docPath": null
+    },
+    "firstAppearance": {
+      "label": "Sesión 11.5",
+      "sessionId": "11-5",
+      "docPath": "campaign/sessions/11-5"
+    },
+    "lastSeen": {
+      "label": "Sesión 11.5",
+      "sessionId": "11-5",
+      "docPath": "campaign/sessions/11-5"
+    },
+    "bonds": [
+      {
+        "label": "Bang Chan",
+        "characterId": "skz-bangchan",
+        "docPath": "characters/npc/skz-bangchan"
+      },
+      {
+        "label": "Changbin",
+        "characterId": "skz-changbin",
+        "docPath": "characters/npc/skz-changbin"
+      },
+      {
+        "label": "Hyunjin",
+        "characterId": "skz-hyunjin",
+        "docPath": "characters/npc/skz-hyunjin"
+      },
+      {
+        "label": "Han",
+        "characterId": "skz-han",
+        "docPath": "characters/npc/skz-han"
+      },
+      {
+        "label": "Felix",
+        "characterId": "skz-felix",
+        "docPath": "characters/npc/skz-felix"
+      },
+      {
+        "label": "Seungmin",
+        "characterId": "skz-seungmin",
+        "docPath": "characters/npc/skz-seungmin"
+      },
+      {
+        "label": "I.N.",
+        "characterId": "skz-jeongin",
+        "docPath": "characters/npc/skz-jeongin"
+      }
+    ],
+    "destinyCard": null,
+    "images": [],
+    "summary": null,
+    "sortOrder": 18
+  },
+  "skz-changbin": {
+    "id": "skz-changbin",
+    "title": "Seo Changbin",
+    "subtitle": "La Fuerza de la Ferocidad",
+    "status": "active",
+    "group": "npc",
+    "role": "supporting",
+    "race": "Licántropo + Humano",
+    "regionId": "jeyperia",
+    "hometown": {
+      "label": "Jeyperia",
+      "locationId": null,
+      "docPath": null
+    },
+    "factionId": "skz",
+    "dynamic": "alpha",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Vanguardia de Choque",
+      "Protector territorial"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/skz/changbin.png",
+    "dateOfBirth": "1999-08-11",
+    "zodiac": "Leo ♌",
+    "mbti": "ESFP",
+    "currentLocation": {
+      "label": "Distrito 9",
+      "locationId": null,
+      "docPath": null
+    },
+    "firstAppearance": {
+      "label": "Sesión 05",
+      "sessionId": "05",
+      "docPath": "campaign/sessions/05"
+    },
+    "lastSeen": {
+      "label": "Sesión 11.5",
+      "sessionId": "11-5",
+      "docPath": "campaign/sessions/11-5"
+    },
+    "bonds": [
+      {
+        "label": "Lee Know",
+        "characterId": "skz-leeknow",
+        "docPath": "characters/npc/skz-leeknow"
+      },
+      {
+        "label": "Bang Chan",
+        "characterId": "skz-bangchan",
+        "docPath": "characters/npc/skz-bangchan"
+      },
+      {
+        "label": "Hyunjin",
+        "characterId": "skz-hyunjin",
+        "docPath": "characters/npc/skz-hyunjin"
+      },
+      {
+        "label": "Han",
+        "characterId": "skz-han",
+        "docPath": "characters/npc/skz-han"
+      },
+      {
+        "label": "Felix",
+        "characterId": "skz-felix",
+        "docPath": "characters/npc/skz-felix"
+      },
+      {
+        "label": "Seungmin",
+        "characterId": "skz-seungmin",
+        "docPath": "characters/npc/skz-seungmin"
+      },
+      {
+        "label": "I.N.",
+        "characterId": "skz-jeongin",
+        "docPath": "characters/npc/skz-jeongin"
+      }
+    ],
+    "destinyCard": null,
+    "images": [],
+    "summary": null,
+    "sortOrder": 19
+  },
+  "skz-hyunjin": {
+    "id": "skz-hyunjin",
+    "title": "Hwang Hyunjin",
+    "subtitle": "El Artista del Espejismo",
+    "status": "missing",
+    "group": "npc",
+    "role": "supporting",
+    "race": "Licántropo + Humano",
+    "regionId": "jeyperia",
+    "hometown": {
+      "label": "Jeyperia",
+      "locationId": null,
+      "docPath": null
+    },
+    "factionId": "skz",
+    "dynamic": "omega",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Explorador táctico",
+      "Ilusionista de campo"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/skz/hyunjin.png",
+    "dateOfBirth": "2000-03-20",
+    "zodiac": "Piscis ♓",
+    "mbti": "ISFP",
+    "currentLocation": null,
+    "firstAppearance": {
+      "label": "Sesión 05",
+      "sessionId": "05",
+      "docPath": "campaign/sessions/05"
+    },
+    "lastSeen": {
+      "label": "Sesión 15",
+      "sessionId": "15",
+      "docPath": "campaign/sessions/15"
+    },
+    "bonds": [
+      {
+        "label": "Lee Know",
+        "characterId": "skz-leeknow",
+        "docPath": "characters/npc/skz-leeknow"
+      },
+      {
+        "label": "Changbin",
+        "characterId": "skz-changbin",
+        "docPath": "characters/npc/skz-changbin"
+      },
+      {
+        "label": "Bang Chan",
+        "characterId": "skz-bangchan",
+        "docPath": "characters/npc/skz-bangchan"
+      },
+      {
+        "label": "Han",
+        "characterId": "skz-han",
+        "docPath": "characters/npc/skz-han"
+      },
+      {
+        "label": "Felix",
+        "characterId": "skz-felix",
+        "docPath": "characters/npc/skz-felix"
+      },
+      {
+        "label": "Seungmin",
+        "characterId": "skz-seungmin",
+        "docPath": "characters/npc/skz-seungmin"
+      },
+      {
+        "label": "I.N.",
+        "characterId": "skz-jeongin",
+        "docPath": "characters/npc/skz-jeongin"
+      },
+      {
+        "label": "Minjae",
+        "characterId": "pc-minjae",
+        "docPath": "characters/party/pc-minjae"
+      }
+    ],
+    "destinyCard": null,
+    "images": [],
+    "summary": null,
+    "sortOrder": 20
+  },
+  "skz-han": {
+    "id": "skz-han",
+    "title": "Han Jisung",
+    "subtitle": "El Psíquico Rebelde",
+    "status": "active",
+    "group": "npc",
+    "role": "supporting",
+    "race": "Licántropo + Humano",
+    "regionId": "jeyperia",
+    "hometown": {
+      "label": "Jeyperia",
+      "locationId": null,
+      "docPath": null
+    },
+    "factionId": "skz",
+    "dynamic": "omega",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Enlace diplomático",
+      "Vocero de la manada"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/skz/han.png",
+    "dateOfBirth": "2000-09-14",
+    "zodiac": "Virgo ♍",
+    "mbti": "ENFP",
+    "currentLocation": {
+      "label": "Distrito 9",
+      "locationId": null,
+      "docPath": null
+    },
+    "firstAppearance": {
+      "label": "Sesión 11.5",
+      "sessionId": "11-5",
+      "docPath": "campaign/sessions/11-5"
+    },
+    "lastSeen": {
+      "label": "Sesión 11.5",
+      "sessionId": "11-5",
+      "docPath": "campaign/sessions/11-5"
+    },
+    "bonds": [
+      {
+        "label": "Lee Know",
+        "characterId": "skz-leeknow",
+        "docPath": "characters/npc/skz-leeknow"
+      },
+      {
+        "label": "Changbin",
+        "characterId": "skz-changbin",
+        "docPath": "characters/npc/skz-changbin"
+      },
+      {
+        "label": "Hyunjin",
+        "characterId": "skz-hyunjin",
+        "docPath": "characters/npc/skz-hyunjin"
+      },
+      {
+        "label": "Bang Chan",
+        "characterId": "skz-bangchan",
+        "docPath": "characters/npc/skz-bangchan"
+      },
+      {
+        "label": "Felix",
+        "characterId": "skz-felix",
+        "docPath": "characters/npc/skz-felix"
+      },
+      {
+        "label": "Seungmin",
+        "characterId": "skz-seungmin",
+        "docPath": "characters/npc/skz-seungmin"
+      },
+      {
+        "label": "I.N.",
+        "characterId": "skz-jeongin",
+        "docPath": "characters/npc/skz-jeongin"
+      }
+    ],
+    "destinyCard": null,
+    "images": [],
+    "summary": null,
+    "sortOrder": 21
+  },
+  "skz-felix": {
+    "id": "skz-felix",
+    "title": "Felix Lee",
+    "subtitle": "El Ente de los Sueños",
+    "status": "active",
+    "group": "npc",
+    "role": "supporting",
+    "race": "Licántropo + Aasimar",
+    "regionId": "jeyperia",
+    "hometown": {
+      "label": "Fuera de Jeyperia",
+      "locationId": null,
+      "docPath": null
+    },
+    "factionId": "skz",
+    "dynamic": "beta",
+    "orientation": "Pan",
+    "romanticSituation": "Es complicado",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Guardián onírico",
+      "Vigilante espiritual"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/skz/felix.png",
+    "dateOfBirth": "2000-09-15",
+    "zodiac": "Virgo ♍",
+    "mbti": "ENFP",
+    "currentLocation": {
+      "label": "Distrito 9",
+      "locationId": null,
+      "docPath": null
+    },
+    "firstAppearance": {
+      "label": "Epílogo Sesión 09",
+      "sessionId": "09",
+      "docPath": "campaign/sessions/09"
+    },
+    "lastSeen": {
+      "label": "Sesión 17",
+      "sessionId": "17",
+      "docPath": "campaign/sessions/17"
+    },
+    "bonds": [
+      {
+        "label": "Lee Know",
+        "characterId": "skz-leeknow",
+        "docPath": "characters/npc/skz-leeknow"
+      },
+      {
+        "label": "Changbin",
+        "characterId": "skz-changbin",
+        "docPath": "characters/npc/skz-changbin"
+      },
+      {
+        "label": "Hyunjin",
+        "characterId": "skz-hyunjin",
+        "docPath": "characters/npc/skz-hyunjin"
+      },
+      {
+        "label": "Han",
+        "characterId": "skz-han",
+        "docPath": "characters/npc/skz-han"
+      },
+      {
+        "label": "Bang Chan",
+        "characterId": "skz-bangchan",
+        "docPath": "characters/npc/skz-bangchan"
+      },
+      {
+        "label": "Seungmin",
+        "characterId": "skz-seungmin",
+        "docPath": "characters/npc/skz-seungmin"
+      },
+      {
+        "label": "I.N.",
+        "characterId": "skz-jeongin",
+        "docPath": "characters/npc/skz-jeongin"
+      },
+      {
+        "label": "Minjae",
+        "characterId": "pc-minjae",
+        "docPath": "characters/party/pc-minjae"
+      }
+    ],
+    "destinyCard": null,
+    "images": [],
+    "summary": null,
+    "sortOrder": 22
+  },
+  "skz-seungmin": {
+    "id": "skz-seungmin",
+    "title": "Kim Seungmin",
+    "subtitle": "La Sombra Ejecutora",
+    "status": "active",
+    "group": "npc",
+    "role": "supporting",
+    "race": "Licántropo + Humano",
+    "regionId": "jeyperia",
+    "hometown": {
+      "label": "Jeyperia",
+      "locationId": null,
+      "docPath": null
+    },
+    "factionId": "skz",
+    "dynamic": "alpha",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Agente encubierto",
+      "Ejecutor de operaciones especiales"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/skz/seungmin.png",
+    "dateOfBirth": "2000-09-22",
+    "zodiac": "Virgo ♍",
+    "mbti": "ISFJ",
+    "currentLocation": {
+      "label": "Distrito 9",
+      "locationId": null,
+      "docPath": null
+    },
+    "firstAppearance": {
+      "label": "Sesión 11.5",
+      "sessionId": "11-5",
+      "docPath": "campaign/sessions/11-5"
+    },
+    "lastSeen": {
+      "label": "Sesión 11.5",
+      "sessionId": "11-5",
+      "docPath": "campaign/sessions/11-5"
+    },
+    "bonds": [
+      {
+        "label": "Lee Know",
+        "characterId": "skz-leeknow",
+        "docPath": "characters/npc/skz-leeknow"
+      },
+      {
+        "label": "Changbin",
+        "characterId": "skz-changbin",
+        "docPath": "characters/npc/skz-changbin"
+      },
+      {
+        "label": "Hyunjin",
+        "characterId": "skz-hyunjin",
+        "docPath": "characters/npc/skz-hyunjin"
+      },
+      {
+        "label": "Han",
+        "characterId": "skz-han",
+        "docPath": "characters/npc/skz-han"
+      },
+      {
+        "label": "Felix",
+        "characterId": "skz-felix",
+        "docPath": "characters/npc/skz-felix"
+      },
+      {
+        "label": "Bang Chan",
+        "characterId": "skz-bangchan",
+        "docPath": "characters/npc/skz-bangchan"
+      },
+      {
+        "label": "I.N.",
+        "characterId": "skz-jeongin",
+        "docPath": "characters/npc/skz-jeongin"
+      }
+    ],
+    "destinyCard": null,
+    "images": [],
+    "summary": null,
+    "sortOrder": 23
+  },
+  "skz-jeongin": {
+    "id": "skz-jeongin",
+    "title": "Yang Jeongin (I.N)",
+    "subtitle": "La Reencarnación del Dios de la Luna",
+    "status": "active",
+    "group": "npc",
+    "role": "supporting",
+    "race": "Licántropo + Humano",
+    "regionId": "jeyperia",
+    "hometown": {
+      "label": "Región costera del sur de Jeyperia",
+      "locationId": null,
+      "docPath": null
+    },
+    "factionId": "skz",
+    "dynamic": "alpha",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Guía espiritual",
+      "Guardián del vínculo lunar"
+    ],
+    "tags": [],
+    "imageSrc": "/img/characters/skz/jeongin.png",
+    "dateOfBirth": "2001-02-08",
+    "zodiac": "Acuario ♒",
+    "mbti": "INFJ",
+    "currentLocation": {
+      "label": "Distrito 9",
+      "locationId": null,
+      "docPath": null
+    },
+    "firstAppearance": {
+      "label": "Sesión 03",
+      "sessionId": "03",
+      "docPath": "campaign/sessions/03"
+    },
+    "lastSeen": {
+      "label": "Sesión 17",
+      "sessionId": "17",
+      "docPath": "campaign/sessions/17"
+    },
+    "bonds": [
+      {
+        "label": "Minjae",
+        "characterId": "pc-minjae",
+        "docPath": "characters/party/pc-minjae"
+      },
+      {
+        "label": "Imugi",
+        "characterId": "pc-imugi",
+        "docPath": "characters/party/pc-imugi"
+      },
+      {
+        "label": "Kiyori",
+        "characterId": "pc-kiyori",
+        "docPath": "characters/party/pc-kiyori"
+      },
+      {
+        "label": "Soobin",
+        "characterId": "pc-soobin",
+        "docPath": "characters/party/pc-soobin"
+      },
+      {
+        "label": "Lee Know",
+        "characterId": "skz-leeknow",
+        "docPath": "characters/npc/skz-leeknow"
+      },
+      {
+        "label": "Changbin",
+        "characterId": "skz-changbin",
+        "docPath": "characters/npc/skz-changbin"
+      },
+      {
+        "label": "Hyunjin",
+        "characterId": "skz-hyunjin",
+        "docPath": "characters/npc/skz-hyunjin"
+      },
+      {
+        "label": "Han",
+        "characterId": "skz-han",
+        "docPath": "characters/npc/skz-han"
+      },
+      {
+        "label": "Felix",
+        "characterId": "skz-felix",
+        "docPath": "characters/npc/skz-felix"
+      },
+      {
+        "label": "Seungmin",
+        "characterId": "skz-seungmin",
+        "docPath": "characters/npc/skz-seungmin"
+      },
+      {
+        "label": "Bang Chan",
+        "characterId": "skz-bangchan",
+        "docPath": "characters/npc/skz-bangchan"
+      }
+    ],
+    "destinyCard": "As de Corazones",
+    "images": [],
+    "summary": null,
+    "sortOrder": 24
+  }
+}

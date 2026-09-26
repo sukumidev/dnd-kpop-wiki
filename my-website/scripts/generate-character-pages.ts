@@ -1,5 +1,6 @@
 import path from "node:path";
 import fs from "node:fs/promises";
+import { characters as characterRegistry } from "../src/data/characters";
 import { runDataValidation } from "./preflight-validation";
 import type { GenerateOptions, GenerateResult } from "./generate-types";
 
@@ -18,7 +19,6 @@ type CharacterEntry = {
 type CharactersJson = Record<string, CharacterEntry>;
 
 const ROOT = process.cwd();
-const CHARACTERS_JSON = path.join(ROOT, "src", "data", "characters.json");
 const DOCS_ROOT = path.join(ROOT, "docs", "characters");
 
 function parseOptions(argv = process.argv.slice(2)): GenerateOptions {
@@ -106,12 +106,11 @@ function printResult(result: GenerateResult, options: GenerateOptions) {
 }
 
 export async function generateCharacterPages(options: GenerateOptions): Promise<GenerateResult> {
-  const raw = await fs.readFile(CHARACTERS_JSON, "utf8");
-  const characters: CharactersJson = JSON.parse(raw);
+  const characters = characterRegistry as CharactersJson;
 
   const ids = Object.keys(characters);
   if (!ids.length) {
-    console.log("No hay personajes en characters.json");
+    console.log("No hay personajes en el registro de personajes");
     return { type: "characters", created: 0, overwritten: 0, skipped: 0 };
   }
 

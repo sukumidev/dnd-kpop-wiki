@@ -1,4 +1,5 @@
-import charactersJson from "./characters.json";
+import legacyCharactersJson from "./characters.json";
+import skzCharactersJson from "./characters/skz.json";
 
 export type CharacterGroup = "party" | "npc";
 
@@ -95,7 +96,20 @@ export type Character = {
 
 export type CharactersById = Record<string, Character>;
 
-export const characters = charactersJson as CharactersById;
+const legacyCharacters = legacyCharactersJson as CharactersById;
+const skzCharacters = skzCharactersJson as CharactersById;
+
+/**
+ * Unified character registry.
+ *
+ * characters.json remains the legacy source while factions are migrated.
+ * Faction files are layered afterwards, so a migrated character overrides its
+ * legacy entry by ID without appearing twice in characterList.
+ */
+export const characters: CharactersById = {
+  ...legacyCharacters,
+  ...skzCharacters,
+};
 
 export const characterList = Object.values(characters);
 

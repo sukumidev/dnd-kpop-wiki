@@ -1,96 +1,35 @@
 import fs from "node:fs/promises";
 import path from "node:path";
-
-type DocumentStatus = "draft" | "published" | "archived";
-type DocumentVisibility = "public" | "hidden" | "secret" | "dm-only";
+import {getDocumentContentFormat, resolveDocumentMdxPath, validateDocumentMdxFile} from "./document-content";
 
 const GENERATED_MARKER = "AUTO-GENERATED DOCUMENT ROUTE";
 const DEFAULT_INPUT = "src/data/documents.json";
 const DEFAULT_OUT = "src/pages/documents";
-
 const DOCUMENT_TYPES = new Set([
-  "book",
-  "lore",
-  "rumor",
-  "guild-announcement",
-  "letter",
-  "note",
-  "newspaper",
-  "diary",
-  "report",
-  "decree",
-  "testimony",
-  "contract",
-  "prophecy",
-  "handout",
-  "other",
+  "book", "lore", "rumor", "guild-announcement", "letter", "note", "newspaper", "diary",
+  "report", "decree", "testimony", "contract", "prophecy", "handout", "other",
 ]);
 
-type RawDocument = {
-  id?: unknown;
-  title?: unknown;
-  type?: unknown;
-  status?: unknown;
-  visibility?: unknown;
-  slug?: unknown;
+export type RawDocument = {
+  id?: unknown; title?: unknown; type?: unknown; status?: unknown; visibility?: unknown;
+  slug?: unknown; documentKind?: unknown; parentDocumentId?: unknown;
+  content?: unknown; contentFormat?: unknown; contentPath?: unknown;
 };
+export type DocumentRoute = {id: string; slug: string; contentImportPath?: string};
+type CliOptions = {input: string; out: string; clean: boolean; includePrivate: boolean; dryRun: boolean};
 
-type DocumentRoute = {
-  id: string;
-  slug: string;
-};
-
-type CliOptions = {
-  input: string;
-  out: string;
-  clean: boolean;
-  includePrivate: boolean;
-  dryRun: boolean;
-};
-
-function parseArgs(argv: string[]): CliOptions {
-  const options: CliOptions = {
-    input: DEFAULT_INPUT,
-    out: DEFAULT_OUT,
-    clean: false,
-    includePrivate: false,
-    dryRun: false,
-  };
-
+export function parseArgs(argv: string[]): CliOptions {
+  const options: CliOptions = {input: DEFAULT_INPUT, out: DEFAULT_OUT, clean: false, includePrivate: false, dryRun: false};
   for (let index = 0; index < argv.length; index += 1) {
     const arg = argv[index];
     const next = argv[index + 1];
-
-    if (arg === "--input" && next) {
-      options.input = next;
-      index += 1;
-      continue;
-    }
-
-    if (arg === "--out" && next) {
-      options.out = next;
-      index += 1;
-      continue;
-    }
-
-    if (arg === "--clean") {
-      options.clean = true;
-      continue;
-    }
-
-    if (arg === "--include-private") {
-      options.includePrivate = true;
-      continue;
-    }
-
-    if (arg === "--dry-run") {
-      options.dryRun = true;
-      continue;
-    }
-
-    throw new Error(`Unknown or incomplete argument: ${arg}`);
+    if (arg === "--input" && next) { options.input = next; index += 1; }
+    else if (arg === "--out" && next) { options.out = next; index += 1; }
+    else if (arg === "--clean") options.clean = true;
+    else if (arg === "--include-private") options.includePrivate = true;
+    else if (arg === "--dry-run") options.dryRun = true;
+    else throw new Error(`Unknown or incomplete argument: ${arg}`);
   }
-
   return options;
 }
 
@@ -98,191 +37,131 @@ function isRecord(value: unknown): value is Record<string, unknown> {
   return Boolean(value) && typeof value === "object" && !Array.isArray(value);
 }
 
-function normalizeDocuments(value: unknown): RawDocument[] {
-  if (Array.isArray(value)) {
-    return value as RawDocument[];
-  }
-
-  if (isRecord(value)) {
-    return Object.values(value) as RawDocument[];
-  }
-
-  throw new Error("documents.json must be either an array or an object record.");
-}
-
-function getDocumentLabel(document: RawDocument, index: number): string {
-  return typeof document.id === "string" && document.id.trim()
-    ? document.id
-    : `at index ${index}`;
+export function normalizeDocuments(value: unknown): RawDocument[] {
+  if (!Array.isArray(value)) throw new Error("documents.json must be an array.");
+  return value as RawDocument[];
 }
 
 function validateDocument(value: RawDocument, index: number): asserts value is RawDocument {
-  if (!isRecord(value)) {
-    throw new Error(`Document at index ${index} must be an object.`);
+  if (!isRecord(value)) throw new Error(`Document at index ${index} must be an object.`);
+  const label = typeof value.id === "string" && value.id.trim() ? value.id : `at index ${index}`;
+  if (typeof value.id !== "string" || !value.id.trim()) throw new Error(`Document ${label} has no id.`);
+  if (typeof value.title !== "string" || !value.title.trim()) throw new Error(`Document "${value.id}" has no title.`);
+  if (typeof value.type !== "string" || !DOCUMENT_TYPES.has(value.type)) {
+    throw new Error(`Document "${value.id}" has invalid type "${String(value.type)}".`);
   }
-
-  const document = value;
-  const label = getDocumentLabel(document, index);
-
-  if (typeof document.id !== "string" || !document.id.trim()) {
-    throw new Error(`Document ${label} has no id.`);
-  }
-
-  if (typeof document.title !== "string" || !document.title.trim()) {
-    throw new Error(`Document "${document.id}" has no title.`);
-  }
-
-  if (typeof document.type !== "string" || !DOCUMENT_TYPES.has(document.type)) {
-    throw new Error(`Document "${document.id}" has invalid type "${String(document.type)}".`);
-  }
-}
-
-function isPublishedPublic(document: RawDocument): boolean {
-  return document.status === "published" && document.visibility === "public";
 }
 
 function shouldGenerateDocument(document: RawDocument, includePrivate: boolean): boolean {
-  if (isPublishedPublic(document)) return true;
-
-  return includePrivate && document.status === "published";
+  const isPublic = document.status === "published" && document.visibility === "public";
+  return isPublic || (includePrivate && document.status === "published");
 }
 
 function slugify(value: string): string {
-  return value
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .toLowerCase()
-    .trim()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
+  return value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().trim()
+    .replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
 }
 
 function getRouteSlug(document: RawDocument): string {
-  const rawSlug =
-    typeof document.slug === "string" && document.slug.trim()
-      ? document.slug
-      : String(document.id);
+  const rawSlug = typeof document.slug === "string" && document.slug.trim() ? document.slug : String(document.id);
   const slug = slugify(rawSlug);
-
-  if (!slug) {
-    throw new Error(`Document "${String(document.id)}" generated an empty route slug.`);
-  }
-
+  if (!slug) throw new Error(`Document "${String(document.id)}" generated an empty route slug.`);
   return slug;
 }
 
-function buildRoutes(documents: RawDocument[], includePrivate: boolean): DocumentRoute[] {
+export function buildRoutes(documents: RawDocument[], includePrivate: boolean, projectRoot = process.cwd()): DocumentRoute[] {
   const routes: DocumentRoute[] = [];
   const routeBySlug = new Map<string, string>();
-
   documents.forEach((document, index) => {
     validateDocument(document, index);
-
+    const contentFormat = getDocumentContentFormat(document);
+    if (!contentFormat) {
+      throw new Error(`Document "${String(document.id)}" has invalid contentFormat ${JSON.stringify(document.contentFormat)}.`);
+    }
+    const mdxErrors = validateDocumentMdxFile(document, projectRoot);
+    if (mdxErrors.length) {
+      throw new Error(`Document "${String(document.id)}" has invalid MDX content: ${mdxErrors.join(" ")}`);
+    }
     if (!shouldGenerateDocument(document, includePrivate)) return;
 
     const id = document.id as string;
     const slug = getRouteSlug(document);
     const existingDocumentId = routeBySlug.get(slug);
-
     if (existingDocumentId) {
-      throw new Error(
-        `Duplicate document route slug "${slug}" generated by "${existingDocumentId}" and "${id}".`,
-      );
+      throw new Error(`Duplicate document route slug "${slug}" generated by "${existingDocumentId}" and "${id}".`);
     }
-
     routeBySlug.set(slug, id);
-    routes.push({ id, slug });
+    routes.push({
+      id,
+      slug,
+      contentImportPath: contentFormat === "mdx"
+        ? resolveDocumentMdxPath(projectRoot, document.contentPath).importPath
+        : undefined,
+    });
   });
-
   return routes.sort((a, b) => a.slug.localeCompare(b.slug));
 }
 
-function renderRoute(documentId: string): string {
+export function renderRoute(route: DocumentRoute): string {
+  const contentImport = route.contentImportPath
+    ? `import DocumentContent from ${JSON.stringify(route.contentImportPath)};\n`
+    : "";
+  const contentProp = route.contentImportPath ? " content={<DocumentContent />}" : "";
   return `// ${GENERATED_MARKER}
 // Do not edit manually. Run npm run gen:documents instead.
 
 import React from "react";
 import DocumentReaderPage from "@site/src/components/documents/DocumentReaderPage";
-
+${contentImport}
 export default function GeneratedDocumentPage() {
-  return <DocumentReaderPage documentId=${JSON.stringify(documentId)} />;
+  return <DocumentReaderPage documentId=${JSON.stringify(route.id)}${contentProp} />;
 }
 `;
 }
 
 async function pathExists(filePath: string): Promise<boolean> {
-  try {
-    await fs.access(filePath);
-    return true;
-  } catch {
-    return false;
-  }
+  try { await fs.access(filePath); return true; } catch { return false; }
 }
 
 async function cleanGeneratedRoutes(outputDir: string, dryRun: boolean): Promise<number> {
   if (!(await pathExists(outputDir))) return 0;
-
-  const entries = await fs.readdir(outputDir, { withFileTypes: true });
+  const entries = await fs.readdir(outputDir, {withFileTypes: true});
   let removedCount = 0;
-
   for (const entry of entries) {
     if (!entry.isFile() || !entry.name.endsWith(".tsx")) continue;
-
     const filePath = path.join(outputDir, entry.name);
     const contents = await fs.readFile(filePath, "utf8");
-
     if (!contents.includes(GENERATED_MARKER)) continue;
-
     removedCount += 1;
-
-    if (dryRun) {
-      console.log(`[dry-run] Would remove ${filePath}`);
-      continue;
-    }
-
-    await fs.rm(filePath);
+    if (dryRun) console.log(`[dry-run] Would remove ${filePath}`);
+    else await fs.rm(filePath);
   }
-
   return removedCount;
 }
 
 async function writeRoutes(routes: DocumentRoute[], outputDir: string, dryRun: boolean) {
-  if (!dryRun) {
-    await fs.mkdir(outputDir, { recursive: true });
-  }
-
+  if (!dryRun) await fs.mkdir(outputDir, {recursive: true});
   for (const route of routes) {
     const outputPath = path.join(outputDir, `${route.slug}.tsx`);
-    const contents = renderRoute(route.id);
-
-    if (dryRun) {
-      console.log(`[dry-run] Would write ${outputPath}`);
-      continue;
-    }
-
-    await fs.writeFile(outputPath, contents);
+    if (dryRun) console.log(`[dry-run] Would write ${outputPath}`);
+    else await fs.writeFile(outputPath, renderRoute(route));
   }
 }
 
-async function main() {
+export async function main() {
   const options = parseArgs(process.argv.slice(2));
   const rawJson = await fs.readFile(options.input, "utf8");
-  const documents = normalizeDocuments(JSON.parse(rawJson));
-  const routes = buildRoutes(documents, options.includePrivate);
-
-  const cleanedCount = options.clean
-    ? await cleanGeneratedRoutes(options.out, options.dryRun)
-    : 0;
-
+  const routes = buildRoutes(normalizeDocuments(JSON.parse(rawJson)), options.includePrivate);
+  const cleanedCount = options.clean ? await cleanGeneratedRoutes(options.out, options.dryRun) : 0;
   await writeRoutes(routes, options.out, options.dryRun);
-
   const prefix = options.dryRun ? "[dry-run] " : "";
-  console.log(
-    `${prefix}Generated ${routes.length} document route(s) in ${options.out}. Cleaned ${cleanedCount}.`,
-  );
+  console.log(`${prefix}Generated ${routes.length} document route(s) in ${options.out}. Cleaned ${cleanedCount}.`);
 }
 
-main().catch((error) => {
-  console.error(error instanceof Error ? error.message : error);
-  process.exitCode = 1;
-});
+const isMain = process.argv[1]?.replace(/\\/g, "/").endsWith("/generate-document-pages.ts") ?? false;
+if (isMain) {
+  main().catch((error) => {
+    console.error(error instanceof Error ? error.message : error);
+    process.exitCode = 1;
+  });
+}
