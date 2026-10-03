@@ -2,11 +2,11 @@
   "pc-minjae": {
     "id": "pc-minjae",
     "title": "Yang Minjae",
-    "subtitle": "El Corazón de la Luz de la Luna",
+    "subtitle": "El Paladín de la Luz de la Luna",
     "status": "active",
     "group": "party",
-    "role": "protagonist",
-    "race": "Half-Elf",
+    "role": "Player",
+    "race": "Semi-Elfo",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Aldea Serin, Sylmorien",
@@ -15,12 +15,12 @@
     },
     "factionId": "panes-del-destino",
     "dynamic": "alpha",
-    "orientation": "pansexual",
+    "orientation": "Pan",
     "romanticSituation": "En una relación con Joshua",
     "polyamoryStatus": "yes",
     "occupation": [
       "Líder de los Panes del Destino",
-      "(Ex) Capitán de la Guardia Real de Sylmorien"
+      "Ex Capitán de la Guardia Real de Sylmorien"
     ],
     "tags": [],
     "locationIds": [
@@ -136,10 +136,10 @@
   "pc-kiyori": {
     "id": "pc-kiyori",
     "title": "Kiyori Hoshizuki",
-    "subtitle": "La Heroína Erudita",
+    "subtitle": "La Erudita Neovibrante",
     "status": "active",
     "group": "party",
-    "role": "protagonist",
+    "role": "Player",
     "race": "Tiefling",
     "regionId": "hotou",
     "hometown": {
@@ -153,8 +153,8 @@
     "romanticSituation": "Sin compromisos",
     "polyamoryStatus": "yes",
     "occupation": [
-      "Estudiante de la Neo Academia",
-      "Primogénita del Clan Hoshizuki de Hotou"
+      "Frente Mágico de los Panes del Destino",
+      "Estudiante de la Neo Academia"
     ],
     "tags": [],
     "imageSrc": "/img/characters/party/kiyori-actual.png",
@@ -297,11 +297,11 @@
   "pc-imugi": {
     "id": "pc-imugi",
     "title": "Fenghuang Imugi",
-    "subtitle": "El Príncipe Heredero del Caos",
+    "subtitle": "El Heredero del Caos",
     "status": "active",
     "group": "party",
-    "role": "protagonist",
-    "race": "Elf",
+    "role": "Player",
+    "race": "Elfo",
     "regionId": "yggdrasil",
     "hometown": {
       "label": "?",
@@ -395,11 +395,11 @@
   "pc-soobin": {
     "id": "pc-soobin",
     "title": "Jang Soobin",
-    "subtitle": "La Becaria Humilde",
+    "subtitle": "La Monje del Faro",
     "status": "active",
     "group": "party",
-    "role": "protagonist",
-    "race": "Elf",
+    "role": "Player",
+    "race": "Semi-Elfa",
     "regionId": "jeyperia",
     "hometown": {
       "label": "Villa Jangmi, Jeyperia",
@@ -499,11 +499,11 @@
   "svt-scoups": {
     "id": "svt-scoups",
     "title": "S.Coups (Choi Seungcheol)",
-    "subtitle": "El Gran Maestro del Gremio de Aventureros",
+    "subtitle": "El capitán de los Diecisiete",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
-    "race": "Human",
+    "role": "NPC",
+    "race": "Humano",
     "regionId": "hyberia",
     "hometown": {
       "label": "Gudae, Hyberia",
@@ -632,11 +632,11 @@
   "svt-jeonghan": {
     "id": "svt-jeonghan",
     "title": "Yoon Jeonghan",
-    "subtitle": "El Estratega de la Eternidad",
+    "subtitle": "El estratega de la sonrisa angelical",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
-    "race": "Human",
+    "role": "NPC",
+    "race": "Humano",
     "regionId": "hyberia",
     "hometown": {
       "label": "Borasek, Hyberia",
@@ -765,11 +765,11 @@
   "svt-joshua": {
     "id": "svt-joshua",
     "title": "Joshua Hong",
-    "subtitle": "El Portador del Milagro",
+    "subtitle": "El guardián de las promesas",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
-    "race": "Human",
+    "role": "NPC",
+    "race": "Humano",
     "regionId": "hyberia",
     "hometown": {
       "label": "Los Arcángeles, Tierra sin Nombre",
@@ -893,11 +893,11 @@
   "svt-jun": {
     "id": "svt-jun",
     "title": "Wen Junhui (Jun)",
-    "subtitle": "El Explorador de Vanguardia",
+    "subtitle": "El héroe de los caminos lejanos",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
-    "race": "Human",
+    "role": "NPC",
+    "race": "Humano",
     "regionId": "hyberia",
     "hometown": {
       "label": "Zhenshen, Naxai",
@@ -1015,11 +1015,11 @@
   "svt-hoshi": {
     "id": "svt-hoshi",
     "title": "Hoshi (Kwon Soonyoung)",
-    "subtitle": "El Guardián Ancestral",
+    "subtitle": "El tigre de la primera línea",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
-    "race": "Changeling",
+    "role": "NPC",
+    "race": "Humano",
     "regionId": "hyberia",
     "hometown": {
       "label": "Borasek, Hyberia",
@@ -1138,11 +1138,11 @@
   "svt-wonwoo": {
     "id": "svt-wonwoo",
     "title": "Jeon Wonwoo",
-    "subtitle": "El Inventor Silencioso",
+    "subtitle": "El vigía de los secretos",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
-    "race": "Human",
+    "role": "NPC",
+    "race": "Humano",
     "regionId": "hyberia",
     "hometown": {
       "label": "Aldea Wongchang, Hyberia",
@@ -1260,11 +1260,11 @@
   "svt-woozi": {
     "id": "svt-woozi",
     "title": "Woozi (Lee Jihoon)",
-    "subtitle": "El Hechicero Pródigo",
+    "subtitle": "El arquitecto de la victoria",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
-    "race": "Human",
+    "role": "NPC",
+    "race": "Humano",
     "regionId": "hyberia",
     "hometown": {
       "label": "Sanbu, Jeyperia",
@@ -1383,11 +1383,11 @@
   "svt-dk": {
     "id": "svt-dk",
     "title": "Dokyeom (Lee Seokmin)",
-    "subtitle": "El Sanador de las Manitas Mágicas",
+    "subtitle": "El héroe de la luz naciente",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
-    "race": "Human",
+    "role": "NPC",
+    "race": "Humano",
     "regionId": "hyberia",
     "hometown": {
       "label": "Borasek, Hyberia",
@@ -1506,11 +1506,11 @@
   "svt-mingyu": {
     "id": "svt-mingyu",
     "title": "Kim Mingyu",
-    "subtitle": "El Titán del Arrozal",
+    "subtitle": "El escudo de los Diecisiete",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
-    "race": "Human",
+    "role": "NPC",
+    "race": "Humano",
     "regionId": "hyberia",
     "hometown": {
       "label": "Borasek, Hyberia",
@@ -1629,11 +1629,11 @@
   "svt-minghao": {
     "id": "svt-minghao",
     "title": "The8 (Xu Minghao)",
-    "subtitle": "El Rastrador de la Fortuna",
+    "subtitle": "El caminante de los dos mundos",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
-    "race": "Human",
+    "role": "NPC",
+    "race": "Humano",
     "regionId": "hyberia",
     "hometown": {
       "label": "Ningliao, Naxai",
@@ -1641,7 +1641,7 @@
       "docPath": null
     },
     "factionId": "svt",
-    "dynamic": "beta",
+    "dynamic": "alpha",
     "orientation": "Pan",
     "romanticSituation": "Soltero",
     "polyamoryStatus": "no",
@@ -1751,11 +1751,11 @@
   "svt-seungkwan": {
     "id": "svt-seungkwan",
     "title": "Boo Seungkwan",
-    "subtitle": "El Entusiasta de los Duelos",
+    "subtitle": "La voz del Gremio",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
-    "race": "Human",
+    "role": "NPC",
+    "race": "Humano",
     "regionId": "hyberia",
     "hometown": {
       "label": "Isla Juju, Hyberia",
@@ -1873,11 +1873,11 @@
   "svt-vernon": {
     "id": "svt-vernon",
     "title": "Hansol Vernon Chwe",
-    "subtitle": "El Ermitaño Imperturbable",
+    "subtitle": "El viajero de horizontes imposibles",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
-    "race": "Human",
+    "role": "NPC",
+    "race": "Humano",
     "regionId": "hyberia",
     "hometown": {
       "label": "Hanmattan, Tierra sin Nombre",
@@ -1995,11 +1995,11 @@
   "svt-dino": {
     "id": "svt-dino",
     "title": "Dino (Lee Chan)",
-    "subtitle": "El Último en Rendirse",
+    "subtitle": "El heredero de los Diecisiete",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
-    "race": "Human",
+    "role": "NPC",
+    "race": "Humano",
     "regionId": "hyberia",
     "hometown": {
       "label": "Aldea Sanik, Hyberia",
@@ -2120,7 +2120,7 @@
     "subtitle": "El Alfa de Alfas",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
+    "role": "NPC",
     "race": "Werewolf",
     "regionId": "jeyperia",
     "hometown": {
@@ -2205,7 +2205,7 @@
     "subtitle": "El Domador de Bestias",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
+    "role": "NPC",
     "race": "Werewolf",
     "regionId": "jeyperia",
     "hometown": {
@@ -2290,7 +2290,7 @@
     "subtitle": "La Fuerza de la Ferocidad",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
+    "role": "NPC",
     "race": "Werewolf",
     "regionId": "jeyperia",
     "hometown": {
@@ -2375,7 +2375,7 @@
     "subtitle": "El Artista del Espejismo",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
+    "role": "NPC",
     "race": "Werewolf",
     "regionId": "jeyperia",
     "hometown": {
@@ -2465,7 +2465,7 @@
     "subtitle": "El Psíquico Rebelde",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
+    "role": "NPC",
     "race": "Werewolf",
     "regionId": "jeyperia",
     "hometown": {
@@ -2550,7 +2550,7 @@
     "subtitle": "El Ente de los Sueños",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
+    "role": "NPC",
     "race": "Werewolf",
     "regionId": "jeyperia",
     "hometown": {
@@ -2640,7 +2640,7 @@
     "subtitle": "La Sombra Ejecutora",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
+    "role": "NPC",
     "race": "Werewolf",
     "regionId": "jeyperia",
     "hometown": {
@@ -2725,7 +2725,7 @@
     "subtitle": "La Reencarnación del Dios de la Luna",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
+    "role": "NPC",
     "race": "Werewolf",
     "regionId": "jeyperia",
     "hometown": {
@@ -2836,8 +2836,8 @@
     "subtitle": "El Lobo Solitario",
     "status": "dead",
     "group": "npc",
-    "role": "supporting",
-    "race": "Werewolf",
+    "role": "NPC",
+    "race": "Licántropo",
     "regionId": "jeyperia",
     "hometown": {
       "label": "Borasek, Hyberia",
@@ -2913,8 +2913,8 @@
     "subtitle": "El Heraldo del Crepúsculo",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
-    "race": "Vampire",
+    "role": "NPC",
+    "race": "Vampiro",
     "regionId": "hyberia",
     "hometown": {
       "label": "Kwangya, Sylmorien",
@@ -2991,10 +2991,10 @@
     "id": "enha-heeseung",
     "title": "Lee Heeseung",
     "subtitle": "El Investigador de la Muerte",
-    "status": "dead",
+    "status": "active",
     "group": "npc",
-    "role": "supporting",
-    "race": "Vampire",
+    "role": "NPC",
+    "race": "Vampiro",
     "regionId": "hyberia",
     "hometown": {
       "label": "Borasek, Hyberia",
@@ -3073,8 +3073,8 @@
     "subtitle": "El Abogado del Rey Demonio",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
-    "race": "Vampire",
+    "role": "NPC",
+    "race": "Vampiro",
     "regionId": "hyberia",
     "hometown": {
       "label": "Hanmattan, Tierra sin Nombre",
@@ -3152,8 +3152,8 @@
     "subtitle": "El Vampiro que Volvió a Vivir",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
-    "race": "Vampire",
+    "role": "NPC",
+    "race": "Vampiro",
     "regionId": "hyberia",
     "hometown": {
       "label": "Neysyd, Tierra Canguro",
@@ -3237,8 +3237,8 @@
     "subtitle": "El Loco del Machete",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
-    "race": "Vampire",
+    "role": "NPC",
+    "race": "Vampiro",
     "regionId": "hyberia",
     "hometown": {
       "label": "Neocity, Sylmorien",
@@ -3314,11 +3314,11 @@
   "enha-sunoo": {
     "id": "enha-sunoo",
     "title": "Kim Sunoo",
-    "subtitle": "El Asesino de Monstruos",
+    "subtitle": "El Cazador de Monstruos",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
-    "race": "Vampire",
+    "role": "NPC",
+    "race": "Vampiro",
     "regionId": "hyberia",
     "hometown": {
       "label": "Borasek, Hyberia",
@@ -3397,8 +3397,8 @@
     "subtitle": "El Pequeño Dictador",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
-    "race": "Vampire",
+    "role": "NPC",
+    "race": "Vampiro",
     "regionId": "hyberia",
     "hometown": {
       "label": "Puerto Nawaki, Hotou",
@@ -3474,11 +3474,11 @@
   "nct-johnny": {
     "id": "nct-johnny",
     "title": "Johnny Suh",
-    "subtitle": "El Maestro que Despeja Caminos",
+    "subtitle": "El Maestro de Conjuración",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
-    "race": "Superhuman",
+    "role": "NPC",
+    "race": "Superhumano",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Cagochi, EU",
@@ -3566,8 +3566,8 @@
     "subtitle": "El Padre de la Neovibra",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
-    "race": "Aasimar",
+    "role": "NPC",
+    "race": "Aasimar (clon)",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Kwangya, Sylmorien",
@@ -3667,8 +3667,8 @@
     "subtitle": "El Maestro de la Espada",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
-    "race": "Superhuman",
+    "role": "NPC",
+    "race": "Superhumano",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Puerto Nawaki, Hotou",
@@ -3676,7 +3676,7 @@
       "docPath": null
     },
     "factionId": "nct",
-    "dynamic": "omega",
+    "dynamic": "alpha",
     "orientation": "Pan",
     "romanticSituation": "Soltero",
     "polyamoryStatus": "yes",
@@ -3767,8 +3767,8 @@
     "subtitle": "El Maestro de la Tierra",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
-    "race": "Human",
+    "role": "NPC",
+    "race": "Superhumano",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Ningtai, Naxai",
@@ -3841,11 +3841,11 @@
   "nct-doyoung": {
     "id": "nct-doyoung",
     "title": "Kim Doyoung",
-    "subtitle": "El Maestro de la Magia Salvaje",
+    "subtitle": "El Maestro de la Psiónica",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
-    "race": "Superhuman",
+    "role": "NPC",
+    "race": "Superhumano",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Borasek, Hyberia",
@@ -3939,8 +3939,8 @@
     "subtitle": "El Maestro del Agua",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
-    "race": "Superhuman",
+    "role": "NPC",
+    "race": "Superhumano",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Kokbang, Landtai",
@@ -4021,11 +4021,11 @@
   "nct-jaehyun": {
     "id": "nct-jaehyun",
     "title": "Jeong Jaehyun",
-    "subtitle": "El Maestro de Combate",
+    "subtitle": "El Maestro de Defensa",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
-    "race": "Superhuman",
+    "role": "NPC",
+    "race": "Superhumano",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Kwangya, Sylmorien",
@@ -4126,11 +4126,11 @@
   "nct-winwin": {
     "id": "nct-winwin",
     "title": "Winwin (Dong Sicheng)",
-    "subtitle": "El Maestro de la Luz",
+    "subtitle": "El Maestro Radiante",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
-    "race": "Superhuman",
+    "role": "NPC",
+    "race": "Superhumano",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Wenzhou, Naxai",
@@ -4138,7 +4138,7 @@
       "docPath": null
     },
     "factionId": "nct",
-    "dynamic": "beta",
+    "dynamic": "omega",
     "orientation": "Pan",
     "romanticSituation": "Soltero",
     "polyamoryStatus": "yes",
@@ -4210,11 +4210,11 @@
   "nct-jungwoo": {
     "id": "nct-jungwoo",
     "title": "Kim Jungwoo",
-    "subtitle": "El Maestro de la Innovación",
+    "subtitle": "El Maestro de la Alquimia",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
-    "race": "Superhuman",
+    "role": "NPC",
+    "race": "Superhumano",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Borasek, Hyberia",
@@ -4305,11 +4305,11 @@
   "nct-lucas": {
     "id": "nct-lucas",
     "title": "Lucas Wong",
-    "subtitle": "El Maestro de las Sombras",
+    "subtitle": "El Maestro de la Tormenta",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
-    "race": "Superhuman",
+    "role": "NPC",
+    "race": "Superhumano",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Kong Kong, Naxai",
@@ -4390,11 +4390,11 @@
   "nct-mark": {
     "id": "nct-mark",
     "title": "Mark Lee",
-    "subtitle": "El Maestro Prodigioso",
+    "subtitle": "El Maestro de los Artefactos",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
-    "race": "Superhuman",
+    "role": "NPC",
+    "race": "Superhumano",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Totonto, República del Maple",
@@ -4523,8 +4523,8 @@
     "subtitle": "El Maestro del Fuego",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
-    "race": "Superhuman",
+    "role": "NPC",
+    "race": "Superhumano",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Dong Dong, Naxai",
@@ -4532,7 +4532,7 @@
       "docPath": null
     },
     "factionId": "nct",
-    "dynamic": "alpha",
+    "dynamic": "beta",
     "orientation": "Pan",
     "romanticSituation": "Soltero",
     "polyamoryStatus": "yes",
@@ -4613,8 +4613,8 @@
     "subtitle": "El Maestro del Metal",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
-    "race": "Superhuman",
+    "role": "NPC",
+    "race": "Superhumano",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Isla de Macacau, Nacai",
@@ -4695,11 +4695,11 @@
   "nct-renjun": {
     "id": "nct-renjun",
     "title": "Huang Renjun",
-    "subtitle": "El Oráculo del Anochecer",
+    "subtitle": "El Maestro Archivista",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
-    "race": "Superhuman",
+    "role": "NPC",
+    "race": "Superhumano",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Linji, Naxai",
@@ -4766,11 +4766,11 @@
   "nct-jeno": {
     "id": "nct-jeno",
     "title": "Lee Jeno",
-    "subtitle": "El Centinela de los Sueños",
+    "subtitle": "El Maestro Lanzador",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
-    "race": "Superhuman",
+    "role": "NPC",
+    "race": "Superhumano",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Cheonin, Jeyperia",
@@ -4851,11 +4851,11 @@
   "nct-haechan": {
     "id": "nct-haechan",
     "title": "Haechan (Lee Donghyuck)",
-    "subtitle": "El Maestro de las Pesadilas",
+    "subtitle": "El Maestro de las Pesadillas",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
-    "race": "Superhuman",
+    "role": "NPC",
+    "race": "Superhumano",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Kwangya, Sylmorien",
@@ -4971,11 +4971,11 @@
   "nct-jaemin": {
     "id": "nct-jaemin",
     "title": "Na Jaemin",
-    "subtitle": "El Guardián del Plano Onírico",
+    "subtitle": "El Maestro de la Espada Cantante",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
-    "race": "Superhuman",
+    "role": "NPC",
+    "race": "Superhumano",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Sanbu, Jeyperia",
@@ -5064,8 +5064,8 @@
     "subtitle": "El Maestro del Viento",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
-    "race": "Superhuman",
+    "role": "NPC",
+    "race": "Superhumano",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Peitai, Wantai",
@@ -5138,11 +5138,11 @@
   "nct-chenle": {
     "id": "nct-chenle",
     "title": "Zhong Chenle",
-    "subtitle": "El Arquitecto de Sueños",
+    "subtitle": "El Maestro de las Ilusiones",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
-    "race": "Superhuman",
+    "role": "NPC",
+    "race": "Superhumano",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Haishang, Naxai",
@@ -5222,11 +5222,11 @@
   "nct-jisung": {
     "id": "nct-jisung",
     "title": "Park Jisung",
-    "subtitle": "El Vigilante del Subconsciente",
+    "subtitle": "El Prodigio de la Magia Salvaje",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
-    "race": "Superhuman",
+    "role": "NPC",
+    "race": "Superhumano",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Kwangya, Sylmorien",
@@ -5315,8 +5315,8 @@
     "subtitle": "El Prodigio de la Evocación",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
-    "race": "Superhuman",
+    "role": "NPC",
+    "race": "Superhumano",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Namjeo, Sylmorien",
@@ -5397,11 +5397,11 @@
   "nct-riku": {
     "id": "nct-riku",
     "title": "Riku Maeda",
-    "subtitle": "El Prodigio de Gravitacional",
+    "subtitle": "El Prodigio del Relámpago",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
-    "race": "Superhuman",
+    "role": "NPC",
+    "race": "Superhumano",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Kuifu, Hotou",
@@ -5472,8 +5472,8 @@
     "subtitle": "El Prodigio de la Abjuración",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
-    "race": "Superhuman",
+    "role": "NPC",
+    "race": "Superhumano",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Kyokyo, Hotou",
@@ -5549,8 +5549,8 @@
     "subtitle": "El Prodigio de la Creación",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
-    "race": "Superhuman",
+    "role": "NPC",
+    "race": "Superhumano",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Gudae, Hyberia",
@@ -5629,8 +5629,8 @@
     "subtitle": "El Prodigio de la Alquimia",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
-    "race": "Superhuman",
+    "role": "NPC",
+    "race": "Superhumano",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Kyokyo, Hotou",
@@ -5706,8 +5706,8 @@
     "subtitle": "El Prodigio de las Armas",
     "status": "active",
     "group": "npc",
-    "role": "supporting",
-    "race": "Superhuman",
+    "role": "NPC",
+    "race": "Superhumano",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Tamasai, Hotou",
@@ -5791,8 +5791,8 @@
     "subtitle": "La Clave de Sylmorien",
     "status": "active",
     "group": "npc",
-    "role": "npc",
-    "race": "Superhuman",
+    "role": "NPC",
+    "race": "Superhumano",
     "regionId": "sylmorien",
     "hometown": {
       "label": "Neocity, Sylmorien",
@@ -6028,7 +6028,20 @@
     "factionId": "ateez",
     "imageSrc": "/img/characters/ateez/ateez-hongjoong.png",
     "tags": [],
-    "sortOrder": 77
+    "sortOrder": 77,
+    "subtitle": "El Capitán del Caos",
+    "dateOfBirth": "1998-11-07",
+    "zodiac": "Escorpio ♏",
+    "mbti": "INFJ",
+    "race": "Humano",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "dynamic": "alpha",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Capitán de la Marea Negra"
+    ],
+    "role": "NPC"
   },
   "ateez-jongho": {
     "id": "ateez-jongho",
@@ -6038,7 +6051,20 @@
     "factionId": "ateez",
     "imageSrc": "/img/characters/ateez/ateez-jongho.png",
     "tags": [],
-    "sortOrder": 78
+    "sortOrder": 78,
+    "subtitle": "El Rompedor de Barreras",
+    "dateOfBirth": "2000-10-12",
+    "zodiac": "Libra ♎",
+    "mbti": "ISTJ",
+    "race": "Humano",
+    "orientation": "Hetero",
+    "romanticSituation": "Soltero",
+    "dynamic": "alpha",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Guardián del Casco y Defensor de la Marea Negra"
+    ],
+    "role": "NPC"
   },
   "ateez-san": {
     "id": "ateez-san",
@@ -6048,7 +6074,20 @@
     "factionId": "ateez",
     "imageSrc": "/img/characters/ateez/ateez-san.png",
     "tags": [],
-    "sortOrder": 79
+    "sortOrder": 79,
+    "subtitle": "El Errante del Norte",
+    "dateOfBirth": "1999-07-10",
+    "zodiac": "Cáncer ♋",
+    "mbti": "ISFP",
+    "race": "Humano",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "dynamic": "alpha",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Contramaestre y Maestro de Abordaje"
+    ],
+    "role": "NPC"
   },
   "bts-agust-d": {
     "id": "bts-agust-d",
@@ -6128,7 +6167,15 @@
     "factionId": "os-guild",
     "imageSrc": "/img/characters/os-guild/os-asuka.jpeg",
     "tags": [],
-    "sortOrder": 87
+    "sortOrder": 87,
+    "subtitle": "El Rostro Robado",
+    "race": "Changeling",
+    "romanticSituation": "Soltera",
+    "dynamic": "alpha",
+    "occupation": [
+      "Aventurera"
+    ],
+    "role": "Player"
   },
   "os-eris": {
     "id": "os-eris",
@@ -6138,7 +6185,15 @@
     "factionId": "os-guild",
     "imageSrc": "/img/characters/os-guild/os-eris.jpeg",
     "tags": [],
-    "sortOrder": 88
+    "sortOrder": 88,
+    "subtitle": "La Flor Errante",
+    "race": "Genasi",
+    "romanticSituation": "Soltera",
+    "dynamic": "beta",
+    "occupation": [
+      "Sanadora y curandera"
+    ],
+    "role": "Player"
   },
   "os-lira": {
     "id": "os-lira",
@@ -6148,37 +6203,69 @@
     "factionId": "os-guild",
     "imageSrc": "/img/characters/os-guild/os-lira.jpeg",
     "tags": [],
-    "sortOrder": 89
+    "sortOrder": 89,
+    "subtitle": "La Artista Itinerante",
+    "race": "Humana",
+    "romanticSituation": "Soltera",
+    "dynamic": "beta",
+    "occupation": [
+      "Artista y duelista itinerante"
+    ],
+    "role": "Player"
   },
   "os-mimira": {
     "id": "os-mimira",
     "title": "Mimira",
     "group": "party",
-    "status": "active",
+    "status": "missing",
     "factionId": "os-guild",
     "imageSrc": "/img/characters/os-guild/os-mimira.jpeg",
     "tags": [],
-    "sortOrder": 90
+    "sortOrder": 90,
+    "subtitle": "El Martillo de los Sueños Rotos",
+    "race": "Kalashtar",
+    "romanticSituation": "Prometido Song (fallecido)",
+    "dynamic": "omega",
+    "occupation": [
+      "Clériga guerrera"
+    ],
+    "role": "Player"
   },
   "os-lu-yan": {
     "id": "os-lu-yan",
     "title": "Lu Yan",
     "group": "party",
-    "status": "active",
+    "status": "missing",
     "factionId": "os-guild",
     "imageSrc": "/img/characters/os-guild/os-lu-yan.jpeg",
     "tags": [],
-    "sortOrder": 91
+    "sortOrder": 91,
+    "subtitle": "El Cazador Ermitaño",
+    "race": "Shifter (venado)",
+    "romanticSituation": "Soltero",
+    "dynamic": "omega",
+    "occupation": [
+      "Cazador errante"
+    ],
+    "role": "Player"
   },
   "os-jiwon": {
     "id": "os-jiwon",
     "title": "Seo Jiwon",
     "group": "party",
-    "status": "active",
+    "status": "missing",
     "factionId": "os-guild",
     "imageSrc": "/img/characters/os-guild/os-jiwon.jpeg",
     "tags": [],
-    "sortOrder": 92
+    "sortOrder": 92,
+    "subtitle": "La Heredera de la Casa Seo",
+    "race": "Semi-Elfa",
+    "romanticSituation": "Soltera",
+    "dynamic": "omega",
+    "occupation": [
+      "Aventurera"
+    ],
+    "role": "Player"
   },
   "kiof-natty": {
     "id": "kiof-natty",
@@ -6582,9 +6669,18 @@
     "id": "anton",
     "title": "Anton",
     "group": "npc",
-    "status": "unknown",
+    "status": "active",
     "imageSrc": null,
-    "sortOrder": 133
+    "sortOrder": 133,
+    "subtitle": "El eco de las nuevas eras",
+    "dateOfBirth": "2004-03-21",
+    "zodiac": "Aries ♈",
+    "mbti": "INTP",
+    "race": "Humano",
+    "romanticSituation": "Soltero",
+    "factionId": "riize",
+    "dynamic": "alpha",
+    "role": "NPC"
   },
   "ario": {
     "id": "ario",
@@ -6854,9 +6950,18 @@
     "id": "eunseok",
     "title": "Eunseok",
     "group": "npc",
-    "status": "unknown",
+    "status": "active",
     "imageSrc": null,
-    "sortOrder": 167
+    "sortOrder": 167,
+    "subtitle": "El escudo de los ascendentes",
+    "dateOfBirth": "2001-03-19",
+    "zodiac": "Piscis ♓",
+    "mbti": "ISTP",
+    "race": "Humano",
+    "romanticSituation": "Soltero",
+    "factionId": "riize",
+    "dynamic": "alpha",
+    "role": "NPC"
   },
   "evan": {
     "id": "evan",
@@ -6974,9 +7079,23 @@
     "id": "mx-hyungwon",
     "title": "Chae Hyungwon",
     "group": "npc",
-    "status": "unknown",
+    "status": "active",
     "imageSrc": null,
-    "sortOrder": 182
+    "sortOrder": 182,
+    "dateOfBirth": "1494-01-15",
+    "zodiac": "Capricornio ♑",
+    "mbti": "INFP",
+    "race": "Mestizo de linaje infernal",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "factionId": "monsta-x",
+    "dynamic": "omega",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Cronista de la Liberación",
+      "Observador del Salón y Guardián del Reloj Oculto"
+    ],
+    "role": "NPC"
   },
   "jackson-wang": {
     "id": "jackson-wang",
@@ -7237,10 +7356,16 @@
   "qin-shen-yu": {
     "id": "qin-shen-yu",
     "title": "Qín Shen Yù",
-    "group": "npc",
-    "status": "unknown",
-    "imageSrc": null,
-    "sortOrder": 215
+    "group": "party",
+    "status": "dead",
+    "imageSrc": "/img/characters/os-guild/os-shen.webp",
+    "sortOrder": 215,
+    "subtitle": "El Dracónico del Mar",
+    "race": "Semi-Elfo/Dracónido marino",
+    "romanticSituation": "Prometida Taryn Helfame",
+    "factionId": "os-guild",
+    "dynamic": "beta",
+    "role": "Player"
   },
   "ren": {
     "id": "ren",
@@ -7318,9 +7443,23 @@
     "id": "ateez-seonghwa",
     "title": "Park Seonghwa",
     "group": "npc",
-    "status": "unknown",
+    "status": "active",
     "imageSrc": null,
-    "sortOrder": 225
+    "sortOrder": 225,
+    "subtitle": "El Guardián de las Memorias",
+    "dateOfBirth": "1998-04-03",
+    "zodiac": "Aries ♈",
+    "mbti": "ISFJ",
+    "race": "Humano",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "factionId": "ateez",
+    "dynamic": "omega",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Primer Oficial y Maestro de Armas"
+    ],
+    "role": "NPC"
   },
   "seulgi": {
     "id": "seulgi",
@@ -7358,17 +7497,40 @@
     "id": "shotaro",
     "title": "Shotaro",
     "group": "npc",
-    "status": "unknown",
+    "status": "active",
     "imageSrc": null,
-    "sortOrder": 230
+    "sortOrder": 230,
+    "subtitle": "El paso del nuevo amanecer",
+    "dateOfBirth": "2000-11-25",
+    "zodiac": "Sagitario ♐",
+    "mbti": "ESFP",
+    "race": "Humano",
+    "romanticSituation": "Soltero",
+    "factionId": "riize",
+    "dynamic": "omega",
+    "role": "NPC"
   },
   "mx-shownu": {
     "id": "mx-shownu",
     "title": "Son Hyunwoo (Shownu)",
     "group": "npc",
-    "status": "unknown",
+    "status": "active",
     "imageSrc": null,
-    "sortOrder": 231
+    "sortOrder": 231,
+    "dateOfBirth": "1492-06-18",
+    "zodiac": "Géminis ♊",
+    "mbti": "ISTJ",
+    "race": "Mestizo de linaje infernal",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "factionId": "monsta-x",
+    "dynamic": "alpha",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Libertador de Fronteras",
+      "Jefe de Seguridad del Casino"
+    ],
+    "role": "NPC"
   },
   "sinb": {
     "id": "sinb",
@@ -7398,9 +7560,18 @@
     "id": "sohee",
     "title": "Sohee",
     "group": "npc",
-    "status": "unknown",
+    "status": "active",
     "imageSrc": null,
-    "sortOrder": 235
+    "sortOrder": 235,
+    "subtitle": "La voz que alza a los guerreros",
+    "dateOfBirth": "2003-11-21",
+    "zodiac": "Escorpio ♏",
+    "mbti": "ISTP",
+    "race": "Humano",
+    "romanticSituation": "Soltero",
+    "factionId": "riize",
+    "dynamic": "omega",
+    "role": "NPC"
   },
   "subaru": {
     "id": "subaru",
@@ -7414,9 +7585,18 @@
     "id": "sungchan",
     "title": "Sungchan",
     "group": "npc",
-    "status": "unknown",
+    "status": "active",
     "imageSrc": null,
-    "sortOrder": 237
+    "sortOrder": 237,
+    "subtitle": "La lanza del ascenso",
+    "dateOfBirth": "2001-09-13",
+    "zodiac": "Virgo ♍",
+    "mbti": "ESTP",
+    "race": "Humano",
+    "romanticSituation": "Soltero",
+    "factionId": "riize",
+    "dynamic": "alpha",
+    "role": "NPC"
   },
   "suzuki": {
     "id": "suzuki",
@@ -7486,17 +7666,40 @@
     "id": "wonbin",
     "title": "Wonbin",
     "group": "npc",
-    "status": "unknown",
+    "status": "active",
     "imageSrc": null,
-    "sortOrder": 246
+    "sortOrder": 246,
+    "subtitle": "El filo del nuevo reino",
+    "dateOfBirth": "2002-03-02",
+    "zodiac": "Piscis ♓",
+    "mbti": "ISTJ",
+    "race": "Humano",
+    "romanticSituation": "Soltero",
+    "factionId": "riize",
+    "dynamic": "omega",
+    "role": "NPC"
   },
   "ateez-wooyoung": {
     "id": "ateez-wooyoung",
     "title": "Jung Wooyoung",
     "group": "npc",
-    "status": "unknown",
+    "status": "active",
     "imageSrc": null,
-    "sortOrder": 247
+    "sortOrder": 247,
+    "subtitle": "El Joven Infiltrador",
+    "dateOfBirth": "1999-11-16",
+    "zodiac": "Sagitario ♐",
+    "mbti": "ESFP",
+    "race": "Humano",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "factionId": "ateez",
+    "dynamic": "omega",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Espía de la Tripulación y Maestro de Infiltración"
+    ],
+    "role": "NPC"
   },
   "xiantao-klau": {
     "id": "xiantao-klau",
@@ -7542,9 +7745,23 @@
     "id": "ateez-yeosang",
     "title": "Kang Yeosang",
     "group": "npc",
-    "status": "unknown",
+    "status": "active",
     "imageSrc": null,
-    "sortOrder": 253
+    "sortOrder": 253,
+    "subtitle": "El Halcón del Horizonte",
+    "dateOfBirth": "1999-06-15",
+    "zodiac": "Géminis ♊",
+    "mbti": "INTP",
+    "race": "Humano",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "factionId": "ateez",
+    "dynamic": "beta",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Vigía y Explorador de Rutas"
+    ],
+    "role": "NPC"
   },
   "yorihiko": {
     "id": "yorihiko",
@@ -7574,9 +7791,23 @@
     "id": "ateez-yunho",
     "title": "Jeong Yunho",
     "group": "npc",
-    "status": "unknown",
+    "status": "active",
     "imageSrc": null,
-    "sortOrder": 257
+    "sortOrder": 257,
+    "subtitle": "El Navegante de la Luz",
+    "dateOfBirth": "1999-03-23",
+    "zodiac": "Aries ♈",
+    "mbti": "ENTP",
+    "race": "Humano",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "factionId": "ateez",
+    "dynamic": "alpha",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Navegante Mayor y Cartógrafo de la Tripulación"
+    ],
+    "role": "NPC"
   },
   "exo-kai": {
     "id": "exo-kai",
@@ -7645,5 +7876,141 @@
     "factionId": "exo",
     "imageSrc": "/img/characters/exo/exo-suho.png",
     "tags": []
+  },
+  "pc-kao": {
+    "id": "pc-kao",
+    "title": "Kao",
+    "group": "party",
+    "status": "active",
+    "subtitle": "La dueña del rostro robado",
+    "dateOfBirth": "2002-12-12",
+    "zodiac": "Sagitario ♐",
+    "mbti": "ESFJ",
+    "race": "Humana",
+    "orientation": "Pan",
+    "romanticSituation": "Soltera",
+    "factionId": "panes-del-destino",
+    "dynamic": "alpha",
+    "polyamoryStatus": "yes",
+    "role": "Player"
+  },
+  "ateez-mingi": {
+    "id": "ateez-mingi",
+    "title": "Song Mingi",
+    "group": "npc",
+    "status": "active",
+    "subtitle": "La Princesa de los Explosivos",
+    "dateOfBirth": "1999-08-09",
+    "zodiac": "Leo ♌",
+    "mbti": "ENTP",
+    "race": "Humano",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "factionId": "ateez",
+    "dynamic": "alpha",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Artillero Mayor e Ingeniero de Demoliciones"
+    ],
+    "role": "NPC"
+  },
+  "mx-minhyuk": {
+    "id": "mx-minhyuk",
+    "title": "Lee Minhyuk",
+    "group": "npc",
+    "status": "active",
+    "dateOfBirth": "1493-11-03",
+    "zodiac": "Escorpio ♏",
+    "mbti": "ENTP",
+    "race": "Mestizo de linaje infernal",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "factionId": "monsta-x",
+    "dynamic": "alpha",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Mensajero de la Revuelta",
+      "Animador, Tahúr y Rostro Público del Casino"
+    ],
+    "role": "NPC"
+  },
+  "mx-kihyun": {
+    "id": "mx-kihyun",
+    "title": "Yoo Kihyun",
+    "group": "npc",
+    "status": "active",
+    "dateOfBirth": "1493-11-22",
+    "zodiac": "Sagitario ♐",
+    "mbti": "ENTP",
+    "race": "Mestizo de linaje infernal",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "factionId": "monsta-x",
+    "dynamic": "beta",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Artillero de la Resistencia",
+      "Maestro del Escenario y Supervisor de Espectáculos"
+    ],
+    "role": "NPC"
+  },
+  "mx-joohoney": {
+    "id": "mx-joohoney",
+    "title": "Lee Jooheon (Joohoney)",
+    "group": "npc",
+    "status": "active",
+    "dateOfBirth": "1494-10-06",
+    "zodiac": "Libra ♎",
+    "mbti": "ENFJ",
+    "race": "Mestizo de linaje infernal",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "factionId": "monsta-x",
+    "dynamic": "alpha",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Demoledor de Cadenas",
+      "Cobrador, Gladiador y Rompehuesos del Casino"
+    ],
+    "role": "NPC"
+  },
+  "mx-im": {
+    "id": "mx-im",
+    "title": "Im Changkyun (I.M)",
+    "group": "npc",
+    "status": "active",
+    "dateOfBirth": "1496-01-26",
+    "zodiac": "Capricornio ♑",
+    "mbti": "ISFP",
+    "race": "Mestizo de linaje infernal",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "factionId": "monsta-x",
+    "dynamic": "alpha",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Espía de los Libertadores",
+      "Corredor de Información y Negociador de Deudas"
+    ],
+    "role": "NPC"
+  },
+  "mx-wonho": {
+    "id": "mx-wonho",
+    "title": "Lee Hoseok (Wonho)",
+    "group": "npc",
+    "status": "dead",
+    "dateOfBirth": "1493-03-01",
+    "zodiac": "Piscis ♓",
+    "mbti": "ISFP",
+    "race": "Mestizo de linaje infernal",
+    "orientation": "Pan",
+    "romanticSituation": "Soltero",
+    "factionId": "monsta-x",
+    "dynamic": "omega",
+    "polyamoryStatus": "yes",
+    "occupation": [
+      "Rompeasedios de la Liberación"
+    ],
+    "role": "NPC"
   }
 }
