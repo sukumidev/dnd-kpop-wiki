@@ -337,6 +337,49 @@ function collectIds(record: JsonRecord) {
   return new Set(Object.keys(record));
 }
 
+function validateCharacterPages(characters: JsonRecord) {
+  const docsRoot = path.join(PROJECT_ROOT, "docs", "characters");
+
+  for (const [id, character] of Object.entries(characters)) {
+    if (!isPlainObject(character) || !CHARACTER_GROUP.has(character.group)) continue;
+
+    const relativePath = path.join("docs", "characters", character.group, `${id}.mdx`);
+    if (!fs.existsSync(path.join(PROJECT_ROOT, relativePath))) {
+      addError(relativePath, `Character "${id}" has no page in its JSON group.`, id, "group");
+    }
+  }
+
+  for (const group of CHARACTER_GROUP) {
+    const folder = path.join(docsRoot, group);
+    if (!fs.existsSync(folder)) continue;
+
+    for (const fileName of fs.readdirSync(folder)) {
+      if (!fileName.endsWith(".mdx")) continue;
+
+      const relativePath = path.join("docs", "characters", group, fileName);
+      const content = fs.readFileSync(path.join(folder, fileName), "utf8");
+      const frontmatter = content.match(/^---\r?\n([\s\S]*?)\r?\n---(?:\r?\n|$)/)?.[1];
+      const id = frontmatter?.match(/^characterId:\s*["']?([a-z0-9-]+)["']?\s*$/m)?.[1];
+
+      if (!id) {
+        addError(relativePath, `Character page is missing characterId in its frontmatter.`, undefined, "characterId");
+        continue;
+      }
+
+      if (path.parse(fileName).name !== id) {
+        addError(relativePath, `Filename does not match characterId "${id}".`, id, "characterId");
+      }
+
+      const character = characters[id];
+      if (!isPlainObject(character)) {
+        addError(relativePath, `characterId "${id}" is missing from the unified character registry.`, id, "characterId");
+      } else if (character.group !== group) {
+        addError(relativePath, `Page group "${group}" does not match JSON group "${character.group}".`, id, "group");
+      }
+    }
+  }
+}
+
 function warnMissingReferences(
   file: string,
   sourceIds: unknown,
@@ -891,6 +934,7 @@ function main() {
   const locationIds = collectIds(locations);
 
   validateCharacters(characters, factionIds, locationIds);
+  validateCharacterPages(characters);
   validateQuests(quests, characterIds, factionIds, locationIds);
   validateFactions(factions, characterIds, locationIds);
   validateLocations(locations, mapConfig);

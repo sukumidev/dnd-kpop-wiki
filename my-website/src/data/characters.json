@@ -7877,6 +7877,26 @@
     "imageSrc": "/img/characters/exo/exo-suho.png",
     "tags": []
   },
+  "exo-baekhyun": {
+    "id": "exo-baekhyun",
+    "title": "Byun Baekhyun",
+    "group": "npc",
+    "status": "active",
+    "factionId": "exo",
+    "role": "NPC",
+    "summary": "Caballero de la Luz y la Revelación de EXO.",
+    "tags": []
+  },
+  "exo-chen": {
+    "id": "exo-chen",
+    "title": "Kim Jongdae (Chen)",
+    "group": "npc",
+    "status": "active",
+    "factionId": "exo",
+    "role": "NPC",
+    "summary": "Caballero del Rayo y la Conducción.",
+    "tags": []
+  },
   "pc-kao": {
     "id": "pc-kao",
     "title": "Kao",
