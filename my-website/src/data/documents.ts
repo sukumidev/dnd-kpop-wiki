@@ -520,7 +520,7 @@ export function getRelatedCharactersForDocument(
   return [...relations.entries()]
     .map(([characterId, relationRole]) => {
       const character = getCharacterById(characterId);
-      return character ? { character, relationRole } : undefined;
+      return character?.visibility === "public" ? { character, relationRole } : undefined;
     })
     .filter(Boolean) as { character: Character; relationRole: DocumentCharacterRelationRole }[];
 }

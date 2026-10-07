@@ -12,7 +12,7 @@
  * - Avoid duplicating faction membership in factions.json.
  */
 
-import { characters, characterList } from "./characters";
+import { characters, characterList, visibleCharacterList } from "./characters";
 import questsJson from "./quests.json";
 import factionsJson from "./factions.json";
 import locationsJson from "./locations.json";
@@ -26,7 +26,7 @@ export type { Quest, QuestMap } from "./quests";
 export type { Faction, FactionSubunit } from "./factions";
 export type { Location } from "./locations";
 
-export { characters, characterList };
+export { characters, characterList, visibleCharacterList };
 export const quests = questsJson as QuestsById;
 export const factions = factionsJson as FactionsById;
 export const locations = locationsJson as LocationsById;
@@ -95,19 +95,19 @@ export function getLocationById(id: EntityId | null | undefined): Location | und
 }
 
 export function getCharactersByFactionId(factionId: EntityId): Character[] {
-  return characterList.filter((character) => character.factionId === factionId);
+  return visibleCharacterList.filter((character) => character.factionId === factionId);
 }
 
 export function getCharactersByRegionId(regionId: EntityId): Character[] {
-  return characterList.filter((character) => character.regionId === regionId);
+  return visibleCharacterList.filter((character) => character.regionId === regionId);
 }
 
 export function getCharactersByLocationId(locationId: EntityId): Character[] {
-  return characterList.filter((character) => character.locationIds?.includes(locationId));
+  return visibleCharacterList.filter((character) => character.locationIds?.includes(locationId));
 }
 
 export function getCharactersByQuestId(questId: EntityId): Character[] {
-  return characterList.filter((character) => character.questIds?.includes(questId));
+  return visibleCharacterList.filter((character) => character.questIds?.includes(questId));
 }
 
 export function getQuestsByCharacterId(characterId: EntityId): Quest[] {
@@ -151,7 +151,8 @@ export function getFactionMembers(factionId: EntityId): Character[] {
 }
 
 export function getFactionLeader(faction: Faction): Character | undefined {
-  return getCharacterById(faction.leaderCharacterId);
+  const leader = getCharacterById(faction.leaderCharacterId);
+  return leader?.visibility === "public" ? leader : undefined;
 }
 
 export function getFactionBase(faction: Faction): Location | undefined {

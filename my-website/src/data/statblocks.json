@@ -22,7 +22,9 @@
     "int": 8,
     "wis": 12,
     "cha": 14,
-    "resistances": [],
+    "resistances": [
+      "Fire"
+    ],
     "vulnerability": [],
     "immunity": [
       "Magical Sleep"
@@ -174,7 +176,7 @@
       {
         "name": "Druid",
         "level": 6,
-        "subclass": "Circle of the Moon"
+        "subclass": "Circle of the Shepherd"
       }
     ],
     "race": "Human",
@@ -1379,5 +1381,1216 @@
     "resistances": [],
     "vulnerability": [],
     "immunity": []
+  },
+  "os-asuka": {
+    "id": "os-asuka",
+    "classes": [
+      {
+        "name": "Paladin",
+        "level": 5,
+        "subclass": "Oath of Vengeance"
+      },
+      {
+        "name": "Warlock",
+        "level": 1
+      }
+    ],
+    "race": "Changeling",
+    "alignment": "",
+    "proficiencyBonus": 3,
+    "initiative": 1,
+    "ac": 16,
+    "hp": 51,
+    "speed": "20 ft",
+    "passivePerception": 10,
+    "str": 8,
+    "dex": 12,
+    "con": 14,
+    "int": 14,
+    "wis": 10,
+    "cha": 18,
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "os-eris": {
+    "id": "os-eris",
+    "classes": [
+      {
+        "name": "Druid",
+        "level": 6,
+        "subclass": "Circle of the Land"
+      }
+    ],
+    "race": "Earth Genasi",
+    "alignment": "",
+    "proficiencyBonus": 3,
+    "initiative": 0,
+    "ac": 10,
+    "hp": 45,
+    "speed": "30 ft",
+    "passivePerception": 12,
+    "str": 9,
+    "dex": 10,
+    "con": 15,
+    "int": 14,
+    "wis": 15,
+    "cha": 12,
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "os-lira": {
+    "id": "os-lira",
+    "classes": [
+      {
+        "name": "Warlock",
+        "level": 1
+      },
+      {
+        "name": "Bard",
+        "level": 5,
+        "subclass": "College of Swords"
+      }
+    ],
+    "race": "Human",
+    "alignment": "",
+    "proficiencyBonus": 3,
+    "initiative": 2,
+    "ac": 16,
+    "hp": 63,
+    "speed": "30 ft",
+    "passivePerception": 11,
+    "str": 8,
+    "dex": 14,
+    "con": 16,
+    "int": 8,
+    "wis": 10,
+    "cha": 18,
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": [
+      "Critical Hits"
+    ]
+  },
+  "os-mimira": {
+    "id": "os-mimira",
+    "classes": [
+      {
+        "name": "Cleric",
+        "level": 6,
+        "subclass": "War Domain"
+      }
+    ],
+    "race": "Kalashtar",
+    "alignment": "",
+    "proficiencyBonus": 3,
+    "initiative": 1,
+    "ac": 16,
+    "hp": 57,
+    "speed": "30 ft",
+    "passivePerception": 17,
+    "str": 14,
+    "dex": 12,
+    "con": 19,
+    "int": 10,
+    "wis": 19,
+    "cha": 8,
+    "resistances": [
+      "Psychic"
+    ],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "os-lu-yan": {
+    "id": "os-lu-yan",
+    "classes": [
+      {
+        "name": "Ranger",
+        "level": 6,
+        "subclass": "Hunter"
+      }
+    ],
+    "race": "Shifter",
+    "alignment": "",
+    "proficiencyBonus": 3,
+    "initiative": 4,
+    "ac": 16,
+    "hp": 52,
+    "speed": "40 ft",
+    "passivePerception": 18,
+    "str": 10,
+    "dex": 18,
+    "con": 14,
+    "int": 8,
+    "wis": 14,
+    "cha": 12,
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "os-jiwon": {
+    "id": "os-jiwon",
+    "classes": [
+      {
+        "name": "Druid",
+        "level": 6,
+        "subclass": "Circle of the Moon"
+      }
+    ],
+    "race": "Half-Elf",
+    "alignment": "",
+    "proficiencyBonus": 3,
+    "initiative": 3,
+    "ac": 13,
+    "hp": 45,
+    "speed": "30 ft",
+    "passivePerception": 12,
+    "str": 11,
+    "dex": 16,
+    "con": 14,
+    "int": 14,
+    "wis": 8,
+    "cha": 14,
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": [
+      "Magical Sleep"
+    ]
+  },
+  "qin-shen-yu": {
+    "id": "qin-shen-yu",
+    "classes": [
+      {
+        "name": "Rogue",
+        "level": 1
+      },
+      {
+        "name": "Sorcerer",
+        "level": 5,
+        "subclass": "Draconic Sorcery"
+      }
+    ],
+    "race": "Aquatic Half-Elf",
+    "alignment": "",
+    "proficiencyBonus": 3,
+    "initiative": 1,
+    "ac": 14,
+    "hp": 45,
+    "speed": "30 ft",
+    "passivePerception": 9,
+    "str": 11,
+    "dex": 13,
+    "con": 15,
+    "int": 13,
+    "wis": 8,
+    "cha": 17,
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": [
+      "Magical Sleep"
+    ]
+  },
+  "nct-johnny": {
+    "id": "nct-johnny",
+    "classes": [
+      {
+        "name": "Wizard",
+        "level": 13,
+        "subclass": "Conjurer"
+      }
+    ],
+    "race": "Superhuman",
+    "alignment": "Neutral Good",
+    "proficiencyBonus": 5,
+    "initiative": 3,
+    "ac": 16,
+    "hp": 116,
+    "speed": "30 ft",
+    "passivePerception": 18,
+    "str": 12,
+    "dex": 16,
+    "con": 18,
+    "int": 22,
+    "wis": 16,
+    "cha": 18,
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "nct-taeyong": {
+    "id": "nct-taeyong",
+    "classes": [
+      {
+        "name": "Wizard",
+        "level": 16,
+        "subclass": "Diviner"
+      }
+    ],
+    "race": "Aasimar",
+    "alignment": "Neutral Good",
+    "proficiencyBonus": 5,
+    "initiative": 4,
+    "ac": 17,
+    "hp": 170,
+    "speed": "30 ft",
+    "passivePerception": 21,
+    "str": 10,
+    "dex": 18,
+    "con": 20,
+    "int": 26,
+    "wis": 22,
+    "cha": 20,
+    "resistances": [
+      "Radiant",
+      "Necrotic"
+    ],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "nct-yuta": {
+    "id": "nct-yuta",
+    "classes": [
+      {
+        "name": "Paladin",
+        "level": 12,
+        "subclass": "Oath of Vengeance"
+      },
+      {
+        "name": "Fighter",
+        "level": 3,
+        "subclass": "Battle Master"
+      }
+    ],
+    "race": "Superhuman",
+    "alignment": "Chaotic Good",
+    "proficiencyBonus": 5,
+    "initiative": 3,
+    "ac": 22,
+    "hp": 225,
+    "speed": "30 ft",
+    "passivePerception": 18,
+    "str": 24,
+    "dex": 16,
+    "con": 22,
+    "int": 12,
+    "wis": 16,
+    "cha": 20,
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "nct-kun": {
+    "id": "nct-kun",
+    "classes": [
+      {
+        "name": "Druid",
+        "level": 14,
+        "subclass": "Circle of the Land"
+      }
+    ],
+    "race": "Superhuman",
+    "alignment": "Neutral Good",
+    "proficiencyBonus": 5,
+    "initiative": 3,
+    "ac": 18,
+    "hp": 160,
+    "speed": "30 ft",
+    "passivePerception": 22,
+    "str": 12,
+    "dex": 16,
+    "con": 20,
+    "int": 18,
+    "wis": 24,
+    "cha": 18,
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "nct-doyoung": {
+    "id": "nct-doyoung",
+    "classes": [
+      {
+        "name": "Sorcerer",
+        "level": 16,
+        "subclass": "Aberrant Mind"
+      }
+    ],
+    "race": "Superhuman",
+    "alignment": "Lawful Neutral",
+    "proficiencyBonus": 5,
+    "initiative": 4,
+    "ac": 17,
+    "hp": 175,
+    "speed": "30 ft",
+    "passivePerception": 20,
+    "str": 10,
+    "dex": 18,
+    "con": 20,
+    "int": 22,
+    "wis": 20,
+    "cha": 26,
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "nct-ten": {
+    "id": "nct-ten",
+    "classes": [
+      {
+        "name": "Monk",
+        "level": 13,
+        "subclass": "Way of the Kensei"
+      },
+      {
+        "name": "Druid",
+        "level": 3,
+        "subclass": "Circle of the Sea"
+      }
+    ],
+    "race": "Superhuman",
+    "alignment": "Chaotic Good",
+    "proficiencyBonus": 5,
+    "initiative": 7,
+    "ac": 23,
+    "hp": 195,
+    "speed": "50 ft",
+    "passivePerception": 21,
+    "str": 14,
+    "dex": 24,
+    "con": 20,
+    "int": 14,
+    "wis": 22,
+    "cha": 18,
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "nct-jaehyun": {
+    "id": "nct-jaehyun",
+    "classes": [
+      {
+        "name": "Paladin",
+        "level": 13,
+        "subclass": "Oath of the Watchers"
+      },
+      {
+        "name": "Fighter",
+        "level": 3,
+        "subclass": "Psi Warrior"
+      }
+    ],
+    "race": "Superhuman",
+    "alignment": "Neutral Good",
+    "proficiencyBonus": 5,
+    "initiative": 8,
+    "ac": 23,
+    "hp": 240,
+    "speed": "30 ft",
+    "passivePerception": 19,
+    "str": 24,
+    "dex": 16,
+    "con": 22,
+    "int": 16,
+    "wis": 18,
+    "cha": 22,
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "nct-winwin": {
+    "id": "nct-winwin",
+    "classes": [
+      {
+        "name": "Monk",
+        "level": 10,
+        "subclass": "Way of the Sun Soul"
+      }
+    ],
+    "race": "Superhuman",
+    "alignment": "Neutral Good",
+    "proficiencyBonus": 4,
+    "initiative": 6,
+    "ac": 21,
+    "hp": 122,
+    "speed": "50 ft",
+    "passivePerception": 19,
+    "str": 14,
+    "dex": 22,
+    "con": 18,
+    "int": 14,
+    "wis": 20,
+    "cha": 18,
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "nct-jungwoo": {
+    "id": "nct-jungwoo",
+    "classes": [
+      {
+        "name": "Artificer",
+        "level": 14,
+        "subclass": "Alchemist"
+      }
+    ],
+    "race": "Superhuman",
+    "alignment": "Neutral Good",
+    "proficiencyBonus": 5,
+    "initiative": 3,
+    "ac": 20,
+    "hp": 173,
+    "speed": "30 ft",
+    "passivePerception": 14,
+    "str": 12,
+    "dex": 16,
+    "con": 20,
+    "int": 24,
+    "wis": 18,
+    "cha": 18,
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "nct-lucas": {
+    "id": "nct-lucas",
+    "classes": [
+      {
+        "name": "Warlock",
+        "level": 10,
+        "subclass": "The Genie"
+      }
+    ],
+    "race": "Superhuman",
+    "alignment": "Neutral Good",
+    "proficiencyBonus": 4,
+    "initiative": 4,
+    "ac": 17,
+    "hp": 118,
+    "speed": "30 ft",
+    "passivePerception": 13,
+    "str": 16,
+    "dex": 18,
+    "con": 18,
+    "int": 14,
+    "wis": 16,
+    "cha": 24,
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "nct-mark": {
+    "id": "nct-mark",
+    "classes": [
+      {
+        "name": "Wizard",
+        "level": 13,
+        "subclass": "Abjurer"
+      },
+      {
+        "name": "Artificer",
+        "level": 3
+      }
+    ],
+    "race": "Superhuman",
+    "alignment": "Neutral Good",
+    "proficiencyBonus": 5,
+    "initiative": 12,
+    "ac": 20,
+    "hp": 180,
+    "speed": "30 ft",
+    "passivePerception": 19,
+    "str": 10,
+    "dex": 18,
+    "con": 20,
+    "int": 26,
+    "wis": 18,
+    "cha": 16,
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "nct-xiaojun": {
+    "id": "nct-xiaojun",
+    "classes": [
+      {
+        "name": "Monk",
+        "level": 13,
+        "subclass": "Warrior of the Elements"
+      }
+    ],
+    "race": "Superhuman",
+    "alignment": "Chaotic Good",
+    "proficiencyBonus": 5,
+    "initiative": 7,
+    "ac": 22,
+    "hp": 164,
+    "speed": "50 ft",
+    "passivePerception": 20,
+    "str": 14,
+    "dex": 24,
+    "con": 20,
+    "int": 16,
+    "wis": 20,
+    "cha": 18,
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "nct-hendery": {
+    "id": "nct-hendery",
+    "classes": [
+      {
+        "name": "Artificer",
+        "level": 13,
+        "subclass": "Battle Smith"
+      }
+    ],
+    "race": "Superhuman",
+    "alignment": "Chaotic Good",
+    "proficiencyBonus": 5,
+    "initiative": 3,
+    "ac": 20,
+    "hp": 165,
+    "speed": "30 ft",
+    "passivePerception": 13,
+    "str": 14,
+    "dex": 16,
+    "con": 20,
+    "int": 22,
+    "wis": 16,
+    "cha": 18,
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "nct-renjun": {
+    "id": "nct-renjun",
+    "classes": [
+      {
+        "name": "Wizard",
+        "level": 12,
+        "subclass": "Order of the Scribes"
+      }
+    ],
+    "race": "Superhuman",
+    "alignment": "Neutral Good",
+    "proficiencyBonus": 4,
+    "initiative": 3,
+    "ac": 16,
+    "hp": 115,
+    "speed": "30 ft",
+    "passivePerception": 19,
+    "str": 10,
+    "dex": 16,
+    "con": 16,
+    "int": 22,
+    "wis": 20,
+    "cha": 16,
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "nct-jeno": {
+    "id": "nct-jeno",
+    "classes": [
+      {
+        "name": "Fighter",
+        "level": 13,
+        "subclass": "Arcane Archer"
+      }
+    ],
+    "race": "Superhuman",
+    "alignment": "Lawful Good",
+    "proficiencyBonus": 5,
+    "initiative": 6,
+    "ac": 19,
+    "hp": 190,
+    "speed": "30 ft",
+    "passivePerception": 18,
+    "str": 18,
+    "dex": 22,
+    "con": 22,
+    "int": 18,
+    "wis": 16,
+    "cha": 16,
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "nct-haechan": {
+    "id": "nct-haechan",
+    "classes": [
+      {
+        "name": "Wizard",
+        "level": 15,
+        "subclass": "Enchanter"
+      }
+    ],
+    "race": "Superhuman",
+    "alignment": "Chaotic Good",
+    "proficiencyBonus": 5,
+    "initiative": 4,
+    "ac": 17,
+    "hp": 155,
+    "speed": "30 ft",
+    "passivePerception": 19,
+    "str": 10,
+    "dex": 18,
+    "con": 20,
+    "int": 24,
+    "wis": 18,
+    "cha": 22,
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "nct-jaemin": {
+    "id": "nct-jaemin",
+    "classes": [
+      {
+        "name": "Wizard",
+        "level": 13,
+        "subclass": "Bladesinger"
+      }
+    ],
+    "race": "Superhuman",
+    "alignment": "Chaotic Good",
+    "proficiencyBonus": 5,
+    "initiative": 6,
+    "ac": 19,
+    "hp": 135,
+    "speed": "30 ft",
+    "passivePerception": 13,
+    "str": 12,
+    "dex": 22,
+    "con": 18,
+    "int": 23,
+    "wis": 16,
+    "cha": 20,
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "nct-yangyang": {
+    "id": "nct-yangyang",
+    "classes": [
+      {
+        "name": "Monk",
+        "level": 12,
+        "subclass": "Warrior of the Open Hand"
+      }
+    ],
+    "race": "Superhuman",
+    "alignment": "Chaotic Neutral",
+    "proficiencyBonus": 4,
+    "initiative": 7,
+    "ac": 22,
+    "hp": 144,
+    "speed": "50 ft",
+    "passivePerception": 19,
+    "str": 14,
+    "dex": 24,
+    "con": 18,
+    "int": 16,
+    "wis": 20,
+    "cha": 18,
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "nct-chenle": {
+    "id": "nct-chenle",
+    "classes": [
+      {
+        "name": "Wizard",
+        "level": 12,
+        "subclass": "Illusionist"
+      }
+    ],
+    "race": "Superhuman",
+    "alignment": "Chaotic Good",
+    "proficiencyBonus": 4,
+    "initiative": 3,
+    "ac": 16,
+    "hp": 112,
+    "speed": "30 ft",
+    "passivePerception": 13,
+    "str": 10,
+    "dex": 16,
+    "con": 16,
+    "int": 22,
+    "wis": 16,
+    "cha": 20,
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "nct-jisung": {
+    "id": "nct-jisung",
+    "classes": [
+      {
+        "name": "Sorcerer",
+        "level": 11,
+        "subclass": "Wild Magic Sorcery"
+      }
+    ],
+    "race": "Superhuman",
+    "alignment": "Neutral Good",
+    "proficiencyBonus": 4,
+    "initiative": 5,
+    "ac": 18,
+    "hp": 125,
+    "speed": "30 ft",
+    "passivePerception": 18,
+    "str": 12,
+    "dex": 20,
+    "con": 18,
+    "int": 14,
+    "wis": 18,
+    "cha": 22,
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "nct-sion": {
+    "id": "nct-sion",
+    "classes": [
+      {
+        "name": "Wizard",
+        "level": 10,
+        "subclass": "Evoker"
+      }
+    ],
+    "race": "Superhuman",
+    "alignment": "Neutral Good",
+    "proficiencyBonus": 4,
+    "initiative": 3,
+    "ac": 16,
+    "hp": 104,
+    "speed": "30 ft",
+    "passivePerception": 13,
+    "str": 10,
+    "dex": 16,
+    "con": 16,
+    "int": 21,
+    "wis": 16,
+    "cha": 18,
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "nct-riku": {
+    "id": "nct-riku",
+    "classes": [
+      {
+        "name": "Sorcerer",
+        "level": 10,
+        "subclass": "Storm Sorcery"
+      }
+    ],
+    "race": "Superhuman",
+    "alignment": "Chaotic Good",
+    "proficiencyBonus": 4,
+    "initiative": 4,
+    "ac": 17,
+    "hp": 112,
+    "speed": "30 ft",
+    "passivePerception": 13,
+    "str": 10,
+    "dex": 18,
+    "con": 18,
+    "int": 14,
+    "wis": 16,
+    "cha": 22,
+    "resistances": [
+      "Lightning",
+      "Thunder"
+    ],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "nct-yushi": {
+    "id": "nct-yushi",
+    "classes": [
+      {
+        "name": "Wizard",
+        "level": 10,
+        "subclass": "Abjurer"
+      }
+    ],
+    "race": "Superhuman",
+    "alignment": "Lawful Good",
+    "proficiencyBonus": 4,
+    "initiative": 3,
+    "ac": 16,
+    "hp": 112,
+    "speed": "30 ft",
+    "passivePerception": 18,
+    "str": 10,
+    "dex": 16,
+    "con": 18,
+    "int": 22,
+    "wis": 18,
+    "cha": 16,
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "nct-jaehee": {
+    "id": "nct-jaehee",
+    "classes": [
+      {
+        "name": "Bard",
+        "level": 10,
+        "subclass": "College of Creation"
+      }
+    ],
+    "race": "Superhuman",
+    "alignment": "Neutral Good",
+    "proficiencyBonus": 4,
+    "initiative": 4,
+    "ac": 16,
+    "hp": 120,
+    "speed": "30 ft",
+    "passivePerception": 13,
+    "str": 12,
+    "dex": 18,
+    "con": 18,
+    "int": 16,
+    "wis": 16,
+    "cha": 22,
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "nct-ryo": {
+    "id": "nct-ryo",
+    "classes": [
+      {
+        "name": "Artificer",
+        "level": 10,
+        "subclass": "Alchemist"
+      }
+    ],
+    "race": "Superhuman",
+    "alignment": "Neutral Good",
+    "proficiencyBonus": 4,
+    "initiative": 2,
+    "ac": 19,
+    "hp": 130,
+    "speed": "30 ft",
+    "passivePerception": 13,
+    "str": 12,
+    "dex": 14,
+    "con": 18,
+    "int": 22,
+    "wis": 16,
+    "cha": 16,
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "nct-sakuya": {
+    "id": "nct-sakuya",
+    "classes": [
+      {
+        "name": "Fighter",
+        "level": 10,
+        "subclass": "Rune Knight"
+      }
+    ],
+    "race": "Superhuman",
+    "alignment": "Lawful Good",
+    "proficiencyBonus": 4,
+    "initiative": 3,
+    "ac": 20,
+    "hp": 165,
+    "speed": "30 ft",
+    "passivePerception": 17,
+    "str": 22,
+    "dex": 16,
+    "con": 20,
+    "int": 14,
+    "wis": 16,
+    "cha": 16,
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "taeil": {
+    "id": "taeil",
+    "classes": [
+      {
+        "name": "Wizard",
+        "level": 19,
+        "subclass": "Transmuter"
+      }
+    ],
+    "race": "Superhuman",
+    "alignment": "Lawful Evil",
+    "proficiencyBonus": 6,
+    "initiative": 4,
+    "ac": 18,
+    "hp": 235,
+    "speed": "30 ft",
+    "passivePerception": 21,
+    "str": 12,
+    "dex": 18,
+    "con": 22,
+    "int": 28,
+    "wis": 20,
+    "cha": 18,
+    "resistances": [],
+    "vulnerability": [],
+    "immunity": []
+  },
+  "exo-suho": {
+    "id": "exo-suho",
+    "secret": true,
+    "classes": [
+      {
+        "name": "Fighter",
+        "level": 11,
+        "subclass": "Cavalier"
+      },
+      {
+        "name": "Wizard",
+        "level": 9,
+        "subclass": "Abjurer"
+      }
+    ],
+    "race": "Exoplanar",
+    "alignment": "",
+    "proficiencyBonus": 6,
+    "initiative": 3,
+    "speed": "30 ft",
+    "passivePerception": 23,
+    "resistances": [
+      "Bludgeoning, Piercing, and Slashing from Nonmagical Attacks",
+      "Cold",
+      "Fire"
+    ],
+    "vulnerability": [],
+    "immunity": [
+      "Frightened"
+    ]
+  },
+  "exo-baekhyun": {
+    "id": "exo-baekhyun",
+    "secret": true,
+    "classes": [
+      {
+        "name": "Paladin",
+        "level": 20,
+        "subclass": "Oath of Redemption"
+      }
+    ],
+    "race": "Exoplanar",
+    "alignment": "",
+    "proficiencyBonus": 6,
+    "initiative": 6,
+    "speed": "30 ft",
+    "passivePerception": 24,
+    "resistances": [
+      "Bludgeoning, Piercing, and Slashing from Nonmagical Attacks",
+      "Radiant",
+      "Psychic"
+    ],
+    "vulnerability": [],
+    "immunity": [
+      "Blinded"
+    ]
+  },
+  "exo-chanyeol": {
+    "id": "exo-chanyeol",
+    "secret": true,
+    "classes": [
+      {
+        "name": "Wizard",
+        "level": 19,
+        "subclass": "War Magic"
+      }
+    ],
+    "race": "Exoplanar",
+    "alignment": "",
+    "proficiencyBonus": 6,
+    "initiative": 6,
+    "speed": "30 ft",
+    "passivePerception": 20,
+    "resistances": [
+      "Bludgeoning, Piercing, and Slashing from Nonmagical Attacks",
+      "Radiant"
+    ],
+    "vulnerability": [],
+    "immunity": [
+      "Fire"
+    ]
+  },
+  "exo-kyungsoo": {
+    "id": "exo-kyungsoo",
+    "secret": true,
+    "classes": [
+      {
+        "name": "Fighter",
+        "level": 20,
+        "subclass": "Rune Knight"
+      }
+    ],
+    "race": "Exoplanar",
+    "alignment": "",
+    "proficiencyBonus": 6,
+    "initiative": 3,
+    "speed": "30 ft",
+    "passivePerception": 23,
+    "resistances": [
+      "Bludgeoning, Piercing, and Slashing from Nonmagical Attacks",
+      "Force"
+    ],
+    "vulnerability": [],
+    "immunity": [
+      "Prone"
+    ]
+  },
+  "exo-kai": {
+    "id": "exo-kai",
+    "secret": true,
+    "classes": [
+      {
+        "name": "Monk",
+        "level": 7,
+        "subclass": "Warrior of Shadow"
+      },
+      {
+        "name": "Wizard",
+        "level": 13,
+        "subclass": "Conjurer"
+      }
+    ],
+    "race": "Exoplanar",
+    "alignment": "",
+    "proficiencyBonus": 6,
+    "initiative": 10,
+    "speed": "60 ft",
+    "passivePerception": 25,
+    "resistances": [
+      "Bludgeoning, Piercing, and Slashing from Nonmagical Attacks",
+      "Necrotic",
+      "Psychic"
+    ],
+    "vulnerability": [],
+    "immunity": [
+      "Frightened"
+    ]
+  },
+  "exo-sehun": {
+    "id": "exo-sehun",
+    "secret": true,
+    "classes": [
+      {
+        "name": "Fighter",
+        "level": 11,
+        "subclass": "Psi Warrior"
+      },
+      {
+        "name": "Sorcerer",
+        "level": 9,
+        "subclass": "Storm Sorcery"
+      }
+    ],
+    "race": "Exoplanar",
+    "alignment": "",
+    "proficiencyBonus": 6,
+    "initiative": 9,
+    "speed": "30 ft, fly 60 ft",
+    "passivePerception": 22,
+    "resistances": [
+      "Bludgeoning, Piercing, and Slashing from Nonmagical Attacks",
+      "Lightning"
+    ],
+    "vulnerability": [],
+    "immunity": [
+      "Thunder"
+    ]
+  },
+  "exo-lay": {
+    "id": "exo-lay",
+    "secret": true,
+    "classes": [
+      {
+        "name": "Sorcerer",
+        "level": 20,
+        "subclass": "Divine Soul"
+      }
+    ],
+    "race": "Exoplanar",
+    "alignment": "",
+    "proficiencyBonus": 6,
+    "initiative": 6,
+    "speed": "30 ft",
+    "passivePerception": 26,
+    "resistances": [
+      "Bludgeoning, Piercing, and Slashing from Nonmagical Attacks",
+      "Necrotic"
+    ],
+    "vulnerability": [],
+    "immunity": [
+      "Radiant"
+    ]
+  },
+  "exo-xiumin": {
+    "id": "exo-xiumin",
+    "secret": true,
+    "classes": [
+      {
+        "name": "Wizard",
+        "level": 19,
+        "subclass": "Abjurer"
+      }
+    ],
+    "race": "Exoplanar",
+    "alignment": "",
+    "proficiencyBonus": 6,
+    "initiative": 7,
+    "speed": "30 ft",
+    "passivePerception": 25,
+    "resistances": [
+      "Bludgeoning, Piercing, and Slashing from Nonmagical Attacks",
+      "Force"
+    ],
+    "vulnerability": [],
+    "immunity": [
+      "Cold"
+    ]
+  },
+  "exo-chen": {
+    "id": "exo-chen",
+    "secret": true,
+    "classes": [
+      {
+        "name": "Fighter",
+        "level": 14,
+        "subclass": "Eldritch Knight"
+      },
+      {
+        "name": "Sorcerer",
+        "level": 6,
+        "subclass": "Storm Sorcery"
+      }
+    ],
+    "race": "Exoplanar",
+    "alignment": "",
+    "proficiencyBonus": 6,
+    "initiative": 6,
+    "speed": "30 ft",
+    "passivePerception": 23,
+    "resistances": [
+      "Bludgeoning, Piercing, and Slashing from Nonmagical Attacks",
+      "Thunder"
+    ],
+    "vulnerability": [],
+    "immunity": [
+      "Lightning"
+    ]
   }
 }

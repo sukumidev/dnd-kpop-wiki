@@ -14,7 +14,7 @@ import {
 import styles from "./styles.module.css";
 
 import {
-  characterList,
+  visibleCharacterList,
   factionList,
   getCharacterDocPath,
   getFactionById,
@@ -42,7 +42,7 @@ export default function CharactersPage() {
   const {withBaseUrl} = useBaseUrlUtils();
 
   const directoryCharacters = useMemo(
-    () => characterList.filter((character) => !mythicCharacterIds.has(character.id)),
+    () => visibleCharacterList.filter((character) => !mythicCharacterIds.has(character.id)),
     [],
   );
 
@@ -119,7 +119,8 @@ export default function CharactersPage() {
             : undefined;
           const docPath = getCharacterDocPath(character);
           const isDeceased = character.status === "dead";
-          const classEntries = getStatblock(character.id)?.classes ?? [];
+          const statblock = getStatblock(character.id);
+          const classEntries = statblock?.classes ?? [];
 
           return (
             <Link

@@ -46,6 +46,7 @@ src/data/characters/*.json     # fuentes migradas por facción
 | `id` | `string` | ID estable del personaje. |
 | `title` | `string` | Nombre visible. |
 | `group` | `"party" \| "npc"` | Grupo de navegación. |
+| `visibility` | `"public" \| "hidden"` | `public` aparece en directorios y listados; `hidden` conserva la ficha accesible por URL directa. |
 | `status` | `CharacterStatus` | Estado técnico del personaje. |
 
 ## Campos opcionales
@@ -81,6 +82,8 @@ src/data/characters/*.json     # fuentes migradas por facción
 
 ```ts
 export type CharacterGroup = "party" | "npc";
+
+export type CharacterVisibility = "public" | "hidden";
 
 export type CharacterStatus =
   | "active"
@@ -160,6 +163,7 @@ faction
   "subtitle": "La Heroína Erudita",
   "imageSrc": "/img/characters/party/kiyori.png",
   "group": "party",
+  "visibility": "public",
   "role": "Player",
   "occupation": ["Estudiante de la Neo Academia"],
   "status": "active",

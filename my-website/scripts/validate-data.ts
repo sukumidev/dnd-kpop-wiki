@@ -57,6 +57,7 @@ const DATA_FILES = {
 
 const CHARACTER_STATUS = new Set(["active", "inactive", "dead", "missing", "unknown"]);
 const CHARACTER_GROUP = new Set(["party", "npc"]);
+const CHARACTER_VISIBILITY = new Set(["public", "hidden"]);
 const CHARACTER_DYNAMIC = new Set(["alpha", "beta", "omega", "unknown", "n/a"]);
 const POLYAMORY_STATUS = new Set(["yes", "no", "discovering", "unknown", "n/a"]);
 
@@ -527,6 +528,7 @@ function validateCharacters(characters: JsonRecord, factionIds: Set<string>, loc
     if (!isPlainObject(character)) continue;
 
     validateEnum(file, character.group, CHARACTER_GROUP, id, "group", true);
+    validateEnum(file, character.visibility, CHARACTER_VISIBILITY, id, "visibility", true);
     validateEnum(file, character.status, CHARACTER_STATUS, id, "status", true);
     validateEnum(file, character.dynamic, CHARACTER_DYNAMIC, id, "dynamic");
     validateEnum(file, character.polyamoryStatus, POLYAMORY_STATUS, id, "polyamoryStatus");
@@ -844,6 +846,17 @@ function validateStatblocks(statblocks: JsonRecord, characterIds: Set<string>) {
 
     if (!characterIds.has(id)) {
       addWarning(file, `Statblock "${id}" has no matching character in characters.json.`, id, "id");
+    }
+
+    if (statblock.secret === true) {
+      const allowedKeys = new Set(["id", "secret", "classes", "race", "alignment", "proficiencyBonus", "initiative", "speed", "passivePerception", "resistances", "vulnerability", "immunity"]);
+      if (!id.startsWith("exo-") || Object.keys(statblock).some((key) => !allowedKeys.has(key))) {
+        addError(file, `EXO statblocks must omit AC, HP, and ability scores.`, id, "secret");
+      }
+      if (!Array.isArray(statblock.classes) || typeof statblock.proficiencyBonus !== "number" || typeof statblock.initiative !== "number" || typeof statblock.passivePerception !== "number") {
+        addError(file, `EXO statblock is missing public fields.`, id, "secret");
+      }
+      continue;
     }
 
     if (Array.isArray(statblock.classes)) {

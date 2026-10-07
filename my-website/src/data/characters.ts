@@ -2,6 +2,7 @@ import legacyCharactersJson from "./characters.json";
 import skzCharactersJson from "./characters/skz.json";
 
 export type CharacterGroup = "party" | "npc";
+export type CharacterVisibility = "public" | "hidden";
 
 export type CharacterStatus =
   | "active"
@@ -48,6 +49,8 @@ export type Character = {
 
   /** "misc" was migrated to "npc". */
   group: CharacterGroup;
+  /** Controls appearance in public character directories and lists. */
+  visibility: CharacterVisibility;
   role?: string | null;
   occupation?: string[];
   status: CharacterStatus;
@@ -112,6 +115,11 @@ export const characters: CharactersById = {
 };
 
 export const characterList = Object.values(characters);
+export const visibleCharacterList = characterList.filter(isVisibleCharacter);
+
+export function isVisibleCharacter(character: Character): boolean {
+  return character.visibility === "public";
+}
 
 export function getCharacterById(id: string): Character | undefined {
   return characters[id];
@@ -119,7 +127,7 @@ export function getCharacterById(id: string): Character | undefined {
 
 export function getCharactersByFactionId(
   factionId: string,
-  list: Character[] = characterList,
+  list: Character[] = visibleCharacterList,
 ): Character[] {
   return list.filter((character) => character.factionId === factionId);
 }

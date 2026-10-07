@@ -76,7 +76,7 @@ export function getSessionLocations(session: Session) {
 export function getSessionCharacters(session: Session) {
   return (session.characterIds ?? [])
     .map((characterId) => getCharacterById(characterId))
-    .filter((character) => character !== undefined);
+    .filter((character) => character?.visibility === "public");
 }
 
 export function getSessionStartingLocation(session: Session) {

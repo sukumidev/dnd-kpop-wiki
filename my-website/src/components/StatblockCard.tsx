@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "@site/src/css/StatblockCard.module.css";
-import type { Statblock } from "@site/src/data/statblocks";
+import type { SecretStatblock, Statblock } from "@site/src/data/statblocks";
 import { classesLabel, totalLevel } from "@site/src/data/statblocks";
 
 function mod(score: number) {
@@ -20,8 +20,70 @@ function Chips({ items }: { items: string[] }) {
   );
 }
 
+function SecretStatblockCard({ data }: { data: SecretStatblock }) {
+  const unknown = "???";
+  const abilities = ["STR", "DEX", "CON", "INT", "WIS", "CHA"];
+  const traits = [
+    ["Resistances", data.resistances],
+    ["Vulnerabilities", data.vulnerability],
+    ["Immunities", data.immunity],
+  ] as const;
+
+  return (
+    <section className={styles.card} data-primary-class={data.classes[0]?.name.toLowerCase() || "default"} aria-label="AC, HP y habilidades ocultas">
+      <div className={styles.top}>
+        <div className={styles.headLeft}>
+          <div className={styles.classLine}>
+            <span className={styles.classText}>{classesLabel(data)}</span>
+            <span className={styles.levelPill}>Lvl {totalLevel(data)}</span>
+          </div>
+          <div className={styles.meta}>
+            <span>{data.race}</span>
+            <span className={styles.dot}>•</span>
+            <span>{data.alignment}</span>
+          </div>
+        </div>
+        <div className={styles.headRight}>
+          <span className={styles.pill}>🎯 PB {signed(data.proficiencyBonus)}</span>
+          <span className={styles.pill}>⚡ Init {signed(data.initiative)}</span>
+          <span className={styles.pill}>👁️ PP {data.passivePerception}</span>
+        </div>
+      </div>
+      <div className={styles.grid3}>
+        {[["🛡️ AC", "ac"], ["❤️ HP", "hp"], ["👟 Speed", "speed"]].map(([label, key]) => (
+          <div key={key} className={styles.kpi}>
+            <div className={styles.kpiLabel}>{label}</div>
+            <div className={styles.kpiValue}>{key === "speed" ? data.speed : unknown}</div>
+          </div>
+        ))}
+      </div>
+      <div className={styles.sectionTitleRow}><span className={styles.sectionTitle}>Abilities</span></div>
+      <div className={styles.sixGrid}>
+        {abilities.map((label) => (
+          <div key={label} className={styles.abilityCard}>
+            <div className={styles.abilityTop}>
+              <span className={styles.abilityName}>{label}</span>
+              <span className={styles.modPill}>{unknown}</span>
+            </div>
+            <div className={styles.abilityScoreBig}>{unknown}</div>
+          </div>
+        ))}
+      </div>
+      <div className={styles.traits}>
+        {traits.map(([label, items]) => (
+          <div key={label} className={styles.traitRow}>
+            <div className={styles.traitLabel}>{label}</div>
+            <Chips items={items} />
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 export default function StatblockCard({ data }: { data?: Statblock | null }) {
   if (!data) return null;
+  if (data.secret === true) return <SecretStatblockCard data={data} />;
 
   const abilities = [
     ["STR", data.str],

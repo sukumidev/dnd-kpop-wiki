@@ -10,6 +10,7 @@ import {
   getCharacterDocPath,
   type Character,
 } from '@site/src/data/relationships';
+import { isVisibleCharacter } from '@site/src/data/characters';
 
 type FactionDocFrontMatter = {
   factionId?: string;
@@ -24,12 +25,15 @@ function CharacterLink({ character }: { character: Character }) {
 }
 
 function FactionSubunitBlock({ subunit }: { subunit: FactionSubunit }) {
-  const leader = subunit.leaderCharacterId
+  const leaderCharacter = subunit.leaderCharacterId
     ? getCharacterById(subunit.leaderCharacterId)
+    : undefined;
+  const leader = leaderCharacter && isVisibleCharacter(leaderCharacter)
+    ? leaderCharacter
     : undefined;
   const members = (subunit.memberIds ?? [])
     .map((id) => getCharacterById(id))
-    .filter(Boolean) as Character[];
+    .filter((character): character is Character => Boolean(character) && isVisibleCharacter(character));
 
   return (
     <div key={subunit.id} style={{ marginBottom: '1.25rem' }}>
@@ -37,10 +41,10 @@ function FactionSubunitBlock({ subunit }: { subunit: FactionSubunit }) {
 
       {subunit.role ? <p><b>Rol:</b> {subunit.role}</p> : null}
 
-      {subunit.leaderCharacterId ? (
+      {leader ? (
         <p>
           <b>Lider:</b>{' '}
-          {leader ? <CharacterLink character={leader} /> : 'Lider desconocido'}
+          <CharacterLink character={leader} />
         </p>
       ) : null}
 

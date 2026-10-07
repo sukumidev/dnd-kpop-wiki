@@ -44,6 +44,7 @@ type Character = {
   faction?: Ref;
   realm?: Ref;
   dateOfBirth?: string; // "YYYY-MM-DD"
+  visibility?: "public" | "hidden";
   group?: string;
   doc?: string;
 };
@@ -83,6 +84,7 @@ function buildBirthdayEvents(characters: CharactersMap, year: number): CalendarE
   const out: CalendarEvent[] = [];
 
   for (const [id, c] of Object.entries(characters)) {
+    if (c.visibility !== "public") continue;
     if (!c?.dateOfBirth) continue;
 
     const [yy, mm, dd] = c.dateOfBirth.split("-").map((x) => parseInt(x, 10));
