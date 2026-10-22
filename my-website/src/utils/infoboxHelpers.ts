@@ -34,6 +34,7 @@ export type CharacterInfoboxInput = {
   age?: string; // "29", "??", "20s"
   birthday?: string; // "30 de Diciembre"
   race?: string; // Humano, Elfo, etc.
+  conditions?: React.ReactNode; // Condiciones adquiridas (vampire-spawn, etc.)
   dynamic?: string; // Omegaverse: Alfa/Omega/Beta/...
   zodiac?: string; // "Libra"
   mbti?: string; // "INTJ"
@@ -79,6 +80,7 @@ export function makeCharacterSections(input: CharacterInfoboxInput): Section[] {
     row('Signo', input.zodiac),
     row('MBTI', input.mbti),
     row('Raza', input.race),
+    row('Condiciones', input.conditions),
     row('Subgénero', input.dynamic),
     row('Ocupación', input.occupation),
     row('Alineación', input.alignment),

@@ -403,7 +403,10 @@
     "group": "party",
     "visibility": "public",
     "role": "Player",
-    "race": "Semi-Elfa",
+    "race": "Elfa",
+    "conditions": [
+      "vampire-spawn"
+    ],
     "regionId": "jeyperia",
     "hometown": {
       "label": "Villa Jangmi, Jeyperia",
@@ -6047,7 +6050,7 @@
     "title": "Moon Bin",
     "status": "active",
     "group": "npc",
-    "visibility": "hidden",
+    "visibility": "public",
     "factionId": "astro",
     "tags": [],
     "imageSrc": "/img/characters/astro/astro-moonbin.png",
@@ -6919,7 +6922,7 @@
     "id": "byeon-wooseok",
     "title": "Byeon Wooseok",
     "group": "npc",
-    "visibility": "hidden",
+    "visibility": "public",
     "status": "unknown",
     "imageSrc": null,
     "sortOrder": 145
@@ -7036,7 +7039,7 @@
     "id": "dal",
     "title": "Dal",
     "group": "npc",
-    "visibility": "hidden",
+    "visibility": "public",
     "status": "unknown",
     "imageSrc": null,
     "sortOrder": 158
@@ -7365,7 +7368,7 @@
     "id": "kim-soohyun",
     "title": "Kim Soohyun",
     "group": "npc",
-    "visibility": "hidden",
+    "visibility": "public",
     "status": "unknown",
     "imageSrc": null,
     "sortOrder": 192
@@ -7573,7 +7576,7 @@
     "title": "Qín Shen Yù",
     "group": "party",
     "visibility": "public",
-    "status": "dead",
+    "status": "missing",
     "imageSrc": "/img/characters/os-guild/os-shen.webp",
     "sortOrder": 215,
     "subtitle": "El Dracónico del Mar",
@@ -7623,7 +7626,7 @@
     "id": "sae-jong",
     "title": "Sae Jong",
     "group": "npc",
-    "visibility": "hidden",
+    "visibility": "public",
     "status": "unknown",
     "imageSrc": null,
     "sortOrder": 220
@@ -7858,7 +7861,7 @@
     "id": "taeil",
     "title": "Taeil",
     "group": "npc",
-    "visibility": "hidden",
+    "visibility": "public",
     "status": "unknown",
     "imageSrc": null,
     "sortOrder": 240

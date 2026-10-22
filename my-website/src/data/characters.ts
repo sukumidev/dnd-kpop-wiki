@@ -62,6 +62,8 @@ export type Character = {
 
   /** Biographical race/species. Combat race lives in statblocks.json when needed. */
   race?: string | null;
+  /** Acquired conditions are separate from biographical race/species. */
+  conditions?: string[];
   dynamic?: CharacterDynamic;
 
   orientation?: string | null;

@@ -145,6 +145,7 @@ export type CharacterJson = {
   zodiac?: string;
   mbti?: string;
   race?: string;
+  conditions?: string[];
   dynamic?: string;
   occupation?: string | string[];
 
@@ -252,6 +253,7 @@ export function characterJsonToSections(data: CharacterJson): Section[] {
     zodiac: data.zodiac,
     mbti: data.mbti,
     race: data.race,
+    conditions: renderMultilineText(data.conditions),
     dynamic: data.dynamic,
     occupation: renderMultilineText(data.occupation),
 

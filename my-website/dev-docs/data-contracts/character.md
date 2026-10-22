@@ -46,7 +46,7 @@ src/data/characters/*.json     # fuentes migradas por facción
 | `id` | `string` | ID estable del personaje. |
 | `title` | `string` | Nombre visible. |
 | `group` | `"party" \| "npc"` | Grupo de navegación. |
-| `visibility` | `"public" \| "hidden"` | `public` aparece en directorios y listados; `hidden` conserva la ficha accesible por URL directa. |
+| `visibility` | `"public" \| "hidden"` | `public` aparece en índices, calendarios y listas; `hidden` la retira de esas superficies, pero no protege la ruta MDX directa. |
 | `status` | `CharacterStatus` | Estado técnico del personaje. |
 
 ## Campos opcionales
@@ -62,6 +62,7 @@ src/data/characters/*.json     # fuentes migradas por facción
 | `zodiac` | `string \| null` | Signo zodiacal visible. |
 | `mbti` | `string \| null` | MBTI visible. |
 | `race` | `string \| null` | Raza/especie narrativa. |
+| `conditions` | `string[]` | Condiciones adquiridas, separadas de la raza/especie narrativa. |
 | `dynamic` | `CharacterDynamic` | Dinámica A/B/O técnica. |
 | `orientation` | `string \| null` | Orientación visible. |
 | `romanticSituation` | `string \| null` | Situación romántica visible. |
@@ -169,6 +170,7 @@ faction
   "status": "active",
   "dateOfBirth": "2000-10-05",
   "race": "Tiefling",
+  "conditions": [],
   "dynamic": "omega",
   "orientation": "Pan",
   "romanticSituation": "Sin compromisos",

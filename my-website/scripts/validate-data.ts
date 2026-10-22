@@ -178,6 +178,21 @@ function validateIdArray(file: string, ids: unknown, entityId: string, field: st
   });
 }
 
+function validateStringArray(file: string, values: unknown, entityId: string, field: string) {
+  if (values == null) return;
+
+  if (!Array.isArray(values)) {
+    addError(file, `Expected ${field} to be an array of strings.`, entityId, field);
+    return;
+  }
+
+  values.forEach((value, index) => {
+    if (typeof value !== "string" || value.trim() === "") {
+      addError(file, `Expected ${field}[${index}] to be a non-empty string.`, entityId, `${field}[${index}]`);
+    }
+  });
+}
+
 function validateRecordFile(file: string, data: unknown): JsonRecord {
   if (!isPlainObject(data)) {
     addError(file, `Expected ${file} to be a Record<string, Entity>.`);
@@ -545,6 +560,7 @@ function validateCharacters(characters: JsonRecord, factionIds: Set<string>, loc
 
     validateIdArray(file, character.locationIds, id, "locationIds");
     validateIdArray(file, character.questIds, id, "questIds");
+    validateStringArray(file, character.conditions, id, "conditions");
     validateTags(file, character.tags, id);
 
     for (const field of removedFields) {
