@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from "react";
-import Layout from "@theme/Layout";
 import DocumentCard from "@site/src/components/documents/DocumentCard";
+import WikiSidebarPageLayout from "@site/src/components/WikiSidebarPageLayout";
 import {
   DOCUMENT_TYPES,
   filterDocumentsByType,
@@ -94,7 +94,7 @@ export default function DocumentsPage(): React.ReactElement {
   const hasFilteredDocuments = filteredDocuments.length > 0;
 
   return (
-    <Layout
+    <WikiSidebarPageLayout
       title="Documentos"
       description="Archivo publico de cartas, notas, libros y documentos de la campana"
     >
@@ -171,6 +171,6 @@ export default function DocumentsPage(): React.ReactElement {
           )}
         </div>
       </main>
-    </Layout>
+    </WikiSidebarPageLayout>
   );
 }

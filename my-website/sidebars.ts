@@ -97,7 +97,7 @@ const sidebars: SidebarsConfig = {
 
     {
       type: 'link',
-      label: 'Documentos',
+      label: 'Biblioteca',
       href: '/documents',
     },
 

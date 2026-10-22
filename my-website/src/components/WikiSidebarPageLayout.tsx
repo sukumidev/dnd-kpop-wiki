@@ -52,7 +52,7 @@ const wikiSidebar: PropSidebar = [
     category('Arcs', [link('Acto 1', '/campaign/arcs/acto-1')]),
   ]),
   link('Facciones', '/factions'),
-  link('Documentos', '/documents'),
+  link('Biblioteca', '/documents'),
   category('Mecánicas', [link('Índice general', '/mechanics/')]),
   category('Sistemas y Objetos', [link('Deck of Fate', '/systems/deck-of-fate')]),
   category('Calendario', [link('Calendario', '/calendar/')]),
