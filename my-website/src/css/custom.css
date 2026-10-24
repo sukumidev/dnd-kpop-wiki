@@ -48,7 +48,6 @@
   --h-text-body: 1rem;
   --h-leading-body: 1.7;
   --h-text-ui-small: 0.78rem;
-  --h-heading-divider-width: 10rem;
   --h-shadow-floating: 0 12px 40px rgba(0, 0, 0, 0.18);
   --h-motion-fast: 180ms;
 
@@ -214,7 +213,7 @@ h1[class*='docTitle'],
   position: absolute;
   bottom: -0.45rem;
   left: 0;
-  width: min(100%, var(--h-heading-divider-width));
+  width: 100%;
   height: 1rem;
   background-image: linear-gradient(90deg, var(--h-border-strong), var(--h-border));
   background-position: 1.15rem center;

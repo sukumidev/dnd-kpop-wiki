@@ -137,7 +137,7 @@
   "pc-kiyori": {
     "id": "pc-kiyori",
     "title": "Kiyori Hoshizuki",
-    "subtitle": "La Hija del Senador Infernal",
+    "subtitle": "La Reencarnación de la Libertadora",
     "status": "active",
     "group": "party",
     "visibility": "public",
@@ -502,7 +502,7 @@
   },
   "svt-scoups": {
     "id": "svt-scoups",
-    "title": "S.Coups (Choi Seungcheol)",
+    "title": "Choi Seungcheol (S.Coups)",
     "subtitle": "El Gran Maestro del Gremio",
     "status": "active",
     "group": "npc",
@@ -770,7 +770,7 @@
   },
   "svt-joshua": {
     "id": "svt-joshua",
-    "title": "Joshua Hong",
+    "title": "Hong Jisoo (Joshua)",
     "subtitle": "El Caballero Impecable",
     "status": "active",
     "group": "npc",
@@ -1022,7 +1022,7 @@
   },
   "svt-hoshi": {
     "id": "svt-hoshi",
-    "title": "Hoshi (Kwon Soonyoung)",
+    "title": "Kwon Soonyoung (Hoshi)",
     "subtitle": "El Tigre Indomable",
     "status": "active",
     "group": "npc",
@@ -1269,7 +1269,7 @@
   },
   "svt-woozi": {
     "id": "svt-woozi",
-    "title": "Woozi (Lee Jihoon)",
+    "title": "Lee Jihoon (Woozi)",
     "subtitle": "El Jefe de las Producciones Arcanas",
     "status": "active",
     "group": "npc",
@@ -1393,7 +1393,7 @@
   },
   "svt-dk": {
     "id": "svt-dk",
-    "title": "Dokyeom (Lee Seokmin)",
+    "title": "Lee Seokmin (DK)",
     "subtitle": "El Virus de la Felicidad",
     "status": "active",
     "group": "npc",
@@ -1641,7 +1641,7 @@
   },
   "svt-minghao": {
     "id": "svt-minghao",
-    "title": "The8 (Xu Minghao)",
+    "title": "Xu Minghao (The8)",
     "subtitle": "El Gurú de la Sabiduría",
     "status": "active",
     "group": "npc",
@@ -1887,7 +1887,7 @@
   },
   "svt-vernon": {
     "id": "svt-vernon",
-    "title": "Hansol Vernon Chwe",
+    "title": "Chwe Hansol (Vernon)",
     "subtitle": "El Hechicero más Relajado del Mundo",
     "status": "active",
     "group": "npc",
@@ -2010,7 +2010,7 @@
   },
   "svt-dino": {
     "id": "svt-dino",
-    "title": "Dino (Lee Chan)",
+    "title": "Lee Chan (Dino)",
     "subtitle": "El Futuro de los Héroes Actuales",
     "status": "active",
     "group": "npc",
@@ -2034,7 +2034,7 @@
     "tags": [],
     "imageSrc": "/img/characters/svt/dino.png",
     "dateOfBirth": "1999-02-11",
-    "zodiac": "Aries ♈",
+    "zodiac": "Acuario ♒",
     "mbti": "ESTJ",
     "currentLocation": {
       "label": "Sector 17",
@@ -2133,7 +2133,7 @@
   },
   "skz-bangchan": {
     "id": "skz-bangchan",
-    "title": "Bang Chan (Christopher Bang)",
+    "title": "Christopher Bang (Bang Chan)",
     "subtitle": "El Alfa de Alfas",
     "status": "active",
     "group": "npc",
@@ -3018,7 +3018,7 @@
     "id": "enha-heeseung",
     "title": "Lee Heeseung",
     "subtitle": "El Investigador de la Muerte",
-    "status": "active",
+    "status": "dead",
     "group": "npc",
     "visibility": "public",
     "role": "NPC",
@@ -3097,7 +3097,7 @@
   },
   "enha-jay": {
     "id": "enha-jay",
-    "title": "Jay Park",
+    "title": "Park Jongseong (Jay)",
     "subtitle": "El Vampiro Rockstar",
     "status": "active",
     "group": "npc",
@@ -3177,7 +3177,7 @@
   },
   "enha-jake": {
     "id": "enha-jake",
-    "title": "Jake Sim",
+    "title": "Sim Jaeyun (Jake)",
     "subtitle": "El Golden Vampiro",
     "status": "active",
     "group": "npc",
@@ -3425,7 +3425,7 @@
   },
   "enha-niki": {
     "id": "enha-niki",
-    "title": "Ni-ki (Nishimura Riki)",
+    "title": "Nishimura Riki (Ni-ki)",
     "subtitle": "El Prodigio Legendario de la Lucha",
     "status": "active",
     "group": "npc",
@@ -3698,7 +3698,7 @@
   },
   "nct-yuta": {
     "id": "nct-yuta",
-    "title": "Yuta Nakamoto",
+    "title": "Nakamoto Yuta",
     "subtitle": "El Maestro de la Espada",
     "status": "active",
     "group": "npc",
@@ -4165,7 +4165,7 @@
   },
   "nct-winwin": {
     "id": "nct-winwin",
-    "title": "Winwin (Dong Sicheng)",
+    "title": "Dong Sicheng (Winwin)",
     "subtitle": "El Maestro Radiante",
     "status": "active",
     "group": "npc",
@@ -4346,7 +4346,7 @@
   },
   "nct-lucas": {
     "id": "nct-lucas",
-    "title": "Lucas Wong",
+    "title": "Wong Yukhei (Lucas)",
     "subtitle": "El Maestro de la Tormenta",
     "status": "active",
     "group": "npc",
@@ -4563,7 +4563,7 @@
   },
   "nct-xiaojun": {
     "id": "nct-xiaojun",
-    "title": "Xiaojun (Xiao Dejun)",
+    "title": "Xiao Dejun (Xiaojun)",
     "subtitle": "El Maestro del Fuego",
     "status": "active",
     "group": "npc",
@@ -4654,7 +4654,7 @@
   },
   "nct-hendery": {
     "id": "nct-hendery",
-    "title": "Hendery (Huang Guanheng)",
+    "title": "Huang Guanheng (Hendery)",
     "subtitle": "El Maestro del Metal",
     "status": "active",
     "group": "npc",
@@ -4898,7 +4898,7 @@
   },
   "nct-haechan": {
     "id": "nct-haechan",
-    "title": "Haechan (Lee Donghyuck)",
+    "title": "Lee Donghyuck (Haechan)",
     "subtitle": "El Maestro de las Pesadillas",
     "status": "active",
     "group": "npc",
@@ -5010,7 +5010,7 @@
     "images": [
       {
         "src": "/img/characters/nct/haechan.png",
-        "alt": "Haechan (Lee Donghyuck)",
+        "alt": "Lee Donghyuck (Haechan)",
         "caption": ""
       }
     ],
@@ -5450,7 +5450,7 @@
   },
   "nct-riku": {
     "id": "nct-riku",
-    "title": "Riku Maeda",
+    "title": "Maeda Riku",
     "subtitle": "El Prodigio del Relámpago",
     "status": "active",
     "group": "npc",
@@ -5523,7 +5523,7 @@
   },
   "nct-yushi": {
     "id": "nct-yushi",
-    "title": "Yushi Tokuno",
+    "title": "Tokuno Yushi",
     "subtitle": "El Prodigio de la Abjuración",
     "status": "active",
     "group": "npc",
@@ -5601,7 +5601,7 @@
   },
   "nct-jaehee": {
     "id": "nct-jaehee",
-    "title": "Kim Jaehee",
+    "title": "Kim Daeyoung (Jaehee)",
     "subtitle": "El Prodigio de la Creación",
     "status": "active",
     "group": "npc",
@@ -5682,7 +5682,7 @@
   },
   "nct-ryo": {
     "id": "nct-ryo",
-    "title": "Ryo Hirose",
+    "title": "Hirose Ryo",
     "subtitle": "El Prodigio de la Alquimia",
     "status": "active",
     "group": "npc",
@@ -5760,7 +5760,7 @@
   },
   "nct-sakuya": {
     "id": "nct-sakuya",
-    "title": "Sakuya Fujinaga",
+    "title": "Fujinaga Sakuya",
     "subtitle": "El Prodigio de las Armas",
     "status": "active",
     "group": "npc",
@@ -5846,7 +5846,7 @@
   },
   "nct-baby": {
     "id": "nct-baby",
-    "title": "Jeong Jaewoo",
+    "title": "Jeong Jaewoo (Baby Jungwoo)",
     "subtitle": "La Clave de Sylmorien",
     "status": "active",
     "group": "npc",
@@ -7573,7 +7573,7 @@
     "title": "Qín Shen Yù",
     "group": "party",
     "visibility": "public",
-    "status": "dead",
+    "status": "missing",
     "imageSrc": "/img/characters/os-guild/os-shen.webp",
     "sortOrder": 215,
     "subtitle": "El Dracónico del Mar",
@@ -7935,7 +7935,7 @@
     "imageSrc": "/img/characters/ateez/ateez-wooyoung.png",
     "sortOrder": 7,
     "subtitle": "El Joven Infiltrador",
-    "dateOfBirth": "1999-11-16",
+    "dateOfBirth": "1999-11-26",
     "zodiac": "Sagitario ♐",
     "mbti": "ESFP",
     "race": "Humano",
@@ -8113,7 +8113,7 @@
   },
   "exo-kyungsoo": {
     "id": "exo-kyungsoo",
-    "title": "Do Kyungsoo",
+    "title": "Do Kyungsoo (D.O.)",
     "status": "active",
     "group": "npc",
     "visibility": "public",

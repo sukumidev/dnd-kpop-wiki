@@ -16,7 +16,7 @@ export default function FactionPageFromDoc({ children }: { children: React.React
         title={data?.title ?? doc?.metadata?.title ?? 'Facción'}
         subtitle={data?.subtitle}
         imageSrc={data?.imageSrc}
-        caption={data?.caption}
+        caption={data?.imageCaption ?? data?.caption}
         sections={data ? factionJsonToSections(data) : []}
       />
       {children}

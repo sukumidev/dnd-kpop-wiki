@@ -516,7 +516,7 @@
 .documentReaderContent h2,
 .documentReaderContent h3 { color: #e5e9f5; font-family: var(--h-font-editorial); font-weight: 600; }
 .documentReaderContent h2 { position: relative; margin: 2.2rem 0 1rem; padding-bottom: 0.65rem; border-bottom: 0; font-size: var(--h-text-heading-2); letter-spacing: 0.06em; line-height: 1.25; text-transform: uppercase; }
-.documentReaderContent h2::after { position: absolute; bottom: -0.45rem; left: 0; width: min(100%, var(--h-heading-divider-width)); height: 1rem; background-image: linear-gradient(90deg, var(--h-border-strong), var(--h-border)); background-position: 1.15rem center; background-repeat: no-repeat; background-size: calc(100% - 1.15rem) 1px; color: var(--h-primary-muted); content: "✦"; font-family: var(--h-font-editorial); font-size: 0.8rem; line-height: 1rem; }
+.documentReaderContent h2::after { position: absolute; bottom: -0.45rem; left: 0; width: 100%; height: 1rem; background-image: linear-gradient(90deg, var(--h-border-strong), var(--h-border)); background-position: 1.15rem center; background-repeat: no-repeat; background-size: calc(100% - 1.15rem) 1px; color: var(--h-primary-muted); content: "✦"; font-family: var(--h-font-editorial); font-size: 0.8rem; line-height: 1rem; }
 .documentReaderContent h3 { margin: 1.8rem 0 0.8rem; font-size: var(--h-text-heading-3); line-height: 1.25; }
 .documentReaderContent li { margin: 0.35rem 0; }
 .documentReaderContent :where(ul, ol) { margin: 0 0 1.45rem; padding-left: 1.5rem; }

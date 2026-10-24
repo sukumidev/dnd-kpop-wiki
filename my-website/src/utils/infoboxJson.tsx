@@ -409,12 +409,14 @@ export function factionJsonToSections(data: any): Section[] {
       : data.leaderLabel ?? (data.leaderCharacterId
         ? 'Lider desconocido'
         : undefined),
+    parentFaction: renderFactionLinkFromId(data.parentFactionId),
     allies: renderDelimitedValues(
       allyIds.map((id: string) => getFactionById(id)?.title ?? id),
     ),
     rivals: renderDelimitedValues(
       rivalIds.map((id: string) => getFactionById(id)?.title ?? id),
     ),
+    additionalFacts: data.additionalFacts,
   });
 }
 

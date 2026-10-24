@@ -258,8 +258,10 @@ export type FactionInfoboxInput = {
   methods?: string;
 
   leader?: React.ReactNode; // linkable
+  parentFaction?: React.ReactNode;
   allies?: React.ReactNode;
   rivals?: React.ReactNode;
+  additionalFacts?: Array<{ label: string; value: string }>;
 };
 
 export function makeFactionSections(input: FactionInfoboxInput): Section[] {
@@ -283,9 +285,14 @@ export function makeFactionSections(input: FactionInfoboxInput): Section[] {
     row('Liderazgo', input.leader),
     row('Miembros conocidos', input.knownMembers),
     row('Afiliación', input.affiliation),
+    row('Facción matriz', input.parentFaction),
     row('Aliados', input.allies),
     row('Rivales', input.rivals),
   ]);
 
-  return cleanSections([s1, s2, s3]);
+  const s4 = section('Detalles', (input.additionalFacts ?? []).map(
+    (fact) => row(fact.label, fact.value),
+  ));
+
+  return cleanSections([s1, s2, s3, s4]);
 }

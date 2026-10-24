@@ -79,20 +79,21 @@
   },
   "clan-del-sol-ardiente": {
     "id": "clan-del-sol-ardiente",
-    "title": "Clan del Sol Ardiente",
+    "title": "El Clan del Sol Ardiente",
     "subtitle": null,
     "type": "enemy",
     "status": "active",
     "visibility": "public",
     "summary": "El Clan del Sol Ardiente es una organización de cazadores y purificadores que considera determinadas criaturas sobrenaturales una amenaza para el futuro de Hallyura.",
-    "description": "El Clan del Sol Ardiente es una organización de cazadores y purificadores que considera determinadas criaturas sobrenaturales una amenaza para el futuro de Hallyura.\n\nUtilizan especialmente:\n\nmagia radiante;\n\narmamento especializado;\n\nartefactos tecnomágicos;\n\ntácticas militares;\n\ninformación recopilada sobre criaturas sobrenaturales.\n\nEntre sus objetivos conocidos se encuentran vampiros, licántropos, criaturas lunares y diferentes linajes vinculados con fuerzas que consideran peligrosas o corruptoras.",
+    "description": "El Clan del Sol Ardiente es una organización de cazadores y purificadores que considera determinadas criaturas sobrenaturales una amenaza para el futuro de Hallyura.\n\nUtilizan especialmente:\n\n- magia radiante;\n- armamento especializado;\n- artefactos tecnomágicos;\n- tácticas militares;\n- información recopilada sobre criaturas sobrenaturales.\n\nEntre sus objetivos conocidos se encuentran vampiros, licántropos, criaturas lunares y diferentes linajes vinculados con fuerzas que consideran peligrosas o corruptoras.",
     "regionId": null,
     "locationIds": [],
     "allyFactionIds": [],
     "enemyFactionIds": [
       "panes-del-destino",
       "nct",
-      "svt"
+      "svt",
+      "enhypen"
     ],
     "tags": [
       "sol-ardiente",
@@ -112,14 +113,25 @@
     "enemyCharacterIds": [],
     "subunits": [],
     "imageCaption": null,
-    "name": "Clan del Sol Ardiente",
-    "typeLabel": "Organización militante y religiosa",
-    "origin": "Desconocido públicamente",
-    "leaderLabel": "Seungri",
+    "name": "El Clan del Sol Ardiente",
+    "typeLabel": "Organización",
+    "origin": "Desconocido",
+    "leaderLabel": "Seungri (cabeza ideológica)",
     "knownMembers": "Diversos cazadores y agentes del Clan",
     "affiliation": "Independiente",
     "activityArea": "Múltiples reinos de Hallyura",
-    "statusLabel": "Activo"
+    "statusLabel": "Activo",
+    "realm": "sin-reino",
+    "additionalFacts": [
+      {
+        "label": "Estado narrativo",
+        "value": "Antagonistas"
+      },
+      {
+        "label": "Primera aparición",
+        "value": "Sesión 10"
+      }
+    ]
   },
   "dragonborns-del-clan-del-caos": {
     "id": "dragonborns-del-clan-del-caos",
@@ -132,9 +144,9 @@
   "adp": {
     "id": "adp",
     "title": "El Proyecto de Héroes de Todo el Día",
-    "type": "organization",
+    "type": "other",
     "status": "active",
-    "subtitle": "Allday Project",
+    "subtitle": "ALLDAY PROJECT",
     "visibility": "public",
     "sortOrder": 6,
     "memberIds": [
@@ -146,7 +158,26 @@
     ],
     "imageSrc": "/img/factions/adp.jpg",
     "realm": "yggdrasil",
-    "regionId": "yggdrasil"
+    "regionId": "yggdrasil",
+    "name": "El Proyecto de Héroes de Todo el Día",
+    "typeLabel": "Aventureros",
+    "summary": "El Proyecto de Héroes de Todo el Día es un grupo de aventureros originario de La Marca Negra, en Yggdrasil. Se reconoce como una formación de héroes locales de ese territorio.",
+    "description": "El Proyecto de Héroes de Todo el Día es un grupo de aventureros originario de La Marca Negra, en Yggdrasil. Se reconoce como una formación de héroes locales de ese territorio.",
+    "origin": "Yggdrasil",
+    "affiliation": "Aliada",
+    "statusLabel": "Activo",
+    "allyFactionIds": [],
+    "enemyFactionIds": [],
+    "additionalFacts": [
+      {
+        "label": "Estado narrativo",
+        "value": "En campaña"
+      },
+      {
+        "label": "Primera aparición",
+        "value": "Sesión 11"
+      }
+    ]
   },
   "dragonborns-del-clan-del-orden": {
     "id": "dragonborns-del-clan-del-orden",
@@ -159,23 +190,70 @@
   "kiof": {
     "id": "kiof",
     "title": "El Clan del Beso de la Vida",
-    "type": "criminal",
+    "type": "other",
     "status": "active",
     "visibility": "public",
     "sortOrder": 8,
     "realm": "jeyperia",
-    "regionId": "jeyperia"
+    "regionId": "jeyperia",
+    "name": "El Clan del Beso de la Vida",
+    "subtitle": "KISS OF LIFE",
+    "typeLabel": "Red clandestina",
+    "summary": "El Clan del Beso de la Vida es una red clandestina independiente de Jeyperia dedicada al tráfico de información. Sus contactos incluyen gremios de aventureros, ladrones y productores.",
+    "description": "El Clan del Beso de la Vida es una red clandestina independiente de Jeyperia dedicada al tráfico de información. Sus contactos incluyen gremios de aventureros, ladrones y productores.",
+    "origin": "Jeyperia",
+    "affiliation": "Independiente",
+    "knownMembers": "Natty; lista parcial",
+    "statusLabel": "Activo",
+    "allyFactionIds": [],
+    "enemyFactionIds": [],
+    "additionalFacts": [
+      {
+        "label": "Estado narrativo",
+        "value": "Parcialmente vistos"
+      },
+      {
+        "label": "Primera aparición",
+        "value": "Sesión 8"
+      }
+    ]
   },
   "sj": {
     "id": "sj",
-    "title": "El Super Consejo de Magia de Sylmorien",
-    "type": "organization",
+    "title": "Los Super Señores del Consejo",
+    "type": "other",
     "status": "active",
-    "subtitle": "SUPER JUNIOR",
+    "subtitle": "Super Junior",
     "realm": "sylmorien",
     "visibility": "public",
     "sortOrder": 9,
-    "imageSrc": "/img/factions/sj.webp"
+    "imageSrc": "/img/factions/sj.webp",
+    "name": "Los Super Señores del Consejo",
+    "typeLabel": "Institución Política",
+    "summary": "Los Super Señores del Consejo son una institución política élfica de Sylmorien y una alta autoridad mágica del reino. Su historia se remonta a una organización capaz de dividirse en equipos según las necesidades de cada misión.",
+    "description": "Los Super Señores del Consejo son una institución política élfica de Sylmorien y una alta autoridad mágica del reino. Su historia se remonta a una organización capaz de dividirse en equipos según las necesidades de cada misión.",
+    "origin": "Sylmorien",
+    "affiliation": "Estatal",
+    "knownMembers": "Leeteuk, Heechul, Shindong, Siwon y Kyuhyun; lista parcial",
+    "leaderLabel": "Leeteuk; el Consejo responde ante Lord Tak",
+    "statusLabel": "Activos",
+    "regionId": "sylmorien",
+    "allyFactionIds": [],
+    "enemyFactionIds": [],
+    "additionalFacts": [
+      {
+        "label": "Estado narrativo",
+        "value": "Parcialmente vistos"
+      },
+      {
+        "label": "Especie",
+        "value": "Elfo"
+      },
+      {
+        "label": "Primera aparición",
+        "value": "Sesión 5"
+      }
+    ]
   },
   "ncit": {
     "id": "ncit",
@@ -191,68 +269,214 @@
   "viviz": {
     "id": "viviz",
     "title": "Las Clérigas Vívidas",
-    "type": "organization",
+    "type": "order",
     "status": "active",
     "realm": "hyberia",
     "visibility": "public",
     "sortOrder": 11,
-    "imageSrc": "/img/factions/viviz.jpg"
+    "imageSrc": "/img/factions/viviz.jpg",
+    "name": "Las Clérigas Vívidas",
+    "subtitle": "VIVIZ",
+    "typeLabel": "Orden religiosa",
+    "summary": "Las Clérigas Vívidas son una orden religiosa independiente de Hyberia dedicada a Moonbin y especializada en obstetricia y neonatología. Sus servicios incluyen la atención de embarazos omega y la evaluación de la salud de quienes esperan un nacimiento.",
+    "description": "Las Clérigas Vívidas son una orden religiosa independiente de Hyberia dedicada a Moonbin y especializada en obstetricia y neonatología. Sus servicios incluyen la atención de embarazos omega y la evaluación de la salud de quienes esperan un nacimiento.",
+    "origin": "Hyberia",
+    "affiliation": "Independiente",
+    "knownMembers": "SinB, Eunha y Umji",
+    "statusLabel": "Activas",
+    "regionId": "hyberia",
+    "allyFactionIds": [],
+    "enemyFactionIds": [],
+    "additionalFacts": [
+      {
+        "label": "Estado narrativo",
+        "value": "En campaña"
+      },
+      {
+        "label": "Primera aparición",
+        "value": "Sesión 11"
+      }
+    ]
   },
   "njz": {
     "id": "njz",
-    "title": "Las Guardianas del Bosque Perdido",
+    "title": "Las Guardianas del Bosque Muerto",
     "type": "clan",
     "status": "active",
     "subtitle": "NewJeans",
     "realm": "hyberia",
     "visibility": "public",
     "sortOrder": 12,
-    "regionId": "hyberia"
+    "regionId": "hyberia",
+    "name": "Las Guardianas del Bosque Muerto",
+    "typeLabel": "Clan",
+    "summary": "Las Guardianas del Bosque Perdido son un clan élfico originario de la Isla Adoria, en Hyberia. Están vinculadas a los Nuevos Dioses como sus portavoces. Fieles seguidoras de Min Heejin, gobernante de la Isla Adoria, actualmente son una comunidad proscrita.",
+    "description": "Las Guardianas del Bosque Perdido son un clan élfico originario de la Isla Adoria, en Hyberia. Están vinculadas a los Nuevos Dioses como sus portavoces. Fieles seguidoras de Min Heejin, gobernante de la Isla Adoria, actualmente son una comunidad proscrita.",
+    "origin": "Hyberia",
+    "affiliation": "Proscrita",
+    "knownMembers": "Minji, Hanni y Hyein; lista parcial",
+    "baseLabel": "Casa K, Borasek (refugio actual)",
+    "statusLabel": "Activas",
+    "allyFactionIds": [
+      "enhypen"
+    ],
+    "enemyFactionIds": [],
+    "additionalFacts": [
+      {
+        "label": "Estado narrativo",
+        "value": "Introducida"
+      },
+      {
+        "label": "Especie",
+        "value": "Elfo"
+      },
+      {
+        "label": "Primera aparición",
+        "value": "Sesión 4"
+      }
+    ]
   },
   "katseye": {
     "id": "katseye",
     "title": "Las Hijas del Ojo de Gato",
-    "type": "criminal",
+    "type": "other",
     "status": "active",
     "subtitle": "KATSEYE",
     "realm": "hyberia",
     "visibility": "public",
     "sortOrder": 13,
     "imageSrc": "/img/factions/katseye.jpg",
-    "regionId": "hyberia"
+    "regionId": "hyberia",
+    "name": "Las Hijas del Ojo de Gato",
+    "typeLabel": "Mercenarios",
+    "summary": "Las Hijas del Ojo de Gato son una orden de mercenarias de Hyberia al servicio de Bang PD. Su composición es mixta y su actividad documentada las relaciona con la vigilancia de accesos peligrosos.",
+    "description": "Las Hijas del Ojo de Gato son una orden de mercenarias de Hyberia al servicio de Bang PD. Su composición es mixta y su actividad documentada las relaciona con la vigilancia de accesos peligrosos.",
+    "origin": "Hyberia",
+    "affiliation": "Al servicio de la corona",
+    "statusLabel": "Activas",
+    "allyFactionIds": [],
+    "enemyFactionIds": [],
+    "additionalFacts": [
+      {
+        "label": "Estado narrativo",
+        "value": "En campaña"
+      },
+      {
+        "label": "Especie",
+        "value": "Composición mixta"
+      },
+      {
+        "label": "Primera aparición",
+        "value": "Sesión 14.5"
+      }
+    ]
   },
   "xg": {
     "id": "xg",
     "title": "Las Lobas Extraordinarias",
-    "type": "clan",
+    "type": "other",
     "status": "active",
     "realm": "hotou",
     "visibility": "public",
     "sortOrder": 14,
-    "imageSrc": "/img/factions/xg.jpg"
+    "imageSrc": "/img/factions/xg.jpg",
+    "name": "Las Lobas Extraordinarias",
+    "subtitle": "XG",
+    "typeLabel": "Círculo",
+    "summary": "Las Lobas Extraordinarias son un círculo independiente de licántropas de Hotou dedicado a los rituales del dios Moonbin. Viven en el Templo del Dios Lobo, donde recibieron a los aventureros y a otros viajeros vinculados con la tradición lunar.",
+    "description": "Las Lobas Extraordinarias son un círculo independiente de licántropas de Hotou dedicado a los rituales del dios Moonbin. Viven en el Templo del Dios Lobo, donde recibieron a los aventureros y a otros viajeros vinculados con la tradición lunar.",
+    "origin": "Hotou",
+    "affiliation": "Independiente",
+    "knownMembers": "Jurin; lista parcial",
+    "baseLabel": "Templo del Dios Lobo, Hotou",
+    "leaderLabel": "Madre Loba Jurin",
+    "statusLabel": "Activas",
+    "regionId": "hotou",
+    "allyFactionIds": [],
+    "enemyFactionIds": [],
+    "additionalFacts": [
+      {
+        "label": "Estado narrativo",
+        "value": "En campaña"
+      },
+      {
+        "label": "Especie",
+        "value": "Licántropo"
+      },
+      {
+        "label": "Primera aparición",
+        "value": "Sesión 16"
+      }
+    ]
   },
   "twice": {
     "id": "twice",
     "title": "Las Princesas Guerreras",
-    "type": "organization",
+    "type": "order",
     "status": "active",
     "subtitle": "TWICE",
     "realm": "jeyperia",
     "visibility": "public",
     "sortOrder": 15,
-    "imageSrc": "/img/factions/twice.jpg"
+    "imageSrc": "/img/factions/twice.jpg",
+    "name": "Las Princesas Guerreras",
+    "typeLabel": "Institución Militar",
+    "summary": "Las Princesas Guerreras son una institución militar de Jeyperia y una de las principales caras públicas del reino. Surgieron del Juicio de las Dieciséis, una selección de candidatas mediante pruebas de combate, diplomacia, supervivencia y magia.",
+    "description": "Las Princesas Guerreras son una institución militar de Jeyperia y una de las principales caras públicas del reino. Surgieron del Juicio de las Dieciséis, una selección de candidatas mediante pruebas de combate, diplomacia, supervivencia y magia.",
+    "origin": "Jeyperia",
+    "affiliation": "Autónoma reconocida",
+    "knownMembers": "Nayeon, Jeongyeon, Momo, Sana, Jihyo, Mina, Dahyun, Chaeyoung y Tzuyu",
+    "statusLabel": "Activas",
+    "regionId": "jeyperia",
+    "allyFactionIds": [],
+    "enemyFactionIds": [],
+    "additionalFacts": [
+      {
+        "label": "Estado narrativo",
+        "value": "Parcialmente vistos"
+      },
+      {
+        "label": "Primera aparición",
+        "value": "Sesión 5"
+      }
+    ]
   },
   "lsf": {
     "id": "lsf",
     "title": "Las Princesas Serafinas",
-    "type": "organization",
+    "type": "other",
     "status": "active",
     "subtitle": "LE SSERAFIM",
     "realm": "hyberia",
     "visibility": "public",
     "sortOrder": 16,
     "imageSrc": "/img/factions/lsf.png",
-    "regionId": "hyberia"
+    "regionId": "hyberia",
+    "name": "Las Princesas Serafinas",
+    "typeLabel": "Institución Política",
+    "summary": "Las Princesas Serafinas son una institución política humana de Hyberia, originaria de la Isla Source y al servicio de la corona. Forman parte de las figuras heroicas del reino y han intervenido en asuntos relacionados con las nuevas organizaciones de aventureros.",
+    "description": "Las Princesas Serafinas son una institución política humana de Hyberia, originaria de la Isla Source y al servicio de la corona. Forman parte de las figuras heroicas del reino y han intervenido en asuntos relacionados con las nuevas organizaciones de aventureros.",
+    "origin": "Hyberia",
+    "affiliation": "Al servicio de la corona",
+    "activityArea": "Representación política de la Isla Source",
+    "knownMembers": "Yunjin y Chaewon; lista parcial",
+    "statusLabel": "Activas",
+    "allyFactionIds": [],
+    "enemyFactionIds": [],
+    "additionalFacts": [
+      {
+        "label": "Estado narrativo",
+        "value": "Introducida"
+      },
+      {
+        "label": "Especie",
+        "value": "Humano"
+      },
+      {
+        "label": "Primera aparición",
+        "value": "Sesión 4"
+      }
+    ]
   },
   "andteam": {
     "id": "andteam",
@@ -268,35 +492,114 @@
   },
   "psf": {
     "id": "psf",
-    "title": "Los Bandidos de la Fiebre Psiquica",
-    "type": "criminal",
+    "title": "Los Bandidos de la Fiebre Psíquica",
+    "type": "other",
     "status": "active",
     "realm": "hotou",
     "visibility": "public",
     "sortOrder": 18,
-    "regionId": "hotou"
+    "regionId": "hotou",
+    "name": "Los Bandidos de la Fiebre Psíquica",
+    "subtitle": "PSYCHIC FEVER",
+    "typeLabel": "Pandilla",
+    "summary": "Los Bandidos de la Fiebre Psíquica son una pandilla humana de Hotou vinculada a la Tribu del Exilio. Su afiliación actual es rebelde.",
+    "description": "Los Bandidos de la Fiebre Psíquica son una pandilla humana de Hotou vinculada a la Tribu del Exilio. Su afiliación actual es rebelde.",
+    "origin": "Hotou",
+    "affiliation": "Rebelde",
+    "knownMembers": "Jimmy; lista parcial",
+    "statusLabel": "Activos",
+    "allyFactionIds": [],
+    "enemyFactionIds": [],
+    "additionalFacts": [
+      {
+        "label": "Estado narrativo",
+        "value": "En campaña"
+      },
+      {
+        "label": "Especie",
+        "value": "Humano"
+      },
+      {
+        "label": "Primera aparición",
+        "value": "Sesión 15"
+      }
+    ]
   },
   "bts": {
     "id": "bts",
     "title": "Los Caballeros Bangtan",
-    "type": "organization",
-    "status": "active",
+    "type": "order",
+    "status": "inactive",
     "subtitle": "BTS",
     "realm": "hyberia",
     "visibility": "public",
     "sortOrder": 19,
-    "regionId": "hyberia"
+    "regionId": "hyberia",
+    "name": "Los Caballeros Bangtan",
+    "typeLabel": "Orden militar",
+    "summary": "Los Caballeros Bangtan son una orden militar humana de la Isla Bighit, en Hyberia. Su participación en la Gran Guerra de la Tercera Era los convirtió en héroes históricos y en un símbolo de resistencia popular.",
+    "description": "Los Caballeros Bangtan son una orden militar humana de la Isla Bighit, en Hyberia. Su participación en la Gran Guerra de la Tercera Era los convirtió en héroes históricos y en un símbolo de resistencia popular.",
+    "origin": "Hyberia",
+    "affiliation": "Al servicio de la corona",
+    "knownMembers": "Namjoon, Seokjin, Yoongi, Hoseok, Jimin, Taehyung y Jungkook",
+    "statusLabel": "Inactivos",
+    "allyFactionIds": [],
+    "enemyFactionIds": [],
+    "additionalFacts": [
+      {
+        "label": "Estado narrativo",
+        "value": "Introducida"
+      },
+      {
+        "label": "Situación actual",
+        "value": "Inactivos; deambulan por el mundo"
+      },
+      {
+        "label": "Especie",
+        "value": "Humano"
+      },
+      {
+        "label": "Primera aparición",
+        "value": "Sesión 9"
+      }
+    ]
   },
   "stbv": {
     "id": "stbv",
-    "title": "Los Caballeros Santos pero Bravos",
-    "type": "military",
+    "title": "Los Luchadores Santos Bravos",
+    "type": "other",
     "status": "active",
     "subtitle": "SANTOS BRAVOS",
     "realm": "hyberia",
     "visibility": "public",
     "sortOrder": 20,
-    "imageSrc": "/img/factions/stbv.jpg"
+    "imageSrc": "/img/factions/stbv.jpg",
+    "name": "Los Luchadores Santos Bravos",
+    "typeLabel": "Aventureros",
+    "summary": "Los Luchadores Santos Bravos son un grupo humano de Hyberia que combina su pertenencia a la Guardia Real con la lucha profesional. Su doble actividad los distingue de otras compañías de aventureros del reino.",
+    "description": "Los Luchadores Santos Bravos son un grupo humano de Hyberia que combina su pertenencia a la Guardia Real con la lucha profesional. Su doble actividad los distingue de otras compañías de aventureros del reino.",
+    "origin": "Hyberia",
+    "affiliation": "Autónoma reconocida",
+    "knownMembers": "Drew, Alejandro, Gabi, Kaue y Kenneth",
+    "leaderLabel": "Drew",
+    "statusLabel": "Activos",
+    "regionId": "hyberia",
+    "allyFactionIds": [],
+    "enemyFactionIds": [],
+    "additionalFacts": [
+      {
+        "label": "Estado narrativo",
+        "value": "En campaña"
+      },
+      {
+        "label": "Especie",
+        "value": "Humano"
+      },
+      {
+        "label": "Primera aparición",
+        "value": "Sesión 8"
+      }
+    ]
   },
   "lngshot": {
     "id": "lngshot",
@@ -311,7 +614,7 @@
   },
   "bnd": {
     "id": "bnd",
-    "title": "Los Chicos de la Puerta de al Lado",
+    "title": "Los Chicos del Gremio de al Lado",
     "type": "guild",
     "status": "active",
     "subtitle": "BOYNEXTDOOR",
@@ -319,19 +622,69 @@
     "visibility": "public",
     "sortOrder": 22,
     "imageSrc": "/img/factions/bnd.webp",
-    "regionId": "hyberia"
+    "regionId": "hyberia",
+    "name": "Los Chicos del Gremio de al Lado",
+    "typeLabel": "Gremio",
+    "summary": "Los Chicos del Gremio de al Lado son un gremio independiente humano de héroes locales de Hyberia, originario de la Isla del Caos. Colaboran ocasionalmente con el Gremio de Aventureros de los Diecisiete Héroes y conservan su independencia.",
+    "description": "Los Chicos del Gremio de al Lado son un gremio independiente humano de héroes locales de Hyberia, originario de la Isla del Caos. Colaboran ocasionalmente con el Gremio de Aventureros de los Diecisiete Héroes y conservan su independencia.",
+    "origin": "Hyberia",
+    "affiliation": "Aliada",
+    "knownMembers": "Leehan; lista parcial",
+    "statusLabel": "Activos",
+    "allyFactionIds": [
+      "svt"
+    ],
+    "enemyFactionIds": [],
+    "additionalFacts": [
+      {
+        "label": "Estado narrativo",
+        "value": "En campaña"
+      },
+      {
+        "label": "Especie",
+        "value": "Humano"
+      },
+      {
+        "label": "Primera aparición",
+        "value": "Sesión 19"
+      }
+    ]
   },
   "cortis": {
     "id": "cortis",
     "title": "Los Cortaditos del Casino",
-    "type": "criminal",
+    "type": "other",
     "status": "active",
     "subtitle": "CORTIS",
     "realm": "hyberia",
     "visibility": "public",
     "sortOrder": 23,
     "imageSrc": "/img/factions/cortis.jpg",
-    "regionId": "hyberia"
+    "regionId": "hyberia",
+    "name": "Los Cortaditos del Casino",
+    "typeLabel": "Red clandestina",
+    "summary": "Los Cortaditos del Casino son una red clandestina de Hyberia dedicada a la administración del Casino Clandestino. El establecimiento forma parte de los lugares donde los aventureros ha buscado información y acceso a personajes difíciles de localizar.",
+    "description": "Los Cortaditos del Casino son una red clandestina de Hyberia dedicada a la administración del Casino Clandestino. El establecimiento forma parte de los lugares donde los aventureros ha buscado información y acceso a personajes difíciles de localizar.",
+    "origin": "Hyberia",
+    "affiliation": "Autónoma reconocida",
+    "knownMembers": "Martin y Keonho; lista parcial",
+    "baseLabel": "Casino Clandestino",
+    "leaderLabel": "Martin",
+    "statusLabel": "Activos",
+    "baseLocationId": "casino-clandestino",
+    "leaderCharacterId": "cortis-martin",
+    "allyFactionIds": [],
+    "enemyFactionIds": [],
+    "additionalFacts": [
+      {
+        "label": "Estado narrativo",
+        "value": "En campaña"
+      },
+      {
+        "label": "Primera aparición",
+        "value": "Sesión 8"
+      }
+    ]
   },
   "svt": {
     "id": "svt",
@@ -444,43 +797,124 @@
       "svt-dino"
     ],
     "name": "Los Diecisiete Héroes",
-    "typeLabel": "Gremio de aventureros",
+    "typeLabel": "Gremio",
     "origin": "Hyberia",
     "leaderLabel": "Choi Seungcheol (S.Coups)",
     "knownMembers": "Los Trece Héroes de Hyberia",
-    "affiliation": "Independiente",
+    "affiliation": "Aliada",
     "activityArea": "Hyberia y territorios donde reciben solicitudes",
-    "statusLabel": "Activo"
+    "statusLabel": "Activos",
+    "additionalFacts": [
+      {
+        "label": "Estado narrativo",
+        "value": "En campaña"
+      },
+      {
+        "label": "Especie",
+        "value": "Humano"
+      },
+      {
+        "label": "Primera aparición",
+        "value": "Sesión 1"
+      }
+    ]
   },
   "astro": {
     "id": "astro",
     "title": "Los Dioses Astronómicos",
-    "type": "religion",
+    "type": "other",
     "status": "active",
     "realm": "fantagio",
     "visibility": "public",
-    "sortOrder": 25
+    "sortOrder": 25,
+    "name": "Los Dioses Astronómicos",
+    "subtitle": "ASTRO",
+    "typeLabel": "Panteón",
+    "summary": "Los Dioses Astronómicos son seis divinidades originarias de Fantagio, veneradas en distintos reinos por su relación con el cielo, el movimiento y la vida interior. Su tradición es principalmente monástica, con una presencia clerical especialmente destacada en el culto de Moonbin.",
+    "description": "Los Dioses Astronómicos son seis divinidades originarias de Fantagio, veneradas en distintos reinos por su relación con el cielo, el movimiento y la vida interior. Su tradición es principalmente monástica, con una presencia clerical especialmente destacada en el culto de Moonbin.",
+    "origin": "Fantagio",
+    "affiliation": "Independiente",
+    "knownMembers": "Jinjin, Myungjun, Eunwoo, Rocky, Sanha y Moonbin",
+    "statusLabel": "Activos",
+    "allyFactionIds": [],
+    "enemyFactionIds": [],
+    "additionalFacts": [
+      {
+        "label": "Estado narrativo",
+        "value": "Lore"
+      },
+      {
+        "label": "Especie",
+        "value": "Deidad"
+      },
+      {
+        "label": "Primera aparición",
+        "value": "Sesión 11.5"
+      }
+    ]
   },
   "shinee": {
     "id": "shinee",
     "title": "Los Dioses Resplandecientes",
-    "type": "religion",
+    "type": "other",
     "status": "active",
     "subtitle": "SHINee",
     "realm": "sylmorien",
     "visibility": "public",
-    "sortOrder": 26
+    "sortOrder": 26,
+    "name": "Los Dioses Resplandecientes",
+    "typeLabel": "Panteón",
+    "summary": "Los Dioses Resplandecientes son un panteón vinculado a Sylmorien y a la tradición del Resplandecismo. Sus relatos describen a cinco mortales cuya relación con las personas y sus milagros dio paso a la divinidad.",
+    "description": "Los Dioses Resplandecientes son un panteón vinculado a Sylmorien y a la tradición del Resplandecismo. Sus relatos describen a cinco mortales cuya relación con las personas y sus milagros dio paso a la divinidad.",
+    "origin": "Sylmorien",
+    "affiliation": "Neutral declarada",
+    "knownMembers": "Onew, Jonghyun, Key, Minho y Taemin",
+    "statusLabel": "Activos",
+    "regionId": "sylmorien",
+    "allyFactionIds": [],
+    "enemyFactionIds": [],
+    "additionalFacts": [
+      {
+        "label": "Estado narrativo",
+        "value": "Parcialmente vistos"
+      },
+      {
+        "label": "Primera aparición",
+        "value": "Sesión 20"
+      }
+    ]
   },
   "got7": {
     "id": "got7",
-    "title": "Los Ex Príncipes Herederos de Jeyperia",
-    "type": "organization",
+    "title": "Los Ex Príncipes Herederos",
+    "type": "other",
     "status": "active",
     "subtitle": "GOT7",
     "realm": "jeyperia",
     "visibility": "public",
     "sortOrder": 27,
-    "imageSrc": "/img/factions/got7.jpg"
+    "imageSrc": "/img/factions/got7.jpg",
+    "name": "Los Ex Príncipes Herederos",
+    "typeLabel": "Colectivo",
+    "summary": "Los Ex Príncipes Herederos son un colectivo de antiguos príncipes y nobles de la corte de Jeyperia, actualmente exiliado y desvinculado del reino. Su nombre conserva la memoria de una orden formada para representar distintos territorios y linajes aliados.",
+    "description": "Los Ex Príncipes Herederos son un colectivo de antiguos príncipes y nobles de la corte de Jeyperia, actualmente exiliado y desvinculado del reino. Su nombre conserva la memoria de una orden formada para representar distintos territorios y linajes aliados.",
+    "origin": "Jeyperia",
+    "affiliation": "Exiliada",
+    "knownMembers": "Jay B, Jinyoung, Youngjae, Yugyeom, Mark, Jackson y BamBam",
+    "statusLabel": "Activos",
+    "regionId": "jeyperia",
+    "allyFactionIds": [],
+    "enemyFactionIds": [],
+    "additionalFacts": [
+      {
+        "label": "Estado narrativo",
+        "value": "Parcialmente vistos"
+      },
+      {
+        "label": "Primera aparición",
+        "value": "Sesión 9"
+      }
+    ]
   },
   "os-guild": {
     "id": "os-guild",
@@ -495,13 +929,13 @@
   "riize": {
     "id": "riize",
     "title": "Los Guerreros Ascendentes",
-    "subtitle": "(RIIZE)",
-    "type": "military",
+    "subtitle": "RIIZE",
+    "type": "other",
     "status": "active",
     "visibility": "public",
-    "summary": "Los Guerreros Ascendentes de Sylmorien son una facción de jóvenes combatientes arcanos surgidos de la órbita de la Neo Academia. Para el pueblo representan esperanza, renovación y orgullo nacional; para la Corona, una imagen perfecta de disciplina y futuro; y para los aventureros más atentos, una advertencia de lo peligroso que puede ser cuando Sylmorien convierte personas buenas en propaganda.",
-    "description": "Los Guerreros Ascendentes son una generación prodigio de Sylmorien: jóvenes, carismáticos, disciplinados y entrenados para pelear en la frontera entre el combate marcial y la magia práctica. No son magos académicos tradicionales ni soldados comunes; son combatientes formados para moverse, proteger, resistir y actuar cuando la teoría ya no basta.\n\nShotaro y Sungchan fueron compañeros de Kiyori en la Neo Academia y parte del círculo de aprendices de Mark. Aunque no destacaban por seguir el camino arcano más académico, sí demostraron una habilidad excepcional con las armas, el instinto de combate y la coordinación táctica. Con el tiempo, Sylmorien los reclutó como parte de un nuevo símbolo nacional: jóvenes héroes capaces de inspirar al pueblo y defender el reino.\n\nSu imagen pública es brillante, casi impecable. Aparecen en ceremonias, misiones visibles, panfletos mágicos y relatos heroicos. Sin embargo, bajo esa reputación existe una tensión constante: los Ascendentes no quieren ser solo herramientas de la Corona ni pósters vivientes de la Neo Academia. Son leales a Sylmorien, pero su verdadera lealtad parece estar primero entre ellos.",
-    "regionId": null,
+    "summary": "Los Guerreros Ascendentes son una nueva generación de aventureros humanos de Sylmorien. Surgieron durante la administración de Jang Cheol-Hyuk y han sido presentados como una imagen de renovación para el reino.",
+    "description": "Los Guerreros Ascendentes son una nueva generación de aventureros humanos de Sylmorien. Surgieron durante la administración de Jang Cheol-Hyuk y han sido presentados como una imagen de renovación para el reino.",
+    "regionId": "sylmorien",
     "locationIds": [],
     "allyFactionIds": [
       "nct"
@@ -512,8 +946,8 @@
     "accent": null,
     "sortOrder": 29,
     "reputation": null,
-    "goal": "Proteger Sylmorien y demostrar que una nueva generación puede defender el reino sin perder su humanidad, incluso cuando la Corona y la Neo Academia intentan convertirlos en símbolos controlables.",
-    "methods": "Entrenamiento marcial intensivo, magia práctica aplicada al combate, trabajo en equipo, misiones públicas de alto impacto, operaciones de rescate, defensa de rutas importantes y presencia simbólica en eventos oficiales. Su fuerza principal no está solo en el poder individual, sino en su coordinación: pelean como una unidad que entiende el ritmo de los demás casi sin hablar.",
+    "goal": null,
+    "methods": null,
     "baseLocationId": null,
     "baseLabel": null,
     "leaderCharacterId": null,
@@ -521,14 +955,34 @@
     "enemyCharacterIds": [],
     "subunits": [],
     "imageCaption": null,
-    "realm": "sylmorien"
+    "realm": "sylmorien",
+    "name": "Los Guerreros Ascendentes",
+    "typeLabel": "Aventureros",
+    "origin": "Sylmorien",
+    "affiliation": "Independiente",
+    "knownMembers": "Shotaro, Sungchan, Anton, Sohee, Wonbin y Eunseok; Seunghan como miembro anterior",
+    "statusLabel": "Activos",
+    "additionalFacts": [
+      {
+        "label": "Estado narrativo",
+        "value": "Introducida"
+      },
+      {
+        "label": "Especie",
+        "value": "Humano"
+      },
+      {
+        "label": "Primera aparición",
+        "value": "Sesión 8"
+      }
+    ]
   },
   "heraldos-del-crepusculo": {
     "id": "heraldos-del-crepusculo",
     "title": "Los Heraldos del Crepúsculo",
     "subtitle": null,
     "type": "order",
-    "status": "archived",
+    "status": "hidden",
     "visibility": "public",
     "summary": null,
     "description": null,
@@ -561,9 +1015,9 @@
   },
   "enhypen": {
     "id": "enhypen",
-    "title": "Hijos de la Noche",
+    "title": "Los Hijos de la Noche",
     "subtitle": "ENHYPEN",
-    "type": "order",
+    "type": "other",
     "status": "active",
     "visibility": "public",
     "summary": "Los Hijos de la Noche son siete vampiros que llevan existiendo desde la Cuarta Era.",
@@ -599,18 +1053,32 @@
     "accent": "purple",
     "sortOrder": 31,
     "realm": "hyberia",
-    "name": "Hijos de la Noche",
-    "typeLabel": "Grupo de vampiros",
+    "name": "Los Hijos de la Noche",
+    "typeLabel": "Colectivo",
     "origin": "Hyberia",
     "leaderLabel": "Yang Jungwon",
     "knownMembers": "Jungwon, Heeseung, Jay, Jake, Sunghoon, Sunoo y Ni-ki",
-    "affiliation": "Independiente",
+    "affiliation": "Rebelde",
     "activityArea": "Diversos territorios de Hallyura",
-    "statusLabel": "Activos"
+    "statusLabel": "Activos",
+    "additionalFacts": [
+      {
+        "label": "Estado narrativo",
+        "value": "En campaña"
+      },
+      {
+        "label": "Especie",
+        "value": "Vampiro"
+      },
+      {
+        "label": "Primera aparición",
+        "value": "Sesión 4"
+      }
+    ]
   },
   "skz": {
     "id": "skz",
-    "title": "Lobos Perdidos",
+    "title": "Los Lobos Perdidos",
     "subtitle": "Stray Kids",
     "type": "pack",
     "status": "active",
@@ -717,14 +1185,28 @@
     "exMemberIds": [
       "skz-woojin"
     ],
-    "name": "Lobos Perdidos",
-    "typeLabel": "Manada de licántropos",
+    "name": "Los Lobos Perdidos",
+    "typeLabel": "Manada",
     "origin": "Jeyperia",
     "leaderLabel": "Bang Chan",
     "knownMembers": "Bang Chan, Lee Know, Changbin, Hyunjin, Han, Felix, Seungmin y Jeongin",
-    "affiliation": "Independiente",
+    "affiliation": "Autónoma reconocida",
     "activityArea": "Principalmente Jeyperia",
-    "statusLabel": "Activos"
+    "statusLabel": "Activos",
+    "additionalFacts": [
+      {
+        "label": "Estado narrativo",
+        "value": "En campaña"
+      },
+      {
+        "label": "Especie",
+        "value": "Licántropo"
+      },
+      {
+        "label": "Primera aparición",
+        "value": "Sesión 3"
+      }
+    ]
   },
   "monsta-x": {
     "id": "monsta-x",
@@ -732,20 +1214,44 @@
     "type": "clan",
     "status": "active",
     "subtitle": "MONSTA X",
-    "realm": "isla-estelar",
+    "realm": "isla estelar",
     "visibility": "public",
     "sortOrder": 33,
-    "imageSrc": "/img/factions/monsta-x.jpg"
+    "imageSrc": "/img/factions/monsta-x.jpg",
+    "name": "Los Monstruos X",
+    "typeLabel": "Clan",
+    "summary": "Los Monstruos X, también conocidos como Clan X, son un clan originario de la Isla Estelar y de linaje infernal mestizo. Su historia está ligada a las persecuciones de la Purificación y a las redes que ayudaban a escapar a comunidades amenazadas.",
+    "description": "Los Monstruos X, también conocidos como Clan X, son un clan originario de la Isla Estelar y de linaje infernal mestizo. Su historia está ligada a las persecuciones de la Purificación y a las redes que ayudaban a escapar a comunidades amenazadas.",
+    "origin": "Isla Estelar",
+    "affiliation": "Aliada",
+    "knownMembers": "Shownu, Hyungwon y Joohoney; lista parcial",
+    "statusLabel": "Activos",
+    "allyFactionIds": [],
+    "enemyFactionIds": [],
+    "additionalFacts": [
+      {
+        "label": "Estado narrativo",
+        "value": "Introducida"
+      },
+      {
+        "label": "Especie",
+        "value": "Mestizo de linaje infernal"
+      },
+      {
+        "label": "Primera aparición",
+        "value": "Sesión 8"
+      }
+    ]
   },
   "nct": {
     "id": "nct",
-    "title": "Neo Culturales Tecnológicos",
-    "subtitle": "Neo Academia",
+    "title": "Los Neo Culturales Tecnológicos",
+    "subtitle": "NCT",
     "type": "academy",
     "status": "active",
     "visibility": "public",
-    "summary": "Los Neo Culturales Tecnológicos, llamados comúnmente Neos, son una extensa red de magos, guerreros, artificieros, psiónicos, investigadores y estudiantes asociados con la Neo Academia de Sylmorien.",
-    "description": "Los Neo Culturales Tecnológicos, llamados comúnmente Neos, son una extensa red de magos, guerreros, artificieros, psiónicos, investigadores y estudiantes asociados con la Neo Academia de Sylmorien.\n\nSu mayor contribución a la historia moderna fue el desarrollo de la Teoría de la Neovibra, según la cual diferentes manifestaciones de magia pueden estudiarse como expresiones de una misma fuerza capaz de resonar con cuerpos, objetos, pensamientos y otros fenómenos.\n\nLa Neo Academia fue fundada bajo una idea poco habitual para Sylmorien:\n\nel conocimiento debería servir para liberar a las personas, no para decidir qué deben convertirse.",
+    "summary": "Los Neo Culturales Tecnológicos, conocidos comúnmente como Neos, son una extensa red académica de magos, psiónicos, artificieros, guerreros e investigadores asociados con la Neo Academia de Sylmorien, cuya sede principal se encuentra en Neocity.",
+    "description": "Los Neo Culturales Tecnológicos, conocidos comúnmente como Neos, son una extensa red académica de magos, psiónicos, artificieros, guerreros e investigadores asociados con la Neo Academia de Sylmorien, cuya sede principal se encuentra en Neocity.\n\nLa institución es reconocida por sus contribuciones al estudio de la magia y por el desarrollo de la Teoría de la Neovibra, que propone que las diferentes manifestaciones del poder mágico pueden estudiarse como expresiones de una misma fuerza fundamental.\n\nLa Neo Academia fue fundada por Lee Taeyong, Mark Lee, Kim Doyoung, Ten Lee y Jeong Jaehyun con el propósito de crear un espacio donde el conocimiento sirviera para ampliar las posibilidades de cada individuo.\n\nSu filosofía puede resumirse en un principio: el conocimiento debe servir para liberar, no para controlar.",
     "regionId": "sylmorien",
     "locationIds": [
       "neocity"
@@ -775,31 +1281,69 @@
     "subunits": [],
     "imageCaption": null,
     "realm": "sylmorien",
-    "name": "Neo Culturales Tecnológicos",
-    "typeLabel": "Institución Académica Mágica",
+    "name": "Los Neo Culturales Tecnológicos",
+    "typeLabel": "Institución Academia",
     "origin": "Sylmorien",
     "leaderLabel": "Lee Taeyong",
     "knownMembers": "Neos de las distintas Casas y generaciones",
-    "affiliation": "Consejo Arcano de Sylmorien",
+    "affiliation": "Autónoma reconocida",
     "activityArea": "Principalmente Sylmorien",
-    "statusLabel": "Activos"
+    "statusLabel": "Activos",
+    "additionalFacts": [
+      {
+        "label": "Estado narrativo",
+        "value": "En campaña"
+      },
+      {
+        "label": "Especie",
+        "value": "Superhumano"
+      },
+      {
+        "label": "Primera aparición",
+        "value": "Sesión 4"
+      }
+    ]
   },
   "p1h": {
     "id": "p1h",
     "title": "Los Pioneros de la Armonía",
-    "type": "organization",
+    "type": "other",
     "status": "active",
     "subtitle": "P1Harmony",
     "realm": "fincaria",
     "visibility": "public",
     "sortOrder": 35,
     "imageSrc": "/img/factions/p1h.jpg",
-    "regionId": "fincaria"
+    "regionId": "fincaria",
+    "name": "Los Pioneros de la Armonía",
+    "typeLabel": "Aventureros",
+    "summary": "Los Pioneros de la Armonía son aventureros humanos de Fincaria y héroes locales de su territorio. Su presencia en Hyberia está documentada durante los acontecimientos de Las Crónicas del Gremio.",
+    "description": "Los Pioneros de la Armonía son aventureros humanos de Fincaria y héroes locales de su territorio. Su presencia en Hyberia está documentada durante los acontecimientos de Las Crónicas del Gremio.",
+    "origin": "Fincaria",
+    "affiliation": "Aliada",
+    "knownMembers": "Yoon Keeho; lista parcial",
+    "statusLabel": "Activos",
+    "allyFactionIds": [],
+    "enemyFactionIds": [],
+    "additionalFacts": [
+      {
+        "label": "Estado narrativo",
+        "value": "En campaña"
+      },
+      {
+        "label": "Especie",
+        "value": "Humano"
+      },
+      {
+        "label": "Primera aparición",
+        "value": "Sesión 14.5"
+      }
+    ]
   },
   "ateez": {
     "id": "ateez",
-    "title": "Marea Negra",
-    "subtitle": null,
+    "title": "Los Piratas de la Marea Negra",
+    "subtitle": "ATEEZ",
     "type": "pirates",
     "status": "active",
     "visibility": "public",
@@ -826,15 +1370,29 @@
     "enemyCharacterIds": [],
     "subunits": [],
     "imageCaption": null,
-    "realm": "sin-reino",
-    "name": "Marea Negra",
-    "typeLabel": "Confederación pirata y red marítima",
-    "origin": "Rutas marítimas de Hallyura",
+    "realm": "isla halazia",
+    "name": "Los Piratas de la Marea Negra",
+    "typeLabel": "Confederación",
+    "origin": "Isla Halazia",
     "leaderLabel": "Kim Hongjoong",
     "knownMembers": "Hongjoong, Seonghwa, Yunho, Yeosang, San, Mingi, Wooyoung y Jongho",
     "affiliation": "Independiente",
     "activityArea": "Mares, puertos y rutas comerciales de Hallyura",
-    "statusLabel": "Activa"
+    "statusLabel": "Activos",
+    "additionalFacts": [
+      {
+        "label": "Estado narrativo",
+        "value": "En campaña"
+      },
+      {
+        "label": "Especie",
+        "value": "Humano"
+      },
+      {
+        "label": "Primera aparición",
+        "value": "Sesión 6"
+      }
+    ]
   },
   "txt": {
     "id": "txt",
@@ -845,46 +1403,127 @@
     "realm": "hyberia",
     "visibility": "public",
     "sortOrder": 37,
-    "imageSrc": "/img/factions/txt.jpg"
+    "imageSrc": "/img/factions/txt.jpg",
+    "name": "Los Soñadores del Mañana",
+    "typeLabel": "Clan",
+    "summary": "Los Soñadores del Mañana son un clan kalashtar de Hyberia vinculado al Lago Celeste y al Dreamscape. Los aventureros los conoció como cinco jóvenes pescadores que permanecían en una aldea empobrecida junto al lago. Su relación con los sueños distingue a esta comunidad de las órdenes militares del reino.",
+    "description": "Los Soñadores del Mañana son un clan kalashtar de Hyberia vinculado al Lago Celeste y al Dreamscape. Los aventureros los conoció como cinco jóvenes pescadores que permanecían en una aldea empobrecida junto al lago. Su relación con los sueños distingue a esta comunidad de las órdenes militares del reino.",
+    "origin": "Hyberia",
+    "affiliation": "Independiente",
+    "knownMembers": "Soobin, Yeonjun, Beomgyu, Taehyun y Hueningkai",
+    "baseLabel": "Aldea del Lago Celeste",
+    "leaderLabel": "Choi Soobin",
+    "statusLabel": "Activos",
+    "regionId": "hyberia",
+    "baseLocationId": "aldea-del-lago-celeste",
+    "leaderCharacterId": "choi-soobin",
+    "allyFactionIds": [],
+    "enemyFactionIds": [],
+    "additionalFacts": [
+      {
+        "label": "Estado narrativo",
+        "value": "En campaña"
+      },
+      {
+        "label": "Especie",
+        "value": "Kalashtar"
+      },
+      {
+        "label": "Primera aparición",
+        "value": "Sesión 3"
+      }
+    ]
   },
   "exo": {
     "id": "exo",
-    "title": "EXO-Caballeros",
-    "type": "military",
+    "title": "Los EXO-Caballeros",
+    "type": "order",
     "status": "active",
     "subtitle": "EXO",
     "realm": "sylmorien",
     "visibility": "public",
     "sortOrder": 38,
     "imageSrc": "/img/factions/exo.webp",
-    "name": "EXO-Caballeros",
-    "typeLabel": "Orden militar de élite",
+    "name": "Los EXO-Caballeros",
+    "typeLabel": "Institución Militar",
     "origin": "Sylmorien",
     "baseLabel": "Kwangya, Sylmorien",
     "leaderLabel": "Kim Junmyeon (Suho)",
-    "knownMembers": "Suho, Xiumin, Lay, Baekhyun, Chen, Chanyeol, Kyungsoo, Kai y Sehun",
-    "affiliation": "Consejo Militar de Sylmorien",
+    "knownMembers": "Suho, Lay, Chanyeol, D.O., Kai, Sehun, Xiumin, Chen, Baekhyun",
+    "affiliation": "Estatal",
     "activityArea": "Sylmorien y antiguas campañas imperiales",
     "statusLabel": "Activos",
-    "leaderCharacterId": null,
+    "leaderCharacterId": "exo-suho",
     "baseLocationId": null,
     "regionId": "sylmorien",
     "description": "Los EXO-Caballeros fueron durante generaciones la fuerza militar más prestigiosa de Sylmorien.\n\nSus integrantes son guerreros extraordinarios asociados con diferentes poderes y especializaciones, y durante la Gran Guerra de la Tercera Era encabezaron muchas de las campañas militares más importantes del Imperio.\n\nPara la historia oficial sylmoriana representan la culminación de su tradición heroica: disciplina, poder, coordinación y excelencia.\n\nPara otros pueblos —especialmente aquellos que combatieron contra Sylmorien— el nombre EXO puede despertar recuerdos bastante menos gloriosos.",
     "summary": "Los EXO-Caballeros fueron durante generaciones la fuerza militar más prestigiosa de Sylmorien.",
     "reputation": null,
     "goal": null,
-    "methods": null
+    "methods": null,
+    "allyFactionIds": [],
+    "enemyFactionIds": [],
+    "additionalFacts": [
+      {
+        "label": "Estado narrativo",
+        "value": "En campaña"
+      },
+      {
+        "label": "Especie",
+        "value": "Exoplanar"
+      },
+      {
+        "label": "Primera aparición",
+        "value": "Sesión 10"
+      }
+    ]
   },
   "tvxq": {
     "id": "tvxq",
     "title": "Los Dioses Nacientes del Oriente",
-    "type": "religion",
+    "type": "order",
     "status": "active",
     "subtitle": "TVXQ",
     "realm": "sylmorien",
     "visibility": "public",
     "sortOrder": 39,
-    "imageSrc": "/img/factions/tvxq.jpg"
+    "imageSrc": "/img/factions/tvxq.jpg",
+    "name": "Los Dioses Nacientes del Oriente",
+    "typeLabel": "Orden heroica",
+    "summary": "Los Dioses Nacientes del Oriente son una orden de héroes aasimar originaria de Sylmorien cuya influencia se extendió por Hotou y los territorios orientales durante la Segunda Era. También son conocidos como los Dioses Nacientes del Este.",
+    "description": "Los Dioses Nacientes del Oriente son una orden de héroes aasimar originaria de Sylmorien cuya influencia se extendió por Hotou y los territorios orientales durante la Segunda Era. También son conocidos como los Dioses Nacientes del Este.\n\nSu nombre procede de la veneración popular que recibieron después de sus grandes hazañas. Aunque sus seguidores levantaron templos y comenzaron a invocarlos como protectores, los cinco héroes no eran verdaderas deidades.",
+    "origin": "Sylmorien",
+    "knownMembers": "Yunho y Changmin",
+    "statusLabel": "Activos",
+    "regionId": "sylmorien",
+    "allyFactionIds": [],
+    "enemyFactionIds": [],
+    "additionalFacts": [
+      {
+        "label": "Era de origen",
+        "value": "Segunda Era"
+      },
+      {
+        "label": "Especie",
+        "value": "Aasimar"
+      },
+      {
+        "label": "Área de influencia histórica",
+        "value": "Hotou y territorios del Mar Oriental"
+      },
+      {
+        "label": "Integrantes actuales",
+        "value": "Yunho y Changmin"
+      },
+      {
+        "label": "Formación histórica",
+        "value": "Yunho, Jaejoong, Junsu, Yoochun y Changmin"
+      },
+      {
+        "label": "Tradición vinculada",
+        "value": "Dongbangismo"
+      }
+    ]
   },
   "ciudadanos-de-hotou": {
     "id": "ciudadanos-de-hotou",
@@ -898,12 +1537,37 @@
   "ampersone": {
     "id": "ampersone",
     "title": "Los Unificadores",
-    "type": "organization",
+    "type": "order",
     "status": "active",
     "subtitle": "AMPERS&ONE",
     "realm": "fincaria",
     "visibility": "public",
-    "imageSrc": "/img/factions/ampersone.jpg"
+    "imageSrc": "/img/factions/ampersone.jpg",
+    "name": "Los Unificadores",
+    "typeLabel": "Institución Militar",
+    "summary": "Los Unificadores son una institución militar humana de Fincaria al servicio de su corona. Su función conocida es actuar como portavoces diplomáticos y mediadores.",
+    "description": "Los Unificadores son una institución militar humana de Fincaria al servicio de su corona. Su función conocida es actuar como portavoces diplomáticos y mediadores.",
+    "origin": "Fincaria",
+    "affiliation": "Al servicio de la corona",
+    "knownMembers": "Choi Jiho y Brian Ho; lista parcial",
+    "statusLabel": "Activos",
+    "allyFactionIds": [],
+    "enemyFactionIds": [],
+    "additionalFacts": [
+      {
+        "label": "Estado narrativo",
+        "value": "En campaña"
+      },
+      {
+        "label": "Especie",
+        "value": "Humano"
+      },
+      {
+        "label": "Primera aparición",
+        "value": "Sesión 14.5"
+      }
+    ],
+    "sortOrder": 124
   },
   "loossemble": {
     "id": "loossemble",
@@ -917,62 +1581,630 @@
   },
   "nct-127": {
     "id": "nct-127",
-    "title": "Los Neo Culturales Tecnológicos: La Casa Ilichil",
+    "title": "Los Neo Culturales Tecnológicos: Casa Ilichil",
     "type": "academy",
     "status": "active",
     "subtitle": "NCT 127",
     "realm": "sylmorien",
     "visibility": "public",
-    "imageSrc": "/img/factions/nct-127.jpg"
+    "imageSrc": "/img/factions/nct-127.jpg",
+    "name": "Los Neo Culturales Tecnológicos: Casa Ilichil",
+    "typeLabel": "Institución Academia",
+    "summary": "La Casa Ilichil es una de las principales ramas de los Neo Culturales Tecnológicos y reúne a algunos de los miembros más veteranos de la Neo Academia.",
+    "description": "La Casa Ilichil es una de las principales ramas de los Neo Culturales Tecnológicos y reúne a algunos de los miembros más veteranos de la Neo Academia.\n\nSe distingue por su carácter multidisciplinario. Mientras otras Casas concentran sus actividades en determinadas áreas de estudio, Ilichil integra especialistas en adivinación, psiónica, combate, alquimia, investigación arcana y desarrollo tecnológico.\n\nEsta diversidad permite que sus integrantes aborden problemas complejos mediante la combinación de conocimientos y habilidades diferentes.",
+    "origin": "Sylmorien",
+    "affiliation": "Autónoma reconocida",
+    "knownMembers": "Lee Taeyong, Johnny Suh, Nakamoto Yuta, Kim Doyoung, Jeong Jaehyun y Kim Jungwoo",
+    "baseLabel": "Neo Academia, Neocity",
+    "leaderLabel": "Lee Taeyong (referente de la Casa)",
+    "statusLabel": "Activos",
+    "regionId": "sylmorien",
+    "baseLocationId": "neocity",
+    "leaderCharacterId": "nct-taeyong",
+    "parentFactionId": "nct",
+    "allyFactionIds": [],
+    "enemyFactionIds": [],
+    "additionalFacts": [
+      {
+        "label": "Estado narrativo",
+        "value": "En campaña"
+      },
+      {
+        "label": "Especie",
+        "value": "Superhumano"
+      },
+      {
+        "label": "Primera aparición",
+        "value": "Sesión 4"
+      }
+    ],
+    "sortOrder": 107
   },
   "nct-dream": {
     "id": "nct-dream",
-    "title": "Los Neo Culturales Tecnológicos: La Casa de los Sueños",
+    "title": "Los Neo Culturales Tecnológicos: Casa de los Sueños",
     "type": "academy",
     "status": "active",
     "subtitle": "NCT DREAM",
     "realm": "sylmorien",
     "visibility": "public",
-    "imageSrc": "/img/factions/nct-dream.jpg"
+    "imageSrc": "/img/factions/nct-dream.jpg",
+    "name": "Los Neo Culturales Tecnológicos: Casa de los Sueños",
+    "typeLabel": "Institución Academia",
+    "summary": "La Casa de los Sueños es una de las principales ramas de los Neo Culturales Tecnológicos y está especializada en el estudio del Dreamscape, la oniromancia y los fenómenos relacionados con el Plano Astral.",
+    "description": "La Casa de los Sueños es una de las principales ramas de los Neo Culturales Tecnológicos y está especializada en el estudio del Dreamscape, la oniromancia y los fenómenos relacionados con el Plano Astral.\n\nSu actividad académica comprende la investigación de los sueños, la interpretación de símbolos, la construcción de espacios oníricos y el desarrollo de métodos para interactuar con estos fenómenos mediante la magia.\n\nLa Casa se distingue por combinar conocimientos arcanos con investigaciones sobre la conciencia, la memoria y las experiencias compartidas.",
+    "origin": "Sylmorien",
+    "affiliation": "Autónoma reconocida",
+    "knownMembers": "Mark, Renjun, Jeno, Haechan, Jaemin, Chenle y Jisung",
+    "baseLabel": "Neo Academia, Neocity",
+    "leaderLabel": "Mark Lee",
+    "statusLabel": "Activos",
+    "regionId": "sylmorien",
+    "baseLocationId": "neocity",
+    "leaderCharacterId": "nct-mark",
+    "parentFactionId": "nct",
+    "allyFactionIds": [],
+    "enemyFactionIds": [],
+    "additionalFacts": [
+      {
+        "label": "Estado narrativo",
+        "value": "En campaña"
+      },
+      {
+        "label": "Especie",
+        "value": "Superhumano"
+      },
+      {
+        "label": "Primera aparición",
+        "value": "Sesión 7"
+      }
+    ],
+    "sortOrder": 109
   },
   "wayv": {
     "id": "wayv",
-    "title": "Los Neo Culturales Tecnológicos: La Casa Weishen",
+    "title": "Los Neo Culturales Tecnológicos: Casa Weishen",
     "type": "academy",
     "status": "active",
     "subtitle": "WayV",
     "realm": "sylmorien",
     "visibility": "public",
-    "imageSrc": "/img/factions/wayv.jpg"
+    "imageSrc": "/img/factions/wayv.jpg",
+    "name": "Los Neo Culturales Tecnológicos: Casa Weishen",
+    "typeLabel": "Institución Academia",
+    "summary": "La Casa Weishen es una rama de los Neo Culturales Tecnológicos especializada en artes marciales, tradiciones druídicas y diferentes manifestaciones de la magia elemental.",
+    "description": "La Casa Weishen es una rama de los Neo Culturales Tecnológicos especializada en artes marciales, tradiciones druídicas y diferentes manifestaciones de la magia elemental.\n\nSu filosofía académica considera que la naturaleza, el movimiento corporal y la magia forman parte de sistemas relacionados que pueden estudiarse y practicarse conjuntamente.\n\nDentro de la Neo Academia, Weishen destaca por sus métodos de entrenamiento físico y mágico, así como por su enfoque adaptable a las capacidades particulares de cada estudiante.",
+    "origin": "Sylmorien",
+    "affiliation": "Autónoma reconocida",
+    "knownMembers": "Qian Kun, Ten, Winwin, Xiaojun, Hendery y Yangyang",
+    "baseLabel": "Neo Academia, Neocity",
+    "leaderLabel": "Qian Kun",
+    "statusLabel": "Activos",
+    "regionId": "sylmorien",
+    "baseLocationId": "neocity",
+    "leaderCharacterId": "nct-kun",
+    "parentFactionId": "nct",
+    "allyFactionIds": [],
+    "enemyFactionIds": [],
+    "additionalFacts": [
+      {
+        "label": "Estado narrativo",
+        "value": "En campaña"
+      },
+      {
+        "label": "Especie",
+        "value": "Superhumano"
+      },
+      {
+        "label": "Primera aparición",
+        "value": "Sesión 4"
+      }
+    ],
+    "sortOrder": 108
   },
   "nct-wish": {
     "id": "nct-wish",
-    "title": "Los Neo Culturales Tecnológicos: La Casa de los Deseos",
+    "title": "Los Neo Culturales Tecnológicos: Casa de los Deseos",
     "type": "academy",
     "status": "active",
     "subtitle": "NCT WISH",
     "realm": "sylmorien",
     "visibility": "public",
-    "imageSrc": "/img/factions/nct-wish.webp"
+    "imageSrc": "/img/factions/nct-wish.webp",
+    "name": "Los Neo Culturales Tecnológicos: Casa de los Deseos",
+    "typeLabel": "Institución Academia",
+    "summary": "La Casa de los Deseos es una de las generaciones más recientes de los Neo Culturales Tecnológicos.",
+    "description": "La Casa de los Deseos es una de las generaciones más recientes de los Neo Culturales Tecnológicos.\n\nSus actividades académicas se relacionan con el estudio de los deseos, la investigación de artefactos legendarios y las diferentes formas en que la magia puede responder a la voluntad de una persona.\n\nDentro de la Neo Academia, esta Casa representa una nueva etapa de formación e investigación, en la que se combinan conocimientos de generaciones anteriores con nuevas aplicaciones del poder mágico.",
+    "origin": "Sylmorien",
+    "affiliation": "Autónoma reconocida",
+    "knownMembers": "Sion, Riku, Yushi, Jaehee, Ryo y Sakuya",
+    "baseLabel": "Neo Academia, Neocity",
+    "leaderLabel": "Oh Sion",
+    "statusLabel": "Activos",
+    "regionId": "sylmorien",
+    "baseLocationId": "neocity",
+    "leaderCharacterId": "nct-sion",
+    "parentFactionId": "nct",
+    "allyFactionIds": [],
+    "enemyFactionIds": [],
+    "additionalFacts": [
+      {
+        "label": "Estado narrativo",
+        "value": "En campaña"
+      },
+      {
+        "label": "Especie",
+        "value": "Superhumano"
+      },
+      {
+        "label": "Primera aparición",
+        "value": "Sesión 9"
+      }
+    ],
+    "sortOrder": 110
   },
   "omega-x": {
     "id": "omega-x",
-    "title": "La Orden de la Décima Luna",
-    "type": "organization",
+    "title": "Los Diez Omegas",
+    "type": "clan",
     "status": "active",
     "subtitle": "OMEGA X",
-    "realm": "no-aplica",
+    "realm": "sin-reino",
     "visibility": "public",
-    "imageSrc": "/img/factions/omega-x.jpg"
+    "imageSrc": "/img/factions/omega-x.jpg",
+    "name": "Los Diez Omegas",
+    "typeLabel": "Clan",
+    "summary": "Los Diez Omegas son un clan humano exiliado de origen desconocido. Su historia está marcada por el cautiverio a manos del Clan del Sol Ardiente.",
+    "description": "Los Diez Omegas son un clan humano exiliado de origen desconocido. Su historia está marcada por el cautiverio a manos del Clan del Sol Ardiente.",
+    "origin": "Desconocido",
+    "affiliation": "Exiliada",
+    "knownMembers": "Jaehan, Hangyeom, Hwichan y Yechan; lista parcial",
+    "statusLabel": "Activos",
+    "allyFactionIds": [],
+    "enemyFactionIds": [],
+    "additionalFacts": [
+      {
+        "label": "Estado narrativo",
+        "value": "En campaña"
+      },
+      {
+        "label": "Especie",
+        "value": "Humano"
+      },
+      {
+        "label": "Primera aparición",
+        "value": "Sesión 14.5"
+      },
+      {
+        "label": "Rivales / enemigos",
+        "value": "Clan del Sol Ardiente (captores)"
+      }
+    ],
+    "sortOrder": 142
   },
   "morat": {
     "id": "morat",
-    "title": "La Cuadrilla que No se va",
-    "type": "military",
-    "status": "active",
-    "subtitle": "MORAT",
+    "title": "La Cuadrilla que no se va",
+    "type": "order",
+    "status": "destroyed",
+    "subtitle": "Morat",
     "realm": "sylmorien",
     "visibility": "public",
-    "imageSrc": "/img/factions/morat.jpg"
+    "imageSrc": "/img/factions/morat.jpg",
+    "name": "La Cuadrilla que no se va",
+    "typeLabel": "Institución Militar",
+    "summary": "La Cuadrilla que no se va fue una unidad militar humana de Sylmorien bajo el mando superior del EXO-Caballero Suho. Su primer encuentro registrado con los aventureros tuvo lugar durante el viaje al Templo del Sol Naciente.",
+    "description": "La Cuadrilla que no se va fue una unidad militar humana de Sylmorien bajo el mando superior del EXO-Caballero Suho. Su primer encuentro registrado con los aventureros tuvo lugar durante el viaje al Templo del Sol Naciente.",
+    "origin": "Sylmorien",
+    "affiliation": "Al servicio de la corona",
+    "leaderLabel": "Suho (mando superior); Brandom Lee dirigía el destacamento encontrado",
+    "statusLabel": "Destruida",
+    "regionId": "sylmorien",
+    "allyFactionIds": [],
+    "enemyFactionIds": [],
+    "additionalFacts": [
+      {
+        "label": "Estado narrativo",
+        "value": "En campaña"
+      },
+      {
+        "label": "Situación actual",
+        "value": "Todos sus integrantes fallecidos en la sesión 17"
+      },
+      {
+        "label": "Especie",
+        "value": "Humano"
+      },
+      {
+        "label": "Primera aparición",
+        "value": "Sesión 17"
+      }
+    ],
+    "sortOrder": 130
+  },
+  "rv": {
+    "id": "rv",
+    "title": "Las Doncellas del Terciopelo Rojo",
+    "name": "Las Doncellas del Terciopelo Rojo",
+    "subtitle": "Red Velvet",
+    "type": "other",
+    "typeLabel": "Círculo",
+    "status": "active",
+    "visibility": "public",
+    "summary": "Las Doncellas del Terciopelo Rojo son un círculo de cambions originario de Sylmorien. Sus capacidades combinan manifestaciones intensas de fuego y transformación con ilusiones, encantamientos y magia relacionada con el sueño.",
+    "description": "Las Doncellas del Terciopelo Rojo son un círculo de cambions originario de Sylmorien. Sus capacidades combinan manifestaciones intensas de fuego y transformación con ilusiones, encantamientos y magia relacionada con el sueño.",
+    "origin": "Sylmorien",
+    "realm": "sylmorien",
+    "affiliation": "Independiente",
+    "knownMembers": "Irene, Seulgi, Wendy, Joy y Yeri",
+    "statusLabel": "Activas",
+    "regionId": "sylmorien",
+    "allyFactionIds": [],
+    "enemyFactionIds": [],
+    "additionalFacts": [
+      {
+        "label": "Estado narrativo",
+        "value": "Parcialmente vistos"
+      },
+      {
+        "label": "Especie",
+        "value": "Cambion"
+      },
+      {
+        "label": "Primera aparición",
+        "value": "Sesión 5"
+      }
+    ],
+    "sortOrder": 126
+  },
+  "h2h": {
+    "id": "h2h",
+    "title": "Las Hermanas del Corazón",
+    "name": "Las Hermanas del Corazón",
+    "subtitle": "Hearts2Hearts",
+    "type": "other",
+    "typeLabel": "Institución Política",
+    "status": "active",
+    "visibility": "public",
+    "summary": "Las Hermanas del Corazón son una institución política de Sylmorien afiliada al Estado. Su presencia en campaña se registra desde la sesión 13.",
+    "description": "Las Hermanas del Corazón son una institución política de Sylmorien afiliada al Estado. Su presencia en campaña se registra desde la sesión 13.",
+    "origin": "Sylmorien",
+    "realm": "sylmorien",
+    "affiliation": "Estatal",
+    "knownMembers": "Ocho integrantes conocidas por la party en la sesión 13; nombres pendientes",
+    "statusLabel": "Activas",
+    "regionId": "sylmorien",
+    "allyFactionIds": [],
+    "enemyFactionIds": [],
+    "additionalFacts": [
+      {
+        "label": "Estado narrativo",
+        "value": "En campaña"
+      },
+      {
+        "label": "Primera aparición",
+        "value": "Sesión 13"
+      }
+    ],
+    "sortOrder": 128
+  },
+  "ntop": {
+    "id": "ntop",
+    "title": "El Escuadrón en la Cima",
+    "name": "El Escuadrón en la Cima",
+    "subtitle": "N.TOP",
+    "type": "order",
+    "typeLabel": "Institución Militar",
+    "status": "active",
+    "visibility": "public",
+    "summary": "El Escuadrón en la Cima es una unidad militar humana de Sylmorien al servicio de la corona. Está vinculado al mando del EXO-Caballero Chanyeol.",
+    "description": "El Escuadrón en la Cima es una unidad militar humana de Sylmorien al servicio de la corona. Está vinculado al mando del EXO-Caballero Chanyeol.",
+    "origin": "Sylmorien",
+    "realm": "sylmorien",
+    "affiliation": "Al servicio de la corona",
+    "leaderLabel": "Minjae (mando directo recién asignado); Chanyeol (mando superior)",
+    "statusLabel": "Activo",
+    "regionId": "sylmorien",
+    "allyFactionIds": [],
+    "enemyFactionIds": [],
+    "additionalFacts": [
+      {
+        "label": "Estado narrativo",
+        "value": "Introducida"
+      },
+      {
+        "label": "Especie",
+        "value": "Humano"
+      },
+      {
+        "label": "Primera aparición",
+        "value": "Sesión 19"
+      }
+    ],
+    "sortOrder": 129
+  },
+  "nouera": {
+    "id": "nouera",
+    "title": "La Cuadrilla que No Era",
+    "name": "La Cuadrilla que No Era",
+    "subtitle": "NouerA",
+    "type": "order",
+    "typeLabel": "Institución Militar",
+    "status": "active",
+    "visibility": "public",
+    "summary": "La Cuadrilla que No Era es una unidad militar humana de Sylmorien, al servicio de la corona y bajo el mando del EXO-Caballero Kai.",
+    "description": "La Cuadrilla que No Era es una unidad militar humana de Sylmorien, al servicio de la corona y bajo el mando del EXO-Caballero Kai.",
+    "origin": "Sylmorien",
+    "realm": "sylmorien",
+    "affiliation": "Al servicio de la corona",
+    "activityArea": "Patrullaje en la región de Seongnam",
+    "leaderLabel": "Kai (mando superior)",
+    "statusLabel": "Activa",
+    "regionId": "sylmorien",
+    "allyFactionIds": [],
+    "enemyFactionIds": [],
+    "additionalFacts": [
+      {
+        "label": "Estado narrativo",
+        "value": "En campaña"
+      },
+      {
+        "label": "Especie",
+        "value": "Humano"
+      },
+      {
+        "label": "Primera aparición",
+        "value": "Sesión 20"
+      }
+    ],
+    "sortOrder": 131
+  },
+  "wjsn": {
+    "id": "wjsn",
+    "title": "Las Investigadoras Cósmicas",
+    "name": "Las Investigadoras Cósmicas",
+    "subtitle": "WJSN",
+    "type": "other",
+    "typeLabel": "Colectivo",
+    "status": "active",
+    "visibility": "public",
+    "summary": "Las Investigadoras Cósmicas son un colectivo de la Isla Estelar dedicado a investigar fenómenos astrológicos y astronómicos. Su organización dispone de autonomía reconocida.",
+    "description": "Las Investigadoras Cósmicas son un colectivo de la Isla Estelar dedicado a investigar fenómenos astrológicos y astronómicos. Su organización dispone de autonomía reconocida.",
+    "origin": "Isla Estelar",
+    "realm": "isla estelar",
+    "affiliation": "Autónoma reconocida",
+    "knownMembers": "Eunseo y Dayoung; lista parcial",
+    "statusLabel": "Activas",
+    "allyFactionIds": [],
+    "enemyFactionIds": [],
+    "additionalFacts": [
+      {
+        "label": "Estado narrativo",
+        "value": "En campaña"
+      },
+      {
+        "label": "Primera aparición",
+        "value": "Sesión 20"
+      }
+    ],
+    "sortOrder": 138
+  },
+  "billlie": {
+    "id": "billlie",
+    "title": "Las Guardianas de la Historia Mística",
+    "name": "Las Guardianas de la Historia Mística",
+    "subtitle": "Billlie",
+    "type": "other",
+    "typeLabel": "Colectivo",
+    "status": "active",
+    "visibility": "public",
+    "summary": "Las Guardianas de la Historia Mística son un colectivo de heroínas originario de Mystoria, con autonomía reconocida. Su función conocida consiste en ayudar a comunidades moonbinistas que necesitan apoyo.",
+    "description": "Las Guardianas de la Historia Mística son un colectivo de heroínas originario de Mystoria, con autonomía reconocida. Su función conocida consiste en ayudar a comunidades moonbinistas que necesitan apoyo.",
+    "origin": "Mystoria",
+    "realm": "mystoria",
+    "affiliation": "Autónoma reconocida",
+    "knownMembers": "Tsuki y Suhyeon; lista parcial",
+    "statusLabel": "Activas",
+    "allyFactionIds": [],
+    "enemyFactionIds": [],
+    "additionalFacts": [
+      {
+        "label": "Estado narrativo",
+        "value": "En campaña"
+      },
+      {
+        "label": "Primera aparición",
+        "value": "Sesión 20"
+      },
+      {
+        "label": "Aliados",
+        "value": "Lady Sua (Moon Sua), apoyo a sus labores comunitarias"
+      }
+    ],
+    "sortOrder": 139
+  },
+  "xlov": {
+    "id": "xlov",
+    "title": "Los Querubines sin Amor",
+    "name": "Los Querubines sin Amor",
+    "subtitle": "XLOV",
+    "type": "other",
+    "typeLabel": "Círculo",
+    "status": "active",
+    "visibility": "public",
+    "summary": "Los Querubines sin Amor son un círculo independiente de aasimar originario de Guozhong. Su propósito es buscar la igualdad entre subgéneros.",
+    "description": "Los Querubines sin Amor son un círculo independiente de aasimar originario de Guozhong. Su propósito es buscar la igualdad entre subgéneros.",
+    "origin": "Guozhong",
+    "realm": "guozhong",
+    "affiliation": "Independiente",
+    "activityArea": "Búsqueda de igualdad entre subgéneros",
+    "knownMembers": "Rui; lista parcial",
+    "statusLabel": "Activos",
+    "allyFactionIds": [],
+    "enemyFactionIds": [],
+    "additionalFacts": [
+      {
+        "label": "Estado narrativo",
+        "value": "En campaña"
+      },
+      {
+        "label": "Especie",
+        "value": "Aasimar"
+      },
+      {
+        "label": "Primera aparición",
+        "value": "Sesión 20"
+      }
+    ],
+    "sortOrder": 140
+  },
+  "be-first": {
+    "id": "be-first",
+    "title": "Los Primeros de la Bahía",
+    "name": "Los Primeros de la Bahía",
+    "subtitle": "BE:FIRST",
+    "type": "other",
+    "typeLabel": "Colectivo",
+    "status": "active",
+    "visibility": "public",
+    "summary": "Los Primeros de la Bahía son un colectivo humano independiente originario de Hotou. Su actividad se centra en el comercio marítimo.",
+    "description": "Los Primeros de la Bahía son un colectivo humano independiente originario de Hotou. Su actividad se centra en el comercio marítimo.",
+    "origin": "Hotou",
+    "realm": "hotou",
+    "affiliation": "Independiente",
+    "activityArea": "Comercio marítimo",
+    "statusLabel": "Activos",
+    "regionId": "hotou",
+    "allyFactionIds": [],
+    "enemyFactionIds": [],
+    "additionalFacts": [
+      {
+        "label": "Estado narrativo",
+        "value": "En campaña"
+      },
+      {
+        "label": "Especie",
+        "value": "Humano"
+      },
+      {
+        "label": "Primera aparición",
+        "value": "Sesión 15"
+      }
+    ],
+    "sortOrder": 141
+  },
+  "nu-est": {
+    "id": "nu-est",
+    "title": "Los Antiguos Héroes Establecidos",
+    "name": "Los Antiguos Héroes Establecidos",
+    "subtitle": "NU'EST",
+    "type": "order",
+    "typeLabel": "Orden heroica",
+    "status": "disbanded",
+    "visibility": "public",
+    "summary": "Los Antiguos Héroes Establecidos fueron la primera orden de héroes defensores de la Isla Pledis, en Hyberia. Su legado pertenece a una etapa anterior al surgimiento del Gremio de Aventureros de los Diecisiete Héroes.",
+    "description": "Los Antiguos Héroes Establecidos fueron la primera orden de héroes defensores de la Isla Pledis, en Hyberia. Su legado pertenece a una etapa anterior al surgimiento del Gremio de Aventureros de los Diecisiete Héroes.\n\nLa orden terminó disolviéndose durante el proceso de incorporación de Pledis al sistema centralizado de Hyberia. Baekho permaneció como uno de sus últimos representantes visibles.",
+    "origin": "Hyberia",
+    "realm": "hyberia",
+    "affiliation": "Exiliada",
+    "knownMembers": "Baekho; lista parcial",
+    "statusLabel": "Disueltos",
+    "regionId": "hyberia",
+    "allyFactionIds": [],
+    "enemyFactionIds": [],
+    "additionalFacts": [
+      {
+        "label": "Estado narrativo",
+        "value": "Parcialmente vistos"
+      },
+      {
+        "label": "Especie",
+        "value": "Composición mixta"
+      },
+      {
+        "label": "Región de origen",
+        "value": "Isla Pledis"
+      },
+      {
+        "label": "Área de actividad histórica",
+        "value": "Defensa de la Isla Pledis"
+      },
+      {
+        "label": "Situación actual",
+        "value": "Orden disuelta"
+      },
+      {
+        "label": "Primera aparición",
+        "value": "Sesión 5"
+      }
+    ],
+    "sortOrder": 143
+  },
+  "bigbang": {
+    "id": "bigbang",
+    "title": "Los Dioses de la Creación",
+    "name": "Los Dioses de la Creación",
+    "subtitle": "BIGBANG",
+    "type": "other",
+    "typeLabel": "Panteón",
+    "status": "active",
+    "visibility": "public",
+    "summary": "Los Dioses de la Creación son un panteón originario de Yggdrasil cuyos integrantes alcanzaron la divinidad durante la Segunda Era. Su ascensión constituye uno de los acontecimientos religiosos más importantes de la historia documentada de Hallyura.",
+    "description": "Los Dioses de la Creación son un panteón originario de Yggdrasil cuyos integrantes alcanzaron la divinidad durante la Segunda Era. Su ascensión constituye uno de los acontecimientos religiosos más importantes de la historia documentada de Hallyura.\n\nAntes de convertirse en dioses, fueron cinco mortales conocidos por desarrollar técnicas propias, modificar los hechizos que aprendían y rechazar las limitaciones impuestas por las academias.",
+    "origin": "Yggdrasil",
+    "realm": "yggdrasil",
+    "knownMembers": "G-Dragon, T.O.P, Taeyang, Daesung y Seungri",
+    "statusLabel": "Activos",
+    "regionId": "yggdrasil",
+    "allyFactionIds": [],
+    "enemyFactionIds": [],
+    "additionalFacts": [
+      {
+        "label": "Era de ascensión",
+        "value": "Segunda Era"
+      },
+      {
+        "label": "Condición",
+        "value": "Deidades de origen mortal"
+      },
+      {
+        "label": "Formación histórica",
+        "value": "G-Dragon, T.O.P, Taeyang, Daesung y Seungri"
+      }
+    ],
+    "sortOrder": 145
+  },
+  "t1": {
+    "id": "t1",
+    "title": "Los Nuevos Dioses",
+    "name": "Los Nuevos Dioses",
+    "subtitle": "T1",
+    "type": "other",
+    "typeLabel": "Panteón",
+    "status": "active",
+    "visibility": "public",
+    "summary": "Los Nuevos Dioses son un panteón cuyo culto se ha extendido por distintos reinos durante una época marcada por guerras, crisis y supervivencia. Su influencia es especialmente fuerte en Hyberia.",
+    "description": "Los Nuevos Dioses son un panteón cuyo culto se ha extendido por distintos reinos durante una época marcada por guerras, crisis y supervivencia. Su influencia es especialmente fuerte en Hyberia.\n\nSus devotos buscan fortaleza, iniciativa, precisión y protección: capacidades que pueden decidir el resultado de una batalla o permitir que una comunidad sobreviva a una amenaza.",
+    "origin": "Transregional",
+    "realm": "sin-reino",
+    "knownMembers": "Doran, Oner, Faker, Peyz y Keria",
+    "statusLabel": "Activos",
+    "allyFactionIds": [],
+    "enemyFactionIds": [],
+    "additionalFacts": [
+      {
+        "label": "Condición",
+        "value": "Deidades"
+      },
+      {
+        "label": "Principal expansión del culto",
+        "value": "Hyberia"
+      },
+      {
+        "label": "Seguidores habituales",
+        "value": "Aventureros, soldados, mercenarios, guardianes y estrategas"
+      }
+    ],
+    "sortOrder": 146
   }
 }

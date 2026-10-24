@@ -46,6 +46,8 @@ export type Faction = {
   affiliation?: string;
   activityArea?: string;
   statusLabel?: string;
+  additionalFacts?: Array<{ label: string; value: string }>;
+  parentFactionId?: string;
 
   subtitle?: string | null;
   type?: FactionType | string | null;
