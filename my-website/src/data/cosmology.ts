@@ -8,6 +8,9 @@ export type MythicEntity = {
   subtitle?: string | null;
   imageSrc?: string | null;
   pantheon?: string | null;
+  factionId?: string | null;
+  alignment?: string | null;
+  cult?: string | null;
   summary?: string | null;
   /** Optional route to an existing page, without the leading slash. */
   docPath?: string | null;

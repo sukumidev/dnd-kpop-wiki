@@ -137,6 +137,41 @@
   font-size: 0.88rem;
 }
 
+.sectionActions {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.sectionCta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.42rem 0.7rem;
+  border: 1px solid rgba(143, 241, 223, 0.24);
+  border-radius: 10px;
+  background: rgba(143, 241, 223, 0.07);
+  font-size: 0.85rem;
+  text-decoration: none !important;
+  white-space: nowrap;
+  transition: transform 120ms ease, background 120ms ease, border-color 120ms ease;
+}
+
+.sectionCta:hover {
+  transform: translateY(-1px);
+  border-color: rgba(143, 241, 223, 0.4);
+  background: rgba(143, 241, 223, 0.12);
+}
+
+.sectionCta:hover .arrow {
+  transform: translateX(2px);
+}
+
+.arrow {
+  transition: transform 120ms ease;
+}
+
 .chevron {
   width: 12px;
   height: 12px;
@@ -292,6 +327,15 @@ a.cardLink:hover .card {
 
   .sectionHeader {
     padding: 0.9rem 1rem;
+  }
+
+  .sectionActions {
+    gap: 0.5rem;
+  }
+
+  .sectionCta {
+    padding: 0.36rem 0.5rem;
+    font-size: 0.72rem;
   }
 
   .chevron,

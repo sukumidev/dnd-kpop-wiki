@@ -8400,5 +8400,70 @@
       "Rompeasedios de la Liberación"
     ],
     "role": "NPC"
+  },
+  "tvxq-yunho": {
+    "id": "tvxq-yunho",
+    "title": "Yunho",
+    "subtitle": "Dragón Azul — Guardián Celestial de la Guía y las Tormentas",
+    "group": "npc",
+    "visibility": "public",
+    "status": "active",
+    "role": "NPC",
+    "race": "Aasimar",
+    "regionId": "sylmorien",
+    "factionId": "tvxq",
+    "alignment": "Lawful Good"
+  },
+  "tvxq-jaejoong": {
+    "id": "tvxq-jaejoong",
+    "title": "Jaejoong",
+    "subtitle": "Ave Bermellón — Guardián Celestial del Renacimiento y la Sanación",
+    "group": "npc",
+    "visibility": "public",
+    "status": "active",
+    "role": "NPC",
+    "race": "Aasimar",
+    "regionId": "sylmorien",
+    "factionId": null,
+    "alignment": "Neutral Good"
+  },
+  "tvxq-junsu": {
+    "id": "tvxq-junsu",
+    "title": "Junsu",
+    "subtitle": "Tigre Blanco — Guardián Celestial de la Palabra Sagrada y el Exorcismo",
+    "group": "npc",
+    "visibility": "public",
+    "status": "active",
+    "role": "NPC",
+    "race": "Aasimar",
+    "regionId": "sylmorien",
+    "factionId": null,
+    "alignment": "Chaotic Good"
+  },
+  "tvxq-yoochun": {
+    "id": "tvxq-yoochun",
+    "title": "Yoochun",
+    "subtitle": "Tortuga Negra — Guardián Celestial de la Memoria y los Caminos Nocturnos",
+    "group": "npc",
+    "visibility": "public",
+    "status": "active",
+    "role": "NPC",
+    "race": "Aasimar",
+    "regionId": "sylmorien",
+    "factionId": null,
+    "alignment": "Neutral Good"
+  },
+  "tvxq-changmin": {
+    "id": "tvxq-changmin",
+    "title": "Changmin",
+    "subtitle": "Dragón Dorado — Guardián Celestial de los Juramentos y el Equilibrio",
+    "group": "npc",
+    "visibility": "public",
+    "status": "active",
+    "role": "NPC",
+    "race": "Aasimar",
+    "regionId": "sylmorien",
+    "factionId": "tvxq",
+    "alignment": "Lawful Neutral"
   }
 }

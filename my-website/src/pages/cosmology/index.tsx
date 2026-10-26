@@ -7,10 +7,13 @@ import {
   mythicEntityList,
   type MythicEntity,
 } from "@site/src/data/cosmology";
+import {getFactionById} from "@site/src/data/relationships";
 import styles from "./styles.module.css";
 
 type PantheonGroup = {
   title: string;
+  factionId?: string | null;
+  typeLabel: string;
   entities: MythicEntity[];
 };
 
@@ -65,11 +68,17 @@ function EntityCard({entity}: {entity: MythicEntity}) {
 }
 
 export default function CosmologyPage() {
+  const {withBaseUrl} = useBaseUrlUtils();
   const pantheons = useMemo(() => {
     const groups = mythicEntityList.reduce<Record<string, PantheonGroup>>(
       (result, entity) => {
         const title = entity.pantheon?.trim() || OTHER_PANTHEON;
-        result[title] ??= {title, entities: []};
+        result[title] ??= {
+          title,
+          factionId: entity.factionId,
+          typeLabel: getFactionById(entity.factionId)?.typeLabel ?? "Panteón",
+          entities: [],
+        };
         result[title].entities.push(entity);
         return result;
       },
@@ -111,13 +120,26 @@ export default function CosmologyPage() {
             <details key={pantheon.title} className={styles.section} open>
               <summary className={styles.sectionHeader}>
                 <div>
-                  <div className={styles.sectionEyebrow}>Panteón</div>
+                  <div className={styles.sectionEyebrow}>{pantheon.typeLabel}</div>
                   <Heading as="h2" className={styles.sectionTitle}>
                     {pantheon.title}
                     <span className={styles.count}>{pantheon.entities.length}</span>
                   </Heading>
                 </div>
-                <span className={styles.chevron} aria-hidden="true" />
+                <div className={styles.sectionActions}>
+                  {pantheon.factionId ? (
+                    <Link
+                      className={styles.sectionCta}
+                      to={withBaseUrl(`/factions/${pantheon.factionId}`)}
+                      onClick={(event) => event.stopPropagation()}
+                      onMouseDown={(event) => event.stopPropagation()}
+                      onKeyDown={(event) => event.stopPropagation()}
+                    >
+                      Ver {pantheon.typeLabel.toLowerCase()} <span className={styles.arrow}>→</span>
+                    </Link>
+                  ) : null}
+                  <span className={styles.chevron} aria-hidden="true" />
+                </div>
               </summary>
 
               <div className={styles.sectionBody}>
