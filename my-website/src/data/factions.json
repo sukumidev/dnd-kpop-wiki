@@ -2203,6 +2203,10 @@
       {
         "label": "Seguidores habituales",
         "value": "Aventureros, soldados, mercenarios, guardianes y estrategas"
+      },
+      {
+        "label": "Antiguo integrante",
+        "value": "ZEUS, Dios de la Tempestad; fallecido"
       }
     ],
     "sortOrder": 146

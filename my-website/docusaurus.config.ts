@@ -65,6 +65,7 @@ const config: Config = {
         {from: '/cosmology/deities/tvxq-junsu', to: '/characters/npc/tvxq-junsu'},
         {from: '/cosmology/deities/tvxq-yoochun', to: '/characters/npc/tvxq-yoochun'},
         {from: '/cosmology/deities/tvxq-changmin', to: '/characters/npc/tvxq-changmin'},
+        {from: '/cosmology/deities/t1-gumayusi', to: '/cosmology/deities/t1-peyz'},
       ],
     }],
   ],

@@ -233,16 +233,15 @@
     "alignment": "Chaotic Good",
     "cult": "Tiwanismo"
   },
-  "t1-gumayusi": {
-    "id": "t1-gumayusi",
-    "title": "GUMAYUSI",
+  "t1-peyz": {
+    "id": "t1-peyz",
+    "title": "PEYZ",
     "subtitle": "Dios de la Ejecución y la Justicia",
     "pantheon": "Los Nuevos Dioses",
     "factionId": "t1",
-    "summary": "GUMAYUSI es el Dios de la Ejecución, la precisión y las consecuencias inevitables.",
-    "docPath": "cosmology/deities/t1-gumayusi",
+    "summary": "PEYZ es el Dios de la Ejecución y la Justicia, asociado con la precisión, la sentencia y el golpe decisivo.",
+    "docPath": "cosmology/deities/t1-peyz",
     "sortOrder": 4,
-    "alignment": "Lawful Neutral; Lawful Evil en cultos extremistas",
     "cult": "Tiwanismo"
   },
   "t1-keria": {
