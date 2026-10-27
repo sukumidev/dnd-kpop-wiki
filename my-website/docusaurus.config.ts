@@ -2,26 +2,25 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
+const siteUrl = process.env.SITE_URL ?? 'http://localhost:3000';
+const siteBaseUrl = process.env.BASE_URL ?? '/';
+
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  title: 'Hallyura Wiki',
+  tagline: 'Wiki del universo de Hallyura',
 
   future: {
     v4: true,
   },
 
-  url: 'https://your-docusaurus-site.example.com',
-  baseUrl: '/',
-
-  organizationName: 'facebook',
-  projectName: 'docusaurus',
+  url: siteUrl,
+  baseUrl: siteBaseUrl,
 
   onBrokenLinks: 'warn',
 
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'es',
+    locales: ['es'],
   },
 
   presets: [
@@ -33,18 +32,7 @@ const config: Config = {
           sidebarPath: require.resolve('./sidebars.ts'),
           exclude: ['characters/misc/**'],
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+        blog: false,
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -75,7 +63,6 @@ const config: Config = {
       require.resolve('@easyops-cn/docusaurus-search-local'),
       {
         indexDocs: true,
-        indexBlog: false,
         indexPages: true,
         language: ['es'],
       },
@@ -83,7 +70,6 @@ const config: Config = {
   ],
 
   themeConfig: {
-    image: 'img/docusaurus-social-card.jpg',
     docs: {
       sidebar: {
         hideable: true,
@@ -96,21 +82,13 @@ const config: Config = {
 
     navbar: {
       title: 'Hallyura Wiki',
-      logo: {
-        alt: 'Hallyura',
-        src: 'img/logo.svg',
-        href: '/',
-      },
-
-      items: [
-        
-      ],
+      items: [],
     },
 
     footer: {
       style: 'dark',
       links: [],
-      copyright: `Copyright © ${new Date().getFullYear()} `,
+      copyright: `Copyright © ${new Date().getFullYear()} Hallyura Wiki`,
     },
 
     prism: {

@@ -1,41 +1,41 @@
-# Website
+# Hallyura Wiki
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+Wiki del universo de Hallyura. Los devlogs y anuncios se publican en Discord; este sitio no tiene blog.
 
-## Installation
+## Requisitos
+
+- Node.js 20.18.1 o posterior.
+- npm (incluido con Node.js).
+
+## Instalación y desarrollo local
 
 ```bash
-yarn
+npm ci
+npm run start
 ```
 
-## Local Development
+El servidor de desarrollo usa `http://localhost:3000` de forma predeterminada.
+
+## Validaciones
 
 ```bash
-yarn start
+npm run typecheck
+npm run validate:data
+npm test
 ```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
 ## Build
 
 ```bash
-yarn build
+SITE_URL=http://localhost:3000 BASE_URL=/ npm run build
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+En PowerShell:
 
-## Deployment
-
-Using SSH:
-
-```bash
-USE_SSH=true yarn deploy
+```powershell
+$env:SITE_URL = 'http://localhost:3000'
+$env:BASE_URL = '/'
+npm run build
 ```
 
-Not using SSH:
-
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+`SITE_URL` indica el origen del sitio y `BASE_URL` la ruta base. Si no se definen, se usan `http://localhost:3000` y `/`, respectivamente. El dominio real deberá definirse antes del release a producción; aún no se ha elegido proveedor de hosting.
