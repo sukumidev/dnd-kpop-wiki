@@ -18,6 +18,7 @@ import {
   type Faction,
   type Location,
 } from "@site/src/data/relationships";
+import {getPublicFactionHref, getPublicRealmHref} from "@site/src/data/publicRoutes";
 
 type FactionGroup = {
   region?: Location;
@@ -27,13 +28,6 @@ type FactionGroup = {
 };
 
 const PARTY_GROUP_ID = "__parties__";
-
-const REGION_DOC_PATHS: Record<string, string> = {
-  hyberia: "/world/realms/hyberia",
-  jeyperia: "/world/realms/jeyperia",
-  sylmorien: "/world/realms/sylmorien",
-  yggdrasil: "/world/realms/ygdrassil",
-};
 
 function isArchivedFaction(faction: Faction) {
   return faction.status === "hidden" || String(faction.status) === "archived";
@@ -138,7 +132,7 @@ export default function FactionsPage() {
 
           {sections.map((section) => {
             const sectionTitle = section.title;
-            const regionPath = REGION_DOC_PATHS[section.realmId];
+            const regionPath = getPublicRealmHref(section.realmId);
 
             return (
               <details key={section.id} className={styles.section} open>
@@ -177,14 +171,9 @@ export default function FactionsPage() {
                         : undefined;
                       const memberCount = getFactionMembers(faction.id).length;
                       const isDestroyed = faction.status === "destroyed";
+                      const factionHref = getPublicFactionHref(faction.id);
 
-                      return (
-                        <Link
-                          key={faction.id}
-                          to={withBaseUrl(`/factions/${faction.id}`)}
-                          className={styles.cardLink}
-                          aria-label={`Abrir ficha de ${faction.title}`}
-                        >
+                      const card = (
                           <article
                             className={`${styles.card} ${
                               isDestroyed ? styles.cardDeceased : ""
@@ -233,8 +222,18 @@ export default function FactionsPage() {
                               ) : null}
                             </div>
                           </article>
-                        </Link>
                       );
+
+                      return factionHref ? (
+                        <Link
+                          key={faction.id}
+                          to={withBaseUrl(factionHref)}
+                          className={styles.cardLink}
+                          aria-label={`Abrir ficha de ${faction.title}`}
+                        >
+                          {card}
+                        </Link>
+                      ) : <div key={faction.id}>{card}</div>;
                     })}
                   </div>
                 </div>

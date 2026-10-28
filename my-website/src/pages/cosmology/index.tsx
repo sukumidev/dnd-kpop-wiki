@@ -8,6 +8,7 @@ import {
   type MythicEntity,
 } from "@site/src/data/cosmology";
 import {getFactionById} from "@site/src/data/relationships";
+import {getPublicFactionHref} from "@site/src/data/publicRoutes";
 import styles from "./styles.module.css";
 
 type PantheonGroup = {
@@ -116,7 +117,9 @@ export default function CosmologyPage() {
             </div>
           </header>
 
-          {pantheons.map((pantheon) => (
+          {pantheons.map((pantheon) => {
+            const factionHref = getPublicFactionHref(pantheon.factionId);
+            return (
             <details key={pantheon.title} className={styles.section} open>
               <summary className={styles.sectionHeader}>
                 <div>
@@ -127,10 +130,10 @@ export default function CosmologyPage() {
                   </Heading>
                 </div>
                 <div className={styles.sectionActions}>
-                  {pantheon.factionId ? (
+                  {factionHref ? (
                     <Link
                       className={styles.sectionCta}
-                      to={withBaseUrl(`/factions/${pantheon.factionId}`)}
+                      to={withBaseUrl(factionHref)}
                       onClick={(event) => event.stopPropagation()}
                       onMouseDown={(event) => event.stopPropagation()}
                       onKeyDown={(event) => event.stopPropagation()}
@@ -150,7 +153,8 @@ export default function CosmologyPage() {
                 </div>
               </div>
             </details>
-          ))}
+            );
+          })}
 
           {!pantheons.length ? (
             <div className={styles.emptyState}>

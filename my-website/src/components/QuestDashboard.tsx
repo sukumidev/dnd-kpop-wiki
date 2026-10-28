@@ -15,6 +15,7 @@ import questsJson from "@site/src/data/quests.json";
 import RelatedDocumentsSection from "@site/src/components/documents/RelatedDocumentsSection";
 import type { Quest, QuestMap } from "@site/src/data/quests";
 import { getFactionById } from "@site/src/data/relationships";
+import {getPublicFactionHref} from "@site/src/data/publicRoutes";
 import styles from "./QuestDashboard.module.css";
 
 type QuestDashboardProps = {
@@ -22,13 +23,6 @@ type QuestDashboardProps = {
 };
 
 const quests = questsJson as QuestMap;
-const factionPageIds = new Set([
-  "gremio-de-aventureros",
-  "hijos-de-la-noche",
-  "lobos-perdidos",
-  "panes-del-destino",
-]);
-
 function getQuestProgress(
   quest: Quest,
   questMap: QuestMap
@@ -561,14 +555,15 @@ export default function QuestDashboard({
                   <div className={styles.metadataBlock}>
                     {quest.factionIds.map((factionId) => {
                       const faction = getFactionById(factionId);
+                      const factionHref = faction ? getPublicFactionHref(faction.id) : undefined;
 
-                      return faction && factionPageIds.has(faction.id) ? (
+                      return factionHref ? (
                         <Link
                           key={`${quest.id}-${factionId}`}
-                          to={`/factions/${faction.id}`}
+                          to={factionHref}
                           style={{ fontSize: "0.92rem" }}
                         >
-                          #{faction.title}
+                          #{faction?.title ?? factionId}
                         </Link>
                       ) : (
                         <span
