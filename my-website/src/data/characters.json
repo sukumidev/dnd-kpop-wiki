@@ -8465,5 +8465,71 @@
     "regionId": "sylmorien",
     "factionId": "tvxq",
     "alignment": "Lawful Neutral"
+  },
+  "laura": {
+    "id": "laura",
+    "title": "Laura",
+    "group": "npc",
+    "visibility": "public",
+    "status": "unknown",
+    "summary": "Aparece durante la jornada de playa de la sesión 19."
+  },
+  "yamal": {
+    "id": "yamal",
+    "title": "Yamal",
+    "group": "npc",
+    "visibility": "public",
+    "status": "unknown",
+    "summary": "Aparece durante la jornada de playa de la sesión 19."
+  },
+  "sixsevenaldo": {
+    "id": "sixsevenaldo",
+    "title": "Sixsevenaldo",
+    "group": "npc",
+    "visibility": "public",
+    "status": "unknown",
+    "summary": "Aparece durante la jornada de playa de la sesión 19."
+  },
+  "minji-gemela": {
+    "id": "minji-gemela",
+    "title": "Minji",
+    "subtitle": "Hija de Yang Minjae y Joshua",
+    "group": "npc",
+    "visibility": "public",
+    "status": "active",
+    "summary": "Una de las gemelas de Minjae y Joshua, nacida durante la sesión 14."
+  },
+  "minsoo-gemela": {
+    "id": "minsoo-gemela",
+    "title": "Minsoo",
+    "subtitle": "Hija de Yang Minjae y Joshua",
+    "group": "npc",
+    "visibility": "public",
+    "status": "active",
+    "summary": "Una de las gemelas de Minjae y Joshua, nacida durante la sesión 14."
+  },
+  "abu": {
+    "id": "abu",
+    "title": "Abu",
+    "group": "npc",
+    "visibility": "public",
+    "status": "unknown",
+    "summary": "Aparece en la sesión 19."
+  },
+  "apu": {
+    "id": "apu",
+    "title": "Apu",
+    "group": "npc",
+    "visibility": "public",
+    "status": "unknown",
+    "summary": "Aparece en la sesión 19."
+  },
+  "agu": {
+    "id": "agu",
+    "title": "Agu",
+    "group": "npc",
+    "visibility": "public",
+    "status": "unknown",
+    "summary": "Aparece en la sesión 19."
   }
 }
