@@ -31,6 +31,7 @@ export default function SessionsIndex(): React.ReactElement {
           session.number,
           `sesion ${session.number}`,
           session.title,
+          session.subtitle,
           session.sessionDate,
           session.sessionDate ? formatSessionDate(session.sessionDate) : undefined,
           session.campaignDate,
