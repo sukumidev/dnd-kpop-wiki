@@ -1,13 +1,14 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import characterIdMapping from './scripts/character-id-mapping.json';
 
 const siteUrl = process.env.SITE_URL ?? 'http://localhost:3000';
 const siteBaseUrl = process.env.BASE_URL ?? '/';
 
 // Keep bookmarks to character pages working after ID normalization.
 const characterIdRedirects = Object.entries(
-  require('./scripts/character-id-mapping.json') as Record<string, string>,
+  characterIdMapping as Record<string, string>,
 ).map(([oldId, newId]) => {
   const group = oldId === 'qin-shen-yu' ? 'party' : 'npc';
   return { from: `/characters/${group}/${oldId}`, to: `/characters/${group}/${newId}` };
