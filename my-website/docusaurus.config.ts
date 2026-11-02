@@ -1,9 +1,33 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import characterIdMapping from './scripts/character-id-mapping.json';
 
 const siteUrl = process.env.SITE_URL ?? 'http://localhost:3000';
 const siteBaseUrl = process.env.BASE_URL ?? '/';
+
+// Keep bookmarks to character pages working after ID normalization.
+const characterIdRedirects = Object.entries(
+  characterIdMapping as Record<string, string>,
+).map(([oldId, newId]) => {
+  const group = oldId === 'qin-shen-yu' ? 'party' : 'npc';
+  return { from: `/characters/${group}/${oldId}`, to: `/characters/${group}/${newId}` };
+});
+
+// Characters added on main while the normalization PR was in progress.
+const newCharacterIdRedirects = Object.entries({
+  laura: 'npc-laura',
+  yamal: 'npc-yamal',
+  sixsevenaldo: 'npc-sixsevenaldo',
+  'minji-gemela': 'npc-minji',
+  'minsoo-gemela': 'npc-minsoo',
+  abu: 'npc-abu',
+  apu: 'npc-apu',
+  agu: 'npc-agu',
+}).map(([oldId, newId]) => ({
+  from: `/characters/npc/${oldId}`,
+  to: `/characters/npc/${newId}`,
+}));
 
 const config: Config = {
   title: 'Hallyura Wiki',
@@ -49,6 +73,8 @@ const config: Config = {
   plugins: [
     ['@docusaurus/plugin-client-redirects', {
       redirects: [
+        ...characterIdRedirects,
+        ...newCharacterIdRedirects,
         {from: '/factions/los-diecisiete-heroes', to: '/factions/svt'},
         {from: '/factions/neo-culturales-tecnologicos', to: '/factions/nct'},
         {from: '/factions/lobos-perdidos', to: '/factions/skz'},

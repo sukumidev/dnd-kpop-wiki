@@ -1558,8 +1558,8 @@
       "Magical Sleep"
     ]
   },
-  "qin-shen-yu": {
-    "id": "qin-shen-yu",
+  "os-qin-shen-yu": {
+    "id": "os-qin-shen-yu",
     "classes": [
       {
         "name": "Rogue",
@@ -2318,8 +2318,8 @@
     "vulnerability": [],
     "immunity": []
   },
-  "taeil": {
-    "id": "taeil",
+  "nct-taeil": {
+    "id": "nct-taeil",
     "classes": [
       {
         "name": "Wizard",
