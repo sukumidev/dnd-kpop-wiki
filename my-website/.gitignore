@@ -18,3 +18,11 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Original images — keep WebP versions in Git
+/static/img/**/*.png
+/static/img/**/*.jpg
+/static/img/**/*.jpeg
+/static/img/**/*.PNG
+/static/img/**/*.JPG
+/static/img/**/*.JPEG

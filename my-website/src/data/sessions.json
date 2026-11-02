@@ -5,7 +5,7 @@
     "title": "Llegada al Valle del Arrozal",
     "subtitle": "Cuatro desconocidos, recuerdos perdidos y una primera aventura",
     "sessionDate": "2025-03-23",
-    "imageSrc": "/img/sessions/01/1.png",
+    "imageSrc": "/img/sessions/01/1.webp",
     "imagePosition": "center center",
     "locationIds": [
       "valle-dorado",
@@ -43,7 +43,7 @@
     "number": 2,
     "title": "Batalla vs los Guardias Reales de Hyberia",
     "subtitle": "Una visita al pueblo que terminó entre impuestos y espadas",
-    "imageSrc": "/img/sessions/02/2.png",
+    "imageSrc": "/img/sessions/02/2.webp",
     "locationIds": [
       "valle-dorado",
       "pueblo-abandonado-cercano",
@@ -71,7 +71,7 @@
     "number": 3,
     "title": "El Lago Olvidado de los Pescadores",
     "subtitle": "Una reliquia bajo el agua y una advertencia bajo la luna",
-    "imageSrc": "/img/sessions/03/3.png",
+    "imageSrc": "/img/sessions/03/3.webp",
     "locationIds": [
       "lago-celeste",
       "aldea-del-lago-celeste",
@@ -101,7 +101,7 @@
     "number": 4,
     "title": "Llegada a Borasek",
     "subtitle": "Una ciudad en penumbra y una compañera desaparecida",
-    "imageSrc": "/img/sessions/04/4.png",
+    "imageSrc": "/img/sessions/04/4.webp",
     "locationIds": [
       "murallas-de-borasek",
       "borasek",
@@ -144,7 +144,7 @@
     "number": 5,
     "title": "La Mazmorra Sangrienta",
     "subtitle": "Rescates bajo Borasek y una alianza que todavía parecía imposible",
-    "imageSrc": "/img/sessions/05/5.png",
+    "imageSrc": "/img/sessions/05/5.webp",
     "locationIds": [
       "mazmorra-sangrienta",
       "prision-de-los-hijos-de-la-noche",
@@ -188,7 +188,7 @@
     "number": 6,
     "title": "La Mansión Radiante",
     "subtitle": "Una tregua incómoda y una biblioteca con demasiadas calacas",
-    "imageSrc": "/img/sessions/06/6.png",
+    "imageSrc": "/img/sessions/06/6.webp",
     "locationIds": [
       "cuartel-de-los-hijos-de-la-noche",
       "casa-k",
@@ -227,7 +227,7 @@
     "number": 7,
     "title": "El Castillo Flotante",
     "subtitle": "Un sueño de paz que les costó dos meses de realidad",
-    "imageSrc": "/img/sessions/07/7.png",
+    "imageSrc": "/img/sessions/07/7.webp",
     "locationIds": [
       "castillo-flotante",
       "dreamscape",
@@ -268,7 +268,7 @@
     "number": 8,
     "title": "El Casino Clandestino",
     "subtitle": "Apuestas peligrosas y respuestas sobre los recuerdos perdidos",
-    "imageSrc": "/img/sessions/08/8.png",
+    "imageSrc": "/img/sessions/08/8.webp",
     "locationIds": [
       "gremio-de-aventureros",
       "muelle-de-mareas-silentes",
@@ -306,7 +306,7 @@
     "number": 9,
     "title": "La Fiesta de la Noche del Aquelarre",
     "subtitle": "Almas rescatadas, disfraces y cuatro cartas menos",
-    "imageSrc": "/img/sessions/09/9.png",
+    "imageSrc": "/img/sessions/09/9.webp",
     "locationIds": [
       "casino-clandestino",
       "aguas-termales-del-casino",
@@ -383,7 +383,7 @@
     "number": 10,
     "title": "Festival del Solsticio de Invierno",
     "subtitle": "Tripuertos, rescates y una cena con invitados inesperados",
-    "imageSrc": "/img/sessions/10/10.png",
+    "imageSrc": "/img/sessions/10/10.webp",
     "locationIds": [
       "mansion-wang",
       "muelle-de-isla-wang",
@@ -446,7 +446,7 @@
     "number": 11,
     "title": "Minjae se va a la bancarrota",
     "subtitle": "Una tarjeta bloqueada y demasiados problemas en Neocity",
-    "imageSrc": "/img/sessions/11/11.png",
+    "imageSrc": "/img/sessions/11/11.webp",
     "locationIds": [
       "gremio-de-aventureros",
       "casino-clandestino",
@@ -499,7 +499,7 @@
     "number": 11.5,
     "title": "One Shot de los Lobos Perdidos",
     "subtitle": "One-shot de los Lobos Perdidos entre runas y amenazas al santuario",
-    "imageSrc": "/img/sessions/11.5/11.5.png",
+    "imageSrc": "/img/sessions/11.5/11.5.webp",
     "locationIds": [
       "jeyperia",
       "guarida-de-los-lobos",
@@ -527,7 +527,7 @@
     "number": 12,
     "title": "Batalla contra la Luz Ardiente",
     "subtitle": "Una retirada que tuvo un precio demasiado alto",
-    "imageSrc": "/img/sessions/12/12.png",
+    "imageSrc": "/img/sessions/12/12.webp",
     "locationIds": [
       "plaza-principal-de-neocity"
     ],
@@ -550,7 +550,7 @@
     "number": 13,
     "title": "El Rescate de Dino",
     "subtitle": "Una misión en la nieve y compras con presupuesto limitado",
-    "imageSrc": "/img/sessions/13/13.png",
+    "imageSrc": "/img/sessions/13/13.webp",
     "locationIds": [
       "gremio-de-aventureros",
       "bosque-nevado",
@@ -602,7 +602,7 @@
     "number": 14,
     "title": "Bajo el Decreto del Rey",
     "subtitle": "Dos nuevas vidas y un viaje urgente a Hotou",
-    "imageSrc": "/img/sessions/14/14.png",
+    "imageSrc": "/img/sessions/14/14.webp",
     "locationIds": [
       "tianguis-de-neocity",
       "neo-academia",
@@ -638,7 +638,7 @@
     "number": 14.5,
     "title": "One Shot — Las Crónicas del Gremio I: La Subasta del Pacto de Ceniza",
     "subtitle": "One-shot del Gremio sobre desapariciones y un rescate incompleto",
-    "imageSrc": "/img/sessions/14.5/14.5.png",
+    "imageSrc": "/img/sessions/14.5/14.5.webp",
     "locationIds": [
       "caminos-de-hyberia",
       "torre-de-los-cazadores-de-tiro-largo",
@@ -694,7 +694,7 @@
     "number": 15,
     "title": "La Familia Falsa",
     "subtitle": "Identidades prestadas y decisiones que dejaron heridas",
-    "imageSrc": "/img/sessions/15/15.png",
+    "imageSrc": "/img/sessions/15/15.webp",
     "locationIds": [
       "casa-de-yuta",
       "residencia-castillo-hoshizuki",
@@ -726,7 +726,7 @@
     "number": 16,
     "title": "El Templo del Dios Lobo",
     "subtitle": "Refugiados en peligro y una luna llena difícil de ignorar",
-    "imageSrc": "/img/sessions/16/16.png",
+    "imageSrc": "/img/sessions/16/16.webp",
     "locationIds": [
       "muelle-de-puerto-bay-alta",
       "taberna",
@@ -772,7 +772,7 @@
     "number": 17,
     "title": "El Templo de los Dos Soles",
     "subtitle": "Cartas bajo custodia y un refugio que necesitaba ayuda",
-    "imageSrc": "/img/sessions/17/17.png",
+    "imageSrc": "/img/sessions/17/17.webp",
     "locationIds": [
       "templo-del-dios-lobo",
       "camino-al-templo-del-sol-naciente",
@@ -801,7 +801,7 @@
   {
     "id": "session-18",
     "number": 18,
-    "imageSrc": "/img/sessions/18/18.png",
+    "imageSrc": "/img/sessions/18/18.webp",
     "title": "Las Segundas Oportunidades",
     "subtitle": "Poner a salvo a otros antes de seguir buscando respuestas",
     "locationIds": [
@@ -830,7 +830,7 @@
   {
     "id": "session-19",
     "number": 19,
-    "imageSrc": "/img/sessions/19/19.png",
+    "imageSrc": "/img/sessions/19/19.webp",
     "title": "El Destino de los Dragonborns",
     "subtitle": "Un traslado seguro y un respiro antes de la siguiente misión",
     "locationIds": [
@@ -873,7 +873,7 @@
   {
     "id": "session-20",
     "number": 20,
-    "imageSrc": "/img/sessions/20/20.png",
+    "imageSrc": "/img/sessions/20/20.webp",
     "title": "El Santuario del Dios de la Fuerza",
     "subtitle": "Una niña por rescatar, un elemental memorable y una lámpara pendiente",
     "locationIds": [

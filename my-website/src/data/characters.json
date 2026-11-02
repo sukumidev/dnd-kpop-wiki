@@ -27,7 +27,7 @@
     "locationIds": [
       "sylmorien"
     ],
-    "imageSrc": "/img/characters/party/minjae-actual.png",
+    "imageSrc": "/img/characters/party/minjae-actual.webp",
     "dateOfBirth": "1996-11-11",
     "zodiac": "Escorpio ♏",
     "mbti": "ENFJ",
@@ -111,23 +111,23 @@
     "destinyCard": null,
     "images": [
       {
-        "src": "/img/characters/party/minjae.png",
+        "src": "/img/characters/party/minjae.webp",
         "caption": "Minjae cambio de look"
       },
       {
-        "src": "/img/characters/party/minjae-king.png",
+        "src": "/img/characters/party/minjae-king.webp",
         "caption": "Minjae Rey de Corazones"
       },
       {
-        "src": "/img/characters/party/minjae-navidad.jpg",
+        "src": "/img/characters/party/minjae-navidad.webp",
         "caption": "Minjae durante la fiesta del Solsticio de Invierno"
       },
       {
-        "src": "/img/characters/party/minjae-vampiro.jpeg",
+        "src": "/img/characters/party/minjae-vampiro.webp",
         "caption": "Minjae durante la fiesta del Aquelarre"
       },
       {
-        "src": "/img/characters/party/minjae-cursed.png",
+        "src": "/img/characters/party/minjae-cursed.webp",
         "caption": "Alter-Ego de Minjae"
       }
     ],
@@ -159,7 +159,7 @@
       "Estudiante de la Neo Academia"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/party/kiyori-actual.png",
+    "imageSrc": "/img/characters/party/kiyori-actual.webp",
     "dateOfBirth": "2000-10-05",
     "zodiac": "Libra ♎",
     "mbti": "INFP",
@@ -273,23 +273,23 @@
     "destinyCard": null,
     "images": [
       {
-        "src": "/img/characters/party/kiyori-neovibe.png",
+        "src": "/img/characters/party/kiyori-neovibe.webp",
         "caption": "Kiyori cambio de look"
       },
       {
-        "src": "/img/characters/party/kiyori-queen.png",
+        "src": "/img/characters/party/kiyori-queen.webp",
         "caption": "Kiyori Reina de Diamantes"
       },
       {
-        "src": "/img/characters/party/kiyori-belmont.jpeg",
+        "src": "/img/characters/party/kiyori-belmont.webp",
         "caption": "Kiyori durante la fiesta del Aquelarre"
       },
       {
-        "src": "/img/characters/party/kiyori-navidad.png",
+        "src": "/img/characters/party/kiyori-navidad.webp",
         "caption": "Kiyori durante la fiesta del Solsticio de Invierno"
       },
       {
-        "src": "/img/characters/party/kiyori-cursed.png",
+        "src": "/img/characters/party/kiyori-cursed.webp",
         "caption": "Alter-Ego de Kiyori"
       }
     ],
@@ -320,7 +320,7 @@
       "Heredero del Clan Fenghuang"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/party/imugi-actual.png",
+    "imageSrc": "/img/characters/party/imugi-actual.webp",
     "dateOfBirth": "1582-11-09",
     "zodiac": "Escorpio ♏",
     "mbti": "ESFP",
@@ -384,11 +384,11 @@
     "destinyCard": null,
     "images": [
       {
-        "src": "/img/characters/party/imugi-fringe.jpg",
+        "src": "/img/characters/party/imugi-fringe.webp",
         "caption": "Imugi cambio de look"
       },
       {
-        "src": "/img/characters/party/imugi-king.png",
+        "src": "/img/characters/party/imugi-king.webp",
         "caption": "Imugi Rey de Treboles"
       }
     ],
@@ -420,7 +420,7 @@
       "Aprendiz Becada de la Neo Academia"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/party/soobin-actual.png",
+    "imageSrc": "/img/characters/party/soobin-actual.webp",
     "dateOfBirth": "2001-08-08",
     "zodiac": "Leo ♌",
     "mbti": "ENFP",
@@ -489,11 +489,11 @@
     "destinyCard": null,
     "images": [
       {
-        "src": "/img/characters/party/soobin-silver.png",
+        "src": "/img/characters/party/soobin-silver.webp",
         "caption": "Soobin cambio de look"
       },
       {
-        "src": "/img/characters/party/soobin-queen.png",
+        "src": "/img/characters/party/soobin-queen.webp",
         "caption": "Soobin Reina de Espadas"
       }
     ],
@@ -525,7 +525,7 @@
       "Líder de la Unidad de Defensa y Vanguardia"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/svt/scoups.png",
+    "imageSrc": "/img/characters/svt/scoups.webp",
     "dateOfBirth": "1995-08-08",
     "zodiac": "Leo ♌",
     "mbti": "ESTP",
@@ -619,15 +619,15 @@
     "destinyCard": null,
     "images": [
       {
-        "src": "/img/characters/svt/scoups-farmer.jpg",
+        "src": "/img/characters/svt/scoups-farmer.webp",
         "caption": "S.Coups granjero"
       },
       {
-        "src": "/img/characters/svt/scoups-halloween.jpg",
+        "src": "/img/characters/svt/scoups-halloween.webp",
         "caption": "S.Coups durante Halloween"
       },
       {
-        "src": "/img/characters/svt/scoups-xmas.jpg",
+        "src": "/img/characters/svt/scoups-xmas.webp",
         "caption": "S.Coups durante el Solsticio de Invierno"
       }
     ],
@@ -659,7 +659,7 @@
       "Especialista en Relaciones con Entidades Oscuras de la Unidad de Relaciones Públicas e Impacto Social"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/svt/jeonghan.png",
+    "imageSrc": "/img/characters/svt/jeonghan.webp",
     "dateOfBirth": "1995-10-04",
     "zodiac": "Libra ♎",
     "mbti": "ISFJ",
@@ -753,15 +753,15 @@
     "destinyCard": null,
     "images": [
       {
-        "src": "/img/characters/svt/jeonghan-farmer.jpg",
+        "src": "/img/characters/svt/jeonghan-farmer.webp",
         "caption": "Jeonghan granjero"
       },
       {
-        "src": "/img/characters/svt/jeonghan-halloween.jpg",
+        "src": "/img/characters/svt/jeonghan-halloween.webp",
         "caption": "Jeonghan durante Halloween"
       },
       {
-        "src": "/img/characters/svt/jeonghan-xmas.jpg",
+        "src": "/img/characters/svt/jeonghan-xmas.webp",
         "caption": "Jeonghan durante el Solsticio de Invierno"
       }
     ],
@@ -793,7 +793,7 @@
       "Manager de Capital Humano del Gremio de Aventureros"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/svt/joshua.png",
+    "imageSrc": "/img/characters/svt/joshua.webp",
     "dateOfBirth": "1995-12-30",
     "zodiac": "Capricornio ♑",
     "mbti": "ISFJ",
@@ -882,15 +882,15 @@
     "destinyCard": null,
     "images": [
       {
-        "src": "/img/characters/svt/joshua-farmer.jpeg",
+        "src": "/img/characters/svt/joshua-farmer.webp",
         "caption": "Joshua granjero"
       },
       {
-        "src": "/img/characters/svt/joshua-halloween.jpg",
+        "src": "/img/characters/svt/joshua-halloween.webp",
         "caption": "Joshua durante Halloween"
       },
       {
-        "src": "/img/characters/svt/joshua-xmas.jpg",
+        "src": "/img/characters/svt/joshua-xmas.webp",
         "caption": "Joshua durante el Solsticio de Invierno"
       }
     ],
@@ -921,7 +921,7 @@
       "Rastreador y Reconocimiento en la Unidad de Exploración y Expediciones"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/svt/jun.png",
+    "imageSrc": "/img/characters/svt/jun.webp",
     "dateOfBirth": "1996-06-10",
     "zodiac": "Géminis ♊",
     "mbti": "INFP",
@@ -1005,15 +1005,15 @@
     "destinyCard": null,
     "images": [
       {
-        "src": "/img/characters/svt/jun-farmer.jpg",
+        "src": "/img/characters/svt/jun-farmer.webp",
         "caption": "Jun granjero"
       },
       {
-        "src": "/img/characters/svt/jun-halloween.jpg",
+        "src": "/img/characters/svt/jun-halloween.webp",
         "caption": "Jun durante Halloween"
       },
       {
-        "src": "/img/characters/svt/jun-xmas.jpg",
+        "src": "/img/characters/svt/jun-xmas.webp",
         "caption": "Jun durante el Solsticio de Invierno"
       }
     ],
@@ -1045,7 +1045,7 @@
       "Guardian Espiritual de la Familia Hoshizuki"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/svt/hoshi.png",
+    "imageSrc": "/img/characters/svt/hoshi.webp",
     "dateOfBirth": "1996-06-15",
     "zodiac": "Géminis ♊",
     "mbti": "ENFP",
@@ -1129,15 +1129,15 @@
     "destinyCard": null,
     "images": [
       {
-        "src": "/img/characters/svt/hoshi-farmer.png",
+        "src": "/img/characters/svt/hoshi-farmer.webp",
         "caption": "Hoshi granjero"
       },
       {
-        "src": "/img/characters/svt/hoshi-halloween.jpg",
+        "src": "/img/characters/svt/hoshi-halloween.webp",
         "caption": "Hoshi durante Halloween"
       },
       {
-        "src": "/img/characters/svt/hoshi-xmas.jpg",
+        "src": "/img/characters/svt/hoshi-xmas.webp",
         "caption": "Hoshi durante el Solsticio de Invierno"
       }
     ],
@@ -1168,7 +1168,7 @@
       "Ingeniero de Armería Táctica en la Unidad de Defensa y Vanguardia"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/svt/wonwoo.png",
+    "imageSrc": "/img/characters/svt/wonwoo.webp",
     "dateOfBirth": "1996-07-17",
     "zodiac": "Cáncer ♋",
     "mbti": "INTP",
@@ -1252,15 +1252,15 @@
     "destinyCard": null,
     "images": [
       {
-        "src": "/img/characters/svt/wonwoo-farmer.jpeg",
+        "src": "/img/characters/svt/wonwoo-farmer.webp",
         "caption": "Wonwoo granjero"
       },
       {
-        "src": "/img/characters/svt/wonwoo-halloween.jpg",
+        "src": "/img/characters/svt/wonwoo-halloween.webp",
         "caption": "Wonwoo durante Halloween"
       },
       {
-        "src": "/img/characters/svt/wonwoo-xmas.jpg",
+        "src": "/img/characters/svt/wonwoo-xmas.webp",
         "caption": "Wonwoo durante el Solsticio de Invierno"
       }
     ],
@@ -1292,7 +1292,7 @@
       "Líder de la Sub Unidad de Relaciones Públicas e Impacto Social"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/svt/woozi.png",
+    "imageSrc": "/img/characters/svt/woozi.webp",
     "dateOfBirth": "1996-11-22",
     "zodiac": "Escorpio ♏",
     "mbti": "INTJ",
@@ -1376,15 +1376,15 @@
     "destinyCard": null,
     "images": [
       {
-        "src": "/img/characters/svt/woozi-farmer.png",
+        "src": "/img/characters/svt/woozi-farmer.webp",
         "caption": "Woozi granjero"
       },
       {
-        "src": "/img/characters/svt/woozi-halloween.jpg",
+        "src": "/img/characters/svt/woozi-halloween.webp",
         "caption": "Woozi durante Halloween"
       },
       {
-        "src": "/img/characters/svt/woozi-xmas.jpg",
+        "src": "/img/characters/svt/woozi-xmas.webp",
         "caption": "Woozi durante el Solsticio de Invierno"
       }
     ],
@@ -1416,7 +1416,7 @@
       "Enlace con Templos en la Unidad de Relaciones Públicas e Impacto Social"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/svt/dk.png",
+    "imageSrc": "/img/characters/svt/dk.webp",
     "dateOfBirth": "1997-02-18",
     "zodiac": "Acuario ♒",
     "mbti": "ESFP",
@@ -1500,15 +1500,15 @@
     "destinyCard": null,
     "images": [
       {
-        "src": "/img/characters/svt/dk-farmer.jpg",
+        "src": "/img/characters/svt/dk-farmer.webp",
         "caption": "Dokyeom granjero"
       },
       {
-        "src": "/img/characters/svt/dk-halloween.jpg",
+        "src": "/img/characters/svt/dk-halloween.webp",
         "caption": "Dokyeom durante Halloween"
       },
       {
-        "src": "/img/characters/svt/dk-xmas.jpg",
+        "src": "/img/characters/svt/dk-xmas.webp",
         "caption": "Dokyeom durante el Solsticio de Invierno"
       }
     ],
@@ -1540,7 +1540,7 @@
       "Jefe de Seguridad en la Unidad de Defensa y Vanguardia"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/svt/mingyu.png",
+    "imageSrc": "/img/characters/svt/mingyu.webp",
     "dateOfBirth": "1997-04-06",
     "zodiac": "Aries ♈",
     "mbti": "ESFJ",
@@ -1624,15 +1624,15 @@
     "destinyCard": null,
     "images": [
       {
-        "src": "/img/characters/svt/mingyu-farmer.jpeg",
+        "src": "/img/characters/svt/mingyu-farmer.webp",
         "caption": "Mingyu granjero"
       },
       {
-        "src": "/img/characters/svt/mingyu-halloween.jpg",
+        "src": "/img/characters/svt/mingyu-halloween.webp",
         "caption": "Mingyu durante Halloween"
       },
       {
-        "src": "/img/characters/svt/mingyu-xmas.jpg",
+        "src": "/img/characters/svt/mingyu-xmas.webp",
         "caption": "Mingyu durante el Solsticio de Invierno"
       }
     ],
@@ -1663,7 +1663,7 @@
       "Encargado de Entrenamiento en la Unidad de Exploración y Expediciones"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/svt/minghao.png",
+    "imageSrc": "/img/characters/svt/minghao.webp",
     "dateOfBirth": "1997-11-07",
     "zodiac": "Escorpio ♏",
     "mbti": "ISFP",
@@ -1747,15 +1747,15 @@
     "destinyCard": null,
     "images": [
       {
-        "src": "/img/characters/svt/minghao-farmer.jpg",
+        "src": "/img/characters/svt/minghao-farmer.webp",
         "caption": "Minghao granjero"
       },
       {
-        "src": "/img/characters/svt/minghao-halloween.jpg",
+        "src": "/img/characters/svt/minghao-halloween.webp",
         "caption": "Minghao durante Halloween"
       },
       {
-        "src": "/img/characters/svt/minghao-xmas.jpg",
+        "src": "/img/characters/svt/minghao-xmas.webp",
         "caption": "Minghao durante el Solsticio de Invierno"
       }
     ],
@@ -1786,7 +1786,7 @@
       "Coordinador de Relaciones Comunitarias en la Unidad de Relaciones Públicas e Impacto Social"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/svt/seungkwan.png",
+    "imageSrc": "/img/characters/svt/seungkwan.webp",
     "dateOfBirth": "1998-01-16",
     "zodiac": "Capricornio ♑",
     "mbti": "ESFJ",
@@ -1870,15 +1870,15 @@
     "destinyCard": null,
     "images": [
       {
-        "src": "/img/characters/svt/seungkwan-farmer.png",
+        "src": "/img/characters/svt/seungkwan-farmer.webp",
         "caption": "Seungkwan granjero"
       },
       {
-        "src": "/img/characters/svt/seungkwan-halloween.jpg",
+        "src": "/img/characters/svt/seungkwan-halloween.webp",
         "caption": "Seungkwan durante Halloween"
       },
       {
-        "src": "/img/characters/svt/seungkwan-xmas.jpg",
+        "src": "/img/characters/svt/seungkwan-xmas.webp",
         "caption": "Seungkwan durante el Solsticio de Invierno"
       }
     ],
@@ -1909,7 +1909,7 @@
       "Encargado de la Investigación de Artefactos Arcanos en la Unidad de Defensa y Vanguardia"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/svt/vernon.png",
+    "imageSrc": "/img/characters/svt/vernon.webp",
     "dateOfBirth": "1998-02-18",
     "zodiac": "Acuario ♒",
     "mbti": "ISFP",
@@ -1997,11 +1997,11 @@
         "caption": "Vernon granjero"
       },
       {
-        "src": "/img/characters/svt/vernon-halloween.jpg",
+        "src": "/img/characters/svt/vernon-halloween.webp",
         "caption": "Vernon durante Halloween"
       },
       {
-        "src": "/img/characters/svt/vernon-xmas.jpg",
+        "src": "/img/characters/svt/vernon-xmas.webp",
         "caption": "Vernon durante el Solsticio de Invierno"
       }
     ],
@@ -2032,7 +2032,7 @@
       "Encargado de la Recuperación de Activos en la Unidad de Exploración y Expediciones"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/svt/dino.png",
+    "imageSrc": "/img/characters/svt/dino.webp",
     "dateOfBirth": "1999-02-11",
     "zodiac": "Acuario ♒",
     "mbti": "ESTJ",
@@ -2116,15 +2116,15 @@
     "destinyCard": null,
     "images": [
       {
-        "src": "/img/characters/svt/dino-farmer.jpg",
+        "src": "/img/characters/svt/dino-farmer.webp",
         "caption": "Dino granjero"
       },
       {
-        "src": "/img/characters/svt/dino-halloween.jpg",
+        "src": "/img/characters/svt/dino-halloween.webp",
         "caption": "Dino durante Halloween"
       },
       {
-        "src": "/img/characters/svt/dino-xmas.jpg",
+        "src": "/img/characters/svt/dino-xmas.webp",
         "caption": "Dino durante el Solsticio de Invierno"
       }
     ],
@@ -2156,7 +2156,7 @@
       "Comandante del Distrito 9"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/skz/bangchan.png",
+    "imageSrc": "/img/characters/skz/bangchan.webp",
     "dateOfBirth": "1997-10-03",
     "zodiac": "Libra ♎",
     "mbti": "ENFJ",
@@ -2242,7 +2242,7 @@
       "Encargado de rastreo y manejo de criaturas"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/skz/leeknow.png",
+    "imageSrc": "/img/characters/skz/leeknow.webp",
     "dateOfBirth": "1998-10-25",
     "zodiac": "Escorpio ♏",
     "mbti": "INTP",
@@ -2328,7 +2328,7 @@
       "Protector territorial"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/skz/changbin.png",
+    "imageSrc": "/img/characters/skz/changbin.webp",
     "dateOfBirth": "1999-08-11",
     "zodiac": "Leo ♌",
     "mbti": "ESFP",
@@ -2414,7 +2414,7 @@
       "Ilusionista de campo"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/skz/hyunjin.png",
+    "imageSrc": "/img/characters/skz/hyunjin.webp",
     "dateOfBirth": "2000-03-20",
     "zodiac": "Piscis ♓",
     "mbti": "ISFP",
@@ -2505,7 +2505,7 @@
       "Vocero de la manada"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/skz/han.png",
+    "imageSrc": "/img/characters/skz/han.webp",
     "dateOfBirth": "2000-09-14",
     "zodiac": "Virgo ♍",
     "mbti": "ENFP",
@@ -2591,7 +2591,7 @@
       "Vigilante espiritual"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/skz/felix.png",
+    "imageSrc": "/img/characters/skz/felix.webp",
     "dateOfBirth": "2000-09-15",
     "zodiac": "Virgo ♍",
     "mbti": "ENFP",
@@ -2682,7 +2682,7 @@
       "Ejecutor de operaciones especiales"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/skz/seungmin.png",
+    "imageSrc": "/img/characters/skz/seungmin.webp",
     "dateOfBirth": "2000-09-22",
     "zodiac": "Virgo ♍",
     "mbti": "ISFJ",
@@ -2768,7 +2768,7 @@
       "Guardián del vínculo lunar"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/skz/skz-jeongin.png",
+    "imageSrc": "/img/characters/skz/skz-jeongin.webp",
     "dateOfBirth": "2001-02-08",
     "zodiac": "Acuario ♒",
     "mbti": "INFJ",
@@ -2847,7 +2847,7 @@
     "destinyCard": null,
     "images": [
       {
-        "src": "/img/characters/skz/jeongin.png",
+        "src": "/img/characters/skz/jeongin.webp",
         "alt": "Yang Jeongin (I.N)",
         "caption": ""
       }
@@ -2879,7 +2879,7 @@
       "Protector de las fronteras"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/skz/woojin.png",
+    "imageSrc": "/img/characters/skz/woojin.webp",
     "dateOfBirth": "1997-04-08",
     "zodiac": "Aries ♈",
     "mbti": "ISFJ",
@@ -2958,7 +2958,7 @@
       "Portador del pacto con Moonbin"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/enha/jungwon.png",
+    "imageSrc": "/img/characters/enha/jungwon.webp",
     "dateOfBirth": "1904-02-09",
     "zodiac": "Acuario ♒",
     "mbti": "ISFJ",
@@ -3039,7 +3039,7 @@
       "Anatomista de la muerte"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/enha/heeseung.png",
+    "imageSrc": "/img/characters/enha/heeseung.webp",
     "dateOfBirth": "1901-10-15",
     "zodiac": "Libra ♎",
     "mbti": "INFJ",
@@ -3119,7 +3119,7 @@
       "Estratega de la corte nocturna"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/enha/jay.png",
+    "imageSrc": "/img/characters/enha/jay.webp",
     "dateOfBirth": "1902-04-20",
     "zodiac": "Tauro ♉",
     "mbti": "ENTP",
@@ -3200,7 +3200,7 @@
       "Sabueso de rastreo y cacería"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/enha/jake.png",
+    "imageSrc": "/img/characters/enha/jake.webp",
     "dateOfBirth": "1902-11-15",
     "zodiac": "Escorpio ♏",
     "mbti": "ESTP",
@@ -3286,7 +3286,7 @@
       "Ejecutor de campo"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/enha/sunghoon.png",
+    "imageSrc": "/img/characters/enha/sunghoon.webp",
     "dateOfBirth": "1902-12-08",
     "zodiac": "Sagitario ♐",
     "mbti": "ISTJ",
@@ -3367,7 +3367,7 @@
       "Purificador nocturno"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/enha/sunoo.jpeg",
+    "imageSrc": "/img/characters/enha/sunoo.webp",
     "dateOfBirth": "1903-06-24",
     "zodiac": "Cáncer ♋",
     "mbti": "ENFP",
@@ -3448,7 +3448,7 @@
       "Comandante de incursión"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/enha/niki.png",
+    "imageSrc": "/img/characters/enha/niki.webp",
     "dateOfBirth": "1905-12-09",
     "zodiac": "Sagitario ♐",
     "mbti": "ENTJ",
@@ -3528,7 +3528,7 @@
       "Profesor de Defensa Arcana y Apertura de Portales"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/nct/johnny.png",
+    "imageSrc": "/img/characters/nct/johnny.webp",
     "dateOfBirth": "1495-02-09",
     "zodiac": "Acuario ♒",
     "mbti": "ENTP",
@@ -3619,7 +3619,7 @@
       "Fundador de los Neo Culturales"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/nct/nct-taeyong.png",
+    "imageSrc": "/img/characters/nct/nct-taeyong.webp",
     "dateOfBirth": "0995-07-01",
     "zodiac": "Cáncer ♋",
     "mbti": "ISFP",
@@ -3688,7 +3688,7 @@
     "destinyCard": null,
     "images": [
       {
-        "src": "/img/characters/nct/taeyong.png",
+        "src": "/img/characters/nct/taeyong.webp",
         "alt": "Lee Taeyong",
         "caption": ""
       }
@@ -3720,7 +3720,7 @@
       "Profesor de Esgrima Arcana y Combate de Vanguardia"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/nct/nct-yuta.png",
+    "imageSrc": "/img/characters/nct/nct-yuta.webp",
     "dateOfBirth": "1895-10-26",
     "zodiac": "Escorpio ♏",
     "mbti": "ESTP",
@@ -3789,7 +3789,7 @@
     "destinyCard": null,
     "images": [
       {
-        "src": "/img/characters/nct/nct-yuta.png",
+        "src": "/img/characters/nct/nct-yuta.webp",
         "alt": "Yuta Nakamoto",
         "caption": ""
       }
@@ -3821,7 +3821,7 @@
       "Profesor de Geomancia y Equilibrio Elemental"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/nct/nct-kun.png",
+    "imageSrc": "/img/characters/nct/nct-kun.webp",
     "dateOfBirth": "1796-01-01",
     "zodiac": "Capricornio ♑",
     "mbti": "ESFJ",
@@ -3867,7 +3867,7 @@
     "destinyCard": null,
     "images": [
       {
-        "src": "/img/characters/nct/kun.png",
+        "src": "/img/characters/nct/kun.webp",
         "alt": "Qian Kun",
         "caption": ""
       }
@@ -3899,7 +3899,7 @@
       "Profesor de Teoría de la Neovibra y Regulación Mágica"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/nct/nct-doyoung.png",
+    "imageSrc": "/img/characters/nct/nct-doyoung.webp",
     "dateOfBirth": "1596-02-01",
     "zodiac": "Acuario ♒",
     "mbti": "ESTJ",
@@ -3995,7 +3995,7 @@
       "Profesor de Artes Fluídicas y Combate Elemental"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/nct/nct-ten.png",
+    "imageSrc": "/img/characters/nct/nct-ten.webp",
     "dateOfBirth": "1596-02-27",
     "zodiac": "Piscis ♓",
     "mbti": "ISFP",
@@ -4049,7 +4049,7 @@
     "destinyCard": null,
     "images": [
       {
-        "src": "/img/characters/nct/ten.png",
+        "src": "/img/characters/nct/ten.webp",
         "alt": "Ten Lee",
         "caption": ""
       }
@@ -4081,7 +4081,7 @@
       "Profesor de Estrategia de Combate y Formación de Guardianes"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/nct/nct-jaehyun.png",
+    "imageSrc": "/img/characters/nct/nct-jaehyun.webp",
     "dateOfBirth": "1597-02-14",
     "zodiac": "Acuario ♒",
     "mbti": "ESTP",
@@ -4150,12 +4150,12 @@
     "destinyCard": null,
     "images": [
       {
-        "src": "/img/characters/nct/jaehyun.png",
+        "src": "/img/characters/nct/jaehyun.webp",
         "alt": "Jeong Jaehyun",
         "caption": ""
       },
       {
-        "src": "/img/characters/nct/nct-jaehyun.png",
+        "src": "/img/characters/nct/nct-jaehyun.webp",
         "alt": "Jeong Jaehyun",
         "caption": ""
       }
@@ -4187,7 +4187,7 @@
       "Profesor de Luminomancia y Protección Sagrada"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/nct/winwin.png",
+    "imageSrc": "/img/characters/nct/winwin.webp",
     "dateOfBirth": "1897-10-28",
     "zodiac": "Escorpio ♏",
     "mbti": "INFJ",
@@ -4272,7 +4272,7 @@
       "Profesor de Ingeniería de Sistemas Tecnomágicos Automatizados"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/nct/nct-jungwoo.png",
+    "imageSrc": "/img/characters/nct/nct-jungwoo.webp",
     "dateOfBirth": "1898-02-19",
     "zodiac": "Piscis ♓",
     "mbti": "ESFJ",
@@ -4368,7 +4368,7 @@
       "Profesor de Magia Umbría y Tácticas de Infiltración"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/nct/nct-lucas.png",
+    "imageSrc": "/img/characters/nct/nct-lucas.webp",
     "dateOfBirth": "1899-01-25",
     "zodiac": "Acuario ♒",
     "mbti": "ESTP",
@@ -4422,7 +4422,7 @@
     "destinyCard": null,
     "images": [
       {
-        "src": "/img/characters/nct/lucas.png",
+        "src": "/img/characters/nct/lucas.webp",
         "alt": "Lucas Wong",
         "caption": ""
       }
@@ -4454,7 +4454,7 @@
       "Profesor de Historia Arcana, Runas de Combate y Sistemas de Artillería Tecnomágica"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/nct/nct-mark.png",
+    "imageSrc": "/img/characters/nct/nct-mark.webp",
     "dateOfBirth": "1899-08-02",
     "zodiac": "Leo ♌",
     "mbti": "ESFJ",
@@ -4548,7 +4548,7 @@
     "destinyCard": "Rey de Corazones",
     "images": [
       {
-        "src": "/img/characters/nct/mark.png",
+        "src": "/img/characters/nct/mark.webp",
         "alt": "Mark Lee",
         "caption": ""
       },
@@ -4585,7 +4585,7 @@
       "Profesor de Pirodinámica y Combate Elemental Ígneo"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/nct/nct-xiaojun.png",
+    "imageSrc": "/img/characters/nct/nct-xiaojun.webp",
     "dateOfBirth": "1899-08-08",
     "zodiac": "Leo ♌",
     "mbti": "INFJ",
@@ -4644,7 +4644,7 @@
     "destinyCard": null,
     "images": [
       {
-        "src": "/img/characters/nct/xiaojun.png",
+        "src": "/img/characters/nct/xiaojun.webp",
         "alt": "Xiaojun (Xiao Dejun)",
         "caption": ""
       }
@@ -4676,7 +4676,7 @@
       "Profesor de Ingeniería Metalomágica y Forja de Constructos"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/nct/nct-hendery.png",
+    "imageSrc": "/img/characters/nct/nct-hendery.webp",
     "dateOfBirth": "1899-09-28",
     "zodiac": "Libra ♎",
     "mbti": "INTP",
@@ -4730,7 +4730,7 @@
     "destinyCard": null,
     "images": [
       {
-        "src": "/img/characters/nct/hendery.png",
+        "src": "/img/characters/nct/hendery.webp",
         "alt": "Hendery (Huang Guanheng)",
         "caption": ""
       }
@@ -4762,7 +4762,7 @@
       "Guardián de los Archivos Proféticos"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/nct/renjun.png",
+    "imageSrc": "/img/characters/nct/renjun.webp",
     "dateOfBirth": "1900-03-23",
     "zodiac": "Aries ♈",
     "mbti": "INTP",
@@ -4834,7 +4834,7 @@
       "Guardián de Defensa Táctica de la Neo Academia"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/nct/nct-jeno.png",
+    "imageSrc": "/img/characters/nct/nct-jeno.webp",
     "dateOfBirth": "1900-04-23",
     "zodiac": "Tauro ♉",
     "mbti": "ISTP",
@@ -4888,7 +4888,7 @@
     "destinyCard": null,
     "images": [
       {
-        "src": "/img/characters/nct/jeno.png",
+        "src": "/img/characters/nct/jeno.webp",
         "alt": "Lee Jeno",
         "caption": ""
       }
@@ -4920,7 +4920,7 @@
       "Profesor de Oniromancia, Ilusiones Cognitivas e Interpretación de Pesadillas"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/nct/nct-haechan.png",
+    "imageSrc": "/img/characters/nct/nct-haechan.webp",
     "dateOfBirth": "1500-06-06",
     "zodiac": "Géminis ♊",
     "mbti": "ESFP",
@@ -5009,7 +5009,7 @@
     "destinyCard": null,
     "images": [
       {
-        "src": "/img/characters/nct/haechan.png",
+        "src": "/img/characters/nct/haechan.webp",
         "alt": "Lee Donghyuck (Haechan)",
         "caption": ""
       }
@@ -5041,7 +5041,7 @@
       "Guardián de Contención del Plano Onírico (Dreamscape)"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/nct/nct-jaemin.png",
+    "imageSrc": "/img/characters/nct/nct-jaemin.webp",
     "dateOfBirth": "1900-08-13",
     "zodiac": "Leo ♌",
     "mbti": "ISFJ",
@@ -5100,7 +5100,7 @@
     "destinyCard": null,
     "images": [
       {
-        "src": "/img/characters/nct/jaemin.png",
+        "src": "/img/characters/nct/jaemin.webp",
         "alt": "Na Jaemin",
         "caption": ""
       }
@@ -5132,7 +5132,7 @@
       "Profesor de Aerodinámica Arcana y Movilidad de Combate"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/nct/nct-yangyang.png",
+    "imageSrc": "/img/characters/nct/nct-yangyang.webp",
     "dateOfBirth": "1910-10-10",
     "zodiac": "Libra ♎",
     "mbti": "INTJ",
@@ -5178,7 +5178,7 @@
     "destinyCard": null,
     "images": [
       {
-        "src": "/img/characters/nct/yangyang.png",
+        "src": "/img/characters/nct/yangyang.webp",
         "alt": "Liu Yangyang",
         "caption": ""
       }
@@ -5210,7 +5210,7 @@
       "Guardián de Infraestructura de Redes Oníricas"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/nct/chenle.png",
+    "imageSrc": "/img/characters/nct/chenle.webp",
     "dateOfBirth": "1901-11-22",
     "zodiac": "Sagitario ♐",
     "mbti": "ESTP",
@@ -5295,7 +5295,7 @@
       "Guardián de Vigilancia Subconsciente e Infiltración Mental"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/nct/nct-jisung.png",
+    "imageSrc": "/img/characters/nct/nct-jisung.webp",
     "dateOfBirth": "1902-02-05",
     "zodiac": "Acuario ♒",
     "mbti": "INFP",
@@ -5354,7 +5354,7 @@
     "destinyCard": null,
     "images": [
       {
-        "src": "/img/characters/nct/jisung.png",
+        "src": "/img/characters/nct/jisung.webp",
         "alt": "Park Jisung",
         "caption": ""
       }
@@ -5387,7 +5387,7 @@
       "Especialista en Evocación Táctica"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/nct/sion.png",
+    "imageSrc": "/img/characters/nct/sion.webp",
     "dateOfBirth": "2002-05-11",
     "zodiac": "Tauro ♉",
     "mbti": "INTJ",
@@ -5473,7 +5473,7 @@
       "Especialista en Dinámica Gravitacional"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/nct/riku.png",
+    "imageSrc": "/img/characters/nct/riku.webp",
     "dateOfBirth": "2003-06-28",
     "zodiac": "Cáncer ♋",
     "mbti": "ISFP",
@@ -5546,7 +5546,7 @@
       "Especialista en Protección Abjurativa"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/nct/yushi.png",
+    "imageSrc": "/img/characters/nct/yushi.webp",
     "dateOfBirth": "2004-04-05",
     "zodiac": "Aries ♈",
     "mbti": "ISTJ",
@@ -5624,7 +5624,7 @@
       "Especialista en Creación Arcanotécnica"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/nct/jaehee.png",
+    "imageSrc": "/img/characters/nct/jaehee.webp",
     "dateOfBirth": "2005-06-21",
     "zodiac": "Cáncer ♋",
     "mbti": "INFJ",
@@ -5705,7 +5705,7 @@
       "Especialista en Alquimia Aplicada"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/nct/ryo.png",
+    "imageSrc": "/img/characters/nct/ryo.webp",
     "dateOfBirth": "2007-08-04",
     "zodiac": "Leo ♌",
     "mbti": "ENTP",
@@ -5783,7 +5783,7 @@
       "Especialista en Armamento Arcano"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/nct/sakuya.png",
+    "imageSrc": "/img/characters/nct/sakuya.webp",
     "dateOfBirth": "2007-11-18",
     "zodiac": "Escorpio ♏",
     "mbti": "ENFP",
@@ -5869,7 +5869,7 @@
       "Custodia Especial de la Neo Academia"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/nct/baby.png",
+    "imageSrc": "/img/characters/nct/baby.webp",
     "dateOfBirth": "2024-06-30",
     "zodiac": "Cáncer ♋",
     "mbti": null,
@@ -5918,7 +5918,7 @@
     "visibility": "hidden",
     "factionId": "andteam",
     "tags": [],
-    "imageSrc": "/img/characters/andteam/andteam-nicholas.png",
+    "imageSrc": "/img/characters/andteam/andteam-nicholas.webp",
     "sortOrder": 60
   },
   "andteam-ej": {
@@ -5929,7 +5929,7 @@
     "visibility": "hidden",
     "factionId": "andteam",
     "tags": [],
-    "imageSrc": "/img/characters/andteam/andteam-ej.png",
+    "imageSrc": "/img/characters/andteam/andteam-ej.webp",
     "sortOrder": 61
   },
   "andteam-fuma": {
@@ -5940,7 +5940,7 @@
     "visibility": "hidden",
     "factionId": "andteam",
     "tags": [],
-    "imageSrc": "/img/characters/andteam/andteam-fuma.png",
+    "imageSrc": "/img/characters/andteam/andteam-fuma.webp",
     "sortOrder": 62
   },
   "andteam-k": {
@@ -5951,7 +5951,7 @@
     "visibility": "hidden",
     "factionId": "andteam",
     "tags": [],
-    "imageSrc": "/img/characters/andteam/andteam-k.png",
+    "imageSrc": "/img/characters/andteam/andteam-k.webp",
     "sortOrder": 63
   },
   "adp-annie": {
@@ -5962,7 +5962,7 @@
     "visibility": "hidden",
     "factionId": "adp",
     "tags": [],
-    "imageSrc": "/img/characters/adp/adp-annie.png",
+    "imageSrc": "/img/characters/adp/adp-annie.webp",
     "sortOrder": 64
   },
   "adp-bailey": {
@@ -5973,7 +5973,7 @@
     "visibility": "hidden",
     "factionId": "adp",
     "tags": [],
-    "imageSrc": "/img/characters/adp/adp-bailey.png",
+    "imageSrc": "/img/characters/adp/adp-bailey.webp",
     "sortOrder": 65
   },
   "adp-tarzzan": {
@@ -5984,7 +5984,7 @@
     "visibility": "hidden",
     "factionId": "adp",
     "tags": [],
-    "imageSrc": "/img/characters/adp/adp-tarzzan.png",
+    "imageSrc": "/img/characters/adp/adp-tarzzan.webp",
     "sortOrder": 66
   },
   "adp-woochan": {
@@ -5995,7 +5995,7 @@
     "visibility": "hidden",
     "factionId": "adp",
     "tags": [],
-    "imageSrc": "/img/characters/adp/adp-woochan.png",
+    "imageSrc": "/img/characters/adp/adp-woochan.webp",
     "sortOrder": 67
   },
   "adp-youngseo": {
@@ -6006,7 +6006,7 @@
     "visibility": "hidden",
     "factionId": "adp",
     "tags": [],
-    "imageSrc": "/img/characters/adp/adp-youngseo.png",
+    "imageSrc": "/img/characters/adp/adp-youngseo.webp",
     "sortOrder": 68
   },
   "astro-eunwoo": {
@@ -6017,7 +6017,7 @@
     "visibility": "hidden",
     "factionId": "astro",
     "tags": [],
-    "imageSrc": "/img/characters/astro/astro-eunwoo.png",
+    "imageSrc": "/img/characters/astro/astro-eunwoo.webp",
     "sortOrder": 69
   },
   "astro-jinjin": {
@@ -6028,7 +6028,7 @@
     "visibility": "hidden",
     "factionId": "astro",
     "tags": [],
-    "imageSrc": "/img/characters/astro/astro-jinjin.png",
+    "imageSrc": "/img/characters/astro/astro-jinjin.webp",
     "sortOrder": 70
   },
   "astro-mj": {
@@ -6039,7 +6039,7 @@
     "visibility": "hidden",
     "factionId": "astro",
     "tags": [],
-    "imageSrc": "/img/characters/astro/astro-mj.png",
+    "imageSrc": "/img/characters/astro/astro-mj.webp",
     "sortOrder": 71
   },
   "astro-moonbin": {
@@ -6050,7 +6050,7 @@
     "visibility": "hidden",
     "factionId": "astro",
     "tags": [],
-    "imageSrc": "/img/characters/astro/astro-moonbin.png",
+    "imageSrc": "/img/characters/astro/astro-moonbin.webp",
     "sortOrder": 72
   },
   "astro-rocky": {
@@ -6061,7 +6061,7 @@
     "visibility": "hidden",
     "factionId": "astro",
     "tags": [],
-    "imageSrc": "/img/characters/astro/astro-rocky.png",
+    "imageSrc": "/img/characters/astro/astro-rocky.webp",
     "sortOrder": 73
   },
   "astro-sanha": {
@@ -6072,7 +6072,7 @@
     "visibility": "hidden",
     "factionId": "astro",
     "tags": [],
-    "imageSrc": "/img/characters/astro/astro-sanha.png",
+    "imageSrc": "/img/characters/astro/astro-sanha.webp",
     "sortOrder": 74
   },
   "bnd-leehan": {
@@ -6082,7 +6082,7 @@
     "visibility": "hidden",
     "status": "active",
     "factionId": "bnd",
-    "imageSrc": "/img/characters/bnd/bnd-leehan.png",
+    "imageSrc": "/img/characters/bnd/bnd-leehan.webp",
     "tags": [],
     "sortOrder": 75
   },
@@ -6093,7 +6093,7 @@
     "visibility": "hidden",
     "status": "active",
     "factionId": "bnd",
-    "imageSrc": "/img/characters/bnd/bnd-taesan.png",
+    "imageSrc": "/img/characters/bnd/bnd-taesan.webp",
     "tags": [],
     "sortOrder": 76
   },
@@ -6104,7 +6104,7 @@
     "visibility": "public",
     "status": "active",
     "factionId": "ateez",
-    "imageSrc": "/img/characters/ateez/ateez-hongjoong.png",
+    "imageSrc": "/img/characters/ateez/ateez-hongjoong.webp",
     "tags": [],
     "sortOrder": 1,
     "subtitle": "El Capitán del Caos",
@@ -6128,7 +6128,7 @@
     "visibility": "public",
     "status": "active",
     "factionId": "ateez",
-    "imageSrc": "/img/characters/ateez/ateez-jongho.png",
+    "imageSrc": "/img/characters/ateez/ateez-jongho.webp",
     "tags": [],
     "sortOrder": 8,
     "subtitle": "El Rompedor de Barreras",
@@ -6152,7 +6152,7 @@
     "visibility": "public",
     "status": "active",
     "factionId": "ateez",
-    "imageSrc": "/img/characters/ateez/ateez-san.png",
+    "imageSrc": "/img/characters/ateez/ateez-san.webp",
     "tags": [],
     "sortOrder": 5,
     "subtitle": "El Errante del Norte",
@@ -6176,7 +6176,7 @@
     "visibility": "hidden",
     "status": "active",
     "factionId": "bts",
-    "imageSrc": "/img/characters/bts/bts-agust-d.png",
+    "imageSrc": "/img/characters/bts/bts-agust-d.webp",
     "tags": [],
     "sortOrder": 80
   },
@@ -6187,7 +6187,7 @@
     "visibility": "hidden",
     "status": "active",
     "factionId": "bts",
-    "imageSrc": "/img/characters/bts/bts-v.png",
+    "imageSrc": "/img/characters/bts/bts-v.webp",
     "tags": [],
     "sortOrder": 81
   },
@@ -6198,7 +6198,7 @@
     "visibility": "hidden",
     "status": "active",
     "factionId": "cortis",
-    "imageSrc": "/img/characters/cortis/cortis-james.png",
+    "imageSrc": "/img/characters/cortis/cortis-james.webp",
     "tags": [],
     "sortOrder": 82
   },
@@ -6209,7 +6209,7 @@
     "visibility": "hidden",
     "status": "active",
     "factionId": "cortis",
-    "imageSrc": "/img/characters/cortis/cortis-juhoon.png",
+    "imageSrc": "/img/characters/cortis/cortis-juhoon.webp",
     "tags": [],
     "sortOrder": 83
   },
@@ -6220,7 +6220,7 @@
     "visibility": "hidden",
     "status": "active",
     "factionId": "cortis",
-    "imageSrc": "/img/characters/cortis/cortis-keonho.png",
+    "imageSrc": "/img/characters/cortis/cortis-keonho.webp",
     "tags": [],
     "sortOrder": 84
   },
@@ -6231,7 +6231,7 @@
     "visibility": "hidden",
     "status": "active",
     "factionId": "cortis",
-    "imageSrc": "/img/characters/cortis/cortis-martin.png",
+    "imageSrc": "/img/characters/cortis/cortis-martin.webp",
     "tags": [],
     "sortOrder": 85
   },
@@ -6242,7 +6242,7 @@
     "visibility": "hidden",
     "status": "active",
     "factionId": "cortis",
-    "imageSrc": "/img/characters/cortis/cortis-seonghyeon.png",
+    "imageSrc": "/img/characters/cortis/cortis-seonghyeon.webp",
     "tags": [],
     "sortOrder": 86
   },
@@ -6253,7 +6253,7 @@
     "visibility": "public",
     "status": "active",
     "factionId": "os-guild",
-    "imageSrc": "/img/characters/os-guild/os-asuka.jpeg",
+    "imageSrc": "/img/characters/os-guild/os-asuka.webp",
     "tags": [],
     "sortOrder": 87,
     "subtitle": "El Rostro Robado",
@@ -6272,7 +6272,7 @@
     "visibility": "public",
     "status": "active",
     "factionId": "os-guild",
-    "imageSrc": "/img/characters/os-guild/os-eris.jpeg",
+    "imageSrc": "/img/characters/os-guild/os-eris.webp",
     "tags": [],
     "sortOrder": 88,
     "subtitle": "La Flor Errante",
@@ -6291,7 +6291,7 @@
     "visibility": "public",
     "status": "active",
     "factionId": "os-guild",
-    "imageSrc": "/img/characters/os-guild/os-lira.jpeg",
+    "imageSrc": "/img/characters/os-guild/os-lira.webp",
     "tags": [],
     "sortOrder": 89,
     "subtitle": "La Artista Itinerante",
@@ -6310,7 +6310,7 @@
     "visibility": "public",
     "status": "missing",
     "factionId": "os-guild",
-    "imageSrc": "/img/characters/os-guild/os-mimira.jpeg",
+    "imageSrc": "/img/characters/os-guild/os-mimira.webp",
     "tags": [],
     "sortOrder": 90,
     "subtitle": "El Martillo de los Sueños Rotos",
@@ -6329,7 +6329,7 @@
     "visibility": "public",
     "status": "missing",
     "factionId": "os-guild",
-    "imageSrc": "/img/characters/os-guild/os-lu-yan.jpeg",
+    "imageSrc": "/img/characters/os-guild/os-lu-yan.webp",
     "tags": [],
     "sortOrder": 91,
     "subtitle": "El Cazador Ermitaño",
@@ -6348,7 +6348,7 @@
     "visibility": "public",
     "status": "missing",
     "factionId": "os-guild",
-    "imageSrc": "/img/characters/os-guild/os-jiwon.jpeg",
+    "imageSrc": "/img/characters/os-guild/os-jiwon.webp",
     "tags": [],
     "sortOrder": 92,
     "subtitle": "La Heredera de la Casa Seo",
@@ -6367,7 +6367,7 @@
     "visibility": "hidden",
     "status": "active",
     "factionId": "kiof",
-    "imageSrc": "/img/characters/kiof/kiof-natty.png",
+    "imageSrc": "/img/characters/kiof/kiof-natty.webp",
     "tags": [],
     "sortOrder": 93
   },
@@ -6378,7 +6378,7 @@
     "visibility": "hidden",
     "status": "active",
     "factionId": "katseye",
-    "imageSrc": "/img/characters/katseye/katseye-sophia.png",
+    "imageSrc": "/img/characters/katseye/katseye-sophia.webp",
     "tags": [],
     "sortOrder": 94
   },
@@ -6389,7 +6389,7 @@
     "visibility": "hidden",
     "status": "active",
     "factionId": "katseye",
-    "imageSrc": "/img/characters/katseye/katseye-daniela.png",
+    "imageSrc": "/img/characters/katseye/katseye-daniela.webp",
     "tags": [],
     "sortOrder": 95
   },
@@ -6400,7 +6400,7 @@
     "visibility": "hidden",
     "status": "active",
     "factionId": "katseye",
-    "imageSrc": "/img/characters/katseye/katseye-megan.png",
+    "imageSrc": "/img/characters/katseye/katseye-megan.webp",
     "tags": [],
     "sortOrder": 96
   },
@@ -6411,7 +6411,7 @@
     "visibility": "hidden",
     "status": "active",
     "factionId": "lsf",
-    "imageSrc": "/img/characters/lsf/lsf-yunjin.png",
+    "imageSrc": "/img/characters/lsf/lsf-yunjin.webp",
     "tags": [],
     "sortOrder": 97
   },
@@ -6422,7 +6422,7 @@
     "visibility": "hidden",
     "status": "active",
     "factionId": "lsf",
-    "imageSrc": "/img/characters/lsf/lsf-chaewon.png",
+    "imageSrc": "/img/characters/lsf/lsf-chaewon.webp",
     "tags": [],
     "sortOrder": 98
   },
@@ -6433,7 +6433,7 @@
     "visibility": "hidden",
     "status": "active",
     "factionId": "lsf",
-    "imageSrc": "/img/characters/lsf/lsf-eunchae.png",
+    "imageSrc": "/img/characters/lsf/lsf-eunchae.webp",
     "tags": [],
     "sortOrder": 99
   },
@@ -6444,7 +6444,7 @@
     "visibility": "hidden",
     "status": "active",
     "factionId": "lsf",
-    "imageSrc": "/img/characters/lsf/lsf-kazuha.png",
+    "imageSrc": "/img/characters/lsf/lsf-kazuha.webp",
     "tags": [],
     "sortOrder": 100
   },
@@ -6455,7 +6455,7 @@
     "visibility": "hidden",
     "status": "active",
     "factionId": "lsf",
-    "imageSrc": "/img/characters/lsf/lsf-sakura.png",
+    "imageSrc": "/img/characters/lsf/lsf-sakura.webp",
     "tags": [],
     "sortOrder": 101
   },
@@ -6466,7 +6466,7 @@
     "visibility": "hidden",
     "status": "active",
     "factionId": "katseye",
-    "imageSrc": "/img/characters/katseye/katseye-manon.png",
+    "imageSrc": "/img/characters/katseye/katseye-manon.webp",
     "tags": [],
     "sortOrder": 102
   },
@@ -6477,7 +6477,7 @@
     "visibility": "hidden",
     "status": "active",
     "factionId": "katseye",
-    "imageSrc": "/img/characters/katseye/katseye-lara.png",
+    "imageSrc": "/img/characters/katseye/katseye-lara.webp",
     "tags": [],
     "sortOrder": 103
   },
@@ -6488,7 +6488,7 @@
     "visibility": "hidden",
     "status": "active",
     "factionId": "katseye",
-    "imageSrc": "/img/characters/katseye/katseye-yoonchae.png",
+    "imageSrc": "/img/characters/katseye/katseye-yoonchae.webp",
     "tags": [],
     "sortOrder": 104
   },
@@ -6499,7 +6499,7 @@
     "visibility": "hidden",
     "status": "active",
     "factionId": "lngshot",
-    "imageSrc": "/img/characters/lngshot/lngshot-woojin.png",
+    "imageSrc": "/img/characters/lngshot/lngshot-woojin.webp",
     "tags": [],
     "sortOrder": 105
   },
@@ -6510,7 +6510,7 @@
     "visibility": "hidden",
     "status": "active",
     "factionId": "lngshot",
-    "imageSrc": "/img/characters/lngshot/lngshot-ryul.png",
+    "imageSrc": "/img/characters/lngshot/lngshot-ryul.webp",
     "tags": [],
     "sortOrder": 106
   },
@@ -6521,7 +6521,7 @@
     "visibility": "hidden",
     "status": "active",
     "factionId": "lngshot",
-    "imageSrc": "/img/characters/lngshot/lngshot-ohyul.png",
+    "imageSrc": "/img/characters/lngshot/lngshot-ohyul.webp",
     "tags": [],
     "sortOrder": 107
   },
@@ -6532,7 +6532,7 @@
     "visibility": "hidden",
     "status": "active",
     "factionId": "lngshot",
-    "imageSrc": "/img/characters/lngshot/lngshot-louis.png",
+    "imageSrc": "/img/characters/lngshot/lngshot-louis.webp",
     "tags": [],
     "sortOrder": 108
   },
@@ -6543,7 +6543,7 @@
     "visibility": "hidden",
     "status": "active",
     "factionId": "ncit",
-    "imageSrc": "/img/characters/ncit/ncit-tata.jpg",
+    "imageSrc": "/img/characters/ncit/ncit-tata.webp",
     "tags": [],
     "sortOrder": 109
   },
@@ -6554,7 +6554,7 @@
     "visibility": "hidden",
     "status": "active",
     "factionId": "ncit",
-    "imageSrc": "/img/characters/ncit/ncit-hamin.jpg",
+    "imageSrc": "/img/characters/ncit/ncit-hamin.webp",
     "tags": [],
     "sortOrder": 110
   },
@@ -6565,7 +6565,7 @@
     "visibility": "hidden",
     "status": "active",
     "factionId": "ncit",
-    "imageSrc": "/img/characters/ncit/ncit-hyunjun.jpg",
+    "imageSrc": "/img/characters/ncit/ncit-hyunjun.webp",
     "tags": [],
     "sortOrder": 111
   },
@@ -6576,7 +6576,7 @@
     "visibility": "hidden",
     "status": "active",
     "factionId": "ncit",
-    "imageSrc": "/img/characters/ncit/ncit-nicholas.jpg",
+    "imageSrc": "/img/characters/ncit/ncit-nicholas.webp",
     "tags": [],
     "sortOrder": 112
   },
@@ -6587,7 +6587,7 @@
     "visibility": "hidden",
     "status": "active",
     "factionId": "ncit",
-    "imageSrc": "/img/characters/ncit/ncit-haruta.jpg",
+    "imageSrc": "/img/characters/ncit/ncit-haruta.webp",
     "tags": [],
     "sortOrder": 113
   },
@@ -6598,7 +6598,7 @@
     "visibility": "hidden",
     "status": "active",
     "factionId": "ncit",
-    "imageSrc": "/img/characters/ncit/ncit-sadaharu.jpg",
+    "imageSrc": "/img/characters/ncit/ncit-sadaharu.webp",
     "tags": [],
     "sortOrder": 114
   },
@@ -6609,7 +6609,7 @@
     "visibility": "hidden",
     "status": "active",
     "factionId": "ncit",
-    "imageSrc": "/img/characters/ncit/ncit-charlie.jpg",
+    "imageSrc": "/img/characters/ncit/ncit-charlie.webp",
     "tags": [],
     "sortOrder": 115
   },
@@ -6620,7 +6620,7 @@
     "visibility": "hidden",
     "status": "active",
     "factionId": "ncit",
-    "imageSrc": "/img/characters/ncit/ncit-hanbi.jpg",
+    "imageSrc": "/img/characters/ncit/ncit-hanbi.webp",
     "tags": [],
     "sortOrder": 116
   },
@@ -6631,7 +6631,7 @@
     "visibility": "hidden",
     "status": "active",
     "factionId": "ncit",
-    "imageSrc": "/img/characters/ncit/ncit-daniel.jpg",
+    "imageSrc": "/img/characters/ncit/ncit-daniel.webp",
     "tags": [],
     "sortOrder": 117
   },
@@ -6642,7 +6642,7 @@
     "visibility": "hidden",
     "status": "active",
     "factionId": "ncit",
-    "imageSrc": "/img/characters/ncit/ncit-songha.jpg",
+    "imageSrc": "/img/characters/ncit/ncit-songha.webp",
     "tags": [],
     "sortOrder": 118
   },
@@ -6653,7 +6653,7 @@
     "visibility": "hidden",
     "status": "active",
     "factionId": "ncit",
-    "imageSrc": "/img/characters/ncit/ncit-justin.jpg",
+    "imageSrc": "/img/characters/ncit/ncit-justin.webp",
     "tags": [],
     "sortOrder": 119
   },
@@ -6664,7 +6664,7 @@
     "visibility": "hidden",
     "status": "active",
     "factionId": "ncit",
-    "imageSrc": "/img/characters/ncit/ncit-kachin.jpg",
+    "imageSrc": "/img/characters/ncit/ncit-kachin.webp",
     "tags": [],
     "sortOrder": 120
   },
@@ -6675,7 +6675,7 @@
     "visibility": "hidden",
     "status": "active",
     "factionId": "ncit",
-    "imageSrc": "/img/characters/ncit/ncit-woolin.jpg",
+    "imageSrc": "/img/characters/ncit/ncit-woolin.webp",
     "tags": [],
     "sortOrder": 121
   },
@@ -6686,7 +6686,7 @@
     "visibility": "hidden",
     "status": "active",
     "factionId": "ncit",
-    "imageSrc": "/img/characters/ncit/ncit-kassho.jpg",
+    "imageSrc": "/img/characters/ncit/ncit-kassho.webp",
     "tags": [],
     "sortOrder": 122
   },
@@ -6697,7 +6697,7 @@
     "visibility": "hidden",
     "status": "active",
     "factionId": "ncit",
-    "imageSrc": "/img/characters/ncit/ncit-jaewon.jpg",
+    "imageSrc": "/img/characters/ncit/ncit-jaewon.webp",
     "tags": [],
     "sortOrder": 123
   },
@@ -6708,7 +6708,7 @@
     "visibility": "hidden",
     "status": "active",
     "factionId": "njz",
-    "imageSrc": "/img/characters/njz/njz-hanni.png",
+    "imageSrc": "/img/characters/njz/njz-hanni.webp",
     "tags": [],
     "sortOrder": 124
   },
@@ -6719,7 +6719,7 @@
     "visibility": "hidden",
     "status": "active",
     "factionId": "njz",
-    "imageSrc": "/img/characters/njz/njz-minji.png",
+    "imageSrc": "/img/characters/njz/njz-minji.webp",
     "tags": [],
     "sortOrder": 125
   },
@@ -6730,7 +6730,7 @@
     "visibility": "hidden",
     "status": "active",
     "factionId": "njz",
-    "imageSrc": "/img/characters/njz/njz-danielle.png",
+    "imageSrc": "/img/characters/njz/njz-danielle.webp",
     "tags": [],
     "sortOrder": 126
   },
@@ -6741,7 +6741,7 @@
     "visibility": "hidden",
     "status": "active",
     "factionId": "p1h",
-    "imageSrc": "/img/characters/p1h/p1h-keeho.png",
+    "imageSrc": "/img/characters/p1h/p1h-keeho.webp",
     "tags": [],
     "sortOrder": 127
   },
@@ -6752,7 +6752,7 @@
     "visibility": "hidden",
     "status": "active",
     "factionId": "psf",
-    "imageSrc": "/img/characters/psf/psf-jimmy.png",
+    "imageSrc": "/img/characters/psf/psf-jimmy.webp",
     "tags": [],
     "sortOrder": 128
   },
@@ -6763,7 +6763,7 @@
     "visibility": "hidden",
     "status": "active",
     "factionId": "psf",
-    "imageSrc": "/img/characters/psf/psf-kokoro.png",
+    "imageSrc": "/img/characters/psf/psf-kokoro.webp",
     "tags": [],
     "sortOrder": 129
   },
@@ -6774,7 +6774,7 @@
     "visibility": "hidden",
     "status": "active",
     "factionId": "psf",
-    "imageSrc": "/img/characters/psf/psf-tsurugi.png",
+    "imageSrc": "/img/characters/psf/psf-tsurugi.webp",
     "tags": [],
     "sortOrder": 130
   },
@@ -6785,7 +6785,7 @@
     "visibility": "hidden",
     "status": "active",
     "factionId": "psf",
-    "imageSrc": "/img/characters/psf/psf-weesa.png",
+    "imageSrc": "/img/characters/psf/psf-weesa.webp",
     "tags": [],
     "sortOrder": 131
   },
@@ -7670,7 +7670,7 @@
     "group": "npc",
     "visibility": "public",
     "status": "active",
-    "imageSrc": "/img/characters/ateez/ateez-seonghwa.png",
+    "imageSrc": "/img/characters/ateez/ateez-seonghwa.webp",
     "sortOrder": 2,
     "subtitle": "El Guardián de las Memorias",
     "dateOfBirth": "1998-04-03",
@@ -7932,7 +7932,7 @@
     "group": "npc",
     "visibility": "public",
     "status": "active",
-    "imageSrc": "/img/characters/ateez/ateez-wooyoung.png",
+    "imageSrc": "/img/characters/ateez/ateez-wooyoung.webp",
     "sortOrder": 7,
     "subtitle": "El Joven Infiltrador",
     "dateOfBirth": "1999-11-26",
@@ -8000,7 +8000,7 @@
     "group": "npc",
     "visibility": "public",
     "status": "active",
-    "imageSrc": "/img/characters/ateez/ateez-yeosang.png",
+    "imageSrc": "/img/characters/ateez/ateez-yeosang.webp",
     "sortOrder": 4,
     "subtitle": "El Halcón del Horizonte",
     "dateOfBirth": "1999-06-15",
@@ -8050,7 +8050,7 @@
     "group": "npc",
     "visibility": "public",
     "status": "active",
-    "imageSrc": "/img/characters/ateez/ateez-yunho.png",
+    "imageSrc": "/img/characters/ateez/ateez-yunho.webp",
     "sortOrder": 3,
     "subtitle": "El Navegante de la Luz",
     "dateOfBirth": "1999-03-23",
@@ -8073,7 +8073,7 @@
     "group": "npc",
     "visibility": "public",
     "status": "active",
-    "imageSrc": "/img/characters/exo/exo-kai.png",
+    "imageSrc": "/img/characters/exo/exo-kai.webp",
     "factionId": "exo",
     "sortOrder": 8,
     "images": [],
@@ -8097,7 +8097,7 @@
     "visibility": "public",
     "factionId": "exo",
     "tags": [],
-    "imageSrc": "/img/characters/exo/exo-chanyeol.png",
+    "imageSrc": "/img/characters/exo/exo-chanyeol.webp",
     "sortOrder": 6,
     "subtitle": "El General del Fuego",
     "role": "NPC",
@@ -8119,7 +8119,7 @@
     "visibility": "public",
     "factionId": "exo",
     "tags": [],
-    "imageSrc": "/img/characters/exo/exo-kyungsoo.png",
+    "imageSrc": "/img/characters/exo/exo-kyungsoo.webp",
     "sortOrder": 7,
     "subtitle": "El General de la Fuerza",
     "role": "NPC",
@@ -8141,7 +8141,7 @@
     "visibility": "public",
     "factionId": "exo",
     "tags": [],
-    "imageSrc": "/img/characters/exo/exo-lay.png",
+    "imageSrc": "/img/characters/exo/exo-lay.webp",
     "sortOrder": 3,
     "subtitle": "El General de la Vida",
     "role": "NPC",
@@ -8163,7 +8163,7 @@
     "visibility": "public",
     "factionId": "exo",
     "tags": [],
-    "imageSrc": "/img/characters/exo/exo-sehun.png",
+    "imageSrc": "/img/characters/exo/exo-sehun.webp",
     "sortOrder": 9,
     "subtitle": "El General del Viento",
     "role": "NPC",
@@ -8185,7 +8185,7 @@
     "sortOrder": 2,
     "status": "missing",
     "factionId": "exo",
-    "imageSrc": "/img/characters/exo/exo-xiumin.png",
+    "imageSrc": "/img/characters/exo/exo-xiumin.webp",
     "tags": [],
     "subtitle": "El General del Hielo",
     "role": "NPC",
@@ -8203,7 +8203,7 @@
     "sortOrder": 1,
     "status": "active",
     "factionId": "exo",
-    "imageSrc": "/img/characters/exo/exo-suho.png",
+    "imageSrc": "/img/characters/exo/exo-suho.webp",
     "tags": [],
     "subtitle": "El General del Agua",
     "role": "NPC",
@@ -8225,7 +8225,7 @@
     "sortOrder": 4,
     "status": "missing",
     "factionId": "exo",
-    "imageSrc": "/img/characters/exo/exo-baekhyun.png",
+    "imageSrc": "/img/characters/exo/exo-baekhyun.webp",
     "role": "NPC",
     "summary": "Caballero de la Luz y la Revelación de EXO.",
     "tags": [],
@@ -8244,7 +8244,7 @@
     "sortOrder": 5,
     "status": "missing",
     "factionId": "exo",
-    "imageSrc": "/img/characters/exo/exo-chen.png",
+    "imageSrc": "/img/characters/exo/exo-chen.webp",
     "role": "NPC",
     "summary": "Caballero del Rayo y la Conducción.",
     "tags": [],
@@ -8269,7 +8269,7 @@
     "orientation": "Pan",
     "romanticSituation": "Soltera",
     "factionId": "panes-del-destino",
-    "imageSrc": "/img/characters/party/pc-kao.png",
+    "imageSrc": "/img/characters/party/pc-kao.webp",
     "dynamic": "alpha",
     "polyamoryStatus": "yes",
     "role": "Player"
@@ -8289,7 +8289,7 @@
     "orientation": "Pan",
     "romanticSituation": "Soltero",
     "factionId": "ateez",
-    "imageSrc": "/img/characters/ateez/ateez-mingi.png",
+    "imageSrc": "/img/characters/ateez/ateez-mingi.webp",
     "dynamic": "alpha",
     "polyamoryStatus": "yes",
     "occupation": [
