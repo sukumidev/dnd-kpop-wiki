@@ -6930,7 +6930,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-kobold.webp",
     "sortOrder": 146
   },
   "camerino-jr": {
@@ -6939,7 +6939,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-kobold.webp",
     "sortOrder": 147
   },
   "capitana-lim": {
@@ -6993,7 +6993,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/txt/txt-soobin.webp",
     "sortOrder": 153
   },
   "church": {
@@ -7056,7 +7056,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-kobold.webp",
     "sortOrder": 160
   },
   "don-jose": {
@@ -7182,7 +7182,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-hanjun.webp",
     "sortOrder": 173
   },
   "heechul": {
@@ -7200,7 +7200,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-kobold.webp",
     "sortOrder": 175
   },
   "honda": {
@@ -7218,7 +7218,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/txt/txt-hueningkai.webp",
     "sortOrder": 177
   },
   "hwang": {
@@ -7227,7 +7227,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-kobold.webp",
     "sortOrder": 178
   },
   "hwasa": {
@@ -7394,7 +7394,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-isuna.webp",
     "sortOrder": 195
   },
   "lady-myeonghwa": {
@@ -7779,7 +7779,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-baekjin.webp",
     "sortOrder": 233
   },
   "siwon": {
@@ -7851,7 +7851,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/txt/txt-taehyun.webp",
     "sortOrder": 239
   },
   "taeil": {
@@ -7869,7 +7869,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-kobold.webp",
     "sortOrder": 241
   },
   "tere": {
@@ -7982,7 +7982,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/txt/txt-yeonjun.webp",
     "sortOrder": 251
   },
   "yeontan": {

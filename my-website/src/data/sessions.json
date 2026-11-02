@@ -801,6 +801,7 @@
   {
     "id": "session-18",
     "number": 18,
+    "imageSrc": "/img/sessions/18/18.png",
     "title": "Las Segundas Oportunidades",
     "subtitle": "Poner a salvo a otros antes de seguir buscando respuestas",
     "locationIds": [
@@ -829,6 +830,7 @@
   {
     "id": "session-19",
     "number": 19,
+    "imageSrc": "/img/sessions/19/19.png",
     "title": "El Destino de los Dragonborns",
     "subtitle": "Un traslado seguro y un respiro antes de la siguiente misión",
     "locationIds": [
@@ -871,6 +873,7 @@
   {
     "id": "session-20",
     "number": 20,
+    "imageSrc": "/img/sessions/20/20.png",
     "title": "El Santuario del Dios de la Fuerza",
     "subtitle": "Una niña por rescatar, un elemental memorable y una lámpara pendiente",
     "locationIds": [
