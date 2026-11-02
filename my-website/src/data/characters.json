@@ -6789,8 +6789,8 @@
     "tags": [],
     "sortOrder": 131
   },
-  "ado": {
-    "id": "ado",
+  "solo-ado": {
+    "id": "solo-ado",
     "title": "Ado",
     "group": "npc",
     "visibility": "hidden",
@@ -6798,8 +6798,8 @@
     "imageSrc": null,
     "sortOrder": 132
   },
-  "anton": {
-    "id": "anton",
+  "riize-anton": {
+    "id": "riize-anton",
     "title": "Anton",
     "group": "npc",
     "visibility": "hidden",
@@ -6816,8 +6816,8 @@
     "dynamic": "alpha",
     "role": "NPC"
   },
-  "ario": {
-    "id": "ario",
+  "npc-ario": {
+    "id": "npc-ario",
     "title": "Ario",
     "group": "npc",
     "visibility": "hidden",
@@ -6825,8 +6825,8 @@
     "imageSrc": null,
     "sortOrder": 134
   },
-  "arturo": {
-    "id": "arturo",
+  "npc-arturo": {
+    "id": "npc-arturo",
     "title": "Arturo",
     "group": "npc",
     "visibility": "hidden",
@@ -6834,8 +6834,8 @@
     "imageSrc": null,
     "sortOrder": 135
   },
-  "arven": {
-    "id": "arven",
+  "npc-arven": {
+    "id": "npc-arven",
     "title": "Arven",
     "group": "npc",
     "visibility": "hidden",
@@ -6843,8 +6843,8 @@
     "imageSrc": null,
     "sortOrder": 136
   },
-  "baekho": {
-    "id": "baekho",
+  "nu-est-baekho": {
+    "id": "nu-est-baekho",
     "title": "Baekho",
     "group": "npc",
     "visibility": "hidden",
@@ -6852,8 +6852,8 @@
     "imageSrc": null,
     "sortOrder": 137
   },
-  "bahiyyih": {
-    "id": "bahiyyih",
+  "kep1er-bahiyyih": {
+    "id": "kep1er-bahiyyih",
     "title": "Bahiyyih",
     "group": "npc",
     "visibility": "hidden",
@@ -6861,8 +6861,8 @@
     "imageSrc": null,
     "sortOrder": 138
   },
-  "benny": {
-    "id": "benny",
+  "npc-benny": {
+    "id": "npc-benny",
     "title": "Benny",
     "group": "npc",
     "visibility": "hidden",
@@ -6870,8 +6870,8 @@
     "imageSrc": null,
     "sortOrder": 139
   },
-  "beomgyu": {
-    "id": "beomgyu",
+  "txt-beomgyu": {
+    "id": "txt-beomgyu",
     "title": "Beomgyu",
     "group": "npc",
     "visibility": "hidden",
@@ -6879,8 +6879,8 @@
     "imageSrc": null,
     "sortOrder": 140
   },
-  "biagi": {
-    "id": "biagi",
+  "npc-biagi": {
+    "id": "npc-biagi",
     "title": "Biagi",
     "group": "npc",
     "visibility": "hidden",
@@ -6888,8 +6888,8 @@
     "imageSrc": null,
     "sortOrder": 141
   },
-  "brandom-lee": {
-    "id": "brandom-lee",
+  "npc-brandom-lee": {
+    "id": "npc-brandom-lee",
     "title": "Brandom Lee",
     "group": "npc",
     "visibility": "hidden",
@@ -6897,8 +6897,8 @@
     "imageSrc": null,
     "sortOrder": 142
   },
-  "brian-ho": {
-    "id": "brian-ho",
+  "ampersone-brian": {
+    "id": "ampersone-brian",
     "title": "Brian Ho",
     "group": "npc",
     "visibility": "hidden",
@@ -6906,8 +6906,8 @@
     "imageSrc": null,
     "sortOrder": 143
   },
-  "bruno": {
-    "id": "bruno",
+  "npc-bruno": {
+    "id": "npc-bruno",
     "title": "Bruno",
     "group": "npc",
     "visibility": "hidden",
@@ -6915,8 +6915,8 @@
     "imageSrc": null,
     "sortOrder": 144
   },
-  "byeon-wooseok": {
-    "id": "byeon-wooseok",
+  "actor-byeon-wooseok": {
+    "id": "actor-byeon-wooseok",
     "title": "Byeon Wooseok",
     "group": "npc",
     "visibility": "hidden",
@@ -6924,8 +6924,8 @@
     "imageSrc": null,
     "sortOrder": 145
   },
-  "camerino": {
-    "id": "camerino",
+  "npc-camerino": {
+    "id": "npc-camerino",
     "title": "Camerino",
     "group": "npc",
     "visibility": "hidden",
@@ -6933,8 +6933,8 @@
     "imageSrc": null,
     "sortOrder": 146
   },
-  "camerino-jr": {
-    "id": "camerino-jr",
+  "npc-camerino-jr": {
+    "id": "npc-camerino-jr",
     "title": "Camerino Jr.",
     "group": "npc",
     "visibility": "hidden",
@@ -6942,8 +6942,8 @@
     "imageSrc": null,
     "sortOrder": 147
   },
-  "capitana-lim": {
-    "id": "capitana-lim",
+  "npc-capitana-lim": {
+    "id": "npc-capitana-lim",
     "title": "Capitana Lim",
     "group": "npc",
     "visibility": "hidden",
@@ -6951,8 +6951,8 @@
     "imageSrc": null,
     "sortOrder": 148
   },
-  "capitana-merry": {
-    "id": "capitana-merry",
+  "npc-capitana-merry": {
+    "id": "npc-capitana-merry",
     "title": "Capitana Merry",
     "group": "npc",
     "visibility": "hidden",
@@ -6960,8 +6960,8 @@
     "imageSrc": null,
     "sortOrder": 149
   },
-  "carlos": {
-    "id": "carlos",
+  "npc-carlos": {
+    "id": "npc-carlos",
     "title": "Carlos",
     "group": "npc",
     "visibility": "hidden",
@@ -6969,8 +6969,8 @@
     "imageSrc": null,
     "sortOrder": 150
   },
-  "castro": {
-    "id": "castro",
+  "npc-castro": {
+    "id": "npc-castro",
     "title": "Castro",
     "group": "npc",
     "visibility": "hidden",
@@ -6978,8 +6978,8 @@
     "imageSrc": null,
     "sortOrder": 151
   },
-  "chayanne": {
-    "id": "chayanne",
+  "npc-chayanne": {
+    "id": "npc-chayanne",
     "title": "Chayanne",
     "group": "npc",
     "visibility": "hidden",
@@ -6987,8 +6987,8 @@
     "imageSrc": null,
     "sortOrder": 152
   },
-  "choi-soobin": {
-    "id": "choi-soobin",
+  "txt-soobin": {
+    "id": "txt-soobin",
     "title": "Choi Soobin",
     "group": "npc",
     "visibility": "hidden",
@@ -6996,8 +6996,8 @@
     "imageSrc": null,
     "sortOrder": 153
   },
-  "church": {
-    "id": "church",
+  "npc-church": {
+    "id": "npc-church",
     "title": "Church",
     "group": "npc",
     "visibility": "hidden",
@@ -7005,8 +7005,8 @@
     "imageSrc": null,
     "sortOrder": 154
   },
-  "cristian": {
-    "id": "cristian",
+  "npc-cristian": {
+    "id": "npc-cristian",
     "title": "Cristian",
     "group": "npc",
     "visibility": "hidden",
@@ -7014,8 +7014,8 @@
     "imageSrc": null,
     "sortOrder": 155
   },
-  "dj-tony-mix": {
-    "id": "dj-tony-mix",
+  "npc-dj-tony-mix": {
+    "id": "npc-dj-tony-mix",
     "title": "DJ Tony Mix",
     "group": "npc",
     "visibility": "hidden",
@@ -7023,8 +7023,8 @@
     "imageSrc": null,
     "sortOrder": 156
   },
-  "dahyun": {
-    "id": "dahyun",
+  "twice-dahyun": {
+    "id": "twice-dahyun",
     "title": "Dahyun",
     "group": "npc",
     "visibility": "hidden",
@@ -7032,8 +7032,8 @@
     "imageSrc": null,
     "sortOrder": 157
   },
-  "dal": {
-    "id": "dal",
+  "npc-dal": {
+    "id": "npc-dal",
     "title": "Dal",
     "group": "npc",
     "visibility": "hidden",
@@ -7041,8 +7041,8 @@
     "imageSrc": null,
     "sortOrder": 158
   },
-  "delkhan": {
-    "id": "delkhan",
+  "npc-delkhan": {
+    "id": "npc-delkhan",
     "title": "Delkhan",
     "group": "npc",
     "visibility": "hidden",
@@ -7050,8 +7050,8 @@
     "imageSrc": null,
     "sortOrder": 159
   },
-  "demetrio": {
-    "id": "demetrio",
+  "npc-demetrio": {
+    "id": "npc-demetrio",
     "title": "Demetrio",
     "group": "npc",
     "visibility": "hidden",
@@ -7059,8 +7059,8 @@
     "imageSrc": null,
     "sortOrder": 160
   },
-  "don-jose": {
-    "id": "don-jose",
+  "npc-don-jose": {
+    "id": "npc-don-jose",
     "title": "Don José",
     "group": "npc",
     "visibility": "hidden",
@@ -7068,8 +7068,8 @@
     "imageSrc": null,
     "sortOrder": 161
   },
-  "donatella-versace": {
-    "id": "donatella-versace",
+  "npc-donatella-versace": {
+    "id": "npc-donatella-versace",
     "title": "Donatella Versace",
     "group": "npc",
     "visibility": "hidden",
@@ -7077,8 +7077,8 @@
     "imageSrc": null,
     "sortOrder": 162
   },
-  "dorian": {
-    "id": "dorian",
+  "npc-dorian": {
+    "id": "npc-dorian",
     "title": "Dorian",
     "group": "npc",
     "visibility": "hidden",
@@ -7086,8 +7086,8 @@
     "imageSrc": null,
     "sortOrder": 163
   },
-  "emi": {
-    "id": "emi",
+  "npc-emi": {
+    "id": "npc-emi",
     "title": "Emi",
     "group": "npc",
     "visibility": "hidden",
@@ -7095,8 +7095,8 @@
     "imageSrc": null,
     "sortOrder": 164
   },
-  "eunbi": {
-    "id": "eunbi",
+  "solo-eunbi": {
+    "id": "solo-eunbi",
     "title": "Eunbi",
     "group": "npc",
     "visibility": "hidden",
@@ -7104,8 +7104,8 @@
     "imageSrc": null,
     "sortOrder": 165
   },
-  "eunha": {
-    "id": "eunha",
+  "viviz-eunha": {
+    "id": "viviz-eunha",
     "title": "Eunha",
     "group": "npc",
     "visibility": "hidden",
@@ -7113,8 +7113,8 @@
     "imageSrc": null,
     "sortOrder": 166
   },
-  "eunseok": {
-    "id": "eunseok",
+  "riize-eunseok": {
+    "id": "riize-eunseok",
     "title": "Eunseok",
     "group": "npc",
     "visibility": "hidden",
@@ -7131,8 +7131,8 @@
     "dynamic": "alpha",
     "role": "NPC"
   },
-  "evan": {
-    "id": "evan",
+  "npc-evan": {
+    "id": "npc-evan",
     "title": "Evan",
     "group": "npc",
     "visibility": "hidden",
@@ -7140,8 +7140,8 @@
     "imageSrc": null,
     "sortOrder": 168
   },
-  "felixia": {
-    "id": "felixia",
+  "npc-felixia": {
+    "id": "npc-felixia",
     "title": "Felixia",
     "group": "npc",
     "visibility": "hidden",
@@ -7149,8 +7149,8 @@
     "imageSrc": null,
     "sortOrder": 169
   },
-  "g-dragon": {
-    "id": "g-dragon",
+  "bigbang-g-dragon": {
+    "id": "bigbang-g-dragon",
     "title": "G-Dragon",
     "group": "npc",
     "visibility": "hidden",
@@ -7158,8 +7158,8 @@
     "imageSrc": null,
     "sortOrder": 170
   },
-  "gabri": {
-    "id": "gabri",
+  "npc-gabri": {
+    "id": "npc-gabri",
     "title": "Gabri",
     "group": "npc",
     "visibility": "hidden",
@@ -7167,8 +7167,8 @@
     "imageSrc": null,
     "sortOrder": 171
   },
-  "hangyeom": {
-    "id": "hangyeom",
+  "omega-x-hangyeom": {
+    "id": "omega-x-hangyeom",
     "title": "Hangyeom",
     "group": "npc",
     "visibility": "hidden",
@@ -7176,8 +7176,8 @@
     "imageSrc": null,
     "sortOrder": 172
   },
-  "hanjun": {
-    "id": "hanjun",
+  "npc-hanjun": {
+    "id": "npc-hanjun",
     "title": "Hanjun",
     "group": "npc",
     "visibility": "hidden",
@@ -7185,8 +7185,8 @@
     "imageSrc": null,
     "sortOrder": 173
   },
-  "heechul": {
-    "id": "heechul",
+  "sj-heechul": {
+    "id": "sj-heechul",
     "title": "Heechul",
     "group": "npc",
     "visibility": "hidden",
@@ -7194,8 +7194,8 @@
     "imageSrc": null,
     "sortOrder": 174
   },
-  "hilario": {
-    "id": "hilario",
+  "npc-hilario": {
+    "id": "npc-hilario",
     "title": "Hilario",
     "group": "npc",
     "visibility": "hidden",
@@ -7203,8 +7203,8 @@
     "imageSrc": null,
     "sortOrder": 175
   },
-  "honda": {
-    "id": "honda",
+  "npc-honda": {
+    "id": "npc-honda",
     "title": "Honda",
     "group": "npc",
     "visibility": "hidden",
@@ -7212,8 +7212,8 @@
     "imageSrc": null,
     "sortOrder": 176
   },
-  "hueningkai": {
-    "id": "hueningkai",
+  "txt-hueningkai": {
+    "id": "txt-hueningkai",
     "title": "Hueningkai",
     "group": "npc",
     "visibility": "hidden",
@@ -7221,8 +7221,8 @@
     "imageSrc": null,
     "sortOrder": 177
   },
-  "hwang": {
-    "id": "hwang",
+  "npc-hwang": {
+    "id": "npc-hwang",
     "title": "Hwang",
     "group": "npc",
     "visibility": "hidden",
@@ -7230,8 +7230,8 @@
     "imageSrc": null,
     "sortOrder": 178
   },
-  "hwasa": {
-    "id": "hwasa",
+  "mamamoo-hwasa": {
+    "id": "mamamoo-hwasa",
     "title": "Hwasa",
     "group": "npc",
     "visibility": "hidden",
@@ -7239,8 +7239,8 @@
     "imageSrc": null,
     "sortOrder": 179
   },
-  "hwichan": {
-    "id": "hwichan",
+  "omega-x-hwichan": {
+    "id": "omega-x-hwichan",
     "title": "Hwichan",
     "group": "npc",
     "visibility": "hidden",
@@ -7248,8 +7248,8 @@
     "imageSrc": null,
     "sortOrder": 180
   },
-  "hyein": {
-    "id": "hyein",
+  "njz-hyein": {
+    "id": "njz-hyein",
     "title": "Hyein",
     "group": "npc",
     "visibility": "hidden",
@@ -7280,8 +7280,8 @@
     ],
     "role": "NPC"
   },
-  "jackson-wang": {
-    "id": "jackson-wang",
+  "got7-jackson": {
+    "id": "got7-jackson",
     "title": "Jackson Wang",
     "group": "npc",
     "visibility": "hidden",
@@ -7289,8 +7289,8 @@
     "imageSrc": null,
     "sortOrder": 183
   },
-  "jacob": {
-    "id": "jacob",
+  "npc-jacob": {
+    "id": "npc-jacob",
     "title": "Jacob",
     "group": "npc",
     "visibility": "hidden",
@@ -7298,8 +7298,8 @@
     "imageSrc": null,
     "sortOrder": 184
   },
-  "jaehan": {
-    "id": "jaehan",
+  "omega-x-jaehan": {
+    "id": "omega-x-jaehan",
     "title": "Jaehan",
     "group": "npc",
     "visibility": "hidden",
@@ -7307,8 +7307,8 @@
     "imageSrc": null,
     "sortOrder": 185
   },
-  "jeongyeon": {
-    "id": "jeongyeon",
+  "twice-jeongyeon": {
+    "id": "twice-jeongyeon",
     "title": "Jeongyeon",
     "group": "npc",
     "visibility": "hidden",
@@ -7316,8 +7316,8 @@
     "imageSrc": null,
     "sortOrder": 186
   },
-  "jeronimo": {
-    "id": "jeronimo",
+  "npc-jeronimo": {
+    "id": "npc-jeronimo",
     "title": "Jerónimo",
     "group": "npc",
     "visibility": "hidden",
@@ -7325,8 +7325,8 @@
     "imageSrc": null,
     "sortOrder": 187
   },
-  "jiho": {
-    "id": "jiho",
+  "ampersone-jiho": {
+    "id": "ampersone-jiho",
     "title": "Jiho",
     "group": "npc",
     "visibility": "hidden",
@@ -7334,8 +7334,8 @@
     "imageSrc": null,
     "sortOrder": 188
   },
-  "juanga": {
-    "id": "juanga",
+  "npc-juanga": {
+    "id": "npc-juanga",
     "title": "Juanga",
     "group": "npc",
     "visibility": "hidden",
@@ -7343,8 +7343,8 @@
     "imageSrc": null,
     "sortOrder": 189
   },
-  "junho": {
-    "id": "junho",
+  "npc-junho": {
+    "id": "npc-junho",
     "title": "Junho",
     "group": "npc",
     "visibility": "hidden",
@@ -7352,8 +7352,8 @@
     "imageSrc": null,
     "sortOrder": 190
   },
-  "kar-niss": {
-    "id": "kar-niss",
+  "bg3-kar-niss": {
+    "id": "bg3-kar-niss",
     "title": "Kar'niss",
     "group": "npc",
     "visibility": "hidden",
@@ -7361,8 +7361,8 @@
     "imageSrc": null,
     "sortOrder": 191
   },
-  "kim-soohyun": {
-    "id": "kim-soohyun",
+  "actor-kim-soohyun": {
+    "id": "actor-kim-soohyun",
     "title": "Kim Soohyun",
     "group": "npc",
     "visibility": "hidden",
@@ -7370,8 +7370,8 @@
     "imageSrc": null,
     "sortOrder": 192
   },
-  "kunno": {
-    "id": "kunno",
+  "npc-kunno": {
+    "id": "npc-kunno",
     "title": "Kunno",
     "group": "npc",
     "visibility": "hidden",
@@ -7379,8 +7379,8 @@
     "imageSrc": null,
     "sortOrder": 193
   },
-  "kyuhyun": {
-    "id": "kyuhyun",
+  "sj-kyuhyun": {
+    "id": "sj-kyuhyun",
     "title": "Kyuhyun",
     "group": "npc",
     "visibility": "hidden",
@@ -7388,8 +7388,8 @@
     "imageSrc": null,
     "sortOrder": 194
   },
-  "lady-isuna": {
-    "id": "lady-isuna",
+  "npc-lady-isuna": {
+    "id": "npc-lady-isuna",
     "title": "Lady Isuna",
     "group": "npc",
     "visibility": "hidden",
@@ -7397,8 +7397,8 @@
     "imageSrc": null,
     "sortOrder": 195
   },
-  "lady-myeonghwa": {
-    "id": "lady-myeonghwa",
+  "npc-lady-myeonghwa": {
+    "id": "npc-lady-myeonghwa",
     "title": "Lady Myeonghwa",
     "group": "npc",
     "visibility": "hidden",
@@ -7406,8 +7406,8 @@
     "imageSrc": null,
     "sortOrder": 196
   },
-  "leliana": {
-    "id": "leliana",
+  "npc-leliana": {
+    "id": "npc-leliana",
     "title": "Leliana",
     "group": "npc",
     "visibility": "hidden",
@@ -7415,8 +7415,8 @@
     "imageSrc": null,
     "sortOrder": 197
   },
-  "lesath": {
-    "id": "lesath",
+  "npc-lesath": {
+    "id": "npc-lesath",
     "title": "Lesath",
     "group": "npc",
     "visibility": "hidden",
@@ -7424,8 +7424,8 @@
     "imageSrc": null,
     "sortOrder": 198
   },
-  "lin-dareum": {
-    "id": "lin-dareum",
+  "npc-lin-dareum": {
+    "id": "npc-lin-dareum",
     "title": "Lin Dareum",
     "group": "npc",
     "visibility": "hidden",
@@ -7433,8 +7433,8 @@
     "imageSrc": null,
     "sortOrder": 199
   },
-  "logan": {
-    "id": "logan",
+  "npc-logan": {
+    "id": "npc-logan",
     "title": "Logan",
     "group": "npc",
     "visibility": "hidden",
@@ -7442,8 +7442,8 @@
     "imageSrc": null,
     "sortOrder": 200
   },
-  "lumira": {
-    "id": "lumira",
+  "npc-lumira": {
+    "id": "npc-lumira",
     "title": "Lumira",
     "group": "npc",
     "visibility": "hidden",
@@ -7451,8 +7451,8 @@
     "imageSrc": null,
     "sortOrder": 201
   },
-  "lupin": {
-    "id": "lupin",
+  "npc-lupin": {
+    "id": "npc-lupin",
     "title": "Lupin",
     "group": "npc",
     "visibility": "hidden",
@@ -7460,8 +7460,8 @@
     "imageSrc": null,
     "sortOrder": 202
   },
-  "mario": {
-    "id": "mario",
+  "npc-mario": {
+    "id": "npc-mario",
     "title": "Mario",
     "group": "npc",
     "visibility": "hidden",
@@ -7469,8 +7469,8 @@
     "imageSrc": null,
     "sortOrder": 203
   },
-  "matsuda": {
-    "id": "matsuda",
+  "npc-matsuda": {
+    "id": "npc-matsuda",
     "title": "Matsuda",
     "group": "npc",
     "visibility": "hidden",
@@ -7478,8 +7478,8 @@
     "imageSrc": null,
     "sortOrder": 204
   },
-  "mephisto": {
-    "id": "mephisto",
+  "npc-mephisto": {
+    "id": "npc-mephisto",
     "title": "Mephisto",
     "group": "npc",
     "visibility": "hidden",
@@ -7487,8 +7487,8 @@
     "imageSrc": null,
     "sortOrder": 205
   },
-  "mina": {
-    "id": "mina",
+  "twice-mina": {
+    "id": "twice-mina",
     "title": "Mina",
     "group": "npc",
     "visibility": "hidden",
@@ -7496,8 +7496,8 @@
     "imageSrc": null,
     "sortOrder": 206
   },
-  "ming-yua": {
-    "id": "ming-yua",
+  "npc-ming-yua": {
+    "id": "npc-ming-yua",
     "title": "Ming Yua",
     "group": "npc",
     "visibility": "hidden",
@@ -7505,8 +7505,8 @@
     "imageSrc": null,
     "sortOrder": 207
   },
-  "misa": {
-    "id": "misa",
+  "npc-misa": {
+    "id": "npc-misa",
     "title": "Misa",
     "group": "npc",
     "visibility": "hidden",
@@ -7514,8 +7514,8 @@
     "imageSrc": null,
     "sortOrder": 208
   },
-  "mitsubishi": {
-    "id": "mitsubishi",
+  "npc-mitsubishi": {
+    "id": "npc-mitsubishi",
     "title": "Mitsubishi",
     "group": "npc",
     "visibility": "hidden",
@@ -7523,8 +7523,8 @@
     "imageSrc": null,
     "sortOrder": 209
   },
-  "moai": {
-    "id": "moai",
+  "npc-moai": {
+    "id": "npc-moai",
     "title": "Moai",
     "group": "npc",
     "visibility": "hidden",
@@ -7532,8 +7532,8 @@
     "imageSrc": null,
     "sortOrder": 210
   },
-  "mr-fenghuang": {
-    "id": "mr-fenghuang",
+  "enemy-haneul": {
+    "id": "enemy-haneul",
     "title": "Mr. Fenghuang",
     "group": "npc",
     "visibility": "hidden",
@@ -7541,8 +7541,8 @@
     "imageSrc": null,
     "sortOrder": 211
   },
-  "mr-wu": {
-    "id": "mr-wu",
+  "enemy-kris": {
+    "id": "enemy-kris",
     "title": "Mr. Wu",
     "group": "npc",
     "visibility": "hidden",
@@ -7550,8 +7550,8 @@
     "imageSrc": null,
     "sortOrder": 212
   },
-  "neorayita": {
-    "id": "neorayita",
+  "npc-neorayita": {
+    "id": "npc-neorayita",
     "title": "Neorayita",
     "group": "npc",
     "visibility": "hidden",
@@ -7559,8 +7559,8 @@
     "imageSrc": null,
     "sortOrder": 213
   },
-  "omar": {
-    "id": "omar",
+  "npc-omar": {
+    "id": "npc-omar",
     "title": "Omar",
     "group": "npc",
     "visibility": "hidden",
@@ -7568,8 +7568,8 @@
     "imageSrc": null,
     "sortOrder": 214
   },
-  "qin-shen-yu": {
-    "id": "qin-shen-yu",
+  "os-qin-shen-yu": {
+    "id": "os-qin-shen-yu",
     "title": "Qín Shen Yù",
     "group": "party",
     "visibility": "public",
@@ -7583,8 +7583,8 @@
     "dynamic": "beta",
     "role": "Player"
   },
-  "ren": {
-    "id": "ren",
+  "npc-ren": {
+    "id": "npc-ren",
     "title": "Ren",
     "group": "npc",
     "visibility": "hidden",
@@ -7592,8 +7592,8 @@
     "imageSrc": null,
     "sortOrder": 216
   },
-  "ricky": {
-    "id": "ricky",
+  "zb1-ricky": {
+    "id": "zb1-ricky",
     "title": "Ricky",
     "group": "npc",
     "visibility": "hidden",
@@ -7601,8 +7601,8 @@
     "imageSrc": null,
     "sortOrder": 217
   },
-  "rio": {
-    "id": "rio",
+  "npc-rio": {
+    "id": "npc-rio",
     "title": "Rio",
     "group": "npc",
     "visibility": "hidden",
@@ -7610,8 +7610,8 @@
     "imageSrc": null,
     "sortOrder": 218
   },
-  "rogelio": {
-    "id": "rogelio",
+  "npc-rogelio": {
+    "id": "npc-rogelio",
     "title": "Rogelio",
     "group": "npc",
     "visibility": "hidden",
@@ -7619,8 +7619,8 @@
     "imageSrc": null,
     "sortOrder": 219
   },
-  "sae-jong": {
-    "id": "sae-jong",
+  "npc-sae-jong": {
+    "id": "npc-sae-jong",
     "title": "Sae Jong",
     "group": "npc",
     "visibility": "hidden",
@@ -7628,8 +7628,8 @@
     "imageSrc": null,
     "sortOrder": 220
   },
-  "salim": {
-    "id": "salim",
+  "npc-salim": {
+    "id": "npc-salim",
     "title": "Salim",
     "group": "npc",
     "visibility": "hidden",
@@ -7637,8 +7637,8 @@
     "imageSrc": null,
     "sortOrder": 221
   },
-  "sario": {
-    "id": "sario",
+  "npc-sario": {
+    "id": "npc-sario",
     "title": "Sario",
     "group": "npc",
     "visibility": "hidden",
@@ -7646,8 +7646,8 @@
     "imageSrc": null,
     "sortOrder": 222
   },
-  "scrompy-lee": {
-    "id": "scrompy-lee",
+  "npc-scrompy-lee": {
+    "id": "npc-scrompy-lee",
     "title": "Scrompy Lee",
     "group": "npc",
     "visibility": "hidden",
@@ -7655,8 +7655,8 @@
     "imageSrc": null,
     "sortOrder": 223
   },
-  "sebas": {
-    "id": "sebas",
+  "npc-sebas": {
+    "id": "npc-sebas",
     "title": "Sebas",
     "group": "npc",
     "visibility": "hidden",
@@ -7687,8 +7687,8 @@
     ],
     "role": "NPC"
   },
-  "seulgi": {
-    "id": "seulgi",
+  "rv-seulgi": {
+    "id": "rv-seulgi",
     "title": "Seulgi",
     "group": "npc",
     "visibility": "hidden",
@@ -7696,8 +7696,8 @@
     "imageSrc": null,
     "sortOrder": 226
   },
-  "seunghan": {
-    "id": "seunghan",
+  "xnghan-seunghan": {
+    "id": "xnghan-seunghan",
     "title": "Seunghan",
     "group": "npc",
     "visibility": "hidden",
@@ -7705,8 +7705,8 @@
     "imageSrc": null,
     "sortOrder": 227
   },
-  "shadowheart": {
-    "id": "shadowheart",
+  "bg3-shadowheart": {
+    "id": "bg3-shadowheart",
     "title": "Shadowheart",
     "group": "npc",
     "visibility": "hidden",
@@ -7714,8 +7714,8 @@
     "imageSrc": null,
     "sortOrder": 228
   },
-  "shindong": {
-    "id": "shindong",
+  "sj-shindong": {
+    "id": "sj-shindong",
     "title": "Shindong",
     "group": "npc",
     "visibility": "hidden",
@@ -7723,8 +7723,8 @@
     "imageSrc": null,
     "sortOrder": 229
   },
-  "shotaro": {
-    "id": "shotaro",
+  "riize-shotaro": {
+    "id": "riize-shotaro",
     "title": "Shotaro",
     "group": "npc",
     "visibility": "hidden",
@@ -7764,8 +7764,8 @@
     ],
     "role": "NPC"
   },
-  "sinb": {
-    "id": "sinb",
+  "viviz-sinb": {
+    "id": "viviz-sinb",
     "title": "SinB",
     "group": "npc",
     "visibility": "hidden",
@@ -7773,8 +7773,8 @@
     "imageSrc": null,
     "sortOrder": 232
   },
-  "sir-baekjin": {
-    "id": "sir-baekjin",
+  "npc-sir-baekjin": {
+    "id": "npc-sir-baekjin",
     "title": "Sir Baekjin",
     "group": "npc",
     "visibility": "hidden",
@@ -7782,8 +7782,8 @@
     "imageSrc": null,
     "sortOrder": 233
   },
-  "siwon": {
-    "id": "siwon",
+  "sj-siwon": {
+    "id": "sj-siwon",
     "title": "Siwon",
     "group": "npc",
     "visibility": "hidden",
@@ -7791,8 +7791,8 @@
     "imageSrc": null,
     "sortOrder": 234
   },
-  "sohee": {
-    "id": "sohee",
+  "riize-sohee": {
+    "id": "riize-sohee",
     "title": "Sohee",
     "group": "npc",
     "visibility": "hidden",
@@ -7809,8 +7809,8 @@
     "dynamic": "omega",
     "role": "NPC"
   },
-  "subaru": {
-    "id": "subaru",
+  "npc-subaru": {
+    "id": "npc-subaru",
     "title": "Subaru",
     "group": "npc",
     "visibility": "hidden",
@@ -7818,8 +7818,8 @@
     "imageSrc": null,
     "sortOrder": 236
   },
-  "sungchan": {
-    "id": "sungchan",
+  "riize-sungchan": {
+    "id": "riize-sungchan",
     "title": "Sungchan",
     "group": "npc",
     "visibility": "hidden",
@@ -7836,8 +7836,8 @@
     "dynamic": "alpha",
     "role": "NPC"
   },
-  "suzuki": {
-    "id": "suzuki",
+  "npc-suzuki": {
+    "id": "npc-suzuki",
     "title": "Suzuki",
     "group": "npc",
     "visibility": "hidden",
@@ -7845,8 +7845,8 @@
     "imageSrc": null,
     "sortOrder": 238
   },
-  "taehyun": {
-    "id": "taehyun",
+  "txt-taehyun": {
+    "id": "txt-taehyun",
     "title": "Taehyun",
     "group": "npc",
     "visibility": "hidden",
@@ -7854,8 +7854,8 @@
     "imageSrc": null,
     "sortOrder": 239
   },
-  "taeil": {
-    "id": "taeil",
+  "nct-taeil": {
+    "id": "nct-taeil",
     "title": "Taeil",
     "group": "npc",
     "visibility": "hidden",
@@ -7863,8 +7863,8 @@
     "imageSrc": null,
     "sortOrder": 240
   },
-  "tencha": {
-    "id": "tencha",
+  "npc-tencha": {
+    "id": "npc-tencha",
     "title": "Tencha",
     "group": "npc",
     "visibility": "hidden",
@@ -7872,8 +7872,8 @@
     "imageSrc": null,
     "sortOrder": 241
   },
-  "tere": {
-    "id": "tere",
+  "npc-tere": {
+    "id": "npc-tere",
     "title": "Tere",
     "group": "npc",
     "visibility": "hidden",
@@ -7881,8 +7881,8 @@
     "imageSrc": null,
     "sortOrder": 242
   },
-  "umji": {
-    "id": "umji",
+  "viviz-umji": {
+    "id": "viviz-umji",
     "title": "Umji",
     "group": "npc",
     "visibility": "hidden",
@@ -7890,8 +7890,8 @@
     "imageSrc": null,
     "sortOrder": 243
   },
-  "uzari": {
-    "id": "uzari",
+  "npc-uzari": {
+    "id": "npc-uzari",
     "title": "Uzari",
     "group": "npc",
     "visibility": "hidden",
@@ -7899,8 +7899,8 @@
     "imageSrc": null,
     "sortOrder": 244
   },
-  "valko": {
-    "id": "valko",
+  "npc-valko": {
+    "id": "npc-valko",
     "title": "Valko",
     "group": "npc",
     "visibility": "hidden",
@@ -7908,8 +7908,8 @@
     "imageSrc": null,
     "sortOrder": 245
   },
-  "wonbin": {
-    "id": "wonbin",
+  "riize-wonbin": {
+    "id": "riize-wonbin",
     "title": "Wonbin",
     "group": "npc",
     "visibility": "hidden",
@@ -7949,8 +7949,8 @@
     ],
     "role": "NPC"
   },
-  "xiantao-klau": {
-    "id": "xiantao-klau",
+  "npc-xiantao-klau": {
+    "id": "npc-xiantao-klau",
     "title": "XianTao Klau",
     "group": "npc",
     "visibility": "hidden",
@@ -7958,8 +7958,8 @@
     "imageSrc": null,
     "sortOrder": 248
   },
-  "xue-long": {
-    "id": "xue-long",
+  "npc-xue-long": {
+    "id": "npc-xue-long",
     "title": "Xue Long",
     "group": "npc",
     "visibility": "hidden",
@@ -7967,8 +7967,8 @@
     "imageSrc": null,
     "sortOrder": 249
   },
-  "yechan": {
-    "id": "yechan",
+  "omega-x-yechan": {
+    "id": "omega-x-yechan",
     "title": "Yechan",
     "group": "npc",
     "visibility": "hidden",
@@ -7976,8 +7976,8 @@
     "imageSrc": null,
     "sortOrder": 250
   },
-  "yeonjun": {
-    "id": "yeonjun",
+  "txt-yeonjun": {
+    "id": "txt-yeonjun",
     "title": "Yeonjun",
     "group": "npc",
     "visibility": "hidden",
@@ -7985,8 +7985,8 @@
     "imageSrc": null,
     "sortOrder": 251
   },
-  "yeontan": {
-    "id": "yeontan",
+  "pet-yeontan": {
+    "id": "pet-yeontan",
     "title": "Yeontan",
     "group": "npc",
     "visibility": "hidden",
@@ -8017,8 +8017,8 @@
     ],
     "role": "NPC"
   },
-  "yorihiko": {
-    "id": "yorihiko",
+  "npc-yorihiko": {
+    "id": "npc-yorihiko",
     "title": "Yorihiko",
     "group": "npc",
     "visibility": "hidden",
@@ -8026,8 +8026,8 @@
     "imageSrc": null,
     "sortOrder": 254
   },
-  "youngok": {
-    "id": "youngok",
+  "npc-youngok": {
+    "id": "npc-youngok",
     "title": "Youngok",
     "group": "npc",
     "visibility": "hidden",
@@ -8035,8 +8035,8 @@
     "imageSrc": null,
     "sortOrder": 255
   },
-  "yui": {
-    "id": "yui",
+  "npc-yui": {
+    "id": "npc-yui",
     "title": "Yui",
     "group": "npc",
     "visibility": "hidden",

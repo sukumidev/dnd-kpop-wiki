@@ -1896,9 +1896,7 @@
     ],
     "sessionStartedId": null,
     "lastUpdatedSessionId": null,
-    "factionIds": [
-      
-    ],
+    "factionIds": [],
     "rewards": [
       "Recuperación de cartas activas de la Baraja",
       "Información sobre el mercado o circulación de cartas robadas",

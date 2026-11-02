@@ -5,6 +5,14 @@ import type * as Preset from '@docusaurus/preset-classic';
 const siteUrl = process.env.SITE_URL ?? 'http://localhost:3000';
 const siteBaseUrl = process.env.BASE_URL ?? '/';
 
+// Keep bookmarks to character pages working after ID normalization.
+const characterIdRedirects = Object.entries(
+  require('./scripts/character-id-mapping.json') as Record<string, string>,
+).map(([oldId, newId]) => {
+  const group = oldId === 'qin-shen-yu' ? 'party' : 'npc';
+  return { from: `/characters/${group}/${oldId}`, to: `/characters/${group}/${newId}` };
+});
+
 const config: Config = {
   title: 'Hallyura Wiki',
   tagline: 'Wiki del universo de Hallyura',
@@ -43,6 +51,7 @@ const config: Config = {
   plugins: [
     ['@docusaurus/plugin-client-redirects', {
       redirects: [
+        ...characterIdRedirects,
         {from: '/factions/los-diecisiete-heroes', to: '/factions/svt'},
         {from: '/factions/neo-culturales-tecnologicos', to: '/factions/nct'},
         {from: '/factions/lobos-perdidos', to: '/factions/skz'},
