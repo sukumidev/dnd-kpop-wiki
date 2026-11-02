@@ -26,6 +26,7 @@
     "gen:documents": "tsx scripts/generate-document-pages.ts --clean",
     "migrate:documents:mdx": "tsx scripts/migrate-document-content-to-mdx.ts",
     "test": "tsx --test tests/document-mdx.test.ts",
+    "test:character-ids": "tsx --test tests/character-id-normalization.test.ts",
     "validate:data": "tsx scripts/validate-data.ts",
     "images:webp": "node scripts/convert-images-to-webp.mjs"
   },
