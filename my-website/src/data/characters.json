@@ -6795,7 +6795,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/solo/solo-ado.webp",
     "sortOrder": 132
   },
   "riize-anton": {
@@ -6804,7 +6804,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "active",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/riize/riize-anton.webp",
     "sortOrder": 133,
     "subtitle": "El eco de las nuevas eras",
     "dateOfBirth": "2004-03-21",
@@ -6822,7 +6822,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-ario.webp",
     "sortOrder": 134
   },
   "npc-arturo": {
@@ -6831,7 +6831,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-arturo.webp",
     "sortOrder": 135
   },
   "npc-arven": {
@@ -6840,7 +6840,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-arven.webp",
     "sortOrder": 136
   },
   "nu-est-baekho": {
@@ -6849,7 +6849,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/nu-est/nu-est-baekho.webp",
     "sortOrder": 137
   },
   "kep1er-bahiyyih": {
@@ -6858,7 +6858,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/kep1er/kep1er-bahiyyih.webp",
     "sortOrder": 138
   },
   "npc-benny": {
@@ -6867,7 +6867,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-benny.webp",
     "sortOrder": 139
   },
   "txt-beomgyu": {
@@ -6876,7 +6876,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/txt/txt-beomgyu.webp",
     "sortOrder": 140
   },
   "npc-biagi": {
@@ -6885,7 +6885,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-biagi.webp",
     "sortOrder": 141
   },
   "npc-brandom-lee": {
@@ -6894,7 +6894,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-brandom-lee.webp",
     "sortOrder": 142
   },
   "ampersone-brian": {
@@ -6903,7 +6903,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/ampersone/ampersone-brian.webp",
     "sortOrder": 143
   },
   "npc-bruno": {
@@ -6912,7 +6912,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-bruno.webp",
     "sortOrder": 144
   },
   "actor-byeon-wooseok": {
@@ -6921,7 +6921,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/actors/actor-byeon-wooseok.webp",
     "sortOrder": 145
   },
   "npc-camerino": {
@@ -6948,7 +6948,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-capitana-lim.webp",
     "sortOrder": 148
   },
   "npc-capitana-merry": {
@@ -6957,7 +6957,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-capitana-merry.webp",
     "sortOrder": 149
   },
   "npc-carlos": {
@@ -6966,7 +6966,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-carlos.webp",
     "sortOrder": 150
   },
   "npc-castro": {
@@ -6975,7 +6975,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-castro.webp",
     "sortOrder": 151
   },
   "npc-chayanne": {
@@ -6984,7 +6984,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-chayanne.webp",
     "sortOrder": 152
   },
   "txt-soobin": {
@@ -7002,7 +7002,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-church.webp",
     "sortOrder": 154
   },
   "npc-cristian": {
@@ -7011,7 +7011,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-cristian.webp",
     "sortOrder": 155
   },
   "npc-dj-tony-mix": {
@@ -7020,7 +7020,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-dj-tony-mix.webp",
     "sortOrder": 156
   },
   "twice-dahyun": {
@@ -7029,7 +7029,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/twice/twice-dahyun.webp",
     "sortOrder": 157
   },
   "npc-dal": {
@@ -7038,7 +7038,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-dal.webp",
     "sortOrder": 158
   },
   "npc-delkhan": {
@@ -7047,7 +7047,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-delkhan.webp",
     "sortOrder": 159
   },
   "npc-demetrio": {
@@ -7065,7 +7065,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-don-jose.webp",
     "sortOrder": 161
   },
   "npc-donatella-versace": {
@@ -7074,7 +7074,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-donatella-versace.webp",
     "sortOrder": 162
   },
   "npc-dorian": {
@@ -7083,7 +7083,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-dorian.webp",
     "sortOrder": 163
   },
   "npc-emi": {
@@ -7092,7 +7092,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-emi.webp",
     "sortOrder": 164
   },
   "solo-eunbi": {
@@ -7101,7 +7101,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/solo/solo-eunbi.webp",
     "sortOrder": 165
   },
   "viviz-eunha": {
@@ -7110,7 +7110,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/viviz/viviz-eunha.webp",
     "sortOrder": 166
   },
   "riize-eunseok": {
@@ -7119,7 +7119,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "active",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/riize/riize-eunseok.webp",
     "sortOrder": 167,
     "subtitle": "El escudo de los ascendentes",
     "dateOfBirth": "2001-03-19",
@@ -7137,7 +7137,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-evan.webp",
     "sortOrder": 168
   },
   "npc-felixia": {
@@ -7146,7 +7146,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-felixia.webp",
     "sortOrder": 169
   },
   "bigbang-g-dragon": {
@@ -7155,7 +7155,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/bigbang/bigbang-g-dragon.webp",
     "sortOrder": 170
   },
   "npc-gabri": {
@@ -7164,7 +7164,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-gabri.webp",
     "sortOrder": 171
   },
   "omega-x-hangyeom": {
@@ -7173,7 +7173,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/omega-x/omega-x-hangyeom.webp",
     "sortOrder": 172
   },
   "npc-hanjun": {
@@ -7191,7 +7191,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/sj/sj-heechul.webp",
     "sortOrder": 174
   },
   "npc-hilario": {
@@ -7209,7 +7209,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-honda.webp",
     "sortOrder": 176
   },
   "txt-hueningkai": {
@@ -7236,7 +7236,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/mamamoo/mamamoo-hwasa.webp",
     "sortOrder": 179
   },
   "omega-x-hwichan": {
@@ -7245,7 +7245,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/omega-x/omega-x-hwichan.webp",
     "sortOrder": 180
   },
   "njz-hyein": {
@@ -7254,7 +7254,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/njz/njz-hyein.webp",
     "sortOrder": 181
   },
   "mx-hyungwon": {
@@ -7263,7 +7263,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "active",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/monsta-x/mx-hyungwon.webp",
     "sortOrder": 182,
     "dateOfBirth": "1494-01-15",
     "zodiac": "Capricornio ♑",
@@ -7286,7 +7286,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/got7/got7-jackson.webp",
     "sortOrder": 183
   },
   "npc-jacob": {
@@ -7295,7 +7295,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-jacob.webp",
     "sortOrder": 184
   },
   "omega-x-jaehan": {
@@ -7304,7 +7304,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/omega-x/omega-x-jaehan.webp",
     "sortOrder": 185
   },
   "twice-jeongyeon": {
@@ -7313,7 +7313,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/twice/twice-jeongyeon.webp",
     "sortOrder": 186
   },
   "npc-jeronimo": {
@@ -7322,7 +7322,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-jeronimo.webp",
     "sortOrder": 187
   },
   "ampersone-jiho": {
@@ -7331,7 +7331,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/ampersone/ampersone-jiho.webp",
     "sortOrder": 188
   },
   "npc-juanga": {
@@ -7340,7 +7340,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-juanga.webp",
     "sortOrder": 189
   },
   "npc-junho": {
@@ -7349,7 +7349,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-junho.webp",
     "sortOrder": 190
   },
   "bg3-kar-niss": {
@@ -7358,7 +7358,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/bg3/bg3-kar-niss.webp",
     "sortOrder": 191
   },
   "actor-kim-soohyun": {
@@ -7367,7 +7367,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/actors/actor-kim-soohyun.webp",
     "sortOrder": 192
   },
   "npc-kunno": {
@@ -7376,7 +7376,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-kunno.webp",
     "sortOrder": 193
   },
   "sj-kyuhyun": {
@@ -7385,7 +7385,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/sj/sj-kyuhyun.webp",
     "sortOrder": 194
   },
   "npc-lady-isuna": {
@@ -7403,7 +7403,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-lady-myeonghwa.webp",
     "sortOrder": 196
   },
   "npc-leliana": {
@@ -7412,7 +7412,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-leliana.webp",
     "sortOrder": 197
   },
   "npc-lesath": {
@@ -7421,7 +7421,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-lesath.webp",
     "sortOrder": 198
   },
   "npc-lin-dareum": {
@@ -7430,7 +7430,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-lin-dareum.webp",
     "sortOrder": 199
   },
   "npc-logan": {
@@ -7439,7 +7439,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-logan.webp",
     "sortOrder": 200
   },
   "npc-lumira": {
@@ -7448,7 +7448,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-lumira.webp",
     "sortOrder": 201
   },
   "npc-lupin": {
@@ -7457,7 +7457,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-lupin.webp",
     "sortOrder": 202
   },
   "npc-mario": {
@@ -7466,7 +7466,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-mario.webp",
     "sortOrder": 203
   },
   "npc-matsuda": {
@@ -7475,7 +7475,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-matsuda.webp",
     "sortOrder": 204
   },
   "npc-mephisto": {
@@ -7484,7 +7484,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-mephisto.webp",
     "sortOrder": 205
   },
   "twice-mina": {
@@ -7493,7 +7493,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/twice/twice-mina.webp",
     "sortOrder": 206
   },
   "npc-ming-yua": {
@@ -7502,7 +7502,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-ming-yua.webp",
     "sortOrder": 207
   },
   "npc-misa": {
@@ -7511,7 +7511,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-misa.webp",
     "sortOrder": 208
   },
   "npc-mitsubishi": {
@@ -7520,7 +7520,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-mitsubishi.webp",
     "sortOrder": 209
   },
   "npc-moai": {
@@ -7529,7 +7529,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-moai.webp",
     "sortOrder": 210
   },
   "enemy-haneul": {
@@ -7538,7 +7538,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/enemies/enemy-haneul.webp",
     "sortOrder": 211
   },
   "enemy-kris": {
@@ -7547,7 +7547,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/enemies/enemy-kris.webp",
     "sortOrder": 212
   },
   "npc-neorayita": {
@@ -7556,7 +7556,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-neorayita.webp",
     "sortOrder": 213
   },
   "npc-omar": {
@@ -7565,7 +7565,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-omar.webp",
     "sortOrder": 214
   },
   "os-qin-shen-yu": {
@@ -7589,7 +7589,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-ren.webp",
     "sortOrder": 216
   },
   "zb1-ricky": {
@@ -7598,7 +7598,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/zb1/zb1-ricky.webp",
     "sortOrder": 217
   },
   "npc-rio": {
@@ -7607,7 +7607,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-rio.webp",
     "sortOrder": 218
   },
   "npc-rogelio": {
@@ -7616,7 +7616,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-rogelio.webp",
     "sortOrder": 219
   },
   "npc-sae-jong": {
@@ -7625,7 +7625,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-sae-jong.webp",
     "sortOrder": 220
   },
   "npc-salim": {
@@ -7634,7 +7634,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-salim.webp",
     "sortOrder": 221
   },
   "npc-sario": {
@@ -7643,7 +7643,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-sario.webp",
     "sortOrder": 222
   },
   "npc-scrompy-lee": {
@@ -7652,7 +7652,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-scrompy-lee.webp",
     "sortOrder": 223
   },
   "npc-sebas": {
@@ -7661,7 +7661,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-sebas.webp",
     "sortOrder": 224
   },
   "ateez-seonghwa": {
@@ -7693,7 +7693,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/rv/rv-seulgi.webp",
     "sortOrder": 226
   },
   "xnghan-seunghan": {
@@ -7702,7 +7702,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/xnghan/xnghan-seunghan.webp",
     "sortOrder": 227
   },
   "bg3-shadowheart": {
@@ -7711,7 +7711,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/bg3/bg3-shadowheart.webp",
     "sortOrder": 228
   },
   "sj-shindong": {
@@ -7720,7 +7720,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/sj/sj-shindong.webp",
     "sortOrder": 229
   },
   "riize-shotaro": {
@@ -7729,7 +7729,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "active",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/riize/riize-shotaro.webp",
     "sortOrder": 230,
     "subtitle": "El paso del nuevo amanecer",
     "dateOfBirth": "2000-11-25",
@@ -7747,7 +7747,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "active",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/monsta-x/mx-shownu.webp",
     "sortOrder": 231,
     "dateOfBirth": "1492-06-18",
     "zodiac": "Géminis ♊",
@@ -7770,7 +7770,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/viviz/viviz-sinb.webp",
     "sortOrder": 232
   },
   "npc-sir-baekjin": {
@@ -7788,7 +7788,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/sj/sj-siwon.webp",
     "sortOrder": 234
   },
   "riize-sohee": {
@@ -7797,7 +7797,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "active",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/riize/riize-sohee.webp",
     "sortOrder": 235,
     "subtitle": "La voz que alza a los guerreros",
     "dateOfBirth": "2003-11-21",
@@ -7815,7 +7815,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-subaru.webp",
     "sortOrder": 236
   },
   "riize-sungchan": {
@@ -7824,7 +7824,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "active",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/riize/riize-sungchan.webp",
     "sortOrder": 237,
     "subtitle": "La lanza del ascenso",
     "dateOfBirth": "2001-09-13",
@@ -7842,7 +7842,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-suzuki.webp",
     "sortOrder": 238
   },
   "txt-taehyun": {
@@ -7860,7 +7860,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/nct/nct-taeil.webp",
     "sortOrder": 240
   },
   "npc-tencha": {
@@ -7878,7 +7878,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-tere.webp",
     "sortOrder": 242
   },
   "viviz-umji": {
@@ -7887,7 +7887,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/viviz/viviz-umji.webp",
     "sortOrder": 243
   },
   "npc-uzari": {
@@ -7896,7 +7896,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-uzari.webp",
     "sortOrder": 244
   },
   "npc-valko": {
@@ -7905,7 +7905,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-valko.webp",
     "sortOrder": 245
   },
   "riize-wonbin": {
@@ -7914,7 +7914,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "active",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/riize/riize-wonbin.webp",
     "sortOrder": 246,
     "subtitle": "El filo del nuevo reino",
     "dateOfBirth": "2002-03-02",
@@ -7955,7 +7955,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-xiantao-klau.webp",
     "sortOrder": 248
   },
   "npc-xue-long": {
@@ -7964,7 +7964,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-xue-long.webp",
     "sortOrder": 249
   },
   "omega-x-yechan": {
@@ -7973,7 +7973,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/omega-x/omega-x-yechan.webp",
     "sortOrder": 250
   },
   "txt-yeonjun": {
@@ -7991,7 +7991,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/pets/pet-yeontan.webp",
     "sortOrder": 252
   },
   "ateez-yeosang": {
@@ -8023,7 +8023,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-yorihiko.webp",
     "sortOrder": 254
   },
   "npc-youngok": {
@@ -8032,7 +8032,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-youngok.webp",
     "sortOrder": 255
   },
   "npc-yui": {
@@ -8041,7 +8041,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-yui.webp",
     "sortOrder": 256
   },
   "ateez-yunho": {
