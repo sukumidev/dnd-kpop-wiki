@@ -28,7 +28,12 @@
     "test": "tsx --test tests/document-mdx.test.ts tests/character-id-normalization.test.ts",
     "test:character-ids": "tsx --test tests/character-id-normalization.test.ts",
     "validate:data": "tsx scripts/validate-data.ts",
-    "images:webp": "node scripts/convert-images-to-webp.mjs"
+    "images:webp": "node scripts/convert-images-to-webp.mjs",
+    "images:paths:dry": "node scripts/migrate-image-paths-to-webp.mjs",
+    "images:paths:write": "node scripts/migrate-image-paths-to-webp.mjs --write",
+    "images:paths:check": "node scripts/migrate-image-paths-to-webp.mjs --check",
+    "images:migrate": "npm run images:webp && npm run images:paths:write",
+    "test:image-paths": "node --test tests/image-path-migration.test.mjs"
   },
   "dependencies": {
     "@docusaurus/core": "3.9.2",
