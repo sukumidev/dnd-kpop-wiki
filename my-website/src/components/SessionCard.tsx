@@ -53,6 +53,7 @@ export default function SessionCard({session}: Props) {
           <Heading as="h2" className={styles.title}>
             {session.title}
           </Heading>
+          {session.subtitle ? <p className={styles.subtitle}>{session.subtitle}</p> : null}
 
           <div className={styles.metadata}>
             <div className={styles.dates}>

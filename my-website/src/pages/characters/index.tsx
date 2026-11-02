@@ -12,6 +12,7 @@ import {
   sortByExplicitOrderThenTitle,
 } from "@site/src/utils/directoryOrdering";
 import styles from "./styles.module.css";
+import {getPublicFactionHref} from "@site/src/data/publicRoutes";
 
 import {
   visibleCharacterList,
@@ -37,6 +38,23 @@ type RealmSection = {
 };
 
 const NO_FACTION_GROUP_ID = "__no-faction__";
+
+function FactionCta({faction, label, stopPropagation = false}: {faction: Faction; label: string; stopPropagation?: boolean}) {
+  const {withBaseUrl} = useBaseUrlUtils();
+  const href = getPublicFactionHref(faction.id);
+  if (!href) return null;
+
+  return (
+    <Link
+      className={styles.sectionCta}
+      to={withBaseUrl(href)}
+      onClick={stopPropagation ? (event) => event.stopPropagation() : undefined}
+      onMouseDown={stopPropagation ? (event) => event.stopPropagation() : undefined}
+    >
+      {label} <span className={styles.arrow}>→</span>
+    </Link>
+  );
+}
 
 export default function CharactersPage() {
   const {withBaseUrl} = useBaseUrlUtils();
@@ -217,16 +235,7 @@ export default function CharactersPage() {
                   </Heading>
                 </div>
                 <div className={styles.sectionActions}>
-                  {featuredFaction ? (
-                    <Link
-                      className={styles.sectionCta}
-                      to={withBaseUrl(`/factions/${featuredFaction.id}`)}
-                      onClick={(event) => event.stopPropagation()}
-                      onMouseDown={(event) => event.stopPropagation()}
-                    >
-                      Ver party <span className={styles.arrow}>→</span>
-                    </Link>
-                  ) : null}
+                  <FactionCta faction={featuredFaction} label="Ver party" stopPropagation />
                   <span className={styles.chevron} aria-hidden="true" />
                 </div>
               </summary>
@@ -264,14 +273,7 @@ export default function CharactersPage() {
                             <span className={styles.count}>{group.characters.length}</span>
                           </Heading>
                         </div>
-                        {group.faction ? (
-                          <Link
-                            className={styles.sectionCta}
-                            to={withBaseUrl(`/factions/${group.faction.id}`)}
-                          >
-                            Ver facción <span className={styles.arrow}>→</span>
-                          </Link>
-                        ) : null}
+                        {group.faction ? <FactionCta faction={group.faction} label="Ver facción" /> : null}
                       </header>
                       {renderCharacterGrid(group.characters)}
                     </section>

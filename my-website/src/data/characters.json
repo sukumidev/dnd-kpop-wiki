@@ -6930,7 +6930,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-kobold.webp",
     "sortOrder": 146
   },
   "npc-camerino-jr": {
@@ -6939,7 +6939,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-kobold.webp",
     "sortOrder": 147
   },
   "npc-capitana-lim": {
@@ -6993,7 +6993,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/txt/txt-soobin.webp",
     "sortOrder": 153
   },
   "npc-church": {
@@ -7056,7 +7056,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-kobold.webp",
     "sortOrder": 160
   },
   "npc-don-jose": {
@@ -7182,7 +7182,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-hanjun.webp",
     "sortOrder": 173
   },
   "sj-heechul": {
@@ -7200,7 +7200,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-kobold.webp",
     "sortOrder": 175
   },
   "npc-honda": {
@@ -7218,7 +7218,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/txt/txt-hueningkai.webp",
     "sortOrder": 177
   },
   "npc-hwang": {
@@ -7227,7 +7227,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-kobold.webp",
     "sortOrder": 178
   },
   "mamamoo-hwasa": {
@@ -7394,7 +7394,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-isuna.webp",
     "sortOrder": 195
   },
   "npc-lady-myeonghwa": {
@@ -7779,7 +7779,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-baekjin.webp",
     "sortOrder": 233
   },
   "sj-siwon": {
@@ -7851,7 +7851,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/txt/txt-taehyun.webp",
     "sortOrder": 239
   },
   "nct-taeil": {
@@ -7869,7 +7869,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/npc/npc-kobold.webp",
     "sortOrder": 241
   },
   "npc-tere": {
@@ -7982,7 +7982,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": null,
+    "imageSrc": "/img/characters/txt/txt-yeonjun.webp",
     "sortOrder": 251
   },
   "pet-yeontan": {
@@ -8465,5 +8465,71 @@
     "regionId": "sylmorien",
     "factionId": "tvxq",
     "alignment": "Lawful Neutral"
+  },
+  "npc-laura": {
+    "id": "npc-laura",
+    "title": "Laura",
+    "group": "npc",
+    "visibility": "public",
+    "status": "unknown",
+    "summary": "Aparece durante la jornada de playa de la sesión 19."
+  },
+  "npc-yamal": {
+    "id": "npc-yamal",
+    "title": "Yamal",
+    "group": "npc",
+    "visibility": "public",
+    "status": "unknown",
+    "summary": "Aparece durante la jornada de playa de la sesión 19."
+  },
+  "npc-sixsevenaldo": {
+    "id": "npc-sixsevenaldo",
+    "title": "Sixsevenaldo",
+    "group": "npc",
+    "visibility": "public",
+    "status": "unknown",
+    "summary": "Aparece durante la jornada de playa de la sesión 19."
+  },
+  "npc-minji": {
+    "id": "npc-minji",
+    "title": "Minji",
+    "subtitle": "Hija de Yang Minjae y Joshua",
+    "group": "npc",
+    "visibility": "public",
+    "status": "active",
+    "summary": "Una de las gemelas de Minjae y Joshua, nacida durante la sesión 14."
+  },
+  "npc-minsoo": {
+    "id": "npc-minsoo",
+    "title": "Minsoo",
+    "subtitle": "Hija de Yang Minjae y Joshua",
+    "group": "npc",
+    "visibility": "public",
+    "status": "active",
+    "summary": "Una de las gemelas de Minjae y Joshua, nacida durante la sesión 14."
+  },
+  "npc-abu": {
+    "id": "npc-abu",
+    "title": "Abu",
+    "group": "npc",
+    "visibility": "public",
+    "status": "unknown",
+    "summary": "Aparece en la sesión 19."
+  },
+  "npc-apu": {
+    "id": "npc-apu",
+    "title": "Apu",
+    "group": "npc",
+    "visibility": "public",
+    "status": "unknown",
+    "summary": "Aparece en la sesión 19."
+  },
+  "npc-agu": {
+    "id": "npc-agu",
+    "title": "Agu",
+    "group": "npc",
+    "visibility": "public",
+    "status": "unknown",
+    "summary": "Aparece en la sesión 19."
   }
 }

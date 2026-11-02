@@ -76,6 +76,9 @@ const sidebars: SidebarsConfig = {
             'campaign/sessions/15',
             'campaign/sessions/16',
             'campaign/sessions/17',
+            'campaign/sessions/18',
+            'campaign/sessions/19',
+            'campaign/sessions/20',
           ],
         },
         {

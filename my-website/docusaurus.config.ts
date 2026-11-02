@@ -14,6 +14,21 @@ const characterIdRedirects = Object.entries(
   return { from: `/characters/${group}/${oldId}`, to: `/characters/${group}/${newId}` };
 });
 
+// Characters added on main while the normalization PR was in progress.
+const newCharacterIdRedirects = Object.entries({
+  laura: 'npc-laura',
+  yamal: 'npc-yamal',
+  sixsevenaldo: 'npc-sixsevenaldo',
+  'minji-gemela': 'npc-minji',
+  'minsoo-gemela': 'npc-minsoo',
+  abu: 'npc-abu',
+  apu: 'npc-apu',
+  agu: 'npc-agu',
+}).map(([oldId, newId]) => ({
+  from: `/characters/npc/${oldId}`,
+  to: `/characters/npc/${newId}`,
+}));
+
 const config: Config = {
   title: 'Hallyura Wiki',
   tagline: 'Wiki del universo de Hallyura',
@@ -25,7 +40,13 @@ const config: Config = {
   url: siteUrl,
   baseUrl: siteBaseUrl,
 
-  onBrokenLinks: 'warn',
+  onBrokenLinks: 'throw',
+  onBrokenAnchors: 'throw',
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'throw',
+    },
+  },
 
   i18n: {
     defaultLocale: 'es',
@@ -53,6 +74,7 @@ const config: Config = {
     ['@docusaurus/plugin-client-redirects', {
       redirects: [
         ...characterIdRedirects,
+        ...newCharacterIdRedirects,
         {from: '/factions/los-diecisiete-heroes', to: '/factions/svt'},
         {from: '/factions/neo-culturales-tecnologicos', to: '/factions/nct'},
         {from: '/factions/lobos-perdidos', to: '/factions/skz'},

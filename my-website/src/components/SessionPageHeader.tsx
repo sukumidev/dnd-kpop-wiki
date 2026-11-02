@@ -45,6 +45,7 @@ export default function SessionPageHeader({session}: Props) {
       <div className={styles.headingBlock}>
         <div className={styles.eyebrow}>{sessionLabel}</div>
         <Heading as="h1" className={styles.title}>{session.title}</Heading>
+        {session.subtitle ? <p className={styles.subtitle}>{session.subtitle}</p> : null}
       </div>
 
       <dl className={styles.infobox}>

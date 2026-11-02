@@ -6,6 +6,7 @@ export type Session = {
   id: string;
   number: number;
   title: string;
+  subtitle?: string;
 
   sessionDate?: string;
   campaignDate?: string;

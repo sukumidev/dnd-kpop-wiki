@@ -1,4 +1,5 @@
 import MDXComponents from "@theme-original/MDXComponents";
+import SessionCharacterGrid from "@site/src/components/SessionCharacterGrid";
 import {
   Callout,
   Divider,
@@ -14,4 +15,5 @@ export default {
   Spoiler,
   DocumentImage,
   Divider,
+  SessionCharacterGrid,
 };
