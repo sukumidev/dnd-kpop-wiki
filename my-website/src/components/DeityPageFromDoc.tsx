@@ -5,6 +5,7 @@ import CharacterSplitLayout from "@site/src/components/CharacterSplitLayout";
 import Infobox, {type Section} from "@site/src/components/Infobox";
 import {getMythicEntityById} from "@site/src/data/cosmology";
 import {getFactionById} from "@site/src/data/relationships";
+import {getPublicFactionHref} from "@site/src/data/publicRoutes";
 
 export default function DeityPageFromDoc({children}: {children: React.ReactNode}) {
   const doc = useDoc();
@@ -16,14 +17,17 @@ export default function DeityPageFromDoc({children}: {children: React.ReactNode}
   }
 
   const faction = getFactionById(deity.factionId);
+  const factionHref = getPublicFactionHref(faction?.id);
   const sections: Section[] = [{
     title: "Divinidad",
     rows: [
       {label: "Alineamiento principal", value: deity.alignment ?? "No establecido"},
       {
         label: "Panteón",
-        value: faction
-          ? <Link to={`/factions/${faction.id}`}>{faction.title}</Link>
+        value: factionHref && faction
+          ? <Link to={factionHref}>{faction.title}</Link>
+          : faction
+          ? faction.title
           : deity.pantheon ?? "No establecido",
       },
       {label: "Culto", value: deity.cult ?? "No establecido"},

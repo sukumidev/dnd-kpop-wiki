@@ -16,7 +16,13 @@ const config: Config = {
   url: siteUrl,
   baseUrl: siteBaseUrl,
 
-  onBrokenLinks: 'warn',
+  onBrokenLinks: 'throw',
+  onBrokenAnchors: 'throw',
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'throw',
+    },
+  },
 
   i18n: {
     defaultLocale: 'es',

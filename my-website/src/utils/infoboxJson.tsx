@@ -17,6 +17,7 @@ import {
   getLocationById,
 } from '../data/relationships';
 import type { LocationProfile } from '../data/locations';
+import {getPublicFactionHref} from '../data/publicRoutes';
 
 /**
  * JSON-friendly references
@@ -88,7 +89,8 @@ function renderFactionLinkFromId(factionId?: string | null): React.ReactNode | u
   const faction = getFactionById(factionId);
   if (!faction) return factionId;
 
-  return renderDocLink(faction.title, `factions/${faction.id}`);
+  const href = getPublicFactionHref(faction.id);
+  return href ? <Link to={href}>{faction.title}</Link> : faction.title;
 }
 
 function renderFactionNameFromId(factionId?: string | null): React.ReactNode | undefined {
