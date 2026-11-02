@@ -33,7 +33,11 @@
     "images:paths:write": "node scripts/migrate-image-paths-to-webp.mjs --write",
     "images:paths:check": "node scripts/migrate-image-paths-to-webp.mjs --check",
     "images:migrate": "npm run images:webp && npm run images:paths:write",
-    "test:image-paths": "node --test tests/image-path-migration.test.mjs"
+    "test:image-paths": "node --test tests/image-path-migration.test.mjs",
+    "images:fill-null-paths:dry": "node scripts/fill-null-character-image-paths.mjs",
+    "images:fill-null-paths": "node scripts/fill-null-character-image-paths.mjs --write",
+    "images:fill-null-paths:check": "node scripts/fill-null-character-image-paths.mjs --check",
+    "test:fill-null-paths": "node --test tests/fill-null-character-image-paths.test.mjs"
   },
   "dependencies": {
     "@docusaurus/core": "3.9.2",
