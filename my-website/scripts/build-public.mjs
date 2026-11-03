@@ -234,6 +234,13 @@ async function main() {
     // Cheap fail-closed check before the expensive Docusaurus compilation.
     await auditOutput(path.join(stage, "src/data"), forbidden);
     await auditOutput(path.join(stage, "docs"), forbidden);
+    // An expandable DMVault is presentation, not access control; never ship it.
+    for (const file of await walk(path.join(stage, "docs"))) {
+      if (!/\.mdx?$/i.test(file)) continue;
+      if (/<DMVault\b|from\s+["\u0027][^"\u0027]*DMVault/.test(await fs.readFile(file, "utf8"))) {
+        throw new Error("DMVault found in public docs. Remove this spoiler block before publishing.");
+      }
+    }
     await copyImages(stage, publicRegistry, hidden, teasers);
     console.log("Building isolated public Docusaurus output...");
     const npm = process.platform === "win32" ? "npm.cmd" : "npm";
