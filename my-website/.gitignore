@@ -26,3 +26,8 @@ yarn-error.log*
 /static/img/**/*.PNG
 /static/img/**/*.JPG
 /static/img/**/*.JPEG
+
+# Public deploy artifacts and untracked DM-only teaser definitions
+/build-public
+/private/
+/src/data/mysteryTeasers.private.json
