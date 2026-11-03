@@ -208,6 +208,8 @@ async function auditOutput(dir, forbidden) {
 }
 
 async function main() {
+  // Never let a failed build leave old artifacts that could be deployed by mistake.
+  await fs.rm(PUBLIC_OUT, {recursive:true, force:true});
   if (!process.env.SITE_URL || !/^https:\/\//.test(process.env.SITE_URL)) {
     throw new Error("Set SITE_URL to a real HTTPS origin (not localhost) for the public build.");
   }
