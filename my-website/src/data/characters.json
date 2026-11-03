@@ -1993,7 +1993,7 @@
     "destinyCard": null,
     "images": [
       {
-        "src": "/img/characters/svt/vernon-farmer.png",
+        "src": "/img/characters/svt/Vernon-farmer.webp",
         "caption": "Vernon granjero"
       },
       {
@@ -3963,7 +3963,7 @@
     "destinyCard": null,
     "images": [
       {
-        "src": "/img/characters/nct/doyoung.png",
+        "src": "/img/characters/nct/Doyoung.webp",
         "alt": "Kim Doyoung",
         "caption": ""
       }
@@ -4336,7 +4336,7 @@
     "destinyCard": null,
     "images": [
       {
-        "src": "/img/characters/nct/jungwoo.png",
+        "src": "/img/characters/nct/Jungwoo.webp",
         "alt": "Kim Jungwoo",
         "caption": ""
       }
@@ -4553,7 +4553,7 @@
         "caption": ""
       },
       {
-        "src": "/img/characters/npc/nct-mark.png",
+        "src": "/img/characters/nct/nct-mark.webp",
         "alt": "Mark Lee",
         "caption": ""
       }
