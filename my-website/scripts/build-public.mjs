@@ -10,7 +10,7 @@ import {
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const PUBLIC_OUT = path.join(ROOT, "build-public");
-const outputsToAudit = new Set([".html", ".js", ".json", ".css", ".xml", ".txt", ".svg"]);
+const outputsToAudit = new Set([".html", ".js", ".json", ".css", ".xml", ".txt", ".svg", ".map", ".mjs", ".webmanifest"]);
 
 const readJSON = async (file) => JSON.parse(await fs.readFile(file, "utf8"));
 async function writeJSON(file, value) {
@@ -57,6 +57,9 @@ async function stageCopy(stage, hiddenIds) {
   await fs.mkdir(path.join(stage, "static"), {recursive: true});
   try { await fs.copyFile(path.join(ROOT, "static/.nojekyll"), path.join(stage, "static/.nojekyll")); }
   catch (error) { if (error.code !== "ENOENT") throw error; }
+  // Calendar imports this module directly; stage only its sanitized public data.
+  const events = await readJSON(path.join(ROOT, "static/data/events.json"));
+  await writeJSON(path.join(stage, "static/data/events.json"), sanitiseRelations(events, hiddenIds));
   await fs.symlink(path.join(ROOT, "node_modules"), path.join(stage, "node_modules"),
     process.platform === "win32" ? "junction" : "dir");
 }
@@ -66,7 +69,8 @@ async function sanitizeStage(stage, hiddenIds, publicIds) {
   for (const registry of ["characters.json", "characters/skz.json"]) {
     const source = await readJSON(path.join(ROOT, "src/data", registry));
     await writeJSON(path.join(dataDir, registry),
-      sanitiseRelations(publicCharacters(source), hiddenIds));
+      sanitiseRelations(Object.fromEntries(Object.entries(source)
+        .filter(([id]) => publicIds.has(id))), hiddenIds));
   }
   const rawStatblocks = await readJSON(path.join(ROOT, "src/data/statblocks.json"));
   await writeJSON(path.join(dataDir, "statblocks.json"),
