@@ -104,8 +104,8 @@ as the sole production build and disabling generic deploy scripts.
 
 ## What to do when a leak check fails
 
-The builder prints which generated asset and which restricted names/IDs were
-detected. Review the corresponding public MDX/TSX or data record, and either:
+The builder prints the generated asset and number of restricted terms
+detected, without printing private values to CI logs. Review the corresponding public MDX/TSX or data record, and either:
 - Remove the spoiler or move the content to a private DM-only source.
 - Publish the character intentionally if it is no longer secret.
 - Create an identity-free mystery teaser **without** linking back to the hidden
