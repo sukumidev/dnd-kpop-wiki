@@ -10,7 +10,7 @@ import {
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const PUBLIC_OUT = path.join(ROOT, "build-public");
-const outputsToAudit = new Set([".html", ".js", ".json", ".css", ".xml", ".txt", ".svg", ".map", ".mjs", ".webmanifest"]);
+const outputsToAudit = new Set([".html", ".js", ".json", ".css", ".xml", ".txt", ".svg", ".map", ".mjs", ".webmanifest", ".md", ".mdx"]);
 
 const readJSON = async (file) => JSON.parse(await fs.readFile(file, "utf8"));
 async function writeJSON(file, value) {
@@ -229,6 +229,9 @@ async function main() {
     await stageCopy(stage, hiddenIds);
     await sanitizeStage(stage, hiddenIds, publicIds);
     await generateMysteryPages(stage, teasers);
+    // Cheap fail-closed check before the expensive Docusaurus compilation.
+    await auditOutput(path.join(stage, "src/data"), forbidden);
+    await auditOutput(path.join(stage, "docs"), forbidden);
     await copyImages(stage, publicRegistry, hidden, teasers);
     console.log("Building isolated public Docusaurus output...");
     const npm = process.platform === "win32" ? "npm.cmd" : "npm";
