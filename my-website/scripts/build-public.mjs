@@ -160,10 +160,10 @@ async function copyImages(stage, publicRegistry, hiddenRegistry, teasers) {
   for (const ref of references) {
     if (hiddenImages.has(ref)) throw new Error("Private character image referenced publicly; cannot ship it.");
     if (ref.startsWith("/img/characters/") && !allowedCharacterImages.has(ref)) {
-      throw new Error("Unapproved character image reference: " + ref);
+      throw new Error("Unapproved character image reference in public source; details withheld.");
     }
     if (ref.startsWith("/img/mysteries/") && !teasers.some((m) => m.imageSrc === ref)) {
-      throw new Error("Unapproved mystery image reference: " + ref);
+      throw new Error("Unapproved mystery image reference in public source; details withheld.");
     }
     const name = ref.slice("/img/".length);
     if (!name || name.split("/").some((part) => part === ".." || part === ".")) {
@@ -197,7 +197,7 @@ async function auditOutput(dir, forbidden) {
   }
   if (reports.length) {
     for (const item of reports) {
-      console.error("LEAK: " + item.file + ": " + item.matches.join(", "));
+      console.error("LEAK detected in " + item.file + ": " + item.matches.length + " restricted term(s); values withheld.");
     }
     throw new Error("Sensitive references detected in generated public files; deploy blocked.");
   }
