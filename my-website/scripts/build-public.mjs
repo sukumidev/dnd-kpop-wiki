@@ -178,6 +178,9 @@ async function copyImages(stage, publicRegistry, hiddenRegistry, teasers) {
     try { await fs.access(source); }
     catch (error) {
       if (error.code !== "ENOENT") throw error;
+      if (ref.startsWith("/img/mysteries/")) {
+        throw new Error("An approved mystery image is not present; publication blocked.");
+      }
       missing++;
       continue;
     }
