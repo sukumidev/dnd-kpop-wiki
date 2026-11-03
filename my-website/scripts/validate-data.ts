@@ -8,6 +8,7 @@
  * - quests.json
  * - factions.json
  * - locations.json
+ * - cosmology.json
  * - mapConfig.json
  * - statblocks.json
  * - documents.json
@@ -49,6 +50,7 @@ const DATA_FILES = {
   quests: "quests.json",
   factions: "factions.json",
   locations: "locations.json",
+  cosmology: "cosmology.json",
   mapConfig: "mapConfig.json",
   statblocks: "statblocks.json",
   documents: "documents.json",
@@ -377,6 +379,23 @@ function validateCharacterPages(characters: JsonRecord) {
       } else if (character.group !== group) {
         addError(relativePath, `Page group "${group}" does not match JSON group "${character.group}".`, id, "group");
       }
+    }
+  }
+}
+
+function validateCosmology(cosmology: JsonRecord, characterIds: Set<string>) {
+  for (const [id, entity] of Object.entries(cosmology)) {
+    if (!isPlainObject(entity) || entity.characterId == null) continue;
+
+    validateIdValue(DATA_FILES.cosmology, entity.characterId, id, "characterId");
+
+    if (typeof entity.characterId === "string" && !characterIds.has(entity.characterId)) {
+      addError(
+        DATA_FILES.cosmology,
+        `Reference "${entity.characterId}" does not exist in the character registry.`,
+        id,
+        "characterId",
+      );
     }
   }
 }
@@ -933,6 +952,7 @@ function main() {
   const quests = validateRecordFile(DATA_FILES.quests, readJson(DATA_FILES.quests));
   const factions = validateRecordFile(DATA_FILES.factions, readJson(DATA_FILES.factions));
   const locations = validateRecordFile(DATA_FILES.locations, readJson(DATA_FILES.locations));
+  const cosmology = validateRecordFile(DATA_FILES.cosmology, readJson(DATA_FILES.cosmology));
   const mapConfig = readJson(DATA_FILES.mapConfig);
   const statblocks = fileExists(DATA_FILES.statblocks)
     ? validateRecordFile(DATA_FILES.statblocks, readJson(DATA_FILES.statblocks, false))
@@ -948,6 +968,7 @@ function main() {
 
   validateCharacters(characters, factionIds, locationIds);
   validateCharacterPages(characters);
+  validateCosmology(cosmology, characterIds);
   validateQuests(quests, characterIds, factionIds, locationIds);
   validateFactions(factions, characterIds, locationIds);
   validateLocations(locations, mapConfig);
