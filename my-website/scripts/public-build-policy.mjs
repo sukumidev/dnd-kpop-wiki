@@ -80,7 +80,10 @@ export function approvedTeasers(definitions, hidden, prohibited) {
     }
     const text = [item.slug, item.title, item.teaser].join(" ");
     for (const phrase of prohibited) {
-      if (phrase.length >= 4 && containsTerm(text, phrase)) {
+      const slugTerm = phrase.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+        .toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+      if (phrase.length >= 4 && (containsTerm(text, phrase) ||
+          (slugTerm.length >= 4 && containsTerm(item.slug, slugTerm)))) {
         throw new Error("Teaser could disclose a private name or identifier: " + item.slug);
       }
     }
