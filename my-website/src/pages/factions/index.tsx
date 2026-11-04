@@ -4,66 +4,20 @@ import Link from "@docusaurus/Link";
 import { useBaseUrlUtils } from "@docusaurus/useBaseUrl";
 import WikiSidebarPageLayout from "@site/src/components/WikiSidebarPageLayout";
 import {
-  NO_REALM_GROUP_ID,
-  compareRealmGroups,
-  sortFactionsByPriority,
-  sortByExplicitOrderThenTitle,
-} from "@site/src/utils/directoryOrdering";
+  PARTY_GROUP_ID,
+  groupAndSortFactions,
+} from "@site/src/utils/factionDirectoryOrdering";
 import styles from "../characters/styles.module.css";
 
 import {
   factionList,
   getFactionMembers,
-  getLocationById,
   type Faction,
-  type Location,
 } from "@site/src/data/relationships";
 import {getPublicFactionHref, getPublicRealmHref} from "@site/src/data/publicRoutes";
 
-type FactionGroup = {
-  region?: Location;
-  realmId: string;
-  title: string;
-  factions: Faction[];
-};
-
-const PARTY_GROUP_ID = "__parties__";
-
 function isArchivedFaction(faction: Faction) {
   return faction.status === "hidden" || String(faction.status) === "archived";
-}
-
-function normalizeRealmId(realm?: string | null) {
-  return realm
-    ?.normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-|-$/g, "");
-}
-
-function getFactionRealm(faction: Faction) {
-  if (faction.type === "party") {
-    return { id: PARTY_GROUP_ID, title: "Parties", region: undefined };
-  }
-
-  const normalizedRealm = normalizeRealmId(faction.realm);
-  const realmId =
-    !normalizedRealm ||
-    normalizedRealm === "no-aplica" ||
-    normalizedRealm === "sin-reino"
-      ? NO_REALM_GROUP_ID
-      : normalizedRealm;
-  const region = getLocationById(realmId);
-
-  return {
-    id: region?.id ?? realmId,
-    title:
-      realmId === NO_REALM_GROUP_ID
-        ? "Sin reino"
-        : region?.title ?? faction.realm ?? realmId,
-    region,
-  };
 }
 
 export default function FactionsPage() {
@@ -73,41 +27,10 @@ export default function FactionsPage() {
     [],
   );
 
-  const groupedFactions = useMemo(() => {
-    return directoryFactions.reduce<Record<string, FactionGroup>>(
-      (groups, faction) => {
-        const realm = getFactionRealm(faction);
-        const groupKey = realm.id;
-
-        groups[groupKey] ??= {
-          region: realm.region,
-          realmId: groupKey,
-          title: realm.title,
-          factions: [],
-        };
-
-        groups[groupKey].factions.push(faction);
-        return groups;
-      },
-      {},
-    );
-  }, [directoryFactions]);
-
-  const sections = useMemo(() => {
-    return Object.entries(groupedFactions)
-      .map(([id, group]) => ({
-        id,
-        ...group,
-        factions: id === PARTY_GROUP_ID
-          ? sortByExplicitOrderThenTitle(group.factions)
-          : sortFactionsByPriority(group.factions),
-      }))
-      .sort((a, b) => {
-        if (a.id === PARTY_GROUP_ID) return -1;
-        if (b.id === PARTY_GROUP_ID) return 1;
-        return compareRealmGroups(a, b);
-      });
-  }, [groupedFactions]);
+  const sections = useMemo(
+    () => groupAndSortFactions(directoryFactions),
+    [directoryFactions],
+  );
 
   return (
     <WikiSidebarPageLayout title="Facciones" description="Facciones del universo">
@@ -132,7 +55,9 @@ export default function FactionsPage() {
 
           {sections.map((section) => {
             const sectionTitle = section.title;
-            const regionPath = getPublicRealmHref(section.realmId);
+            const regionPath = section.id === PARTY_GROUP_ID
+              ? null
+              : getPublicRealmHref(section.id);
 
             return (
               <details key={section.id} className={styles.section} open>

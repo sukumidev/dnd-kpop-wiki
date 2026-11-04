@@ -73,3 +73,9 @@ export const mythicCharacterIds = new Set(
 export function getMythicEntityById(id: string): MythicEntity | undefined {
   return cosmology[id];
 }
+
+export function getMythicEntityByCharacterId(
+  characterId: string,
+): MythicEntity | undefined {
+  return mythicEntityList.find((entity) => entity.characterId === characterId);
+}

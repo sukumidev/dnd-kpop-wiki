@@ -91,6 +91,8 @@ export type Faction = {
   imageCaption?: string | null;
   accent?: string | null;
   sortOrder?: number;
+  /** First campaign session, including fractional sessions, when locally verified. */
+  firstAppearance?: number | null;
 };
 
 export type FactionsById = Record<string, Faction>;

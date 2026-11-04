@@ -67,6 +67,11 @@ src/data/factions.ts
 | `imageCaption` | `string \| null` | Caption de imagen. |
 | `accent` | `string \| null` | Color/acento visual. |
 | `sortOrder` | `number` | Orden manual. |
+| `firstAppearance` | `number \| null` | Primera sesión verificada; admite valores como 11.5. El directorio usa el índice local del Master Registry por ID cuando existe. |
+
+## Directorio y Master Registry
+
+`src/data/factionRegistryMetadata.json` es la instantánea local, indexada por `Faction.id`, de las asociaciones revisadas con `[Factions] - Master Registry`. Conserva la pestaña y fila de origen, el ID numérico de `Música` cuando existe, el reino y la primera aparición verificada. `src/data/realmCatalog.json` conserva el orden y los alias del catálogo `Reinos`. El directorio no consulta Google Sheets al renderizar.
 
 ## Enums
 

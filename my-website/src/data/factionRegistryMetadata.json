@@ -1,0 +1,330 @@
+{
+  "adp": {
+    "source": "Música",
+    "registryId": 28,
+    "registryRow": 26,
+    "realm": "Yggdrasil",
+    "firstAppearance": 11
+  },
+  "ampersone": {
+    "source": "Música",
+    "registryId": 32,
+    "registryRow": 29,
+    "realm": "Fincaria",
+    "firstAppearance": 14.5
+  },
+  "astro": {
+    "source": "Música",
+    "registryId": 29,
+    "registryRow": 44,
+    "realm": "Fantagio",
+    "firstAppearance": 11.5
+  },
+  "ateez": {
+    "source": "Música",
+    "registryId": 15,
+    "registryRow": 14,
+    "realm": "Isla Halazia",
+    "firstAppearance": 6
+  },
+  "be-first": {
+    "source": "Música",
+    "registryId": 36,
+    "registryRow": 33,
+    "realm": "Hotou",
+    "firstAppearance": 15
+  },
+  "bigbang": {
+    "source": "Música",
+    "registryRow": 237,
+    "realm": "Yggdrasil"
+  },
+  "billlie": {
+    "source": "Música",
+    "registryId": 44,
+    "registryRow": 40,
+    "realm": "Mystoria",
+    "firstAppearance": 20
+  },
+  "bnd": {
+    "source": "Música",
+    "registryId": 40,
+    "registryRow": 37,
+    "realm": "Hyberia",
+    "firstAppearance": 19
+  },
+  "bts": {
+    "source": "Música",
+    "registryId": 23,
+    "registryRow": 21,
+    "realm": "Hyberia",
+    "firstAppearance": 9
+  },
+  "clan-del-sol-ardiente": {
+    "source": "Facciones originales",
+    "registryRow": 2,
+    "realm": "Desconocido",
+    "firstAppearance": 10
+  },
+  "cortis": {
+    "source": "Música",
+    "registryId": 22,
+    "registryRow": 20,
+    "realm": "Hyberia",
+    "firstAppearance": 8
+  },
+  "dragonborns-del-clan-del-caos": {
+    "source": "Facciones originales",
+    "registryRow": 8,
+    "realm": "Por definir"
+  },
+  "dragonborns-del-clan-del-orden": {
+    "source": "Facciones originales",
+    "registryRow": 9,
+    "realm": "Por definir"
+  },
+  "enhypen": {
+    "source": "Música",
+    "registryId": 4,
+    "registryRow": 5,
+    "realm": "Hyberia",
+    "firstAppearance": 4
+  },
+  "exo": {
+    "source": "Música",
+    "registryId": 26,
+    "registryRow": 24,
+    "realm": "Sylmorien",
+    "firstAppearance": 10
+  },
+  "got7": {
+    "source": "Música",
+    "registryId": 24,
+    "registryRow": 22,
+    "realm": "Jeyperia",
+    "firstAppearance": 9
+  },
+  "h2h": {
+    "source": "Música",
+    "registryId": 30,
+    "registryRow": 27,
+    "realm": "Sylmorien",
+    "firstAppearance": 13
+  },
+  "katseye": {
+    "source": "Música",
+    "registryId": 33,
+    "registryRow": 30,
+    "realm": "Hyberia",
+    "firstAppearance": 14.5
+  },
+  "kiof": {
+    "source": "Música",
+    "registryId": 18,
+    "registryRow": 17,
+    "realm": "Jeyperia",
+    "firstAppearance": 8
+  },
+  "lsf": {
+    "source": "Música",
+    "registryId": 6,
+    "registryRow": 6,
+    "realm": "Hyberia",
+    "firstAppearance": 4
+  },
+  "monsta-x": {
+    "source": "Música",
+    "registryId": 17,
+    "registryRow": 16,
+    "realm": "Isla Estelar",
+    "firstAppearance": 8
+  },
+  "morat": {
+    "source": "Música",
+    "registryId": 38,
+    "registryRow": 35,
+    "realm": "Sylmorien",
+    "firstAppearance": 17
+  },
+  "nct": {
+    "source": "Música",
+    "registryId": 7,
+    "registryRow": 7,
+    "realm": "Sylmorien",
+    "firstAppearance": 4
+  },
+  "nct-127": {
+    "source": "Música",
+    "registryId": 8,
+    "registryRow": 8,
+    "realm": "Sylmorien",
+    "firstAppearance": 4
+  },
+  "nct-dream": {
+    "source": "Música",
+    "registryId": 16,
+    "registryRow": 15,
+    "realm": "Sylmorien",
+    "firstAppearance": 7
+  },
+  "nct-wish": {
+    "source": "Música",
+    "registryId": 25,
+    "registryRow": 23,
+    "realm": "Sylmorien",
+    "firstAppearance": 9
+  },
+  "njz": {
+    "source": "Música",
+    "registryId": 5,
+    "registryRow": 43,
+    "realm": "Hyberia",
+    "firstAppearance": 4
+  },
+  "nouera": {
+    "source": "Música",
+    "registryId": 42,
+    "registryRow": 39,
+    "realm": "Sylmorien",
+    "firstAppearance": 20
+  },
+  "ntop": {
+    "source": "Música",
+    "registryId": 39,
+    "registryRow": 36,
+    "realm": "Sylmorien",
+    "firstAppearance": 19
+  },
+  "nu-est": {
+    "source": "Música",
+    "registryId": 14,
+    "registryRow": 42,
+    "realm": "Hyberia",
+    "firstAppearance": 5
+  },
+  "omega-x": {
+    "source": "Música",
+    "registryId": 34,
+    "registryRow": 31,
+    "realm": "Desconocido",
+    "firstAppearance": 14.5
+  },
+  "p1h": {
+    "source": "Música",
+    "registryId": 31,
+    "registryRow": 28,
+    "realm": "Fincaria",
+    "firstAppearance": 14.5
+  },
+  "psf": {
+    "source": "Música",
+    "registryId": 35,
+    "registryRow": 32,
+    "realm": "Hotou",
+    "firstAppearance": 15
+  },
+  "riize": {
+    "source": "Música",
+    "registryId": 19,
+    "registryRow": 18,
+    "realm": "Sylmorien",
+    "firstAppearance": 8
+  },
+  "rv": {
+    "source": "Música",
+    "registryId": 12,
+    "registryRow": 12,
+    "realm": "Sylmorien",
+    "firstAppearance": 5
+  },
+  "shinee": {
+    "source": "Música",
+    "registryId": 41,
+    "registryRow": 38,
+    "realm": "Sylmorien",
+    "firstAppearance": 20
+  },
+  "sj": {
+    "source": "Música",
+    "registryId": 11,
+    "registryRow": 11,
+    "realm": "Sylmorien",
+    "firstAppearance": 5
+  },
+  "skz": {
+    "source": "Música",
+    "registryId": 2,
+    "registryRow": 3,
+    "realm": "Jeyperia",
+    "firstAppearance": 3
+  },
+  "stbv": {
+    "source": "Música",
+    "registryId": 21,
+    "registryRow": 19,
+    "realm": "Hyberia",
+    "firstAppearance": 8
+  },
+  "svt": {
+    "source": "Música",
+    "registryId": 1,
+    "registryRow": 2,
+    "realm": "Hyberia",
+    "firstAppearance": 1
+  },
+  "tvxq": {
+    "source": "Música",
+    "registryRow": 213,
+    "realm": "Sylmorien",
+    "firstAppearance": 18
+  },
+  "twice": {
+    "source": "Música",
+    "registryId": 10,
+    "registryRow": 10,
+    "realm": "Jeyperia",
+    "firstAppearance": 5
+  },
+  "txt": {
+    "source": "Música",
+    "registryId": 3,
+    "registryRow": 4,
+    "realm": "Hyberia",
+    "firstAppearance": 3
+  },
+  "viviz": {
+    "source": "Música",
+    "registryId": 27,
+    "registryRow": 25,
+    "realm": "Hyberia",
+    "firstAppearance": 11
+  },
+  "wayv": {
+    "source": "Música",
+    "registryId": 9,
+    "registryRow": 9,
+    "realm": "Sylmorien",
+    "firstAppearance": 4
+  },
+  "wjsn": {
+    "source": "Música",
+    "registryId": 43,
+    "registryRow": 45,
+    "realm": "Isla Estelar",
+    "firstAppearance": 20
+  },
+  "xg": {
+    "source": "Música",
+    "registryId": 37,
+    "registryRow": 34,
+    "realm": "Hotou",
+    "firstAppearance": 16
+  },
+  "xlov": {
+    "source": "Música",
+    "registryId": 45,
+    "registryRow": 41,
+    "realm": "Guozhong",
+    "firstAppearance": 20
+  }
+}

@@ -2,6 +2,7 @@ import React from "react";
 import Link from "@docusaurus/Link";
 import {useBaseUrlUtils} from "@docusaurus/useBaseUrl";
 import {getCharacterDocPath, type Character} from "@site/src/data/characters";
+import {getMythicEntityByCharacterId} from "@site/src/data/cosmology";
 import styles from "./CharacterGrid.module.css";
 
 type Props = {
@@ -31,6 +32,8 @@ export default function CharacterGrid({characters, label}: Props) {
   return (
     <ul className={styles.grid} aria-label={label}>
       {characters.map((character) => {
+        const docPath =
+          getMythicEntityByCharacterId(character.id)?.docPath ?? getCharacterDocPath(character);
         const initials = character.title
           .split(/\s+/)
           .slice(0, 2)
@@ -40,7 +43,7 @@ export default function CharacterGrid({characters, label}: Props) {
         return (
           <li key={character.id} className={styles.item}>
             <Link
-              to={`/${getCharacterDocPath(character)}`}
+              to={`/${docPath}`}
               className={styles.card}
               aria-label={`Abrir ficha de ${character.title}`}
             >

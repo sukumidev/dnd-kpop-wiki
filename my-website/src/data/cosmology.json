@@ -209,6 +209,8 @@
   },
   "t1-zeus": {
     "id": "t1-zeus",
+    "characterId": "t1-zeus",
+    "imageSrc": "/img/characters/t1/t1-zeus.webp",
     "title": "ZEUS",
     "subtitle": "Dios Caído de la Tempestad",
     "pantheon": "Los Nuevos Dioses",
@@ -221,6 +223,8 @@
   },
   "t1-doran": {
     "id": "t1-doran",
+    "characterId": "t1-doran",
+    "imageSrc": "/img/characters/t1/t1-doran.webp",
     "title": "DORAN",
     "subtitle": "Dios de la Forja y la Vanguardia",
     "pantheon": "Los Nuevos Dioses",
@@ -233,6 +237,8 @@
   },
   "t1-oner": {
     "id": "t1-oner",
+    "characterId": "t1-oner",
+    "imageSrc": "/img/characters/t1/t1-oner.webp",
     "title": "ONER",
     "subtitle": "Dios de la Iniciativa y el Engaño",
     "pantheon": "Los Nuevos Dioses",
@@ -245,6 +251,8 @@
   },
   "t1-peyz": {
     "id": "t1-peyz",
+    "characterId": "t1-peyz",
+    "imageSrc": "/img/characters/t1/t1-peyz.webp",
     "title": "PEYZ",
     "subtitle": "Dios de la Ejecución y la Justicia",
     "pantheon": "Los Nuevos Dioses",
@@ -256,6 +264,8 @@
   },
   "t1-keria": {
     "id": "t1-keria",
+    "characterId": "t1-keria",
+    "imageSrc": "/img/characters/t1/t1-keria.webp",
     "title": "KERIA",
     "subtitle": "Dios Protector",
     "pantheon": "Los Nuevos Dioses",
@@ -268,6 +278,8 @@
   },
   "t1-faker": {
     "id": "t1-faker",
+    "characterId": "t1-faker",
+    "imageSrc": "/img/characters/t1/t1-faker.webp",
     "title": "FAKER",
     "subtitle": "El Inmatable, Rey Demonio",
     "pantheon": "Los Nuevos Dioses",

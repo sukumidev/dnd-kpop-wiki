@@ -129,7 +129,7 @@ test("every migrated character has a correctly named MDX page", () => {
 
 test("shared JSON and active docs contain no outdated character references", () => {
   const dataFiles = [
-    "characters.json", "characters/skz.json", "factions.json", "quests.json",
+    "characters.json", "factions.json", "quests.json",
     "locations.json", "sessions.json", "documents.json", "statblocks.json",
   ];
 

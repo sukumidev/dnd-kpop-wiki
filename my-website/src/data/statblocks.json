@@ -2318,33 +2318,6 @@
     "vulnerability": [],
     "immunity": []
   },
-  "nct-taeil": {
-    "id": "nct-taeil",
-    "classes": [
-      {
-        "name": "Wizard",
-        "level": 19,
-        "subclass": "Transmuter"
-      }
-    ],
-    "race": "Superhuman",
-    "alignment": "Lawful Evil",
-    "proficiencyBonus": 6,
-    "initiative": 4,
-    "ac": 18,
-    "hp": 235,
-    "speed": "30 ft",
-    "passivePerception": 21,
-    "str": 12,
-    "dex": 18,
-    "con": 22,
-    "int": 28,
-    "wis": 20,
-    "cha": 18,
-    "resistances": [],
-    "vulnerability": [],
-    "immunity": []
-  },
   "exo-suho": {
     "id": "exo-suho",
     "secret": true,

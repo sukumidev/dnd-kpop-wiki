@@ -244,7 +244,7 @@
   transition: transform 140ms ease, box-shadow 140ms ease;
 }
 
-.cardLink:hover .card {
+.cardLink:not(.cardStatic):hover .card {
   z-index: 1;
   transform: translateY(-2px);
   box-shadow: 0 10px 28px rgba(16, 11, 35, 0.2);

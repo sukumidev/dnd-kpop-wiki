@@ -14,14 +14,13 @@ Registro oficial consumido por la aplicación:
 src/data/characters.ts
 ```
 
-Fuentes de datos durante la migración:
+Única fuente de datos:
 
 ```txt
-src/data/characters.json       # fuente legacy
-src/data/characters/*.json     # fuentes migradas por facción
+src/data/characters.json
 ```
 
-`characters.ts` combina todas las fuentes en un único registro `characters` y una única lista `characterList`. Las fuentes por facción se aplican después de la fuente legacy, por lo que una entrada migrada reemplaza a su versión legacy por `id` sin duplicarse en el directorio.
+`characters.ts` expone `characters.json` como registro `characters` y lista `characterList`. Los personajes de Stray Kids también viven en este archivo; no se superponen registros por facción.
 
 ## Decisiones del Sprint 0
 

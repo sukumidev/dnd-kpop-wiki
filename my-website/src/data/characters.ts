@@ -1,7 +1,6 @@
-import legacyCharactersJson from "./characters.json";
-import skzCharactersJson from "./characters/skz.json";
+import charactersJson from "./characters.json";
 
-export type CharacterGroup = "party" | "npc";
+export type CharacterGroup = "party" | "npc" | "pet";
 export type CharacterVisibility = "public" | "hidden";
 
 export type CharacterStatus =
@@ -45,6 +44,8 @@ export type Character = {
   title: string;
   subtitle?: string | null;
   imageSrc?: string | null;
+  /** False when the directory entry has no published character or deity page. */
+  hasProfile?: boolean;
 
 
   /** "misc" was migrated to "npc". */
@@ -99,20 +100,8 @@ export type Character = {
 
 export type CharactersById = Record<string, Character>;
 
-const legacyCharacters = legacyCharactersJson as CharactersById;
-const skzCharacters = skzCharactersJson as CharactersById;
-
-/**
- * Unified character registry.
- *
- * characters.json remains the legacy source while factions are migrated.
- * Faction files are layered afterwards, so a migrated character overrides its
- * legacy entry by ID without appearing twice in characterList.
- */
-export const characters: CharactersById = {
-  ...legacyCharacters,
-  ...skzCharacters,
-};
+/** Single source of truth for all character records, including Stray Kids. */
+export const characters = charactersJson as CharactersById;
 
 export const characterList = Object.values(characters);
 export const visibleCharacterList = characterList.filter(isVisibleCharacter);

@@ -2139,10 +2139,10 @@
     "group": "npc",
     "visibility": "public",
     "role": "NPC",
-    "race": "Werewolf",
+    "race": "Licántropo",
     "regionId": "jeyperia",
     "hometown": {
-      "label": "Neysyd, Tierra Canguro",
+      "label": "Fuera de Jeyperia",
       "locationId": null,
       "docPath": null
     },
@@ -2166,9 +2166,9 @@
       "docPath": null
     },
     "firstAppearance": {
-      "label": "Sesión 07",
-      "sessionId": "07",
-      "docPath": "campaign/sessions/07"
+      "label": "Sesión 11.5",
+      "sessionId": "11-5",
+      "docPath": "campaign/sessions/11-5"
     },
     "lastSeen": {
       "label": "Sesión 11.5",
@@ -2219,16 +2219,16 @@
   },
   "skz-leeknow": {
     "id": "skz-leeknow",
-    "title": "Lee Know (Lee Minho)",
+    "title": "Lee Minho (Lee Know)",
     "subtitle": "El Domador de Bestias",
     "status": "active",
     "group": "npc",
     "visibility": "public",
     "role": "NPC",
-    "race": "Werewolf",
+    "race": "Licántropo",
     "regionId": "jeyperia",
     "hometown": {
-      "label": "Borasek, Hyberia",
+      "label": "Jeyperia",
       "locationId": null,
       "docPath": null
     },
@@ -2252,9 +2252,9 @@
       "docPath": null
     },
     "firstAppearance": {
-      "label": "Sesión 07",
-      "sessionId": "07",
-      "docPath": "campaign/sessions/07"
+      "label": "Sesión 11.5",
+      "sessionId": "11-5",
+      "docPath": "campaign/sessions/11-5"
     },
     "lastSeen": {
       "label": "Sesión 11.5",
@@ -2311,10 +2311,10 @@
     "group": "npc",
     "visibility": "public",
     "role": "NPC",
-    "race": "Werewolf",
+    "race": "Licántropo",
     "regionId": "jeyperia",
     "hometown": {
-      "label": "Borasek, Hyberia",
+      "label": "Jeyperia",
       "locationId": null,
       "docPath": null
     },
@@ -2338,9 +2338,9 @@
       "docPath": null
     },
     "firstAppearance": {
-      "label": "Sesión 07",
-      "sessionId": "07",
-      "docPath": "campaign/sessions/07"
+      "label": "Sesión 05",
+      "sessionId": "05",
+      "docPath": "campaign/sessions/05"
     },
     "lastSeen": {
       "label": "Sesión 11.5",
@@ -2397,10 +2397,10 @@
     "group": "npc",
     "visibility": "public",
     "role": "NPC",
-    "race": "Werewolf",
+    "race": "Licántropo",
     "regionId": "jeyperia",
     "hometown": {
-      "label": "Kwangya, Sylmorien",
+      "label": "Jeyperia",
       "locationId": null,
       "docPath": null
     },
@@ -2418,20 +2418,16 @@
     "dateOfBirth": "2000-03-20",
     "zodiac": "Piscis ♓",
     "mbti": "ISFP",
-    "currentLocation": {
-      "label": "Distrito 9",
-      "locationId": null,
-      "docPath": null
-    },
+    "currentLocation": null,
     "firstAppearance": {
-      "label": "Sesión 07",
-      "sessionId": "07",
-      "docPath": "campaign/sessions/07"
+      "label": "Sesión 05",
+      "sessionId": "05",
+      "docPath": "campaign/sessions/05"
     },
     "lastSeen": {
-      "label": "Sesión 11.5",
-      "sessionId": "11-5",
-      "docPath": "campaign/sessions/11-5"
+      "label": "Sesión 15",
+      "sessionId": "15",
+      "docPath": "campaign/sessions/15"
     },
     "bonds": [
       {
@@ -2482,16 +2478,16 @@
   },
   "skz-han": {
     "id": "skz-han",
-    "title": "Han Jisung",
+    "title": "Han Jisung (Han)",
     "subtitle": "El Psíquico Rebelde",
     "status": "active",
     "group": "npc",
     "visibility": "public",
     "role": "NPC",
-    "race": "Werewolf",
+    "race": "Licántropo",
     "regionId": "jeyperia",
     "hometown": {
-      "label": "Cheonin, Jeyperia",
+      "label": "Jeyperia",
       "locationId": null,
       "docPath": null
     },
@@ -2515,9 +2511,9 @@
       "docPath": null
     },
     "firstAppearance": {
-      "label": "Sesión 07",
-      "sessionId": "07",
-      "docPath": "campaign/sessions/07"
+      "label": "Sesión 11.5",
+      "sessionId": "11-5",
+      "docPath": "campaign/sessions/11-5"
     },
     "lastSeen": {
       "label": "Sesión 11.5",
@@ -2574,10 +2570,10 @@
     "group": "npc",
     "visibility": "public",
     "role": "NPC",
-    "race": "Werewolf",
+    "race": "Licántropo",
     "regionId": "jeyperia",
     "hometown": {
-      "label": "Neysyd, Tierra Canguro",
+      "label": "Fuera de Jeyperia",
       "locationId": null,
       "docPath": null
     },
@@ -2601,14 +2597,14 @@
       "docPath": null
     },
     "firstAppearance": {
-      "label": "Sesión 07",
-      "sessionId": "07",
-      "docPath": "campaign/sessions/07"
+      "label": "Epílogo Sesión 09",
+      "sessionId": "09",
+      "docPath": "campaign/sessions/09"
     },
     "lastSeen": {
-      "label": "Sesión 11.5",
-      "sessionId": "11-5",
-      "docPath": "campaign/sessions/11-5"
+      "label": "Sesión 17",
+      "sessionId": "17",
+      "docPath": "campaign/sessions/17"
     },
     "bonds": [
       {
@@ -2665,10 +2661,10 @@
     "group": "npc",
     "visibility": "public",
     "role": "NPC",
-    "race": "Werewolf",
+    "race": "Licántropo",
     "regionId": "jeyperia",
     "hometown": {
-      "label": "Kwangya, Sylmorien",
+      "label": "Jeyperia",
       "locationId": null,
       "docPath": null
     },
@@ -2692,9 +2688,9 @@
       "docPath": null
     },
     "firstAppearance": {
-      "label": "Sesión 07",
-      "sessionId": "07",
-      "docPath": "campaign/sessions/07"
+      "label": "Sesión 11.5",
+      "sessionId": "11-5",
+      "docPath": "campaign/sessions/11-5"
     },
     "lastSeen": {
       "label": "Sesión 11.5",
@@ -2751,10 +2747,10 @@
     "group": "npc",
     "visibility": "public",
     "role": "NPC",
-    "race": "Werewolf",
+    "race": "Licántropo",
     "regionId": "jeyperia",
     "hometown": {
-      "label": "Sanbu, Jeyperia",
+      "label": "Región costera del sur de Jeyperia",
       "locationId": null,
       "docPath": null
     },
@@ -2778,14 +2774,14 @@
       "docPath": null
     },
     "firstAppearance": {
-      "label": "Sesión 07",
-      "sessionId": "07",
-      "docPath": "campaign/sessions/07"
+      "label": "Sesión 03",
+      "sessionId": "03",
+      "docPath": "campaign/sessions/03"
     },
     "lastSeen": {
-      "label": "Sesión 11.5",
-      "sessionId": "11-5",
-      "docPath": "campaign/sessions/11-5"
+      "label": "Sesión 17",
+      "sessionId": "17",
+      "docPath": "campaign/sessions/17"
     },
     "bonds": [
       {
@@ -2844,14 +2840,8 @@
         "docPath": "characters/npc/skz-bangchan"
       }
     ],
-    "destinyCard": null,
-    "images": [
-      {
-        "src": "/img/characters/skz/jeongin.webp",
-        "alt": "Yang Jeongin (I.N)",
-        "caption": ""
-      }
-    ],
+    "destinyCard": "As de Corazones",
+    "images": [],
     "summary": null,
     "sortOrder": 24
   },
@@ -3178,7 +3168,7 @@
   "enha-jake": {
     "id": "enha-jake",
     "title": "Sim Jaeyun (Jake)",
-    "subtitle": "El Golden Vampiro",
+    "subtitle": "El que volvió a vivir",
     "status": "active",
     "group": "npc",
     "visibility": "public",
@@ -3200,7 +3190,7 @@
       "Sabueso de rastreo y cacería"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/enha/jake.webp",
+    "imageSrc": "/img/characters/enha/enha-jake.webp",
     "dateOfBirth": "1902-11-15",
     "zodiac": "Escorpio ♏",
     "mbti": "ESTP",
@@ -6131,7 +6121,7 @@
     "imageSrc": "/img/characters/ateez/ateez-jongho.webp",
     "tags": [],
     "sortOrder": 8,
-    "subtitle": "El Rompedor de Barreras",
+    "subtitle": "El Rompedor de Muros",
     "dateOfBirth": "2000-10-12",
     "zodiac": "Libra ♎",
     "mbti": "ISTJ",
@@ -6822,7 +6812,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": "/img/characters/npc/npc-ario.webp",
+    "imageSrc": "/img/characters/enemies/enemy-emisario.webp",
     "sortOrder": 134
   },
   "npc-arturo": {
@@ -6831,16 +6821,17 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": "/img/characters/npc/npc-arturo.webp",
+    "imageSrc": "/img/characters/enemies/enemy-goblin.webp",
     "sortOrder": 135
   },
-  "npc-arven": {
-    "id": "npc-arven",
+  "enemy-arven": {
+    "id": "enemy-arven",
+    "hasProfile": false,
     "title": "Arven",
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": "/img/characters/npc/npc-arven.webp",
+    "imageSrc": "/img/characters/enemies/enemy-arven.webp",
     "sortOrder": 136
   },
   "nu-est-baekho": {
@@ -6867,7 +6858,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": "/img/characters/npc/npc-benny.webp",
+    "imageSrc": "/img/characters/enemies/enemy-goblin.webp",
     "sortOrder": 139
   },
   "txt-beomgyu": {
@@ -6885,7 +6876,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": "/img/characters/npc/npc-biagi.webp",
+    "imageSrc": "/img/characters/enemies/enemy-goblin.webp",
     "sortOrder": 141
   },
   "npc-brandom-lee": {
@@ -6966,7 +6957,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": "/img/characters/npc/npc-carlos.webp",
+    "imageSrc": "/img/characters/enemies/enemy-goblin.webp",
     "sortOrder": 150
   },
   "npc-castro": {
@@ -6975,7 +6966,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": "/img/characters/npc/npc-castro.webp",
+    "imageSrc": "/img/characters/enemies/enemy-goblin.webp",
     "sortOrder": 151
   },
   "npc-chayanne": {
@@ -6984,7 +6975,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": "/img/characters/npc/npc-chayanne.webp",
+    "imageSrc": "/img/characters/enemies/enemy-goblin.webp",
     "sortOrder": 152
   },
   "txt-soobin": {
@@ -7002,7 +6993,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": "/img/characters/npc/npc-church.webp",
+    "imageSrc": "/img/characters/enemies/enemy-goblin.webp",
     "sortOrder": 154
   },
   "npc-cristian": {
@@ -7011,7 +7002,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": "/img/characters/npc/npc-cristian.webp",
+    "imageSrc": "/img/characters/enemies/enemy-goblin.webp",
     "sortOrder": 155
   },
   "npc-dj-tony-mix": {
@@ -7041,13 +7032,14 @@
     "imageSrc": "/img/characters/npc/npc-dal.webp",
     "sortOrder": 158
   },
-  "npc-delkhan": {
-    "id": "npc-delkhan",
+  "enemy-delkhan": {
+    "id": "enemy-delkhan",
+    "hasProfile": false,
     "title": "Delkhan",
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": "/img/characters/npc/npc-delkhan.webp",
+    "imageSrc": "/img/characters/enemies/enemy-delkhan.webp",
     "sortOrder": 159
   },
   "npc-demetrio": {
@@ -7065,7 +7057,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": "/img/characters/npc/npc-don-jose.webp",
+    "imageSrc": "/img/characters/enemies/enemy-goblin.webp",
     "sortOrder": 161
   },
   "npc-donatella-versace": {
@@ -7092,7 +7084,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": "/img/characters/npc/npc-emi.webp",
+    "imageSrc": "/img/characters/enemies/enemy-emisario.webp",
     "sortOrder": 164
   },
   "solo-eunbi": {
@@ -7131,13 +7123,14 @@
     "dynamic": "alpha",
     "role": "NPC"
   },
-  "npc-evan": {
-    "id": "npc-evan",
+  "enemy-evan": {
+    "id": "enemy-evan",
+    "hasProfile": false,
     "title": "Evan",
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": "/img/characters/npc/npc-evan.webp",
+    "imageSrc": "/img/characters/enemies/enemy-evan.webp",
     "sortOrder": 168
   },
   "npc-felixia": {
@@ -7191,7 +7184,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": "/img/characters/npc/npc-gabri.webp",
+    "imageSrc": "/img/characters/enemies/enemy-goblin.webp",
     "sortOrder": 171
   },
   "omega-x-hangyeom": {
@@ -7230,13 +7223,134 @@
     "imageSrc": "/img/characters/npc/npc-kobold.webp",
     "sortOrder": 175
   },
-  "npc-honda": {
-    "id": "npc-honda",
-    "title": "Honda",
+  "npc-zapo": {
+    "id": "npc-zapo",
+    "hasProfile": false,
+    "title": "Zapo",
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": "/img/characters/npc/npc-honda.webp",
+    "imageSrc": "/img/characters/npc/npc-zapo.webp",
+    "sortOrder": 176
+  },
+  "npc-tlanejo": {
+    "id": "npc-tlanejo",
+    "hasProfile": false,
+    "title": "Tlanejo",
+    "group": "npc",
+    "visibility": "hidden",
+    "status": "unknown",
+    "imageSrc": "/img/characters/npc/npc-tlanejo.webp",
+    "sortOrder": 176
+  },
+  "xg-hinata": {
+    "id": "xg-hinata",
+    "hasProfile": false,
+    "title": "Hinata",
+    "group": "npc",
+    "visibility": "hidden",
+    "status": "unknown",
+    "imageSrc": "/img/characters/xg/xg-hinata.webp",
+    "sortOrder": 176
+  },
+  "xg-jurin": {
+    "id": "xg-jurin",
+    "hasProfile": false,
+    "title": "Jurin ",
+    "group": "npc",
+    "visibility": "hidden",
+    "status": "unknown",
+    "imageSrc": "/img/characters/xg/xg-jurin.webp",
+    "sortOrder": 176
+  },
+  "xg-juria": {
+    "id": "xg-juria",
+    "hasProfile": false,
+    "title": "Juria",
+    "group": "npc",
+    "visibility": "hidden",
+    "status": "unknown",
+    "imageSrc": "/img/characters/xg/xg-juria.webp",
+    "sortOrder": 176
+  },
+  "xg-maya": {
+    "id": "xg-maya",
+    "hasProfile": false,
+    "title": "Maya",
+    "group": "npc",
+    "visibility": "hidden",
+    "status": "unknown",
+    "imageSrc": "/img/characters/xg/xg-maya.webp",
+    "sortOrder": 176
+  },
+  "xg-chisa": {
+    "id": "xg-chisa",
+    "hasProfile": false,
+    "title": "Chisa",
+    "group": "npc",
+    "visibility": "hidden",
+    "status": "unknown",
+    "imageSrc": "/img/characters/xg/xg-chisa.webp",
+    "sortOrder": 176
+  },
+  "xg-cocona": {
+    "id": "xg-cocona",
+    "hasProfile": false,
+    "title": "Cocona",
+    "group": "npc",
+    "visibility": "hidden",
+    "status": "unknown",
+    "imageSrc": "/img/characters/xg/xg-cocona.webp",
+    "sortOrder": 176
+  },
+  "xg-harvey": {
+    "id": "xg-harvey",
+    "hasProfile": false,
+    "title": "Harvey",
+    "group": "npc",
+    "visibility": "hidden",
+    "status": "unknown",
+    "imageSrc": "/img/characters/xg/xg-harvey.webp",
+    "sortOrder": 176
+  },
+  "npc-rosita": {
+    "id": "npc-rosita",
+    "hasProfile": false,
+    "title": "Rosita",
+    "group": "npc",
+    "visibility": "hidden",
+    "status": "unknown",
+    "imageSrc": "/img/characters/npc/npc-rosita.webp",
+    "sortOrder": 176
+  },
+  "npc-petunia": {
+    "id": "npc-petunia",
+    "hasProfile": false,
+    "title": "Petunia",
+    "group": "npc",
+    "visibility": "hidden",
+    "status": "unknown",
+    "imageSrc": "/img/characters/npc/npc-petunia.webp",
+    "sortOrder": 176
+  },
+  "npc-dalia": {
+    "id": "npc-dalia",
+    "hasProfile": false,
+    "title": "Dalia",
+    "group": "npc",
+    "visibility": "hidden",
+    "status": "unknown",
+    "imageSrc": "/img/characters/npc/npc-dalia.webp",
+    "sortOrder": 176
+  },
+  "npc-margarita": {
+    "id": "npc-margarita",
+    "hasProfile": false,
+    "title": "Margarita",
+    "group": "npc",
+    "visibility": "hidden",
+    "status": "unknown",
+    "imageSrc": "/img/characters/npc/npc-margarita.webp",
     "sortOrder": 176
   },
   "txt-hueningkai": {
@@ -7290,7 +7404,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "active",
-    "imageSrc": "/img/characters/monsta-x/mx-hyungwon.webp",
+    "imageSrc": "/img/characters/mx/mx-hyungwon.webp",
     "sortOrder": 182,
     "dateOfBirth": "1494-01-15",
     "zodiac": "Capricornio ♑",
@@ -7367,7 +7481,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": "/img/characters/npc/npc-juanga.webp",
+    "imageSrc": "/img/characters/enemies/enemy-goblin.webp",
     "sortOrder": 189
   },
   "npc-junho": {
@@ -7388,13 +7502,14 @@
     "imageSrc": "/img/characters/bg3/bg3-kar-niss.webp",
     "sortOrder": 191
   },
-  "actor-kim-soohyun": {
-    "id": "actor-kim-soohyun",
+  "enemy-soohyun": {
+    "id": "enemy-soohyun",
+    "hasProfile": false,
     "title": "Kim Soohyun",
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": "/img/characters/actors/actor-kim-soohyun.webp",
+    "imageSrc": "/img/characters/enemies/enemy-soohyun.webp",
     "sortOrder": 192
   },
   "npc-kunno": {
@@ -7442,13 +7557,14 @@
     "imageSrc": "/img/characters/npc/npc-leliana.webp",
     "sortOrder": 197
   },
-  "npc-lesath": {
-    "id": "npc-lesath",
+  "enemy-lesath": {
+    "id": "enemy-lesath",
+    "hasProfile": false,
     "title": "Lesath",
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": "/img/characters/npc/npc-lesath.webp",
+    "imageSrc": "/img/characters/enemies/enemy-lesath.webp",
     "sortOrder": 198
   },
   "npc-lin-dareum": {
@@ -7493,7 +7609,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": "/img/characters/npc/npc-mario.webp",
+    "imageSrc": "/img/characters/enemies/enemy-emisario.webp",
     "sortOrder": 203
   },
   "npc-matsuda": {
@@ -7538,7 +7654,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": "/img/characters/npc/npc-misa.webp",
+    "imageSrc": "/img/characters/enemies/enemy-emisario.webp",
     "sortOrder": 208
   },
   "npc-mitsubishi": {
@@ -7577,6 +7693,19 @@
     "imageSrc": "/img/characters/enemies/enemy-kris.webp",
     "sortOrder": 212
   },
+  "enemy-seungri": {
+    "id": "enemy-seungri",
+    "title": "SEUNGRI",
+    "subtitle": "Dios del Sol Ardiente",
+    "group": "npc",
+    "visibility": "hidden",
+    "status": "unknown",
+    "role": "NPC",
+    "race": "Deidad",
+    "factionId": "bigbang",
+    "imageSrc": "/img/characters/bigbang/enemy-seungri.webp",
+    "summary": "Dios del Sol Ardiente, vinculado con la ambición, la expansión y el culto que inspira al Clan del Sol Ardiente."
+  },
   "npc-neorayita": {
     "id": "npc-neorayita",
     "title": "Neorayita",
@@ -7592,7 +7721,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": "/img/characters/npc/npc-omar.webp",
+    "imageSrc": "/img/characters/npc/npc-hyberia-guard.webp",
     "sortOrder": 214
   },
   "os-qin-shen-yu": {
@@ -7634,7 +7763,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": "/img/characters/npc/npc-rio.webp",
+    "imageSrc": "/img/characters/enemies/enemy-emisario.webp",
     "sortOrder": 218
   },
   "npc-rogelio": {
@@ -7643,7 +7772,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": "/img/characters/npc/npc-rogelio.webp",
+    "imageSrc": "/img/characters/npc/npc-hyberia-guard.webp",
     "sortOrder": 219
   },
   "npc-sae-jong": {
@@ -7670,7 +7799,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": "/img/characters/npc/npc-sario.webp",
+    "imageSrc": "/img/characters/enemies/enemy-emisario.webp",
     "sortOrder": 222
   },
   "npc-scrompy-lee": {
@@ -7679,7 +7808,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": "/img/characters/npc/npc-scrompy-lee.webp",
+    "imageSrc": "/img/characters/enemies/enemy-goblin.webp",
     "sortOrder": 223
   },
   "npc-sebas": {
@@ -7688,7 +7817,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": "/img/characters/npc/npc-sebas.webp",
+    "imageSrc": "/img/characters/npc/npc-hyberia-guard.webp",
     "sortOrder": 224
   },
   "ateez-seonghwa": {
@@ -7699,7 +7828,7 @@
     "status": "active",
     "imageSrc": "/img/characters/ateez/ateez-seonghwa.webp",
     "sortOrder": 2,
-    "subtitle": "El Guardián de las Memorias",
+    "subtitle": "El Ángel de la Muerte",
     "dateOfBirth": "1998-04-03",
     "zodiac": "Aries ♈",
     "mbti": "ISFJ",
@@ -7819,7 +7948,7 @@
     "group": "npc",
     "visibility": "hidden",
     "status": "active",
-    "imageSrc": "/img/characters/monsta-x/mx-shownu.webp",
+    "imageSrc": "/img/characters/mx/mx-shownu.webp",
     "sortOrder": 231,
     "dateOfBirth": "1492-06-18",
     "zodiac": "Géminis ♊",
@@ -7926,13 +8055,13 @@
     "imageSrc": "/img/characters/txt/txt-taehyun.webp",
     "sortOrder": 239
   },
-  "nct-taeil": {
-    "id": "nct-taeil",
-    "title": "Taeil",
+  "enemy-taeil": {
+    "id": "enemy-taeil",
+    "title": "Moon Taeil",
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": "/img/characters/nct/nct-taeil.webp",
+    "imageSrc": "/img/characters/enemies/enemy-taeil.webp",
     "sortOrder": 240
   },
   "npc-tencha": {
@@ -7944,13 +8073,14 @@
     "imageSrc": "/img/characters/npc/npc-kobold.webp",
     "sortOrder": 241
   },
-  "npc-tere": {
-    "id": "npc-tere",
+  "pet-tere": {
+    "id": "pet-tere",
+    "hasProfile": false,
     "title": "Tere",
-    "group": "npc",
+    "group": "pet",
     "visibility": "hidden",
     "status": "unknown",
-    "imageSrc": "/img/characters/npc/npc-tere.webp",
+    "imageSrc": "/img/characters/pets/pet-tere.webp",
     "sortOrder": 242
   },
   "viviz-umji": {
@@ -8006,7 +8136,7 @@
     "status": "active",
     "imageSrc": "/img/characters/ateez/ateez-wooyoung.webp",
     "sortOrder": 7,
-    "subtitle": "El Joven Infiltrador",
+    "subtitle": "El Infiltrador",
     "dateOfBirth": "1999-11-26",
     "zodiac": "Sagitario ♐",
     "mbti": "ESFP",
@@ -8074,7 +8204,7 @@
     "status": "active",
     "imageSrc": "/img/characters/ateez/ateez-yeosang.webp",
     "sortOrder": 4,
-    "subtitle": "El Halcón del Horizonte",
+    "subtitle": "El Ojo del Horizonte",
     "dateOfBirth": "1999-06-15",
     "zodiac": "Géminis ♊",
     "mbti": "INTP",
@@ -8124,7 +8254,7 @@
     "status": "active",
     "imageSrc": "/img/characters/ateez/ateez-yunho.webp",
     "sortOrder": 3,
-    "subtitle": "El Navegante de la Luz",
+    "subtitle": "El Navegante de las Rutas Prohibidas",
     "dateOfBirth": "1999-03-23",
     "zodiac": "Aries ♈",
     "mbti": "ENTP",
@@ -8353,7 +8483,7 @@
     "visibility": "public",
     "sortOrder": 6,
     "status": "active",
-    "subtitle": "La Princesa de los Explosivos",
+    "subtitle": "El Artillero",
     "dateOfBirth": "1999-08-09",
     "zodiac": "Leo ♌",
     "mbti": "ENTP",
@@ -8538,13 +8668,92 @@
     "factionId": "tvxq",
     "alignment": "Lawful Neutral"
   },
+  "t1-zeus": {
+    "id": "t1-zeus",
+    "title": "ZEUS",
+    "subtitle": "Dios Caído de la Tempestad",
+    "group": "npc",
+    "visibility": "public",
+    "status": "dead",
+    "role": "NPC",
+    "race": "Deidad",
+    "factionId": "t1",
+    "imageSrc": "/img/characters/t1/t1-zeus.webp",
+    "summary": "Choi Woo-je fue el Dios de la Tempestad y antiguo integrante de los Nuevos Dioses. Tras su muerte, DORAN ocupó su lugar en el panteón sin heredar su dominio."
+  },
+  "t1-doran": {
+    "id": "t1-doran",
+    "title": "DORAN",
+    "subtitle": "Dios de la Forja y la Vanguardia",
+    "group": "npc",
+    "visibility": "public",
+    "status": "active",
+    "role": "NPC",
+    "race": "Deidad",
+    "factionId": "t1",
+    "imageSrc": "/img/characters/t1/t1-doran.webp",
+    "summary": "Patrono de la resistencia, los herreros y quienes defienden la primera línea. Su dominio abarca la forja, la vanguardia y la reconstrucción."
+  },
+  "t1-oner": {
+    "id": "t1-oner",
+    "title": "ONER",
+    "subtitle": "Dios de la Iniciativa y el Engaño",
+    "group": "npc",
+    "visibility": "public",
+    "status": "active",
+    "role": "NPC",
+    "race": "Deidad",
+    "factionId": "t1",
+    "imageSrc": "/img/characters/t1/t1-oner.webp",
+    "summary": "Patrono de los reflejos, la astucia y las oportunidades. Rige la velocidad, el sigilo y las fintas que permiten actuar a tiempo."
+  },
+  "t1-peyz": {
+    "id": "t1-peyz",
+    "title": "PEYZ",
+    "subtitle": "Dios de la Ejecución y la Justicia",
+    "group": "npc",
+    "visibility": "public",
+    "status": "active",
+    "role": "NPC",
+    "race": "Deidad",
+    "factionId": "t1",
+    "imageSrc": "/img/characters/t1/t1-peyz.webp",
+    "summary": "Deidad de los Nuevos Dioses asociada con la precisión, la sentencia y el golpe decisivo. Entre sus seguidores hay arqueros y jueces marciales."
+  },
+  "t1-keria": {
+    "id": "t1-keria",
+    "title": "KERIA",
+    "subtitle": "Dios Protector",
+    "group": "npc",
+    "visibility": "public",
+    "status": "active",
+    "role": "NPC",
+    "race": "Deidad",
+    "factionId": "t1",
+    "imageSrc": "/img/characters/t1/t1-keria.webp",
+    "summary": "Patrono de los escudos, las barreras y el cuidado táctico. Su dominio se centra en la defensa y la preservación de la vida."
+  },
+  "t1-faker": {
+    "id": "t1-faker",
+    "title": "FAKER",
+    "subtitle": "El Inmatable, Rey Demonio",
+    "group": "npc",
+    "visibility": "public",
+    "status": "active",
+    "role": "NPC",
+    "race": "Deidad",
+    "factionId": "t1",
+    "imageSrc": "/img/characters/t1/t1-faker.webp",
+    "summary": "Deidad asociada con la supremacía, el destino inquebrantable y la victoria inevitable. Es conocido como el Inmatable y Rey Demonio."
+  },
   "npc-laura": {
     "id": "npc-laura",
     "title": "Laura",
     "group": "npc",
     "visibility": "public",
     "status": "unknown",
-    "summary": "Aparece durante la jornada de playa de la sesión 19."
+    "summary": "Aparece durante la jornada de playa de la sesión 19.",
+    "imageSrc": "/img/characters/npc/npc-laura.webp"
   },
   "npc-yamal": {
     "id": "npc-yamal",
@@ -8552,7 +8761,8 @@
     "group": "npc",
     "visibility": "public",
     "status": "unknown",
-    "summary": "Aparece durante la jornada de playa de la sesión 19."
+    "summary": "Aparece durante la jornada de playa de la sesión 19.",
+    "imageSrc": "/img/characters/npc/npc-yamal.webp"
   },
   "npc-sixsevenaldo": {
     "id": "npc-sixsevenaldo",
@@ -8560,6 +8770,7 @@
     "group": "npc",
     "visibility": "public",
     "status": "unknown",
+    "imageSrc": "/img/characters/npc/npc-sixsevenaldo.webp",
     "summary": "Aparece durante la jornada de playa de la sesión 19."
   },
   "npc-minji": {
@@ -8569,6 +8780,7 @@
     "group": "npc",
     "visibility": "public",
     "status": "active",
+    "imageSrc": "/img/characters/npc/npc-minji.webp",
     "summary": "Una de las gemelas de Minjae y Joshua, nacida durante la sesión 14."
   },
   "npc-minsoo": {
@@ -8578,6 +8790,7 @@
     "group": "npc",
     "visibility": "public",
     "status": "active",
+    "imageSrc": "/img/characters/npc/npc-minsoo.webp",
     "summary": "Una de las gemelas de Minjae y Joshua, nacida durante la sesión 14."
   },
   "npc-abu": {
@@ -8586,6 +8799,7 @@
     "group": "npc",
     "visibility": "public",
     "status": "unknown",
+    "imageSrc": "/img/characters/npc/npc-agu.webp",
     "summary": "Aparece en la sesión 19."
   },
   "npc-apu": {
@@ -8594,6 +8808,7 @@
     "group": "npc",
     "visibility": "public",
     "status": "unknown",
+    "imageSrc": "/img/characters/npc/npc-agu.webp",
     "summary": "Aparece en la sesión 19."
   },
   "npc-agu": {
@@ -8602,6 +8817,7 @@
     "group": "npc",
     "visibility": "public",
     "status": "unknown",
+    "imageSrc": "/img/characters/npc/npc-agu.webp",
     "summary": "Aparece en la sesión 19."
   }
 }

@@ -75,6 +75,7 @@ const config: Config = {
       redirects: [
         ...characterIdRedirects,
         ...newCharacterIdRedirects,
+        {from: '/characters/npc/nct-taeil', to: '/characters/npc/enemy-taeil'},
         {from: '/factions/los-diecisiete-heroes', to: '/factions/svt'},
         {from: '/factions/neo-culturales-tecnologicos', to: '/factions/nct'},
         {from: '/factions/lobos-perdidos', to: '/factions/skz'},

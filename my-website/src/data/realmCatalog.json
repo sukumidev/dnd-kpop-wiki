@@ -1,0 +1,97 @@
+[
+  {
+    "id": "hyberia",
+    "title": "Hyberia"
+  },
+  {
+    "id": "sylmorien",
+    "title": "Sylmorien"
+  },
+  {
+    "id": "jeyperia",
+    "title": "Jeyperia"
+  },
+  {
+    "id": "yggdrasil",
+    "title": "Yggdrasil",
+    "aliases": [
+      "Ygdrassil"
+    ]
+  },
+  {
+    "id": "hotou",
+    "title": "Hotou"
+  },
+  {
+    "id": "guozhong",
+    "title": "Guozhong"
+  },
+  {
+    "id": "wantai",
+    "title": "Wantai"
+  },
+  {
+    "id": "fincaria",
+    "title": "Fincaria"
+  },
+  {
+    "id": "fantagio",
+    "title": "Fantagio"
+  },
+  {
+    "id": "mystoria",
+    "title": "Mystoria"
+  },
+  {
+    "id": "stonia",
+    "title": "Stonia"
+  },
+  {
+    "id": "reino-arcoiris",
+    "title": "Reino Arcoiris"
+  },
+  {
+    "id": "nacion-p",
+    "title": "Nación P"
+  },
+  {
+    "id": "isla-estelar",
+    "title": "Isla Estelar"
+  },
+  {
+    "id": "isla-halazia",
+    "title": "Isla Halazia"
+  },
+  {
+    "id": "isla-cubica",
+    "title": "Isla Cúbica"
+  },
+  {
+    "id": "dreamscape",
+    "title": "Dreamscape"
+  },
+  {
+    "id": "landthai",
+    "title": "Landthai"
+  },
+  {
+    "id": "sin-reino-asignado",
+    "title": "Sin reino asignado",
+    "aliases": [
+      "Sin reino",
+      "Sin reino / itinerante",
+      "No aplica"
+    ],
+    "administrative": true
+  },
+  {
+    "id": "desconocido",
+    "title": "Desconocido",
+    "administrative": true
+  },
+  {
+    "id": "por-definir",
+    "title": "Por definir",
+    "administrative": true
+  }
+]

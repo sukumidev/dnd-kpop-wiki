@@ -4,7 +4,7 @@ import Link from "@docusaurus/Link";
 import {useBaseUrlUtils} from "@docusaurus/useBaseUrl";
 import WikiSidebarPageLayout from "@site/src/components/WikiSidebarPageLayout";
 import {getStatblock} from "@site/src/data/statblocks";
-import {mythicCharacterIds} from "@site/src/data/cosmology";
+import {getMythicEntityByCharacterId} from "@site/src/data/cosmology";
 import {
   NO_REALM_GROUP_ID,
   compareFactionsByPriority,
@@ -15,7 +15,7 @@ import styles from "./styles.module.css";
 import {getPublicFactionHref} from "@site/src/data/publicRoutes";
 
 import {
-  visibleCharacterList,
+  characterList,
   factionList,
   getCharacterDocPath,
   getFactionById,
@@ -59,10 +59,7 @@ function FactionCta({faction, label, stopPropagation = false}: {faction: Faction
 export default function CharactersPage() {
   const {withBaseUrl} = useBaseUrlUtils();
 
-  const directoryCharacters = useMemo(
-    () => visibleCharacterList.filter((character) => !mythicCharacterIds.has(character.id)),
-    [],
-  );
+  const directoryCharacters = characterList;
 
   const partyGroups = useMemo(() => {
     return sortByExplicitOrderThenTitle(
@@ -135,18 +132,14 @@ export default function CharactersPage() {
           const imageUrl = character.imageSrc
             ? withBaseUrl(character.imageSrc)
             : undefined;
-          const docPath = getCharacterDocPath(character);
+          const docPath =
+            getMythicEntityByCharacterId(character.id)?.docPath ?? getCharacterDocPath(character);
+          const href = character.hasProfile === false ? undefined : withBaseUrl(`/${docPath}`);
           const isDeceased = character.status === "dead";
           const statblock = getStatblock(character.id);
           const classEntries = statblock?.classes ?? [];
 
-          return (
-            <Link
-              key={character.id}
-              to={withBaseUrl(`/${docPath}`)}
-              className={styles.cardLink}
-              aria-label={`Abrir ficha de ${character.title}`}
-            >
+          const card = (
               <article
                 className={`${styles.card} ${isDeceased ? styles.cardDeceased : ""}`}
               >
@@ -194,7 +187,21 @@ export default function CharactersPage() {
                   ) : null}
                 </div>
               </article>
+          );
+
+          return href ? (
+            <Link
+              key={character.id}
+              to={href}
+              className={styles.cardLink}
+              aria-label={`Abrir ficha de ${character.title}`}
+            >
+              {card}
             </Link>
+          ) : (
+            <div key={character.id} className={`${styles.cardLink} ${styles.cardStatic}`}>
+              {card}
+            </div>
           );
         })}
       </div>
