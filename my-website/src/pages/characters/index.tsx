@@ -3,6 +3,7 @@ import Heading from "@theme/Heading";
 import Link from "@docusaurus/Link";
 import {useBaseUrlUtils} from "@docusaurus/useBaseUrl";
 import WikiSidebarPageLayout from "@site/src/components/WikiSidebarPageLayout";
+import MysteryCards from "@site/src/components/MysteryCards";
 import {getStatblock} from "@site/src/data/statblocks";
 import {getMythicEntityByCharacterId} from "@site/src/data/cosmology";
 import {
@@ -289,6 +290,7 @@ export default function CharactersPage() {
               </div>
             </details>
           ))}
+          <MysteryCards />
         </div>
       </main>
     </WikiSidebarPageLayout>

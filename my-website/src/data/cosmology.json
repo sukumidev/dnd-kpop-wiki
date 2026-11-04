@@ -22,7 +22,7 @@
     "docPath": "cosmology/deities/bg-top",
     "sortOrder": 2,
     "alignment": "True Neutral",
-    "characterId": "bigbang-top",
+    "imageSrc": "/img/characters/bigbang/bigbang-top.webp",
     "cult": "Primordialismo"
   },
   "bg-taeyang": {
@@ -35,7 +35,7 @@
     "docPath": "cosmology/deities/bg-taeyang",
     "sortOrder": 3,
     "alignment": "Lawful Neutral",
-    "characterId": "bigbang-taeyang",
+    "imageSrc": "/img/characters/bigbang/bigbang-taeyang.webp",
     "cult": "Primordialismo"
   },
   "bg-daesung": {
@@ -48,7 +48,7 @@
     "docPath": "cosmology/deities/bg-daesung",
     "sortOrder": 4,
     "alignment": "Chaotic Good",
-    "characterId": "bigbang-daesung",
+    "imageSrc": "/img/characters/bigbang/bigbang-daesung.webp",
     "cult": "Primordialismo"
   },
   "enemy-seungri": {
@@ -61,7 +61,7 @@
     "docPath": "cosmology/deities/enemy-seungri",
     "sortOrder": 5,
     "alignment": "Lawful Evil / Neutral Evil",
-    "characterId": "enemy-seungri",
+    "imageSrc": "/img/characters/bigbang/enemy-seungri.webp",
     "cult": "Primordialismo"
   },
   "shinee-onew": {
@@ -73,7 +73,7 @@
     "summary": "ONEW es el Dios del Nuevo Amanecer, patrono de la sanación, la misericordia y la reconstrucción después del desastre.",
     "docPath": "cosmology/deities/shinee-onew",
     "sortOrder": 1,
-    "characterId": "shinee-onew",
+    "imageSrc": "/img/characters/shinee/shinee-onew.webp",
     "alignment": "Neutral Good",
     "cult": "Resplandecismo"
   },
@@ -86,7 +86,7 @@
     "summary": "JONGHYUN es el Dios de la Muerte Digna y la Memoria.",
     "docPath": "cosmology/deities/shinee-jonghyun",
     "sortOrder": 2,
-    "characterId": "shinee-jonghyun",
+    "imageSrc": "/img/characters/shinee/shinee-jonghyun.webp",
     "alignment": "Neutral Good / Lawful Neutral",
     "cult": "Resplandecismo"
   },
@@ -100,7 +100,7 @@
     "docPath": "cosmology/deities/shinee-key",
     "sortOrder": 3,
     "alignment": "True Neutral",
-    "characterId": "shinee-key",
+    "imageSrc": "/img/characters/shinee/shinee-key.webp",
     "cult": "Resplandecismo"
   },
   "shinee-minho": {
@@ -112,7 +112,7 @@
     "summary": "MINHO es el Dios de la Fuerza y la Perseverancia, protector de la competencia honorable y de las bestias que sobreviven sin traicionar su naturaleza.",
     "docPath": "cosmology/deities/shinee-minho",
     "sortOrder": 4,
-    "characterId": "shinee-minho",
+    "imageSrc": "/img/characters/shinee/shinee-minho.webp",
     "alignment": "Lawful Good",
     "cult": "Resplandecismo"
   },
@@ -125,7 +125,7 @@
     "summary": "TAEMIN es el Dios del Mar, las mareas y la transformación.",
     "docPath": "cosmology/deities/shinee-taemin",
     "sortOrder": 5,
-    "characterId": "shinee-taemin",
+    "imageSrc": "/img/characters/shinee/shinee-taemin.webp",
     "alignment": "Chaotic Neutral",
     "cult": "Resplandecismo"
   },

@@ -7142,33 +7142,6 @@
     "imageSrc": "/img/characters/npc/npc-felixia.webp",
     "sortOrder": 169
   },
-  "bigbang-top": {
-    "id": "bigbang-top",
-    "title": "TOP",
-    "group": "npc",
-    "visibility": "hidden",
-    "status": "unknown",
-    "imageSrc": "/img/characters/bigbang/bigbang-top.webp",
-    "sortOrder": 170
-  },
-  "bigbang-taeyang": {
-    "id": "bigbang-taeyang",
-    "title": "TAEYANG",
-    "group": "npc",
-    "visibility": "hidden",
-    "status": "unknown",
-    "imageSrc": "/img/characters/bigbang/bigbang-taeyang.webp",
-    "sortOrder": 170
-  },
-  "bigbang-daesung": {
-    "id": "bigbang-daesung",
-    "title": "DAESUNG",
-    "group": "npc",
-    "visibility": "hidden",
-    "status": "unknown",
-    "imageSrc": "/img/characters/bigbang/bigbang-daesung.webp",
-    "sortOrder": 170
-  },
   "bigbang-g-dragon": {
     "id": "bigbang-g-dragon",
     "title": "G-Dragon",
@@ -7877,51 +7850,6 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/sj/sj-shindong.webp",
-    "sortOrder": 229
-  },
-  "shinee-onew": {
-    "id": "shinee-onew",
-    "title": "ONEW",
-    "group": "npc",
-    "visibility": "hidden",
-    "status": "unknown",
-    "imageSrc": "/img/characters/shinee/shinee-onew.webp",
-    "sortOrder": 229
-  },
-  "shinee-key": {
-    "id": "shinee-key",
-    "title": "KEY",
-    "group": "npc",
-    "visibility": "hidden",
-    "status": "unknown",
-    "imageSrc": "/img/characters/shinee/shinee-key.webp",
-    "sortOrder": 229
-  },
-  "shinee-jonghyun": {
-    "id": "shinee-jonghyun",
-    "title": "JONGHYUN",
-    "group": "npc",
-    "visibility": "hidden",
-    "status": "unknown",
-    "imageSrc": "/img/characters/shinee/shinee-jonghyun.webp",
-    "sortOrder": 229
-  },
-  "shinee-minho": {
-    "id": "shinee-minho",
-    "title": "MINHO",
-    "group": "npc",
-    "visibility": "hidden",
-    "status": "unknown",
-    "imageSrc": "/img/characters/shinee/shinee-minho.webp",
-    "sortOrder": 229
-  },
-  "shinee-taemin": {
-    "id": "shinee-taemin",
-    "title": "TAEMIN",
-    "group": "npc",
-    "visibility": "hidden",
-    "status": "unknown",
-    "imageSrc": "/img/characters/shinee/shinee-taemin.webp",
     "sortOrder": 229
   },
   "riize-shotaro": {

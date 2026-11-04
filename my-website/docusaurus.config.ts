@@ -2,6 +2,10 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 import characterIdMapping from './scripts/character-id-mapping.json';
+import characterRegistry from './src/data/characters.json';
+
+const isPublicBuild = process.env.HALLYURA_PUBLIC_BUILD === 'true';
+const allowedCharacterIds = new Set(Object.keys(characterRegistry));
 
 const siteUrl = process.env.SITE_URL ?? 'http://localhost:3000';
 const siteBaseUrl = process.env.BASE_URL ?? '/';
@@ -9,7 +13,7 @@ const siteBaseUrl = process.env.BASE_URL ?? '/';
 // Keep bookmarks to character pages working after ID normalization.
 const characterIdRedirects = Object.entries(
   characterIdMapping as Record<string, string>,
-).map(([oldId, newId]) => {
+).filter(([, newId]) => !isPublicBuild || allowedCharacterIds.has(newId)).map(([oldId, newId]) => {
   const group = oldId === 'qin-shen-yu' ? 'party' : 'npc';
   return { from: `/characters/${group}/${oldId}`, to: `/characters/${group}/${newId}` };
 });
@@ -24,7 +28,7 @@ const newCharacterIdRedirects = Object.entries({
   abu: 'npc-abu',
   apu: 'npc-apu',
   agu: 'npc-agu',
-}).map(([oldId, newId]) => ({
+}).filter(([, newId]) => !isPublicBuild || allowedCharacterIds.has(newId)).map(([oldId, newId]) => ({
   from: `/characters/npc/${oldId}`,
   to: `/characters/npc/${newId}`,
 }));

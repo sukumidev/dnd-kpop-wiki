@@ -13,6 +13,7 @@ function readJson(file: string): any {
 
 const mapping = readJson(path.join(root, "scripts", "character-id-mapping.json")) as Record<string, string>;
 const characters = readJson(path.join(dataDir, "characters.json")) as Record<string, { id: string; group: "npc" | "party"; imageSrc?: string | null }>;
+const cosmology = readJson(path.join(dataDir, "cosmology.json")) as Record<string, { characterId?: string | null }>;
 const sessions = readJson(path.join(dataDir, "sessions.json")) as Array<{
   id: string; subtitle?: string; characterIds: string[];
 }>;
@@ -106,6 +107,13 @@ test("old character routes redirect and strict link checks remain enabled", () =
   assert.match(config, /onBrokenMarkdownLinks: 'throw'/);
   for (const oldRoute of ["los-diecisiete-heroes", "neo-culturales-tecnologicos", "lobos-perdidos", "hijos-de-la-noche", "marea-negra", "t1-gumayusi"]) {
     assert.ok(config.includes(oldRoute), "Legacy redirect missing: " + oldRoute);
+  }
+});
+
+test("all cosmology character references resolve", () => {
+  for (const [id, entity] of Object.entries(cosmology)) {
+    if (!entity.characterId) continue;
+    assert.ok(characters[entity.characterId], `${id}: missing character ${entity.characterId}`);
   }
 });
 
