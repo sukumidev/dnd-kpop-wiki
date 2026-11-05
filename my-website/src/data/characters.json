@@ -6946,7 +6946,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-capitana-lim.webp",
-    "sortOrder": 148
+    "sortOrder": 148,
+    "factionId": "ciudadanos-de-hyberia"
   },
   "npc-capitana-merry": {
     "id": "npc-capitana-merry",
@@ -6955,7 +6956,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-capitana-merry.webp",
-    "sortOrder": 149
+    "sortOrder": 149,
+    "factionId": "ciudadanos-de-hyberia"
   },
   "npc-carlos": {
     "id": "npc-carlos",
@@ -7542,7 +7544,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-isuna.webp",
-    "sortOrder": 195
+    "sortOrder": 195,
+    "factionId": "cobradores-de-impuestos-de-hyberia"
   },
   "npc-lady-myeonghwa": {
     "id": "npc-lady-myeonghwa",
@@ -7682,7 +7685,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-moai.webp",
-    "sortOrder": 210
+    "sortOrder": 210,
+    "factionId": "monstruos-del-casino-clandestino"
   },
   "enemy-haneul": {
     "id": "enemy-haneul",
@@ -7731,7 +7735,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-hyberia-guard.webp",
-    "sortOrder": 214
+    "sortOrder": 214,
+    "factionId": "oficiales-reales-de-hyberia"
   },
   "os-qin-shen-yu": {
     "id": "os-qin-shen-yu",
@@ -7783,7 +7788,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-hyberia-guard.webp",
-    "sortOrder": 219
+    "sortOrder": 219,
+    "factionId": "oficiales-reales-de-hyberia"
   },
   "npc-sae-jong": {
     "id": "npc-sae-jong",
@@ -7829,7 +7835,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-hyberia-guard.webp",
-    "sortOrder": 224
+    "sortOrder": 224,
+    "factionId": "oficiales-reales-de-hyberia"
   },
   "ateez-seonghwa": {
     "id": "ateez-seonghwa",
@@ -7950,7 +7957,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-baekjin.webp",
-    "sortOrder": 233
+    "sortOrder": 233,
+    "factionId": "cobradores-de-impuestos-de-hyberia"
   },
   "sj-siwon": {
     "id": "sj-siwon",
@@ -8140,7 +8148,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-xue-long.webp",
-    "sortOrder": 249
+    "sortOrder": 249,
+    "factionId": "emisarios-de-los-hijos-de-la-noche"
   },
   "omega-x-yechan": {
     "id": "omega-x-yechan",

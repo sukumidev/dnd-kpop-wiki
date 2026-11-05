@@ -2228,5 +2228,26 @@
     "visibility": "hidden",
     "parentFactionId": "enhypen",
     "firstAppearance": 4
+  },
+  "cobradores-de-impuestos-de-hyberia": {
+    "id": "cobradores-de-impuestos-de-hyberia",
+    "title": "Cobradores de Impuestos de Hyberia",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden"
+  },
+  "oficiales-reales-de-hyberia": {
+    "id": "oficiales-reales-de-hyberia",
+    "title": "Oficiales Reales de Hyberia",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden"
+  },
+  "monstruos-del-casino-clandestino": {
+    "id": "monstruos-del-casino-clandestino",
+    "title": "Monstruos del Casino Clandestino",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden"
   }
 }
