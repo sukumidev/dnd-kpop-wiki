@@ -172,33 +172,34 @@ export default function CharactersPage() {
             getMythicEntityByCharacterId(character.id)?.docPath ?? getCharacterDocPath(character);
           const href = character.hasProfile === false ? undefined : withBaseUrl(`/${docPath}`);
           const isDeceased = character.status === "dead";
+          const isFormerMember = character.membershipStatus === "former";
+          const isMuted = isDeceased || isFormerMember;
           const statblock = getStatblock(character.id);
           const classEntries = statblock?.classes ?? [];
 
           const card = (
               <article
-                className={`${styles.card} ${isDeceased ? styles.cardDeceased : ""}`}
+                className={`${styles.card} ${isMuted ? styles.cardMuted : ""}`}
               >
                 <div className={styles.imageWrap}>
                   {imageUrl ? (
-                    <>
-                      <img
-                        className={`${styles.image} ${
-                          isDeceased ? styles.imageDeceased : ""
-                        }`}
-                        src={imageUrl}
-                        alt={character.title}
-                        loading="lazy"
-                      />
-                      {isDeceased ? (
-                        <div className={styles.deceasedBadge}>✝ Fallecido</div>
-                      ) : null}
-                    </>
+                    <img
+                      className={`${styles.image} ${isMuted ? styles.imageMuted : ""}`}
+                      src={imageUrl}
+                      alt={character.title}
+                      loading="lazy"
+                    />
                   ) : (
-                    <div className={styles.imageFallback} aria-hidden="true">
+                    <div className={`${styles.imageFallback} ${isMuted ? styles.imageMuted : ""}`} aria-hidden="true">
                       <span className={styles.fallbackMark}>✦</span>
                     </div>
                   )}
+                  {isMuted ? (
+                    <div className={styles.statusBadges}>
+                      {isFormerMember ? <span className={styles.statusBadge}>Ex-Miembro</span> : null}
+                      {isDeceased ? <span className={styles.statusBadge}>✝ Fallecido</span> : null}
+                    </div>
+                  ) : null}
                 </div>
 
                 <div className={styles.cardBottom}>

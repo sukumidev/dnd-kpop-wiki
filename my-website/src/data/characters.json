@@ -4339,6 +4339,7 @@
     "title": "Wong Yukhei (Lucas)",
     "subtitle": "El Maestro de la Tormenta",
     "status": "active",
+    "membershipStatus": "former",
     "group": "npc",
     "visibility": "public",
     "role": "NPC",
@@ -6881,7 +6882,7 @@
     "title": "Ario",
     "group": "npc",
     "visibility": "hidden",
-    "status": "unknown",
+    "status": "dead",
     "imageSrc": "/img/characters/enemies/enemy-emisario.webp",
     "sortOrder": 134,
     "factionId": "emisarios-de-los-hijos-de-la-noche"
@@ -6936,7 +6937,7 @@
     "title": "Benny",
     "group": "npc",
     "visibility": "hidden",
-    "status": "unknown",
+    "status": "dead",
     "imageSrc": "/img/characters/enemies/enemy-goblin.webp",
     "sortOrder": 139,
     "factionId": "goblins-de-hyberia"
@@ -6969,7 +6970,7 @@
     "title": "Brandom Lee",
     "group": "npc",
     "visibility": "hidden",
-    "status": "unknown",
+    "status": "dead",
     "imageSrc": "/img/characters/npc/npc-brandom-lee.webp",
     "sortOrder": 142,
     "factionId": "division-del-agua-de-la-guardia-real-de-sylmorien"
@@ -7052,7 +7053,7 @@
     "title": "Carlos",
     "group": "npc",
     "visibility": "hidden",
-    "status": "unknown",
+    "status": "dead",
     "imageSrc": "/img/characters/enemies/enemy-goblin.webp",
     "sortOrder": 150,
     "factionId": "goblins-de-hyberia"
@@ -7062,7 +7063,7 @@
     "title": "Castro",
     "group": "npc",
     "visibility": "hidden",
-    "status": "unknown",
+    "status": "dead",
     "imageSrc": "/img/characters/enemies/enemy-goblin.webp",
     "sortOrder": 151,
     "factionId": "goblins-de-hyberia"
@@ -7072,7 +7073,7 @@
     "title": "Chayanne",
     "group": "npc",
     "visibility": "hidden",
-    "status": "unknown",
+    "status": "dead",
     "imageSrc": "/img/characters/enemies/enemy-goblin.webp",
     "sortOrder": 152,
     "factionId": "goblins-de-hyberia"
@@ -7095,7 +7096,7 @@
     "title": "Church",
     "group": "npc",
     "visibility": "hidden",
-    "status": "unknown",
+    "status": "dead",
     "imageSrc": "/img/characters/enemies/enemy-goblin.webp",
     "sortOrder": 154,
     "factionId": "goblins-de-hyberia"
@@ -7105,7 +7106,7 @@
     "title": "Cristian",
     "group": "npc",
     "visibility": "hidden",
-    "status": "unknown",
+    "status": "dead",
     "imageSrc": "/img/characters/enemies/enemy-goblin.webp",
     "sortOrder": 155,
     "factionId": "goblins-de-hyberia"
@@ -7168,7 +7169,7 @@
     "title": "Don José",
     "group": "npc",
     "visibility": "hidden",
-    "status": "unknown",
+    "status": "dead",
     "imageSrc": "/img/characters/enemies/enemy-goblin.webp",
     "sortOrder": 161,
     "factionId": "goblins-de-hyberia"
@@ -7198,7 +7199,7 @@
     "title": "Emi",
     "group": "npc",
     "visibility": "hidden",
-    "status": "unknown",
+    "status": "dead",
     "imageSrc": "/img/characters/enemies/enemy-emisario.webp",
     "sortOrder": 164,
     "factionId": "emisarios-de-los-hijos-de-la-noche"
@@ -7282,7 +7283,7 @@
     "title": "Gabri",
     "group": "npc",
     "visibility": "hidden",
-    "status": "unknown",
+    "status": "dead",
     "imageSrc": "/img/characters/enemies/enemy-goblin.webp",
     "sortOrder": 171,
     "factionId": "goblins-de-hyberia"
@@ -7304,7 +7305,7 @@
     "title": "Hanjun",
     "group": "npc",
     "visibility": "hidden",
-    "status": "unknown",
+    "status": "dead",
     "imageSrc": "/img/characters/npc/npc-hanjun.webp",
     "sortOrder": 173,
     "factionId": "emisarios-de-los-hijos-de-la-noche"
@@ -7646,7 +7647,7 @@
     "title": "Juanga",
     "group": "npc",
     "visibility": "hidden",
-    "status": "unknown",
+    "status": "dead",
     "imageSrc": "/img/characters/enemies/enemy-goblin.webp",
     "sortOrder": 189,
     "factionId": "goblins-de-hyberia"
@@ -7790,7 +7791,7 @@
     "title": "Mario",
     "group": "npc",
     "visibility": "hidden",
-    "status": "unknown",
+    "status": "dead",
     "imageSrc": "/img/characters/enemies/enemy-emisario.webp",
     "sortOrder": 203,
     "factionId": "emisarios-de-los-hijos-de-la-noche"
@@ -7810,7 +7811,7 @@
     "title": "Mephisto",
     "group": "npc",
     "visibility": "hidden",
-    "status": "unknown",
+    "status": "dead",
     "imageSrc": "/img/characters/npc/npc-mephisto.webp",
     "sortOrder": 205,
     "factionId": "emisarios-de-los-hijos-de-la-noche"
@@ -7842,7 +7843,7 @@
     "title": "Misa",
     "group": "npc",
     "visibility": "hidden",
-    "status": "unknown",
+    "status": "dead",
     "imageSrc": "/img/characters/enemies/enemy-emisario.webp",
     "sortOrder": 208,
     "factionId": "emisarios-de-los-hijos-de-la-noche"
@@ -7852,7 +7853,7 @@
     "title": "Mitsubishi",
     "group": "npc",
     "visibility": "hidden",
-    "status": "unknown",
+    "status": "dead",
     "imageSrc": "/img/characters/npc/npc-mitsubishi.webp",
     "sortOrder": 209,
     "factionId": "dragonborns-del-clan-del-caos"
@@ -7964,7 +7965,7 @@
     "title": "Rio",
     "group": "npc",
     "visibility": "hidden",
-    "status": "unknown",
+    "status": "dead",
     "imageSrc": "/img/characters/enemies/enemy-emisario.webp",
     "sortOrder": 218,
     "factionId": "emisarios-de-los-hijos-de-la-noche"
@@ -8004,7 +8005,7 @@
     "title": "Sario",
     "group": "npc",
     "visibility": "hidden",
-    "status": "unknown",
+    "status": "dead",
     "imageSrc": "/img/characters/enemies/enemy-emisario.webp",
     "sortOrder": 222,
     "factionId": "emisarios-de-los-hijos-de-la-noche"
@@ -8361,7 +8362,7 @@
     "title": "Xue Long",
     "group": "npc",
     "visibility": "hidden",
-    "status": "unknown",
+    "status": "dead",
     "imageSrc": "/img/characters/npc/npc-xue-long.webp",
     "sortOrder": 249,
     "factionId": "emisarios-de-los-hijos-de-la-noche"
@@ -8729,7 +8730,8 @@
       "Mensajero de la Revuelta",
       "Animador, Tahúr y Rostro Público del Casino"
     ],
-    "role": "NPC"
+    "role": "NPC",
+    "imageSrc": "/img/characters/mx/mx-minhyuk.webp"
   },
   "mx-kihyun": {
     "id": "mx-kihyun",
@@ -8750,7 +8752,8 @@
       "Artillero de la Resistencia",
       "Maestro del Escenario y Supervisor de Espectáculos"
     ],
-    "role": "NPC"
+    "role": "NPC",
+    "imageSrc": "/img/characters/mx/mx-kihyun.webp"
   },
   "mx-joohoney": {
     "id": "mx-joohoney",
@@ -8771,7 +8774,8 @@
       "Demoledor de Cadenas",
       "Cobrador, Gladiador y Rompehuesos del Casino"
     ],
-    "role": "NPC"
+    "role": "NPC",
+    "imageSrc": "/img/characters/mx/mx-joohoney.webp"
   },
   "mx-im": {
     "id": "mx-im",
@@ -8792,7 +8796,8 @@
       "Espía de los Libertadores",
       "Corredor de Información y Negociador de Deudas"
     ],
-    "role": "NPC"
+    "role": "NPC",
+    "imageSrc": "/img/characters/mx/mx-im.webp"
   },
   "mx-wonho": {
     "id": "mx-wonho",
@@ -8812,7 +8817,8 @@
     "occupation": [
       "Rompeasedios de la Liberación"
     ],
-    "role": "NPC"
+    "role": "NPC",
+    "imageSrc": "/img/characters/mx/mx-wonho.webp"
   },
   "tvxq-yunho": {
     "id": "tvxq-yunho",
@@ -8891,6 +8897,7 @@
     "group": "npc",
     "visibility": "public",
     "status": "dead",
+    "membershipStatus": "former",
     "role": "NPC",
     "race": "Deidad",
     "factionId": "t1",

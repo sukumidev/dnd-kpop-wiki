@@ -9,6 +9,7 @@ export type MythicEntity = {
   imageSrc?: string | null;
   pantheon?: string | null;
   factionId?: string | null;
+  membershipStatus?: "former";
   alignment?: string | null;
   cult?: string | null;
   summary?: string | null;
@@ -47,6 +48,7 @@ export const cosmology = Object.fromEntries(
         title: source.title ?? character?.title ?? id,
         subtitle: source.subtitle ?? character?.subtitle,
         imageSrc: source.imageSrc ?? character?.imageSrc,
+        membershipStatus: source.membershipStatus ?? character?.membershipStatus,
         summary: source.summary ?? character?.summary,
         docPath:
           source.docPath ??

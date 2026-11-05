@@ -337,15 +337,15 @@
   font-size: 0.76rem;
 }
 
-.cardDeceased {
+.cardMuted {
   opacity: 0.92;
 }
 
-.imageDeceased {
+.imageMuted {
   filter: grayscale(100%) brightness(0.7) contrast(1.05);
 }
 
-.cardDeceased .imageWrap::after {
+.cardMuted .imageWrap::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -353,11 +353,18 @@
   pointer-events: none;
 }
 
-.deceasedBadge {
+.statusBadges {
   position: absolute;
   z-index: 2;
   top: 0.65rem;
   right: 0.65rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.3rem;
+}
+
+.statusBadge {
   padding: 0.27rem 0.55rem;
   border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 999px;
@@ -461,9 +468,12 @@
     line-height: 1.4;
   }
 
-  .deceasedBadge {
+  .statusBadges {
     top: 0.4rem;
     right: 0.4rem;
+  }
+
+  .statusBadge {
     padding: 0.2rem 0.4rem;
   }
 }

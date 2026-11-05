@@ -52,6 +52,7 @@ export type Character = {
   group: CharacterGroup;
   /** Controls appearance in public character directories and lists. */
   visibility: CharacterVisibility;
+  membershipStatus?: "former";
   role?: string | null;
   occupation?: string[];
   status: CharacterStatus;

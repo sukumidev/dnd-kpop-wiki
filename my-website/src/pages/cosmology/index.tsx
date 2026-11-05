@@ -23,17 +23,23 @@ const OTHER_PANTHEON = "Otros";
 function EntityCard({entity}: {entity: MythicEntity}) {
   const {withBaseUrl} = useBaseUrlUtils();
   const imageUrl = entity.imageSrc ? withBaseUrl(entity.imageSrc) : undefined;
+  const isFormerMember = entity.membershipStatus === "former";
 
   const content = (
-    <article className={styles.card}>
+    <article className={`${styles.card} ${isFormerMember ? styles.cardFormerMember : ""}`}>
       <div className={styles.imageWrap}>
         {imageUrl ? (
-          <img
-            className={styles.image}
-            src={imageUrl}
-            alt={entity.title}
-            loading="lazy"
-          />
+          <>
+            <img
+              className={`${styles.image} ${isFormerMember ? styles.imageFormerMember : ""}`}
+              src={imageUrl}
+              alt={entity.title}
+              loading="lazy"
+            />
+            {isFormerMember ? (
+              <div className={styles.formerMemberBadge}>Ex-Miembro</div>
+            ) : null}
+          </>
         ) : (
           <div className={styles.imageFallback} aria-hidden="true">
             <span className={styles.fallbackMark}>✦</span>
