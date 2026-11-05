@@ -2249,5 +2249,19 @@
     "type": "other",
     "status": "unknown",
     "visibility": "hidden"
+  },
+  "policia-militar-de-sylmorien": {
+    "id": "policia-militar-de-sylmorien",
+    "title": "Policía Militar de Sylmorien",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden"
+  },
+  "archidiablos-del-averno": {
+    "id": "archidiablos-del-averno",
+    "title": "Archidiablos del Averno",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden"
   }
 }

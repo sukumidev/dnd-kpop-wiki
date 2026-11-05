@@ -7079,7 +7079,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-donatella-versace.webp",
-    "sortOrder": 162
+    "sortOrder": 162,
+    "factionId": "archidiablos-del-averno"
   },
   "npc-dorian": {
     "id": "npc-dorian",
@@ -7088,7 +7089,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-dorian.webp",
-    "sortOrder": 163
+    "sortOrder": 163,
+    "factionId": "ciudadanos-de-hotou"
   },
   "npc-emi": {
     "id": "npc-emi",
@@ -7154,7 +7156,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-felixia.webp",
-    "sortOrder": 169
+    "sortOrder": 169,
+    "factionId": "ciudadanos-de-hotou"
   },
   "bigbang-g-dragon": {
     "id": "bigbang-g-dragon",
@@ -7470,7 +7473,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-jeronimo.webp",
-    "sortOrder": 187
+    "sortOrder": 187,
+    "factionId": "policia-militar-de-sylmorien"
   },
   "ampersone-jiho": {
     "id": "ampersone-jiho",
@@ -7565,7 +7569,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-leliana.webp",
-    "sortOrder": 197
+    "sortOrder": 197,
+    "factionId": "ciudadanos-de-hotou"
   },
   "enemy-lesath": {
     "id": "enemy-lesath",
@@ -8221,7 +8226,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-youngok.webp",
-    "sortOrder": 255
+    "sortOrder": 255,
+    "factionId": "ciudadanos-de-hotou"
   },
   "npc-yui": {
     "id": "npc-yui",
