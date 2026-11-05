@@ -2429,5 +2429,20 @@
     "status": "inactive",
     "visibility": "hidden",
     "subtitle": "IZ*ONE"
+  },
+  "seguidores-de-los-dioses-resplandecientes": {
+    "id": "seguidores-de-los-dioses-resplandecientes",
+    "title": "Seguidores de los Dioses Resplandecientes",
+    "type": "other",
+    "status": "active",
+    "realm": "sylmorien",
+    "regionId": "sylmorien",
+    "visibility": "public",
+    "name": "Seguidores de los Dioses Resplandecientes",
+    "typeLabel": "Comunidad religiosa",
+    "summary": "Devotos del panteón de los Dioses Resplandecientes y de la tradición del Resplandecismo en Sylmorien.",
+    "description": "Los Seguidores de los Dioses Resplandecientes veneran al panteón conformado por Onew, Jonghyun, Key, Minho y Taemin. Kang Dohorn, guardián del Santuario del Dios Minho, está registrado entre sus integrantes. No se ha establecido una jerarquía propia de este colectivo.",
+    "knownMembers": "Kang Dohorn",
+    "affiliation": "Resplandecismo"
   }
 }
