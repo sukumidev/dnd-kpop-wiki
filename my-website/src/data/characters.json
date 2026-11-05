@@ -6823,7 +6823,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/enemies/enemy-goblin.webp",
-    "sortOrder": 135
+    "sortOrder": 135,
+    "factionId": "goblins-de-hyberia"
   },
   "enemy-arven": {
     "id": "enemy-arven",
@@ -6881,7 +6882,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/enemies/enemy-goblin.webp",
-    "sortOrder": 141
+    "sortOrder": 141,
+    "factionId": "goblins-de-hyberia"
   },
   "npc-brandom-lee": {
     "id": "npc-brandom-lee",
@@ -7598,7 +7600,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-lin-dareum.webp",
-    "sortOrder": 199
+    "sortOrder": 199,
+    "factionId": "habitantes-de-la-neocity"
   },
   "npc-logan": {
     "id": "npc-logan",
@@ -7616,7 +7619,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-lumira.webp",
-    "sortOrder": 201
+    "sortOrder": 201,
+    "factionId": "habitantes-de-la-neocity"
   },
   "npc-lupin": {
     "id": "npc-lupin",
@@ -7644,7 +7648,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-matsuda.webp",
-    "sortOrder": 204
+    "sortOrder": 204,
+    "factionId": "dragonborns-del-clan-del-caos"
   },
   "npc-mephisto": {
     "id": "npc-mephisto",
@@ -7673,7 +7678,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-ming-yua.webp",
-    "sortOrder": 207
+    "sortOrder": 207,
+    "factionId": "dragonborns-del-clan-del-caos"
   },
   "npc-misa": {
     "id": "npc-misa",
@@ -7777,7 +7783,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-ren.webp",
-    "sortOrder": 216
+    "sortOrder": 216,
+    "factionId": "changelings-del-clan-hoshizuki"
   },
   "zb1-ricky": {
     "id": "zb1-ricky",
@@ -7815,7 +7822,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-sae-jong.webp",
-    "sortOrder": 220
+    "sortOrder": 220,
+    "factionId": "changelings-del-clan-hoshizuki"
   },
   "npc-salim": {
     "id": "npc-salim",
@@ -7824,7 +7832,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-salim.webp",
-    "sortOrder": 221
+    "sortOrder": 221,
+    "factionId": "dragonborns-del-clan-del-caos"
   },
   "npc-sario": {
     "id": "npc-sario",
@@ -7843,7 +7852,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/enemies/enemy-goblin.webp",
-    "sortOrder": 223
+    "sortOrder": 223,
+    "factionId": "goblins-de-hyberia"
   },
   "npc-sebas": {
     "id": "npc-sebas",
@@ -8246,7 +8256,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-yui.webp",
-    "sortOrder": 256
+    "sortOrder": 256,
+    "factionId": "changelings-del-clan-hoshizuki"
   },
   "ateez-yunho": {
     "id": "ateez-yunho",

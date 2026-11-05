@@ -2276,6 +2276,14 @@
     "title": "Habitantes de la Neocity",
     "type": "other",
     "status": "unknown",
+    "visibility": "hidden",
+    "parentFactionId": "ciudadanos-de-sylmorien"
+  },
+  "changelings-del-clan-hoshizuki": {
+    "id": "changelings-del-clan-hoshizuki",
+    "title": "Changelings del Clan Hoshizuki",
+    "type": "clan",
+    "status": "unknown",
     "visibility": "hidden"
   }
 }
