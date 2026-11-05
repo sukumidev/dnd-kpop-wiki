@@ -6834,7 +6834,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/enemies/enemy-arven.webp",
-    "sortOrder": 136
+    "sortOrder": 136,
+    "factionId": "clan-del-sol-ardiente"
   },
   "nu-est-baekho": {
     "id": "nu-est-baekho",
@@ -7062,7 +7063,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/enemies/enemy-delkhan.webp",
-    "sortOrder": 159
+    "sortOrder": 159,
+    "factionId": "clan-del-sol-ardiente"
   },
   "npc-demetrio": {
     "id": "npc-demetrio",
@@ -7159,7 +7161,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/enemies/enemy-evan.webp",
-    "sortOrder": 168
+    "sortOrder": 168,
+    "factionId": "clan-del-sol-ardiente"
   },
   "npc-felixia": {
     "id": "npc-felixia",
@@ -7543,7 +7546,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/enemies/enemy-soohyun.webp",
-    "sortOrder": 192
+    "sortOrder": 192,
+    "factionId": "clan-del-sol-ardiente"
   },
   "npc-kunno": {
     "id": "npc-kunno",
@@ -7603,7 +7607,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/enemies/enemy-lesath.webp",
-    "sortOrder": 198
+    "sortOrder": 198,
+    "factionId": "clan-del-sol-ardiente"
   },
   "npc-lin-dareum": {
     "id": "npc-lin-dareum",
@@ -7732,7 +7737,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/enemies/enemy-haneul.webp",
-    "sortOrder": 211
+    "sortOrder": 211,
+    "factionId": "clan-del-sol-ardiente"
   },
   "enemy-kris": {
     "id": "enemy-kris",
@@ -7741,7 +7747,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/enemies/enemy-kris.webp",
-    "sortOrder": 212
+    "sortOrder": 212,
+    "factionId": "clan-del-sol-ardiente"
   },
   "enemy-seungri": {
     "id": "enemy-seungri",
@@ -7752,9 +7759,9 @@
     "status": "unknown",
     "role": "NPC",
     "race": "Deidad",
-    "factionId": "bigbang",
+    "factionId": "clan-del-sol-ardiente",
     "imageSrc": "/img/characters/bigbang/enemy-seungri.webp",
-    "summary": "Dios del Sol Ardiente, vinculado con la ambición, la expansión y el culto que inspira al Clan del Sol Ardiente."
+    "summary": "Dios del Sol Ardiente, vinculado con la ambición, la expansión y el culto que inspira al Clan del Sol Ardiente. Anteriormente fue miembro de BIGBANG (Los Dioses de la Creación); actualmente es el líder del Clan del Sol Ardiente."
   },
   "npc-neorayita": {
     "id": "npc-neorayita",
@@ -8085,7 +8092,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/enemies/enemy-taeil.webp",
-    "sortOrder": 240
+    "sortOrder": 240,
+    "factionId": "clan-del-sol-ardiente"
   },
   "npc-tencha": {
     "id": "npc-tencha",

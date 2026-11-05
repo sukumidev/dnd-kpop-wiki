@@ -108,15 +108,48 @@
     "methods": null,
     "baseLocationId": null,
     "baseLabel": "Desconocida",
-    "leaderCharacterId": null,
+    "leaderCharacterId": "enemy-seungri",
     "allyCharacterIds": [],
     "enemyCharacterIds": [],
-    "subunits": [],
+    "subunits": [
+      {
+        "id": "unidad-de-investigacion-arcana",
+        "title": "Unidad de Investigación Arcana",
+        "memberIds": [
+          "enemy-taeil",
+          "enemy-evan",
+          "enemy-lesath"
+        ]
+      },
+      {
+        "id": "iglesia-del-profeta",
+        "title": "Iglesia del Profeta",
+        "memberIds": [
+          "enemy-soohyun"
+        ]
+      },
+      {
+        "id": "pacto-de-ceniza",
+        "title": "Pacto de Ceniza",
+        "memberIds": [
+          "enemy-arven",
+          "enemy-delkhan"
+        ]
+      },
+      {
+        "id": "consorcio-fenghuang",
+        "title": "Consorcio Fenghuang",
+        "memberIds": [
+          "enemy-haneul",
+          "enemy-kris"
+        ]
+      }
+    ],
     "imageCaption": null,
     "name": "El Clan del Sol Ardiente",
     "typeLabel": "Organización",
     "origin": "Desconocido",
-    "leaderLabel": "Seungri (cabeza ideológica)",
+    "leaderLabel": "Seungri",
     "knownMembers": "Diversos cazadores y agentes del Clan",
     "affiliation": "Independiente",
     "activityArea": "Múltiples reinos de Hallyura",
@@ -2154,7 +2187,7 @@
     "description": "Los Dioses de la Creación son un panteón originario de Yggdrasil cuyos integrantes alcanzaron la divinidad durante la Segunda Era. Su ascensión constituye uno de los acontecimientos religiosos más importantes de la historia documentada de Hallyura.\n\nAntes de convertirse en dioses, fueron cinco mortales conocidos por desarrollar técnicas propias, modificar los hechizos que aprendían y rechazar las limitaciones impuestas por las academias.",
     "origin": "Yggdrasil",
     "realm": "yggdrasil",
-    "knownMembers": "G-Dragon, T.O.P, Taeyang, Daesung y Seungri",
+    "knownMembers": "G-Dragon, T.O.P, Taeyang y Daesung; Seungri (miembro anterior)",
     "statusLabel": "Activos",
     "regionId": "yggdrasil",
     "allyFactionIds": [],
