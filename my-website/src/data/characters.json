@@ -6841,7 +6841,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/nu-est/nu-est-baekho.webp",
-    "sortOrder": 137
+    "sortOrder": 137,
+    "factionId": "nu-est"
   },
   "kep1er-bahiyyih": {
     "id": "kep1er-bahiyyih",
@@ -6868,7 +6869,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/txt/txt-beomgyu.webp",
-    "sortOrder": 140
+    "sortOrder": 140,
+    "factionId": "txt"
   },
   "npc-biagi": {
     "id": "npc-biagi",
@@ -6895,7 +6897,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/ampersone/ampersone-brian.webp",
-    "sortOrder": 143
+    "sortOrder": 143,
+    "factionId": "ampersone"
   },
   "npc-bruno": {
     "id": "npc-bruno",
@@ -6985,7 +6988,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/txt/txt-soobin.webp",
-    "sortOrder": 153
+    "sortOrder": 153,
+    "factionId": "txt"
   },
   "npc-church": {
     "id": "npc-church",
@@ -7021,7 +7025,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/twice/twice-dahyun.webp",
-    "sortOrder": 157
+    "sortOrder": 157,
+    "factionId": "twice"
   },
   "npc-dal": {
     "id": "npc-dal",
@@ -7103,7 +7108,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/viviz/viviz-eunha.webp",
-    "sortOrder": 166
+    "sortOrder": 166,
+    "factionId": "viviz"
   },
   "riize-eunseok": {
     "id": "riize-eunseok",
@@ -7149,7 +7155,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/bigbang/bigbang-g-dragon.webp",
-    "sortOrder": 170
+    "sortOrder": 170,
+    "factionId": "bigbang"
   },
   "npc-gabri": {
     "id": "npc-gabri",
@@ -7167,7 +7174,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/omega-x/omega-x-hangyeom.webp",
-    "sortOrder": 172
+    "sortOrder": 172,
+    "factionId": "omega-x"
   },
   "npc-hanjun": {
     "id": "npc-hanjun",
@@ -7185,7 +7193,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/sj/sj-heechul.webp",
-    "sortOrder": 174
+    "sortOrder": 174,
+    "factionId": "sj"
   },
   "npc-hilario": {
     "id": "npc-hilario",
@@ -7224,7 +7233,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/xg/xg-hinata.webp",
-    "sortOrder": 176
+    "sortOrder": 176,
+    "factionId": "xg"
   },
   "xg-jurin": {
     "id": "xg-jurin",
@@ -7234,7 +7244,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/xg/xg-jurin.webp",
-    "sortOrder": 176
+    "sortOrder": 176,
+    "factionId": "xg"
   },
   "xg-juria": {
     "id": "xg-juria",
@@ -7244,7 +7255,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/xg/xg-juria.webp",
-    "sortOrder": 176
+    "sortOrder": 176,
+    "factionId": "xg"
   },
   "xg-maya": {
     "id": "xg-maya",
@@ -7254,7 +7266,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/xg/xg-maya.webp",
-    "sortOrder": 176
+    "sortOrder": 176,
+    "factionId": "xg"
   },
   "xg-chisa": {
     "id": "xg-chisa",
@@ -7264,7 +7277,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/xg/xg-chisa.webp",
-    "sortOrder": 176
+    "sortOrder": 176,
+    "factionId": "xg"
   },
   "xg-cocona": {
     "id": "xg-cocona",
@@ -7274,7 +7288,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/xg/xg-cocona.webp",
-    "sortOrder": 176
+    "sortOrder": 176,
+    "factionId": "xg"
   },
   "xg-harvey": {
     "id": "xg-harvey",
@@ -7284,7 +7299,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/xg/xg-harvey.webp",
-    "sortOrder": 176
+    "sortOrder": 176,
+    "factionId": "xg"
   },
   "npc-rosita": {
     "id": "npc-rosita",
@@ -7333,7 +7349,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/txt/txt-hueningkai.webp",
-    "sortOrder": 177
+    "sortOrder": 177,
+    "factionId": "txt"
   },
   "npc-hwang": {
     "id": "npc-hwang",
@@ -7360,7 +7377,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/omega-x/omega-x-hwichan.webp",
-    "sortOrder": 180
+    "sortOrder": 180,
+    "factionId": "omega-x"
   },
   "njz-hyein": {
     "id": "njz-hyein",
@@ -7369,7 +7387,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/njz/njz-hyein.webp",
-    "sortOrder": 181
+    "sortOrder": 181,
+    "factionId": "njz"
   },
   "mx-hyungwon": {
     "id": "mx-hyungwon",
@@ -7401,7 +7420,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/got7/got7-jackson.webp",
-    "sortOrder": 183
+    "sortOrder": 183,
+    "factionId": "got7"
   },
   "npc-jacob": {
     "id": "npc-jacob",
@@ -7419,7 +7439,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/omega-x/omega-x-jaehan.webp",
-    "sortOrder": 185
+    "sortOrder": 185,
+    "factionId": "omega-x"
   },
   "twice-jeongyeon": {
     "id": "twice-jeongyeon",
@@ -7428,7 +7449,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/twice/twice-jeongyeon.webp",
-    "sortOrder": 186
+    "sortOrder": 186,
+    "factionId": "twice"
   },
   "npc-jeronimo": {
     "id": "npc-jeronimo",
@@ -7446,7 +7468,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/ampersone/ampersone-jiho.webp",
-    "sortOrder": 188
+    "sortOrder": 188,
+    "factionId": "ampersone"
   },
   "npc-juanga": {
     "id": "npc-juanga",
@@ -7501,7 +7524,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/sj/sj-kyuhyun.webp",
-    "sortOrder": 194
+    "sortOrder": 194,
+    "factionId": "sj"
   },
   "npc-lady-isuna": {
     "id": "npc-lady-isuna",
@@ -7610,7 +7634,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/twice/twice-mina.webp",
-    "sortOrder": 206
+    "sortOrder": 206,
+    "factionId": "twice"
   },
   "npc-ming-yua": {
     "id": "npc-ming-yua",
@@ -7823,7 +7848,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/rv/rv-seulgi.webp",
-    "sortOrder": 226
+    "sortOrder": 226,
+    "factionId": "rv"
   },
   "xnghan-seunghan": {
     "id": "xnghan-seunghan",
@@ -7850,7 +7876,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/sj/sj-shindong.webp",
-    "sortOrder": 229
+    "sortOrder": 229,
+    "factionId": "sj"
   },
   "riize-shotaro": {
     "id": "riize-shotaro",
@@ -7900,7 +7927,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/viviz/viviz-sinb.webp",
-    "sortOrder": 232
+    "sortOrder": 232,
+    "factionId": "viviz"
   },
   "npc-sir-baekjin": {
     "id": "npc-sir-baekjin",
@@ -7918,7 +7946,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/sj/sj-siwon.webp",
-    "sortOrder": 234
+    "sortOrder": 234,
+    "factionId": "sj"
   },
   "riize-sohee": {
     "id": "riize-sohee",
@@ -7981,7 +8010,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/txt/txt-taehyun.webp",
-    "sortOrder": 239
+    "sortOrder": 239,
+    "factionId": "txt"
   },
   "enemy-taeil": {
     "id": "enemy-taeil",
@@ -8018,7 +8048,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/viviz/viviz-umji.webp",
-    "sortOrder": 243
+    "sortOrder": 243,
+    "factionId": "viviz"
   },
   "npc-uzari": {
     "id": "npc-uzari",
@@ -8104,7 +8135,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/omega-x/omega-x-yechan.webp",
-    "sortOrder": 250
+    "sortOrder": 250,
+    "factionId": "omega-x"
   },
   "txt-yeonjun": {
     "id": "txt-yeonjun",
@@ -8113,7 +8145,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/txt/txt-yeonjun.webp",
-    "sortOrder": 251
+    "sortOrder": 251,
+    "factionId": "txt"
   },
   "pet-yeontan": {
     "id": "pet-yeontan",
@@ -8554,7 +8587,7 @@
     "role": "NPC",
     "race": "Aasimar",
     "regionId": "sylmorien",
-    "factionId": null,
+    "factionId": "tvxq",
     "alignment": "Neutral Good"
   },
   "tvxq-junsu": {
@@ -8567,7 +8600,7 @@
     "role": "NPC",
     "race": "Aasimar",
     "regionId": "sylmorien",
-    "factionId": null,
+    "factionId": "tvxq",
     "alignment": "Chaotic Good"
   },
   "tvxq-yoochun": {
@@ -8580,7 +8613,7 @@
     "role": "NPC",
     "race": "Aasimar",
     "regionId": "sylmorien",
-    "factionId": null,
+    "factionId": "tvxq",
     "alignment": "Neutral Good"
   },
   "tvxq-changmin": {
