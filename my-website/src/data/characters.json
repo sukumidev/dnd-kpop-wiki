@@ -6168,7 +6168,8 @@
     "factionId": "bts",
     "imageSrc": "/img/characters/bts/bts-agust-d.webp",
     "tags": [],
-    "sortOrder": 80
+    "sortOrder": 80,
+    "subtitle": "El Dueño del Casino Clandestino"
   },
   "bts-v": {
     "id": "bts-v",
@@ -6179,7 +6180,8 @@
     "factionId": "bts",
     "imageSrc": "/img/characters/bts/bts-v.webp",
     "tags": [],
-    "sortOrder": 81
+    "sortOrder": 81,
+    "subtitle": "El Explorador Entre la Lluvia"
   },
   "cortis-james": {
     "id": "cortis-james",
@@ -6359,7 +6361,8 @@
     "factionId": "kiof",
     "imageSrc": "/img/characters/kiof/kiof-natty.webp",
     "tags": [],
-    "sortOrder": 93
+    "sortOrder": 93,
+    "subtitle": "La Informante"
   },
   "katseye-sophia": {
     "id": "katseye-sophia",
@@ -6447,7 +6450,8 @@
     "factionId": "lsf",
     "imageSrc": "/img/characters/lsf/lsf-sakura.webp",
     "tags": [],
-    "sortOrder": 101
+    "sortOrder": 101,
+    "subtitle": "La Flor que siempre vuelve a florecer"
   },
   "katseye-manon": {
     "id": "katseye-manon",
@@ -6733,7 +6737,8 @@
     "factionId": "p1h",
     "imageSrc": "/img/characters/p1h/p1h-keeho.webp",
     "tags": [],
-    "sortOrder": 127
+    "sortOrder": 127,
+    "subtitle": "El Primer Pionero"
   },
   "psf-jimmy": {
     "id": "psf-jimmy",
@@ -6846,7 +6851,8 @@
     "status": "unknown",
     "imageSrc": "/img/characters/nu-est/nu-est-baekho.webp",
     "sortOrder": 137,
-    "factionId": "nu-est"
+    "factionId": "nu-est",
+    "subtitle": "La Garra de la Antigua Guardia"
   },
   "kep1er-bahiyyih": {
     "id": "kep1er-bahiyyih",
@@ -6876,7 +6882,8 @@
     "status": "unknown",
     "imageSrc": "/img/characters/txt/txt-beomgyu.webp",
     "sortOrder": 140,
-    "factionId": "txt"
+    "factionId": "txt",
+    "subtitle": "El Cuentacuentos Hambriento"
   },
   "npc-biagi": {
     "id": "npc-biagi",
@@ -6906,7 +6913,8 @@
     "status": "unknown",
     "imageSrc": "/img/characters/ampersone/ampersone-brian.webp",
     "sortOrder": 143,
-    "factionId": "ampersone"
+    "factionId": "ampersone",
+    "subtitle": "El Embajador de la Paz"
   },
   "npc-bruno": {
     "id": "npc-bruno",
@@ -7006,7 +7014,8 @@
     "status": "unknown",
     "imageSrc": "/img/characters/txt/txt-soobin.webp",
     "sortOrder": 153,
-    "factionId": "txt"
+    "factionId": "txt",
+    "subtitle": "El Capitán de Nada"
   },
   "npc-church": {
     "id": "npc-church",
@@ -7280,7 +7289,8 @@
     "status": "unknown",
     "imageSrc": "/img/characters/xg/xg-jurin.webp",
     "sortOrder": 176,
-    "factionId": "xg"
+    "factionId": "xg",
+    "subtitle": "La Madre Loba"
   },
   "xg-juria": {
     "id": "xg-juria",
@@ -7389,7 +7399,8 @@
     "status": "unknown",
     "imageSrc": "/img/characters/txt/txt-hueningkai.webp",
     "sortOrder": 177,
-    "factionId": "txt"
+    "factionId": "txt",
+    "subtitle": "El Niño Que No Crece"
   },
   "npc-hwang": {
     "id": "npc-hwang",
@@ -7452,7 +7463,8 @@
       "Cronista de la Liberación",
       "Observador del Salón y Guardián del Reloj Oculto"
     ],
-    "role": "NPC"
+    "role": "NPC",
+    "subtitle": "El Ente del Caos"
   },
   "got7-jackson": {
     "id": "got7-jackson",
@@ -7462,7 +7474,8 @@
     "status": "unknown",
     "imageSrc": "/img/characters/got7/got7-jackson.webp",
     "sortOrder": 183,
-    "factionId": "got7"
+    "factionId": "got7",
+    "subtitle": "El Señor de las Fiestas"
   },
   "npc-jacob": {
     "id": "npc-jacob",
@@ -7512,7 +7525,8 @@
     "status": "unknown",
     "imageSrc": "/img/characters/ampersone/ampersone-jiho.webp",
     "sortOrder": 188,
-    "factionId": "ampersone"
+    "factionId": "ampersone",
+    "subtitle": "El Unificador Libertador"
   },
   "npc-juanga": {
     "id": "npc-juanga",
@@ -7822,7 +7836,8 @@
     "status": "unknown",
     "imageSrc": "/img/characters/zb1/zb1-ricky.webp",
     "sortOrder": 217,
-    "factionId": "los-heroes-de-la-base-uno"
+    "factionId": "los-heroes-de-la-base-uno",
+    "subtitle": "El Dragón de la Base Uno"
   },
   "npc-rio": {
     "id": "npc-rio",
@@ -8092,7 +8107,8 @@
     "status": "unknown",
     "imageSrc": "/img/characters/txt/txt-taehyun.webp",
     "sortOrder": 239,
-    "factionId": "txt"
+    "factionId": "txt",
+    "subtitle": "El Estratega Sin Fortuna"
   },
   "enemy-taeil": {
     "id": "enemy-taeil",
@@ -8233,7 +8249,8 @@
     "status": "unknown",
     "imageSrc": "/img/characters/txt/txt-yeonjun.webp",
     "sortOrder": 251,
-    "factionId": "txt"
+    "factionId": "txt",
+    "subtitle": "El Príncipe de las Redes Rotas"
   },
   "pet-yeontan": {
     "id": "pet-yeontan",
@@ -8948,5 +8965,95 @@
     "status": "unknown",
     "factionId": "billlie",
     "imageSrc": null
+  },
+  "psf-ryoga": {
+    "id": "psf-ryoga",
+    "title": "Ryoga",
+    "group": "npc",
+    "visibility": "hidden",
+    "status": "unknown",
+    "factionId": "psf",
+    "imageSrc": "/img/characters/psf/psf-ryoga.webp"
+  },
+  "psf-ren": {
+    "id": "psf-ren",
+    "title": "Ren",
+    "group": "npc",
+    "visibility": "hidden",
+    "status": "unknown",
+    "factionId": "psf",
+    "imageSrc": "/img/characters/psf/psf-ren.webp"
+  },
+  "psf-ryushin": {
+    "id": "psf-ryushin",
+    "title": "Ryushin",
+    "group": "npc",
+    "visibility": "hidden",
+    "status": "unknown",
+    "factionId": "psf",
+    "imageSrc": "/img/characters/psf/psf-ryushin.webp"
+  },
+  "njz-haerin": {
+    "id": "njz-haerin",
+    "title": "Haerin",
+    "group": "npc",
+    "visibility": "hidden",
+    "status": "unknown",
+    "factionId": "njz",
+    "imageSrc": "/img/characters/njz/njz-haerin.webp"
+  },
+  "omega-x-sebin": {
+    "id": "omega-x-sebin",
+    "title": "Sebin",
+    "group": "npc",
+    "visibility": "hidden",
+    "status": "unknown",
+    "factionId": "omega-x",
+    "imageSrc": "/img/characters/omega-x/omega-x-sebin.webp"
+  },
+  "omega-x-taedong": {
+    "id": "omega-x-taedong",
+    "title": "Taedong",
+    "group": "npc",
+    "visibility": "hidden",
+    "status": "unknown",
+    "factionId": "omega-x",
+    "imageSrc": "/img/characters/omega-x/omega-x-taedong.webp"
+  },
+  "omega-x-xen": {
+    "id": "omega-x-xen",
+    "title": "Xen",
+    "group": "npc",
+    "visibility": "hidden",
+    "status": "unknown",
+    "factionId": "omega-x",
+    "imageSrc": "/img/characters/omega-x/omega-x-xen.webp"
+  },
+  "omega-x-jehyun": {
+    "id": "omega-x-jehyun",
+    "title": "Jehyun",
+    "group": "npc",
+    "visibility": "hidden",
+    "status": "unknown",
+    "factionId": "omega-x",
+    "imageSrc": "/img/characters/omega-x/omega-x-jehyun.webp"
+  },
+  "omega-x-kevin": {
+    "id": "omega-x-kevin",
+    "title": "Kevin",
+    "group": "npc",
+    "visibility": "hidden",
+    "status": "unknown",
+    "factionId": "omega-x",
+    "imageSrc": "/img/characters/omega-x/omega-x-kevin.webp"
+  },
+  "omega-x-hyuk": {
+    "id": "omega-x-hyuk",
+    "title": "Hyuk",
+    "group": "npc",
+    "visibility": "hidden",
+    "status": "unknown",
+    "factionId": "omega-x",
+    "imageSrc": "/img/characters/omega-x/omega-x-hyuk.webp"
   }
 }
