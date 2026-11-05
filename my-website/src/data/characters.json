@@ -9203,5 +9203,44 @@
     "status": "unknown",
     "factionId": "omega-x",
     "imageSrc": "/img/characters/omega-x/omega-x-hyuk.webp"
+  },
+  "shinee-minho": {
+    "id": "shinee-minho",
+    "title": "Choi Minho (Dios Minho)",
+    "subtitle": "Dios de la Fuerza, la Perseverancia y las Bestias",
+    "group": "npc",
+    "visibility": "public",
+    "status": "active",
+    "factionId": "shinee",
+    "regionId": "sylmorien",
+    "imageSrc": "/img/characters/shinee/shinee-minho.webp",
+    "role": "Deidad"
+  },
+  "npc-kang-dohorn": {
+    "id": "npc-kang-dohorn",
+    "title": "Kang Dohorn",
+    "subtitle": "Guardián del Santuario del Dios Minho",
+    "group": "npc",
+    "visibility": "public",
+    "status": "active",
+    "race": "Minotauro",
+    "regionId": "sylmorien",
+    "occupation": [
+      "Guardián del Santuario del Dios Minho"
+    ],
+    "imageSrc": "/img/characters/npc/npc-kang-dohorn.webp"
+  },
+  "npc-cha-kal": {
+    "id": "npc-cha-kal",
+    "title": "Cha’Kal",
+    "subtitle": "Mercader de armas de Seongnam",
+    "group": "npc",
+    "visibility": "public",
+    "status": "active",
+    "regionId": "sylmorien",
+    "occupation": [
+      "Vendedor de armas"
+    ],
+    "imageSrc": "/img/characters/npc/npc-cha-kal.webp"
   }
 }

@@ -114,7 +114,8 @@
     "sortOrder": 4,
     "imageSrc": "/img/characters/shinee/shinee-minho.webp",
     "alignment": "Lawful Good",
-    "cult": "Resplandecismo"
+    "cult": "Resplandecismo",
+    "characterId": "shinee-minho"
   },
   "shinee-taemin": {
     "id": "shinee-taemin",
