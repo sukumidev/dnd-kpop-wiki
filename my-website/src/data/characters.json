@@ -6911,7 +6911,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-bruno.webp",
-    "sortOrder": 144
+    "sortOrder": 144,
+    "factionId": "dragonborns-del-clan-del-orden"
   },
   "actor-byeon-wooseok": {
     "id": "actor-byeon-wooseok",
@@ -7049,7 +7050,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-dal.webp",
-    "sortOrder": 158
+    "sortOrder": 158,
+    "factionId": "habitantes-de-la-neocity"
   },
   "enemy-delkhan": {
     "id": "enemy-delkhan",
@@ -7236,7 +7238,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-zapo.webp",
-    "sortOrder": 176
+    "sortOrder": 176,
+    "factionId": "dragonborns-del-clan-del-caos"
   },
   "npc-tlanejo": {
     "id": "npc-tlanejo",
@@ -7246,7 +7249,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-tlanejo.webp",
-    "sortOrder": 176
+    "sortOrder": 176,
+    "factionId": "dragonborns-del-clan-del-caos"
   },
   "xg-hinata": {
     "id": "xg-hinata",
@@ -7454,7 +7458,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-jacob.webp",
-    "sortOrder": 184
+    "sortOrder": 184,
+    "factionId": "licantropos-de-hotou"
   },
   "omega-x-jaehan": {
     "id": "omega-x-jaehan",
@@ -7513,7 +7518,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-junho.webp",
-    "sortOrder": 190
+    "sortOrder": 190,
+    "factionId": "dragonborns-del-clan-del-orden"
   },
   "bg3-kar-niss": {
     "id": "bg3-kar-niss",
@@ -7541,7 +7547,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-kunno.webp",
-    "sortOrder": 193
+    "sortOrder": 193,
+    "factionId": "dragonborns-del-clan-del-orden"
   },
   "sj-kyuhyun": {
     "id": "sj-kyuhyun",
@@ -7610,7 +7617,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-logan.webp",
-    "sortOrder": 200
+    "sortOrder": 200,
+    "factionId": "licantropos-de-hotou"
   },
   "npc-lumira": {
     "id": "npc-lumira",
@@ -7629,7 +7637,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-lupin.webp",
-    "sortOrder": 202
+    "sortOrder": 202,
+    "factionId": "licantropos-de-hotou"
   },
   "npc-mario": {
     "id": "npc-mario",
@@ -7698,7 +7707,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-mitsubishi.webp",
-    "sortOrder": 209
+    "sortOrder": 209,
+    "factionId": "dragonborns-del-clan-del-caos"
   },
   "npc-moai": {
     "id": "npc-moai",
@@ -8022,7 +8032,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-subaru.webp",
-    "sortOrder": 236
+    "sortOrder": 236,
+    "factionId": "dragonborns-del-clan-del-caos"
   },
   "riize-sungchan": {
     "id": "riize-sungchan",
@@ -8049,7 +8060,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-suzuki.webp",
-    "sortOrder": 238
+    "sortOrder": 238,
+    "factionId": "dragonborns-del-clan-del-caos"
   },
   "txt-taehyun": {
     "id": "txt-taehyun",
@@ -8116,7 +8128,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-valko.webp",
-    "sortOrder": 245
+    "sortOrder": 245,
+    "factionId": "licantropos-de-hotou"
   },
   "riize-wonbin": {
     "id": "riize-wonbin",
@@ -8237,7 +8250,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-yorihiko.webp",
-    "sortOrder": 254
+    "sortOrder": 254,
+    "factionId": "changelings-del-clan-hoshizuki"
   },
   "npc-youngok": {
     "id": "npc-youngok",

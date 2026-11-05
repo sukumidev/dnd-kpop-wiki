@@ -2285,5 +2285,13 @@
     "type": "clan",
     "status": "unknown",
     "visibility": "hidden"
+  },
+  "licantropos-de-hotou": {
+    "id": "licantropos-de-hotou",
+    "title": "Licántropos",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden",
+    "parentFactionId": "ciudadanos-de-hotou"
   }
 }
