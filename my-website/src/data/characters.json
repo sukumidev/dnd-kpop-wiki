@@ -8912,5 +8912,41 @@
     "status": "unknown",
     "imageSrc": "/img/characters/pets/pet-brownie.webp",
     "factionId": "mascotas"
+  },
+  "wjsn-eunseo": {
+    "id": "wjsn-eunseo",
+    "title": "Eunseo",
+    "group": "npc",
+    "visibility": "public",
+    "status": "unknown",
+    "factionId": "wjsn",
+    "imageSrc": null
+  },
+  "wjsn-dayoung": {
+    "id": "wjsn-dayoung",
+    "title": "Dayoung",
+    "group": "npc",
+    "visibility": "public",
+    "status": "unknown",
+    "factionId": "wjsn",
+    "imageSrc": null
+  },
+  "billlie-tsuki": {
+    "id": "billlie-tsuki",
+    "title": "Tsuki",
+    "group": "npc",
+    "visibility": "public",
+    "status": "unknown",
+    "factionId": "billlie",
+    "imageSrc": null
+  },
+  "billlie-suhyeon": {
+    "id": "billlie-suhyeon",
+    "title": "Suhyeon",
+    "group": "npc",
+    "visibility": "public",
+    "status": "unknown",
+    "factionId": "billlie",
+    "imageSrc": null
   }
 }
