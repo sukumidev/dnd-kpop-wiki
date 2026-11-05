@@ -12,6 +12,7 @@ import {
   compareRealmGroups,
   sortByExplicitOrderThenTitle,
 } from "@site/src/utils/directoryOrdering";
+import {sortFactionCharacters} from "@site/src/utils/characterFactionOrdering";
 import styles from "./styles.module.css";
 import {getPublicFactionHref} from "@site/src/data/publicRoutes";
 
@@ -40,6 +41,14 @@ type RealmSection = {
 };
 
 const NO_FACTION_GROUP_ID = "__no-faction__";
+const HIDDEN_DIRECTORY_CHARACTER_IDS = new Set([
+  "tvxq-jaejoong",
+  "tvxq-junsu",
+  "tvxq-yoochun",
+]);
+const directoryCharacters = characterList.filter(
+  (character) => !HIDDEN_DIRECTORY_CHARACTER_IDS.has(character.id),
+);
 
 function FactionCta({faction, label, stopPropagation = false}: {faction: Faction; label: string; stopPropagation?: boolean}) {
   const {withBaseUrl} = useBaseUrlUtils();
@@ -61,8 +70,6 @@ function FactionCta({faction, label, stopPropagation = false}: {faction: Faction
 export default function CharactersPage() {
   const {withBaseUrl} = useBaseUrlUtils();
 
-  const directoryCharacters = characterList;
-
   const partyGroups = useMemo(() => {
     return sortByExplicitOrderThenTitle(
       factionList.filter((faction) => faction.type === "party"),
@@ -76,12 +83,22 @@ export default function CharactersPage() {
 
   const realmSections = useMemo(() => {
     const realms = new Map<string, Map<string, CharacterGroup>>();
+    const formerFactionsByCharacterId = new Map<string, string[]>();
+    for (const faction of factionList) {
+      if (faction.type === "party") continue;
+      for (const characterId of faction.exMemberIds ?? []) {
+        const factionIds = formerFactionsByCharacterId.get(characterId) ?? [];
+        factionIds.push(faction.id);
+        formerFactionsByCharacterId.set(characterId, factionIds);
+      }
+    }
 
     for (const character of directoryCharacters) {
-      // A character can appear in multiple faction groups without losing the primary affiliation.
+      // Current and explicitly former affiliations can each have a directory group.
       const memberships = [...new Set([
         character.factionId,
         ...(character.additionalFactionIds ?? []),
+        ...(formerFactionsByCharacterId.get(character.id) ?? []),
       ])];
 
       for (const factionId of memberships) {
@@ -111,7 +128,9 @@ export default function CharactersPage() {
         const groups = [...realmGroups.values()]
           .map((group) => ({
             ...group,
-            characters: sortByExplicitOrderThenTitle(group.characters),
+            characters: group.faction
+              ? sortFactionCharacters(group.characters, group.faction)
+              : sortByExplicitOrderThenTitle(group.characters),
           }))
           .sort((a, b) => {
             if (a.id === NO_FACTION_GROUP_ID) return 1;

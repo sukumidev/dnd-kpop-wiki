@@ -73,6 +73,11 @@ export type Faction = {
 
   /** Character IDs used for faction leadership. General membership comes from characters.json via character.factionId. */
   leaderCharacterId?: string | null;
+  /** Legacy leadership and membership fields still present in some faction records. */
+  leaderId?: string | null;
+  memberIds?: string[];
+  /** Former members remain associated with this faction even after changing affiliation. */
+  exMemberIds?: string[];
 
   /** Faction-to-faction relationships. */
   allyFactionIds?: string[];
