@@ -2352,5 +2352,74 @@
     "visibility": "hidden",
     "realm": "sylmorien",
     "parentFactionId": "guardia-real-de-sylmorien"
+  },
+  "gremio-de-ladrones-de-sylmorien": {
+    "id": "gremio-de-ladrones-de-sylmorien",
+    "title": "Gremio de Ladrones de Sylmorien",
+    "type": "guild",
+    "realm": "sylmorien",
+    "status": "unknown",
+    "visibility": "hidden"
+  },
+  "seunghan-y-las-almas-renacidas": {
+    "id": "seunghan-y-las-almas-renacidas",
+    "title": "Seunghan y las Almas Renacidas",
+    "subtitle": "Xnghan&Xoul",
+    "type": "other",
+    "parentFactionId": "gremio-de-ladrones-de-sylmorien",
+    "status": "unknown",
+    "visibility": "hidden"
+  },
+  "consejo-de-hotou": {
+    "id": "consejo-de-hotou",
+    "title": "Consejo de Hotou",
+    "type": "other",
+    "realm": "hotou",
+    "status": "unknown",
+    "visibility": "hidden"
+  },
+  "consejo-de-honor-de-la-nacion-p": {
+    "id": "consejo-de-honor-de-la-nacion-p",
+    "title": "Consejo de Honor de la Nación P",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden"
+  },
+  "las-guerreras-de-los-dos-soles": {
+    "id": "las-guerreras-de-los-dos-soles",
+    "title": "Las Guerreras de los Dos Soles",
+    "subtitle": "Kep1er",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden"
+  },
+  "los-heroes-de-la-base-uno": {
+    "id": "los-heroes-de-la-base-uno",
+    "title": "Los Héroes de La Base Uno",
+    "subtitle": "ZEROBASEONE",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden"
+  },
+  "iglesia-de-los-dioses-nacientes": {
+    "id": "iglesia-de-los-dioses-nacientes",
+    "title": "Iglesia de los Dioses Nacientes",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden"
+  },
+  "los-perdidos-de-la-puerta-de-baldur": {
+    "id": "los-perdidos-de-la-puerta-de-baldur",
+    "title": "Los Perdidos de la Puerta de Baldur",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden"
+  },
+  "mascotas": {
+    "id": "mascotas",
+    "title": "Mascotas",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden"
   }
 }

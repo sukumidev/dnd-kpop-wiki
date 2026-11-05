@@ -6786,7 +6786,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/solo/solo-ado.webp",
-    "sortOrder": 132
+    "sortOrder": 132,
+    "factionId": "consejo-de-hotou"
   },
   "riize-anton": {
     "id": "riize-anton",
@@ -6854,7 +6855,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/kep1er/kep1er-bahiyyih.webp",
-    "sortOrder": 138
+    "sortOrder": 138,
+    "factionId": "las-guerreras-de-los-dos-soles"
   },
   "npc-benny": {
     "id": "npc-benny",
@@ -6923,7 +6925,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/actors/actor-byeon-wooseok.webp",
-    "sortOrder": 145
+    "sortOrder": 145,
+    "factionId": "iglesia-de-los-dioses-nacientes"
   },
   "npc-camerino": {
     "id": "npc-camerino",
@@ -7404,7 +7407,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/mamamoo/mamamoo-hwasa.webp",
-    "sortOrder": 179
+    "sortOrder": 179,
+    "factionId": "consejo-de-honor-de-la-nacion-p"
   },
   "omega-x-hwichan": {
     "id": "omega-x-hwichan",
@@ -7536,7 +7540,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/bg3/bg3-kar-niss.webp",
-    "sortOrder": 191
+    "sortOrder": 191,
+    "factionId": "los-perdidos-de-la-puerta-de-baldur"
   },
   "enemy-soohyun": {
     "id": "enemy-soohyun",
@@ -7815,7 +7820,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/zb1/zb1-ricky.webp",
-    "sortOrder": 217
+    "sortOrder": 217,
+    "factionId": "los-heroes-de-la-base-uno"
   },
   "npc-rio": {
     "id": "npc-rio",
@@ -7927,7 +7933,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/xnghan/xnghan-seunghan.webp",
-    "sortOrder": 227
+    "sortOrder": 227,
+    "factionId": "seunghan-y-las-almas-renacidas"
   },
   "bg3-shadowheart": {
     "id": "bg3-shadowheart",
@@ -7936,7 +7943,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/bg3/bg3-shadowheart.webp",
-    "sortOrder": 228
+    "sortOrder": 228,
+    "factionId": "los-perdidos-de-la-puerta-de-baldur"
   },
   "sj-shindong": {
     "id": "sj-shindong",
@@ -8113,7 +8121,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/pets/pet-tere.webp",
-    "sortOrder": 242
+    "sortOrder": 242,
+    "factionId": "mascotas"
   },
   "viviz-umji": {
     "id": "viviz-umji",
@@ -8232,7 +8241,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/pets/pet-yeontan.webp",
-    "sortOrder": 252
+    "sortOrder": 252,
+    "factionId": "mascotas"
   },
   "ateez-yeosang": {
     "id": "ateez-yeosang",
@@ -8265,7 +8275,10 @@
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-yorihiko.webp",
     "sortOrder": 254,
-    "factionId": "changelings-del-clan-hoshizuki"
+    "factionId": "changelings-del-clan-hoshizuki",
+    "additionalFactionIds": [
+      "consejo-de-hotou"
+    ]
   },
   "npc-youngok": {
     "id": "npc-youngok",
@@ -8868,5 +8881,35 @@
     "imageSrc": "/img/characters/npc/npc-agu.webp",
     "summary": "Aparece en la sesión 19.",
     "factionId": "habitantes-de-la-neocity"
+  },
+  "pet-bella": {
+    "id": "pet-bella",
+    "hasProfile": false,
+    "title": "Bella",
+    "group": "pet",
+    "visibility": "hidden",
+    "status": "unknown",
+    "imageSrc": "/img/characters/pets/pet-bella.webp",
+    "factionId": "mascotas"
+  },
+  "pet-daegal": {
+    "id": "pet-daegal",
+    "hasProfile": false,
+    "title": "Daegal",
+    "group": "pet",
+    "visibility": "hidden",
+    "status": "unknown",
+    "imageSrc": "/img/characters/pets/pet-daegal.webp",
+    "factionId": "mascotas"
+  },
+  "pet-brownie": {
+    "id": "pet-brownie",
+    "hasProfile": false,
+    "title": "Brownie",
+    "group": "pet",
+    "visibility": "hidden",
+    "status": "unknown",
+    "imageSrc": "/img/characters/pets/pet-brownie.webp",
+    "factionId": "mascotas"
   }
 }

@@ -19,6 +19,7 @@ import {
   characterList,
   factionList,
   getCharacterDocPath,
+  characterBelongsToFaction,
   getFactionById,
   getLocationById,
   type Character,
@@ -68,7 +69,7 @@ export default function CharactersPage() {
     ).map((faction) => ({
       faction,
       characters: sortByExplicitOrderThenTitle(
-        directoryCharacters.filter((character) => character.factionId === faction.id),
+        directoryCharacters.filter((character) => characterBelongsToFaction(character, faction.id)),
       ),
     })).filter((group) => group.characters.length > 0);
   }, [directoryCharacters]);
@@ -77,24 +78,32 @@ export default function CharactersPage() {
     const realms = new Map<string, Map<string, CharacterGroup>>();
 
     for (const character of directoryCharacters) {
-      const faction = getFactionById(character.factionId);
-      if (faction?.type === "party") continue;
+      // A character can appear in multiple faction groups without losing the primary affiliation.
+      const memberships = [...new Set([
+        character.factionId,
+        ...(character.additionalFactionIds ?? []),
+      ])];
 
-      const assignedRealm = faction?.realm ?? faction?.regionId ?? character.regionId;
-      const realmId = !assignedRealm || ["sin-reino", "no-aplica"].includes(assignedRealm)
-        ? NO_REALM_GROUP_ID
-        : assignedRealm;
-      const factionGroupId = faction?.id ?? NO_FACTION_GROUP_ID;
-      const realmGroups = realms.get(realmId) ?? new Map<string, CharacterGroup>();
-      const group = realmGroups.get(factionGroupId) ?? {
-        id: factionGroupId,
-        faction,
-        characters: [],
-      };
+      for (const factionId of memberships) {
+        const faction = getFactionById(factionId);
+        if (faction?.type === "party") continue;
 
-      group.characters.push(character);
-      realmGroups.set(factionGroupId, group);
-      realms.set(realmId, realmGroups);
+        const assignedRealm = faction?.realm ?? faction?.regionId ?? character.regionId;
+        const realmId = !assignedRealm || ["sin-reino", "no-aplica"].includes(assignedRealm)
+          ? NO_REALM_GROUP_ID
+          : assignedRealm;
+        const factionGroupId = faction?.id ?? NO_FACTION_GROUP_ID;
+        const realmGroups = realms.get(realmId) ?? new Map<string, CharacterGroup>();
+        const group = realmGroups.get(factionGroupId) ?? {
+          id: factionGroupId,
+          faction,
+          characters: [],
+        };
+
+        group.characters.push(character);
+        realmGroups.set(factionGroupId, group);
+        realms.set(realmId, realmGroups);
+      }
     }
 
     return [...realms.entries()]

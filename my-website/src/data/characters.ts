@@ -70,6 +70,8 @@ export type Character = {
   polyamoryStatus?: PolyamoryStatus;
 
   factionId?: string | null;
+  /** Other active faction memberships; keeps factionId as the primary affiliation. */
+  additionalFactionIds?: string[];
 
   /** Region is intentionally broader than kingdom. Examples: sylmorien, hotou, yggdrasil. */
   regionId?: string | null;
@@ -114,11 +116,15 @@ export function getCharacterById(id: string): Character | undefined {
   return characters[id];
 }
 
+export function characterBelongsToFaction(character: Character, factionId: string): boolean {
+  return character.factionId === factionId || (character.additionalFactionIds?.includes(factionId) ?? false);
+}
+
 export function getCharactersByFactionId(
   factionId: string,
   list: Character[] = visibleCharacterList,
 ): Character[] {
-  return list.filter((character) => character.factionId === factionId);
+  return list.filter((character) => characterBelongsToFaction(character, factionId));
 }
 
 export function getCharacterDocPath(character: Character): string {
