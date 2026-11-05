@@ -7013,7 +7013,7 @@
     "title": "Camerino",
     "group": "npc",
     "visibility": "hidden",
-    "status": "unknown",
+    "status": "dead",
     "imageSrc": "/img/characters/npc/npc-kobold.webp",
     "sortOrder": 146,
     "factionId": "kobolds-del-valle-del-arrozal"
@@ -7023,7 +7023,7 @@
     "title": "Camerino Jr.",
     "group": "npc",
     "visibility": "hidden",
-    "status": "unknown",
+    "status": "dead",
     "imageSrc": "/img/characters/npc/npc-kobold.webp",
     "sortOrder": 147,
     "factionId": "kobolds-del-valle-del-arrozal"
@@ -7159,7 +7159,7 @@
     "title": "Demetrio",
     "group": "npc",
     "visibility": "hidden",
-    "status": "unknown",
+    "status": "dead",
     "imageSrc": "/img/characters/npc/npc-kobold.webp",
     "sortOrder": 160,
     "factionId": "kobolds-del-valle-del-arrozal"
@@ -7308,7 +7308,7 @@
     "status": "dead",
     "imageSrc": "/img/characters/npc/npc-hanjun.webp",
     "sortOrder": 173,
-    "factionId": "emisarios-de-los-hijos-de-la-noche"
+    "factionId": "cobradores-de-impuestos-de-hyberia"
   },
   "sj-heechul": {
     "id": "sj-heechul",
@@ -7327,7 +7327,7 @@
     "title": "Hilario",
     "group": "npc",
     "visibility": "hidden",
-    "status": "unknown",
+    "status": "dead",
     "imageSrc": "/img/characters/npc/npc-kobold.webp",
     "sortOrder": 175,
     "factionId": "kobolds-del-valle-del-arrozal"
@@ -7508,7 +7508,7 @@
     "title": "Hwang",
     "group": "npc",
     "visibility": "hidden",
-    "status": "unknown",
+    "status": "dead",
     "imageSrc": "/img/characters/npc/npc-kobold.webp",
     "sortOrder": 178,
     "factionId": "kobolds-del-valle-del-arrozal"
@@ -7710,7 +7710,7 @@
     "title": "Lady Isuna",
     "group": "npc",
     "visibility": "hidden",
-    "status": "unknown",
+    "status": "dead",
     "imageSrc": "/img/characters/npc/npc-isuna.webp",
     "sortOrder": 195,
     "factionId": "cobradores-de-impuestos-de-hyberia"
@@ -7943,7 +7943,7 @@
     "title": "Ren",
     "group": "npc",
     "visibility": "hidden",
-    "status": "unknown",
+    "status": "dead",
     "imageSrc": "/img/characters/npc/npc-ren.webp",
     "sortOrder": 216,
     "factionId": "changelings-del-clan-hoshizuki"
@@ -8157,7 +8157,7 @@
     "title": "Sir Baekjin",
     "group": "npc",
     "visibility": "hidden",
-    "status": "unknown",
+    "status": "dead",
     "imageSrc": "/img/characters/npc/npc-baekjin.webp",
     "sortOrder": 233,
     "factionId": "cobradores-de-impuestos-de-hyberia"
@@ -8259,7 +8259,7 @@
     "title": "Tencha",
     "group": "npc",
     "visibility": "hidden",
-    "status": "unknown",
+    "status": "dead",
     "imageSrc": "/img/characters/npc/npc-kobold.webp",
     "sortOrder": 241,
     "factionId": "kobolds-del-valle-del-arrozal"
@@ -8453,7 +8453,7 @@
     "title": "Yui",
     "group": "npc",
     "visibility": "hidden",
-    "status": "unknown",
+    "status": "dead",
     "imageSrc": "/img/characters/npc/npc-yui.webp",
     "sortOrder": 256,
     "factionId": "changelings-del-clan-hoshizuki"

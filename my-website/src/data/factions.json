@@ -172,7 +172,9 @@
     "type": "clan",
     "status": "active",
     "visibility": "public",
-    "sortOrder": 5
+    "sortOrder": 5,
+    "realm": "hotou",
+    "regionId": "hotou"
   },
   "adp": {
     "id": "adp",
@@ -218,7 +220,9 @@
     "type": "clan",
     "status": "active",
     "visibility": "public",
-    "sortOrder": 7
+    "sortOrder": 7,
+    "realm": "sylmorien",
+    "regionId": "sylmorien"
   },
   "kiof": {
     "id": "kiof",
@@ -2252,7 +2256,8 @@
     "status": "unknown",
     "visibility": "hidden",
     "regionId": "valle-dorado",
-    "firstAppearance": 1
+    "firstAppearance": 1,
+    "realm": "hyberia"
   },
   "emisarios-de-los-hijos-de-la-noche": {
     "id": "emisarios-de-los-hijos-de-la-noche",
@@ -2261,35 +2266,45 @@
     "status": "unknown",
     "visibility": "hidden",
     "parentFactionId": "enhypen",
-    "firstAppearance": 4
+    "firstAppearance": 4,
+    "realm": "hyberia",
+    "regionId": "hyberia"
   },
   "cobradores-de-impuestos-de-hyberia": {
     "id": "cobradores-de-impuestos-de-hyberia",
     "title": "Cobradores de Impuestos de Hyberia",
     "type": "other",
     "status": "unknown",
-    "visibility": "hidden"
+    "visibility": "hidden",
+    "realm": "hyberia",
+    "regionId": "hyberia"
   },
   "oficiales-reales-de-hyberia": {
     "id": "oficiales-reales-de-hyberia",
     "title": "Oficiales Reales de Hyberia",
     "type": "other",
     "status": "unknown",
-    "visibility": "hidden"
+    "visibility": "hidden",
+    "realm": "hyberia",
+    "regionId": "hyberia"
   },
   "monstruos-del-casino-clandestino": {
     "id": "monstruos-del-casino-clandestino",
     "title": "Monstruos del Casino Clandestino",
     "type": "other",
     "status": "unknown",
-    "visibility": "hidden"
+    "visibility": "hidden",
+    "realm": "hyberia",
+    "regionId": "hyberia"
   },
   "policia-militar-de-sylmorien": {
     "id": "policia-militar-de-sylmorien",
     "title": "Policía Militar de Sylmorien",
     "type": "other",
     "status": "unknown",
-    "visibility": "hidden"
+    "visibility": "hidden",
+    "realm": "sylmorien",
+    "regionId": "sylmorien"
   },
   "archidiablos-del-averno": {
     "id": "archidiablos-del-averno",
@@ -2303,7 +2318,9 @@
     "title": "Goblins de Hyberia",
     "type": "other",
     "status": "unknown",
-    "visibility": "hidden"
+    "visibility": "hidden",
+    "realm": "hyberia",
+    "regionId": "hyberia"
   },
   "habitantes-de-la-neocity": {
     "id": "habitantes-de-la-neocity",
@@ -2311,14 +2328,18 @@
     "type": "other",
     "status": "unknown",
     "visibility": "hidden",
-    "parentFactionId": "ciudadanos-de-sylmorien"
+    "parentFactionId": "ciudadanos-de-sylmorien",
+    "realm": "sylmorien",
+    "regionId": "sylmorien"
   },
   "changelings-del-clan-hoshizuki": {
     "id": "changelings-del-clan-hoshizuki",
     "title": "Changelings del Clan Hoshizuki",
     "type": "clan",
     "status": "unknown",
-    "visibility": "hidden"
+    "visibility": "hidden",
+    "realm": "hotou",
+    "regionId": "hotou"
   },
   "licantropos-de-hotou": {
     "id": "licantropos-de-hotou",
@@ -2326,7 +2347,9 @@
     "type": "other",
     "status": "unknown",
     "visibility": "hidden",
-    "parentFactionId": "ciudadanos-de-hotou"
+    "parentFactionId": "ciudadanos-de-hotou",
+    "realm": "hotou",
+    "regionId": "hotou"
   },
   "ciudadanos-de-yggdrasil": {
     "id": "ciudadanos-de-yggdrasil",
@@ -2368,7 +2391,9 @@
     "type": "other",
     "parentFactionId": "gremio-de-ladrones-de-sylmorien",
     "status": "unknown",
-    "visibility": "hidden"
+    "visibility": "hidden",
+    "realm": "sylmorien",
+    "regionId": "sylmorien"
   },
   "consejo-de-hotou": {
     "id": "consejo-de-hotou",
@@ -2383,7 +2408,8 @@
     "title": "Consejo de Honor de la Nación P",
     "type": "other",
     "status": "unknown",
-    "visibility": "hidden"
+    "visibility": "hidden",
+    "realm": "nacion-p"
   },
   "las-guerreras-de-los-dos-soles": {
     "id": "las-guerreras-de-los-dos-soles",
