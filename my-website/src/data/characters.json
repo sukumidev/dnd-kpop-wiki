@@ -6892,7 +6892,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-brandom-lee.webp",
-    "sortOrder": 142
+    "sortOrder": 142,
+    "factionId": "division-del-agua-de-la-guardia-real-de-sylmorien"
   },
   "ampersone-brian": {
     "id": "ampersone-brian",
@@ -7337,7 +7338,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-rosita.webp",
-    "sortOrder": 176
+    "sortOrder": 176,
+    "factionId": "ciudadanos-de-hotou"
   },
   "npc-petunia": {
     "id": "npc-petunia",
@@ -7347,7 +7349,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-petunia.webp",
-    "sortOrder": 176
+    "sortOrder": 176,
+    "factionId": "ciudadanos-de-hotou"
   },
   "npc-dalia": {
     "id": "npc-dalia",
@@ -7357,7 +7360,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-dalia.webp",
-    "sortOrder": 176
+    "sortOrder": 176,
+    "factionId": "ciudadanos-de-hotou"
   },
   "npc-margarita": {
     "id": "npc-margarita",
@@ -7367,7 +7371,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-margarita.webp",
-    "sortOrder": 176
+    "sortOrder": 176,
+    "factionId": "ciudadanos-de-hotou"
   },
   "txt-hueningkai": {
     "id": "txt-hueningkai",
@@ -8119,7 +8124,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-uzari.webp",
-    "sortOrder": 244
+    "sortOrder": 244,
+    "factionId": "ciudadanos-de-yggdrasil"
   },
   "npc-valko": {
     "id": "npc-valko",
@@ -8780,7 +8786,8 @@
     "visibility": "public",
     "status": "unknown",
     "summary": "Aparece durante la jornada de playa de la sesión 19.",
-    "imageSrc": "/img/characters/npc/npc-laura.webp"
+    "imageSrc": "/img/characters/npc/npc-laura.webp",
+    "factionId": "dragonborns-del-clan-del-caos"
   },
   "npc-yamal": {
     "id": "npc-yamal",
@@ -8789,7 +8796,8 @@
     "visibility": "public",
     "status": "unknown",
     "summary": "Aparece durante la jornada de playa de la sesión 19.",
-    "imageSrc": "/img/characters/npc/npc-yamal.webp"
+    "imageSrc": "/img/characters/npc/npc-yamal.webp",
+    "factionId": "dragonborns-del-clan-del-caos"
   },
   "npc-sixsevenaldo": {
     "id": "npc-sixsevenaldo",
@@ -8798,7 +8806,8 @@
     "visibility": "public",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-sixsevenaldo.webp",
-    "summary": "Aparece durante la jornada de playa de la sesión 19."
+    "summary": "Aparece durante la jornada de playa de la sesión 19.",
+    "factionId": "dragonborns-del-clan-del-caos"
   },
   "npc-minji": {
     "id": "npc-minji",
@@ -8808,7 +8817,8 @@
     "visibility": "public",
     "status": "active",
     "imageSrc": "/img/characters/npc/npc-minji.webp",
-    "summary": "Una de las gemelas de Minjae y Joshua, nacida durante la sesión 14."
+    "summary": "Una de las gemelas de Minjae y Joshua, nacida durante la sesión 14.",
+    "factionId": "svt"
   },
   "npc-minsoo": {
     "id": "npc-minsoo",
@@ -8818,7 +8828,8 @@
     "visibility": "public",
     "status": "active",
     "imageSrc": "/img/characters/npc/npc-minsoo.webp",
-    "summary": "Una de las gemelas de Minjae y Joshua, nacida durante la sesión 14."
+    "summary": "Una de las gemelas de Minjae y Joshua, nacida durante la sesión 14.",
+    "factionId": "svt"
   },
   "npc-abu": {
     "id": "npc-abu",
@@ -8827,7 +8838,8 @@
     "visibility": "public",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-agu.webp",
-    "summary": "Aparece en la sesión 19."
+    "summary": "Aparece en la sesión 19.",
+    "factionId": "habitantes-de-la-neocity"
   },
   "npc-apu": {
     "id": "npc-apu",
@@ -8836,7 +8848,8 @@
     "visibility": "public",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-agu.webp",
-    "summary": "Aparece en la sesión 19."
+    "summary": "Aparece en la sesión 19.",
+    "factionId": "habitantes-de-la-neocity"
   },
   "npc-agu": {
     "id": "npc-agu",
@@ -8845,6 +8858,7 @@
     "visibility": "public",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-agu.webp",
-    "summary": "Aparece en la sesión 19."
+    "summary": "Aparece en la sesión 19.",
+    "factionId": "habitantes-de-la-neocity"
   }
 }

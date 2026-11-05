@@ -1820,7 +1820,8 @@
         "value": "Sesión 17"
       }
     ],
-    "sortOrder": 130
+    "sortOrder": 130,
+    "parentFactionId": "division-del-agua-de-la-guardia-real-de-sylmorien"
   },
   "rv": {
     "id": "rv",
@@ -2293,5 +2294,30 @@
     "status": "unknown",
     "visibility": "hidden",
     "parentFactionId": "ciudadanos-de-hotou"
+  },
+  "ciudadanos-de-yggdrasil": {
+    "id": "ciudadanos-de-yggdrasil",
+    "title": "Ciudadanos de Yggdrasil",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden",
+    "realm": "yggdrasil"
+  },
+  "guardia-real-de-sylmorien": {
+    "id": "guardia-real-de-sylmorien",
+    "title": "Guardia Real de Sylmorien",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden",
+    "realm": "sylmorien"
+  },
+  "division-del-agua-de-la-guardia-real-de-sylmorien": {
+    "id": "division-del-agua-de-la-guardia-real-de-sylmorien",
+    "title": "División del Agua de la Guardia Real de Sylmorien",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden",
+    "realm": "sylmorien",
+    "parentFactionId": "guardia-real-de-sylmorien"
   }
 }
