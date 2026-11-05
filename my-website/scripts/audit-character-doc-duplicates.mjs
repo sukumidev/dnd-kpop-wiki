@@ -72,7 +72,7 @@ async function readCharacterDocuments() {
   return docs;
 }
 
-async function findLegacyReferences(id, excludedPath) {
+async function buildReferenceIndex() {
   const roots = [path.join(PROJECT_ROOT, "docs"), path.join(PROJECT_ROOT, "src"),
     path.join(PROJECT_ROOT, "sidebars.ts"), path.join(PROJECT_ROOT, "docusaurus.config.ts")];
   const files = [];
@@ -80,20 +80,24 @@ async function findLegacyReferences(id, excludedPath) {
     if (root.endsWith(".ts")) files.push(root);
     else files.push(...await walk(root, (f) => /\.(md|mdx|ts|tsx|js|mjs|json)$/.test(f)));
   }
+  return Promise.all(files.map(async (fullPath) => ({
+    fullPath,
+    text: await fs.readFile(fullPath, "utf8"),
+  })));
+}
+
+function findLegacyReferences(id, excludedPath, referenceIndex) {
   const needle = `characters/misc/${id}`;
-  const refs = [];
-  for (const f of files) {
-    if (f === excludedPath) continue;
-    if ((await fs.readFile(f, "utf8")).includes(needle)) {
-      refs.push(path.relative(PROJECT_ROOT, f).replaceAll(path.sep, "/"));
-    }
-  }
-  return refs;
+  return referenceIndex
+    .filter(({ fullPath, text }) => fullPath !== excludedPath && text.includes(needle))
+    .map(({ fullPath }) => path.relative(PROJECT_ROOT, fullPath).replaceAll(path.sep, "/"));
 }
 
 export async function auditCharacterDocs(options = {}) {
   const write = options.write ?? false;
   const docs = await readCharacterDocuments();
+  const registry = JSON.parse(await fs.readFile(path.join(PROJECT_ROOT, "src/data/characters.json"), "utf8"));
+  const referenceIndex = await buildReferenceIndex();
   const byId = new Map();
   for (const doc of docs) byId.set(doc.id, [...(byId.get(doc.id) ?? []), doc]);
 
@@ -102,13 +106,13 @@ export async function auditCharacterDocs(options = {}) {
   let removed = 0;
   for (const [id, entries] of duplicated) {
     const legacy = entries.filter((d) => d.relative.startsWith("misc/"));
-    const record = JSON.parse(await fs.readFile(path.join(PROJECT_ROOT, "src/data/characters.json"), "utf8"))[id];
+    const record = registry[id];
     const canonicalRel = record ? `${record.group}/${id}.mdx` : null;
     const canonical = entries.find((d) => d.relative === canonicalRel);
     for (const old of legacy) {
       const legacyEmpty = isLegacyEmptyProfile(old.content);
       const canonicalMeaningful = canonical ? hasMeaningfulIntroduction(canonical.content) : false;
-      const references = await findLegacyReferences(id, old.fullPath);
+      const references = findLegacyReferences(id, old.fullPath, referenceIndex);
       const safe = Boolean(legacyEmpty && canonicalMeaningful && references.length === 0);
       let outcome = safe ? "safe-to-remove" : "manual-review";
       if (safe && write) {
