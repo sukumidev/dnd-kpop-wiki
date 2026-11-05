@@ -2263,5 +2263,19 @@
     "type": "other",
     "status": "unknown",
     "visibility": "hidden"
+  },
+  "goblins-de-hyberia": {
+    "id": "goblins-de-hyberia",
+    "title": "Goblins de Hyberia",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden"
+  },
+  "habitantes-de-la-neocity": {
+    "id": "habitantes-de-la-neocity",
+    "title": "Habitantes de la Neocity",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden"
   }
 }

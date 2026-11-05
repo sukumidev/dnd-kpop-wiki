@@ -6861,7 +6861,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/enemies/enemy-goblin.webp",
-    "sortOrder": 139
+    "sortOrder": 139,
+    "factionId": "goblins-de-hyberia"
   },
   "txt-beomgyu": {
     "id": "txt-beomgyu",
@@ -6966,7 +6967,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/enemies/enemy-goblin.webp",
-    "sortOrder": 150
+    "sortOrder": 150,
+    "factionId": "goblins-de-hyberia"
   },
   "npc-castro": {
     "id": "npc-castro",
@@ -6975,7 +6977,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/enemies/enemy-goblin.webp",
-    "sortOrder": 151
+    "sortOrder": 151,
+    "factionId": "goblins-de-hyberia"
   },
   "npc-chayanne": {
     "id": "npc-chayanne",
@@ -6984,7 +6987,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/enemies/enemy-goblin.webp",
-    "sortOrder": 152
+    "sortOrder": 152,
+    "factionId": "goblins-de-hyberia"
   },
   "txt-soobin": {
     "id": "txt-soobin",
@@ -7003,7 +7007,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/enemies/enemy-goblin.webp",
-    "sortOrder": 154
+    "sortOrder": 154,
+    "factionId": "goblins-de-hyberia"
   },
   "npc-cristian": {
     "id": "npc-cristian",
@@ -7012,7 +7017,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/enemies/enemy-goblin.webp",
-    "sortOrder": 155
+    "sortOrder": 155,
+    "factionId": "goblins-de-hyberia"
   },
   "npc-dj-tony-mix": {
     "id": "npc-dj-tony-mix",
@@ -7070,7 +7076,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/enemies/enemy-goblin.webp",
-    "sortOrder": 161
+    "sortOrder": 161,
+    "factionId": "goblins-de-hyberia"
   },
   "npc-donatella-versace": {
     "id": "npc-donatella-versace",
@@ -7176,7 +7183,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/enemies/enemy-goblin.webp",
-    "sortOrder": 171
+    "sortOrder": 171,
+    "factionId": "goblins-de-hyberia"
   },
   "omega-x-hangyeom": {
     "id": "omega-x-hangyeom",
@@ -7493,7 +7501,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/enemies/enemy-goblin.webp",
-    "sortOrder": 189
+    "sortOrder": 189,
+    "factionId": "goblins-de-hyberia"
   },
   "npc-junho": {
     "id": "npc-junho",
@@ -7733,7 +7742,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-neorayita.webp",
-    "sortOrder": 213
+    "sortOrder": 213,
+    "factionId": "habitantes-de-la-neocity"
   },
   "npc-omar": {
     "id": "npc-omar",
