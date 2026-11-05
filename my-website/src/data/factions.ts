@@ -1,5 +1,5 @@
 import factionsJson from "./factions.json";
-import type { Character } from "./characters";
+import { characterBelongsToFaction, type Character } from "./characters";
 import type { Quest } from "./quests";
 
 export type FactionStatus =
@@ -73,6 +73,11 @@ export type Faction = {
 
   /** Character IDs used for faction leadership. General membership comes from characters.json via character.factionId. */
   leaderCharacterId?: string | null;
+  /** Legacy leadership and membership fields still present in some faction records. */
+  leaderId?: string | null;
+  memberIds?: string[];
+  /** Former members remain associated with this faction even after changing affiliation. */
+  exMemberIds?: string[];
 
   /** Faction-to-faction relationships. */
   allyFactionIds?: string[];
@@ -124,11 +129,11 @@ export function getFactionsByRegionId(regionId: string, list: Faction[] = factio
 }
 
 /**
- * General membership source of truth lives in characters.json through character.factionId.
+ * Membership source of truth lives in characters.json via primary factionId and optional additionalFactionIds.
  * This keeps factions.json from duplicating keyMembers.
  */
 export function getFactionMembers(factionId: string, characters: Character[]): Character[] {
-  return characters.filter((character) => character.factionId === factionId);
+  return characters.filter((character) => characterBelongsToFaction(character, factionId));
 }
 
 export function getFactionLeader(faction: Faction, characters: Character[]): Character | undefined {

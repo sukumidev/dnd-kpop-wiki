@@ -4,7 +4,7 @@
 
 El contrato `Faction` define grupos, órdenes, clanes, gremios, academias, manadas, alianzas y facciones enemigas de Hallyura.
 
-`factions.json` debe describir la identidad de la facción, sus relaciones, su base y sus subunidades. La membresía general no se duplica aquí: se obtiene desde `characters.json` usando `character.factionId`.
+`factions.json` debe describir la identidad de la facción, sus relaciones, su base y sus subunidades. La membresía general no se duplica aquí: se obtiene desde `characters.json` usando `character.factionId` y `character.additionalFactionIds`.
 
 ## Fuente de verdad
 
@@ -24,7 +24,7 @@ src/data/factions.ts
 
 - `id` usa lowercase kebab-case y debe ser único dentro de `factions.json`.
 - `keyMembers` queda deprecado como fuente de verdad.
-- Los miembros generales se calculan leyendo `characters.json` por `factionId`.
+- Los miembros generales se calculan leyendo `characters.json` por `factionId` (principal) y `additionalFactionIds` (afiliaciones adicionales).
 - Las `subunits` sí permanecen en `factions.json` porque representan estructura interna específica.
 - `regionId` reemplaza `realm`/`realmRef`.
 - `baseLocationId` reemplaza `base.doc` cuando el lugar exista en `locations.json`.
@@ -180,7 +180,7 @@ caption
 Para obtener miembros generales de una facción:
 
 ```ts
-characters.filter((character) => character.factionId === faction.id)
+characters.filter((character) => character.factionId === faction.id || character.additionalFactionIds?.includes(faction.id))
 ```
 
 No usar `keyMembers` como fuente de verdad.

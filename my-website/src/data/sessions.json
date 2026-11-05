@@ -43,6 +43,7 @@
     "number": 2,
     "title": "Batalla vs los Guardias Reales de Hyberia",
     "subtitle": "Una visita al pueblo que terminó entre impuestos y espadas",
+    "sessionDate": "2025-04-25",
     "imageSrc": "/img/sessions/02/2.webp",
     "locationIds": [
       "valle-dorado",
@@ -71,6 +72,7 @@
     "number": 3,
     "title": "El Lago Olvidado de los Pescadores",
     "subtitle": "Una reliquia bajo el agua y una advertencia bajo la luna",
+    "sessionDate": "2025-06-14",
     "imageSrc": "/img/sessions/03/3.webp",
     "locationIds": [
       "lago-celeste",
@@ -101,6 +103,7 @@
     "number": 4,
     "title": "Llegada a Borasek",
     "subtitle": "Una ciudad en penumbra y una compañera desaparecida",
+    "sessionDate": "2025-07-05",
     "imageSrc": "/img/sessions/04/4.webp",
     "locationIds": [
       "murallas-de-borasek",
@@ -144,6 +147,7 @@
     "number": 5,
     "title": "La Mazmorra Sangrienta",
     "subtitle": "Rescates bajo Borasek y una alianza que todavía parecía imposible",
+    "sessionDate": "2025-07-26",
     "imageSrc": "/img/sessions/05/5.webp",
     "locationIds": [
       "mazmorra-sangrienta",
@@ -188,6 +192,8 @@
     "number": 6,
     "title": "La Mansión Radiante",
     "subtitle": "Una tregua incómoda y una biblioteca con demasiadas calacas",
+    "sessionDate": "2025-08-16",
+    "campaignDate": "8 de agosto de 2025",
     "imageSrc": "/img/sessions/06/6.webp",
     "locationIds": [
       "cuartel-de-los-hijos-de-la-noche",
@@ -227,6 +233,7 @@
     "number": 7,
     "title": "El Castillo Flotante",
     "subtitle": "Un sueño de paz que les costó dos meses de realidad",
+    "sessionDate": "2025-09-06",
     "imageSrc": "/img/sessions/07/7.webp",
     "locationIds": [
       "castillo-flotante",
@@ -268,6 +275,7 @@
     "number": 8,
     "title": "El Casino Clandestino",
     "subtitle": "Apuestas peligrosas y respuestas sobre los recuerdos perdidos",
+    "sessionDate": "2025-09-28",
     "imageSrc": "/img/sessions/08/8.webp",
     "locationIds": [
       "gremio-de-aventureros",
@@ -306,6 +314,7 @@
     "number": 9,
     "title": "La Fiesta de la Noche del Aquelarre",
     "subtitle": "Almas rescatadas, disfraces y cuatro cartas menos",
+    "sessionDate": "2025-11-16",
     "imageSrc": "/img/sessions/09/9.webp",
     "locationIds": [
       "casino-clandestino",
@@ -383,6 +392,7 @@
     "number": 10,
     "title": "Festival del Solsticio de Invierno",
     "subtitle": "Tripuertos, rescates y una cena con invitados inesperados",
+    "sessionDate": "2025-12-13",
     "imageSrc": "/img/sessions/10/10.webp",
     "locationIds": [
       "mansion-wang",
@@ -446,6 +456,7 @@
     "number": 11,
     "title": "Minjae se va a la bancarrota",
     "subtitle": "Una tarjeta bloqueada y demasiados problemas en Neocity",
+    "sessionDate": "2026-01-24",
     "imageSrc": "/img/sessions/11/11.webp",
     "locationIds": [
       "gremio-de-aventureros",
@@ -499,6 +510,8 @@
     "number": 11.5,
     "title": "One Shot de los Lobos Perdidos",
     "subtitle": "One-shot de los Lobos Perdidos entre runas y amenazas al santuario",
+    "sessionDate": "2026-02-21",
+    "campaignDate": "22 de diciembre de 2025",
     "imageSrc": "/img/sessions/11.5/11.5.webp",
     "locationIds": [
       "jeyperia",
@@ -527,6 +540,7 @@
     "number": 12,
     "title": "Batalla contra la Luz Ardiente",
     "subtitle": "Una retirada que tuvo un precio demasiado alto",
+    "sessionDate": "2026-03-15",
     "imageSrc": "/img/sessions/12/12.webp",
     "locationIds": [
       "plaza-principal-de-neocity"
@@ -550,6 +564,8 @@
     "number": 13,
     "title": "El Rescate de Dino",
     "subtitle": "Una misión en la nieve y compras con presupuesto limitado",
+    "sessionDate": "2026-04-11",
+    "campaignDate": "23–26 de diciembre de 2025",
     "imageSrc": "/img/sessions/13/13.webp",
     "locationIds": [
       "gremio-de-aventureros",
@@ -602,6 +618,8 @@
     "number": 14,
     "title": "Bajo el Decreto del Rey",
     "subtitle": "Dos nuevas vidas y un viaje urgente a Hotou",
+    "sessionDate": "2026-05-16",
+    "campaignDate": "26–27 de diciembre de 2025",
     "imageSrc": "/img/sessions/14/14.webp",
     "locationIds": [
       "tianguis-de-neocity",
@@ -638,6 +656,8 @@
     "number": 14.5,
     "title": "One Shot — Las Crónicas del Gremio I: La Subasta del Pacto de Ceniza",
     "subtitle": "One-shot del Gremio sobre desapariciones y un rescate incompleto",
+    "sessionDate": "2026-05-23",
+    "campaignDate": "27–28 de diciembre de 2025",
     "imageSrc": "/img/sessions/14.5/14.5.webp",
     "locationIds": [
       "caminos-de-hyberia",
@@ -694,6 +714,8 @@
     "number": 15,
     "title": "La Familia Falsa",
     "subtitle": "Identidades prestadas y decisiones que dejaron heridas",
+    "sessionDate": "2026-06-13",
+    "campaignDate": "28–29 de diciembre de 2025",
     "imageSrc": "/img/sessions/15/15.webp",
     "locationIds": [
       "casa-de-yuta",
@@ -726,6 +748,8 @@
     "number": 16,
     "title": "El Templo del Dios Lobo",
     "subtitle": "Refugiados en peligro y una luna llena difícil de ignorar",
+    "sessionDate": "2026-07-04",
+    "campaignDate": "28–29 de diciembre de 2025",
     "imageSrc": "/img/sessions/16/16.webp",
     "locationIds": [
       "muelle-de-puerto-bay-alta",
@@ -780,6 +804,8 @@
     "number": 17,
     "title": "El Templo de los Dos Soles",
     "subtitle": "Cartas bajo custodia y un refugio que necesitaba ayuda",
+    "sessionDate": "2026-08-01",
+    "campaignDate": "29–31 de diciembre de 2025",
     "imageSrc": "/img/sessions/17/17.webp",
     "locationIds": [
       "templo-del-dios-lobo",
@@ -816,6 +842,8 @@
     "imageSrc": "/img/sessions/18/18.webp",
     "title": "Las Segundas Oportunidades",
     "subtitle": "Poner a salvo a otros antes de seguir buscando respuestas",
+    "sessionDate": "2026-08-29",
+    "campaignDate": "31 de diciembre de 2025 – 5 de enero de 2026",
     "locationIds": [
       "interior-del-templo-del-sol-naciente",
       "neocity",
@@ -852,6 +880,8 @@
     "imageSrc": "/img/sessions/19/19.webp",
     "title": "El Destino de los Dragonborns",
     "subtitle": "Un traslado seguro y un respiro antes de la siguiente misión",
+    "sessionDate": "2026-09-13",
+    "campaignDate": "5–11 de enero de 2026",
     "locationIds": [
       "puerto-bay-alta",
       "gremio-de-aventureros",
@@ -895,6 +925,8 @@
     "imageSrc": "/img/sessions/20/20.webp",
     "title": "El Santuario del Dios de la Fuerza",
     "subtitle": "Una niña por rescatar, un elemental memorable y una lámpara pendiente",
+    "sessionDate": "2026-10-12",
+    "campaignDate": "11 de enero de 2026",
     "locationIds": [
       "sylmorien"
     ],
@@ -906,7 +938,11 @@
       "pc-kao",
       "nct-sion",
       "nct-xiaojun",
-      "nct-hendery"
+      "nct-hendery",
+      "wjsn-eunseo",
+      "wjsn-dayoung",
+      "billlie-tsuki",
+      "billlie-suhyeon"
     ]
   }
 ]

@@ -557,6 +557,17 @@ function validateCharacters(characters: JsonRecord, factionIds: Set<string>, loc
       warnMissingReference(file, character.factionId, factionIds, id, "factionId");
     }
 
+    validateIdArray(file, character.additionalFactionIds, id, "additionalFactionIds");
+    warnMissingReferences(file, character.additionalFactionIds, factionIds, id, "additionalFactionIds");
+    if (Array.isArray(character.additionalFactionIds)) {
+      if (character.additionalFactionIds.includes(character.factionId)) {
+        addError(file, "additionalFactionIds must not repeat the primary factionId.", id, "additionalFactionIds");
+      }
+      if (new Set(character.additionalFactionIds).size !== character.additionalFactionIds.length) {
+        addError(file, "additionalFactionIds must not contain duplicates.", id, "additionalFactionIds");
+      }
+    }
+
     if (character.regionId != null) {
       validateIdValue(file, character.regionId, id, "regionId");
       warnMissingReference(file, character.regionId, locationIds, id, "regionId");

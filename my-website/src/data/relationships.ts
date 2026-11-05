@@ -12,7 +12,7 @@
  * - Avoid duplicating faction membership in factions.json.
  */
 
-import { characters, characterList, visibleCharacterList } from "./characters";
+import { characters, characterList, visibleCharacterList, characterBelongsToFaction } from "./characters";
 import questsJson from "./quests.json";
 import factionsJson from "./factions.json";
 import locationsJson from "./locations.json";
@@ -26,7 +26,7 @@ export type { Quest, QuestMap } from "./quests";
 export type { Faction, FactionSubunit } from "./factions";
 export type { Location } from "./locations";
 
-export { characters, characterList, visibleCharacterList };
+export { characters, characterList, visibleCharacterList, characterBelongsToFaction };
 export const quests = questsJson as QuestsById;
 export const factions = factionsJson as FactionsById;
 export const locations = locationsJson as LocationsById;
@@ -95,7 +95,7 @@ export function getLocationById(id: EntityId | null | undefined): Location | und
 }
 
 export function getCharactersByFactionId(factionId: EntityId): Character[] {
-  return visibleCharacterList.filter((character) => character.factionId === factionId);
+  return visibleCharacterList.filter((character) => characterBelongsToFaction(character, factionId));
 }
 
 export function getCharactersByRegionId(regionId: EntityId): Character[] {
@@ -214,6 +214,10 @@ export function getCharacterRelations(characterId: EntityId) {
   return {
     character,
     faction: getFactionById(character.factionId),
+    factions: [character.factionId, ...(character.additionalFactionIds ?? [])]
+      .filter((id): id is string => Boolean(id))
+      .map(getFactionById)
+      .filter(Boolean) as Faction[],
     region: getLocationById(character.regionId),
     locations: (character.locationIds ?? [])
       .map(getLocationById)

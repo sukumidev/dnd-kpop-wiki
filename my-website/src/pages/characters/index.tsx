@@ -12,6 +12,7 @@ import {
   compareRealmGroups,
   sortByExplicitOrderThenTitle,
 } from "@site/src/utils/directoryOrdering";
+import {sortFactionCharacters} from "@site/src/utils/characterFactionOrdering";
 import styles from "./styles.module.css";
 import {getPublicFactionHref} from "@site/src/data/publicRoutes";
 
@@ -19,6 +20,7 @@ import {
   characterList,
   factionList,
   getCharacterDocPath,
+  characterBelongsToFaction,
   getFactionById,
   getLocationById,
   type Character,
@@ -39,6 +41,14 @@ type RealmSection = {
 };
 
 const NO_FACTION_GROUP_ID = "__no-faction__";
+const HIDDEN_DIRECTORY_CHARACTER_IDS = new Set([
+  "tvxq-jaejoong",
+  "tvxq-junsu",
+  "tvxq-yoochun",
+]);
+const directoryCharacters = characterList.filter(
+  (character) => !HIDDEN_DIRECTORY_CHARACTER_IDS.has(character.id),
+);
 
 function FactionCta({faction, label, stopPropagation = false}: {faction: Faction; label: string; stopPropagation?: boolean}) {
   const {withBaseUrl} = useBaseUrlUtils();
@@ -60,41 +70,57 @@ function FactionCta({faction, label, stopPropagation = false}: {faction: Faction
 export default function CharactersPage() {
   const {withBaseUrl} = useBaseUrlUtils();
 
-  const directoryCharacters = characterList;
-
   const partyGroups = useMemo(() => {
     return sortByExplicitOrderThenTitle(
       factionList.filter((faction) => faction.type === "party"),
     ).map((faction) => ({
       faction,
       characters: sortByExplicitOrderThenTitle(
-        directoryCharacters.filter((character) => character.factionId === faction.id),
+        directoryCharacters.filter((character) => characterBelongsToFaction(character, faction.id)),
       ),
     })).filter((group) => group.characters.length > 0);
   }, [directoryCharacters]);
 
   const realmSections = useMemo(() => {
     const realms = new Map<string, Map<string, CharacterGroup>>();
+    const formerFactionsByCharacterId = new Map<string, string[]>();
+    for (const faction of factionList) {
+      if (faction.type === "party") continue;
+      for (const characterId of faction.exMemberIds ?? []) {
+        const factionIds = formerFactionsByCharacterId.get(characterId) ?? [];
+        factionIds.push(faction.id);
+        formerFactionsByCharacterId.set(characterId, factionIds);
+      }
+    }
 
     for (const character of directoryCharacters) {
-      const faction = getFactionById(character.factionId);
-      if (faction?.type === "party") continue;
+      // Current and explicitly former affiliations can each have a directory group.
+      const memberships = [...new Set([
+        character.factionId,
+        ...(character.additionalFactionIds ?? []),
+        ...(formerFactionsByCharacterId.get(character.id) ?? []),
+      ])];
 
-      const assignedRealm = faction?.realm ?? faction?.regionId ?? character.regionId;
-      const realmId = !assignedRealm || ["sin-reino", "no-aplica"].includes(assignedRealm)
-        ? NO_REALM_GROUP_ID
-        : assignedRealm;
-      const factionGroupId = faction?.id ?? NO_FACTION_GROUP_ID;
-      const realmGroups = realms.get(realmId) ?? new Map<string, CharacterGroup>();
-      const group = realmGroups.get(factionGroupId) ?? {
-        id: factionGroupId,
-        faction,
-        characters: [],
-      };
+      for (const factionId of memberships) {
+        const faction = getFactionById(factionId);
+        if (faction?.type === "party") continue;
 
-      group.characters.push(character);
-      realmGroups.set(factionGroupId, group);
-      realms.set(realmId, realmGroups);
+        const assignedRealm = faction?.realm ?? faction?.regionId ?? character.regionId;
+        const realmId = !assignedRealm || ["sin-reino", "no-aplica"].includes(assignedRealm)
+          ? NO_REALM_GROUP_ID
+          : assignedRealm;
+        const factionGroupId = faction?.id ?? NO_FACTION_GROUP_ID;
+        const realmGroups = realms.get(realmId) ?? new Map<string, CharacterGroup>();
+        const group = realmGroups.get(factionGroupId) ?? {
+          id: factionGroupId,
+          faction,
+          characters: [],
+        };
+
+        group.characters.push(character);
+        realmGroups.set(factionGroupId, group);
+        realms.set(realmId, realmGroups);
+      }
     }
 
     return [...realms.entries()]
@@ -102,7 +128,9 @@ export default function CharactersPage() {
         const groups = [...realmGroups.values()]
           .map((group) => ({
             ...group,
-            characters: sortByExplicitOrderThenTitle(group.characters),
+            characters: group.faction
+              ? sortFactionCharacters(group.characters, group.faction)
+              : sortByExplicitOrderThenTitle(group.characters),
           }))
           .sort((a, b) => {
             if (a.id === NO_FACTION_GROUP_ID) return 1;

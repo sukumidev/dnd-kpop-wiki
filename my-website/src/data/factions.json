@@ -108,15 +108,48 @@
     "methods": null,
     "baseLocationId": null,
     "baseLabel": "Desconocida",
-    "leaderCharacterId": null,
+    "leaderCharacterId": "enemy-seungri",
     "allyCharacterIds": [],
     "enemyCharacterIds": [],
-    "subunits": [],
+    "subunits": [
+      {
+        "id": "unidad-de-investigacion-arcana",
+        "title": "Unidad de Investigación Arcana",
+        "memberIds": [
+          "enemy-taeil",
+          "enemy-evan",
+          "enemy-lesath"
+        ]
+      },
+      {
+        "id": "iglesia-del-profeta",
+        "title": "Iglesia del Profeta",
+        "memberIds": [
+          "enemy-soohyun"
+        ]
+      },
+      {
+        "id": "pacto-de-ceniza",
+        "title": "Pacto de Ceniza",
+        "memberIds": [
+          "enemy-arven",
+          "enemy-delkhan"
+        ]
+      },
+      {
+        "id": "consorcio-fenghuang",
+        "title": "Consorcio Fenghuang",
+        "memberIds": [
+          "enemy-haneul",
+          "enemy-kris"
+        ]
+      }
+    ],
     "imageCaption": null,
     "name": "El Clan del Sol Ardiente",
     "typeLabel": "Organización",
     "origin": "Desconocido",
-    "leaderLabel": "Seungri (cabeza ideológica)",
+    "leaderLabel": "Seungri",
     "knownMembers": "Diversos cazadores y agentes del Clan",
     "affiliation": "Independiente",
     "activityArea": "Múltiples reinos de Hallyura",
@@ -1820,7 +1853,8 @@
         "value": "Sesión 17"
       }
     ],
-    "sortOrder": 130
+    "sortOrder": 130,
+    "parentFactionId": "division-del-agua-de-la-guardia-real-de-sylmorien"
   },
   "rv": {
     "id": "rv",
@@ -2153,7 +2187,7 @@
     "description": "Los Dioses de la Creación son un panteón originario de Yggdrasil cuyos integrantes alcanzaron la divinidad durante la Segunda Era. Su ascensión constituye uno de los acontecimientos religiosos más importantes de la historia documentada de Hallyura.\n\nAntes de convertirse en dioses, fueron cinco mortales conocidos por desarrollar técnicas propias, modificar los hechizos que aprendían y rechazar las limitaciones impuestas por las academias.",
     "origin": "Yggdrasil",
     "realm": "yggdrasil",
-    "knownMembers": "G-Dragon, T.O.P, Taeyang, Daesung y Seungri",
+    "knownMembers": "G-Dragon, T.O.P, Taeyang y Daesung; Seungri (miembro anterior)",
     "statusLabel": "Activos",
     "regionId": "yggdrasil",
     "allyFactionIds": [],
@@ -2210,5 +2244,190 @@
       }
     ],
     "sortOrder": 146
+  },
+  "kobolds-del-valle-del-arrozal": {
+    "id": "kobolds-del-valle-del-arrozal",
+    "title": "Kobolds del Valle del Arrozal",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden",
+    "regionId": "valle-dorado",
+    "firstAppearance": 1
+  },
+  "emisarios-de-los-hijos-de-la-noche": {
+    "id": "emisarios-de-los-hijos-de-la-noche",
+    "title": "Emisarios de los Hijos de la Noche",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden",
+    "parentFactionId": "enhypen",
+    "firstAppearance": 4
+  },
+  "cobradores-de-impuestos-de-hyberia": {
+    "id": "cobradores-de-impuestos-de-hyberia",
+    "title": "Cobradores de Impuestos de Hyberia",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden"
+  },
+  "oficiales-reales-de-hyberia": {
+    "id": "oficiales-reales-de-hyberia",
+    "title": "Oficiales Reales de Hyberia",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden"
+  },
+  "monstruos-del-casino-clandestino": {
+    "id": "monstruos-del-casino-clandestino",
+    "title": "Monstruos del Casino Clandestino",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden"
+  },
+  "policia-militar-de-sylmorien": {
+    "id": "policia-militar-de-sylmorien",
+    "title": "Policía Militar de Sylmorien",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden"
+  },
+  "archidiablos-del-averno": {
+    "id": "archidiablos-del-averno",
+    "title": "Archidiablos del Averno",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden"
+  },
+  "goblins-de-hyberia": {
+    "id": "goblins-de-hyberia",
+    "title": "Goblins de Hyberia",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden"
+  },
+  "habitantes-de-la-neocity": {
+    "id": "habitantes-de-la-neocity",
+    "title": "Habitantes de la Neocity",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden",
+    "parentFactionId": "ciudadanos-de-sylmorien"
+  },
+  "changelings-del-clan-hoshizuki": {
+    "id": "changelings-del-clan-hoshizuki",
+    "title": "Changelings del Clan Hoshizuki",
+    "type": "clan",
+    "status": "unknown",
+    "visibility": "hidden"
+  },
+  "licantropos-de-hotou": {
+    "id": "licantropos-de-hotou",
+    "title": "Licántropos",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden",
+    "parentFactionId": "ciudadanos-de-hotou"
+  },
+  "ciudadanos-de-yggdrasil": {
+    "id": "ciudadanos-de-yggdrasil",
+    "title": "Ciudadanos de Yggdrasil",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden",
+    "realm": "yggdrasil"
+  },
+  "guardia-real-de-sylmorien": {
+    "id": "guardia-real-de-sylmorien",
+    "title": "Guardia Real de Sylmorien",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden",
+    "realm": "sylmorien"
+  },
+  "division-del-agua-de-la-guardia-real-de-sylmorien": {
+    "id": "division-del-agua-de-la-guardia-real-de-sylmorien",
+    "title": "División del Agua de la Guardia Real de Sylmorien",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden",
+    "realm": "sylmorien",
+    "parentFactionId": "guardia-real-de-sylmorien"
+  },
+  "gremio-de-ladrones-de-sylmorien": {
+    "id": "gremio-de-ladrones-de-sylmorien",
+    "title": "Gremio de Ladrones de Sylmorien",
+    "type": "guild",
+    "realm": "sylmorien",
+    "status": "unknown",
+    "visibility": "hidden"
+  },
+  "seunghan-y-las-almas-renacidas": {
+    "id": "seunghan-y-las-almas-renacidas",
+    "title": "Seunghan y las Almas Renacidas",
+    "subtitle": "Xnghan&Xoul",
+    "type": "other",
+    "parentFactionId": "gremio-de-ladrones-de-sylmorien",
+    "status": "unknown",
+    "visibility": "hidden"
+  },
+  "consejo-de-hotou": {
+    "id": "consejo-de-hotou",
+    "title": "Consejo de Hotou",
+    "type": "other",
+    "realm": "hotou",
+    "status": "unknown",
+    "visibility": "hidden"
+  },
+  "consejo-de-honor-de-la-nacion-p": {
+    "id": "consejo-de-honor-de-la-nacion-p",
+    "title": "Consejo de Honor de la Nación P",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden"
+  },
+  "las-guerreras-de-los-dos-soles": {
+    "id": "las-guerreras-de-los-dos-soles",
+    "title": "Las Guerreras de los Dos Soles",
+    "subtitle": "Kep1er",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden"
+  },
+  "los-heroes-de-la-base-uno": {
+    "id": "los-heroes-de-la-base-uno",
+    "title": "Los Héroes de La Base Uno",
+    "subtitle": "ZEROBASEONE",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden"
+  },
+  "iglesia-de-los-dioses-nacientes": {
+    "id": "iglesia-de-los-dioses-nacientes",
+    "title": "Iglesia de los Dioses Nacientes",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden"
+  },
+  "los-perdidos-de-la-puerta-de-baldur": {
+    "id": "los-perdidos-de-la-puerta-de-baldur",
+    "title": "Los Perdidos de la Puerta de Baldur",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden"
+  },
+  "mascotas": {
+    "id": "mascotas",
+    "title": "Mascotas",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden"
+  },
+  "izone": {
+    "id": "izone",
+    "title": "Las Doce Princesas del Ensueño",
+    "type": "other",
+    "status": "inactive",
+    "visibility": "hidden",
+    "subtitle": "IZ*ONE"
   }
 }

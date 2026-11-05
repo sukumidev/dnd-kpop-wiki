@@ -2,6 +2,7 @@ import React, { useMemo, useState } from "react";
 import Link from "@docusaurus/Link";
 import rawEvents from "@site/static/data/events.json";
 import { characters as characterRegistry } from "@site/src/data/characters";
+import { idolCharacterIds } from "@site/src/data/idolCharacterIds";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 
 type EventType =
@@ -103,7 +104,7 @@ function buildBirthdayEvents(characters: CharactersMap, year: number): CalendarE
       day: dd,
       year,
       recurring: true,
-      turningAge,
+      turningAge: idolCharacterIds.has(id) ? undefined : turningAge,
       imageSrc: c.imageSrc,
       faction: c.faction,
       realm: c.realm?.label,

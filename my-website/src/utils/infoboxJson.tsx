@@ -18,6 +18,7 @@ import {
 } from '../data/relationships';
 import type { LocationProfile } from '../data/locations';
 import {getPublicFactionHref} from '../data/publicRoutes';
+import { idolCharacterIds } from '../data/idolCharacterIds';
 
 /**
  * JSON-friendly references
@@ -173,6 +174,7 @@ export type CharacterJson = {
 
   // affiliation
   factionId?: string | null;
+  additionalFactionIds?: string[];
   faction?: Value;
   factions?: string[];
 
@@ -236,13 +238,16 @@ function calcAgeFromISO(iso?: string, atDate = new Date()): number | undefined {
 
 export function characterJsonToSections(data: CharacterJson): Section[] {
   const bondsNode = data.bonds ? (renderValue(data.bonds) as React.ReactNode) : undefined;
-  const factionNode =
-    renderFactionLinkFromId(data.factionId) ??
-    (renderValue(data.faction) as React.ReactNode | undefined);
+  const factionNode = renderDelimitedValues(
+    [data.factionId, ...(data.additionalFactionIds ?? [])]
+      .filter((id): id is string => Boolean(id))
+      .map((id) => renderFactionLinkFromId(id)),
+  ) ?? (renderValue(data.faction) as React.ReactNode | undefined);
 
   const derivedBirthday = data.birthday ?? formatBirthdayFromISO(data.dateOfBirth);
-  const derivedAge =
-    data.age !== undefined && data.age !== null
+  const derivedAge = idolCharacterIds.has(data.id ?? '')
+    ? undefined
+    : data.age !== undefined && data.age !== null
       ? data.age
       : calcAgeFromISO(data.dateOfBirth);
 
