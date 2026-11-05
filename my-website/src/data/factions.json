@@ -2421,5 +2421,12 @@
     "type": "other",
     "status": "unknown",
     "visibility": "hidden"
+  },
+  "izone": {
+    "id": "izone",
+    "title": "IZ*ONE",
+    "type": "other",
+    "status": "inactive",
+    "visibility": "hidden"
   }
 }

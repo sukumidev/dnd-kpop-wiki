@@ -7126,7 +7126,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/solo/solo-eunbi.webp",
-    "sortOrder": 165
+    "sortOrder": 165,
+    "factionId": "izone"
   },
   "viviz-eunha": {
     "id": "viviz-eunha",
