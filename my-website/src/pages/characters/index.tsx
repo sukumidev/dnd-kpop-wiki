@@ -45,6 +45,13 @@ const HIDDEN_DIRECTORY_CHARACTER_IDS = new Set([
   "tvxq-jaejoong",
   "tvxq-junsu",
   "tvxq-yoochun",
+  // Los Diez Omegas: fichas pendientes de foto.
+  "omega-x-hyuk",
+  "omega-x-jehyun",
+  "omega-x-kevin",
+  "omega-x-sebin",
+  "omega-x-taedong",
+  "omega-x-xen",
 ]);
 const directoryCharacters = characterList.filter(
   (character) => !HIDDEN_DIRECTORY_CHARACTER_IDS.has(character.id),
