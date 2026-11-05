@@ -7950,7 +7950,8 @@
     "status": "unknown",
     "imageSrc": "/img/characters/xnghan/xnghan-seunghan.webp",
     "sortOrder": 227,
-    "factionId": "seunghan-y-las-almas-renacidas"
+    "factionId": "seunghan-y-las-almas-renacidas",
+    "subtitle": "El Líder del Gremio de Ladrones"
   },
   "bg3-shadowheart": {
     "id": "bg3-shadowheart",
