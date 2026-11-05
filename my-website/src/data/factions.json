@@ -2424,9 +2424,10 @@
   },
   "izone": {
     "id": "izone",
-    "title": "IZ*ONE",
+    "title": "Las Doce Princesas del Ensueño",
     "type": "other",
     "status": "inactive",
-    "visibility": "hidden"
+    "visibility": "hidden",
+    "subtitle": "IZ*ONE"
   }
 }
