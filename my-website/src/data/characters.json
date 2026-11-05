@@ -6813,7 +6813,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/enemies/enemy-emisario.webp",
-    "sortOrder": 134
+    "sortOrder": 134,
+    "factionId": "emisarios-de-los-hijos-de-la-noche"
   },
   "npc-arturo": {
     "id": "npc-arturo",
@@ -6925,7 +6926,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-kobold.webp",
-    "sortOrder": 146
+    "sortOrder": 146,
+    "factionId": "kobolds-del-valle-del-arrozal"
   },
   "npc-camerino-jr": {
     "id": "npc-camerino-jr",
@@ -6934,7 +6936,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-kobold.webp",
-    "sortOrder": 147
+    "sortOrder": 147,
+    "factionId": "kobolds-del-valle-del-arrozal"
   },
   "npc-capitana-lim": {
     "id": "npc-capitana-lim",
@@ -7054,7 +7057,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-kobold.webp",
-    "sortOrder": 160
+    "sortOrder": 160,
+    "factionId": "kobolds-del-valle-del-arrozal"
   },
   "npc-don-jose": {
     "id": "npc-don-jose",
@@ -7090,7 +7094,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/enemies/enemy-emisario.webp",
-    "sortOrder": 164
+    "sortOrder": 164,
+    "factionId": "emisarios-de-los-hijos-de-la-noche"
   },
   "solo-eunbi": {
     "id": "solo-eunbi",
@@ -7184,7 +7189,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-hanjun.webp",
-    "sortOrder": 173
+    "sortOrder": 173,
+    "factionId": "emisarios-de-los-hijos-de-la-noche"
   },
   "sj-heechul": {
     "id": "sj-heechul",
@@ -7203,7 +7209,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-kobold.webp",
-    "sortOrder": 175
+    "sortOrder": 175,
+    "factionId": "kobolds-del-valle-del-arrozal"
   },
   "npc-zapo": {
     "id": "npc-zapo",
@@ -7359,7 +7366,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-kobold.webp",
-    "sortOrder": 178
+    "sortOrder": 178,
+    "factionId": "kobolds-del-valle-del-arrozal"
   },
   "mamamoo-hwasa": {
     "id": "mamamoo-hwasa",
@@ -7607,7 +7615,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/enemies/enemy-emisario.webp",
-    "sortOrder": 203
+    "sortOrder": 203,
+    "factionId": "emisarios-de-los-hijos-de-la-noche"
   },
   "npc-matsuda": {
     "id": "npc-matsuda",
@@ -7625,7 +7634,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-mephisto.webp",
-    "sortOrder": 205
+    "sortOrder": 205,
+    "factionId": "emisarios-de-los-hijos-de-la-noche"
   },
   "twice-mina": {
     "id": "twice-mina",
@@ -7653,7 +7663,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/enemies/enemy-emisario.webp",
-    "sortOrder": 208
+    "sortOrder": 208,
+    "factionId": "emisarios-de-los-hijos-de-la-noche"
   },
   "npc-mitsubishi": {
     "id": "npc-mitsubishi",
@@ -7762,7 +7773,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/enemies/enemy-emisario.webp",
-    "sortOrder": 218
+    "sortOrder": 218,
+    "factionId": "emisarios-de-los-hijos-de-la-noche"
   },
   "npc-rogelio": {
     "id": "npc-rogelio",
@@ -7798,7 +7810,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/enemies/enemy-emisario.webp",
-    "sortOrder": 222
+    "sortOrder": 222,
+    "factionId": "emisarios-de-los-hijos-de-la-noche"
   },
   "npc-scrompy-lee": {
     "id": "npc-scrompy-lee",
@@ -8029,7 +8042,8 @@
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-kobold.webp",
-    "sortOrder": 241
+    "sortOrder": 241,
+    "factionId": "kobolds-del-valle-del-arrozal"
   },
   "pet-tere": {
     "id": "pet-tere",

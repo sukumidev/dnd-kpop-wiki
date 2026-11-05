@@ -2210,5 +2210,23 @@
       }
     ],
     "sortOrder": 146
+  },
+  "kobolds-del-valle-del-arrozal": {
+    "id": "kobolds-del-valle-del-arrozal",
+    "title": "Kobolds del Valle del Arrozal",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden",
+    "regionId": "valle-dorado",
+    "firstAppearance": 1
+  },
+  "emisarios-de-los-hijos-de-la-noche": {
+    "id": "emisarios-de-los-hijos-de-la-noche",
+    "title": "Emisarios de los Hijos de la Noche",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden",
+    "parentFactionId": "enhypen",
+    "firstAppearance": 4
   }
 }
