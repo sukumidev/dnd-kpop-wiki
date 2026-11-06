@@ -1,12 +1,6 @@
 ---
-title: "Mazmorra subterránea de Borasek"
-locationId: "mazmorra-subterranea-de-borasek"
+title: "Mazmorra Sangrienta — acceso anterior"
+unlisted: true
 ---
 
-import LocationPageFromDoc from '@site/src/components/LocationPageFromDoc';
-
-<LocationPageFromDoc>
-
-> Esta página todavía necesita contenido.
-
-</LocationPageFromDoc>
+Este registro de ubicación se **consolidó** con [Mazmorra Sangrienta](/world/locations/mazmorra-sangrienta). La página se conserva para que los enlaces históricos sigan funcionando.
