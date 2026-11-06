@@ -7865,6 +7865,9 @@
     "subtitle": "La Espada Serena",
     "group": "npc",
     "factionId": "twice",
+    "locationIds": [
+      "puerto-bay-alta"
+    ],
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/twice/twice-mina.webp",
@@ -9307,6 +9310,9 @@
     "subtitle": "La Princesa del Ritmo",
     "group": "npc",
     "factionId": "twice",
+    "locationIds": [
+      "puerto-bay-alta"
+    ],
     "visibility": "hidden",
     "status": "unknown",
     "dateOfBirth": "1996-11-09",
@@ -9318,6 +9324,9 @@
     "subtitle": "La Princesa del Encanto",
     "group": "npc",
     "factionId": "twice",
+    "locationIds": [
+      "puerto-bay-alta"
+    ],
     "visibility": "hidden",
     "status": "unknown",
     "dateOfBirth": "1996-12-29",
