@@ -78,7 +78,7 @@
       "lago-celeste",
       "aldea-del-lago-celeste",
       "santuario-sumergido",
-      "caminos-de-borasek",
+      "caminos-de-hyberia",
       "murallas-de-borasek"
     ],
     "characterIds": [
@@ -109,7 +109,7 @@
       "murallas-de-borasek",
       "borasek",
       "casa-k",
-      "mazmorra-subterranea-de-borasek"
+      "mazmorra-sangrienta"
     ],
     "characterIds": [
       "pc-soobin",
@@ -151,9 +151,7 @@
     "imageSrc": "/img/sessions/05/5.webp",
     "locationIds": [
       "mazmorra-sangrienta",
-      "prision-de-los-hijos-de-la-noche",
-      "casa-k",
-      "cuartel-de-los-hijos-de-la-noche"
+      "casa-k"
     ],
     "characterIds": [
       "pc-soobin",
@@ -196,9 +194,9 @@
     "campaignDate": "8 de agosto de 2025",
     "imageSrc": "/img/sessions/06/6.webp",
     "locationIds": [
-      "cuartel-de-los-hijos-de-la-noche",
+      "mazmorra-sangrienta",
       "casa-k",
-      "caminos-de-borasek",
+      "caminos-de-hyberia",
       "taberna-pab",
       "mansion-radiante",
       "biblioteca-de-la-mansion-radiante"
@@ -237,7 +235,7 @@
     "imageSrc": "/img/sessions/07/7.webp",
     "locationIds": [
       "castillo-flotante",
-      "dreamscape",
+      "santuario-de-felix",
       "mansion-radiante",
       "caminos-de-hyberia",
       "gremio-de-aventureros",
@@ -324,7 +322,7 @@
       "barco-hacia-jeyperia",
       "isla-wang",
       "mansion-wang",
-      "dreamscape"
+      "santuario-de-felix"
     ],
     "characterIds": [
       "pc-soobin",
@@ -400,11 +398,10 @@
       "mar-entre-jeyperia-y-sylmorien",
       "neo-academia",
       "campamento-de-kai",
-      "tripuerto",
       "granja-de-dorian-hotou",
       "gremio-de-aventureros",
-      "mazmorra-de-los-hijos-de-la-noche",
-      "dreamscape"
+      "mazmorra-sangrienta",
+      "santuario-de-felix"
     ],
     "characterIds": [
       "pc-soobin",
@@ -461,7 +458,6 @@
     "locationIds": [
       "gremio-de-aventureros",
       "casino-clandestino",
-      "tripuerto-del-gremio",
       "neo-academia",
       "neocity",
       "plaza-principal-de-neocity"
@@ -570,8 +566,7 @@
     "locationIds": [
       "gremio-de-aventureros",
       "bosque-nevado",
-      "campamento-de-goblins",
-      "cabana-de-joshua",
+      "casa-de-minjae-y-joshua",
       "neo-academia",
       "tianguis-de-neocity"
     ],
@@ -624,10 +619,9 @@
     "locationIds": [
       "tianguis-de-neocity",
       "neo-academia",
-      "tripuerto",
       "gremio-de-aventureros",
-      "cabana-de-joshua",
-      "dreamscape",
+      "casa-de-minjae-y-joshua",
+      "santuario-de-felix",
       "despacho-de-taeyong",
       "hotou",
       "casa-de-yuta"
@@ -666,8 +660,7 @@
       "muelle-de-mareas-silentes",
       "cuevas-hacia-el-underdark",
       "underdark",
-      "club-del-sol-ardiente",
-      "subasta-del-pacto-de-ceniza"
+      "club-del-sol-ardiente"
     ],
     "characterIds": [
       "os-eris",
