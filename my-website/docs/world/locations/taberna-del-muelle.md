@@ -1,12 +1,6 @@
 ---
-title: "Taberna del muelle"
-locationId: "taberna-del-muelle"
+title: "Taberna del Muelle Daegu — acceso anterior"
+unlisted: true
 ---
 
-import LocationPageFromDoc from '@site/src/components/LocationPageFromDoc';
-
-<LocationPageFromDoc>
-
-> Esta página todavía necesita contenido.
-
-</LocationPageFromDoc>
+Este registro de ubicación se **consolidó** con [Taberna del Muelle Daegu](/world/locations/taberna-del-muelle-daegu). La página se conserva para que los enlaces históricos sigan funcionando.
