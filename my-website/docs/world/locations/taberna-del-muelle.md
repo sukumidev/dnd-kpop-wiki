@@ -1,5 +1,5 @@
 ---
-title: "Taberna del muelle"
+title: "Taberna del Muelle Daegu"
 locationId: "taberna-del-muelle"
 ---
 
