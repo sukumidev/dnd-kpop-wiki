@@ -71,7 +71,7 @@ export type Character = {
   polyamoryStatus?: PolyamoryStatus;
 
   factionId?: string | null;
-  /** Other active faction memberships; keeps factionId as the primary affiliation. */
+  /** Other faction affiliations, including past ones for former members. */
   additionalFactionIds?: string[];
 
   /** Region is intentionally broader than kingdom. Examples: sylmorien, hotou, yggdrasil. */

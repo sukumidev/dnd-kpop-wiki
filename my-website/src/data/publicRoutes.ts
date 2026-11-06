@@ -9,8 +9,7 @@ const factionsWithoutProfile = new Set([
   'ciudadanos-de-sylmorien',
   'ncit',
   'ciudadanos-de-hotou',
-  'dragonborns-del-clan-del-caos',
-  'dragonborns-del-clan-del-orden',
+  'mascotas',
   'loossemble',
 ]);
 
