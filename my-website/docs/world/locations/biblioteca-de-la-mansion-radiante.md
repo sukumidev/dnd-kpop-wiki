@@ -1,12 +1,6 @@
 ---
-title: "Biblioteca de la Mansión Radiante"
-locationId: "biblioteca-de-la-mansion-radiante"
+title: "Mansión Radiante — acceso anterior"
+unlisted: true
 ---
 
-import LocationPageFromDoc from '@site/src/components/LocationPageFromDoc';
-
-<LocationPageFromDoc>
-
-> Esta página todavía necesita contenido.
-
-</LocationPageFromDoc>
+Este registro de ubicación se **consolidó** con [Mansión Radiante](/world/locations/mansion-radiante). La página se conserva para que los enlaces históricos sigan funcionando.
