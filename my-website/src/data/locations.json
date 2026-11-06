@@ -617,7 +617,7 @@
   "bosque-nevado": {
     "id": "bosque-nevado",
     "title": "Ruinas de los Antiguos Héroes",
-    "type": "wilderness",
+    "type": "landmark",
     "status": "unknown",
     "visibility": "public",
     "regionId": "hyberia"
