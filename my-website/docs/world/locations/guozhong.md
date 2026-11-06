@@ -7,6 +7,6 @@ import LocationPageFromDoc from '@site/src/components/LocationPageFromDoc';
 
 <LocationPageFromDoc>
 
-Guozhong es el reino al que pertenecen la [Isla Wang](/world/locations/isla-wang), su [mansión](/world/locations/mansion-wang) y su [muelle](/world/locations/muelle-de-isla-wang), según el registro geográfico de las sesiones.
+La ficha histórica y geográfica completa de la Región de Guozhong se encuentra en **[su página principal](/world/realms/guozhong)**. Allí se detallan su historia, geografía, gobierno y situación actual.
 
 </LocationPageFromDoc>
