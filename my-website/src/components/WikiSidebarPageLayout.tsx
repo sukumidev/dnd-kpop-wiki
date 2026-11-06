@@ -17,13 +17,11 @@ const category = (
   label: string,
   items: PropSidebar,
   collapsed = true,
-  href?: string,
 ) => ({
   type: 'category' as const,
   label,
   collapsed,
   collapsible: true,
-  href,
   items,
 });
 
@@ -34,11 +32,12 @@ const wikiSidebar: PropSidebar = [
   link('Personajes', '/characters'),
   link('Cosmología', '/cosmology'),
   category('World', [
+    link('Índice de reinos', '/world'),
     link('Hyberia', '/world/realms/hyberia'),
     link('Sylmorien', '/world/realms/sylmorien'),
     link('Jeyperia', '/world/realms/jeyperia'),
     link('Yggdrasil', '/world/realms/ygdrassil'),
-  ], true, '/world'),
+  ]),
   link('Campaign', '/sessions'),
   link('Facciones', '/factions'),
   link('Biblioteca', '/documents'),

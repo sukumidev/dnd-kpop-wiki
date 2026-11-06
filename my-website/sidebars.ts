@@ -19,9 +19,9 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'World',
-      link: {type: 'link', href: '/world'},
       collapsed: true,
       items: [
+        {type: 'link', label: 'Índice de reinos', href: '/world'},
         'world/realms/hyberia',
         'world/realms/sylmorien',
         'world/realms/jeyperia',
