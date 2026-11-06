@@ -31,11 +31,17 @@ const wikiSidebar: PropSidebar = [
   link('Start Here', '/'),
   link('Personajes', '/characters'),
   link('Cosmología', '/cosmology'),
-  link('World', '/world'),
+  category('World', [
+    link('Índice de reinos', '/world'),
+    link('Hyberia', '/world/realms/hyberia'),
+    link('Sylmorien', '/world/realms/sylmorien'),
+    link('Jeyperia', '/world/realms/jeyperia'),
+    link('Yggdrasil', '/world/realms/ygdrassil'),
+  ]),
   link('Campaign', '/sessions'),
   link('Facciones', '/factions'),
   link('Biblioteca', '/documents'),
-  category('Calendario', [link('Calendario', '/calendar/')]),
+  link('Calendario', '/calendar/'),
 ];
 
 type Props = {

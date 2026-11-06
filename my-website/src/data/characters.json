@@ -7378,6 +7378,7 @@
   "npc-hanjun": {
     "id": "npc-hanjun",
     "title": "Hanjun",
+    "subtitle": "El Becario de la Guardia Real",
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
@@ -7790,6 +7791,7 @@
   "npc-lady-isuna": {
     "id": "npc-lady-isuna",
     "title": "Lady Isuna",
+    "subtitle": "Oficial de la Guardia Real",
     "group": "npc",
     "visibility": "hidden",
     "status": "dead",
@@ -7905,6 +7907,9 @@
     "subtitle": "La Espada Serena",
     "group": "npc",
     "factionId": "twice",
+    "locationIds": [
+      "puerto-bay-alta"
+    ],
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/twice/twice-mina.webp",
@@ -8239,6 +8244,7 @@
   "npc-sir-baekjin": {
     "id": "npc-sir-baekjin",
     "title": "Sir Baekjin",
+    "subtitle": "Oficial de la Guardia Real",
     "group": "npc",
     "visibility": "hidden",
     "status": "dead",
@@ -8435,6 +8441,7 @@
   "npc-xiantao-klau": {
     "id": "npc-xiantao-klau",
     "title": "XianTao Klau",
+    "subtitle": "El Espíritu del Solsticio",
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
@@ -8444,6 +8451,7 @@
   "npc-xue-long": {
     "id": "npc-xue-long",
     "title": "Xue Long",
+    "subtitle": "El Dragón de Sangre",
     "group": "npc",
     "visibility": "hidden",
     "status": "dead",
@@ -9829,5 +9837,34 @@
       "zona-del-guardian-del-santuario-de-minho"
     ],
     "imageSrc": "/img/characters/npc/npc-rocardo.webp"
+    "imageSrc": "/img/characters/npc/npc-cha-kal.webp"
+  },
+  "twice-momo": {
+    "id": "twice-momo",
+    "title": "Momo",
+    "subtitle": "La Princesa del Ritmo",
+    "group": "npc",
+    "factionId": "twice",
+    "locationIds": [
+      "puerto-bay-alta"
+    ],
+    "visibility": "hidden",
+    "status": "unknown",
+    "dateOfBirth": "1996-11-09",
+    "imageSrc": "/img/characters/twice/twice-momo.webp"
+  },
+  "twice-sana": {
+    "id": "twice-sana",
+    "title": "Sana",
+    "subtitle": "La Princesa del Encanto",
+    "group": "npc",
+    "factionId": "twice",
+    "locationIds": [
+      "puerto-bay-alta"
+    ],
+    "visibility": "hidden",
+    "status": "unknown",
+    "dateOfBirth": "1996-12-29",
+    "imageSrc": "/img/characters/twice/twice-sana.webp"
   }
 }

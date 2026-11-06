@@ -17,9 +17,16 @@ const sidebars: SidebarsConfig = {
     },
 
     {
-      type: 'link',
+      type: 'category',
       label: 'World',
-      href: '/world',
+      collapsed: true,
+      items: [
+        {type: 'link', label: 'Índice de reinos', href: '/world'},
+        'world/realms/hyberia',
+        'world/realms/sylmorien',
+        'world/realms/jeyperia',
+        'world/realms/ygdrassil',
+      ],
     },
 
     {
@@ -41,12 +48,9 @@ const sidebars: SidebarsConfig = {
     },
 
     {
-      type: 'category',
+      type: 'link',
       label: 'Calendario',
-      collapsed: true,
-      items: [
-        'calendar/index',
-      ],
+      href: '/calendar/',
     },
 
   ],
