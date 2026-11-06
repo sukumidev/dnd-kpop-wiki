@@ -1,5 +1,5 @@
 ---
-title: "Muelle de Mareas Silentes"
+title: "Muelle Daegu"
 locationId: "muelle-de-mareas-silentes"
 ---
 
