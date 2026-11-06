@@ -1,12 +1,6 @@
 ---
-title: "Caminos de Borasek"
-locationId: "caminos-de-borasek"
+title: "Caminos de Hyberia — acceso anterior"
+unlisted: true
 ---
 
-import LocationPageFromDoc from '@site/src/components/LocationPageFromDoc';
-
-<LocationPageFromDoc>
-
-> Esta página todavía necesita contenido.
-
-</LocationPageFromDoc>
+Este registro de ubicación se **consolidó** con [Caminos de Hyberia](/world/locations/caminos-de-hyberia). La página se conserva para que los enlaces históricos sigan funcionando.
