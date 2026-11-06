@@ -7338,6 +7338,7 @@
   "npc-hanjun": {
     "id": "npc-hanjun",
     "title": "Hanjun",
+    "subtitle": "El Becario de la Guardia Real",
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
@@ -7750,6 +7751,7 @@
   "npc-lady-isuna": {
     "id": "npc-lady-isuna",
     "title": "Lady Isuna",
+    "subtitle": "Oficial de la Guardia Real",
     "group": "npc",
     "visibility": "hidden",
     "status": "dead",
@@ -8199,6 +8201,7 @@
   "npc-sir-baekjin": {
     "id": "npc-sir-baekjin",
     "title": "Sir Baekjin",
+    "subtitle": "Oficial de la Guardia Real",
     "group": "npc",
     "visibility": "hidden",
     "status": "dead",
@@ -8395,6 +8398,7 @@
   "npc-xiantao-klau": {
     "id": "npc-xiantao-klau",
     "title": "XianTao Klau",
+    "subtitle": "El Espíritu del Solsticio",
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
@@ -8404,6 +8408,7 @@
   "npc-xue-long": {
     "id": "npc-xue-long",
     "title": "Xue Long",
+    "subtitle": "El Dragón de Sangre",
     "group": "npc",
     "visibility": "hidden",
     "status": "dead",
