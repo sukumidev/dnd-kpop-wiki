@@ -1,5 +1,5 @@
 ---
-title: "Residencia / Castillo Hoshizuki"
+title: "Finca del Clan Hozhisuki"
 locationId: "residencia-castillo-hoshizuki"
 ---
 
