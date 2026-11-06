@@ -1,12 +1,6 @@
 ---
-title: "Club del Sol Ardiente"
-locationId: "club-del-sol-ardiente"
+title: "Club del Pacto de Ceniza del Sol Ardiente — acceso anterior"
+unlisted: true
 ---
 
-import LocationPageFromDoc from '@site/src/components/LocationPageFromDoc';
-
-<LocationPageFromDoc>
-
-> Esta página todavía necesita contenido.
-
-</LocationPageFromDoc>
+Este registro de ubicación se **consolidó** con [Club del Pacto de Ceniza del Sol Ardiente](/world/locations/club-del-pacto-de-ceniza-del-sol-ardiente). La página se conserva para que los enlaces históricos sigan funcionando.
