@@ -1,5 +1,5 @@
 ---
-title: "Santuario de Felix"
+title: "Claro del Dreamscape"
 locationId: "santuario-de-felix"
 ---
 
