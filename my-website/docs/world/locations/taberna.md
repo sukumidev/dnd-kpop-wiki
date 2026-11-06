@@ -1,5 +1,5 @@
 ---
-title: "Taberna"
+title: "Taberna de Puerto Bay Alta"
 locationId: "taberna"
 ---
 
