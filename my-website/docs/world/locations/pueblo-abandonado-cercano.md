@@ -1,5 +1,5 @@
 ---
-title: "Pueblo abandonado cercano"
+title: "Pueblo Abandonado de la Isla Pledis"
 locationId: "pueblo-abandonado-cercano"
 ---
 

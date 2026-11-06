@@ -1,5 +1,5 @@
 ---
-title: "Bosque nevado"
+title: "Ruinas de los Antiguos Héroes"
 locationId: "bosque-nevado"
 ---
 

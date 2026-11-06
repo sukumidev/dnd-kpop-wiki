@@ -24,6 +24,8 @@ const realmRoutes: Record<string, string> = {
   jeyperia: '/world/realms/jeyperia',
   sylmorien: '/world/realms/sylmorien',
   yggdrasil: '/world/realms/ygdrassil',
+  hotou: '/world/realms/hotou',
+  guozhong: '/world/realms/guozhong',
 };
 
 export function getPublicRealmHref(realmId: string): string | undefined {

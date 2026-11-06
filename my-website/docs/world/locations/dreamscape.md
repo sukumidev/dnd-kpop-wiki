@@ -7,6 +7,6 @@ import LocationPageFromDoc from '@site/src/components/LocationPageFromDoc';
 
 <LocationPageFromDoc>
 
-> Esta página todavía necesita contenido.
+El Dreamscape es un **plano**, no un reino territorial. El [Claro del Dreamscape](/world/locations/santuario-de-felix) se registra como un lugar dentro de este plano.
 
 </LocationPageFromDoc>
