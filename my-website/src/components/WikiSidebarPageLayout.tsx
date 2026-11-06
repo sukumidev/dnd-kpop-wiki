@@ -5,7 +5,6 @@ import {DocsSidebarProvider} from '@docusaurus/plugin-content-docs/client';
 import {useLocation} from '@docusaurus/router';
 import type {PropSidebar} from '@docusaurus/plugin-content-docs';
 import SidebarRail from './SidebarRail';
-import {getSessionHref, sessionList} from '@site/src/data/sessions';
 import styles from './WikiSidebarPageLayout.module.css';
 
 const link = (label: string, href: string) => ({
@@ -32,31 +31,11 @@ const wikiSidebar: PropSidebar = [
   link('Start Here', '/'),
   link('Personajes', '/characters'),
   link('Cosmología', '/cosmology'),
-  category('World', [
-    category('Realms', [
-      link('Hyberia', '/world/realms/hyberia'),
-      link('Jeyperia', '/world/realms/jeyperia'),
-      link('Sylmorien', '/world/realms/sylmorien'),
-      link('Yggdrasil', '/world/realms/ygdrassil'),
-    ]),
-    category('Locations', [link('Isla Estelar', '/world/locations/isla-estelar')]),
-    link('Timeline', '/world/timeline'),
-  ]),
-  category('Campaign', [
-    category('Sessions', [
-      link('Crónica de sesiones', '/sessions'),
-      ...sessionList.map((session) =>
-        link(`Sesión ${String(session.number).padStart(2, '0')}`, getSessionHref(session)),
-      ),
-    ]),
-    category('Arcs', [link('Acto 1', '/campaign/arcs/acto-1')]),
-  ]),
+  link('World', '/world'),
+  link('Campaign', '/sessions'),
   link('Facciones', '/factions'),
   link('Biblioteca', '/documents'),
-  category('Mecánicas', [link('Índice general', '/mechanics/')]),
-  category('Sistemas y Objetos', [link('Deck of Fate', '/systems/deck-of-fate')]),
   category('Calendario', [link('Calendario', '/calendar/')]),
-  category('Índices', [link('Glosario', '/indexes/glossary')]),
 ];
 
 type Props = {

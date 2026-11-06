@@ -1,0 +1,157 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.cardLink {
+  color: inherit;
+  text-decoration: none !important;
+}
+
+.cardLink:focus-visible {
+  outline: 2px solid #8ff1df;
+  outline-offset: 4px;
+  border-radius: 18px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: minmax(7rem, 32%) minmax(0, 1fr);
+  height: 100%;
+  min-height: 14rem;
+  overflow: hidden;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 18px;
+  background: var(--ifm-background-surface-color);
+  transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.cardLink:hover .card {
+  transform: translateY(-3px);
+  border-color: rgba(143, 241, 223, 0.45);
+  box-shadow: 0 14px 30px rgba(16, 11, 35, 0.2);
+}
+
+.cardArt {
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 50% 50%, rgba(143, 241, 223, 0.15), transparent 42%),
+    linear-gradient(145deg, rgba(112, 84, 214, 0.22), rgba(13, 19, 33, 0.14));
+}
+
+.cardArt::before,
+.cardArt::after {
+  content: "";
+  position: absolute;
+  width: 7rem;
+  aspect-ratio: 1;
+  border: 1px solid rgba(157, 140, 255, 0.22);
+  border-radius: 50%;
+}
+
+.cardArt::after {
+  width: 5rem;
+  border-color: rgba(143, 241, 223, 0.22);
+}
+
+.cardNumber {
+  position: absolute;
+  top: 0.8rem;
+  left: 0.9rem;
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.cardSymbol {
+  color: #8ff1df;
+  font-size: 2.7rem;
+  line-height: 1;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.4rem;
+}
+
+.cardEyebrow {
+  color: #9d8cff;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.cardTitle {
+  margin: 0.3rem 0 0;
+  color: #8ff1df;
+  font-family: var(--h-font-editorial);
+  font-size: 1.65rem;
+  line-height: 1.1;
+}
+
+.cardNickname {
+  margin: 0.45rem 0 0;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.86rem;
+  font-style: italic;
+}
+
+.cardSummary {
+  margin: 0.8rem 0 1rem;
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.86rem;
+  line-height: 1.5;
+}
+
+.cardAction {
+  margin-top: auto;
+  color: #8ff1df;
+  font-size: 0.83rem;
+  font-weight: 700;
+}
+
+.cardAction span {
+  display: inline-block;
+  margin-left: 0.25rem;
+  transition: transform 160ms ease;
+}
+
+.cardLink:hover .cardAction span {
+  transform: translateX(3px);
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .card {
+    grid-template-columns: 5.5rem minmax(0, 1fr);
+  }
+
+  .cardArt::before {
+    width: 5rem;
+  }
+
+  .cardArt::after {
+    width: 3.5rem;
+  }
+
+  .cardContent {
+    padding: 1rem;
+  }
+
+  .cardTitle {
+    font-size: 1.35rem;
+  }
+}
