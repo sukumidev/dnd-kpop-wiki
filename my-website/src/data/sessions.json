@@ -47,7 +47,7 @@
     "imageSrc": "/img/sessions/02/2.webp",
     "locationIds": [
       "valle-dorado",
-      "pueblo-abandonado-cercano",
+      "pueblo-abandonado-de-la-isla-pledis",
       "refugio-de-los-sonadores-del-arrozal",
       "granero"
     ],
@@ -76,9 +76,7 @@
     "imageSrc": "/img/sessions/03/3.webp",
     "locationIds": [
       "lago-celeste",
-      "aldea-del-lago-celeste",
-      "santuario-sumergido",
-      "caminos-de-borasek",
+      "caminos-de-hyberia",
       "murallas-de-borasek"
     ],
     "characterIds": [
@@ -109,7 +107,7 @@
       "murallas-de-borasek",
       "borasek",
       "casa-k",
-      "mazmorra-subterranea-de-borasek"
+      "mazmorra-sangrienta"
     ],
     "characterIds": [
       "pc-soobin",
@@ -151,9 +149,7 @@
     "imageSrc": "/img/sessions/05/5.webp",
     "locationIds": [
       "mazmorra-sangrienta",
-      "prision-de-los-hijos-de-la-noche",
-      "casa-k",
-      "cuartel-de-los-hijos-de-la-noche"
+      "casa-k"
     ],
     "characterIds": [
       "pc-soobin",
@@ -196,12 +192,11 @@
     "campaignDate": "8 de agosto de 2025",
     "imageSrc": "/img/sessions/06/6.webp",
     "locationIds": [
-      "cuartel-de-los-hijos-de-la-noche",
+      "mazmorra-sangrienta",
       "casa-k",
-      "caminos-de-borasek",
+      "caminos-de-hyberia",
       "taberna-pab",
-      "mansion-radiante",
-      "biblioteca-de-la-mansion-radiante"
+      "mansion-radiante"
     ],
     "characterIds": [
       "pc-soobin",
@@ -237,7 +232,7 @@
     "imageSrc": "/img/sessions/07/7.webp",
     "locationIds": [
       "castillo-flotante",
-      "dreamscape",
+      "claro-del-dreamscape",
       "mansion-radiante",
       "caminos-de-hyberia",
       "gremio-de-aventureros",
@@ -279,8 +274,8 @@
     "imageSrc": "/img/sessions/08/8.webp",
     "locationIds": [
       "gremio-de-aventureros",
-      "muelle-de-mareas-silentes",
-      "taberna-del-muelle",
+      "muelle-daegu",
+      "taberna-del-muelle-daegu",
       "casino-clandestino",
       "aguas-termales-del-casino"
     ],
@@ -320,11 +315,11 @@
       "casino-clandestino",
       "aguas-termales-del-casino",
       "gremio-de-aventureros",
-      "muelle-de-mareas-silentes",
+      "muelle-daegu",
       "barco-hacia-jeyperia",
       "isla-wang",
       "mansion-wang",
-      "dreamscape"
+      "claro-del-dreamscape"
     ],
     "characterIds": [
       "pc-soobin",
@@ -400,11 +395,10 @@
       "mar-entre-jeyperia-y-sylmorien",
       "neo-academia",
       "campamento-de-kai",
-      "tripuerto",
       "granja-de-dorian-hotou",
       "gremio-de-aventureros",
-      "mazmorra-de-los-hijos-de-la-noche",
-      "dreamscape"
+      "mazmorra-sangrienta",
+      "claro-del-dreamscape"
     ],
     "characterIds": [
       "pc-soobin",
@@ -461,7 +455,6 @@
     "locationIds": [
       "gremio-de-aventureros",
       "casino-clandestino",
-      "tripuerto-del-gremio",
       "neo-academia",
       "neocity",
       "plaza-principal-de-neocity"
@@ -516,7 +509,7 @@
     "locationIds": [
       "jeyperia",
       "guarida-de-los-lobos",
-      "santuario-de-felix",
+      "claro-del-dreamscape",
       "altar-de-la-luna-creciente"
     ],
     "characterIds": [
@@ -569,9 +562,8 @@
     "imageSrc": "/img/sessions/13/13.webp",
     "locationIds": [
       "gremio-de-aventureros",
-      "bosque-nevado",
-      "campamento-de-goblins",
-      "cabana-de-joshua",
+      "ruinas-de-los-antiguos-heroes",
+      "casa-de-minjae-y-joshua",
       "neo-academia",
       "tianguis-de-neocity"
     ],
@@ -624,10 +616,9 @@
     "locationIds": [
       "tianguis-de-neocity",
       "neo-academia",
-      "tripuerto",
       "gremio-de-aventureros",
-      "cabana-de-joshua",
-      "dreamscape",
+      "casa-de-minjae-y-joshua",
+      "claro-del-dreamscape",
       "despacho-de-taeyong",
       "hotou",
       "casa-de-yuta"
@@ -663,11 +654,10 @@
       "caminos-de-hyberia",
       "torre-de-los-cazadores-de-tiro-largo",
       "gremio-de-aventureros",
-      "muelle-de-mareas-silentes",
+      "muelle-daegu",
       "cuevas-hacia-el-underdark",
-      "underdark",
-      "club-del-sol-ardiente",
-      "subasta-del-pacto-de-ceniza"
+      "underdark-de-hyberia",
+      "club-del-pacto-de-ceniza-del-sol-ardiente"
     ],
     "characterIds": [
       "os-eris",
@@ -719,7 +709,7 @@
     "imageSrc": "/img/sessions/15/15.webp",
     "locationIds": [
       "casa-de-yuta",
-      "residencia-castillo-hoshizuki",
+      "finca-del-clan-hozhisuki",
       "muelle-de-hotou",
       "bodega-abandonada",
       "puerto-bay-alta",
@@ -753,7 +743,7 @@
     "imageSrc": "/img/sessions/16/16.webp",
     "locationIds": [
       "muelle-de-puerto-bay-alta",
-      "taberna",
+      "taberna-de-puerto-bay-alta",
       "centro-de-puerto-bay-alta",
       "cafe-del-rio",
       "camino-de-la-montana",
