@@ -13,31 +13,13 @@ const link = (label: string, href: string) => ({
   href,
 });
 
-const category = (
-  label: string,
-  items: PropSidebar,
-  collapsed = true,
-) => ({
-  type: 'category' as const,
-  label,
-  collapsed,
-  collapsible: true,
-  items,
-});
-
 // Keep this resolved navigation aligned with sidebars.ts. Custom pages are not
 // part of the docs route tree, so Docusaurus does not provide sidebar props.
 const wikiSidebar: PropSidebar = [
   link('Start Here', '/'),
   link('Personajes', '/characters'),
   link('Cosmología', '/cosmology'),
-  category('World', [
-    link('Índice de reinos', '/world'),
-    link('Hyberia', '/world/realms/hyberia'),
-    link('Sylmorien', '/world/realms/sylmorien'),
-    link('Jeyperia', '/world/realms/jeyperia'),
-    link('Yggdrasil', '/world/realms/ygdrassil'),
-  ]),
+  link('World', '/world'),
   link('Campaign', '/sessions'),
   link('Facciones', '/factions'),
   link('Biblioteca', '/documents'),
