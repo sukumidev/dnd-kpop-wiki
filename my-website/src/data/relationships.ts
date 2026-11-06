@@ -89,6 +89,20 @@ export function getFactionById(id: EntityId | null | undefined): Faction | undef
   return factions[id];
 }
 
+export function getRootFactionById(id: EntityId | null | undefined): Faction | undefined {
+  let faction = getFactionById(id);
+  const visited = new Set<string>();
+
+  while (faction?.parentFactionId && !visited.has(faction.id)) {
+    visited.add(faction.id);
+    const parent = getFactionById(faction.parentFactionId);
+    if (!parent) break;
+    faction = parent;
+  }
+
+  return faction;
+}
+
 export function getLocationById(id: EntityId | null | undefined): Location | undefined {
   if (!id) return undefined;
   return locations[id];

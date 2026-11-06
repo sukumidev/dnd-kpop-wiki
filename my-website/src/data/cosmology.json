@@ -200,10 +200,10 @@
   "astro-moonbin": {
     "id": "astro-moonbin",
     "title": "MOONBIN",
-    "subtitle": "Dios de la Luna, los Sueños y los Vínculos",
+    "subtitle": "Dios Lobo de la Luna",
     "pantheon": "Los Dioses Astronómicos",
     "factionId": "astro",
-    "summary": "MOONBIN es el Dios de la Luna y de los Sueños, guardián del descanso, los vínculos y el equilibrio entre luz y oscuridad.",
+    "summary": "MOONBIN es el Dios de la Luna y de los Vínculos, guardián del descanso, los vínculos y el equilibrio entre luz y oscuridad.",
     "docPath": "cosmology/deities/astro-moonbin",
     "sortOrder": 6,
     "characterId": "astro-moonbin",

@@ -4766,7 +4766,7 @@
       "Guardián de los Archivos Proféticos"
     ],
     "tags": [],
-    "imageSrc": "/img/characters/nct/renjun.webp",
+    "imageSrc": "/img/characters/nct/nct-renjun.webp",
     "dateOfBirth": "2000-03-23",
     "zodiac": "Aries ♈",
     "mbti": "INTP",
@@ -6001,7 +6001,7 @@
   "adp-tarzzan": {
     "id": "adp-tarzzan",
     "dateOfBirth": "2002-09-27",
-    "title": "Tarzzan (Lee Chaewon",
+    "title": "Lee Chaewon (Tarzzan)",
     "status": "active",
     "group": "npc",
     "visibility": "hidden",
@@ -8945,7 +8945,7 @@
     "subtitle": "Dios Caído de la Tempestad",
     "group": "npc",
     "visibility": "public",
-    "status": "dead",
+    "status": "unknown",
     "membershipStatus": "former",
     "role": "NPC",
     "race": "Deidad",
