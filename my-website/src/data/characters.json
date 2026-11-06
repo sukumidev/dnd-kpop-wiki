@@ -3510,6 +3510,7 @@
       "docPath": null
     },
     "factionId": "nct",
+    "additionalFactionIds": ["nct-127"],
     "dynamic": "alpha",
     "orientation": "Pan",
     "romanticSituation": "Soltero",
@@ -3600,6 +3601,7 @@
       "docPath": null
     },
     "factionId": "nct",
+    "additionalFactionIds": ["nct-127"],
     "dynamic": "omega",
     "orientation": "Pan",
     "romanticSituation": "Soltero",
@@ -3702,6 +3704,7 @@
       "docPath": null
     },
     "factionId": "nct",
+    "additionalFactionIds": ["nct-127"],
     "dynamic": "alpha",
     "orientation": "Pan",
     "romanticSituation": "Soltero",
@@ -3803,6 +3806,7 @@
       "docPath": null
     },
     "factionId": "nct",
+    "additionalFactionIds": ["wayv"],
     "dynamic": "beta",
     "orientation": "Pan",
     "romanticSituation": "Soltero",
@@ -3881,6 +3885,7 @@
       "docPath": "world/locations/borasek"
     },
     "factionId": "nct",
+    "additionalFactionIds": ["nct-127"],
     "dynamic": "beta",
     "orientation": "Pan",
     "romanticSituation": "En una polícula con Jaehyun y Jungwoo",
@@ -3977,6 +3982,7 @@
       "docPath": null
     },
     "factionId": "nct",
+    "additionalFactionIds": ["wayv"],
     "dynamic": "omega",
     "orientation": "Pan",
     "romanticSituation": "Soltero",
@@ -4063,6 +4069,7 @@
       "docPath": null
     },
     "factionId": "nct",
+    "additionalFactionIds": ["nct-127"],
     "dynamic": "alpha",
     "orientation": "Pan",
     "romanticSituation": "En una polícula con Doyoung y Jungwoo",
@@ -4169,6 +4176,7 @@
       "docPath": null
     },
     "factionId": "nct",
+    "additionalFactionIds": ["wayv"],
     "dynamic": "omega",
     "orientation": "Pan",
     "romanticSituation": "Soltero",
@@ -4254,6 +4262,7 @@
       "docPath": "world/locations/borasek"
     },
     "factionId": "nct",
+    "additionalFactionIds": ["nct-127"],
     "dynamic": "omega",
     "orientation": "Pan",
     "romanticSituation": "En una polícula con Jaehyun y Doyoung",
@@ -4437,6 +4446,7 @@
       "docPath": null
     },
     "factionId": "nct",
+    "additionalFactionIds": ["nct-dream"],
     "dynamic": "alpha",
     "orientation": "Pan",
     "romanticSituation": "Soltero",
@@ -4568,6 +4578,7 @@
       "docPath": null
     },
     "factionId": "nct",
+    "additionalFactionIds": ["wayv"],
     "dynamic": "beta",
     "orientation": "Pan",
     "romanticSituation": "Soltero",
@@ -4659,6 +4670,7 @@
       "docPath": null
     },
     "factionId": "nct",
+    "additionalFactionIds": ["wayv"],
     "dynamic": "beta",
     "orientation": "Pan",
     "romanticSituation": "Soltero",
@@ -4745,6 +4757,7 @@
       "docPath": null
     },
     "factionId": "nct",
+    "additionalFactionIds": ["nct-dream"],
     "dynamic": "omega",
     "orientation": "Pan",
     "romanticSituation": "Soltero",
@@ -4817,6 +4830,7 @@
       "docPath": null
     },
     "factionId": "nct",
+    "additionalFactionIds": ["nct-dream"],
     "dynamic": "alpha",
     "orientation": "Pan",
     "romanticSituation": "Soltero",
@@ -4903,6 +4917,7 @@
       "docPath": null
     },
     "factionId": "nct",
+    "additionalFactionIds": ["nct-dream"],
     "dynamic": "omega",
     "orientation": "Pan",
     "romanticSituation": "Soltero",
@@ -5024,6 +5039,7 @@
       "docPath": null
     },
     "factionId": "nct",
+    "additionalFactionIds": ["nct-dream"],
     "dynamic": "omega",
     "orientation": "Pan",
     "romanticSituation": "Soltero",
@@ -5115,6 +5131,7 @@
       "docPath": null
     },
     "factionId": "nct",
+    "additionalFactionIds": ["wayv"],
     "dynamic": "omega",
     "orientation": "Pan",
     "romanticSituation": "Soltero",
@@ -5193,6 +5210,7 @@
       "docPath": null
     },
     "factionId": "nct",
+    "additionalFactionIds": ["nct-dream"],
     "dynamic": "omega",
     "orientation": "Hetero",
     "romanticSituation": "Soltero",
@@ -5278,6 +5296,7 @@
       "docPath": null
     },
     "factionId": "nct",
+    "additionalFactionIds": ["nct-dream"],
     "dynamic": "alpha",
     "orientation": "Pan",
     "romanticSituation": "Soltero",
@@ -5369,6 +5388,7 @@
       "docPath": null
     },
     "factionId": "nct",
+    "additionalFactionIds": ["nct-wish"],
     "dynamic": "alpha",
     "orientation": "Pan",
     "romanticSituation": "Soltero",
@@ -5455,6 +5475,7 @@
       "docPath": null
     },
     "factionId": "nct",
+    "additionalFactionIds": ["nct-wish"],
     "dynamic": "beta",
     "orientation": "Pan",
     "romanticSituation": "Soltero",
@@ -5528,6 +5549,7 @@
       "docPath": null
     },
     "factionId": "nct",
+    "additionalFactionIds": ["nct-wish"],
     "dynamic": "beta",
     "orientation": "Pan",
     "romanticSituation": "Soltero",
@@ -5606,6 +5628,7 @@
       "docPath": null
     },
     "factionId": "nct",
+    "additionalFactionIds": ["nct-wish"],
     "dynamic": "omega",
     "orientation": "Pan",
     "romanticSituation": "Soltero",
@@ -5687,6 +5710,7 @@
       "docPath": null
     },
     "factionId": "nct",
+    "additionalFactionIds": ["nct-wish"],
     "dynamic": "beta",
     "orientation": "Pan",
     "romanticSituation": "Soltero",
@@ -5765,6 +5789,7 @@
       "docPath": null
     },
     "factionId": "nct",
+    "additionalFactionIds": ["nct-wish"],
     "dynamic": "alpha",
     "orientation": "Pan",
     "romanticSituation": "Soltero",
@@ -6973,7 +6998,8 @@
     "status": "dead",
     "imageSrc": "/img/characters/npc/npc-brandom-lee.webp",
     "sortOrder": 142,
-    "factionId": "division-del-agua-de-la-guardia-real-de-sylmorien"
+    "factionId": "division-del-agua-de-la-guardia-real-de-sylmorien",
+    "additionalFactionIds": ["morat"]
   },
   "ampersone-brian": {
     "id": "ampersone-brian",
@@ -7305,7 +7331,7 @@
     "title": "Hanjun",
     "group": "npc",
     "visibility": "hidden",
-    "status": "dead",
+    "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-hanjun.webp",
     "sortOrder": 173,
     "factionId": "cobradores-de-impuestos-de-hyberia"

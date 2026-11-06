@@ -12,12 +12,44 @@ import styles from "../characters/styles.module.css";
 import {
   factionList,
   getFactionMembers,
+  getFactionImageSources,
   type Faction,
+  type Character,
 } from "@site/src/data/relationships";
 import {getPublicFactionHref, getPublicRealmHref} from "@site/src/data/publicRoutes";
+import {useImageFallback} from "@site/src/hooks/useImageFallback";
 
 function isArchivedFaction(faction: Faction) {
   return faction.status === "hidden" || String(faction.status) === "archived";
+}
+
+function FactionCardImage({faction, members}: {faction: Faction; members: Character[]}) {
+  const {withBaseUrl} = useBaseUrlUtils();
+  const {imageSrc, onError} = useImageFallback(getFactionImageSources(faction, members));
+  const isDestroyed = faction.status === "destroyed";
+
+  return (
+    <div className={styles.imageWrap}>
+      {imageSrc ? (
+        <img
+          className={`${styles.image} ${isDestroyed ? styles.imageMuted : ""}`}
+          src={withBaseUrl(imageSrc)}
+          alt={faction.title}
+          loading="lazy"
+          onError={onError}
+        />
+      ) : (
+        <div className={`${styles.imageFallback} ${isDestroyed ? styles.imageMuted : ""}`} aria-hidden="true">
+          <span className={styles.fallbackMark}>✦</span>
+        </div>
+      )}
+      {isDestroyed ? (
+        <div className={styles.statusBadges}>
+          <span className={styles.statusBadge}>✦ Destruida</span>
+        </div>
+      ) : null}
+    </div>
+  );
 }
 
 export default function FactionsPage() {
@@ -91,42 +123,18 @@ export default function FactionsPage() {
                 <div className={styles.sectionBody}>
                   <div className={styles.grid}>
                     {section.factions.map((faction) => {
-                      const imgUrl = faction.imageSrc
-                        ? withBaseUrl(faction.imageSrc)
-                        : undefined;
-                      const memberCount = getFactionMembers(faction.id).length;
+                      const members = getFactionMembers(faction.id);
+                      const memberCount = members.length;
                       const isDestroyed = faction.status === "destroyed";
                       const factionHref = getPublicFactionHref(faction.id);
 
                       const card = (
                           <article
                             className={`${styles.card} ${
-                              isDestroyed ? styles.cardDeceased : ""
+                              isDestroyed ? styles.cardMuted : ""
                             }`}
                           >
-                            <div className={styles.imageWrap}>
-                              {imgUrl ? (
-                                <>
-                                  <img
-                                    className={`${styles.image} ${
-                                      isDestroyed ? styles.imageDeceased : ""
-                                    }`}
-                                    src={imgUrl}
-                                    alt={faction.title}
-                                    loading="lazy"
-                                  />
-                                  {isDestroyed ? (
-                                    <div className={styles.deceasedBadge}>
-                                      ✦ Destruida
-                                    </div>
-                                  ) : null}
-                                </>
-                              ) : (
-                                <div className={styles.imageFallback} aria-hidden="true">
-                                  <span className={styles.fallbackMark}>✦</span>
-                                </div>
-                              )}
-                            </div>
+                            <FactionCardImage faction={faction} members={members} />
 
                             <div className={styles.cardBottom}>
                               <Heading as="h3" className={styles.cardName}>

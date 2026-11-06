@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDoc } from '@docusaurus/plugin-content-docs/client';
-import { getCharactersByFactionId } from '@site/src/data/relationships';
+import { getFactionMembers } from '@site/src/data/relationships';
 import CharacterGrid from './CharacterGrid';
 
 type FactionDocFrontMatter = {
@@ -11,7 +11,7 @@ export default function FactionMembersFromDoc() {
   const { frontMatter } = useDoc();
   const factionId = (frontMatter as FactionDocFrontMatter).factionId;
 
-  const members = factionId ? getCharactersByFactionId(factionId) : [];
+  const members = factionId ? getFactionMembers(factionId) : [];
   if (!members.length) return null;
 
   return (

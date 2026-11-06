@@ -95,7 +95,7 @@ export function getLocationById(id: EntityId | null | undefined): Location | und
 }
 
 export function getCharactersByFactionId(factionId: EntityId): Character[] {
-  return visibleCharacterList.filter((character) => characterBelongsToFaction(character, factionId));
+  return characterList.filter((character) => characterBelongsToFaction(character, factionId));
 }
 
 export function getCharactersByRegionId(regionId: EntityId): Character[] {
@@ -148,6 +148,13 @@ export function getFactionsByRegionId(regionId: EntityId): Faction[] {
 
 export function getFactionMembers(factionId: EntityId): Character[] {
   return getCharactersByFactionId(factionId);
+}
+
+export function getFactionImageSources(faction: Faction, members: Character[] = getFactionMembers(faction.id)): string[] {
+  return [...new Set(
+    [faction.imageSrc, ...members.flatMap((member) => [member.imageSrc, ...(member.images ?? []).map((image) => image.src)])]
+      .filter((src): src is string => typeof src === "string" && src.trim().length > 0),
+  )];
 }
 
 export function getFactionLeader(faction: Faction): Character | undefined {

@@ -1,6 +1,7 @@
 // src/components/Infobox.tsx
 import React from 'react';
-import useBaseUrl from '@docusaurus/useBaseUrl';
+import {useBaseUrlUtils} from '@docusaurus/useBaseUrl';
+import {useImageFallback} from '@site/src/hooks/useImageFallback';
 
 export type Row = { label: string; value: React.ReactNode };
 export type Section = { title: string; rows: Row[] };
@@ -9,6 +10,7 @@ type InfoboxProps = {
   title: string;
   subtitle?: string;
   imageSrc?: string;
+  imageSources?: string[];
   imageAlt?: string;
   caption?: string;
   sections?: Section[];
@@ -19,12 +21,15 @@ export default function Infobox({
   title,
   subtitle,
   imageSrc,
+  imageSources,
   imageAlt,
   caption,
   sections = [],           // 👈 IMPORTANT: default
   accentClass
 }: InfoboxProps) {
-  const imgUrl = imageSrc ? useBaseUrl(imageSrc) : undefined;
+  const {withBaseUrl} = useBaseUrlUtils();
+  const {imageSrc: currentImageSrc, onError} = useImageFallback(imageSources ?? (imageSrc ? [imageSrc] : []));
+  const imgUrl = currentImageSrc ? withBaseUrl(currentImageSrc) : undefined;
 
   return (
     <aside className="infobox" data-accent={accentClass}>
@@ -35,7 +40,7 @@ export default function Infobox({
 
       {imgUrl ? (
         <figure className="infobox__figure">
-          <img className="infobox__img" src={imgUrl} alt={imageAlt ?? title} loading="lazy" />
+          <img className="infobox__img" src={imgUrl} alt={imageAlt ?? title} loading="lazy" onError={onError} />
           {caption && <figcaption className="infobox__caption">{caption}</figcaption>}
         </figure>
       ) : null}

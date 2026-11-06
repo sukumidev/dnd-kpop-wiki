@@ -40,22 +40,32 @@ export default function CharacterGrid({characters, label}: Props) {
           .map((part) => part[0])
           .join("");
 
+        const content = (
+          <>
+            <span className={styles.portrait}>
+              {character.imageSrc ? (
+                <img src={withBaseUrl(character.imageSrc)} alt="" loading="lazy" />
+              ) : (
+                <span className={styles.initials} aria-hidden="true">{initials}</span>
+              )}
+            </span>
+            <span className={styles.name}>{shortNames[character.id] ?? character.title}</span>
+          </>
+        );
+
         return (
           <li key={character.id} className={styles.item}>
-            <Link
-              to={`/${docPath}`}
-              className={styles.card}
-              aria-label={`Abrir ficha de ${character.title}`}
-            >
-              <span className={styles.portrait}>
-                {character.imageSrc ? (
-                  <img src={withBaseUrl(character.imageSrc)} alt="" loading="lazy" />
-                ) : (
-                  <span className={styles.initials} aria-hidden="true">{initials}</span>
-                )}
-              </span>
-              <span className={styles.name}>{shortNames[character.id] ?? character.title}</span>
-            </Link>
+            {character.hasProfile === false ? (
+              <span className={styles.card}>{content}</span>
+            ) : (
+              <Link
+                to={`/${docPath}`}
+                className={styles.card}
+                aria-label={`Abrir ficha de ${character.title}`}
+              >
+                {content}
+              </Link>
+            )}
           </li>
         );
       })}
