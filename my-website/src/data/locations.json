@@ -303,12 +303,12 @@
   "hotou": {
     "id": "hotou",
     "title": "Hotou",
-    "subtitle": null,
+    "subtitle": "El archipiélago donde el destino se escribe en las olas",
     "type": "region",
     "status": "active",
     "visibility": "public",
-    "summary": null,
-    "description": null,
+    "summary": "Archipiélago de clanes, puertos y santuarios, gobernado mediante autoridades locales bajo el primer ministro Hachi; aliado de Jeyperia y tensionado por la presencia militar sylmoriana.",
+    "description": "Capital: Kyokyo. Archipiélago montañoso de costas rocosas, playas cálidas, aldeas pesqueras, bosques templados y ciudades de clanes. El mar estructura el comercio y las rutas entre islas.",
     "regionId": null,
     "parentLocationId": null,
     "factionIds": [],
@@ -328,7 +328,20 @@
     ],
     "imageSrc": null,
     "accent": "purple",
-    "sortOrder": 5
+    "sortOrder": 5,
+    "profile": {
+      "capital": "Ciudad de Kyokyo",
+      "ruler": "Primer Ministro Hachi",
+      "government": "Archipiélago de clanes, casas familiares y autoridades locales; el poder se distribuye entre linajes, consejos, comerciantes y santuarios.",
+      "geography": "Islas montañosas, costas rocosas, puertos activos, playas cálidas, bosques templados y aldeas pesqueras.",
+      "climate": "Variable según la isla; costas cálidas y bosques templados.",
+      "culturalIdentity": [
+        "Clanes y memoria familiar",
+        "Santuarios y pactos antiguos",
+        "Comercio marítimo y rutas entre islas"
+      ],
+      "currentSituation": "Alianza con Jeyperia; tensiones por ocupaciones militares de Sylmorien."
+    }
   },
   "neocity": {
     "id": "neocity",
@@ -1194,7 +1207,22 @@
     "status": "active",
     "visibility": "public",
     "regionId": null,
-    "parentLocationId": null
+    "parentLocationId": null,
+    "subtitle": "La tierra donde los dragones fueron borrados",
+    "summary": "Región montañosa y de islas flotantes ocupada por Sylmorien; sus clanes mantienen influencia local y la memoria de los dragones exterminados durante la conquista.",
+    "description": "Capital: Jingbei. Territorio de altas montañas, valles, ríos y bosques de bambú. Actualmente sometido a administración militar y vigilancia arcana sylmorianas.",
+    "profile": {
+      "capital": "Ciudad de Jingbei",
+      "government": "Región ocupada por Sylmorien, administrada mediante autoridad militar, leyes imperiales y vigilancia arcana; los clanes locales conservan influencia limitada.",
+      "geography": "Montañas sagradas, ciudades suspendidas, islas flotantes, valles altos, grandes ríos y bosques de bambú.",
+      "climate": "Fresco y templado.",
+      "culturalIdentity": [
+        "Clanes antiguos y linajes dracónicos",
+        "Memoria de los dragones exterminados",
+        "Tradiciones preservadas bajo la ocupación"
+      ],
+      "currentSituation": "Bajo ocupación de Sylmorien. Sus clanes conservan reliquias, pactos y memoria histórica."
+    }
   },
   "aguas-internacionales": {
     "id": "aguas-internacionales",
