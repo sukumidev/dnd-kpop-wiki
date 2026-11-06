@@ -1,12 +1,6 @@
 ---
-title: "Aldea del Lago Celeste"
-locationId: "aldea-del-lago-celeste"
+title: "Lago Celeste — acceso anterior"
+unlisted: true
 ---
 
-import LocationPageFromDoc from '@site/src/components/LocationPageFromDoc';
-
-<LocationPageFromDoc>
-
-> Esta página todavía necesita contenido.
-
-</LocationPageFromDoc>
+Este registro de ubicación se **consolidó** con [Lago Celeste](/world/locations/lago-celeste). La página se conserva para que los enlaces históricos sigan funcionando.
