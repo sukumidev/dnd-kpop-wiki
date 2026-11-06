@@ -2046,7 +2046,7 @@
   "svt-dino": {
     "id": "svt-dino",
     "title": "Lee Chan (Dino)",
-    "subtitle": "El Futuro de los Héroes Actuales",
+    "subtitle": "El Futuro de los Héroes",
     "status": "active",
     "group": "npc",
     "visibility": "public",
@@ -7693,7 +7693,7 @@
     "id": "twice-jeongyeon",
     "dateOfBirth": "1996-11-01",
     "title": "Jeongyeon",
-    "subtitle": "El Escudo de Jeyperia",
+    "subtitle": "La Princesa Protectora",
     "group": "npc",
     "factionId": "twice",
     "visibility": "hidden",
@@ -7904,7 +7904,7 @@
     "id": "twice-mina",
     "dateOfBirth": "1997-03-24",
     "title": "Mina",
-    "subtitle": "La Espada Serena",
+    "subtitle": "La Princesa Serena",
     "group": "npc",
     "factionId": "twice",
     "locationIds": [
@@ -9837,7 +9837,6 @@
       "zona-del-guardian-del-santuario-de-minho"
     ],
     "imageSrc": "/img/characters/npc/npc-rocardo.webp"
-    "imageSrc": "/img/characters/npc/npc-cha-kal.webp"
   },
   "twice-momo": {
     "id": "twice-momo",
