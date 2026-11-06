@@ -766,6 +766,9 @@
       "pc-imugi",
       "pc-kiyori",
       "skz-jeongin",
+      "twice-momo",
+      "twice-sana",
+      "twice-mina",
       "nct-jaehyun",
       "nct-yuta",
       "nct-yushi",
@@ -886,7 +889,8 @@
       "puerto-bay-alta",
       "gremio-de-aventureros",
       "casa-de-minjae-y-joshua",
-      "neocity"
+      "neocity",
+      "mi-riel"
     ],
     "characterIds": [
       "pc-soobin",
@@ -928,7 +932,12 @@
     "sessionDate": "2026-10-12",
     "campaignDate": "11 de enero de 2026",
     "locationIds": [
-      "sylmorien"
+      "mi-riel",
+      "seongnam",
+      "santuario-del-dios-minho",
+      "laberinto-del-santuario-de-minho",
+      "celda-del-santuario-de-minho",
+      "zona-del-guardian-del-santuario-de-minho"
     ],
     "characterIds": [
       "pc-soobin",
@@ -939,13 +948,25 @@
       "nct-sion",
       "nct-xiaojun",
       "nct-hendery",
+      "xlov-rui",
+      "nouera-gihyeon",
+      "nouera-junpyo",
+      "nouera-hyunjun",
+      "nouera-yuseop",
+      "nouera-lin",
+      "nouera-fan",
+      "nouera-miraku",
+      "npc-titi",
       "wjsn-eunseo",
       "wjsn-dayoung",
       "billlie-tsuki",
       "billlie-suhyeon",
       "shinee-minho",
       "npc-kang-dohorn",
-      "npc-cha-kal"
+      "npc-cha-kal",
+      "npc-vienessa",
+      "pet-nabi",
+      "npc-rocardo"
     ]
   }
 ]

@@ -25,16 +25,17 @@
     ],
     "tags": [],
     "locationIds": [
-      "sylmorien"
+      "sylmorien",
+      "seongnam"
     ],
     "imageSrc": "/img/characters/party/minjae-actual.webp",
     "dateOfBirth": "1996-11-11",
     "zodiac": "Escorpio ♏",
     "mbti": "ENFJ",
     "currentLocation": {
-      "label": "Neocity",
-      "locationId": "neocity",
-      "docPath": "world/locations/neocity"
+      "label": "Seongnam",
+      "locationId": "seongnam",
+      "docPath": "world/locations/seongnam"
     },
     "firstAppearance": {
       "label": "Sesión 01",
@@ -42,9 +43,9 @@
       "docPath": "campaign/sessions/01"
     },
     "lastSeen": {
-      "label": "Sesión 11",
-      "sessionId": "11",
-      "docPath": "campaign/sessions/11"
+      "label": "Sesión 20",
+      "sessionId": "20",
+      "docPath": "campaign/sessions/20"
     },
     "bonds": [
       {
@@ -106,6 +107,16 @@
         "label": "Jaemin",
         "characterId": "nct-jaemin",
         "docPath": "characters/npc/nct-jaemin"
+      },
+      {
+        "label": "Kang Dohorn",
+        "characterId": "npc-kang-dohorn",
+        "docPath": "characters/npc/npc-kang-dohorn"
+      },
+      {
+        "label": "Lámpara del santuario",
+        "characterId": null,
+        "docPath": "campaign/sessions/20#lampara-del-santuario"
       }
     ],
     "destinyCard": null,
@@ -164,9 +175,9 @@
     "zodiac": "Libra ♎",
     "mbti": "INFP",
     "currentLocation": {
-      "label": "Neocity",
-      "locationId": "neocity",
-      "docPath": "world/locations/neocity"
+      "label": "Seongnam",
+      "locationId": "seongnam",
+      "docPath": "world/locations/seongnam"
     },
     "firstAppearance": {
       "label": "Sesión 01",
@@ -174,9 +185,9 @@
       "docPath": "campaign/sessions/01"
     },
     "lastSeen": {
-      "label": "Sesión 11",
-      "sessionId": "11",
-      "docPath": "campaign/sessions/11"
+      "label": "Sesión 20",
+      "sessionId": "20",
+      "docPath": "campaign/sessions/20"
     },
     "bonds": [
       {
@@ -268,6 +279,11 @@
         "label": "Yunjin",
         "characterId": null,
         "docPath": null
+      },
+      {
+        "label": "Lámpara del santuario",
+        "characterId": null,
+        "docPath": "campaign/sessions/20#lampara-del-santuario"
       }
     ],
     "destinyCard": null,
@@ -294,7 +310,10 @@
       }
     ],
     "summary": null,
-    "sortOrder": 1
+    "sortOrder": 1,
+    "locationIds": [
+      "seongnam"
+    ]
   },
   "pc-imugi": {
     "id": "pc-imugi",
@@ -325,9 +344,9 @@
     "zodiac": "Escorpio ♏",
     "mbti": "ESFP",
     "currentLocation": {
-      "label": "Neocity",
-      "locationId": "neocity",
-      "docPath": "world/locations/neocity"
+      "label": "Seongnam",
+      "locationId": "seongnam",
+      "docPath": "world/locations/seongnam"
     },
     "firstAppearance": {
       "label": "Sesión 01",
@@ -335,9 +354,9 @@
       "docPath": "campaign/sessions/01"
     },
     "lastSeen": {
-      "label": "Sesión 11",
-      "sessionId": "11",
-      "docPath": "campaign/sessions/11"
+      "label": "Sesión 20",
+      "sessionId": "20",
+      "docPath": "campaign/sessions/20"
     },
     "bonds": [
       {
@@ -379,6 +398,16 @@
         "label": "Chenle",
         "characterId": "nct-chenle",
         "docPath": "characters/npc/nct-chenle"
+      },
+      {
+        "label": "Rui",
+        "characterId": "xlov-rui",
+        "docPath": "characters/npc/xlov-rui"
+      },
+      {
+        "label": "Cha’Kal",
+        "characterId": "npc-cha-kal",
+        "docPath": "characters/npc/npc-cha-kal"
       }
     ],
     "destinyCard": null,
@@ -393,7 +422,10 @@
       }
     ],
     "summary": null,
-    "sortOrder": 2
+    "sortOrder": 2,
+    "locationIds": [
+      "seongnam"
+    ]
   },
   "pc-soobin": {
     "id": "pc-soobin",
@@ -403,7 +435,7 @@
     "group": "party",
     "visibility": "public",
     "role": "Player",
-    "race": "Semi-Elfa",
+    "race": "Elfa de los bosques",
     "regionId": "jeyperia",
     "hometown": {
       "label": "Villa Jangmi, Jeyperia",
@@ -425,9 +457,9 @@
     "zodiac": "Leo ♌",
     "mbti": "ENFP",
     "currentLocation": {
-      "label": "Neocity",
-      "locationId": "neocity",
-      "docPath": "world/locations/neocity"
+      "label": "Seongnam",
+      "locationId": "seongnam",
+      "docPath": "world/locations/seongnam"
     },
     "firstAppearance": {
       "label": "Sesión 01",
@@ -435,9 +467,9 @@
       "docPath": "campaign/sessions/01"
     },
     "lastSeen": {
-      "label": "Sesión 11",
-      "sessionId": "11",
-      "docPath": "campaign/sessions/11"
+      "label": "Sesión 20",
+      "sessionId": "20",
+      "docPath": "campaign/sessions/20"
     },
     "bonds": [
       {
@@ -498,7 +530,10 @@
       }
     ],
     "summary": null,
-    "sortOrder": 3
+    "sortOrder": 3,
+    "locationIds": [
+      "seongnam"
+    ]
   },
   "svt-scoups": {
     "id": "svt-scoups",
@@ -674,9 +709,9 @@
       "docPath": "campaign/sessions/01"
     },
     "lastSeen": {
-      "label": "Sesión 11",
-      "sessionId": "11",
-      "docPath": "campaign/sessions/11"
+      "label": "Sesión 19",
+      "sessionId": "19",
+      "docPath": "campaign/sessions/19"
     },
     "bonds": [
       {
@@ -808,9 +843,9 @@
       "docPath": "campaign/sessions/01"
     },
     "lastSeen": {
-      "label": "Sesión 11",
-      "sessionId": "11",
-      "docPath": "campaign/sessions/11"
+      "label": "Sesión 19",
+      "sessionId": "19",
+      "docPath": "campaign/sessions/19"
     },
     "bonds": [
       {
@@ -2425,9 +2460,9 @@
       "docPath": "campaign/sessions/05"
     },
     "lastSeen": {
-      "label": "Sesión 15",
-      "sessionId": "15",
-      "docPath": "campaign/sessions/15"
+      "label": "Sesión 19",
+      "sessionId": "19",
+      "docPath": "campaign/sessions/19"
     },
     "bonds": [
       {
@@ -2516,9 +2551,9 @@
       "docPath": "campaign/sessions/11-5"
     },
     "lastSeen": {
-      "label": "Sesión 11.5",
-      "sessionId": "11-5",
-      "docPath": "campaign/sessions/11-5"
+      "label": "Sesión 19",
+      "sessionId": "19",
+      "docPath": "campaign/sessions/19"
     },
     "bonds": [
       {
@@ -2602,9 +2637,9 @@
       "docPath": "campaign/sessions/09"
     },
     "lastSeen": {
-      "label": "Sesión 17",
-      "sessionId": "17",
-      "docPath": "campaign/sessions/17"
+      "label": "Sesión 19",
+      "sessionId": "19",
+      "docPath": "campaign/sessions/19"
     },
     "bonds": [
       {
@@ -2779,9 +2814,9 @@
       "docPath": "campaign/sessions/03"
     },
     "lastSeen": {
-      "label": "Sesión 17",
-      "sessionId": "17",
-      "docPath": "campaign/sessions/17"
+      "label": "Sesión 19",
+      "sessionId": "19",
+      "docPath": "campaign/sessions/19"
     },
     "bonds": [
       {
@@ -3534,9 +3569,9 @@
       "docPath": "campaign/sessions/04"
     },
     "lastSeen": {
-      "label": "Sesión 11.5",
-      "sessionId": "11-5",
-      "docPath": "campaign/sessions/11-5"
+      "label": "Sesión 18",
+      "sessionId": "18",
+      "docPath": "campaign/sessions/18"
     },
     "bonds": [
       {
@@ -3626,9 +3661,9 @@
       "docPath": "campaign/sessions/10-epilogo"
     },
     "lastSeen": {
-      "label": "Sesión 11",
-      "sessionId": "11",
-      "docPath": "campaign/sessions/11"
+      "label": "Sesión 19",
+      "sessionId": "19",
+      "docPath": "campaign/sessions/19"
     },
     "bonds": [
       {
@@ -4006,9 +4041,9 @@
       "docPath": "campaign/sessions/09"
     },
     "lastSeen": {
-      "label": "Sesión 10",
-      "sessionId": "10",
-      "docPath": "campaign/sessions/10"
+      "label": "Sesión 19",
+      "sessionId": "19",
+      "docPath": "campaign/sessions/19"
     },
     "bonds": [
       {
@@ -4164,7 +4199,7 @@
     "id": "nct-winwin",
     "title": "Dong Sicheng (Winwin)",
     "subtitle": "El Maestro Radiante",
-    "status": "active",
+    "status": "inactive",
     "group": "npc",
     "visibility": "public",
     "role": "NPC",
@@ -4360,6 +4395,7 @@
       "docPath": null
     },
     "factionId": "nct",
+    "additionalFactionIds": ["wayv"],
     "dynamic": "alpha",
     "orientation": "Pan",
     "romanticSituation": "Soltero",
@@ -4470,9 +4506,9 @@
       "docPath": "campaign/sessions/09"
     },
     "lastSeen": {
-      "label": "Sesión 11",
-      "sessionId": "11",
-      "docPath": "campaign/sessions/11"
+      "label": "Sesión 19",
+      "sessionId": "19",
+      "docPath": "campaign/sessions/19"
     },
     "bonds": [
       {
@@ -4602,9 +4638,9 @@
       "docPath": "campaign/sessions/06"
     },
     "lastSeen": {
-      "label": "Sesión 09",
-      "sessionId": "09",
-      "docPath": "campaign/sessions/09"
+      "label": "Sesión 20",
+      "sessionId": "20",
+      "docPath": "campaign/sessions/20"
     },
     "bonds": [
       {
@@ -4694,9 +4730,9 @@
       "docPath": "campaign/sessions/04"
     },
     "lastSeen": {
-      "label": "Sesión 05",
-      "sessionId": "05",
-      "docPath": "campaign/sessions/05"
+      "label": "Sesión 20",
+      "sessionId": "20",
+      "docPath": "campaign/sessions/20"
     },
     "bonds": [
       {
@@ -5150,7 +5186,11 @@
       "docPath": "world/locations/neocity"
     },
     "firstAppearance": null,
-    "lastSeen": null,
+    "lastSeen": {
+      "label": "Sesión 19",
+      "sessionId": "19",
+      "docPath": "campaign/sessions/19"
+    },
     "bonds": [
       {
         "label": "Kun",
@@ -5413,9 +5453,9 @@
       "docPath": "campaign/sessions/11"
     },
     "lastSeen": {
-      "label": "Sesión 11",
-      "sessionId": "11",
-      "docPath": "campaign/sessions/11"
+      "label": "Sesión 20",
+      "sessionId": "20",
+      "docPath": "campaign/sessions/20"
     },
     "bonds": [
       {
@@ -7338,6 +7378,7 @@
   "npc-hanjun": {
     "id": "npc-hanjun",
     "title": "Hanjun",
+    "subtitle": "El Becario de la Guardia Real",
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
@@ -7750,6 +7791,7 @@
   "npc-lady-isuna": {
     "id": "npc-lady-isuna",
     "title": "Lady Isuna",
+    "subtitle": "Oficial de la Guardia Real",
     "group": "npc",
     "visibility": "hidden",
     "status": "dead",
@@ -7865,6 +7907,9 @@
     "subtitle": "La Espada Serena",
     "group": "npc",
     "factionId": "twice",
+    "locationIds": [
+      "puerto-bay-alta"
+    ],
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/twice/twice-mina.webp",
@@ -8199,6 +8244,7 @@
   "npc-sir-baekjin": {
     "id": "npc-sir-baekjin",
     "title": "Sir Baekjin",
+    "subtitle": "Oficial de la Guardia Real",
     "group": "npc",
     "visibility": "hidden",
     "status": "dead",
@@ -8395,6 +8441,7 @@
   "npc-xiantao-klau": {
     "id": "npc-xiantao-klau",
     "title": "XianTao Klau",
+    "subtitle": "El Espíritu del Solsticio",
     "group": "npc",
     "visibility": "hidden",
     "status": "unknown",
@@ -8404,6 +8451,7 @@
   "npc-xue-long": {
     "id": "npc-xue-long",
     "title": "Xue Long",
+    "subtitle": "El Dragón de Sangre",
     "group": "npc",
     "visibility": "hidden",
     "status": "dead",
@@ -8545,7 +8593,12 @@
     "occupation": [
       "General de la División del Espacio de la Guardia Real de Sylmorien",
       "Pilar del Consejo Militar"
-    ]
+    ],
+    "lastSeen": {
+      "label": "Sesión 19",
+      "sessionId": "19",
+      "docPath": "campaign/sessions/19"
+    }
   },
   "exo-chanyeol": {
     "id": "exo-chanyeol",
@@ -8730,7 +8783,25 @@
     "imageSrc": "/img/characters/party/pc-kao.webp",
     "dynamic": "alpha",
     "polyamoryStatus": "yes",
-    "role": "Player"
+    "role": "Player",
+    "lastSeen": {
+      "label": "Sesión 20",
+      "sessionId": "20",
+      "docPath": "campaign/sessions/20"
+    },
+    "firstAppearance": {
+      "label": "Sesión 18",
+      "sessionId": "18",
+      "docPath": "campaign/sessions/18"
+    },
+    "currentLocation": {
+      "label": "Seongnam",
+      "locationId": "seongnam",
+      "docPath": "world/locations/seongnam"
+    },
+    "locationIds": [
+      "seongnam"
+    ]
   },
   "ateez-mingi": {
     "id": "ateez-mingi",
@@ -8753,7 +8824,24 @@
     "occupation": [
       "Artillero Mayor e Ingeniero de Demoliciones"
     ],
-    "role": "NPC"
+    "role": "NPC",
+    "lastSeen": {
+      "label": "Sesión 19",
+      "sessionId": "19",
+      "docPath": "campaign/sessions/19"
+    },
+    "firstAppearance": {
+      "label": "Sesión 18",
+      "sessionId": "18",
+      "docPath": "campaign/sessions/18"
+    },
+    "bonds": [
+      {
+        "label": "Refugiados dragonborn",
+        "characterId": null,
+        "docPath": "campaign/sessions/19#resumen"
+      }
+    ]
   },
   "mx-minhyuk": {
     "id": "mx-minhyuk",
@@ -9026,7 +9114,12 @@
     "status": "unknown",
     "summary": "Aparece durante la jornada de playa de la sesión 19.",
     "imageSrc": "/img/characters/npc/npc-laura.webp",
-    "factionId": "dragonborns-del-clan-del-caos"
+    "factionId": "dragonborns-del-clan-del-caos",
+    "lastSeen": {
+      "label": "Sesión 19",
+      "sessionId": "19",
+      "docPath": "campaign/sessions/19"
+    }
   },
   "npc-yamal": {
     "id": "npc-yamal",
@@ -9036,7 +9129,12 @@
     "status": "unknown",
     "summary": "Aparece durante la jornada de playa de la sesión 19.",
     "imageSrc": "/img/characters/npc/npc-yamal.webp",
-    "factionId": "dragonborns-del-clan-del-caos"
+    "factionId": "dragonborns-del-clan-del-caos",
+    "lastSeen": {
+      "label": "Sesión 19",
+      "sessionId": "19",
+      "docPath": "campaign/sessions/19"
+    }
   },
   "npc-sixsevenaldo": {
     "id": "npc-sixsevenaldo",
@@ -9046,7 +9144,12 @@
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-sixsevenaldo.webp",
     "summary": "Aparece durante la jornada de playa de la sesión 19.",
-    "factionId": "dragonborns-del-clan-del-caos"
+    "factionId": "dragonborns-del-clan-del-caos",
+    "lastSeen": {
+      "label": "Sesión 19",
+      "sessionId": "19",
+      "docPath": "campaign/sessions/19"
+    }
   },
   "npc-minji": {
     "id": "npc-minji",
@@ -9057,7 +9160,12 @@
     "status": "active",
     "imageSrc": "/img/characters/npc/npc-minji.webp",
     "summary": "Una de las gemelas de Minjae y Joshua, nacida durante la sesión 14.",
-    "factionId": "svt"
+    "factionId": "svt",
+    "lastSeen": {
+      "label": "Sesión 19",
+      "sessionId": "19",
+      "docPath": "campaign/sessions/19"
+    }
   },
   "npc-minsoo": {
     "id": "npc-minsoo",
@@ -9068,7 +9176,12 @@
     "status": "active",
     "imageSrc": "/img/characters/npc/npc-minsoo.webp",
     "summary": "Una de las gemelas de Minjae y Joshua, nacida durante la sesión 14.",
-    "factionId": "svt"
+    "factionId": "svt",
+    "lastSeen": {
+      "label": "Sesión 19",
+      "sessionId": "19",
+      "docPath": "campaign/sessions/19"
+    }
   },
   "npc-abu": {
     "id": "npc-abu",
@@ -9078,7 +9191,12 @@
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-agu.webp",
     "summary": "Aparece en la sesión 19.",
-    "factionId": "habitantes-de-la-neocity"
+    "factionId": "habitantes-de-la-neocity",
+    "lastSeen": {
+      "label": "Sesión 19",
+      "sessionId": "19",
+      "docPath": "campaign/sessions/19"
+    }
   },
   "npc-apu": {
     "id": "npc-apu",
@@ -9088,7 +9206,12 @@
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-agu.webp",
     "summary": "Aparece en la sesión 19.",
-    "factionId": "habitantes-de-la-neocity"
+    "factionId": "habitantes-de-la-neocity",
+    "lastSeen": {
+      "label": "Sesión 19",
+      "sessionId": "19",
+      "docPath": "campaign/sessions/19"
+    }
   },
   "npc-agu": {
     "id": "npc-agu",
@@ -9098,7 +9221,12 @@
     "status": "unknown",
     "imageSrc": "/img/characters/npc/npc-agu.webp",
     "summary": "Aparece en la sesión 19.",
-    "factionId": "habitantes-de-la-neocity"
+    "factionId": "habitantes-de-la-neocity",
+    "lastSeen": {
+      "label": "Sesión 19",
+      "sessionId": "19",
+      "docPath": "campaign/sessions/19"
+    }
   },
   "pet-bella": {
     "id": "pet-bella",
@@ -9138,7 +9266,20 @@
     "visibility": "public",
     "status": "unknown",
     "factionId": "wjsn",
-    "imageSrc": "/img/characters/wjsn/wjsn-eunseo.webp"
+    "imageSrc": "/img/characters/wjsn/wjsn-eunseo.webp",
+    "lastSeen": {
+      "label": "Sesión 20",
+      "sessionId": "20",
+      "docPath": "campaign/sessions/20"
+    },
+    "firstAppearance": {
+      "label": "Sesión 20",
+      "sessionId": "20",
+      "docPath": "campaign/sessions/20"
+    },
+    "locationIds": [
+      "seongnam"
+    ]
   },
   "wjsn-dayoung": {
     "id": "wjsn-dayoung",
@@ -9148,7 +9289,20 @@
     "visibility": "public",
     "status": "unknown",
     "factionId": "wjsn",
-    "imageSrc": "/img/characters/wjsn/wjsn-dayoung.webp"
+    "imageSrc": "/img/characters/wjsn/wjsn-dayoung.webp",
+    "lastSeen": {
+      "label": "Sesión 20",
+      "sessionId": "20",
+      "docPath": "campaign/sessions/20"
+    },
+    "firstAppearance": {
+      "label": "Sesión 20",
+      "sessionId": "20",
+      "docPath": "campaign/sessions/20"
+    },
+    "locationIds": [
+      "seongnam"
+    ]
   },
   "billlie-tsuki": {
     "id": "billlie-tsuki",
@@ -9158,7 +9312,20 @@
     "visibility": "public",
     "status": "unknown",
     "factionId": "billlie",
-    "imageSrc": "/img/characters/billlie/billlie-tsuki.webp"
+    "imageSrc": "/img/characters/billlie/billlie-tsuki.webp",
+    "lastSeen": {
+      "label": "Sesión 20",
+      "sessionId": "20",
+      "docPath": "campaign/sessions/20"
+    },
+    "firstAppearance": {
+      "label": "Sesión 20",
+      "sessionId": "20",
+      "docPath": "campaign/sessions/20"
+    },
+    "locationIds": [
+      "seongnam"
+    ]
   },
   "billlie-suhyeon": {
     "id": "billlie-suhyeon",
@@ -9168,7 +9335,20 @@
     "visibility": "public",
     "status": "unknown",
     "factionId": "billlie",
-    "imageSrc": "/img/characters/billlie/billlie-suhyeon.webp"
+    "imageSrc": "/img/characters/billlie/billlie-suhyeon.webp",
+    "lastSeen": {
+      "label": "Sesión 20",
+      "sessionId": "20",
+      "docPath": "campaign/sessions/20"
+    },
+    "firstAppearance": {
+      "label": "Sesión 20",
+      "sessionId": "20",
+      "docPath": "campaign/sessions/20"
+    },
+    "locationIds": [
+      "seongnam"
+    ]
   },
   "psf-ryoga": {
     "id": "psf-ryoga",
@@ -9270,7 +9450,24 @@
     "factionId": "shinee",
     "regionId": "sylmorien",
     "imageSrc": "/img/characters/shinee/shinee-minho.webp",
-    "role": "Deidad"
+    "role": "Deidad",
+    "lastSeen": {
+      "label": "Sesión 20",
+      "sessionId": "20",
+      "docPath": "campaign/sessions/20"
+    },
+    "firstAppearance": {
+      "label": "Sesión 20",
+      "sessionId": "20",
+      "docPath": "campaign/sessions/20"
+    },
+    "bonds": [
+      {
+        "label": "Kang Dohorn",
+        "characterId": "npc-kang-dohorn",
+        "docPath": "characters/npc/npc-kang-dohorn"
+      }
+    ]
   },
   "npc-kang-dohorn": {
     "id": "npc-kang-dohorn",
@@ -9285,7 +9482,32 @@
     "occupation": [
       "Guardián del Santuario del Dios Minho"
     ],
-    "imageSrc": "/img/characters/npc/npc-kang-dohorn.webp"
+    "imageSrc": "/img/characters/npc/npc-kang-dohorn.webp",
+    "lastSeen": {
+      "label": "Sesión 20",
+      "sessionId": "20",
+      "docPath": "campaign/sessions/20"
+    },
+    "firstAppearance": {
+      "label": "Sesión 20",
+      "sessionId": "20",
+      "docPath": "campaign/sessions/20"
+    },
+    "locationIds": [
+      "santuario-del-dios-minho"
+    ],
+    "bonds": [
+      {
+        "label": "Minjae",
+        "characterId": "pc-minjae",
+        "docPath": "characters/party/pc-minjae"
+      },
+      {
+        "label": "MINHO, Dios de la Fuerza",
+        "characterId": "shinee-minho",
+        "docPath": "cosmology/deities/shinee-minho"
+      }
+    ]
   },
   "npc-cha-kal": {
     "id": "npc-cha-kal",
@@ -9299,6 +9521,350 @@
     "occupation": [
       "Vendedor de armas"
     ],
+    "imageSrc": "/img/characters/npc/npc-cha-kal.webp",
+    "lastSeen": {
+      "label": "Sesión 20",
+      "sessionId": "20",
+      "docPath": "campaign/sessions/20"
+    },
+    "firstAppearance": {
+      "label": "Sesión 20",
+      "sessionId": "20",
+      "docPath": "campaign/sessions/20"
+    },
+    "locationIds": [
+      "seongnam"
+    ],
+    "bonds": [
+      {
+        "label": "Imugi",
+        "characterId": "pc-imugi",
+        "docPath": "characters/party/pc-imugi"
+      }
+    ]
+  },
+  "nouera-gihyeon": {
+    "id": "nouera-gihyeon",
+    "title": "Gihyeon",
+    "group": "npc",
+    "visibility": "public",
+    "status": "active",
+    "regionId": "sylmorien",
+    "firstAppearance": {
+      "label": "Sesión 20",
+      "sessionId": "20",
+      "docPath": "campaign/sessions/20"
+    },
+    "lastSeen": {
+      "label": "Sesión 20",
+      "sessionId": "20",
+      "docPath": "campaign/sessions/20"
+    },
+    "factionId": "nouera",
+    "race": "Humano",
+    "occupation": [
+      "Cabo"
+    ],
+    "locationIds": [
+      "seongnam"
+    ]
+  },
+  "nouera-junpyo": {
+    "id": "nouera-junpyo",
+    "title": "Junpyo",
+    "group": "npc",
+    "visibility": "public",
+    "status": "active",
+    "regionId": "sylmorien",
+    "firstAppearance": {
+      "label": "Sesión 20",
+      "sessionId": "20",
+      "docPath": "campaign/sessions/20"
+    },
+    "lastSeen": {
+      "label": "Sesión 20",
+      "sessionId": "20",
+      "docPath": "campaign/sessions/20"
+    },
+    "factionId": "nouera",
+    "race": "Humano",
+    "locationIds": [
+      "seongnam"
+    ]
+  },
+  "nouera-hyunjun": {
+    "id": "nouera-hyunjun",
+    "title": "Hyunjun",
+    "group": "npc",
+    "visibility": "public",
+    "status": "active",
+    "regionId": "sylmorien",
+    "firstAppearance": {
+      "label": "Sesión 20",
+      "sessionId": "20",
+      "docPath": "campaign/sessions/20"
+    },
+    "lastSeen": {
+      "label": "Sesión 20",
+      "sessionId": "20",
+      "docPath": "campaign/sessions/20"
+    },
+    "factionId": "nouera",
+    "race": "Humano",
+    "locationIds": [
+      "seongnam"
+    ]
+  },
+  "nouera-yuseop": {
+    "id": "nouera-yuseop",
+    "title": "Yuseop",
+    "group": "npc",
+    "visibility": "public",
+    "status": "active",
+    "regionId": "sylmorien",
+    "firstAppearance": {
+      "label": "Sesión 20",
+      "sessionId": "20",
+      "docPath": "campaign/sessions/20"
+    },
+    "lastSeen": {
+      "label": "Sesión 20",
+      "sessionId": "20",
+      "docPath": "campaign/sessions/20"
+    },
+    "factionId": "nouera",
+    "race": "Humano",
+    "locationIds": [
+      "seongnam"
+    ]
+  },
+  "nouera-lin": {
+    "id": "nouera-lin",
+    "title": "Lin",
+    "group": "npc",
+    "visibility": "public",
+    "status": "active",
+    "regionId": "sylmorien",
+    "firstAppearance": {
+      "label": "Sesión 20",
+      "sessionId": "20",
+      "docPath": "campaign/sessions/20"
+    },
+    "lastSeen": {
+      "label": "Sesión 20",
+      "sessionId": "20",
+      "docPath": "campaign/sessions/20"
+    },
+    "factionId": "nouera",
+    "race": "Humano",
+    "locationIds": [
+      "seongnam"
+    ]
+  },
+  "nouera-fan": {
+    "id": "nouera-fan",
+    "title": "Fan",
+    "group": "npc",
+    "visibility": "public",
+    "status": "active",
+    "regionId": "sylmorien",
+    "firstAppearance": {
+      "label": "Sesión 20",
+      "sessionId": "20",
+      "docPath": "campaign/sessions/20"
+    },
+    "lastSeen": {
+      "label": "Sesión 20",
+      "sessionId": "20",
+      "docPath": "campaign/sessions/20"
+    },
+    "factionId": "nouera",
+    "race": "Humano",
+    "locationIds": [
+      "seongnam"
+    ]
+  },
+  "nouera-miraku": {
+    "id": "nouera-miraku",
+    "title": "Miraku",
+    "group": "npc",
+    "visibility": "public",
+    "status": "active",
+    "regionId": "sylmorien",
+    "firstAppearance": {
+      "label": "Sesión 20",
+      "sessionId": "20",
+      "docPath": "campaign/sessions/20"
+    },
+    "lastSeen": {
+      "label": "Sesión 20",
+      "sessionId": "20",
+      "docPath": "campaign/sessions/20"
+    },
+    "factionId": "nouera",
+    "race": "Humano",
+    "locationIds": [
+      "seongnam"
+    ]
+  },
+  "xlov-rui": {
+    "id": "xlov-rui",
+    "title": "Rui",
+    "group": "npc",
+    "visibility": "public",
+    "status": "unknown",
+    "regionId": "sylmorien",
+    "firstAppearance": {
+      "label": "Sesión 20",
+      "sessionId": "20",
+      "docPath": "campaign/sessions/20"
+    },
+    "lastSeen": {
+      "label": "Sesión 20",
+      "sessionId": "20",
+      "docPath": "campaign/sessions/20"
+    },
+    "factionId": "xlov",
+    "race": "Aasimar",
+    "locationIds": [
+      "mi-riel"
+    ],
+    "bonds": [
+      {
+        "label": "Imugi",
+        "characterId": "pc-imugi",
+        "docPath": "characters/party/pc-imugi"
+      }
+    ]
+  },
+  "npc-vienessa": {
+    "id": "npc-vienessa",
+    "title": "Vienessa",
+    "group": "npc",
+    "visibility": "public",
+    "status": "unknown",
+    "regionId": "sylmorien",
+    "firstAppearance": {
+      "label": "Sesión 20",
+      "sessionId": "20",
+      "docPath": "campaign/sessions/20"
+    },
+    "lastSeen": {
+      "label": "Sesión 20",
+      "sessionId": "20",
+      "docPath": "campaign/sessions/20"
+    },
+    "locationIds": [
+      "celda-del-santuario-de-minho"
+    ],
+    "imageSrc": "/img/characters/npc/npc-vienessa.webp",
+    "bonds": [
+      {
+        "label": "Nabi",
+        "characterId": "pet-nabi",
+        "docPath": "characters/pet/pet-nabi"
+      }
+    ]
+  },
+  "pet-nabi": {
+    "id": "pet-nabi",
+    "title": "Nabi",
+    "group": "pet",
+    "visibility": "public",
+    "status": "unknown",
+    "regionId": "sylmorien",
+    "firstAppearance": {
+      "label": "Sesión 20",
+      "sessionId": "20",
+      "docPath": "campaign/sessions/20"
+    },
+    "lastSeen": {
+      "label": "Sesión 20",
+      "sessionId": "20",
+      "docPath": "campaign/sessions/20"
+    },
+    "factionId": "mascotas",
+    "race": "Serpiente",
+    "locationIds": [
+      "seongnam"
+    ],
+    "bonds": [
+      {
+        "label": "Vienessa",
+        "characterId": "npc-vienessa",
+        "docPath": "characters/npc/npc-vienessa"
+      }
+    ]
+  },
+  "npc-titi": {
+    "id": "npc-titi",
+    "title": "Titi",
+    "group": "npc",
+    "visibility": "public",
+    "status": "unknown",
+    "regionId": "sylmorien",
+    "firstAppearance": {
+      "label": "Sesión 20",
+      "sessionId": "20",
+      "docPath": "campaign/sessions/20"
+    },
+    "lastSeen": {
+      "label": "Sesión 20",
+      "sessionId": "20",
+      "docPath": "campaign/sessions/20"
+    },
+    "imageSrc": "/img/characters/npc/npc-titi.webp"
+  },
+  "npc-rocardo": {
+    "id": "npc-rocardo",
+    "title": "Rocardo",
+    "group": "npc",
+    "visibility": "public",
+    "status": "unknown",
+    "regionId": "sylmorien",
+    "firstAppearance": {
+      "label": "Sesión 20",
+      "sessionId": "20",
+      "docPath": "campaign/sessions/20"
+    },
+    "lastSeen": {
+      "label": "Sesión 20",
+      "sessionId": "20",
+      "docPath": "campaign/sessions/20"
+    },
+    "race": "Elemental de tierra",
+    "locationIds": [
+      "zona-del-guardian-del-santuario-de-minho"
+    ],
+    "imageSrc": "/img/characters/npc/npc-rocardo.webp"
     "imageSrc": "/img/characters/npc/npc-cha-kal.webp"
+  },
+  "twice-momo": {
+    "id": "twice-momo",
+    "title": "Momo",
+    "subtitle": "La Princesa del Ritmo",
+    "group": "npc",
+    "factionId": "twice",
+    "locationIds": [
+      "puerto-bay-alta"
+    ],
+    "visibility": "hidden",
+    "status": "unknown",
+    "dateOfBirth": "1996-11-09",
+    "imageSrc": "/img/characters/twice/twice-momo.webp"
+  },
+  "twice-sana": {
+    "id": "twice-sana",
+    "title": "Sana",
+    "subtitle": "La Princesa del Encanto",
+    "group": "npc",
+    "factionId": "twice",
+    "locationIds": [
+      "puerto-bay-alta"
+    ],
+    "visibility": "hidden",
+    "status": "unknown",
+    "dateOfBirth": "1996-12-29",
+    "imageSrc": "/img/characters/twice/twice-sana.webp"
   }
 }

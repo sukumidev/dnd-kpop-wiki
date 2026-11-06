@@ -1,6 +1,6 @@
 import path from "node:path";
 import fs from "node:fs/promises";
-import { characters as characterRegistry } from "../src/data/characters";
+import { characters as characterRegistry, type CharacterGroup } from "../src/data/characters";
 import { runDataValidation } from "./preflight-validation";
 import type { GenerateOptions, GenerateResult } from "./generate-types";
 
@@ -8,7 +8,7 @@ type CharacterEntry = {
   id?: string;
   title?: string;
   sidebar_label?: string;
-  group?: "party" | "npc";
+  group?: CharacterGroup;
   subtitle?: string | null;
   imageSrc?: string | null;
   status?: string;
@@ -30,7 +30,7 @@ function parseOptions(argv = process.argv.slice(2)): GenerateOptions {
   };
 }
 
-function getGroupFolder(entry: CharacterEntry): "party" | "npc" {
+function getGroupFolder(entry: CharacterEntry): CharacterGroup {
   return entry.group ?? "npc";
 }
 

@@ -174,7 +174,8 @@
     "visibility": "public",
     "sortOrder": 5,
     "realm": "hotou",
-    "regionId": "hotou"
+    "regionId": "hotou",
+    "summary": "Clan dragonborn de Hotou que sigue y sirve a G-Dragon."
   },
   "adp": {
     "id": "adp",
@@ -222,7 +223,8 @@
     "visibility": "public",
     "sortOrder": 7,
     "realm": "sylmorien",
-    "regionId": "sylmorien"
+    "regionId": "sylmorien",
+    "summary": "Clan dragonborn de Sylmorien que se opone a G-Dragon."
   },
   "kiof": {
     "id": "kiof",
@@ -1713,7 +1715,7 @@
     "description": "La Casa Weishen es una rama de los Neo Culturales Tecnológicos especializada en artes marciales, tradiciones druídicas y diferentes manifestaciones de la magia elemental.\n\nSu filosofía académica considera que la naturaleza, el movimiento corporal y la magia forman parte de sistemas relacionados que pueden estudiarse y practicarse conjuntamente.\n\nDentro de la Neo Academia, Weishen destaca por sus métodos de entrenamiento físico y mágico, así como por su enfoque adaptable a las capacidades particulares de cada estudiante.",
     "origin": "Sylmorien",
     "affiliation": "Autónoma reconocida",
-    "knownMembers": "Qian Kun, Ten, Winwin, Xiaojun, Hendery y Yangyang",
+    "knownMembers": "Qian Kun, Ten, Xiaojun, Hendery y Yangyang. Winwin (inactivo). Lucas (exmiembro).",
     "baseLabel": "Neo Academia, Neocity",
     "leaderLabel": "Qian Kun",
     "statusLabel": "Activos",
@@ -1995,7 +1997,8 @@
         "value": "Sesión 20"
       }
     ],
-    "sortOrder": 131
+    "sortOrder": 131,
+    "leaderCharacterId": "exo-kai"
   },
   "wjsn": {
     "id": "wjsn",
@@ -2076,7 +2079,7 @@
     "realm": "guozhong",
     "affiliation": "Independiente",
     "activityArea": "Búsqueda de igualdad entre subgéneros",
-    "knownMembers": "Rui; lista parcial",
+    "knownMembers": "Rui",
     "statusLabel": "Activos",
     "allyFactionIds": [],
     "enemyFactionIds": [],

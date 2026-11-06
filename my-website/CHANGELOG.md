@@ -14,6 +14,7 @@ Cambios acumulados que todavía **no** se han asignado a un tag publicado.
 
 - Convención de versiones, compatibilidad y publicación documentada en `VERSIONING.md`.
 - Archivo `CHANGELOG.md` para registrar releases y actualizaciones relevantes de la Wiki.
+- Convención editorial de GitHub Release Notes y plantilla manual `.github/RELEASE_TEMPLATE.md`.
 
 <!-- Añadir aquí nuevos cambios a medida que se fusionan PRs. Omitir categorías vacías. -->
 

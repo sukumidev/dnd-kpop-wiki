@@ -39,7 +39,7 @@ Las versiones `0.x.y` indican que el producto todavía está evolucionando y **n
 - Un cambio incompatible *antes de `1.0.0`* también incrementa **MINOR**, se señala como **BREAKING CHANGE** y exige notas de migración. No se sube a `1.0.0` automáticamente por un breaking change.
 - Una corrección compatible incrementa **PATCH**: `0.2.0` → `0.2.1`.
 - Al incrementar MAJOR o MINOR, PATCH vuelve a `0`.
-- `1.0.0` se reservará para una primera línea estable, tras cumplir los criterios de la sección 10.
+- `1.0.0` se reservará para una primera línea estable, tras cumplir los criterios de la sección 11.
 
 **Importante:** la versión la determina el impacto observable, no el tamaño del PR, el número de sprint ni el esfuerzo de implementación.
 
@@ -205,7 +205,48 @@ Antes de aceptar un cambio de contrato:
 4. Preparar la migración y comprobar que importar → editar → exportar no pierde datos legacy.
 5. Coordinar releases de ambos repositorios si la compatibilidad lo requiere.
 
-## 10. Criterios para `v1.0.0`
+## 10. Convención de GitHub Release Notes
+
+Las **Release Notes** resumen una versión publicada para quienes consultan o mantienen la Wiki. Se distinguen del [`CHANGELOG.md`](./CHANGELOG.md): el changelog es el historial acumulativo y las notas de release presentan las novedades principales de **un tag concreto** en lenguaje claro.
+
+### Título y nomenclatura
+
+Usar **`Hallyura Wiki vX.Y.Z — Release Name`**. El nombre es un subtítulo temático breve, preferentemente en inglés; el contenido de las notas se redacta en español. Ejemplos *ilustrativos* (no releases publicados):
+
+- `Hallyura Wiki v0.1.0 — Foundations`
+- `Hallyura Wiki v0.2.0 — Interactive Maps`
+- `Hallyura Wiki v0.2.1 — Navigation Fixes`
+
+El tag en Git siempre es **`vX.Y.Z`**; el nombre temático corresponde al título visible del GitHub Release, no al tag.
+
+### Estructura de las notas
+
+Usar [`.github/RELEASE_TEMPLATE.md`](../.github/RELEASE_TEMPLATE.md) como plantilla editorial:
+
+1. **✦ Resumen**: 2–4 frases sobre el propósito de la versión y su impacto.
+2. **✨ Añadido**: nuevas capacidades visibles.
+3. **🔄 Modificado**: mejoras o cambios de comportamiento.
+4. **🐛 Corregido**: errores relevantes resueltos.
+5. **⚡ Rendimiento**: optimizaciones verificadas, si aplica.
+6. **📚 Contenido**: actualizaciones de lore **solo públicas y libres de spoilers**.
+7. **🗑️ Eliminado**: funciones retiradas, si aplica.
+8. **🔒 Seguridad**: correcciones publicables sin revelar datos sensibles, si aplica.
+9. **⚠️ Compatibilidad y migraciones**: incompatibilidades, componentes afectados y pasos concretos; si no hay migraciones, declararlo expresamente.
+10. **🧪 Validación**: únicamente resultados de pruebas y builds **realmente ejecutados**.
+11. **🔗 Referencias**: changelog, PRs y comparación entre tags cuando exista.
+
+**Omitir categorías vacías**; las secciones de resumen, compatibilidad, validación y referencias se mantienen siempre. No repetir cada commit: redactar en términos del resultado para la persona usuaria. Cuando sea útil, añadir enlaces a PRs `#123` y comparar con el tag anterior.
+
+### Reglas de publicación editorial
+
+- Redactar notas **después** de confirmar el alcance del tag; deben corresponder exactamente al commit liberado.
+- No inventar funciones, fechas, resultados de QA ni enlaces a versiones aún no publicadas.
+- No exponer información `secret`, `hidden`, `dm-only`, detalles de sesiones pendientes ni identidades narrativas no reveladas.
+- Un **BREAKING CHANGE** debe explicar qué deja de funcionar, a quién afecta y cómo migrar o volver atrás.
+- Usar el mismo número y fecha en las Release Notes y en `CHANGELOG.md`.
+- La plantilla `.github/RELEASE_TEMPLATE.md` es una **referencia para copiar en GitHub Releases**; GitHub no la carga automáticamente en el editor por existir en esa ruta. La automatización se definirá por separado si se necesita.
+
+## 11. Criterios para `v1.0.0`
 
 `v1.0.0` no está ligado a Sprint 8 ni a una fecha fija. Será la primera línea estable cuando:
 
@@ -215,7 +256,7 @@ Antes de aceptar un cambio de contrato:
 - Existan controles comprobados para contenido público y spoilers.
 - Se haya establecido el flujo de release, changelog y recuperación.
 
-## 11. Recuperación de versiones
+## 12. Recuperación de versiones
 
 No borrar ni mover tags ya publicados. Ante un release defectuoso, volver a desplegar el último tag conocido como estable cuando el entorno lo permita. Si se requiere corregir código o datos, publicar un nuevo PATCH (o la versión que corresponda) y dejar registro del incidente y su solución.
 
