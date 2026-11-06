@@ -1,12 +1,6 @@
 ---
-title: "Muelle de Mareas Silentes"
-locationId: "muelle-de-mareas-silentes"
+title: "Muelle Daegu — acceso anterior"
+unlisted: true
 ---
 
-import LocationPageFromDoc from '@site/src/components/LocationPageFromDoc';
-
-<LocationPageFromDoc>
-
-> Esta página todavía necesita contenido.
-
-</LocationPageFromDoc>
+Este registro de ubicación se **consolidó** con [Muelle Daegu](/world/locations/muelle-daegu). La página se conserva para que los enlaces históricos sigan funcionando.
