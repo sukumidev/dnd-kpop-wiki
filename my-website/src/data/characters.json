@@ -7867,6 +7867,9 @@
     "subtitle": "La Espada Serena",
     "group": "npc",
     "factionId": "twice",
+    "locationIds": [
+      "puerto-bay-alta"
+    ],
     "visibility": "hidden",
     "status": "unknown",
     "imageSrc": "/img/characters/twice/twice-mina.webp",
@@ -9305,5 +9308,33 @@
       "Vendedor de armas"
     ],
     "imageSrc": "/img/characters/npc/npc-cha-kal.webp"
+  },
+  "twice-momo": {
+    "id": "twice-momo",
+    "title": "Momo",
+    "subtitle": "La Princesa del Ritmo",
+    "group": "npc",
+    "factionId": "twice",
+    "locationIds": [
+      "puerto-bay-alta"
+    ],
+    "visibility": "hidden",
+    "status": "unknown",
+    "dateOfBirth": "1996-11-09",
+    "imageSrc": "/img/characters/twice/twice-momo.webp"
+  },
+  "twice-sana": {
+    "id": "twice-sana",
+    "title": "Sana",
+    "subtitle": "La Princesa del Encanto",
+    "group": "npc",
+    "factionId": "twice",
+    "locationIds": [
+      "puerto-bay-alta"
+    ],
+    "visibility": "hidden",
+    "status": "unknown",
+    "dateOfBirth": "1996-12-29",
+    "imageSrc": "/img/characters/twice/twice-sana.webp"
   }
 }
