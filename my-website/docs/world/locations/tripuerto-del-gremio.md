@@ -7,6 +7,6 @@ import LocationPageFromDoc from '@site/src/components/LocationPageFromDoc';
 
 <LocationPageFromDoc>
 
-> Esta página todavía necesita contenido.
+El Tripuerto del Gremio es una **infraestructura mágica de transporte** vinculada al [Gremio de Aventureros de Hyberia](/world/locations/gremio-de-aventureros). No constituye una ubicación geográfica independiente.
 
 </LocationPageFromDoc>
