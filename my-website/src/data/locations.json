@@ -1015,5 +1015,62 @@
     "type": "wilderness",
     "status": "unknown",
     "visibility": "public"
+  },
+  "mi-riel": {
+    "id": "mi-riel",
+    "title": "Mi Riel",
+    "type": "other",
+    "status": "active",
+    "visibility": "public",
+    "regionId": "sylmorien",
+    "parentLocationId": "sylmorien"
+  },
+  "seongnam": {
+    "id": "seongnam",
+    "title": "Seongnam",
+    "type": "village",
+    "status": "active",
+    "visibility": "public",
+    "regionId": "sylmorien",
+    "parentLocationId": "sylmorien",
+    "factionIds": [
+      "nouera"
+    ]
+  },
+  "santuario-del-dios-minho": {
+    "id": "santuario-del-dios-minho",
+    "title": "Santuario del Dios Minho",
+    "type": "landmark",
+    "status": "active",
+    "visibility": "public",
+    "regionId": "sylmorien",
+    "parentLocationId": "sylmorien"
+  },
+  "laberinto-del-santuario-de-minho": {
+    "id": "laberinto-del-santuario-de-minho",
+    "title": "Laberinto del Santuario de Minho",
+    "type": "dungeon",
+    "status": "active",
+    "visibility": "public",
+    "regionId": "sylmorien",
+    "parentLocationId": "santuario-del-dios-minho"
+  },
+  "celda-del-santuario-de-minho": {
+    "id": "celda-del-santuario-de-minho",
+    "title": "Celda del Santuario de Minho",
+    "type": "other",
+    "status": "active",
+    "visibility": "public",
+    "regionId": "sylmorien",
+    "parentLocationId": "santuario-del-dios-minho"
+  },
+  "zona-del-guardian-del-santuario-de-minho": {
+    "id": "zona-del-guardian-del-santuario-de-minho",
+    "title": "Zona del guardián del Santuario de Minho",
+    "type": "other",
+    "status": "active",
+    "visibility": "public",
+    "regionId": "sylmorien",
+    "parentLocationId": "santuario-del-dios-minho"
   }
 }
