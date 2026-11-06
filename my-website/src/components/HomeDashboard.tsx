@@ -2,6 +2,7 @@ import React, {useCallback, useEffect, useMemo, useRef, useState} from "react";
 import Link from "@docusaurus/Link";
 
 import CompactQuestDashboard, {getActiveQuestCount} from "./CompactQuestDashboard";
+import ProtagonistCards from "./ProtagonistCards";
 import {campaignSnapshot, exploreSections, tableTools} from "@site/src/data/home";
 import {
   getSessionHref,
@@ -185,6 +186,7 @@ export default function HomeDashboard(): React.ReactElement {
         <CampaignStatus />
       </div>
       <ExploreCarousel />
+      <ProtagonistCards />
       <RecentActivity />
     </div>
   );
