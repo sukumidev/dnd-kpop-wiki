@@ -1,12 +1,6 @@
 ---
-title: "Campamento de goblins"
-locationId: "campamento-de-goblins"
+title: "Ruinas de los Antiguos Héroes — acceso anterior"
+unlisted: true
 ---
 
-import LocationPageFromDoc from '@site/src/components/LocationPageFromDoc';
-
-<LocationPageFromDoc>
-
-> Esta página todavía necesita contenido.
-
-</LocationPageFromDoc>
+Este registro de ubicación se **consolidó** con [Ruinas de los Antiguos Héroes](/world/locations/ruinas-de-los-antiguos-heroes). La página se conserva para que los enlaces históricos sigan funcionando.
