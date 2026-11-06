@@ -1,12 +1,6 @@
 ---
-title: "Cabaña de Joshua"
-locationId: "cabana-de-joshua"
+title: "Casa de Minjae y Joshua — acceso anterior"
+unlisted: true
 ---
 
-import LocationPageFromDoc from '@site/src/components/LocationPageFromDoc';
-
-<LocationPageFromDoc>
-
-> Esta página todavía necesita contenido.
-
-</LocationPageFromDoc>
+Este registro de ubicación se **consolidó** con [Casa de Minjae y Joshua](/world/locations/casa-de-minjae-y-joshua). La página se conserva para que los enlaces históricos sigan funcionando.
