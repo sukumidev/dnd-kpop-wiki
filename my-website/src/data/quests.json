@@ -2020,5 +2020,55 @@
       "piratas",
       "recuperacion"
     ]
+  },
+  "sq-investigate-lucerna-ii": {
+    "id": "sq-investigate-lucerna-ii",
+    "title": "Investigar qué pasó con el Lucerna II",
+    "types": [
+      "side"
+    ],
+    "status": "completed",
+    "visibility": "public",
+    "summary": "La party encontró el Lucerna II destruido y dio por concluida la investigación.",
+    "progress": {
+      "mode": "objectives"
+    },
+    "objectives": [
+      {
+        "id": "complete-investigation",
+        "label": "Investigar qué pasó con el Lucerna II",
+        "done": true
+      }
+    ],
+    "sessionStartedId": "18",
+    "lastUpdatedSessionId": null,
+    "sessionIds": [
+      "18"
+    ]
+  },
+  "sq-rescue-vienessa": {
+    "id": "sq-rescue-vienessa",
+    "title": "Rescatar a Vienessa",
+    "types": [
+      "side"
+    ],
+    "status": "completed",
+    "visibility": "public",
+    "summary": "La party aceptó el encargo en Seongnam, rescató a Vienessa y regresó con ella y Nabi. Recibió la recompensa acordada.",
+    "progress": {
+      "mode": "objectives"
+    },
+    "objectives": [
+      {
+        "id": "bring-vienessa-back",
+        "label": "Rescatar a Vienessa",
+        "done": true
+      }
+    ],
+    "sessionStartedId": "20",
+    "lastUpdatedSessionId": "20",
+    "sessionIds": [
+      "20"
+    ]
   }
 }
