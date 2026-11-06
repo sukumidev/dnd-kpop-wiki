@@ -2565,7 +2565,7 @@
   "skz-felix": {
     "id": "skz-felix",
     "title": "Felix Lee",
-    "subtitle": "El Ente de los Sueños",
+    "subtitle": "El Campeón de la Luna",
     "status": "active",
     "group": "npc",
     "visibility": "public",
@@ -3088,7 +3088,7 @@
   "enha-jay": {
     "id": "enha-jay",
     "title": "Park Jongseong (Jay)",
-    "subtitle": "El Vampiro Rockstar",
+    "subtitle": "El Operador Sanguinario",
     "status": "active",
     "group": "npc",
     "visibility": "public",
@@ -3168,7 +3168,7 @@
   "enha-jake": {
     "id": "enha-jake",
     "title": "Sim Jaeyun (Jake)",
-    "subtitle": "El que volvió a vivir",
+    "subtitle": "El Vampiro que Volvió a Vivir",
     "status": "active",
     "group": "npc",
     "visibility": "public",
@@ -8695,7 +8695,7 @@
     "visibility": "public",
     "sortOrder": 6,
     "status": "active",
-    "subtitle": "El Artillero",
+    "subtitle": "El Artillero Incendiador",
     "dateOfBirth": "1999-08-09",
     "zodiac": "Leo ♌",
     "mbti": "ENTP",
