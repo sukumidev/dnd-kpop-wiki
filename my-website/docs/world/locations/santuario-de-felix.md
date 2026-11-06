@@ -1,12 +1,6 @@
 ---
-title: "Santuario de Felix"
-locationId: "santuario-de-felix"
+title: "Claro del Dreamscape — acceso anterior"
+unlisted: true
 ---
 
-import LocationPageFromDoc from '@site/src/components/LocationPageFromDoc';
-
-<LocationPageFromDoc>
-
-> Esta página todavía necesita contenido.
-
-</LocationPageFromDoc>
+Este registro de ubicación se **consolidó** con [Claro del Dreamscape](/world/locations/claro-del-dreamscape). La página se conserva para que los enlaces históricos sigan funcionando.
