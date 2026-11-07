@@ -7,6 +7,21 @@ export function publicCharacters(registry) {
   return Object.fromEntries(Object.entries(registry).filter(([, c]) => c && c.visibility === "public"));
 }
 
+// This project has explicitly approved publishing every Character record.
+// Keep the authoring registry unchanged; only the isolated deployment gets
+// public visibility so character directories, birthdays and relations agree.
+export function publishEveryCharacter(registry) {
+  if (!registry || typeof registry !== "object" || Array.isArray(registry)) {
+    throw new TypeError("Expected a character ID-indexed registry.");
+  }
+  return Object.fromEntries(Object.entries(registry).map(([id, character]) => {
+    if (!character || typeof character !== "object" || Array.isArray(character)) {
+      throw new TypeError("Invalid character record: " + id);
+    }
+    return [id, {...character, visibility: "public"}];
+  }));
+}
+
 export function sanitiseRelations(value, hiddenIds) {
   if (typeof value === "string") {
     if (hiddenIds.has(value)) return OMIT;
