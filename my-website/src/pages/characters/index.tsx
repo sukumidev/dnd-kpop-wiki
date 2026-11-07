@@ -15,6 +15,7 @@ import {
 import {sortFactionCharacters} from "@site/src/utils/characterFactionOrdering";
 import styles from "./styles.module.css";
 import {getPublicFactionHref} from "@site/src/data/publicRoutes";
+import characterDirectoryOverrides from "@site/src/data/characterDirectoryOverrides.json";
 
 import {
   characterList,
@@ -40,20 +41,10 @@ type RealmSection = {
 };
 
 const NO_FACTION_GROUP_ID = "__no-faction__";
-const HIDDEN_DIRECTORY_CHARACTER_IDS = new Set([
-  "tvxq-jaejoong",
-  "tvxq-junsu",
-  "tvxq-yoochun",
-  // Los Diez Omegas: fichas pendientes de foto.
-  "omega-x-hyuk",
-  "omega-x-jehyun",
-  "omega-x-kevin",
-  "omega-x-sebin",
-  "omega-x-taedong",
-  "omega-x-xen",
-]);
+const HIDDEN_DIRECTORY_CHARACTER_IDS = new Set<string>(characterDirectoryOverrides.exclude);
+const ALWAYS_INCLUDED_CHARACTER_IDS = new Set<string>(characterDirectoryOverrides.alwaysInclude);
 const directoryCharacters = characterList.filter(
-  (character) => character.id === "enemy-seungri" || (
+  (character) => ALWAYS_INCLUDED_CHARACTER_IDS.has(character.id) || (
     !mythicCharacterIds.has(character.id) && !HIDDEN_DIRECTORY_CHARACTER_IDS.has(character.id)
   ),
 );
