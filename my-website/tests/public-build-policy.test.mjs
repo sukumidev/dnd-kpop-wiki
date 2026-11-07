@@ -1,4 +1,6 @@
 import assert from "node:assert/strict";
+import fs from "node:fs";
+import path from "node:path";
 import {copyAllowed, stripHiddenCharacterLinks, supplementalPublicCharacterImages} from "../scripts/build-public.mjs";
 import test from "node:test";
 import {
@@ -180,4 +182,21 @@ test("public cosmology retains deity profiles but removes hidden character links
   assert.equal(result["public-deity"].characterId, "npc-hero");
   assert.deepEqual(result["public-deity"].notes, ["public note"]);
   for (const id of hidden) assert.equal(JSON.stringify(result).includes(id), false);
+});
+
+test("public sanitization excludes hidden IDs from client-side curated lists", () => {
+  const registry = JSON.parse(fs.readFileSync(path.join(process.cwd(), "src/data/characters.json"), "utf8"));
+  const hiddenIds = new Set(Object.entries(registry)
+    .filter(([, record]) => record.visibility !== "public").map(([id]) => id));
+  const idols = JSON.parse(fs.readFileSync(path.join(process.cwd(), "src/data/idolCharacterIds.json"), "utf8"));
+  const overrides = JSON.parse(fs.readFileSync(path.join(process.cwd(), "src/data/characterDirectoryOverrides.json"), "utf8"));
+  const clean = sanitiseRelations({idols, overrides}, hiddenIds);
+  const forbidden = restrictedIdentifiers(
+    Object.fromEntries([...hiddenIds].map(id => [id, registry[id]])),
+    [],
+  );
+  assert.deepEqual(findLeaks(JSON.stringify(clean), forbidden), []);
+  assert.ok(clean.idols.length > 0);
+  assert.equal(clean.overrides.alwaysInclude.includes("enemy-seungri"), false);
+  assert.equal(clean.overrides.exclude.includes("tvxq-jaejoong"), false);
 });
