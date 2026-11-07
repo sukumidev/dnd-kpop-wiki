@@ -130,20 +130,25 @@ function DeckOfFateIntro(): React.ReactElement {
       <span className={styles.narrativeKicker}>La aventura</span>
       <h2 id="deck-of-fate-title" className={styles.narrativeTitle}>Deck of Fate</h2>
       <div className={styles.campaignIntroGrid}>
-        <div className={styles.campaignNarrative}>
-          <p>
-            En este mundo de magia antigua y reinos divididos, un grupo de
-            aventureros busca las Cartas del Destino. Sus encuentros,
-            decisiones y alianzas entrelazan historias que todavía están
-            por escribirse.
-          </p>
-          <p>
-            Conoce a quienes protagonizan esta aventura y sigue las
-            crónicas de su viaje por Hallyura.
-          </p>
-          <Link className={styles.narrativeLink} to="/sessions">
-            Leer las crónicas <span aria-hidden="true">→</span>
-          </Link>
+        <div className={styles.campaignMain}>
+          <div className={styles.campaignNarrative}>
+            <p>
+              En este mundo de magia antigua y reinos divididos, un grupo de
+              aventureros busca las Cartas del Destino. Sus encuentros,
+              decisiones y alianzas entrelazan historias que todavía están
+              por escribirse.
+            </p>
+            <p>
+              Conoce a quienes protagonizan esta aventura y sigue las
+              crónicas de su viaje por Hallyura.
+            </p>
+            <Link className={styles.narrativeLink} to="/sessions">
+              Leer las crónicas <span aria-hidden="true">→</span>
+            </Link>
+          </div>
+          <div className={styles.campaignQuests}>
+            <CompactQuestDashboard />
+          </div>
         </div>
         <CampaignStatus />
       </div>
@@ -254,11 +259,8 @@ export default function HomeDashboard(): React.ReactElement {
       <WorldIntro />
       <RealmGallery />
       <WorldInMotion />
-      <DeckOfFateIntro />
       <ProtagonistCards />
-      <div className={styles.questsSection}>
-        <CompactQuestDashboard />
-      </div>
+      <DeckOfFateIntro />
       <ExploreCarousel />
       <RecentActivity />
       <TableTools />
