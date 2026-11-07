@@ -10,7 +10,7 @@ import {
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const PUBLIC_OUT = path.join(ROOT, "build-public");
-const outputsToAudit = new Set([".html", ".js", ".json", ".css", ".xml", ".txt", ".svg", ".map", ".mjs", ".webmanifest", ".md", ".mdx"]);
+const outputsToAudit = new Set([".html", ".js", ".json", ".css", ".xml", ".txt", ".svg", ".map", ".mjs", ".webmanifest", ".md", ".mdx", ".ts", ".tsx", ".jsx"]);
 
 const readJSON = async (file) => JSON.parse(await fs.readFile(file, "utf8"));
 async function writeJSON(file, value) {
@@ -308,7 +308,9 @@ async function main() {
     await sanitiseAuthoredDocs(stage, hiddenIds);
     await generateMysteryPages(stage, teasers);
     // Cheap fail-closed check before the expensive Docusaurus compilation.
-    await auditOutput(path.join(stage, "src/data"), forbidden);
+    // Client-side TS/TSX constants are bundled even when JSON registries are sanitized.
+    // Audit the entire staged source before compilation to catch reserved identifiers early.
+    await auditOutput(path.join(stage, "src"), forbidden);
     await auditOutput(path.join(stage, "docs"), forbidden);
     // An expandable DMVault is presentation, not access control; never ship it.
     for (const file of await walk(path.join(stage, "docs"))) {
