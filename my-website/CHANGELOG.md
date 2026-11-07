@@ -2,7 +2,7 @@
 
 Registro de los cambios relevantes de **Hallyura Wiki**. Este archivo sigue el enfoque de [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/) y las convenciones descritas en [`VERSIONING.md`](./VERSIONING.md).
 
-**Estado inicial:** el repositorio aún no tiene un GitHub Release publicado y el `package.json` consultado conserva la versión `0.0.0`. `v0.1.0` es la **primera versión formal propuesta**, no un release existente.
+**Estado del candidato (2026-11-06):** `package.json` y `package-lock.json` están preparados con la versión `0.1.0` en la rama `release/v0.1.0-20261106`. Todavía no se ha publicado un GitHub Release ni se ha creado su tag desde esta preparación; la fecha es **prevista**, no una fecha de publicación confirmada.
 
 > **Nota de seguridad narrativa:** este changelog puede consultarse públicamente. No añadir spoilers, identidades ocultas, secretos de la DM ni detalles de sesiones aún no revelados.
 
@@ -20,7 +20,7 @@ Cambios acumulados que todavía **no** se han asignado a un tag publicado.
 
 ---
 
-## Preparación de `v0.1.0` — sin publicar
+## Preparación de `v0.1.0` — fecha prevista: 2026-11-06 (sin publicar)
 
 Esta sección es un **inventario de referencia de capacidades ya presentes en el repositorio**, no una reconstrucción de cuándo se desarrolló cada una ni una afirmación de que estén todas terminadas o desplegadas. Al publicar el primer release, revisar los puntos, trasladar los confirmados a una sección `## [0.1.0] - AAAA-MM-DD` y dejar el resto en `Sin publicar` o fuera del alcance de la versión.
 
@@ -35,6 +35,7 @@ Esta sección es un **inventario de referencia de capacidades ya presentes en el
 
 ### Pendiente antes de publicar `v0.1.0`
 
+- Alcance propuesto y notas completas: [`dev-docs/releases/v0.1.0.md`](./dev-docs/releases/v0.1.0.md), preparado el **2026-11-06** (todavía sin tag ni publicación).
 - Confirmar el alcance exacto que incluirá el primer release.
 - Cambiar la versión en `my-website/package.json` y `my-website/package-lock.json` de forma sincronizada.
 - Ejecutar los quality gates descritos en `VERSIONING.md` y comprobar sus resultados.
