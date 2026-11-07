@@ -1,22 +1,12 @@
-// These factions appear in public data but do not have a published profile yet.
-// Remove an ID when its profile is published; the strict build checks the route.
-const factionsWithoutProfile = new Set([
-  'os-guild',
-  'ciudadanos-de-hyberia',
-  'andteam',
-  'ciudadanos-de-jeyperia',
-  'lngshot',
-  'ciudadanos-de-sylmorien',
-  'ncit',
-  'ciudadanos-de-hotou',
-  'mascotas',
-  'loossemble',
-]);
+import publishedFactionRoutes from "./publicFactionRoutes.json";
+
+// Only actual MDX profiles may be linked. Build regenerates the manifest
+// using each faction's frontmatter factionId and slug.
+const factionRoutes = publishedFactionRoutes as Record<string, string>;
 
 export function getPublicFactionHref(factionId?: string | null): string | undefined {
-  return factionId && !factionsWithoutProfile.has(factionId)
-    ? `/factions/${factionId}`
-    : undefined;
+  if (!factionId) return undefined;
+  return factionRoutes[factionId];
 }
 
 const realmRoutes: Record<string, string> = {

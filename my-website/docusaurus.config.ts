@@ -3,6 +3,7 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 import characterIdMapping from './scripts/character-id-mapping.json';
 import characterRegistry from './src/data/characters.json';
+import {filterPublicRedirects} from './scripts/public-redirects';
 
 const isPublicBuild = process.env.HALLYURA_PUBLIC_BUILD === 'true';
 const allowedCharacterIds = new Set(Object.keys(characterRegistry));
@@ -76,7 +77,7 @@ const config: Config = {
 
   plugins: [
     ['@docusaurus/plugin-client-redirects', {
-      redirects: [
+      redirects: filterPublicRedirects([
         ...characterIdRedirects,
         ...newCharacterIdRedirects,
         {from: '/characters/npc/nct-taeil', to: '/characters/npc/enemy-taeil'},
@@ -91,7 +92,7 @@ const config: Config = {
         {from: '/cosmology/deities/tvxq-yoochun', to: '/characters/npc/tvxq-yoochun'},
         {from: '/cosmology/deities/tvxq-changmin', to: '/characters/npc/tvxq-changmin'},
         {from: '/cosmology/deities/t1-gumayusi', to: '/cosmology/deities/t1-peyz'},
-      ],
+      ], isPublicBuild, allowedCharacterIds),
     }],
   ],
 

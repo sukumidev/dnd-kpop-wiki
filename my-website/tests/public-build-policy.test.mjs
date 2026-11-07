@@ -1,9 +1,12 @@
 import assert from "node:assert/strict";
-import {copyAllowed, stripHiddenCharacterLinks} from "../scripts/build-public.mjs";
+import fs from "node:fs";
+import path from "node:path";
+import {copyAllowed, stripHiddenCharacterLinks, supplementalPublicCharacterImages} from "../scripts/build-public.mjs";
 import test from "node:test";
 import {
   publicCharacters,
   sanitiseRelations,
+  sanitisePublicCosmology,
   restrictedTerms,
   restrictedIdentifiers,
   approvedTeasers,
@@ -129,4 +132,71 @@ test("public authored docs retain narrative labels but unlink hidden characters"
     "Secret god",
     "[Known hero](/characters/npc/npc-hero)",
   ].join(" | "));
+});
+
+test("explicit public cosmology and homepage assets are allowed without exposing hidden portraits", () => {
+  const hidden = {
+    "npc-hidden": {id: "npc-hidden", imageSrc: "/img/characters/enemy/hidden.webp"},
+  };
+  const publicCosmology = {
+    "deity-no-character": {imageSrc: "/img/characters/mythic/public-deity.webp"},
+    "npc-hidden": {imageSrc: "/img/characters/enemy/hidden.webp"},
+    "alternate-hidden-id": {characterId: "npc-hidden", imageSrc: "/img/characters/enemy/other.webp"},
+  };
+  const homepage = 'imageSrc: "/img/characters/txt/home-illustration.webp"';
+  const cards = '[{id: "pc-imugi", imageFile: "imugi-card.webp"}]';
+  const {allowed, required} = supplementalPublicCharacterImages(publicCosmology, hidden, homepage, cards);
+  assert.deepEqual([...allowed].sort(), [
+    "/img/characters/mythic/public-deity.webp",
+    "/img/characters/party/cards/imugi-card.webp",
+    "/img/characters/txt/home-illustration.webp",
+  ].sort());
+  assert.deepEqual([...required], ["/img/characters/party/cards/imugi-card.webp"]);
+  assert.ok(!allowed.has("/img/characters/enemy/hidden.webp"));
+});
+
+test("public cosmology retains deity profiles but removes hidden character links", () => {
+  const registry = {
+    "astro-myungjun": {
+      id: "astro-myungjun", title: "MYUNGJUN",
+      characterId: "astro-mj", docPath: "cosmology/deities/astro-myungjun",
+    },
+    "bg-gdragon": {
+      id: "bg-gdragon", title: "G-DRAGON",
+      characterId: "bigbang-g-dragon", docPath: "cosmology/deities/bg-gdragon",
+    },
+    "npc-private": {
+      id: "npc-private", title: "Do not publish",
+      characterId: "npc-private",
+    },
+    "public-deity": {
+      id: "public-deity", title: "Visible deity",
+      characterId: "npc-hero", notes: ["npc-private", "public note"],
+    },
+  };
+  const hidden = new Set(["astro-mj", "bigbang-g-dragon", "npc-private"]);
+  const result = sanitisePublicCosmology(registry, hidden);
+  assert.deepEqual(Object.keys(result), ["astro-myungjun", "bg-gdragon", "public-deity"]);
+  assert.equal(result["astro-myungjun"].characterId, undefined);
+  assert.equal(result["bg-gdragon"].characterId, undefined);
+  assert.equal(result["public-deity"].characterId, "npc-hero");
+  assert.deepEqual(result["public-deity"].notes, ["public note"]);
+  for (const id of hidden) assert.equal(JSON.stringify(result).includes(id), false);
+});
+
+test("public sanitization excludes hidden IDs from client-side curated lists", () => {
+  const registry = JSON.parse(fs.readFileSync(path.join(process.cwd(), "src/data/characters.json"), "utf8"));
+  const hiddenIds = new Set(Object.entries(registry)
+    .filter(([, record]) => record.visibility !== "public").map(([id]) => id));
+  const idols = JSON.parse(fs.readFileSync(path.join(process.cwd(), "src/data/idolCharacterIds.json"), "utf8"));
+  const overrides = JSON.parse(fs.readFileSync(path.join(process.cwd(), "src/data/characterDirectoryOverrides.json"), "utf8"));
+  const clean = sanitiseRelations({idols, overrides}, hiddenIds);
+  const forbidden = restrictedIdentifiers(
+    Object.fromEntries([...hiddenIds].map(id => [id, registry[id]])),
+    [],
+  );
+  assert.deepEqual(findLeaks(JSON.stringify(clean), forbidden), []);
+  assert.ok(clean.idols.length > 0);
+  assert.equal(clean.overrides.alwaysInclude.includes("enemy-seungri"), false);
+  assert.equal(clean.overrides.exclude.includes("tvxq-jaejoong"), false);
 });

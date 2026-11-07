@@ -15,7 +15,7 @@ const protagonistCards = [
   {id: "pc-minjae", name: "Minjae", imageFile: "minjae-card.webp"},
   {id: "pc-kao", name: "Kao", imageFile: "kao-card.webp"},
   {id: "pc-kiyori", name: "Kiyori", imageFile: "kiyori-card.webp"},
-  {id: "pc-imugi", name: "Imugi", imageFile: "Imugi-card.webp"},
+  {id: "pc-imugi", name: "Imugi", imageFile: "imugi-card.webp"},
   {id: "pc-soobin", name: "Soobin", imageFile: "soobin-card.webp"},
   
 ] as const satisfies readonly ProtagonistCard[];

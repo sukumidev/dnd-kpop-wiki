@@ -4,13 +4,13 @@ import path from "node:path";
 import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import {
-  publicCharacters, sanitiseRelations, restrictedTerms, restrictedIdentifiers,
+  publicCharacters, sanitiseRelations, sanitisePublicCosmology, restrictedTerms, restrictedIdentifiers,
   approvedTeasers, findLeaks,
 } from "./public-build-policy.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const PUBLIC_OUT = path.join(ROOT, "build-public");
-const outputsToAudit = new Set([".html", ".js", ".json", ".css", ".xml", ".txt", ".svg", ".map", ".mjs", ".webmanifest", ".md", ".mdx"]);
+const outputsToAudit = new Set([".html", ".js", ".json", ".css", ".xml", ".txt", ".svg", ".map", ".mjs", ".webmanifest", ".md", ".mdx", ".ts", ".tsx", ".jsx"]);
 
 const readJSON = async (file) => JSON.parse(await fs.readFile(file, "utf8"));
 async function writeJSON(file, value) {
@@ -100,6 +100,10 @@ async function sanitizeStage(stage, hiddenIds, publicIds) {
   await writeJSON(path.join(dataDir, "statblocks.json"),
     sanitiseRelations(Object.fromEntries(Object.entries(rawStatblocks)
       .filter(([id]) => publicIds.has(id))), hiddenIds));
+  const rawCosmology = await readJSON(path.join(ROOT, "src/data/cosmology.json"));
+  await writeJSON(path.join(dataDir, "cosmology.json"),
+    sanitisePublicCosmology(rawCosmology, hiddenIds));
+
   const rawDocuments = await readJSON(path.join(ROOT, "src/data/documents.json"));
   const published = rawDocuments.filter((d) =>
     d && d.status === "published" && d.visibility === "public");
@@ -109,7 +113,7 @@ async function sanitizeStage(stage, hiddenIds, publicIds) {
   for (const file of await walk(dataDir)) {
     if (!file.endsWith(".json")) continue;
     const name = path.relative(dataDir, file).split(path.sep).join("/");
-    if (["characters.json", "statblocks.json", "documents.json", "publicMysteries.json"].includes(name)) continue;
+    if (["characters.json", "statblocks.json", "documents.json", "cosmology.json", "publicMysteries.json"].includes(name)) continue;
     await writeJSON(file, sanitiseRelations(await readJSON(file), hiddenIds));
   }
   const mappings = path.join(stage, "scripts/character-id-mapping.json");
@@ -164,6 +168,32 @@ function imageReferences(text) {
   for (const match of text.matchAll(rx)) references.add(match[0].trim());
   return references;
 }
+// Public cosmology portraits and homepage illustrations do not always belong
+// to a Character record. Admit only assets explicitly used by those public
+// surfaces; never whitelist an arbitrary /img/characters/ reference.
+export function supplementalPublicCharacterImages(cosmology, hiddenRegistry, homeSource, cardSource) {
+  const allowed = new Set();
+  const required = new Set();
+  for (const [id, entity] of Object.entries(cosmology)) {
+    if (!entity || hiddenRegistry[id] ||
+        (typeof entity.characterId === "string" && hiddenRegistry[entity.characterId])) continue;
+    if (typeof entity.imageSrc === "string" && entity.imageSrc.startsWith("/img/characters/")) {
+      allowed.add(entity.imageSrc);
+    }
+  }
+  for (const ref of imageReferences(homeSource)) {
+    if (ref.startsWith("/img/characters/")) allowed.add(ref);
+  }
+  // Card filenames are stored separately from the shared image registry.
+  // Read actual card references instead of publishing the entire cards folder.
+  for (const match of cardSource.matchAll(/\bimageFile:\s*"([A-Za-z0-9_-]+\.webp)"/g)) {
+    const ref = "/img/characters/party/cards/" + match[1];
+    allowed.add(ref);
+    required.add(ref);
+  }
+  return {allowed, required};
+}
+
 async function copyImages(stage, publicRegistry, hiddenRegistry, teasers) {
   const allowedCharacterImages = new Set(), hiddenImages = new Set();
   function addCharacterImages(out, character) {
@@ -176,7 +206,13 @@ async function copyImages(stage, publicRegistry, hiddenRegistry, teasers) {
   }
   Object.values(publicRegistry).forEach((c) => addCharacterImages(allowedCharacterImages, c));
   Object.values(hiddenRegistry).forEach((c) => addCharacterImages(hiddenImages, c));
-  const references = new Set();
+  const cosmology = await readJSON(path.join(stage, "src/data/cosmology.json"));
+  const homeSource = await fs.readFile(path.join(stage, "src/data/home.ts"), "utf8");
+  const cardSource = await fs.readFile(path.join(stage, "src/components/ProtagonistCards.tsx"), "utf8");
+  const {allowed: supplementalImages, required: requiredImages} =
+    supplementalPublicCharacterImages(cosmology, hiddenRegistry, homeSource, cardSource);
+  for (const ref of supplementalImages) allowedCharacterImages.add(ref);
+  const references = new Set(requiredImages);
   for (const root of ["src", "docs"]) {
     for (const file of await walk(path.join(stage, root))) {
       if (!/\.(json|ts|tsx|mdx?|css)$/i.test(file)) continue;
@@ -202,6 +238,9 @@ async function copyImages(stage, publicRegistry, hiddenRegistry, teasers) {
     try { await fs.access(source); }
     catch (error) {
       if (error.code !== "ENOENT") throw error;
+      if (requiredImages.has(ref)) {
+        throw new Error("A required public protagonist card asset is missing: " + ref);
+      }
       if (ref.startsWith("/img/mysteries/")) {
         throw new Error("An approved mystery image is not present; publication blocked.");
       }
@@ -269,7 +308,9 @@ async function main() {
     await sanitiseAuthoredDocs(stage, hiddenIds);
     await generateMysteryPages(stage, teasers);
     // Cheap fail-closed check before the expensive Docusaurus compilation.
-    await auditOutput(path.join(stage, "src/data"), forbidden);
+    // Client-side TS/TSX constants are bundled even when JSON registries are sanitized.
+    // Audit the entire staged source before compilation to catch reserved identifiers early.
+    await auditOutput(path.join(stage, "src"), forbidden);
     await auditOutput(path.join(stage, "docs"), forbidden);
     // An expandable DMVault is presentation, not access control; never ship it.
     for (const file of await walk(path.join(stage, "docs"))) {
