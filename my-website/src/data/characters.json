@@ -9550,6 +9550,7 @@
     "visibility": "public",
     "status": "active",
     "regionId": "sylmorien",
+    "imageSrc": "/img/characters/nouera/nouera-gihyeon.webp",
     "firstAppearance": {
       "label": "Sesión 20",
       "sessionId": "20",
@@ -9576,6 +9577,7 @@
     "visibility": "public",
     "status": "active",
     "regionId": "sylmorien",
+    "imageSrc": "/img/characters/nouera/nouera-junpyo.webp",
     "firstAppearance": {
       "label": "Sesión 20",
       "sessionId": "20",
@@ -9599,6 +9601,7 @@
     "visibility": "public",
     "status": "active",
     "regionId": "sylmorien",
+    "imageSrc": "/img/characters/nouera/nouera-hyunjun.webp",
     "firstAppearance": {
       "label": "Sesión 20",
       "sessionId": "20",
@@ -9622,6 +9625,7 @@
     "visibility": "public",
     "status": "active",
     "regionId": "sylmorien",
+    "imageSrc": "/img/characters/nouera/nouera-yuseop.webp",
     "firstAppearance": {
       "label": "Sesión 20",
       "sessionId": "20",
@@ -9645,6 +9649,7 @@
     "visibility": "public",
     "status": "active",
     "regionId": "sylmorien",
+    "imageSrc": "/img/characters/nouera/nouera-lin.webp",
     "firstAppearance": {
       "label": "Sesión 20",
       "sessionId": "20",
@@ -9668,6 +9673,7 @@
     "visibility": "public",
     "status": "active",
     "regionId": "sylmorien",
+    "imageSrc": "/img/characters/nouera/nouera-fan.webp",
     "firstAppearance": {
       "label": "Sesión 20",
       "sessionId": "20",
@@ -9691,6 +9697,7 @@
     "visibility": "public",
     "status": "active",
     "regionId": "sylmorien",
+    "imageSrc": "/img/characters/nouera/nouera-miraku.webp",
     "firstAppearance": {
       "label": "Sesión 20",
       "sessionId": "20",
