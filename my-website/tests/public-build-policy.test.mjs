@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
-import {copyAllowed, stripHiddenCharacterLinks, supplementalPublicCharacterImages} from "../scripts/build-public.mjs";
+import {copyAllowed, stripHiddenCharacterLinks, supplementalPublicCharacterImages, referencedRealmImageAssets} from "../scripts/build-public.mjs";
 import test from "node:test";
 import {
   publicCharacters,
@@ -199,4 +199,40 @@ test("public sanitization excludes hidden IDs from client-side curated lists", (
   assert.ok(clean.idols.length > 0);
   assert.equal(clean.overrides.alwaysInclude.includes("enemy-seungri"), false);
   assert.equal(clean.overrides.exclude.includes("tvxq-jaejoong"), false);
+});
+
+test("public realm illustrations are copied even when image paths are dynamically assembled", () => {
+  const gallery = [
+    '{id:"hyberia", imageFile: "hyberia.webp"}',
+    '{id:"sylmorien", imageFile: "sylmorien.webp"}',
+  ].join("\n");
+  const world = [
+    "const realmImageFiles: Record<string, string> = {",
+    "  hyberia: 'hyberia.webp',",
+    "  jeyperia: 'jeyperia.webp',",
+    "};",
+  ].join("\n");
+  assert.deepEqual([...referencedRealmImageAssets(gallery, world)].sort(), [
+    "/img/realms/hyberia.webp",
+    "/img/realms/jeyperia.webp",
+    "/img/realms/sylmorien.webp",
+  ]);
+});
+
+test("public realm image collector rejects missing or unsafe source mappings", () => {
+  assert.throws(
+    () => referencedRealmImageAssets('imageFile: "../secret.webp"', "const realmImageFiles = {};"),
+    /Cannot determine public realm illustration assets/,
+  );
+});
+
+test("all configured public realm illustrations exist under static assets", () => {
+  const root = process.cwd();
+  const gallery = fs.readFileSync(path.join(root, "src/components/RealmGallery.tsx"), "utf8");
+  const world = fs.readFileSync(path.join(root, "src/pages/world/index.tsx"), "utf8");
+  const images = referencedRealmImageAssets(gallery, world);
+  assert.equal(images.size, 6);
+  for (const asset of images) {
+    assert.equal(fs.existsSync(path.join(root, "static", asset.slice(1))), true, asset);
+  }
 });
