@@ -30,7 +30,7 @@ async function walk(dir) {
   return result;
 }
 
-function copyAllowed(relative, hiddenIds) {
+export function copyAllowed(relative, hiddenIds) {
   const v = relative.split(path.sep).join("/");
   const segments = v.split("/");
   if (segments.some((p) => [
@@ -43,9 +43,33 @@ function copyAllowed(relative, hiddenIds) {
   if (/^src\/data\/.+\.backup\.json$/i.test(v)) return false;
   if (v === "src/data/mysteryTeasers.private.json") return false;
   if (v.startsWith("docs/characters/misc/")) return false;
-  const characterDoc = v.match(/^docs\/characters\/(?:party|npc)\/([^/]+)\.mdx$/);
+  // Do not stage character pages which belong to hidden registry entries,
+  // including pets and deities (not only npc/party pages).
+  const characterDoc = v.match(/^docs\/(?:characters\/[^/]+|cosmology\/deities)\/([^/]+)\.mdx?$/);
   if (characterDoc && hiddenIds.has(characterDoc[1])) return false;
   return true;
+}
+
+// Narrative mentions may stay, but hidden character pages must not be linked.
+export function stripHiddenCharacterLinks(source, hiddenIds) {
+  return source.replace(
+    /\[([^\]\n]+)\]\((\/(?:characters\/(?:npc|party|pet)|cosmology\/deities)\/([a-z0-9-]+)(?:\/)?(?:#[^)]+)?)\)/g,
+    (original, label, _href, id) => hiddenIds.has(id) ? label : original,
+  );
+}
+
+async function sanitiseAuthoredDocs(stage, hiddenIds) {
+  let modified = 0;
+  for (const file of await walk(path.join(stage, "docs"))) {
+    if (!/\.mdx?$/i.test(file)) continue;
+    const original = await fs.readFile(file, "utf8");
+    const clean = stripHiddenCharacterLinks(original, hiddenIds);
+    if (original !== clean) {
+      await fs.writeFile(file, clean);
+      modified++;
+    }
+  }
+  if (modified) console.log("Public MDX/Markdown files with hidden character links replaced: " + modified);
 }
 
 async function stageCopy(stage, hiddenIds) {
@@ -242,6 +266,7 @@ async function main() {
   try {
     await stageCopy(stage, hiddenIds);
     await sanitizeStage(stage, hiddenIds, publicIds);
+    await sanitiseAuthoredDocs(stage, hiddenIds);
     await generateMysteryPages(stage, teasers);
     // Cheap fail-closed check before the expensive Docusaurus compilation.
     await auditOutput(path.join(stage, "src/data"), forbidden);
