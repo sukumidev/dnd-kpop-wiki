@@ -47,6 +47,26 @@
   overflow: hidden;
 }
 
+.miniCard {
+  border-left-color: var(--h-accent-muted);
+  background: color-mix(in srgb, var(--h-bg-raised) 62%, var(--h-bg-page));
+}
+
+.levelBadge {
+  color: var(--h-accent-bright);
+  border: 1px solid color-mix(in srgb, var(--h-accent-muted) 50%, var(--h-border-soft));
+  background: color-mix(in srgb, var(--h-accent-muted) 9%, transparent);
+  padding: 3px 7px;
+  border-radius: 2px;
+  font-size: 0.61rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.miniCard .progressFill { min-width: 0; }
+
 .card::after {
   content: "";
   position: absolute;
