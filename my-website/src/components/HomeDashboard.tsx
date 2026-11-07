@@ -82,6 +82,26 @@ function CampaignStatus() {
 }
 
 
+
+function WorldIntro(): React.ReactElement {
+  return (
+    <section className={styles.worldIntro} aria-labelledby="world-intro-title">
+      <span className={styles.narrativeKicker}>El mundo de Hallyura</span>
+      <h2 id="world-intro-title" className={styles.narrativeTitle}>Bienvenido a Hallyura</h2>
+      <p>
+        Hallyura es un mundo de reinos poderosos, magia viva y leyendas que
+        todavía respiran bajo la superficie. La Gran Guerra de la Tercera Era
+        dejó ciudades heridas, fronteras tensas y cicatrices difíciles de sanar.
+      </p>
+      <p>
+        Hoy, cada territorio conserva su propia memoria, sus costumbres y sus
+        conflictos. Tras una paz frágil, sus habitantes siguen escribiendo
+        nuevas historias.
+      </p>
+    </section>
+  );
+}
+
 function WorldInMotion(): React.ReactElement {
   return (
     <section className={styles.worldSection} aria-labelledby="world-in-motion-title">
@@ -231,6 +251,7 @@ function RecentActivity() {
 export default function HomeDashboard(): React.ReactElement {
   return (
     <div className={`${styles.homeDashboard} hallyura-home-dashboard`}>
+      <WorldIntro />
       <RealmGallery />
       <WorldInMotion />
       <DeckOfFateIntro />
