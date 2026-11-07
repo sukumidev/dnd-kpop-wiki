@@ -14,7 +14,7 @@ export const tableTools: TableTool[] = [
   {name: "Owlbear Rodeo", href: "https://www.owlbear.rodeo/", icon: "⌖"},
 ];
 
-/** Missing values fall back to the latest entry in sessions.json. */
+/** Current campaign snapshot overrides historical session metadata when specified. */
 export const campaignSnapshot: {
   sessionNumber?: number;
   campaignDate?: string;
@@ -22,7 +22,11 @@ export const campaignSnapshot: {
   latestSessionHref?: string;
   /** Party level shown in the landing status panel. */
   level?: number;
-} = {level: 6};
+} = {
+  level: 6,
+  // Current party location; the latest published session retains its historical starting location.
+  location: "Aldea Seongnam",
+};
 
 /**
  * Landing-only level milestone. The main quest records 10 cards at level 6;
