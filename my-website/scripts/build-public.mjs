@@ -4,7 +4,7 @@ import path from "node:path";
 import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import {
-  publicCharacters, sanitiseRelations, restrictedTerms, restrictedIdentifiers,
+  publicCharacters, sanitiseRelations, sanitisePublicCosmology, restrictedTerms, restrictedIdentifiers,
   approvedTeasers, findLeaks,
 } from "./public-build-policy.mjs";
 
@@ -100,6 +100,10 @@ async function sanitizeStage(stage, hiddenIds, publicIds) {
   await writeJSON(path.join(dataDir, "statblocks.json"),
     sanitiseRelations(Object.fromEntries(Object.entries(rawStatblocks)
       .filter(([id]) => publicIds.has(id))), hiddenIds));
+  const rawCosmology = await readJSON(path.join(ROOT, "src/data/cosmology.json"));
+  await writeJSON(path.join(dataDir, "cosmology.json"),
+    sanitisePublicCosmology(rawCosmology, hiddenIds));
+
   const rawDocuments = await readJSON(path.join(ROOT, "src/data/documents.json"));
   const published = rawDocuments.filter((d) =>
     d && d.status === "published" && d.visibility === "public");
@@ -109,7 +113,7 @@ async function sanitizeStage(stage, hiddenIds, publicIds) {
   for (const file of await walk(dataDir)) {
     if (!file.endsWith(".json")) continue;
     const name = path.relative(dataDir, file).split(path.sep).join("/");
-    if (["characters.json", "statblocks.json", "documents.json", "publicMysteries.json"].includes(name)) continue;
+    if (["characters.json", "statblocks.json", "documents.json", "cosmology.json", "publicMysteries.json"].includes(name)) continue;
     await writeJSON(file, sanitiseRelations(await readJSON(file), hiddenIds));
   }
   const mappings = path.join(stage, "scripts/character-id-mapping.json");
