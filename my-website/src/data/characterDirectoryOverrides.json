@@ -1,0 +1,16 @@
+{
+  "alwaysInclude": [
+    "enemy-seungri"
+  ],
+  "exclude": [
+    "tvxq-jaejoong",
+    "tvxq-junsu",
+    "tvxq-yoochun",
+    "omega-x-hyuk",
+    "omega-x-jehyun",
+    "omega-x-kevin",
+    "omega-x-sebin",
+    "omega-x-taedong",
+    "omega-x-xen"
+  ]
+}
