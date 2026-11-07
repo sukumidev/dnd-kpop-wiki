@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import {copyAllowed, stripHiddenCharacterLinks} from "../scripts/build-public.mjs";
 import test from "node:test";
 import {
   publicCharacters,
@@ -104,4 +105,28 @@ test("narrative opt-in still blocks private record identifiers", () => {
   assert.deepEqual(findLeaks("A rumor about Secret Name", terms), []);
   assert.deepEqual(findLeaks("The npc-secret was mentioned", terms), ["npc-secret"]);
   assert.deepEqual(findLeaks("Source private-diary", terms), ["private-diary"]);
+});
+
+test("public stage omits hidden pet and deity MDX pages", () => {
+  const hiddenIds = new Set(["pet-secret", "astro-secret"]);
+  assert.equal(copyAllowed("docs/characters/pet/pet-secret.mdx", hiddenIds), false);
+  assert.equal(copyAllowed("docs/cosmology/deities/astro-secret.mdx", hiddenIds), false);
+  assert.equal(copyAllowed("docs/characters/npc/npc-visible.mdx", hiddenIds), true);
+  assert.equal(copyAllowed("docs/campaign/sessions/16.mdx", hiddenIds), true);
+});
+
+test("public authored docs retain narrative labels but unlink hidden characters", () => {
+  const hiddenIds = new Set(["npc-secret", "pet-secret", "astro-secret"]);
+  const source = [
+    "[Unknown traveler](/characters/npc/npc-secret)",
+    "[Secret pet](/characters/pet/pet-secret)",
+    "[Secret god](/cosmology/deities/astro-secret#story)",
+    "[Known hero](/characters/npc/npc-hero)",
+  ].join(" | ");
+  assert.equal(stripHiddenCharacterLinks(source, hiddenIds), [
+    "Unknown traveler",
+    "Secret pet",
+    "Secret god",
+    "[Known hero](/characters/npc/npc-hero)",
+  ].join(" | "));
 });
