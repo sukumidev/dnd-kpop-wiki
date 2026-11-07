@@ -53,6 +53,19 @@ const sidebars: SidebarsConfig = {
       href: '/calendar/',
     },
 
+    {
+      type: 'category',
+      label: '✦ Actualizaciones',
+      collapsed: true,
+      link: {
+        type: 'doc',
+        id: 'releases/index',
+      },
+      items: [
+        'releases/v0.1.0',
+      ],
+    },
+
   ],
 };
 
