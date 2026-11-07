@@ -91,6 +91,22 @@
   line-height: 1.12;
 }
 
+.worldIntro {
+  max-width: 800px;
+  margin: 0 auto clamp(40px, 6vw, 68px);
+  padding: 12px 8px 0;
+  text-align: center;
+}
+
+.worldIntro p {
+  max-width: 70ch;
+  margin: 0 auto 13px;
+  color: var(--h-text-secondary);
+  font-family: var(--h-font-editorial);
+  font-size: clamp(1.06rem, 1.65vw, 1.27rem);
+  line-height: 1.65;
+}
+
 .worldSection {
   padding: 32px 0 4px;
   border-top: 1px solid var(--h-border-soft);
