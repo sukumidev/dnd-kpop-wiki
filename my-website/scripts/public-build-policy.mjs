@@ -31,6 +31,25 @@ export function sanitiseRelations(value, hiddenIds) {
   return value;
 }
 
+// Keep publicly authored mythic profiles even when their optional character
+// reference is private. The character record remains excluded from the build.
+export function sanitisePublicCosmology(cosmology, hiddenIds) {
+  if (!cosmology || typeof cosmology !== "object" || Array.isArray(cosmology)) {
+    throw new TypeError("Expected a cosmology ID-indexed registry.");
+  }
+  const result = {};
+  for (const [id, entity] of Object.entries(cosmology)) {
+    if (hiddenIds.has(id) || !entity || typeof entity !== "object" || Array.isArray(entity)) continue;
+    const copy = {...entity};
+    if (typeof copy.characterId === "string" && hiddenIds.has(copy.characterId)) {
+      delete copy.characterId;
+    }
+    const safe = sanitiseRelations(copy, hiddenIds);
+    if (safe !== OMIT) result[id] = safe;
+  }
+  return result;
+}
+
 export function containsTerm(text, term) {
   if (!term || typeof text !== "string") return false;
   const escaped = term.replace(/[.*+?^$()|[\]{}\\]/g, "\\$&");
