@@ -4,7 +4,7 @@ import path from "node:path";
 import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import {
-  publicCharacters, sanitiseRelations, restrictedTerms,
+  publicCharacters, sanitiseRelations, restrictedTerms, restrictedIdentifiers,
   approvedTeasers, findLeaks,
 } from "./public-build-policy.mjs";
 
@@ -225,8 +225,18 @@ async function main() {
   const publicIds = new Set(Object.keys(publicRegistry));
   const privateDocuments = (await readJSON(path.join(ROOT, "src/data/documents.json")))
     .filter((d) => !(d.status === "published" && d.visibility === "public"));
-  const forbidden = restrictedTerms(hidden, privateDocuments, publicRegistry);
-  const teasers = approvedTeasers(await getPrivateTeasers(), hidden, forbidden);
+  const strictForbidden = restrictedTerms(hidden, privateDocuments, publicRegistry);
+  // Public narrative descriptions can legitimately mention unrevealed names.
+  // This opt-in relaxes only title/name matching, never the hidden/private ID audit.
+  const allowNarrativeSpoilers = process.env.HALLYURA_ALLOW_NARRATIVE_SPOILERS === "true";
+  const forbidden = allowNarrativeSpoilers
+    ? restrictedIdentifiers(hidden, privateDocuments)
+    : strictForbidden;
+  if (allowNarrativeSpoilers) {
+    console.warn("Narrative spoiler name audit relaxed; hidden/private IDs remain blocked.");
+  }
+  // Mystery teasers always retain the strict title/name checks.
+  const teasers = approvedTeasers(await getPrivateTeasers(), hidden, strictForbidden);
   const stage = await fs.mkdtemp(path.join(os.tmpdir(), "hallyura-public-"));
   let succeeded = false;
   try {

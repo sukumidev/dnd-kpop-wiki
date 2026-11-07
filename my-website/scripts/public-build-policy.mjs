@@ -48,6 +48,15 @@ export function findLeaks(text, forbidden, max = 25) {
   return leaks;
 }
 
+// Relax only narrative name/title matching when explicitly opted in.
+// Private record identifiers remain blocked in public output audits.
+export function restrictedIdentifiers(hidden, privateDocuments) {
+  return new Set([
+    ...Object.keys(hidden),
+    ...privateDocuments.map((document) => document.id).filter((id) => typeof id === "string"),
+  ]);
+}
+
 export function restrictedTerms(hidden, privateDocuments, publicRegistry) {
   const terms = new Set([...Object.keys(hidden), ...privateDocuments.map((d) => d.id)]);
   const publicTitles = new Set(Object.values(publicRegistry)

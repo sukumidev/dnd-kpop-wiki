@@ -4,6 +4,7 @@ import {
   publicCharacters,
   sanitiseRelations,
   restrictedTerms,
+  restrictedIdentifiers,
   approvedTeasers,
   containsTerm,
   findLeaks,
@@ -92,4 +93,15 @@ test("leak scanner matches exact terms rather than arbitrary substrings", () => 
   assert.ok(containsTerm("The npc-secret was mentioned.", "npc-secret"));
   assert.equal(containsTerm("npc-secretary", "npc-secret"), false);
   assert.deepEqual(findLeaks("A character was called Secret Name.", new Set(["Secret Name","npc-secret"])),["Secret Name"]);
+});
+
+test("narrative opt-in still blocks private record identifiers", () => {
+  const terms = restrictedIdentifiers(hidden, [{id: "private-diary", title: "The Lost Diary"}]);
+  assert.ok(terms.has("npc-secret"));
+  assert.ok(terms.has("private-diary"));
+  assert.ok(!terms.has("Secret Name"));
+  assert.ok(!terms.has("The Lost Diary"));
+  assert.deepEqual(findLeaks("A rumor about Secret Name", terms), []);
+  assert.deepEqual(findLeaks("The npc-secret was mentioned", terms), ["npc-secret"]);
+  assert.deepEqual(findLeaks("Source private-diary", terms), ["private-diary"]);
 });
