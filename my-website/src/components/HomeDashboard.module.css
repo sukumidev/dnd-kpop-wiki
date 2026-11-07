@@ -21,6 +21,7 @@
 }
 
 .toolsSection {
+  margin-top: 62px;
   padding: 19px 0 23px;
   border-top: 1px solid var(--h-border-soft);
   border-bottom: 1px solid var(--h-border-soft);
@@ -71,17 +72,80 @@
 
 .externalMark { color: var(--h-text-muted); }
 
-.campaignGrid {
+.narrativeKicker {
+  display: block;
+  margin-bottom: 9px;
+  color: var(--h-accent-muted);
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+}
+
+.homeDashboard .narrativeTitle {
+  margin: 0 0 16px;
+  color: var(--h-text);
+  font-family: var(--h-font-editorial);
+  font-size: clamp(1.85rem, 3.4vw, 2.75rem);
+  font-weight: 600;
+  line-height: 1.12;
+}
+
+.worldSection {
+  padding: 32px 0 4px;
+  border-top: 1px solid var(--h-border-soft);
+}
+
+.worldSection p,
+.campaignNarrative p {
+  max-width: 72ch;
+  margin: 0 0 14px;
+  color: var(--h-text-secondary);
+  font-size: clamp(0.92rem, 1.3vw, 1.02rem);
+  line-height: 1.7;
+}
+
+.narrativeLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+  color: var(--h-accent);
+  font-size: 0.84rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.narrativeLink:hover {
+  color: var(--h-accent-bright);
+  text-decoration: none;
+}
+
+.campaignSection {
+  margin-top: clamp(48px, 6vw, 72px);
+  padding: 30px 0 6px;
+  border-top: 1px solid var(--h-border-soft);
+}
+
+.campaignIntroGrid {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(210px, 250px);
   gap: clamp(28px, 4vw, 48px);
   align-items: start;
-  margin-top: 50px;
+  margin-top: 24px;
+}
+
+.campaignNarrative { min-width: 0; }
+
+.questsSection {
+  max-width: 960px;
+  margin-top: clamp(56px, 7vw, 78px);
+  padding-top: 32px;
+  border-top: 1px solid var(--h-border-soft);
 }
 
 .statusPanel {
-  position: sticky;
-  top: calc(var(--ifm-navbar-height) + 22px);
+  position: static;
   padding: 19px;
   border: 1px solid var(--h-border-soft);
   border-top-color: var(--h-warning);
@@ -255,8 +319,8 @@
 }
 
 @media (max-width: 860px) {
-  .campaignGrid { grid-template-columns: 1fr; }
-  .statusPanel { position: static; grid-row: 1; }
+  .campaignIntroGrid { grid-template-columns: 1fr; }
+  .statusPanel { position: static; }
   .carouselTrack { grid-auto-columns: clamp(260px, 58%, 500px); }
   .recentList { grid-template-columns: 1fr; }
 }
@@ -265,7 +329,7 @@
   .homeDashboard { margin-top: 24px; }
   .toolList { display: grid; grid-template-columns: 1fr; }
   .toolCard { width: 100%; }
-  .campaignGrid { gap: 38px; margin-top: 40px; }
+  .campaignIntroGrid { gap: 22px; margin-top: 18px; }
   .exploreSection { margin-top: 58px; }
   .sectionHeader { align-items: center; }
   .carouselTrack { grid-auto-columns: calc(100% - 24px); gap: 11px; }
