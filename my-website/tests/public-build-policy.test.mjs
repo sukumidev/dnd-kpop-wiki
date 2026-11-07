@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import {copyAllowed, stripHiddenCharacterLinks} from "../scripts/build-public.mjs";
+import {copyAllowed, stripHiddenCharacterLinks, supplementalPublicCharacterImages} from "../scripts/build-public.mjs";
 import test from "node:test";
 import {
   publicCharacters,
@@ -129,4 +129,25 @@ test("public authored docs retain narrative labels but unlink hidden characters"
     "Secret god",
     "[Known hero](/characters/npc/npc-hero)",
   ].join(" | "));
+});
+
+test("explicit public cosmology and homepage assets are allowed without exposing hidden portraits", () => {
+  const hidden = {
+    "npc-hidden": {id: "npc-hidden", imageSrc: "/img/characters/enemy/hidden.webp"},
+  };
+  const publicCosmology = {
+    "deity-no-character": {imageSrc: "/img/characters/mythic/public-deity.webp"},
+    "npc-hidden": {imageSrc: "/img/characters/enemy/hidden.webp"},
+    "alternate-hidden-id": {characterId: "npc-hidden", imageSrc: "/img/characters/enemy/other.webp"},
+  };
+  const homepage = 'imageSrc: "/img/characters/txt/home-illustration.webp"';
+  const cards = '[{id: "pc-imugi", imageFile: "imugi-card.webp"}]';
+  const {allowed, required} = supplementalPublicCharacterImages(publicCosmology, hidden, homepage, cards);
+  assert.deepEqual([...allowed].sort(), [
+    "/img/characters/mythic/public-deity.webp",
+    "/img/characters/party/cards/imugi-card.webp",
+    "/img/characters/txt/home-illustration.webp",
+  ].sort());
+  assert.deepEqual([...required], ["/img/characters/party/cards/imugi-card.webp"]);
+  assert.ok(!allowed.has("/img/characters/enemy/hidden.webp"));
 });
