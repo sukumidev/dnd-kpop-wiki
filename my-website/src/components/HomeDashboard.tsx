@@ -1,7 +1,7 @@
 import React, {useCallback, useEffect, useMemo, useRef, useState} from "react";
 import Link from "@docusaurus/Link";
 
-import CompactQuestDashboard, {getActiveQuestCount} from "./CompactQuestDashboard";
+import CompactQuestDashboard from "./CompactQuestDashboard";
 import ProtagonistCards from "./ProtagonistCards";
 import RealmGallery from "./RealmGallery";
 import {campaignSnapshot, exploreSections, tableTools} from "@site/src/data/home";
@@ -70,8 +70,8 @@ function CampaignStatus() {
           <dd>{location ?? "Sin registrar"}</dd>
         </div>
         <div>
-          <dt>Quests activas</dt>
-          <dd>{getActiveQuestCount()}</dd>
+          <dt>Nivel actual</dt>
+          <dd>{campaignSnapshot.level ?? "Sin registrar"}</dd>
         </div>
       </dl>
       <Link className={styles.sessionLink} to={latestHref}>
