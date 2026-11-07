@@ -20,7 +20,7 @@ Cambios acumulados que todavía **no** se han asignado a un tag publicado.
 
 ---
 
-## Preparación de `v0.1.0` — sin publicar
+## Preparación de `v0.1.0` — fecha prevista: 2026-11-06 (sin publicar)
 
 Esta sección es un **inventario de referencia de capacidades ya presentes en el repositorio**, no una reconstrucción de cuándo se desarrolló cada una ni una afirmación de que estén todas terminadas o desplegadas. Al publicar el primer release, revisar los puntos, trasladar los confirmados a una sección `## [0.1.0] - AAAA-MM-DD` y dejar el resto en `Sin publicar` o fuera del alcance de la versión.
 
@@ -35,6 +35,7 @@ Esta sección es un **inventario de referencia de capacidades ya presentes en el
 
 ### Pendiente antes de publicar `v0.1.0`
 
+- Alcance propuesto y notas completas: [`dev-docs/releases/v0.1.0.md`](./dev-docs/releases/v0.1.0.md), preparado el **2026-11-06** (todavía sin tag ni publicación).
 - Confirmar el alcance exacto que incluirá el primer release.
 - Cambiar la versión en `my-website/package.json` y `my-website/package-lock.json` de forma sincronizada.
 - Ejecutar los quality gates descritos en `VERSIONING.md` y comprobar sus resultados.
