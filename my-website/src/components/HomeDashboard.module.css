@@ -151,12 +151,15 @@
   margin-top: 24px;
 }
 
-.campaignNarrative { min-width: 0; }
+.campaignMain,
+.campaignNarrative {
+  min-width: 0;
+}
 
-.questsSection {
-  max-width: 960px;
-  margin-top: clamp(56px, 7vw, 78px);
-  padding-top: 32px;
+.campaignQuests {
+  min-width: 0;
+  margin-top: clamp(30px, 4vw, 42px);
+  padding-top: 26px;
   border-top: 1px solid var(--h-border-soft);
 }
 
@@ -346,6 +349,7 @@
   .toolList { display: grid; grid-template-columns: 1fr; }
   .toolCard { width: 100%; }
   .campaignIntroGrid { gap: 22px; margin-top: 18px; }
+  .campaignQuests { margin-top: 30px; padding-top: 24px; }
   .exploreSection { margin-top: 58px; }
   .sectionHeader { align-items: center; }
   .carouselTrack { grid-auto-columns: calc(100% - 24px); gap: 11px; }
