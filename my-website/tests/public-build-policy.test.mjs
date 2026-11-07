@@ -4,6 +4,7 @@ import test from "node:test";
 import {
   publicCharacters,
   sanitiseRelations,
+  sanitisePublicCosmology,
   restrictedTerms,
   restrictedIdentifiers,
   approvedTeasers,
@@ -150,4 +151,33 @@ test("explicit public cosmology and homepage assets are allowed without exposing
   ].sort());
   assert.deepEqual([...required], ["/img/characters/party/cards/imugi-card.webp"]);
   assert.ok(!allowed.has("/img/characters/enemy/hidden.webp"));
+});
+
+test("public cosmology retains deity profiles but removes hidden character links", () => {
+  const registry = {
+    "astro-myungjun": {
+      id: "astro-myungjun", title: "MYUNGJUN",
+      characterId: "astro-mj", docPath: "cosmology/deities/astro-myungjun",
+    },
+    "bg-gdragon": {
+      id: "bg-gdragon", title: "G-DRAGON",
+      characterId: "bigbang-g-dragon", docPath: "cosmology/deities/bg-gdragon",
+    },
+    "npc-private": {
+      id: "npc-private", title: "Do not publish",
+      characterId: "npc-private",
+    },
+    "public-deity": {
+      id: "public-deity", title: "Visible deity",
+      characterId: "npc-hero", notes: ["npc-private", "public note"],
+    },
+  };
+  const hidden = new Set(["astro-mj", "bigbang-g-dragon", "npc-private"]);
+  const result = sanitisePublicCosmology(registry, hidden);
+  assert.deepEqual(Object.keys(result), ["astro-myungjun", "bg-gdragon", "public-deity"]);
+  assert.equal(result["astro-myungjun"].characterId, undefined);
+  assert.equal(result["bg-gdragon"].characterId, undefined);
+  assert.equal(result["public-deity"].characterId, "npc-hero");
+  assert.deepEqual(result["public-deity"].notes, ["public note"]);
+  for (const id of hidden) assert.equal(JSON.stringify(result).includes(id), false);
 });
