@@ -2,7 +2,7 @@
 
 Registro de los cambios relevantes de **Hallyura Wiki**. Este archivo sigue el enfoque de [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/) y las convenciones descritas en [`VERSIONING.md`](./VERSIONING.md).
 
-**Estado inicial:** el repositorio aún no tiene un GitHub Release publicado y el `package.json` consultado conserva la versión `0.0.0`. `v0.1.0` es la **primera versión formal propuesta**, no un release existente.
+**Estado del candidato (2026-11-06):** `package.json` y `package-lock.json` están preparados con la versión `0.1.0` en la rama `release/v0.1.0-20261106`. Todavía no se ha publicado un GitHub Release ni se ha creado su tag desde esta preparación; la fecha es **prevista**, no una fecha de publicación confirmada.
 
 > **Nota de seguridad narrativa:** este changelog puede consultarse públicamente. No añadir spoilers, identidades ocultas, secretos de la DM ni detalles de sesiones aún no revelados.
 
