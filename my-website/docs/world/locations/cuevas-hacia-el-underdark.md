@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Cuevas hacia el Underdark"
 locationId: "cuevas-hacia-el-underdark"
 ---

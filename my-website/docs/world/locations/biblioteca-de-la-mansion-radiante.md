@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Biblioteca de la Mansión Radiante"
 locationId: "biblioteca-de-la-mansion-radiante"
 ---

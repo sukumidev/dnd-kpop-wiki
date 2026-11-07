@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Finca del Clan Hozhisuki"
 locationId: "residencia-castillo-hoshizuki"
 ---

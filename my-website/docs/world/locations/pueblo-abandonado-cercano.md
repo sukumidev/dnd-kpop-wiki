@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Pueblo Abandonado de la Isla Pledis"
 locationId: "pueblo-abandonado-cercano"
 ---

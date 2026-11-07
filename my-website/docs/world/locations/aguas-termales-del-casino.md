@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Aguas termales del Casino"
 locationId: "aguas-termales-del-casino"
 ---

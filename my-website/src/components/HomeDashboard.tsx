@@ -3,6 +3,7 @@ import Link from "@docusaurus/Link";
 
 import CompactQuestDashboard, {getActiveQuestCount} from "./CompactQuestDashboard";
 import ProtagonistCards from "./ProtagonistCards";
+import RealmGallery from "./RealmGallery";
 import {campaignSnapshot, exploreSections, tableTools} from "@site/src/data/home";
 import {
   getSessionHref,
@@ -180,6 +181,7 @@ function RecentActivity() {
 export default function HomeDashboard(): React.ReactElement {
   return (
     <div className={`${styles.homeDashboard} hallyura-home-dashboard`}>
+      <RealmGallery />
       <TableTools />
       <div className={styles.campaignGrid}>
         <CompactQuestDashboard />

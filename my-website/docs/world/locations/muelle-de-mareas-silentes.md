@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Muelle Daegu"
 locationId: "muelle-de-mareas-silentes"
 ---

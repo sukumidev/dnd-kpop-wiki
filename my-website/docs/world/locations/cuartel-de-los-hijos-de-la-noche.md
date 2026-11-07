@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Cuartel de los Hijos de la Noche"
 locationId: "cuartel-de-los-hijos-de-la-noche"
 ---

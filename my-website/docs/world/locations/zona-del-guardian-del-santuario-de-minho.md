@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Zona del guardián del Santuario de Minho"
 locationId: "zona-del-guardian-del-santuario-de-minho"
 ---

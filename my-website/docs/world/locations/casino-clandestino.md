@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Casino Clandestino"
 locationId: "casino-clandestino"
 ---

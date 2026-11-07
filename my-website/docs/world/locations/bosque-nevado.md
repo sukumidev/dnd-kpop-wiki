@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Ruinas de los Antiguos Héroes"
 locationId: "bosque-nevado"
 ---

@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Campamento de goblins"
 locationId: "campamento-de-goblins"
 ---

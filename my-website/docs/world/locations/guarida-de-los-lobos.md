@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Guarida de los Lobos"
 locationId: "guarida-de-los-lobos"
 ---

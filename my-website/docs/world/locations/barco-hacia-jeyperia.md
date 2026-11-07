@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Barco hacia Jeyperia"
 locationId: "barco-hacia-jeyperia"
 ---

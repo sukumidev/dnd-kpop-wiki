@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Torre de los Cazadores de Tiro Largo"
 locationId: "torre-de-los-cazadores-de-tiro-largo"
 ---

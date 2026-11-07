@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Taberna de Puerto Bay Alta"
 locationId: "taberna"
 ---

@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Murallas de Borasek"
 locationId: "murallas-de-borasek"
 ---

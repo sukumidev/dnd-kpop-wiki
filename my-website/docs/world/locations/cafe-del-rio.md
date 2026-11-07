@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Café del Río"
 locationId: "cafe-del-rio"
 ---

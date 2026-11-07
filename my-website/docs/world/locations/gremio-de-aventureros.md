@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Gremio de Aventureros de Hyberia"
 locationId: "gremio-de-aventureros"
 ---

@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Mar entre Jeyperia y Sylmorien"
 locationId: "mar-entre-jeyperia-y-sylmorien"
 ---

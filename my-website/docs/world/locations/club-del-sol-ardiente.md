@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Club del Pacto de Ceniza del Sol Ardiente"
 locationId: "club-del-sol-ardiente"
 ---

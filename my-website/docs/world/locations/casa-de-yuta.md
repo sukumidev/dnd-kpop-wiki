@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Casa de Yuta"
 locationId: "casa-de-yuta"
 ---

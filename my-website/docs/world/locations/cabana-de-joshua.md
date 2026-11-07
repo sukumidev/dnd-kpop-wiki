@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Cabaña de Joshua"
 locationId: "cabana-de-joshua"
 ---

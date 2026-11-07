@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Celda del Santuario de Minho"
 locationId: "celda-del-santuario-de-minho"
 ---

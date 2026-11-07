@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Taberna PAB"
 locationId: "taberna-pab"
 ---

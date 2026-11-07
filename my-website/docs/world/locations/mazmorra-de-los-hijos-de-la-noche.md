@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Mazmorra de los Hijos de la Noche"
 locationId: "mazmorra-de-los-hijos-de-la-noche"
 ---

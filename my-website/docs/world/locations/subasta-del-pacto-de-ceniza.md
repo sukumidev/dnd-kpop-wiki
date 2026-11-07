@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Subasta del Pacto de Ceniza"
 locationId: "subasta-del-pacto-de-ceniza"
 ---

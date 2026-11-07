@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Santuario sumergido"
 locationId: "santuario-sumergido"
 ---

@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Prisión de los Hijos de la Noche"
 locationId: "prision-de-los-hijos-de-la-noche"
 ---

@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Bodega abandonada"
 locationId: "bodega-abandonada"
 ---

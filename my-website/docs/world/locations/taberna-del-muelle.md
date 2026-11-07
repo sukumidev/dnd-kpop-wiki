@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Taberna del Muelle Daegu"
 locationId: "taberna-del-muelle"
 ---

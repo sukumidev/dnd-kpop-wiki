@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Camino al Templo del Sol Naciente"
 locationId: "camino-al-templo-del-sol-naciente"
 ---

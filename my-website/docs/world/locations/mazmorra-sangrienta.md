@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Mazmorra Sangrienta"
 locationId: "mazmorra-sangrienta"
 ---

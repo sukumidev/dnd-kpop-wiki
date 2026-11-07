@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Casa de Minjae y Joshua"
 locationId: "casa-de-minjae-y-joshua"
 ---

@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Templo del Sol Naciente"
 locationId: "templo-del-sol-naciente"
 ---

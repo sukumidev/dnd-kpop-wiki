@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Granja de Dorian, Hotou"
 locationId: "granja-de-dorian-hotou"
 ---

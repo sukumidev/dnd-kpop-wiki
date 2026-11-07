@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Santuario del Dios Minho"
 locationId: "santuario-del-dios-minho"
 ---

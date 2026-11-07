@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Plaza principal de Neocity"
 locationId: "plaza-principal-de-neocity"
 ---

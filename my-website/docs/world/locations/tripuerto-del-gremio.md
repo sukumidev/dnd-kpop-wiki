@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Tripuerto del Gremio"
 locationId: "tripuerto-del-gremio"
 ---

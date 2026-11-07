@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Aldea del Lago Celeste"
 locationId: "aldea-del-lago-celeste"
 ---

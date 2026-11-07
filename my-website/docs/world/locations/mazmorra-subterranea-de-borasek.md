@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Mazmorra subterránea de Borasek"
 locationId: "mazmorra-subterranea-de-borasek"
 ---

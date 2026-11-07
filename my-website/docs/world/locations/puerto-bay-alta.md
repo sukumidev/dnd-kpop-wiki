@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Puerto Bay Alta"
 locationId: "puerto-bay-alta"
 ---

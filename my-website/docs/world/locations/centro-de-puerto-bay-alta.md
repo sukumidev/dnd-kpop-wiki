@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Centro de Puerto Bay Alta"
 locationId: "centro-de-puerto-bay-alta"
 ---

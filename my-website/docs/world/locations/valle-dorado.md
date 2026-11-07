@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Valle Dorado / Valle del Arrozal"
 locationId: "valle-dorado"
 ---

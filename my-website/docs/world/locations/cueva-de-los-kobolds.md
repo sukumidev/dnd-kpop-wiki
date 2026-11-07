@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Cueva de los kobolds"
 locationId: "cueva-de-los-kobolds"
 ---

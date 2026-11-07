@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Campamento de Kai"
 locationId: "campamento-de-kai"
 ---

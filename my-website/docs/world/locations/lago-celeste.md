@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Lago Celeste"
 locationId: "lago-celeste"
 ---

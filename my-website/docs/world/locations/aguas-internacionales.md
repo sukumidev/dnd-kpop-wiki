@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Aguas Internacionales"
 locationId: "aguas-internacionales"
 ---

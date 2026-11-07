@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Muelle de Isla Wang"
 locationId: "muelle-de-isla-wang"
 ---

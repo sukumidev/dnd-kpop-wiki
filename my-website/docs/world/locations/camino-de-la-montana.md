@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Camino de la montaña"
 locationId: "camino-de-la-montana"
 ---

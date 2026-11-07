@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Altar de la Luna Creciente"
 locationId: "altar-de-la-luna-creciente"
 ---

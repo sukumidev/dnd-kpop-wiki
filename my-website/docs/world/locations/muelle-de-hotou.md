@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Muelle de Hotou"
 locationId: "muelle-de-hotou"
 ---

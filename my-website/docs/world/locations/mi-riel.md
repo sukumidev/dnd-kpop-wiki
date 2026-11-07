@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Mi Riel"
 locationId: "mi-riel"
 ---

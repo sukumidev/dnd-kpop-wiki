@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Templo del Dios Lobo"
 locationId: "templo-del-dios-lobo"
 ---

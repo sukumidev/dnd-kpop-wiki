@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Caminos de Borasek"
 locationId: "caminos-de-borasek"
 ---

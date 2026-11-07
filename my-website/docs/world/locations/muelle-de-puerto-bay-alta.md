@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Muelle de Puerto Bay Alta"
 locationId: "muelle-de-puerto-bay-alta"
 ---

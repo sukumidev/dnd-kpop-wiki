@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "@docusaurus/Link";
 import {useLocation} from "@docusaurus/router";
-import Layout from "@theme/Layout";
+import WikiSidebarPageLayout from "@site/src/components/WikiSidebarPageLayout";
 import {
   getDocumentCharacterRelations,
   getDocumentKind,
@@ -171,7 +171,7 @@ function ReaderShell({document, content}: {document: Document; content?: React.R
   const parent = kind === "entry" ? getPublicParentDocument(document) : undefined;
   const summary = document.summary || document.excerpt;
   return (
-    <Layout title={document.title} description={summary ?? "Documento de la campaña"}>
+    <WikiSidebarPageLayout title={document.title} description={summary ?? "Documento de la campaña"}>
       <main className={styles.page}>
         <div className={styles.readerFrame}>
           <Link className={styles.backLink} to="/documents">← Archivo de documentos</Link>
@@ -188,12 +188,12 @@ function ReaderShell({document, content}: {document: Document; content?: React.R
           </article>
         </div>
       </main>
-    </Layout>
+    </WikiSidebarPageLayout>
   );
 }
 
 function UnavailableDocument() {
-  return <Layout title="Documento no disponible" description="Documento no disponible"><main className={styles.page}><div className={styles.readerFrame}><Link className={styles.backLink} to="/documents">← Archivo de documentos</Link><section className={styles.emptyState}><h1>Documento no disponible</h1><p>No existe un documento público publicado para esta dirección.</p></section></div></main></Layout>;
+  return <WikiSidebarPageLayout title="Documento no disponible" description="Documento no disponible"><main className={styles.page}><div className={styles.readerFrame}><Link className={styles.backLink} to="/documents">← Archivo de documentos</Link><section className={styles.emptyState}><h1>Documento no disponible</h1><p>No existe un documento público publicado para esta dirección.</p></section></div></main></WikiSidebarPageLayout>;
 }
 
 export default function DocumentReaderPage({documentId, content}: DocumentReaderPageProps = {}): React.ReactElement {

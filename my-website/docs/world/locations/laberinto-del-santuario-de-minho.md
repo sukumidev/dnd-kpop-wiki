@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Laberinto del Santuario de Minho"
 locationId: "laberinto-del-santuario-de-minho"
 ---

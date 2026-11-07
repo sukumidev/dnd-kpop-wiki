@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Caminos de Hyberia"
 locationId: "caminos-de-hyberia"
 ---

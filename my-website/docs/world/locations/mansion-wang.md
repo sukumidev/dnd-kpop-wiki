@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Mansión Wang"
 locationId: "mansion-wang"
 ---

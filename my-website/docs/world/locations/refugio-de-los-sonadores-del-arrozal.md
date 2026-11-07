@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Refugio de los Soñadores del Arrozal"
 locationId: "refugio-de-los-sonadores-del-arrozal"
 ---

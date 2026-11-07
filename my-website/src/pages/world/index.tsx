@@ -7,6 +7,15 @@ import {getPublicRealmHref} from '@site/src/data/publicRoutes';
 import directoryStyles from '../characters/styles.module.css';
 import styles from './styles.module.css';
 
+const realmImageFiles: Record<string, string> = {
+  sylmorien: 'sylmorien.webp',
+  hyberia: 'hyberia.webp',
+  jeyperia: 'jeyperia.webp',
+  yggdrasil: 'ygdrassil.webp',
+  hotou: 'hotou.webp',
+  guozhong: 'guozhong.webp',
+};
+
 const realms = locationList
   .filter((location) =>
     location.type === 'region' &&
@@ -48,12 +57,23 @@ export default function WorldPage() {
                 className={styles.cardLink}
                 aria-label={`Explorar ${realm.title}`}>
                 <article className={styles.card}>
-                  <div className={styles.cardArt} aria-hidden="true">
-                    <span className={styles.cardNumber}>{String(index + 1).padStart(2, '0')}</span>
-                    <span className={styles.cardSymbol}>✦</span>
+                  <div className={styles.cardArt}>
+                    {realmImageFiles[realm.id] ? (
+                      <img
+                        className={styles.cardImage}
+                        src={withBaseUrl(`/img/realms/${realmImageFiles[realm.id]}`)}
+                        alt={`Ilustración de ${realm.title}`}
+                        width="2000"
+                        height="2000"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    ) : (
+                      <span className={styles.cardSymbol} aria-hidden="true">✦</span>
+                    )}
                   </div>
                   <div className={styles.cardContent}>
-                    <div className={styles.cardEyebrow}>Reino</div>
+                    <div className={styles.cardEyebrow}>Reino <span className={styles.cardNumber}>{String(index + 1).padStart(2, '0')}</span></div>
                     <h2 className={styles.cardTitle}>{realm.title}</h2>
                     {realm.profile?.nickname && (
                       <p className={styles.cardNickname}>{realm.profile.nickname}</p>

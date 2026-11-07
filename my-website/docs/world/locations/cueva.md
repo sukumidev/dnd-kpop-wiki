@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: wiki
 title: "Cueva del Camino a la Montaña del Templo del Dios Lobo de Hotou"
 locationId: "cueva"
 ---
