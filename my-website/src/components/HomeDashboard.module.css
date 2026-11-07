@@ -148,23 +148,23 @@
   grid-template-columns: minmax(0, 1fr) minmax(210px, 250px);
   gap: clamp(28px, 4vw, 48px);
   align-items: start;
-  margin-top: 24px;
+  margin-top: clamp(30px, 4vw, 42px);
 }
 
-.campaignMain,
 .campaignNarrative {
   min-width: 0;
+  max-width: 72ch;
 }
 
 .campaignQuests {
   min-width: 0;
-  margin-top: clamp(30px, 4vw, 42px);
   padding-top: 26px;
   border-top: 1px solid var(--h-border-soft);
 }
 
 .statusPanel {
   position: static;
+  margin-top: 27px;
   padding: 19px;
   border: 1px solid var(--h-border-soft);
   border-top-color: var(--h-warning);
@@ -339,7 +339,7 @@
 
 @media (max-width: 860px) {
   .campaignIntroGrid { grid-template-columns: 1fr; }
-  .statusPanel { position: static; }
+  .statusPanel { margin-top: 0; }
   .carouselTrack { grid-auto-columns: clamp(260px, 58%, 500px); }
   .recentList { grid-template-columns: 1fr; }
 }
@@ -348,8 +348,8 @@
   .homeDashboard { margin-top: 24px; }
   .toolList { display: grid; grid-template-columns: 1fr; }
   .toolCard { width: 100%; }
-  .campaignIntroGrid { gap: 22px; margin-top: 18px; }
-  .campaignQuests { margin-top: 30px; padding-top: 24px; }
+  .campaignIntroGrid { gap: 22px; margin-top: 26px; }
+  .campaignQuests { padding-top: 24px; }
   .exploreSection { margin-top: 58px; }
   .sectionHeader { align-items: center; }
   .carouselTrack { grid-auto-columns: calc(100% - 24px); gap: 11px; }
