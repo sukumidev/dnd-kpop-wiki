@@ -4,7 +4,7 @@ import path from "node:path";
 import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import {
-  publicCharacters, sanitiseRelations, sanitisePublicCosmology, restrictedTerms, restrictedIdentifiers,
+  publicCharacters, publishEveryCharacter, sanitiseRelations, sanitisePublicCosmology, restrictedTerms, restrictedIdentifiers,
   approvedTeasers, findLeaks,
 } from "./public-build-policy.mjs";
 
@@ -88,14 +88,11 @@ async function stageCopy(stage, hiddenIds) {
     process.platform === "win32" ? "junction" : "dir");
 }
 
-async function sanitizeStage(stage, hiddenIds, publicIds) {
+async function sanitizeStage(stage, hiddenIds, publicIds, publicRegistry) {
   const dataDir = path.join(stage, "src/data");
-  for (const registry of ["characters.json"]) {
-    const source = await readJSON(path.join(ROOT, "src/data", registry));
-    await writeJSON(path.join(dataDir, registry),
-      sanitiseRelations(Object.fromEntries(Object.entries(source)
-        .filter(([id]) => publicIds.has(id))), hiddenIds));
-  }
+  // This is the public-facing snapshot, not a change to the CMS/source files.
+  await writeJSON(path.join(dataDir, "characters.json"),
+    sanitiseRelations(publicRegistry, hiddenIds));
   const rawStatblocks = await readJSON(path.join(ROOT, "src/data/statblocks.json"));
   await writeJSON(path.join(dataDir, "statblocks.json"),
     sanitiseRelations(Object.fromEntries(Object.entries(rawStatblocks)
@@ -194,6 +191,22 @@ export function supplementalPublicCharacterImages(cosmology, hiddenRegistry, hom
   return {allowed, required};
 }
 
+// Hero realm illustrations are resolved via template strings at runtime;
+// the static /img/ scanner cannot discover these dynamic asset references.
+// Collect only explicit .webp filenames from the public realm gallery/index.
+export function referencedRealmImageAssets(gallerySource, worldSource) {
+  const gallery = [...gallerySource.matchAll(/\bimageFile:\s*"([A-Za-z0-9_-]+\.webp)"/g)]
+    .map((match) => match[1]);
+  const worldBlock = /const realmImageFiles[^=]*=\s*\{([\s\S]*?)\};/.exec(worldSource)?.[1];
+  const world = worldBlock
+    ? [...worldBlock.matchAll(/:\s*'([A-Za-z0-9_-]+\.webp)'/g)].map((match) => match[1])
+    : [];
+  if (!gallery.length || !world.length) {
+    throw new Error("Cannot determine public realm illustration assets.");
+  }
+  return new Set([...gallery, ...world].map((file) => "/img/realms/" + file));
+}
+
 async function copyImages(stage, publicRegistry, hiddenRegistry, teasers) {
   const allowedCharacterImages = new Set(), hiddenImages = new Set();
   function addCharacterImages(out, character) {
@@ -212,6 +225,10 @@ async function copyImages(stage, publicRegistry, hiddenRegistry, teasers) {
   const {allowed: supplementalImages, required: requiredImages} =
     supplementalPublicCharacterImages(cosmology, hiddenRegistry, homeSource, cardSource);
   for (const ref of supplementalImages) allowedCharacterImages.add(ref);
+  const realmGallerySource = await fs.readFile(path.join(stage, "src/components/RealmGallery.tsx"), "utf8");
+  const worldIndexSource = await fs.readFile(path.join(stage, "src/pages/world/index.tsx"), "utf8");
+  const realmImages = referencedRealmImageAssets(realmGallerySource, worldIndexSource);
+  for (const ref of realmImages) requiredImages.add(ref);
   const references = new Set(requiredImages);
   for (const root of ["src", "docs"]) {
     for (const file of await walk(path.join(stage, root))) {
@@ -239,7 +256,7 @@ async function copyImages(stage, publicRegistry, hiddenRegistry, teasers) {
     catch (error) {
       if (error.code !== "ENOENT") throw error;
       if (requiredImages.has(ref)) {
-        throw new Error("A required public protagonist card asset is missing: " + ref);
+        throw new Error("A required public illustration asset is missing: " + ref);
       }
       if (ref.startsWith("/img/mysteries/")) {
         throw new Error("An approved mystery image is not present; publication blocked.");
@@ -282,9 +299,12 @@ async function main() {
   try { await fs.access(path.join(ROOT, "node_modules")); }
   catch { throw new Error("Install dependencies with npm ci first."); }
   const all = await readJSON(path.join(ROOT, "src/data/characters.json"));
-  const hidden = Object.fromEntries(Object.entries(all).filter(([, c]) => c.visibility !== "public"));
-  const publicRegistry = publicCharacters(all);
-  const hiddenIds = new Set(Object.keys(hidden));
+  // Publication decision: all registered characters, including previously hidden
+  // NPCs and their mythic counterparts, are approved for this public Wiki.
+  // Private/unpublished *documents* remain excluded below.
+  const publicRegistry = publishEveryCharacter(all);
+  const hidden = {};
+  const hiddenIds = new Set();
   const publicIds = new Set(Object.keys(publicRegistry));
   const privateDocuments = (await readJSON(path.join(ROOT, "src/data/documents.json")))
     .filter((d) => !(d.status === "published" && d.visibility === "public"));
@@ -298,13 +318,14 @@ async function main() {
   if (allowNarrativeSpoilers) {
     console.warn("Narrative spoiler name audit relaxed; hidden/private IDs remain blocked.");
   }
-  // Mystery teasers always retain the strict title/name checks.
-  const teasers = approvedTeasers(await getPrivateTeasers(), hidden, strictForbidden);
+  // A mystery cannot tease an unpublished character when the complete
+  // character registry is public. Do not ingest private mystery definitions.
+  const teasers = [];
   const stage = await fs.mkdtemp(path.join(os.tmpdir(), "hallyura-public-"));
   let succeeded = false;
   try {
     await stageCopy(stage, hiddenIds);
-    await sanitizeStage(stage, hiddenIds, publicIds);
+    await sanitizeStage(stage, hiddenIds, publicIds, publicRegistry);
     await sanitiseAuthoredDocs(stage, hiddenIds);
     await generateMysteryPages(stage, teasers);
     // Cheap fail-closed check before the expensive Docusaurus compilation.
