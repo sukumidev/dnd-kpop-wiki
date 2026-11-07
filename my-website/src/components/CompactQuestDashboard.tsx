@@ -5,10 +5,9 @@ import {
   calculateQuestProgress,
   getQuestById,
   getQuestChildren,
-  getQuestsByStatus,
   type Quest,
 } from "@site/src/data/quests";
-import {featuredQuestIds} from "@site/src/data/home";
+import {cardLevelMilestone, featuredQuestIds} from "@site/src/data/home";
 import styles from "./CompactQuestDashboard.module.css";
 
 function getTypeLabel(type: string) {
@@ -45,22 +44,47 @@ function getProgressCounter(quest: Quest): string | null {
 }
 
 function getFeaturedQuests(): Quest[] {
-  const configured = featuredQuestIds
+  // The landing features only the explicitly selected quests; no automatic fallback.
+  return featuredQuestIds
     .map((id) => getQuestById(id))
     .filter((quest): quest is Quest => quest?.status === "active" && quest.visibility === "public");
-
-  if (configured.length >= 3) return configured.slice(0, 3);
-
-  const configuredIds = new Set(configured.map((quest) => quest.id));
-  const fallback = getQuestsByStatus("active")
-    .filter((quest) => quest.visibility === "public" && !configuredIds.has(quest.id))
-    .sort((a, b) => (a.sortOrder ?? Number.MAX_SAFE_INTEGER) - (b.sortOrder ?? Number.MAX_SAFE_INTEGER));
-
-  return [...configured, ...fallback].slice(0, 3);
 }
 
-export function getActiveQuestCount() {
-  return getQuestsByStatus("active").filter((quest) => quest.visibility === "public").length;
+/** Track new cards since reaching the current level, not total cards in the deck. */
+function CardLevelMiniquest(): React.ReactElement {
+  const {questId, cardsAtLevelStart, cardsRequired} = cardLevelMilestone;
+  const sourceQuest = getQuestById(questId);
+  const cardsCollected = sourceQuest?.visibility === "public" ? sourceQuest.progress?.current : undefined;
+  const current = typeof cardsCollected === "number"
+    ? Math.min(cardsRequired, Math.max(0, cardsCollected - cardsAtLevelStart))
+    : null;
+  const percent = current === null ? 0 : Math.round((current / cardsRequired) * 100);
+
+  return (
+    <article className={`${styles.card} ${styles.miniCard}`}>
+      <div className={styles.cardTop}>
+        <span className={styles.levelBadge}>Objetivo de nivel</span>
+        <span className={styles.percent}>{current === null ? "—" : `${percent}%`}</span>
+      </div>
+      <h3 className={styles.title}>Cartas para el siguiente nivel</h3>
+      <p className={styles.summary}>Meta: {cardsRequired} cartas adicionales.</p>
+      <div className={styles.progressMeta}>
+        <span>Progreso</span>
+        <span>{current === null ? `— / ${cardsRequired}` : `${current} / ${cardsRequired}`}</span>
+      </div>
+      <div
+        className={styles.progressTrack}
+        role="progressbar"
+        aria-label="Cartas obtenidas para el siguiente nivel"
+        aria-valuemin={0}
+        aria-valuemax={cardsRequired}
+        aria-valuenow={current ?? undefined}
+        aria-valuetext={current === null ? "Progreso no disponible" : `${current} de ${cardsRequired} cartas`}
+      >
+        <span className={styles.progressFill} style={{width: `${percent}%`}} />
+      </div>
+    </article>
+  );
 }
 
 export default function CompactQuestDashboard(): React.ReactElement {
@@ -73,7 +97,7 @@ export default function CompactQuestDashboard(): React.ReactElement {
           <span className={styles.eyebrow}>Hilos del destino</span>
           <h2 id="featured-quests-title" className={styles.heading}>Quests destacadas</h2>
         </div>
-        <span className={styles.count}>{getActiveQuestCount()} activas</span>
+        <span className={styles.count}>1 quest · 1 objetivo</span>
       </div>
 
       <div className={styles.list}>
@@ -116,6 +140,7 @@ export default function CompactQuestDashboard(): React.ReactElement {
             </article>
           );
         })}
+        <CardLevelMiniquest />
       </div>
 
       <Link className={styles.allLink} to="/quests">

@@ -20,13 +20,22 @@ export const campaignSnapshot: {
   campaignDate?: string;
   location?: string;
   latestSessionHref?: string;
-} = {};
+  /** Party level shown in the landing status panel. */
+  level?: number;
+} = {level: 6};
 
-export const featuredQuestIds = [
-  "mq-collect-cards",
-  "mq-defeat-burning-sun",
-  "mq-protect-wishies",
-];
+/**
+ * Landing-only level milestone. The main quest records 10 cards at level 6;
+ * acquiring four additional cards reaches the next milestone.
+ * Update cardsAtLevelStart when the party levels up.
+ */
+export const cardLevelMilestone = {
+  questId: "mq-collect-cards",
+  cardsAtLevelStart: 10,
+  cardsRequired: 4,
+} as const;
+
+export const featuredQuestIds = ["mq-collect-cards"];
 
 export const exploreSections: ExploreSection[] = [
   {
