@@ -81,6 +81,56 @@ function CampaignStatus() {
   );
 }
 
+
+function WorldInMotion(): React.ReactElement {
+  return (
+    <section className={styles.worldSection} aria-labelledby="world-in-motion-title">
+      <span className={styles.narrativeKicker}>Más allá de las fronteras</span>
+      <h2 id="world-in-motion-title" className={styles.narrativeTitle}>Un mundo en movimiento</h2>
+      <p>
+        Tras la Gran Guerra de la Tercera Era, Hallyura vive una paz frágil.
+        Reinos, clanes, gremios y órdenes mantienen alianzas y rivalidades
+        que siguen dando forma a la vida de sus habitantes.
+      </p>
+      <p>
+        Algunos buscan proteger a quienes fueron olvidados; otros desean
+        recuperar lo que les fue arrebatado o extender su poder.
+        En sus decisiones se escribe la historia de este mundo.
+      </p>
+      <Link className={styles.narrativeLink} to="/factions">
+        Conocer las facciones <span aria-hidden="true">→</span>
+      </Link>
+    </section>
+  );
+}
+
+function DeckOfFateIntro(): React.ReactElement {
+  return (
+    <section className={styles.campaignSection} aria-labelledby="deck-of-fate-title">
+      <span className={styles.narrativeKicker}>La aventura</span>
+      <h2 id="deck-of-fate-title" className={styles.narrativeTitle}>Deck of Fate</h2>
+      <div className={styles.campaignIntroGrid}>
+        <div className={styles.campaignNarrative}>
+          <p>
+            En este mundo de magia antigua y reinos divididos, un grupo de
+            aventureros busca las Cartas del Destino. Sus encuentros,
+            decisiones y alianzas entrelazan historias que todavía están
+            por escribirse.
+          </p>
+          <p>
+            Conoce a quienes protagonizan esta aventura y sigue las
+            crónicas de su viaje por Hallyura.
+          </p>
+          <Link className={styles.narrativeLink} to="/sessions">
+            Leer las crónicas <span aria-hidden="true">→</span>
+          </Link>
+        </div>
+        <CampaignStatus />
+      </div>
+    </section>
+  );
+}
+
 function ExploreCarousel() {
   const trackRef = useRef<HTMLDivElement>(null);
   const [canScrollBack, setCanScrollBack] = useState(false);
@@ -182,14 +232,15 @@ export default function HomeDashboard(): React.ReactElement {
   return (
     <div className={`${styles.homeDashboard} hallyura-home-dashboard`}>
       <RealmGallery />
-      <TableTools />
-      <div className={styles.campaignGrid}>
+      <WorldInMotion />
+      <DeckOfFateIntro />
+      <ProtagonistCards />
+      <div className={styles.questsSection}>
         <CompactQuestDashboard />
-        <CampaignStatus />
       </div>
       <ExploreCarousel />
-      <ProtagonistCards />
       <RecentActivity />
+      <TableTools />
     </div>
   );
 }
