@@ -194,6 +194,22 @@ export function supplementalPublicCharacterImages(cosmology, hiddenRegistry, hom
   return {allowed, required};
 }
 
+// Hero realm illustrations are resolved via template strings at runtime;
+// the static /img/ scanner cannot discover these dynamic asset references.
+// Collect only explicit .webp filenames from the public realm gallery/index.
+export function referencedRealmImageAssets(gallerySource, worldSource) {
+  const gallery = [...gallerySource.matchAll(/\bimageFile:\s*"([A-Za-z0-9_-]+\.webp)"/g)]
+    .map((match) => match[1]);
+  const worldBlock = /const realmImageFiles[^=]*=\s*\{([\s\S]*?)\};/.exec(worldSource)?.[1];
+  const world = worldBlock
+    ? [...worldBlock.matchAll(/:\s*'([A-Za-z0-9_-]+\.webp)'/g)].map((match) => match[1])
+    : [];
+  if (!gallery.length || !world.length) {
+    throw new Error("Cannot determine public realm illustration assets.");
+  }
+  return new Set([...gallery, ...world].map((file) => "/img/realms/" + file));
+}
+
 async function copyImages(stage, publicRegistry, hiddenRegistry, teasers) {
   const allowedCharacterImages = new Set(), hiddenImages = new Set();
   function addCharacterImages(out, character) {
@@ -212,6 +228,10 @@ async function copyImages(stage, publicRegistry, hiddenRegistry, teasers) {
   const {allowed: supplementalImages, required: requiredImages} =
     supplementalPublicCharacterImages(cosmology, hiddenRegistry, homeSource, cardSource);
   for (const ref of supplementalImages) allowedCharacterImages.add(ref);
+  const realmGallerySource = await fs.readFile(path.join(stage, "src/components/RealmGallery.tsx"), "utf8");
+  const worldIndexSource = await fs.readFile(path.join(stage, "src/pages/world/index.tsx"), "utf8");
+  const realmImages = referencedRealmImageAssets(realmGallerySource, worldIndexSource);
+  for (const ref of realmImages) requiredImages.add(ref);
   const references = new Set(requiredImages);
   for (const root of ["src", "docs"]) {
     for (const file of await walk(path.join(stage, root))) {
@@ -239,7 +259,7 @@ async function copyImages(stage, publicRegistry, hiddenRegistry, teasers) {
     catch (error) {
       if (error.code !== "ENOENT") throw error;
       if (requiredImages.has(ref)) {
-        throw new Error("A required public protagonist card asset is missing: " + ref);
+        throw new Error("A required public illustration asset is missing: " + ref);
       }
       if (ref.startsWith("/img/mysteries/")) {
         throw new Error("An approved mystery image is not present; publication blocked.");
