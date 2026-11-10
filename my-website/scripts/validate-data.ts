@@ -25,6 +25,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { characters as characterRegistry } from "../src/data/characters";
 import {getDocumentContentFormat, validateDocumentMdxFile} from "./document-content";
+import {validateLibraryMetadata} from "../src/data/library";
 
 type Severity = "error" | "warning";
 
@@ -833,6 +834,11 @@ function validateDocuments(documents: JsonRecord[]) {
 
     if (document.metadata != null && !isPlainObject(document.metadata)) {
       addError(file, `Expected metadata to be an object.`, id, "metadata");
+    }
+    if (isPlainObject(document.metadata)) {
+      for (const message of validateLibraryMetadata(document.metadata.library)) {
+        addError(file, message, id, "metadata.library");
+      }
     }
   });
 }
