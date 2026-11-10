@@ -67,3 +67,11 @@
   line-height: 1.15;
   overflow-wrap: anywhere;
 }
+
+.level {
+  margin-top: auto;
+  color: var(--h-accent);
+  font-size: 0.68rem;
+  font-weight: 700;
+  line-height: 1.2;
+}

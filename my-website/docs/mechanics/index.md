@@ -1,9 +1,12 @@
 ---
 title: Mecánicas
 description: Índice general de las reglas y sistemas de la campaña.
+slug: /mechanics
 ---
 
 # Mecánicas
+
+Explora el [directorio de clases](/mechanics/classes), los [sistemas y objetos](/systems) y el [Deck of Fate](/systems/deck-of-fate).
 
 ## Introducción
 

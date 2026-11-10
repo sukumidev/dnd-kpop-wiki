@@ -8,6 +8,7 @@ import styles from "./CharacterGrid.module.css";
 type Props = {
   characters: Character[];
   label: string;
+  classLevels?: ReadonlyMap<string, number>;
 };
 
 const shortNames: Record<string, string> = {
@@ -26,7 +27,7 @@ const shortNames: Record<string, string> = {
   "svt-minghao": "Minghao",
 };
 
-export default function CharacterGrid({characters, label}: Props) {
+export default function CharacterGrid({characters, label, classLevels}: Props) {
   const {withBaseUrl} = useBaseUrlUtils();
 
   return (
@@ -50,6 +51,9 @@ export default function CharacterGrid({characters, label}: Props) {
               )}
             </span>
             <span className={styles.name}>{shortNames[character.id] ?? character.title}</span>
+            {classLevels?.has(character.id) && (
+              <span className={styles.level}>Nivel {classLevels.get(character.id)}</span>
+            )}
           </>
         );
 
