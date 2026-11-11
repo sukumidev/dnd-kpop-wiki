@@ -55,7 +55,7 @@ export function resolveCharactersForClass(
       const recordedSubclass = typeof subclass === 'string' && subclass.trim() ? subclass.trim() : undefined;
       const previous = found.get(character.id);
       if (!previous) {
-        found.set(character.id, {character, level: recordedLevel, subclass: recordedSubclass});
+        found.set(character.id, {character, level: recordedLevel, ...(recordedSubclass ? {subclass: recordedSubclass} : {})});
       } else if (recordedLevel !== undefined &&
         (previous.level === undefined || recordedLevel > previous.level)) {
         // Multiple statblocks may describe the same character. Keep one card and
