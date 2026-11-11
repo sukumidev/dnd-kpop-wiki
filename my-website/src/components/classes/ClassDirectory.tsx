@@ -7,7 +7,7 @@ export default function ClassDirectory() {
   return (
     <div className={styles.page}>
       <header className={styles.pageHeader}>
-        <span className={styles.eyebrow}>Mecánicas · D&amp;D 5.5e</span>
+        <span className={styles.eyebrow}>Mecánicas · Hallyura</span>
         <h1 className={styles.pageTitle}>Clases</h1>
         <p className={styles.lead}>Las 14 clases aprobadas para Hallyura, incluida Blood Hunter (material de terceros). Consulta cada ficha para ver sus datos y las subclases aprobadas conforme se incorporen.</p>
       </header>
