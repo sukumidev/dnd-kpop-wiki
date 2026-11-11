@@ -40,3 +40,17 @@ test('registered subclass IDs resolve to one approved class and document route',
     }
   }
 });
+
+
+test('all 13 classes expose valid core traits and cite their rules source', () => {
+  for (const entry of characterClasses) {
+    assert.ok(entry.description?.length, `${entry.id}: missing description`);
+    assert.ok([6, 8, 10, 12].includes(entry.hitDie ?? 0), `${entry.id}: invalid hit die`);
+    assert.ok(entry.primaryAbilities?.length, `${entry.id}: missing primary abilities`);
+    assert.equal(entry.savingThrows?.length, 2, `${entry.id}: expected two saving throws`);
+    assert.ok(entry.source, `${entry.id}: missing source`);
+  }
+  assert.equal(getCharacterClass('mago')?.hitDie, 6);
+  assert.deepEqual(getCharacterClass('picaro')?.savingThrows, ['Destreza', 'Inteligencia']);
+  assert.deepEqual(getCharacterClass('artifice')?.savingThrows, ['Constitución', 'Inteligencia']);
+});
