@@ -6,6 +6,8 @@ export type ClassCharacter = {
   character: Character;
   /** The level recorded for this class, never the character's total level. */
   level?: number;
+  /** The subclass from the matching statblock class entry. */
+  subclass?: string;
 };
 
 type StatblockReference = {
@@ -45,19 +47,23 @@ export function resolveCharactersForClass(
 
     for (const entry of block.classes) {
       if (!entry || typeof entry !== 'object') continue;
-      const {name, level} = entry as {name?: unknown; level?: unknown};
+      const {name, level, subclass} = entry as {name?: unknown; level?: unknown; subclass?: unknown};
       if (resolveClassId(name) !== classId) continue;
 
       const recordedLevel = typeof level === 'number' && Number.isInteger(level) && level > 0
         ? level : undefined;
+      const recordedSubclass = typeof subclass === 'string' && subclass.trim() ? subclass.trim() : undefined;
       const previous = found.get(character.id);
       if (!previous) {
-        found.set(character.id, {character, level: recordedLevel});
+        found.set(character.id, {character, level: recordedLevel, subclass: recordedSubclass});
       } else if (recordedLevel !== undefined &&
         (previous.level === undefined || recordedLevel > previous.level)) {
         // Multiple statblocks may describe the same character. Keep one card and
         // the highest explicitly recorded level for this class.
         previous.level = recordedLevel;
+        if (recordedSubclass) previous.subclass = recordedSubclass;
+      } else if (!previous.subclass && recordedSubclass) {
+        previous.subclass = recordedSubclass;
       }
     }
   }
