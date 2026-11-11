@@ -9,6 +9,8 @@ type Props = {
   characters: Character[];
   label: string;
   classLevels?: ReadonlyMap<string, number>;
+  classSubclasses?: ReadonlyMap<string, string>;
+  largeCards?: boolean;
 };
 
 const shortNames: Record<string, string> = {
@@ -27,11 +29,11 @@ const shortNames: Record<string, string> = {
   "svt-minghao": "Minghao",
 };
 
-export default function CharacterGrid({characters, label, classLevels}: Props) {
+export default function CharacterGrid({characters, label, classLevels, classSubclasses, largeCards = false}: Props) {
   const {withBaseUrl} = useBaseUrlUtils();
 
   return (
-    <ul className={styles.grid} aria-label={label}>
+    <ul className={largeCards ? `${styles.grid} ${styles.classGrid}` : styles.grid} aria-label={label}>
       {characters.map((character) => {
         const docPath =
           getMythicEntityByCharacterId(character.id)?.docPath ?? getCharacterDocPath(character);
@@ -53,6 +55,9 @@ export default function CharacterGrid({characters, label, classLevels}: Props) {
             <span className={styles.name}>{shortNames[character.id] ?? character.title}</span>
             {classLevels?.has(character.id) && (
               <span className={styles.level}>Nivel {classLevels.get(character.id)}</span>
+            )}
+            {classSubclasses?.get(character.id) && (
+              <span className={styles.subclass}>{classSubclasses.get(character.id)}</span>
             )}
           </>
         );
