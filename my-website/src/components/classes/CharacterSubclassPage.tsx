@@ -23,10 +23,13 @@ export default function CharacterSubclassPage({classId, subclassId, children}: P
         <span className={styles.eyebrow}>Subclase de {characterClass.name}</span>
         <h1 className={styles.pageTitle}>{subclass.name}</h1>
         <p className={styles.originalName}>{subclass.originalName}</p>
+        {subclass.contentCategory === 'partner' && <span className={styles.badge}>Terceros</span>}
         {subclass.isHomebrew && <span className={styles.badge}>Homebrew</span>}
         {subclass.description && <p className={styles.lead}>{subclass.description}</p>}
       </header>
       {subclass.source && <p className={styles.source}><strong>Fuente:</strong> {subclass.source}</p>}
+      {Boolean(subclass.aliases?.length) && <p className={styles.source}><strong>Nombres anteriores:</strong> {subclass.aliases?.join(', ')}</p>}
+      {!children && <p className={styles.emptyState}>Ficha de referencia registrada en Hallyura. Las características mecánicas por nivel se documentarán más adelante; consulta el suplemento citado para las reglas completas.</p>}
       {children && <section className={styles.section} aria-label="Características por nivel">{children}</section>}
     </div>
   );
