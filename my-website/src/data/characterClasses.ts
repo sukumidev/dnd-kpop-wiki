@@ -144,7 +144,7 @@ const classDefinitions: CharacterClass[] = [
   {
     id: 'artifice', name: 'Artífice', originalName: 'Artificer',
     description: 'Inventor arcano que crea herramientas y objetos mágicos para apoyar sus aventuras.',
-    source: 'Material complementario compatible con D&D 5.5e',
+    source: 'Eberron: Forge of the Artificer (2025)',
     hitDie: 8,
     primaryAbilities: ["Inteligencia"],
     savingThrows: ["Constitución","Inteligencia"],
