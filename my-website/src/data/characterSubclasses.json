@@ -1,0 +1,1125 @@
+[
+  {
+    "id": "alchemist",
+    "classId": "artifice",
+    "name": "Alchemist",
+    "originalName": "Alchemist",
+    "source": "Eberron: Forge of the Artificer (2025)",
+    "sourceYear": 2025,
+    "contentCategory": "official"
+  },
+  {
+    "id": "armorer",
+    "classId": "artifice",
+    "name": "Armorer",
+    "originalName": "Armorer",
+    "source": "Eberron: Forge of the Artificer (2025)",
+    "sourceYear": 2025,
+    "contentCategory": "official"
+  },
+  {
+    "id": "artillerist",
+    "classId": "artifice",
+    "name": "Artillerist",
+    "originalName": "Artillerist",
+    "source": "Eberron: Forge of the Artificer (2025)",
+    "sourceYear": 2025,
+    "contentCategory": "official"
+  },
+  {
+    "id": "battle-smith",
+    "classId": "artifice",
+    "name": "Battle Smith",
+    "originalName": "Battle Smith",
+    "source": "Eberron: Forge of the Artificer (2025)",
+    "sourceYear": 2025,
+    "contentCategory": "official"
+  },
+  {
+    "id": "cartographer",
+    "classId": "artifice",
+    "name": "Cartographer",
+    "originalName": "Cartographer",
+    "source": "Eberron: Forge of the Artificer (2025)",
+    "sourceYear": 2025,
+    "contentCategory": "official"
+  },
+  {
+    "id": "path-of-the-berserker",
+    "classId": "barbaro",
+    "name": "Path of the Berserker",
+    "originalName": "Path of the Berserker",
+    "source": "Player's Handbook (2024)",
+    "sourceYear": 2024,
+    "contentCategory": "official"
+  },
+  {
+    "id": "path-of-the-wild-heart",
+    "classId": "barbaro",
+    "name": "Path of the Wild Heart",
+    "originalName": "Path of the Wild Heart",
+    "source": "Player's Handbook (2024)",
+    "sourceYear": 2024,
+    "contentCategory": "official",
+    "aliases": [
+      "Path of the Totem Warrior",
+      "Path of Wild Heart"
+    ]
+  },
+  {
+    "id": "path-of-the-world-tree",
+    "classId": "barbaro",
+    "name": "Path of the World Tree",
+    "originalName": "Path of the World Tree",
+    "source": "Player's Handbook (2024)",
+    "sourceYear": 2024,
+    "contentCategory": "official"
+  },
+  {
+    "id": "path-of-the-zealot",
+    "classId": "barbaro",
+    "name": "Path of the Zealot",
+    "originalName": "Path of the Zealot",
+    "source": "Player's Handbook (2024)",
+    "sourceYear": 2024,
+    "contentCategory": "official"
+  },
+  {
+    "id": "path-of-wild-magic",
+    "classId": "barbaro",
+    "name": "Path of Wild Magic",
+    "originalName": "Path of Wild Magic",
+    "source": "Tasha's Cauldron of Everything (2020)",
+    "sourceYear": 2020,
+    "contentCategory": "official"
+  },
+  {
+    "id": "path-of-the-beast",
+    "classId": "barbaro",
+    "name": "Path of the Beast",
+    "originalName": "Path of the Beast",
+    "source": "Tasha's Cauldron of Everything (2020)",
+    "sourceYear": 2020,
+    "contentCategory": "official"
+  },
+  {
+    "id": "path-of-the-ancestral-guardian",
+    "classId": "barbaro",
+    "name": "Path of the Ancestral Guardian",
+    "originalName": "Path of the Ancestral Guardian",
+    "source": "Xanathar's Guide to Everything (2017)",
+    "sourceYear": 2017,
+    "contentCategory": "official"
+  },
+  {
+    "id": "path-of-the-storm-herald",
+    "classId": "barbaro",
+    "name": "Path of the Storm Herald",
+    "originalName": "Path of the Storm Herald",
+    "source": "Xanathar's Guide to Everything (2017)",
+    "sourceYear": 2017,
+    "contentCategory": "official"
+  },
+  {
+    "id": "college-of-dance",
+    "classId": "bardo",
+    "name": "College of Dance",
+    "originalName": "College of Dance",
+    "source": "Player's Handbook (2024)",
+    "sourceYear": 2024,
+    "contentCategory": "official"
+  },
+  {
+    "id": "college-of-lore",
+    "classId": "bardo",
+    "name": "College of Lore",
+    "originalName": "College of Lore",
+    "source": "Player's Handbook (2024)",
+    "sourceYear": 2024,
+    "contentCategory": "official"
+  },
+  {
+    "id": "college-of-valor",
+    "classId": "bardo",
+    "name": "College of Valor",
+    "originalName": "College of Valor",
+    "source": "Player's Handbook (2024)",
+    "sourceYear": 2024,
+    "contentCategory": "official"
+  },
+  {
+    "id": "college-of-glamour",
+    "classId": "bardo",
+    "name": "College of Glamour",
+    "originalName": "College of Glamour",
+    "source": "Player's Handbook (2024)",
+    "sourceYear": 2024,
+    "contentCategory": "official"
+  },
+  {
+    "id": "college-of-the-moon",
+    "classId": "bardo",
+    "name": "College of the Moon",
+    "originalName": "College of the Moon",
+    "source": "Forgotten Realms: Heroes of Faerûn (2025)",
+    "sourceYear": 2025,
+    "contentCategory": "official"
+  },
+  {
+    "id": "college-of-swords",
+    "classId": "bardo",
+    "name": "College of Swords",
+    "originalName": "College of Swords",
+    "source": "Xanathar's Guide to Everything (2017)",
+    "sourceYear": 2017,
+    "contentCategory": "official"
+  },
+  {
+    "id": "college-of-whispers",
+    "classId": "bardo",
+    "name": "College of Whispers",
+    "originalName": "College of Whispers",
+    "source": "Xanathar's Guide to Everything (2017)",
+    "sourceYear": 2017,
+    "contentCategory": "official"
+  },
+  {
+    "id": "college-of-creation",
+    "classId": "bardo",
+    "name": "College of Creation",
+    "originalName": "College of Creation",
+    "source": "Tasha's Cauldron of Everything (2020)",
+    "sourceYear": 2020,
+    "contentCategory": "official"
+  },
+  {
+    "id": "college-of-eloquence",
+    "classId": "bardo",
+    "name": "College of Eloquence",
+    "originalName": "College of Eloquence",
+    "source": "Tasha's Cauldron of Everything (2020)",
+    "sourceYear": 2020,
+    "contentCategory": "official"
+  },
+  {
+    "id": "order-of-the-ghostslayer",
+    "classId": "blood-hunter",
+    "name": "Order of the Ghostslayer",
+    "originalName": "Order of the Ghostslayer",
+    "source": "Critical Role (material de terceros)",
+    "contentCategory": "partner"
+  },
+  {
+    "id": "order-of-the-lycan",
+    "classId": "blood-hunter",
+    "name": "Order of the Lycan",
+    "originalName": "Order of the Lycan",
+    "source": "Critical Role (material de terceros)",
+    "contentCategory": "partner"
+  },
+  {
+    "id": "order-of-the-mutant",
+    "classId": "blood-hunter",
+    "name": "Order of the Mutant",
+    "originalName": "Order of the Mutant",
+    "source": "Critical Role (material de terceros)",
+    "contentCategory": "partner"
+  },
+  {
+    "id": "order-of-the-profane-soul",
+    "classId": "blood-hunter",
+    "name": "Order of the Profane Soul",
+    "originalName": "Order of the Profane Soul",
+    "source": "Critical Role (material de terceros)",
+    "contentCategory": "partner",
+    "aliases": [
+      "Profane Soul"
+    ]
+  },
+  {
+    "id": "arcana-domain",
+    "classId": "clerigo",
+    "name": "Arcana Domain",
+    "originalName": "Arcana Domain",
+    "source": "Arcana Unleashed (2026)",
+    "sourceYear": 2026,
+    "contentCategory": "official"
+  },
+  {
+    "id": "knowledge-domain",
+    "classId": "clerigo",
+    "name": "Knowledge Domain",
+    "originalName": "Knowledge Domain",
+    "source": "Forgotten Realms: Heroes of Faerûn (2025)",
+    "sourceYear": 2025,
+    "contentCategory": "official"
+  },
+  {
+    "id": "life-domain",
+    "classId": "clerigo",
+    "name": "Life Domain",
+    "originalName": "Life Domain",
+    "source": "Player's Handbook (2024)",
+    "sourceYear": 2024,
+    "contentCategory": "official"
+  },
+  {
+    "id": "light-domain",
+    "classId": "clerigo",
+    "name": "Light Domain",
+    "originalName": "Light Domain",
+    "source": "Player's Handbook (2024)",
+    "sourceYear": 2024,
+    "contentCategory": "official"
+  },
+  {
+    "id": "trickery-domain",
+    "classId": "clerigo",
+    "name": "Trickery Domain",
+    "originalName": "Trickery Domain",
+    "source": "Player's Handbook (2024)",
+    "sourceYear": 2024,
+    "contentCategory": "official"
+  },
+  {
+    "id": "war-domain",
+    "classId": "clerigo",
+    "name": "War Domain",
+    "originalName": "War Domain",
+    "source": "Player's Handbook (2024)",
+    "sourceYear": 2024,
+    "contentCategory": "official"
+  },
+  {
+    "id": "forge-domain",
+    "classId": "clerigo",
+    "name": "Forge Domain",
+    "originalName": "Forge Domain",
+    "source": "Xanathar's Guide to Everything (2017)",
+    "sourceYear": 2017,
+    "contentCategory": "official"
+  },
+  {
+    "id": "grave-domain",
+    "classId": "clerigo",
+    "name": "Grave Domain",
+    "originalName": "Grave Domain",
+    "source": "Xanathar's Guide to Everything (2017)",
+    "sourceYear": 2017,
+    "contentCategory": "official"
+  },
+  {
+    "id": "peace-domain",
+    "classId": "clerigo",
+    "name": "Peace Domain",
+    "originalName": "Peace Domain",
+    "source": "Tasha's Cauldron of Everything (2020)",
+    "sourceYear": 2020,
+    "contentCategory": "official"
+  },
+  {
+    "id": "twilight-domain",
+    "classId": "clerigo",
+    "name": "Twilight Domain",
+    "originalName": "Twilight Domain",
+    "source": "Tasha's Cauldron of Everything (2020)",
+    "sourceYear": 2020,
+    "contentCategory": "official"
+  },
+  {
+    "id": "order-domain",
+    "classId": "clerigo",
+    "name": "Order Domain",
+    "originalName": "Order Domain",
+    "source": "Tasha's Cauldron of Everything (2020)",
+    "sourceYear": 2020,
+    "contentCategory": "official"
+  },
+  {
+    "id": "circle-of-the-land",
+    "classId": "druida",
+    "name": "Circle of the Land",
+    "originalName": "Circle of the Land",
+    "source": "Player's Handbook (2024)",
+    "sourceYear": 2024,
+    "contentCategory": "official"
+  },
+  {
+    "id": "circle-of-the-moon",
+    "classId": "druida",
+    "name": "Circle of the Moon",
+    "originalName": "Circle of the Moon",
+    "source": "Player's Handbook (2024)",
+    "sourceYear": 2024,
+    "contentCategory": "official"
+  },
+  {
+    "id": "circle-of-dreams",
+    "classId": "druida",
+    "name": "Circle of Dreams",
+    "originalName": "Circle of Dreams",
+    "source": "Xanathar's Guide to Everything (2017)",
+    "sourceYear": 2017,
+    "contentCategory": "official"
+  },
+  {
+    "id": "circle-of-the-sea",
+    "classId": "druida",
+    "name": "Circle of the Sea",
+    "originalName": "Circle of the Sea",
+    "source": "Player's Handbook (2024)",
+    "sourceYear": 2024,
+    "contentCategory": "official"
+  },
+  {
+    "id": "circle-of-the-shepherd",
+    "classId": "druida",
+    "name": "Circle of the Shepherd",
+    "originalName": "Circle of the Shepherd",
+    "source": "Xanathar's Guide to Everything (2017)",
+    "sourceYear": 2017,
+    "contentCategory": "official"
+  },
+  {
+    "id": "circle-of-spores",
+    "classId": "druida",
+    "name": "Circle of Spores",
+    "originalName": "Circle of Spores",
+    "source": "Tasha's Cauldron of Everything (2020)",
+    "sourceYear": 2020,
+    "contentCategory": "official"
+  },
+  {
+    "id": "circle-of-stars",
+    "classId": "druida",
+    "name": "Circle of Stars",
+    "originalName": "Circle of Stars",
+    "source": "Player's Handbook (2024)",
+    "sourceYear": 2024,
+    "contentCategory": "official"
+  },
+  {
+    "id": "circle-of-wildfire",
+    "classId": "druida",
+    "name": "Circle of Wildfire",
+    "originalName": "Circle of Wildfire",
+    "source": "Tasha's Cauldron of Everything (2020)",
+    "sourceYear": 2020,
+    "contentCategory": "official"
+  },
+  {
+    "id": "champion",
+    "classId": "guerrero",
+    "name": "Champion",
+    "originalName": "Champion",
+    "source": "Player's Handbook (2024)",
+    "sourceYear": 2024,
+    "contentCategory": "official"
+  },
+  {
+    "id": "battle-master",
+    "classId": "guerrero",
+    "name": "Battle Master",
+    "originalName": "Battle Master",
+    "source": "Player's Handbook (2024)",
+    "sourceYear": 2024,
+    "contentCategory": "official"
+  },
+  {
+    "id": "eldritch-knight",
+    "classId": "guerrero",
+    "name": "Eldritch Knight",
+    "originalName": "Eldritch Knight",
+    "source": "Player's Handbook (2024)",
+    "sourceYear": 2024,
+    "contentCategory": "official"
+  },
+  {
+    "id": "arcane-archer",
+    "classId": "guerrero",
+    "name": "Arcane Archer",
+    "originalName": "Arcane Archer",
+    "source": "Arcana Unleashed (2026)",
+    "sourceYear": 2026,
+    "contentCategory": "official"
+  },
+  {
+    "id": "banneret",
+    "classId": "guerrero",
+    "name": "Banneret",
+    "originalName": "Banneret",
+    "source": "Forgotten Realms: Heroes of Faerûn (2025)",
+    "sourceYear": 2025,
+    "contentCategory": "official"
+  },
+  {
+    "id": "cavalier",
+    "classId": "guerrero",
+    "name": "Cavalier",
+    "originalName": "Cavalier",
+    "source": "Xanathar's Guide to Everything (2017)",
+    "sourceYear": 2017,
+    "contentCategory": "official"
+  },
+  {
+    "id": "samurai",
+    "classId": "guerrero",
+    "name": "Samurai",
+    "originalName": "Samurai",
+    "source": "Xanathar's Guide to Everything (2017)",
+    "sourceYear": 2017,
+    "contentCategory": "official"
+  },
+  {
+    "id": "psi-warrior",
+    "classId": "guerrero",
+    "name": "Psi Warrior",
+    "originalName": "Psi Warrior",
+    "source": "Player's Handbook (2024)",
+    "sourceYear": 2024,
+    "contentCategory": "official"
+  },
+  {
+    "id": "rune-knight",
+    "classId": "guerrero",
+    "name": "Rune Knight",
+    "originalName": "Rune Knight",
+    "source": "Tasha's Cauldron of Everything (2020)",
+    "sourceYear": 2020,
+    "contentCategory": "official"
+  },
+  {
+    "id": "gunslinger",
+    "classId": "guerrero",
+    "name": "Gunslinger",
+    "originalName": "Gunslinger",
+    "source": "Critical Role (material de terceros)",
+    "contentCategory": "partner"
+  },
+  {
+    "id": "warrior-of-the-open-hand",
+    "classId": "monje",
+    "name": "Warrior of the Open Hand",
+    "originalName": "Warrior of the Open Hand",
+    "source": "Player's Handbook (2024)",
+    "sourceYear": 2024,
+    "contentCategory": "official",
+    "aliases": [
+      "Way of the Open Hand"
+    ]
+  },
+  {
+    "id": "warrior-of-shadow",
+    "classId": "monje",
+    "name": "Warrior of Shadow",
+    "originalName": "Warrior of Shadow",
+    "source": "Player's Handbook (2024)",
+    "sourceYear": 2024,
+    "contentCategory": "official",
+    "aliases": [
+      "Way of Shadow"
+    ]
+  },
+  {
+    "id": "warrior-of-the-elements",
+    "classId": "monje",
+    "name": "Warrior of the Elements",
+    "originalName": "Warrior of the Elements",
+    "source": "Player's Handbook (2024)",
+    "sourceYear": 2024,
+    "contentCategory": "official",
+    "aliases": [
+      "Way of the Four Elements"
+    ]
+  },
+  {
+    "id": "warrior-of-mercy",
+    "classId": "monje",
+    "name": "Warrior of Mercy",
+    "originalName": "Warrior of Mercy",
+    "source": "Player's Handbook (2024)",
+    "sourceYear": 2024,
+    "contentCategory": "official",
+    "aliases": [
+      "Way of Mercy"
+    ]
+  },
+  {
+    "id": "warrior-of-the-mystic-arts",
+    "classId": "monje",
+    "name": "Warrior of the Mystic Arts",
+    "originalName": "Warrior of the Mystic Arts",
+    "source": "Arcana Unleashed (2026)",
+    "sourceYear": 2026,
+    "contentCategory": "official"
+  },
+  {
+    "id": "way-of-the-kensei",
+    "classId": "monje",
+    "name": "Way of the Kensei",
+    "originalName": "Way of the Kensei",
+    "source": "Xanathar's Guide to Everything (2017)",
+    "sourceYear": 2017,
+    "contentCategory": "official"
+  },
+  {
+    "id": "way-of-the-drunken-master",
+    "classId": "monje",
+    "name": "Way of the Drunken Master",
+    "originalName": "Way of the Drunken Master",
+    "source": "Xanathar's Guide to Everything (2017)",
+    "sourceYear": 2017,
+    "contentCategory": "official"
+  },
+  {
+    "id": "way-of-the-sun-soul",
+    "classId": "monje",
+    "name": "Way of the Sun Soul",
+    "originalName": "Way of the Sun Soul",
+    "source": "Xanathar's Guide to Everything (2017)",
+    "sourceYear": 2017,
+    "contentCategory": "official"
+  },
+  {
+    "id": "way-of-the-astral-self",
+    "classId": "monje",
+    "name": "Way of the Astral Self",
+    "originalName": "Way of the Astral Self",
+    "source": "Tasha's Cauldron of Everything (2020)",
+    "sourceYear": 2020,
+    "contentCategory": "official"
+  },
+  {
+    "id": "way-of-the-cobalt-soul",
+    "classId": "monje",
+    "name": "Way of the Cobalt Soul",
+    "originalName": "Way of the Cobalt Soul",
+    "source": "Critical Role (material de terceros)",
+    "contentCategory": "partner"
+  },
+  {
+    "id": "oath-of-devotion",
+    "classId": "paladin",
+    "name": "Oath of Devotion",
+    "originalName": "Oath of Devotion",
+    "source": "Player's Handbook (2024)",
+    "sourceYear": 2024,
+    "contentCategory": "official"
+  },
+  {
+    "id": "oath-of-the-ancients",
+    "classId": "paladin",
+    "name": "Oath of the Ancients",
+    "originalName": "Oath of the Ancients",
+    "source": "Player's Handbook (2024)",
+    "sourceYear": 2024,
+    "contentCategory": "official"
+  },
+  {
+    "id": "oath-of-vengeance",
+    "classId": "paladin",
+    "name": "Oath of Vengeance",
+    "originalName": "Oath of Vengeance",
+    "source": "Player's Handbook (2024)",
+    "sourceYear": 2024,
+    "contentCategory": "official"
+  },
+  {
+    "id": "oath-of-conquest",
+    "classId": "paladin",
+    "name": "Oath of Conquest",
+    "originalName": "Oath of Conquest",
+    "source": "Xanathar's Guide to Everything (2017)",
+    "sourceYear": 2017,
+    "contentCategory": "official"
+  },
+  {
+    "id": "oath-of-redemption",
+    "classId": "paladin",
+    "name": "Oath of Redemption",
+    "originalName": "Oath of Redemption",
+    "source": "Xanathar's Guide to Everything (2017)",
+    "sourceYear": 2017,
+    "contentCategory": "official"
+  },
+  {
+    "id": "oath-of-glory",
+    "classId": "paladin",
+    "name": "Oath of Glory",
+    "originalName": "Oath of Glory",
+    "source": "Player's Handbook (2024)",
+    "sourceYear": 2024,
+    "contentCategory": "official"
+  },
+  {
+    "id": "oath-of-the-watchers",
+    "classId": "paladin",
+    "name": "Oath of the Watchers",
+    "originalName": "Oath of the Watchers",
+    "source": "Xanathar's Guide to Everything (2017)",
+    "sourceYear": 2017,
+    "contentCategory": "official"
+  },
+  {
+    "id": "oath-of-the-noble-genies",
+    "classId": "paladin",
+    "name": "Oath of the Noble Genies",
+    "originalName": "Oath of the Noble Genies",
+    "source": "Forgotten Realms: Heroes of Faerûn (2025)",
+    "sourceYear": 2025,
+    "contentCategory": "official",
+    "aliases": [
+      "Oath of the Noble Genie"
+    ]
+  },
+  {
+    "id": "oath-of-the-open-sea",
+    "classId": "paladin",
+    "name": "Oath of the Open Sea",
+    "originalName": "Oath of the Open Sea",
+    "source": "Critical Role (material de terceros)",
+    "contentCategory": "partner"
+  },
+  {
+    "id": "hunter",
+    "classId": "ranger",
+    "name": "Hunter",
+    "originalName": "Hunter",
+    "source": "Player's Handbook (2024)",
+    "sourceYear": 2024,
+    "contentCategory": "official"
+  },
+  {
+    "id": "beast-master",
+    "classId": "ranger",
+    "name": "Beast Master",
+    "originalName": "Beast Master",
+    "source": "Player's Handbook (2024)",
+    "sourceYear": 2024,
+    "contentCategory": "official"
+  },
+  {
+    "id": "gloom-stalker",
+    "classId": "ranger",
+    "name": "Gloom Stalker",
+    "originalName": "Gloom Stalker",
+    "source": "Player's Handbook (2024)",
+    "sourceYear": 2024,
+    "contentCategory": "official"
+  },
+  {
+    "id": "horizon-walker",
+    "classId": "ranger",
+    "name": "Horizon Walker",
+    "originalName": "Horizon Walker",
+    "source": "Xanathar's Guide to Everything (2017)",
+    "sourceYear": 2017,
+    "contentCategory": "official"
+  },
+  {
+    "id": "monster-slayer",
+    "classId": "ranger",
+    "name": "Monster Slayer",
+    "originalName": "Monster Slayer",
+    "source": "Xanathar's Guide to Everything (2017)",
+    "sourceYear": 2017,
+    "contentCategory": "official"
+  },
+  {
+    "id": "fey-wanderer",
+    "classId": "ranger",
+    "name": "Fey Wanderer",
+    "originalName": "Fey Wanderer",
+    "source": "Player's Handbook (2024)",
+    "sourceYear": 2024,
+    "contentCategory": "official"
+  },
+  {
+    "id": "swarmkeeper",
+    "classId": "ranger",
+    "name": "Swarmkeeper",
+    "originalName": "Swarmkeeper",
+    "source": "Tasha's Cauldron of Everything (2020)",
+    "sourceYear": 2020,
+    "contentCategory": "official"
+  },
+  {
+    "id": "winter-walker",
+    "classId": "ranger",
+    "name": "Winter Walker",
+    "originalName": "Winter Walker",
+    "source": "Forgotten Realms: Heroes of Faerûn (2025)",
+    "sourceYear": 2025,
+    "contentCategory": "official"
+  },
+  {
+    "id": "thief",
+    "classId": "picaro",
+    "name": "Thief",
+    "originalName": "Thief",
+    "source": "Player's Handbook (2024)",
+    "sourceYear": 2024,
+    "contentCategory": "official"
+  },
+  {
+    "id": "arcane-trickster",
+    "classId": "picaro",
+    "name": "Arcane Trickster",
+    "originalName": "Arcane Trickster",
+    "source": "Player's Handbook (2024)",
+    "sourceYear": 2024,
+    "contentCategory": "official"
+  },
+  {
+    "id": "assassin",
+    "classId": "picaro",
+    "name": "Assassin",
+    "originalName": "Assassin",
+    "source": "Player's Handbook (2024)",
+    "sourceYear": 2024,
+    "contentCategory": "official"
+  },
+  {
+    "id": "inquisitive",
+    "classId": "picaro",
+    "name": "Inquisitive",
+    "originalName": "Inquisitive",
+    "source": "Xanathar's Guide to Everything (2017)",
+    "sourceYear": 2017,
+    "contentCategory": "official"
+  },
+  {
+    "id": "mastermind",
+    "classId": "picaro",
+    "name": "Mastermind",
+    "originalName": "Mastermind",
+    "source": "Xanathar's Guide to Everything (2017)",
+    "sourceYear": 2017,
+    "contentCategory": "official"
+  },
+  {
+    "id": "scout",
+    "classId": "picaro",
+    "name": "Scout",
+    "originalName": "Scout",
+    "source": "Xanathar's Guide to Everything (2017)",
+    "sourceYear": 2017,
+    "contentCategory": "official"
+  },
+  {
+    "id": "swashbuckler",
+    "classId": "picaro",
+    "name": "Swashbuckler",
+    "originalName": "Swashbuckler",
+    "source": "Xanathar's Guide to Everything (2017)",
+    "sourceYear": 2017,
+    "contentCategory": "official"
+  },
+  {
+    "id": "phantom",
+    "classId": "picaro",
+    "name": "Phantom",
+    "originalName": "Phantom",
+    "source": "Tasha's Cauldron of Everything (2020)",
+    "sourceYear": 2020,
+    "contentCategory": "official"
+  },
+  {
+    "id": "soulknife",
+    "classId": "picaro",
+    "name": "Soulknife",
+    "originalName": "Soulknife",
+    "source": "Player's Handbook (2024)",
+    "sourceYear": 2024,
+    "contentCategory": "official"
+  },
+  {
+    "id": "scion-of-the-three",
+    "classId": "picaro",
+    "name": "Scion of the Three",
+    "originalName": "Scion of the Three",
+    "source": "Forgotten Realms: Heroes of Faerûn (2025)",
+    "sourceYear": 2025,
+    "contentCategory": "official"
+  },
+  {
+    "id": "wild-magic-sorcery",
+    "classId": "hechicero",
+    "name": "Wild Magic Sorcery",
+    "originalName": "Wild Magic Sorcery",
+    "source": "Player's Handbook (2024)",
+    "sourceYear": 2024,
+    "contentCategory": "official",
+    "aliases": [
+      "Wild Magic"
+    ]
+  },
+  {
+    "id": "draconic-sorcery",
+    "classId": "hechicero",
+    "name": "Draconic Sorcery",
+    "originalName": "Draconic Sorcery",
+    "source": "Player's Handbook (2024)",
+    "sourceYear": 2024,
+    "contentCategory": "official",
+    "aliases": [
+      "Draconic Bloodline"
+    ]
+  },
+  {
+    "id": "divine-soul",
+    "classId": "hechicero",
+    "name": "Divine Soul",
+    "originalName": "Divine Soul",
+    "source": "Xanathar's Guide to Everything (2017)",
+    "sourceYear": 2017,
+    "contentCategory": "official"
+  },
+  {
+    "id": "shadow-magic",
+    "classId": "hechicero",
+    "name": "Shadow Magic",
+    "originalName": "Shadow Magic",
+    "source": "Xanathar's Guide to Everything (2017)",
+    "sourceYear": 2017,
+    "contentCategory": "official"
+  },
+  {
+    "id": "storm-sorcery",
+    "classId": "hechicero",
+    "name": "Storm Sorcery",
+    "originalName": "Storm Sorcery",
+    "source": "Xanathar's Guide to Everything (2017)",
+    "sourceYear": 2017,
+    "contentCategory": "official"
+  },
+  {
+    "id": "spellfire-sorcery",
+    "classId": "hechicero",
+    "name": "Spellfire Sorcery",
+    "originalName": "Spellfire Sorcery",
+    "source": "Forgotten Realms: Heroes of Faerûn (2025)",
+    "sourceYear": 2025,
+    "contentCategory": "official"
+  },
+  {
+    "id": "aberrant-sorcery",
+    "classId": "hechicero",
+    "name": "Aberrant Sorcery",
+    "originalName": "Aberrant Sorcery",
+    "source": "Player's Handbook (2024)",
+    "sourceYear": 2024,
+    "contentCategory": "official",
+    "aliases": [
+      "Aberrant Mind"
+    ]
+  },
+  {
+    "id": "clockwork-sorcery",
+    "classId": "hechicero",
+    "name": "Clockwork Sorcery",
+    "originalName": "Clockwork Sorcery",
+    "source": "Player's Handbook (2024)",
+    "sourceYear": 2024,
+    "contentCategory": "official",
+    "aliases": [
+      "Clockwork Soul"
+    ]
+  },
+  {
+    "id": "archfey-patron",
+    "classId": "warlock",
+    "name": "Archfey Patron",
+    "originalName": "Archfey Patron",
+    "source": "Player's Handbook (2024)",
+    "sourceYear": 2024,
+    "contentCategory": "official",
+    "aliases": [
+      "The Archfey"
+    ]
+  },
+  {
+    "id": "fiend-patron",
+    "classId": "warlock",
+    "name": "Fiend Patron",
+    "originalName": "Fiend Patron",
+    "source": "Player's Handbook (2024)",
+    "sourceYear": 2024,
+    "contentCategory": "official",
+    "aliases": [
+      "The Fiend"
+    ]
+  },
+  {
+    "id": "great-old-one-patron",
+    "classId": "warlock",
+    "name": "Great Old One Patron",
+    "originalName": "Great Old One Patron",
+    "source": "Player's Handbook (2024)",
+    "sourceYear": 2024,
+    "contentCategory": "official",
+    "aliases": [
+      "The Great Old One",
+      "Great Old One Patron"
+    ]
+  },
+  {
+    "id": "celestial-patron",
+    "classId": "warlock",
+    "name": "Celestial Patron",
+    "originalName": "Celestial Patron",
+    "source": "Player's Handbook (2024)",
+    "sourceYear": 2024,
+    "contentCategory": "official",
+    "aliases": [
+      "The Celestial"
+    ]
+  },
+  {
+    "id": "the-hexblade",
+    "classId": "warlock",
+    "name": "The Hexblade",
+    "originalName": "The Hexblade",
+    "source": "Xanathar's Guide to Everything (2017)",
+    "sourceYear": 2017,
+    "contentCategory": "official"
+  },
+  {
+    "id": "the-fathomless",
+    "classId": "warlock",
+    "name": "The Fathomless",
+    "originalName": "The Fathomless",
+    "source": "Tasha's Cauldron of Everything (2020)",
+    "sourceYear": 2020,
+    "contentCategory": "official"
+  },
+  {
+    "id": "the-genie",
+    "classId": "warlock",
+    "name": "The Genie",
+    "originalName": "The Genie",
+    "source": "Tasha's Cauldron of Everything (2020)",
+    "sourceYear": 2020,
+    "contentCategory": "official"
+  },
+  {
+    "id": "vestige-patron",
+    "classId": "warlock",
+    "name": "Vestige Patron",
+    "originalName": "Vestige Patron",
+    "source": "Arcana Unleashed (2026)",
+    "sourceYear": 2026,
+    "contentCategory": "official"
+  },
+  {
+    "id": "abjurer",
+    "classId": "mago",
+    "name": "Abjurer",
+    "originalName": "Abjurer",
+    "source": "Player's Handbook (2024)",
+    "sourceYear": 2024,
+    "contentCategory": "official",
+    "aliases": [
+      "School of Abjuration"
+    ]
+  },
+  {
+    "id": "diviner",
+    "classId": "mago",
+    "name": "Diviner",
+    "originalName": "Diviner",
+    "source": "Player's Handbook (2024)",
+    "sourceYear": 2024,
+    "contentCategory": "official",
+    "aliases": [
+      "School of Divination"
+    ]
+  },
+  {
+    "id": "evoker",
+    "classId": "mago",
+    "name": "Evoker",
+    "originalName": "Evoker",
+    "source": "Player's Handbook (2024)",
+    "sourceYear": 2024,
+    "contentCategory": "official",
+    "aliases": [
+      "School of Evocation"
+    ]
+  },
+  {
+    "id": "illusionist",
+    "classId": "mago",
+    "name": "Illusionist",
+    "originalName": "Illusionist",
+    "source": "Player's Handbook (2024)",
+    "sourceYear": 2024,
+    "contentCategory": "official",
+    "aliases": [
+      "School of Illusion"
+    ]
+  },
+  {
+    "id": "bladesinger",
+    "classId": "mago",
+    "name": "Bladesinger",
+    "originalName": "Bladesinger",
+    "source": "Forgotten Realms: Heroes of Faerûn (2025)",
+    "sourceYear": 2025,
+    "contentCategory": "official"
+  },
+  {
+    "id": "conjurer",
+    "classId": "mago",
+    "name": "Conjurer",
+    "originalName": "Conjurer",
+    "source": "Arcana Unleashed (2026)",
+    "sourceYear": 2026,
+    "contentCategory": "official"
+  },
+  {
+    "id": "enchanter",
+    "classId": "mago",
+    "name": "Enchanter",
+    "originalName": "Enchanter",
+    "source": "Arcana Unleashed (2026)",
+    "sourceYear": 2026,
+    "contentCategory": "official"
+  },
+  {
+    "id": "necromancer",
+    "classId": "mago",
+    "name": "Necromancer",
+    "originalName": "Necromancer",
+    "source": "Arcana Unleashed (2026)",
+    "sourceYear": 2026,
+    "contentCategory": "official"
+  },
+  {
+    "id": "transmuter",
+    "classId": "mago",
+    "name": "Transmuter",
+    "originalName": "Transmuter",
+    "source": "Arcana Unleashed (2026)",
+    "sourceYear": 2026,
+    "contentCategory": "official"
+  },
+  {
+    "id": "order-of-the-scribes",
+    "classId": "mago",
+    "name": "Order of the Scribes",
+    "originalName": "Order of the Scribes",
+    "source": "Tasha's Cauldron of Everything (2020)",
+    "sourceYear": 2020,
+    "contentCategory": "official"
+  },
+  {
+    "id": "war-magic",
+    "classId": "mago",
+    "name": "War Magic",
+    "originalName": "War Magic",
+    "source": "Xanathar's Guide to Everything (2017)",
+    "sourceYear": 2017,
+    "contentCategory": "official"
+  }
+]
