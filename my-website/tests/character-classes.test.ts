@@ -20,7 +20,7 @@ test('the class directory keeps the approved order and has a document for each c
     assert.match(characterClass.id, /^[a-z0-9]+(?:-[a-z0-9]+)*$/);
     assert.ok(existsSync(path.join('docs', 'mechanics', 'classes', `${characterClass.id}.mdx`)));
   }
-  assert.equal(getCharacterClass('artifice')?.source, 'Material complementario compatible con D&D 5.5e');
+  assert.equal(getCharacterClass('artifice')?.source, 'Eberron: Forge of the Artificer (2025)');
 });
 
 test('registered subclass IDs resolve to one approved class and document route', () => {
