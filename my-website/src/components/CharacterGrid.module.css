@@ -69,9 +69,43 @@
 }
 
 .level {
-  margin-top: auto;
   color: var(--h-accent);
   font-size: 0.68rem;
   font-weight: 700;
   line-height: 1.2;
+}
+
+.classGrid {
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 150px), 1fr));
+  gap: 0.9rem;
+}
+
+.classCard {
+  gap: 0.55rem;
+  padding: 0.65rem;
+}
+
+.classPortrait {
+  aspect-ratio: 4 / 5;
+}
+
+.className {
+  font-size: 0.85rem;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.classMeta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  width: 100%;
+  margin-top: auto;
+}
+
+.subclass {
+  color: var(--h-purple-bright);
+  font-size: 0.72rem;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
 }

@@ -25,8 +25,9 @@
     "gen:factions:force": "tsx scripts/generateFactionsMdx.ts --force",
     "gen:documents": "tsx scripts/generate-document-pages.ts --clean",
     "migrate:documents:mdx": "tsx scripts/migrate-document-content-to-mdx.ts",
-    "test": "tsx --test tests/library.test.ts tests/document-mdx.test.ts tests/character-id-normalization.test.ts tests/fill-null-character-image-paths.test.mjs tests/faction-directory-ordering.test.ts tests/character-faction-ordering.test.ts tests/public-build-policy.test.mjs tests/audit-character-doc-duplicates.test.mjs tests/public-redirects.test.ts tests/public-faction-routes.test.mjs tests/character-classes.test.ts tests/class-characters.test.ts",
+    "test": "tsx --test tests/document-reader.test.tsx tests/library.test.ts tests/document-mdx.test.ts tests/character-id-normalization.test.ts tests/fill-null-character-image-paths.test.mjs tests/faction-directory-ordering.test.ts tests/character-faction-ordering.test.ts tests/public-build-policy.test.mjs tests/audit-character-doc-duplicates.test.mjs tests/public-redirects.test.ts tests/public-faction-routes.test.mjs tests/character-classes.test.ts tests/class-characters.test.ts",
     "test:library-build": "node --test tests/library-build.test.mjs",
+    "test:document-reader-build": "node --test tests/document-reader-build.test.mjs",
     "test:character-ids": "tsx --test tests/character-id-normalization.test.ts",
     "validate:data": "tsx scripts/validate-data.ts",
     "images:webp": "node scripts/convert-images-to-webp.mjs",
@@ -56,7 +57,9 @@
     "prism-react-renderer": "^2.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "recharts": "^3.8.0"
+    "react-markdown": "^10.1.0",
+    "recharts": "^3.8.0",
+    "remark-gfm": "^4.0.1"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.9.2",

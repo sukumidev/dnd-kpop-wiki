@@ -13,10 +13,9 @@ export default function CharacterClassPage({classId, children}: Props) {
 
   const subclasses = getClassSubclasses(characterClass);
   const classCharacters = getCharactersForClass(classId);
-  const classLevels = new Map<string, number>();
-  for (const {character, level} of classCharacters) {
-    if (level !== undefined) classLevels.set(character.id, level);
-  }
+  const classDetails = new Map(classCharacters.map(({character, level, subclass}) => [
+    character.id, {level, subclass},
+  ] as const));
   const hasDetails = Boolean(
     characterClass.hitDie || characterClass.primaryAbilities?.length || characterClass.savingThrows?.length,
   );
@@ -69,7 +68,7 @@ export default function CharacterClassPage({classId, children}: Props) {
         {classCharacters.length ? (
           <CharacterGrid
             characters={classCharacters.map(({character}) => character)}
-            classLevels={classLevels}
+            classDetails={classDetails}
             label={`Personajes de la clase ${characterClass.name}`}
           />
         ) : <p className={styles.emptyState}>Aún no hay personajes registrados para esta clase.</p>}

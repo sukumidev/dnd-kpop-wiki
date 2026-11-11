@@ -16,3 +16,5 @@ Los campos mecánicos, la descripción, la imagen y la fuente son opcionales. La
 `src/data/classCharacters.ts` deriva esta relación de `statblocks.json`. La clase se resuelve por nombre o ID exacto después de normalizar mayúsculas, acentos y espacios. El `id` del statblock debe coincidir exactamente con un registro de `characters.json` que tenga ficha (`hasProfile !== false`). No se infieren relaciones por nombre del personaje.
 
 Cada entrada de `classes` aporta el nivel de esa clase. Si hay varios statblocks para el mismo personaje, se muestra una sola tarjeta con el mayor nivel **registrado explícitamente para esa clase**. La relación no se guarda en los modelos de clases ni modifica los statblocks.
+
+La subclase se lee del campo `subclass` de esa misma entrada de clase. Al resolver varios statblocks, la tarjeta conserva la subclase de la entrada elegida para el nivel mostrado; si esa entrada no la registra, se omite. La variante de `CharacterGrid` para estas páginas muestra el nombre completo, nivel y subclase sin cambiar las tarjetas de otros directorios.

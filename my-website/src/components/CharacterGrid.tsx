@@ -8,7 +8,7 @@ import styles from "./CharacterGrid.module.css";
 type Props = {
   characters: Character[];
   label: string;
-  classLevels?: ReadonlyMap<string, number>;
+  classDetails?: ReadonlyMap<string, {level?: number; subclass?: string}>;
 };
 
 const shortNames: Record<string, string> = {
@@ -27,11 +27,12 @@ const shortNames: Record<string, string> = {
   "svt-minghao": "Minghao",
 };
 
-export default function CharacterGrid({characters, label, classLevels}: Props) {
+export default function CharacterGrid({characters, label, classDetails}: Props) {
   const {withBaseUrl} = useBaseUrlUtils();
+  const isClassDirectory = classDetails !== undefined;
 
   return (
-    <ul className={styles.grid} aria-label={label}>
+    <ul className={`${styles.grid} ${isClassDirectory ? styles.classGrid : ''}`} aria-label={label}>
       {characters.map((character) => {
         const docPath =
           getMythicEntityByCharacterId(character.id)?.docPath ?? getCharacterDocPath(character);
@@ -40,19 +41,25 @@ export default function CharacterGrid({characters, label, classLevels}: Props) {
           .slice(0, 2)
           .map((part) => part[0])
           .join("");
+        const details = classDetails?.get(character.id);
 
         const content = (
           <>
-            <span className={styles.portrait}>
+            <span className={`${styles.portrait} ${isClassDirectory ? styles.classPortrait : ''}`}>
               {character.imageSrc ? (
                 <img src={withBaseUrl(character.imageSrc)} alt="" loading="lazy" />
               ) : (
                 <span className={styles.initials} aria-hidden="true">{initials}</span>
               )}
             </span>
-            <span className={styles.name}>{shortNames[character.id] ?? character.title}</span>
-            {classLevels?.has(character.id) && (
-              <span className={styles.level}>Nivel {classLevels.get(character.id)}</span>
+            <span className={`${styles.name} ${isClassDirectory ? styles.className : ''}`}>
+              {isClassDirectory ? character.title : shortNames[character.id] ?? character.title}
+            </span>
+            {isClassDirectory && (details?.level !== undefined || details?.subclass) && (
+              <span className={styles.classMeta}>
+                {details.level !== undefined && <span className={styles.level}>Nivel {details.level}</span>}
+                {details.subclass && <span className={styles.subclass}>{details.subclass}</span>}
+              </span>
             )}
           </>
         );
@@ -60,11 +67,11 @@ export default function CharacterGrid({characters, label, classLevels}: Props) {
         return (
           <li key={character.id} className={styles.item}>
             {character.hasProfile === false ? (
-              <span className={styles.card}>{content}</span>
+              <span className={`${styles.card} ${isClassDirectory ? styles.classCard : ''}`}>{content}</span>
             ) : (
               <Link
                 to={`/${docPath}`}
-                className={styles.card}
+                className={`${styles.card} ${isClassDirectory ? styles.classCard : ''}`}
                 aria-label={`Abrir ficha de ${character.title}`}
               >
                 {content}

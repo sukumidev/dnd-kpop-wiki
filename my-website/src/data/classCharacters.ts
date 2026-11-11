@@ -6,6 +6,8 @@ export type ClassCharacter = {
   character: Character;
   /** The level recorded for this class, never the character's total level. */
   level?: number;
+  /** The subclass recorded on this class entry, when present. */
+  subclass?: string;
 };
 
 type StatblockReference = {
@@ -38,6 +40,7 @@ export function resolveCharactersForClass(
   if (!getCharacterClass(classId)) return [];
 
   const found = new Map<string, ClassCharacter>();
+  const ambiguousSubclasses = new Set<string>();
   for (const block of Object.values(blocks)) {
     if (!block || typeof block.id !== 'string' || !Array.isArray(block.classes)) continue;
     const character = profiles[block.id];
@@ -45,19 +48,35 @@ export function resolveCharactersForClass(
 
     for (const entry of block.classes) {
       if (!entry || typeof entry !== 'object') continue;
-      const {name, level} = entry as {name?: unknown; level?: unknown};
+      const {name, level, subclass} = entry as {name?: unknown; level?: unknown; subclass?: unknown};
       if (resolveClassId(name) !== classId) continue;
 
       const recordedLevel = typeof level === 'number' && Number.isInteger(level) && level > 0
         ? level : undefined;
+      const recordedSubclass = typeof subclass === 'string' && subclass.trim()
+        ? subclass.trim() : undefined;
       const previous = found.get(character.id);
       if (!previous) {
-        found.set(character.id, {character, level: recordedLevel});
+        found.set(character.id, {
+          character,
+          level: recordedLevel,
+          ...(recordedSubclass ? {subclass: recordedSubclass} : {}),
+        });
       } else if (recordedLevel !== undefined &&
         (previous.level === undefined || recordedLevel > previous.level)) {
         // Multiple statblocks may describe the same character. Keep one card and
-        // the highest explicitly recorded level for this class.
+        // the subclass attached to the highest explicitly recorded class level.
         previous.level = recordedLevel;
+        if (recordedSubclass) previous.subclass = recordedSubclass;
+        else delete previous.subclass;
+        ambiguousSubclasses.delete(character.id);
+      } else if (recordedLevel === previous.level && recordedSubclass) {
+        if (previous.subclass && previous.subclass !== recordedSubclass) {
+          delete previous.subclass;
+          ambiguousSubclasses.add(character.id);
+        } else if (!previous.subclass && !ambiguousSubclasses.has(character.id)) {
+          previous.subclass = recordedSubclass;
+        }
       }
     }
   }

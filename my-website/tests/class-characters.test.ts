@@ -17,10 +17,10 @@ function profile(id: string, overrides: Partial<Character> = {}): Character {
 test('resolves one class by its statblock entry and keeps its recorded level', () => {
   const character = profile('hero');
   const result = resolveCharactersForClass('paladin', {
-    hero: {id: 'hero', classes: [{name: 'Paladin', level: 6}]},
+    hero: {id: 'hero', classes: [{name: 'Paladin', level: 6, subclass: 'Oath of Devotion'}]},
   }, {hero: character});
 
-  assert.deepEqual(result, [{character, level: 6}]);
+  assert.deepEqual(result, [{character, level: 6, subclass: 'Oath of Devotion'}]);
   assert.equal(resolveClassId('  BÁRBARO  '), 'barbaro');
   assert.equal(resolveClassId('Fighter'), 'guerrero');
   assert.equal(resolveClassId('Blood Hunter'), undefined);
@@ -30,23 +30,36 @@ test('includes multiclass characters in each class with separate levels', () => 
   const character = profile('multiclass');
   const blocks = {
     multiclass: {id: 'multiclass', classes: [
-      {name: 'Druid', level: 3}, {name: 'Bard', level: 5},
+      {name: 'Druid', level: 3, subclass: 'Circle of Stars'},
+      {name: 'Bard', level: 5, subclass: 'College of the Moon'},
     ]},
   };
   const profiles = {multiclass: character};
 
-  assert.deepEqual(resolveCharactersForClass('druida', blocks, profiles), [{character, level: 3}]);
-  assert.deepEqual(resolveCharactersForClass('bardo', blocks, profiles), [{character, level: 5}]);
+  assert.deepEqual(resolveCharactersForClass('druida', blocks, profiles), [
+    {character, level: 3, subclass: 'Circle of Stars'},
+  ]);
+  assert.deepEqual(resolveCharactersForClass('bardo', blocks, profiles), [
+    {character, level: 5, subclass: 'College of the Moon'},
+  ]);
 });
 
-test('deduplicates multiple statblocks and uses an explicitly recorded class level', () => {
+test('deduplicates statblocks and keeps the subclass from the selected class level', () => {
   const character = profile('hero');
   const result = resolveCharactersForClass('mago', {
-    first: {id: 'hero', classes: [{name: 'Wizard', level: 4}]},
-    second: {id: 'hero', classes: [{name: 'mago', level: 6}, {name: 'Wizard', level: 6}]},
+    first: {id: 'hero', classes: [{name: 'Wizard', level: 4, subclass: 'Evoker'}]},
+    second: {id: 'hero', classes: [{name: 'mago', level: 6, subclass: 'Abjurer'}]},
   }, {hero: character});
 
-  assert.deepEqual(result, [{character, level: 6}]);
+  assert.deepEqual(result, [{character, level: 6, subclass: 'Abjurer'}]);
+  assert.deepEqual(resolveCharactersForClass('mago', {
+    first: {id: 'hero', classes: [{name: 'Wizard', level: 4, subclass: 'Evoker'}]},
+    second: {id: 'hero', classes: [{name: 'Wizard', level: 6}]},
+  }, {hero: character}), [{character, level: 6}]);
+  assert.deepEqual(resolveCharactersForClass('mago', {
+    first: {id: 'hero', classes: [{name: 'Wizard', level: 6, subclass: 'Evoker'}]},
+    second: {id: 'hero', classes: [{name: 'Wizard', level: 6, subclass: 'Abjurer'}]},
+  }, {hero: character}), [{character, level: 6}]);
 });
 
 test('skips missing profiles and unidentifiable classes without inventing levels', () => {
@@ -72,6 +85,10 @@ test('current statblocks resolve multiclass levels and linked character profiles
   const bard = getCharactersForClass('bardo').find(({character}) => character.id === 'pc-kao');
   assert.equal(druid?.level, 3);
   assert.equal(bard?.level, 3);
+  assert.equal(druid?.subclass, 'Circle of Stars');
+  assert.equal(bard?.subclass, 'College of the Moon');
+  assert.equal(getCharactersForClass('mago').find(({character}) => character.id === 'nct-mark')?.subclass, 'Abjurer');
+  assert.equal(getCharactersForClass('artifice').find(({character}) => character.id === 'nct-mark')?.subclass, undefined);
 
   for (const characterClass of characterClasses) {
     for (const {character} of getCharactersForClass(characterClass.id)) {
