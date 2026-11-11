@@ -26,7 +26,7 @@ export default function CharacterClassPage({classId, children}: Props) {
   return (
     <div className={styles.page}>
       <header className={styles.pageHeader}>
-        <span className={styles.eyebrow}>Clase · D&amp;D 5.5e</span>
+        <span className={styles.eyebrow}>{classId === 'blood-hunter' ? 'Clase · material de terceros' : 'Clase · D&D 5.5e'}</span>
         <h1 className={styles.pageTitle}>{characterClass.name}</h1>
         <p className={styles.originalName}>{characterClass.originalName}</p>
         {characterClass.description && <p className={styles.lead}>{characterClass.description}</p>}
