@@ -1,9 +1,13 @@
 import realmCatalogJson from "./realmCatalog.json";
 import { locations } from "./locations";
+import { resolveArchiveSymbol } from "./archiveSymbols";
 import {
   getPublicTopLevelDocuments,
   isDocumentCollection,
   type BookAppearance,
+  type ArchiveDisplayMode,
+  type ArchiveMaterial,
+  type ArchiveWear,
   type Document,
   type LibraryMetadata,
 } from "./documents";
@@ -21,7 +25,7 @@ export type LibraryShelf = {
   kind: "realm" | "other" | "unknown";
 };
 
-export type ResolvedBookAppearance = Required<BookAppearance>;
+export type ResolvedBookAppearance = Required<Omit<BookAppearance, "displayMode" | "material" | "wear">>;
 
 function record(value: unknown): value is Record<string, unknown> {
   return !!value && typeof value === "object" && !Array.isArray(value);
@@ -90,6 +94,33 @@ export function groupLibraryDocuments(list: Document[] = getPublicTopLevelDocume
     });
 }
 
+export const ARCHIVE_DISPLAY_MODES = ["book", "letter", "newspaper", "dossier", "notice", "scroll"] as const;
+export const ARCHIVE_MATERIALS = ["leather", "cloth", "parchment", "newsprint", "canvas", "aged-paper"] as const;
+export const ARCHIVE_WEARS = ["new", "used", "ancient"] as const;
+
+const materialsByMode = {
+  book: ["leather", "cloth", "canvas"],
+  letter: ["parchment", "aged-paper"],
+  newspaper: ["newsprint", "aged-paper"],
+  dossier: ["leather", "cloth", "canvas"],
+  notice: ["leather", "canvas", "aged-paper"],
+  scroll: ["parchment", "aged-paper"],
+} as const;
+const archivePresets = {
+  book: { material: "leather", color: "#384a77", symbol: "✦", thickness: "medium" },
+  letter: { material: "parchment", color: "#694d38", symbol: "❖", thickness: "thin" },
+  newspaper: { material: "newsprint", color: "#454c78", symbol: "✧", thickness: "thin" },
+  dossier: { material: "canvas", color: "#345b3e", symbol: "✳", thickness: "medium" },
+  notice: { material: "leather", color: "#713c50", symbol: "✦", thickness: "medium" },
+  scroll: { material: "aged-paper", color: "#694d38", symbol: "✧", thickness: "medium" },
+} as const;
+
+export type ResolvedArchiveAppearance = ResolvedBookAppearance & {
+  displayMode: ArchiveDisplayMode;
+  material: ArchiveMaterial;
+  wear: ArchiveWear;
+};
+
 const colors = ["#384a77", "#4e467a", "#295568", "#55476d", "#345b66", "#454c78"];
 const accents = ["#d8bc82", "#a9d6bd", "#c3b3e7", "#b5d4df"];
 const symbols = ["✦", "❖", "✧", "✳"];
@@ -132,6 +163,36 @@ export function resolveBookAppearance(document: Document): ResolvedBookAppearanc
   };
 }
 
+/** Opt-in physical modes. Missing displayMode retains the exact legacy book preset. */
+export function resolveArchiveAppearance(document: Document): ResolvedArchiveAppearance {
+  const custom = getLibraryMetadata(document).appearance;
+  const appearance = record(custom) ? custom : {};
+  const displayMode = option(appearance.displayMode, ARCHIVE_DISPLAY_MODES, "book");
+  const legacy = resolveBookAppearance(document);
+  const preset = archivePresets[displayMode];
+  const requestedMaterial = option(appearance.material, ARCHIVE_MATERIALS, preset.material);
+  const material = (materialsByMode[displayMode] as readonly string[]).includes(requestedMaterial) ? requestedMaterial : preset.material;
+  if (displayMode === "book") {
+    return {
+      ...legacy,
+      displayMode,
+      material,
+      wear: option(appearance.wear, ARCHIVE_WEARS, "new"),
+    };
+  }
+  return {
+    ...legacy,
+    displayMode,
+    material,
+    wear: option(appearance.wear, ARCHIVE_WEARS, "new"),
+    color: color(appearance.color, preset.color),
+    accentColor: color(appearance.accentColor, "#d8bc82"),
+    symbol: resolveArchiveSymbol(appearance.symbol, preset.symbol),
+    thickness: option(appearance.thickness, ["thin", "medium", "thick"] as const, preset.thickness),
+    spineImage: null,
+  };
+}
+
 /** Validation shared by the Wiki data check and future JSON exporters. */
 export function validateLibraryMetadata(value: unknown): string[] {
   if (value === undefined) return [];
@@ -155,6 +216,9 @@ export function validateLibraryMetadata(value: unknown): string[] {
       ["height", ["short", "medium", "tall"]],
       ["thickness", ["thin", "medium", "thick"]],
       ["texture", ["leather", "cloth", "aged"]],
+      ["displayMode", ARCHIVE_DISPLAY_MODES],
+      ["material", ARCHIVE_MATERIALS],
+      ["wear", ARCHIVE_WEARS],
     ] as const) {
       if (appearance[field] !== undefined && !allowed.includes(appearance[field] as never)) errors.push(`appearance.${field} no es un valor admitido`);
     }

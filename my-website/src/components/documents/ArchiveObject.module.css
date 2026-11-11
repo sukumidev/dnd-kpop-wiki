@@ -1,0 +1,95 @@
+.object {
+  --object-width: 51px;
+  --object-height: 198px;
+  position: relative;
+  display: block;
+  width: var(--object-width);
+  height: var(--object-height);
+  flex: none;
+  color: #302b2b;
+}
+.object[data-thickness="thin"] { --object-width: 42px; }
+.object[data-thickness="thick"] { --object-width: 63px; }
+.object[data-height="short"] { --object-height: 173px; }
+.object[data-height="tall"] { --object-height: 226px; }
+.surface {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 1px solid color-mix(in srgb, var(--archive-color), #141525 30%);
+  background: var(--archive-color);
+  box-shadow: inset 3px 0 5px #fff3, inset -4px 0 6px #1614246b, 4px 6px 9px #080b1c9c;
+  transition: transform 180ms ease;
+}
+.object:hover .surface,
+.object:focus-visible .surface { transform: translateY(-7px); filter: brightness(1.08); }
+.surface::after {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  background: repeating-linear-gradient(110deg, transparent 0 4px, #351f1a0d 5px 6px);
+  content: "";
+  pointer-events: none;
+}
+.object[data-material="cloth"] .surface::after { background: repeating-linear-gradient(0deg, transparent 0 2px, #fff2 2px 3px), repeating-linear-gradient(90deg, transparent 0 3px, #090a1b20 3px 4px); }
+.object[data-material="canvas"] .surface::after { background: repeating-linear-gradient(45deg, transparent 0 3px, #fff2 3px 4px), repeating-linear-gradient(-45deg, transparent 0 3px, #05061124 3px 4px); }
+.object[data-material="parchment"] .surface::after { background: repeating-linear-gradient(116deg, transparent 0 8px, #65422117 9px 10px); }
+.object[data-material="aged-paper"] .surface::after { background: radial-gradient(ellipse at 75% 22%, #74513225, transparent 38%), radial-gradient(ellipse at 18% 83%, #5f3d2d26, transparent 35%), repeating-linear-gradient(116deg, transparent 0 8px, #65422117 9px 10px); }
+.object[data-material="newsprint"] .surface::after { background: radial-gradient(#302b3038 .45px, transparent .6px) 0 0 / 3px 3px; }
+.object[data-wear="used"] .surface { box-shadow: inset 5px 0 6px #49332430, inset -4px 0 7px #18101b6b, 4px 6px 9px #080b1c9c; }
+.object[data-wear="ancient"] .surface { border-color: #887452; box-shadow: inset 6px 0 8px #55382070, inset -5px 0 8px #35231a91, 4px 6px 9px #080b1c9c; }
+.object[data-wear="ancient"] .surface::after { opacity: .75; }
+.pages, .fold, .stitch, .tab, .sheet, .clip, .print, .band, .cord, .seal { display: none; position: absolute; }
+.title { position: absolute; z-index: 4; top: 42%; left: 50%; max-height: 47%; overflow: hidden; font: 600 .65rem/1.14 var(--h-font-ceremonial, Georgia, serif); letter-spacing: .035em; text-align: center; text-shadow: 0 1px 2px #fff9; writing-mode: vertical-rl; transform: translate(-50%, -34%) rotate(180deg); }
+.seal { z-index: 4; top: 24%; left: 50%; width: 23px; height: 23px; align-items: center; justify-content: center; border: 1px solid #e9c99c; border-radius: 50%; background: #773c4a; box-shadow: 0 2px 3px #2613208a; color: var(--archive-accent); font: .85rem/1 'Segoe UI Symbol', 'Noto Sans Symbols 2', Georgia, serif; transform: translateX(-50%); }
+.collectionMark { position: absolute; z-index: 5; right: 2px; bottom: 12px; left: 2px; color: var(--archive-accent); font-size: .39rem; font-weight: 800; letter-spacing: .03em; text-align: center; text-shadow: 0 1px 2px #151725; }
+
+/* A stack of envelopes, with a folded face and wax seal. */
+.object[data-mode="letter"] .surface { border-radius: 2px 5px 3px 2px; background: linear-gradient(90deg, #8c7058 0 7%, #d1b992 10%, color-mix(in srgb, #e2d0ab 85%, var(--archive-color)) 55%, #baa079 100%); }
+.object[data-mode="letter"] .pages { display: block; z-index: -1; top: 4px; right: -3px; bottom: 3px; width: 4px; border: 1px solid #b9a27e; background: #e4d2ae; }
+.object[data-mode="letter"] .fold { display: block; inset: 16px 5px 55%; border-top: 1px solid #a78869; background: linear-gradient(145deg, #f4dfba 48%, #b59876 50%, #ead1a6 53%); clip-path: polygon(0 0, 100% 0, 50% 80%); }
+.object[data-mode="letter"] .cord { display: block; z-index: 3; top: 12px; bottom: 12px; left: 7px; border-left: 2px solid var(--archive-accent); opacity: .85; }
+.object[data-mode="letter"] .seal { display: flex; top: 31%; }
+.object[data-mode="letter"] .title { top: 67%; max-height: 43%; }
+
+/* Folded newsprint has staggered page edges, a masthead band and print lines. */
+.object[data-mode="newspaper"] .surface { border-radius: 1px; background: linear-gradient(90deg, #9c9482 0 5%, #d6d0bb 9%, color-mix(in srgb, #eee8d6 88%, var(--archive-color)) 65%, #b9b19e); }
+.object[data-mode="newspaper"] .pages { display: block; z-index: -1; top: 3px; right: -5px; bottom: 3px; width: 7px; border-left: 1px solid #a6a08f; background: repeating-linear-gradient(90deg, #d8d2c0 0 2px, #8b867c 2px 3px); }
+.object[data-mode="newspaper"] .fold { display: block; z-index: 3; top: 5px; bottom: 5px; left: 7px; border-left: 1px dashed #77736391; }
+.object[data-mode="newspaper"] .band { display: block; z-index: 3; top: 19px; right: 3px; left: 3px; height: 16px; border-top: 1px solid #8c774e; border-bottom: 1px solid #8c774e; background: var(--archive-accent); opacity: .85; }
+.object[data-mode="newspaper"] .print { display: block; z-index: 3; top: 47px; right: 8px; bottom: 16px; left: 17px; background: repeating-linear-gradient(0deg, transparent 0 8px, #4344435e 8px 9px, transparent 9px 11px); opacity: .7; }
+.object[data-mode="newspaper"] .seal { display: flex; top: 16px; width: 20px; height: 20px; border: 0; background: transparent; box-shadow: none; color: #342a25; }
+.object[data-mode="newspaper"] .title { top: 55%; left: 44%; max-height: 50%; }
+
+/* A flat folder with an exposed tab, sewn edge and paper label. */
+.object[data-mode="dossier"] .surface { border-radius: 3px 2px 2px 3px; background: linear-gradient(90deg, #11182b7a, transparent 16% 86%, #0a102a7a), var(--archive-color); }
+.object[data-mode="dossier"] .tab { display: block; z-index: 1; top: -5px; right: 2px; width: 23px; height: 7px; border: 1px solid var(--archive-accent); border-radius: 3px 3px 0 0; background: var(--archive-color); }
+.object[data-mode="dossier"] .stitch { display: block; z-index: 3; top: 9px; bottom: 9px; left: 7px; border-left: 2px dashed var(--archive-accent); opacity: .7; }
+.object[data-mode="dossier"] .sheet { display: block; z-index: 2; top: 45px; right: 6px; bottom: 33px; left: 14px; border: 1px solid #b6a67b; border-radius: 2px; background: #e8d9b5; }
+.object[data-mode="dossier"] .seal { display: flex; top: 18px; width: 18px; height: 18px; font-size: .75rem; }
+.object[data-mode="dossier"] .title { top: 56%; left: 59%; max-height: 48%; }
+
+/* A rigid notice board carries a clipped parchment sheet. */
+.object[data-mode="notice"] .surface { border: 3px ridge var(--archive-accent); border-radius: 3px; background: linear-gradient(90deg, #11142173, transparent 25% 75%, #0b102268), var(--archive-color); }
+.object[data-mode="notice"] .sheet { display: block; z-index: 2; inset: 18px 6px 14px; border: 1px solid #9e7b56; background: linear-gradient(90deg, #d1ba91, #f3e1b9 28% 75%, #c3a77f); box-shadow: 1px 2px 4px #16131b7a; }
+.object[data-mode="notice"] .clip { display: block; z-index: 4; top: 7px; left: 50%; width: 19px; height: 19px; border: 2px solid #c9b680; border-radius: 4px 4px 2px 2px; background: linear-gradient(#767b83, #c9c5b3, #656974); box-shadow: 0 2px 3px #16131b9c; transform: translateX(-50%); }
+.object[data-mode="notice"] .seal { display: flex; top: 32px; width: 18px; height: 18px; font-size: .75rem; }
+.object[data-mode="notice"] .title { top: 58%; max-height: 44%; }
+
+/* A rolled bundle, with two paper cylinders and binding ribbons. */
+.object[data-mode="scroll"] .surface { border-radius: 16px / 8px; background: linear-gradient(90deg, #755338 0 8%, #d4b98c 12%, color-mix(in srgb, #ead3a5 85%, var(--archive-color)) 50%, #b89768 88%, #684b35 100%); }
+.object[data-mode="scroll"] .surface::before { position: absolute; z-index: 1; inset: 0 6px; border-right: 1px solid #74583b; border-left: 1px solid #74583b; border-radius: 50% / 3%; content: ""; }
+.object[data-mode="scroll"] .cord { display: block; z-index: 3; top: 25px; right: 2px; left: 2px; height: 6px; border-top: 1px solid #e2c78f; border-bottom: 1px solid #342639; background: var(--archive-color); box-shadow: 0 calc(var(--object-height) - 65px) 0 var(--archive-color); }
+.object[data-mode="scroll"] .seal { display: flex; top: 37%; width: 19px; height: 19px; font-size: .75rem; }
+.object[data-mode="scroll"] .title { top: 61%; max-height: 54%; }
+
+@media (max-width: 600px) {
+  .object { --object-width: 42px; --object-height: 181px; }
+  .object[data-thickness="thin"] { --object-width: 36px; }
+  .object[data-thickness="thick"] { --object-width: 52px; }
+  .object[data-height="short"] { --object-height: 157px; }
+  .object[data-height="tall"] { --object-height: 204px; }
+  .title { font-size: .58rem; }
+}
+@media (prefers-reduced-motion: reduce) { .surface { transition: none; } .object:hover .surface, .object:focus-visible .surface { transform: none; } }
