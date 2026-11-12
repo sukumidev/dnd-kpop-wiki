@@ -1,19 +1,21 @@
 /**
- * Generate minimal MDX routes for the approved Hallyura subclass catalog.
- * Never overwrite a hand-edited route. Full rules text will be authored later.
+ * Remove only the exact MDX placeholders created by the retired
+ * generate-subclass-pages.ts script. Keep custom/edited files untouched.
  */
-import {existsSync, mkdirSync, writeFileSync} from 'node:fs';
+import {existsSync, readFileSync, readdirSync, rmSync, rmdirSync} from 'node:fs';
 import path from 'node:path';
 import {characterSubclasses} from '../src/data/characterClasses';
 
 const root = path.resolve(process.cwd(), 'docs', 'mechanics', 'classes');
-let created = 0;
+let removed = 0;
+let preserved = 0;
+
 for (const subclass of characterSubclasses) {
   const dir = path.join(root, subclass.classId);
   const destination = path.join(dir, `${subclass.id}.mdx`);
-  if (existsSync(destination)) continue;
-  mkdirSync(dir, {recursive: true});
-  const mdx = [
+  if (!existsSync(destination)) continue;
+
+  const generated = [
     '---',
     'hide_title: true',
     'hide_table_of_contents: true',
@@ -24,7 +26,15 @@ for (const subclass of characterSubclasses) {
     `<CharacterSubclassPage classId="${subclass.classId}" subclassId="${subclass.id}" />`,
     '',
   ].join('\n');
-  writeFileSync(destination, mdx, 'utf8');
-  created += 1;
+
+  if (readFileSync(destination, 'utf8').trim() !== generated.trim()) {
+    preserved += 1;
+    continue;
+  }
+
+  rmSync(destination);
+  removed += 1;
+  if (readdirSync(dir).length === 0) rmdirSync(dir);
 }
-console.log(`Subclass routes: ${characterSubclasses.length} catalog entries, ${created} new MDX pages.`);
+
+console.log(`Legacy generated subclass routes cleaned: ${removed}; hand-edited routes preserved: ${preserved}.`);

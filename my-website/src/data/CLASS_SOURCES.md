@@ -40,11 +40,43 @@ College of the Moon (Bard); Knowledge Domain (Cleric); Banneret (Fighter); Oath 
 - Jongho: el texto `Path of the Totem Warrior` del statblock sigue siendo válido como alias de `Path of the Wild Heart`.
 - Kiyori, Imugi, Soobin y otros: conservar etiquetas históricas en sus statblocks; resolver su versión canónica mediante alias.
 
-## Rutas MDX y ampliación
+## Estructura del manual por clase y TOC nativo
 
-`npm run gen:subclasses` genera rutas MDX mínimas para las 119 subclases sin sobrescribir documentos existentes. Se ejecuta antes de `npm start`, `npm test` y `npm run build`.
+Cada clase tiene **una única ruta MDX** en `docs/mechanics/classes/[classId].mdx`. No existe una página de contenido por subclase.
 
-Los archivos generados están ignorados por Git. Para agregar contenido detallado en una siguiente entrega, crear una fuente autoral explícita y/o registrar manualmente los MDX correspondientes (con `git add -f` cuando el archivo de ruta esté ignorado), sin duplicar el modelo del catálogo. Las páginas actuales no sustituyen los manuales ni los textos de reglas.
+Los 14 documentos de clase incluyen encabezados MDX reales para que **el índice lateral derecho nativo de Docusaurus** muestre y navegue las secciones de la misma página. Se habilita mediante `toc_min_heading_level: 2` y `toc_max_heading_level: 3`, sin `hide_table_of_contents: true`.
+
+Ejemplo de estructura en la ficha de Mago:
+
+```mdx
+<ClassHeader classId="mago" />
+
+## Información de clase {/* #class-details */}
+
+<ClassDetails classId="mago" />
+
+## Subclases {/* #class-subclasses */}
+
+### Diviner {/* #subclass-diviner */}
+
+<ClassSubclass classId="mago" subclassId="diviner" />
+
+## Personajes de esta clase {/* #class-characters */}
+
+<ClassCharacters classId="mago" />
+```
+
+Los encabezados `##` y `###` **deben escribirse en MDX**; los encabezados renderizados dinámicamente por TSX no alimentan el TOC de Docusaurus. Los IDs explícitos mantienen enlaces estables, incluso si cambia el nombre visible.
+
+El catálogo `characterSubclasses.json` continúa siendo la fuente de datos para las 119 subclases. Si se añade, quita o reordena una subclase, actualizar la **única ficha MDX de su clase** para que coincidan título, orden, ancla y componente. El test `character-classes.test.ts` detecta discrepancias.
+
+Los componentes `ClassHeader`, `ClassDetails`, `ClassSubclass` y `ClassCharacters` presentan metadatos y estadísticas desde el modelo actual. La información por nivel se podrá completar con resúmenes originales en `features`; no se inventan textos de reglas.
+
+Se conservan redirecciones de las rutas antiguas `/mechanics/classes/[classId]/[subclassId]` a `/mechanics/classes/[classId]#subclass-[subclassId]`.
+
+La tarea `npm run clean:subclasses` elimina **solo** las páginas antiguas generadas cuyo contenido coincide exactamente con el template, sin borrar las páginas editadas manualmente. Se ejecuta antes de `npm start`, `npm test` y `npm run build`.
+
+Referencia técnica: https://docusaurus.io/docs/markdown-features/toc
 
 ## Referencias de verificación
 

@@ -215,6 +215,33 @@
 
 .source {margin-top: 1.5rem; color: var(--h-text-secondary);}
 
+
+/* MDX owns all section headings, so the native Docusaurus TOC can index them. */
+.subclassArticle {
+  padding: 0.15rem 0 1.35rem;
+  margin-bottom: 1.7rem;
+  border-bottom: 1px solid var(--h-border-soft);
+}
+.subclassDescription {
+  color: var(--h-text-secondary);
+  line-height: 1.7;
+  max-width: 68ch;
+}
+.subclassMetadata {
+  color: var(--h-text-secondary);
+  margin: 0.65rem 0;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+.subclassFeatures {margin-top: 1.5rem;}
+.subclassFeature {margin: 1.25rem 0;}
+.subclassFeature h4 {
+  font-family: var(--h-font-editorial);
+  margin-bottom: 0.45rem;
+}
+.subclassFeature p {line-height: 1.75; max-width: 75ch;}
+.classCharacters > .countPill {margin-bottom: 1rem;}
+
 @media (max-width: 720px) {
   .grid {grid-template-columns: 1fr;}
   .facts {grid-template-columns: 1fr;}

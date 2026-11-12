@@ -3,6 +3,7 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 import characterIdMapping from './scripts/character-id-mapping.json';
 import characterRegistry from './src/data/characters.json';
+import subclassRegistry from './src/data/characterSubclasses.json';
 import {filterPublicRedirects} from './scripts/public-redirects';
 
 const isPublicBuild = process.env.HALLYURA_PUBLIC_BUILD === 'true';
@@ -18,6 +19,13 @@ const characterIdRedirects = Object.entries(
   const group = oldId === 'qin-shen-yu' ? 'party' : 'npc';
   return { from: `/characters/${group}/${oldId}`, to: `/characters/${group}/${newId}` };
 });
+
+// Preserve old subclass bookmarks from the former per-subclass MDX routes.
+// Redirects are lightweight compatibility stubs, not separate content pages.
+const subclassRedirects = subclassRegistry.map(({classId, id}) => ({
+  from: `/mechanics/classes/${classId}/${id}`,
+  to: `/mechanics/classes/${classId}#subclass-${id}`,
+}));
 
 // Characters added on main while the normalization PR was in progress.
 const newCharacterIdRedirects = Object.entries({
@@ -80,6 +88,7 @@ const config: Config = {
       redirects: filterPublicRedirects([
         ...characterIdRedirects,
         ...newCharacterIdRedirects,
+        ...subclassRedirects,
         {from: '/characters/npc/nct-taeil', to: '/characters/npc/enemy-taeil'},
         {from: '/factions/los-diecisiete-heroes', to: '/factions/svt'},
         {from: '/factions/neo-culturales-tecnologicos', to: '/factions/nct'},

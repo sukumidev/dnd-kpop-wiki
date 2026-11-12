@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import {existsSync} from 'node:fs';
+import {existsSync, readFileSync} from 'node:fs';
 import path from 'node:path';
 import test from 'node:test';
 import {
@@ -7,6 +7,8 @@ import {
   characterSubclasses,
   getCharacterClass,
   getCharacterSubclass,
+  getCharacterSubclassHref,
+  getClassSubclasses,
   resolveCharacterSubclass,
 } from '../src/data/characterClasses';
 
@@ -23,7 +25,7 @@ test('the class directory keeps the approved order and has a document for each c
   assert.equal(getCharacterClass('artifice')?.source, 'Eberron: Forge of the Artificer (2025)');
 });
 
-test('registered subclass IDs resolve to one approved class and document route', () => {
+test('registered subclass IDs resolve to anchors within the parent class document', () => {
   assert.equal(new Set(characterSubclasses.map(({id}) => id)).size, characterSubclasses.length);
 
   for (const subclass of characterSubclasses) {
@@ -31,7 +33,15 @@ test('registered subclass IDs resolve to one approved class and document route',
     assert.ok(characterClass, `${subclass.id}: unknown class`);
     assert.ok(characterClass.subclassIds.includes(subclass.id), `${subclass.id}: class is missing its ID`);
     assert.equal(getCharacterSubclass(subclass.classId, subclass.id), subclass);
-    assert.ok(existsSync(path.join('docs', 'mechanics', 'classes', subclass.classId, `${subclass.id}.mdx`)));
+    assert.equal(
+      getCharacterSubclassHref(subclass.classId, subclass.id),
+      `/mechanics/classes/${subclass.classId}#subclass-${subclass.id}`,
+    );
+    assert.equal(
+      existsSync(path.join('docs', 'mechanics', 'classes', subclass.classId, `${subclass.id}.mdx`)),
+      false,
+      `${subclass.classId}/${subclass.id}: standalone MDX routes are no longer supported`,
+    );
   }
 
   for (const characterClass of characterClasses) {
@@ -71,4 +81,34 @@ test('all 119 approved canonical subclasses have provenance and valid class IDs'
   assert.equal(resolveCharacterSubclass('warlock', 'Great Old One Patron')?.name, 'Great Old One Patron');
   assert.equal(resolveCharacterSubclass('mago', 'Vestige Patron'), undefined);
   assert.equal(getCharacterClass('barbaro')?.subclassIds.includes('path-of-the-world-tree'), true);
+});
+
+test('native Docusaurus TOC contains all subclass headings in their class MDX pages', () => {
+  for (const characterClass of characterClasses) {
+    const content = readFileSync(
+      path.join('docs', 'mechanics', 'classes', `${characterClass.id}.mdx`), 'utf8',
+    );
+    assert.match(content, /toc_min_heading_level: 2/);
+    assert.match(content, /toc_max_heading_level: 3/);
+    assert.doesNotMatch(content, /hide_table_of_contents: true/);
+    assert.ok(content.includes('## Información de clase {/* #class-details */}'));
+    assert.ok(content.includes('## Subclases {/* #class-subclasses */}'));
+    assert.ok(content.includes('## Personajes de esta clase {/* #class-characters */}'));
+    const headingIds = content.split('\n')
+      .filter((line) => line.startsWith('### '))
+      .map((line) => {
+        const match = line.match(/\{\/\* #(subclass-[a-z0-9-]+) \*\/\}$/);
+        assert.ok(match, `${characterClass.id}: invalid subclass heading ${line}`);
+        return match[1];
+      });
+    const expected = getClassSubclasses(characterClass).map((subclass) => `subclass-${subclass.id}`);
+    assert.deepEqual(headingIds, expected, `${characterClass.id}: MDX headings must follow catalog order`);
+    assert.equal((content.match(/<ClassSubclass /g) ?? []).length, expected.length);
+  }
+
+  const component = readFileSync(
+    path.join('src', 'components', 'classes', 'CharacterClassPage.tsx'), 'utf8',
+  );
+  assert.doesNotMatch(component, /className=\{styles\.subclassToc\}/);
+  assert.match(component, /export function ClassSubclass/);
 });

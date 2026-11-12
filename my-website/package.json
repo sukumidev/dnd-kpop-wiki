@@ -6,7 +6,7 @@
     "docusaurus": "node --require ./scripts/limit-file-reads.cjs node_modules/@docusaurus/core/bin/docusaurus.mjs",
     "start": "npm run docusaurus -- start",
     "build": "npm run docusaurus -- build",
-    "prebuild": "npm run gen:faction-routes && npm run gen:documents && npm run gen:subclasses",
+    "prebuild": "npm run clean:subclasses && npm run gen:faction-routes && npm run gen:documents",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
@@ -44,9 +44,9 @@
     "audit:character-docs": "node scripts/audit-character-doc-duplicates.mjs",
     "cleanup:character-docs:safe": "node scripts/audit-character-doc-duplicates.mjs --write --confirm-safe-only",
     "gen:faction-routes": "node scripts/generate-public-faction-routes.mjs",
-    "gen:subclasses": "tsx scripts/generate-subclass-pages.ts",
-    "prestart": "npm run gen:subclasses",
-    "pretest": "npm run gen:subclasses"
+    "prestart": "npm run clean:subclasses",
+    "pretest": "npm run clean:subclasses",
+    "clean:subclasses": "tsx scripts/cleanup-subclass-pages.ts"
   },
   "dependencies": {
     "@docusaurus/core": "3.9.2",
