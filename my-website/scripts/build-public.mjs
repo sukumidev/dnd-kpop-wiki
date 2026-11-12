@@ -72,11 +72,21 @@ async function sanitiseAuthoredDocs(stage, hiddenIds) {
   if (modified) console.log("Public MDX/Markdown files with hidden character links replaced: " + modified);
 }
 
+// fs.cp may pass Windows extended-length paths even when ROOT is unprefixed.
+export function relativeStageSource(source) {
+  const root = process.platform === "win32" && source.startsWith("\\\\?\\")
+    ? path.toNamespacedPath(ROOT)
+    : ROOT;
+  return path.relative(root, source);
+}
+
 async function stageCopy(stage, hiddenIds) {
   await fs.cp(ROOT, stage, {
     recursive: true, dereference: false,
-    filter: (src) => !path.relative(ROOT, src) ||
-      copyAllowed(path.relative(ROOT, src), hiddenIds),
+    filter: (src) => {
+      const rel = relativeStageSource(src);
+      return !rel || copyAllowed(rel, hiddenIds);
+    },
   });
   await fs.mkdir(path.join(stage, "static"), {recursive: true});
   try { await fs.copyFile(path.join(ROOT, "static/.nojekyll"), path.join(stage, "static/.nojekyll")); }
@@ -207,6 +217,33 @@ export function referencedRealmImageAssets(gallerySource, worldSource) {
   return new Set([...gallery, ...world].map((file) => "/img/realms/" + file));
 }
 
+/** Only versioned, approved CMS catalog assets may enter the public stage. */
+export function approvedArchiveSymbolAssets(entries) {
+  if (!Array.isArray(entries) || entries.length === 0) throw new Error("Archive symbol manifest is missing.");
+  const assets = new Set(), ids = new Set();
+  for (const entry of entries) {
+    if (!entry || typeof entry.id !== "string" || !/^[a-z]+(?:-[a-z]+)*$/.test(entry.id) ||
+        entry.asset !== `/img/symbols/${entry.id}.svg` || ids.has(entry.id)) {
+      throw new Error("Invalid or duplicate approved archive symbol asset.");
+    }
+    ids.add(entry.id);
+    assets.add(entry.asset);
+  }
+  return assets;
+}
+
+export async function verifyApprovedArchiveSymbolAssets(root, entries) {
+  const assets = approvedArchiveSymbolAssets(entries);
+  for (const asset of assets) {
+    try { await fs.access(path.join(root, "static", asset.slice(1))); }
+    catch (error) {
+      if (error.code !== "ENOENT") throw error;
+      throw new Error("An approved archive symbol asset is missing: " + asset);
+    }
+  }
+  return assets;
+}
+
 async function copyImages(stage, publicRegistry, hiddenRegistry, teasers) {
   const allowedCharacterImages = new Set(), hiddenImages = new Set();
   function addCharacterImages(out, character) {
@@ -229,6 +266,8 @@ async function copyImages(stage, publicRegistry, hiddenRegistry, teasers) {
   const worldIndexSource = await fs.readFile(path.join(stage, "src/pages/world/index.tsx"), "utf8");
   const realmImages = referencedRealmImageAssets(realmGallerySource, worldIndexSource);
   for (const ref of realmImages) requiredImages.add(ref);
+  const symbolManifest = await readJSON(path.join(stage, "src/data/archiveVectorAssets.json"));
+  for (const ref of await verifyApprovedArchiveSymbolAssets(ROOT, symbolManifest)) requiredImages.add(ref);
   const references = new Set(requiredImages);
   for (const root of ["src", "docs"]) {
     for (const file of await walk(path.join(stage, root))) {
@@ -342,8 +381,12 @@ async function main() {
     }
     await copyImages(stage, publicRegistry, hidden, teasers);
     console.log("Building isolated public Docusaurus output...");
-    const npm = process.platform === "win32" ? "npm.cmd" : "npm";
-    const result = spawnSync(npm, ["run", "build"], {
+    // Node cannot spawn .cmd directly on current Windows releases (EINVAL).
+    const npmCli = process.env.npm_execpath ||
+      path.join(path.dirname(process.execPath), "node_modules/npm/bin/npm-cli.js");
+    const command = process.platform === "win32" ? process.execPath : "npm";
+    const args = process.platform === "win32" ? [npmCli, "run", "build"] : ["run", "build"];
+    const result = spawnSync(command, args, {
       cwd: stage, stdio: "inherit",
       env: {...process.env, HALLYURA_PUBLIC_BUILD: "true", BASE_URL: process.env.BASE_URL || "/"},
     });
