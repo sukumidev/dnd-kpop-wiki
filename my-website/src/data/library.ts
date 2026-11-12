@@ -1,9 +1,13 @@
 import realmCatalogJson from "./realmCatalog.json";
 import { locations } from "./locations";
+import { getOrnamentSymbol, resolveArchiveSymbol } from "./archiveSymbols";
 import {
   getPublicTopLevelDocuments,
   isDocumentCollection,
   type BookAppearance,
+  type ArchiveDisplayMode,
+  type ArchiveMaterial,
+  type ArchiveWear,
   type Document,
   type LibraryMetadata,
 } from "./documents";
@@ -21,7 +25,7 @@ export type LibraryShelf = {
   kind: "realm" | "other" | "unknown";
 };
 
-export type ResolvedBookAppearance = Required<BookAppearance>;
+export type ResolvedBookAppearance = Required<Omit<BookAppearance, "displayMode" | "material" | "wear">>;
 
 function record(value: unknown): value is Record<string, unknown> {
   return !!value && typeof value === "object" && !Array.isArray(value);
@@ -90,6 +94,33 @@ export function groupLibraryDocuments(list: Document[] = getPublicTopLevelDocume
     });
 }
 
+export const ARCHIVE_DISPLAY_MODES = ["book", "letter", "newspaper", "dossier", "notice", "scroll"] as const;
+export const ARCHIVE_MATERIALS = ["leather", "cloth", "parchment", "newsprint", "canvas", "aged-paper"] as const;
+export const ARCHIVE_WEARS = ["new", "used", "ancient"] as const;
+export const ORNAMENT_FRAME_STYLES = ["none", "circle", "diamond", "laurel-frame", "arcane", "filigree-frame"] as const;
+export type OrnamentFrameStyle = (typeof ORNAMENT_FRAME_STYLES)[number];
+export function isDecorativeFrame(value: BookAppearance["ornament"]): value is Exclude<OrnamentFrameStyle, "none"> {
+  return value !== "none" && ORNAMENT_FRAME_STYLES.includes(value as OrnamentFrameStyle);
+}
+
+const materialsByMode = {
+  book: ["leather", "cloth", "canvas"],
+  letter: ["parchment", "aged-paper"],
+  newspaper: ["newsprint", "aged-paper"],
+  dossier: ["leather", "cloth", "canvas"],
+  notice: ["leather", "canvas", "aged-paper"],
+  scroll: ["parchment", "aged-paper"],
+} as const;
+const defaultMaterial = {
+  book: "leather", letter: "parchment", newspaper: "newsprint", dossier: "canvas", notice: "leather", scroll: "aged-paper",
+} as const;
+
+export type ResolvedArchiveAppearance = ResolvedBookAppearance & {
+  displayMode: ArchiveDisplayMode;
+  material: ArchiveMaterial;
+  wear: ArchiveWear;
+};
+
 const colors = ["#384a77", "#4e467a", "#295568", "#55476d", "#345b66", "#454c78"];
 const accents = ["#d8bc82", "#a9d6bd", "#c3b3e7", "#b5d4df"];
 const symbols = ["✦", "❖", "✧", "✳"];
@@ -119,16 +150,34 @@ export function resolveBookAppearance(document: Document): ResolvedBookAppearanc
   const appearance = record(custom) ? custom : {};
   const collection = isDocumentCollection(document);
   const defaultTitle = document.title.length > 38 ? `${document.title.slice(0, 35).trimEnd()}…` : document.title;
+  const requestedSymbol = nonemptyString(appearance.symbol);
+  const fallbackSymbol = symbols[(index >>> 7) % symbols.length];
   return {
     spineTitle: nonemptyString(appearance.spineTitle)?.slice(0, 80) ?? defaultTitle,
     color: color(appearance.color, colors[index % colors.length]),
     accentColor: color(appearance.accentColor, accents[(index >>> 3) % accents.length]),
-    symbol: nonemptyString(appearance.symbol)?.slice(0, 3) ?? symbols[(index >>> 7) % symbols.length],
-    ornament: option(appearance.ornament, ["filigree", "stars", "laurel", "none"] as const, ornaments[(index >>> 5) % ornaments.length]),
+    symbol: getOrnamentSymbol(requestedSymbol) ? resolveArchiveSymbol(requestedSymbol) : fallbackSymbol,
+    ornament: option(appearance.ornament, ["filigree", "stars", "laurel", ...ORNAMENT_FRAME_STYLES] as const, ornaments[(index >>> 5) % ornaments.length]),
     height: option(appearance.height, ["short", "medium", "tall"] as const, collection ? "tall" : ["short", "medium", "tall"][(index >>> 9) % 3] as ResolvedBookAppearance["height"]),
     thickness: option(appearance.thickness, ["thin", "medium", "thick"] as const, collection ? "thick" : ["thin", "medium"][(index >>> 11) % 2] as ResolvedBookAppearance["thickness"]),
     texture: option(appearance.texture, ["leather", "cloth", "aged"] as const, ["leather", "cloth", "aged"][(index >>> 13) % 3] as ResolvedBookAppearance["texture"]),
     spineImage: imagePath(appearance.spineImage),
+  };
+}
+
+/** Opt-in physical modes. Missing displayMode retains the exact legacy book preset. */
+export function resolveArchiveAppearance(document: Document): ResolvedArchiveAppearance {
+  const custom = getLibraryMetadata(document).appearance;
+  const appearance = record(custom) ? custom : {};
+  const displayMode = option(appearance.displayMode, ARCHIVE_DISPLAY_MODES, "book");
+  const legacy = resolveBookAppearance(document);
+  const requestedMaterial = option(appearance.material, ARCHIVE_MATERIALS, defaultMaterial[displayMode]);
+  const material = (materialsByMode[displayMode] as readonly string[]).includes(requestedMaterial) ? requestedMaterial : defaultMaterial[displayMode];
+  return {
+    ...legacy,
+    displayMode,
+    material,
+    wear: option(appearance.wear, ARCHIVE_WEARS, "new"),
   };
 }
 
@@ -147,14 +196,18 @@ export function validateLibraryMetadata(value: unknown): string[] {
     for (const field of ["spineTitle", "symbol"] as const) {
       if (appearance[field] !== undefined && !nonemptyString(appearance[field])) errors.push(`appearance.${field} debe ser texto no vacío`);
     }
+    if (nonemptyString(appearance.symbol) && !getOrnamentSymbol(appearance.symbol)) errors.push("appearance.symbol no pertenece al catálogo ornamental");
     for (const field of ["color", "accentColor"] as const) {
       if (appearance[field] !== undefined && color(appearance[field], "") === "") errors.push(`appearance.${field} debe ser un color hexadecimal #RRGGBB`);
     }
     for (const [field, allowed] of [
-      ["ornament", ["filigree", "stars", "laurel", "none"]],
+      ["ornament", ["filigree", "stars", "laurel", ...ORNAMENT_FRAME_STYLES]],
       ["height", ["short", "medium", "tall"]],
       ["thickness", ["thin", "medium", "thick"]],
       ["texture", ["leather", "cloth", "aged"]],
+      ["displayMode", ARCHIVE_DISPLAY_MODES],
+      ["material", ARCHIVE_MATERIALS],
+      ["wear", ARCHIVE_WEARS],
     ] as const) {
       if (appearance[field] !== undefined && !allowed.includes(appearance[field] as never)) errors.push(`appearance.${field} no es un valor admitido`);
     }

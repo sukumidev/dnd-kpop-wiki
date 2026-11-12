@@ -1,6 +1,6 @@
 import React from "react";
 import type { LibraryShelf } from "@site/src/data/library";
-import BookSpine from "./BookSpine";
+import ArchiveObject from "./ArchiveObject";
 import styles from "./Bookshelf.module.css";
 
 /** A continuous shelf section; CSS creates another ledge when books wrap. */
@@ -20,10 +20,10 @@ export default function Bookshelf({ shelf }: { shelf: LibraryShelf }): React.Rea
             ? "Hallazgos de lugares fuera de los reinos catalogados."
             : `Volúmenes hallados en ${shelf.title}.`}
       </p>
-      <div className={styles.books} role="list" aria-label={`Libros de ${shelf.title}`}>
+      <div className={styles.books} role="list" aria-label={`Objetos de ${shelf.title}`}>
         {shelf.documents.map((document) => (
           <div className={styles.slot} role="listitem" key={document.id}>
-            <BookSpine document={document} />
+            <ArchiveObject document={document} />
           </div>
         ))}
       </div>

@@ -14,6 +14,6 @@
   .section { padding-top: 1.5rem; }
   .plaqueRow { gap: .5rem; }
   .plaque { padding: .42rem .8rem; letter-spacing: .05em; }
-  .books { grid-template-columns: repeat(auto-fill, minmax(52px, 1fr)); padding: 0 4px; border-width: 5px; border-bottom: 0; }
+  .books { grid-template-columns: repeat(auto-fill, minmax(62px, 1fr)); padding: 0 4px; border-width: 5px; border-bottom: 0; }
   .slot { height: 232px; padding: 0 0 21px; }
 }
