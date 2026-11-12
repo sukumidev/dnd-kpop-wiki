@@ -26,6 +26,8 @@ export interface CharacterSubclass {
   aliases?: string[];
   sourceYear?: number;
   contentCategory?: 'official' | 'partner' | 'homebrew';
+  /** Optional original summaries of subclass features by level, rendered within the class chapter. */
+  features?: Array<{level: number; name: string; description: string}>;
 }
 
 /** Compact original summaries and core traits; consult the cited books for full rules. */
@@ -191,7 +193,7 @@ export function getCharacterClassHref(id: string): string {
 }
 
 export function getCharacterSubclassHref(classId: string, subclassId: string): string {
-  return `${getCharacterClassHref(classId)}/${subclassId}`;
+  return `${getCharacterClassHref(classId)}#subclass-${subclassId}`;
 }
 
 /** Alias-aware subclass lookup for legacy statblocks without rewriting their data. */
