@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
-import {copyAllowed, stripHiddenCharacterLinks, supplementalPublicCharacterImages, referencedRealmImageAssets} from "../scripts/build-public.mjs";
+import {copyAllowed, relativeStageSource, stripHiddenCharacterLinks, supplementalPublicCharacterImages, referencedRealmImageAssets, approvedArchiveSymbolAssets, verifyApprovedArchiveSymbolAssets} from "../scripts/build-public.mjs";
 import test from "node:test";
 import {
   publicCharacters,
@@ -25,6 +25,26 @@ const registry = {
 };
 const hidden = {"npc-secret": registry["npc-secret"]};
 const hiddenIds = new Set(Object.keys(hidden));
+
+test("staging excludes backup JSON with Windows extended-length paths", () => {
+  const backup = path.resolve("src/data/characters.backup.json");
+  for (const source of [backup, path.toNamespacedPath(backup)]) {
+    assert.equal(relativeStageSource(source), path.join("src", "data", "characters.backup.json"));
+    assert.equal(copyAllowed(relativeStageSource(source), hiddenIds), false);
+  }
+});
+
+test("public build admits only approved catalog SVG assets and rejects unsafe mappings", async () => {
+  const manifest = JSON.parse(fs.readFileSync(path.resolve("src/data/archiveVectorAssets.json"), "utf8"));
+  const approved = approvedArchiveSymbolAssets(manifest);
+  assert.equal(approved.size, 12);
+  for (const asset of approved) assert.ok(fs.existsSync(path.resolve(`static${asset}`)), `Missing approved asset ${asset}`);
+  assert.deepEqual(await verifyApprovedArchiveSymbolAssets(path.resolve("."), manifest), approved);
+  await assert.rejects(verifyApprovedArchiveSymbolAssets(path.resolve("."), [{id: "missing", asset: "/img/symbols/missing.svg"}]), /asset is missing/);
+  assert.throws(() => approvedArchiveSymbolAssets([]), /manifest is missing/);
+  assert.throws(() => approvedArchiveSymbolAssets([...manifest, manifest[0]]), /duplicate/);
+  assert.throws(() => approvedArchiveSymbolAssets([{id: "private", asset: "/img/private/secret.svg"}]), /Invalid/);
+});
 
 test("public registry completely omits hidden records", () => {
   assert.deepEqual(Object.keys(publicCharacters(registry)), ["npc-hero", "npc-ally"]);
