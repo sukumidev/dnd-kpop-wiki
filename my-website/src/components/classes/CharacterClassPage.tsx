@@ -2,7 +2,6 @@ import React, {type ReactNode} from 'react';
 import CharacterGrid from '@site/src/components/CharacterGrid';
 import {getCharacterClass, getCharacterSubclassHref, getClassSubclasses, resolveCharacterSubclass} from '@site/src/data/characterClasses';
 import {getCharactersForClass} from '@site/src/data/classCharacters';
-import DirectoryCard from './DirectoryCard';
 import styles from './styles.module.css';
 
 type Props = {classId: string; children?: ReactNode};
@@ -45,21 +44,59 @@ export default function CharacterClassPage({classId, children}: Props) {
       </section>
 
       <section className={styles.section} aria-labelledby="class-subclasses">
-        <div className={styles.sectionHeading}><h2 id="class-subclasses">Subclases</h2></div>
+        <div className={styles.sectionHeading}>
+          <h2 id="class-subclasses">Subclases</h2>
+          {subclasses.length > 0 && <span className={styles.countPill}>{subclasses.length}</span>}
+        </div>
         {subclasses.length ? (
-          <div className={styles.grid}>
-            {subclasses.map((subclass) => (
-              <DirectoryCard
-                key={subclass.id}
-                href={getCharacterSubclassHref(classId, subclass.id)}
-                name={subclass.name}
-                originalName={subclass.originalName}
-                description={subclass.description}
-                imageSrc={subclass.imageSrc}
-                badge={subclass.isHomebrew ? 'Homebrew' : undefined}
-              />
-            ))}
-          </div>
+          <>
+            <p className={styles.chapterIntro}>
+              Selecciona una subclase para ir a su apartado dentro de esta misma página.
+            </p>
+            <nav className={styles.subclassToc} aria-label={`Índice de subclases de ${characterClass.name}`}>
+              <ul className={styles.subclassTocList}>
+                {subclasses.map((subclass) => (
+                  <li key={subclass.id}>
+                    <a href={`#subclass-${subclass.id}`}>{subclass.name}</a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+            <div className={styles.subclassChapters}>
+              {subclasses.map((subclass) => (
+                <article
+                  key={subclass.id}
+                  id={`subclass-${subclass.id}`}
+                  className={styles.subclassChapter}
+                  aria-labelledby={`heading-subclass-${subclass.id}`}
+                >
+                  <div className={styles.subclassChapterHeader}>
+                    <h3 id={`heading-subclass-${subclass.id}`}>{subclass.name}</h3>
+                    {subclass.contentCategory === 'partner' && <span className={styles.badge}>Material de terceros</span>}
+                    {subclass.isHomebrew && <span className={styles.badge}>Homebrew</span>}
+                  </div>
+                  {subclass.description && <p className={styles.subclassDescription}>{subclass.description}</p>}
+                  {subclass.source && <p className={styles.subclassMetadata}><strong>Fuente:</strong> {subclass.source}</p>}
+                  {Boolean(subclass.aliases?.length) && (
+                    <p className={styles.subclassMetadata}>
+                      <strong>Nombres anteriores:</strong> {subclass.aliases?.join(', ')}
+                    </p>
+                  )}
+                  {Boolean(subclass.features?.length) && (
+                    <div className={styles.subclassFeatures}>
+                      {subclass.features?.map((feature, index) => (
+                        <section key={`${feature.level}-${index}`} className={styles.subclassFeature}>
+                          <h4>Nivel {feature.level}: {feature.name}</h4>
+                          <p>{feature.description}</p>
+                        </section>
+                      ))}
+                    </div>
+                  )}
+                  <a className={styles.backToSubclasses} href="#class-subclasses">Volver al índice de subclases ↑</a>
+                </article>
+              ))}
+            </div>
+          </>
         ) : <p className={styles.emptyState}>Aún no hay subclases aprobadas y registradas para esta clase.</p>}
       </section>
 
