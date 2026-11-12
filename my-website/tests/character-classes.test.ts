@@ -7,6 +7,7 @@ import {
   characterSubclasses,
   getCharacterClass,
   getCharacterSubclass,
+  getCharacterSubclassHref,
   resolveCharacterSubclass,
 } from '../src/data/characterClasses';
 
@@ -23,7 +24,7 @@ test('the class directory keeps the approved order and has a document for each c
   assert.equal(getCharacterClass('artifice')?.source, 'Eberron: Forge of the Artificer (2025)');
 });
 
-test('registered subclass IDs resolve to one approved class and document route', () => {
+test('registered subclass IDs resolve to anchors within the parent class document', () => {
   assert.equal(new Set(characterSubclasses.map(({id}) => id)).size, characterSubclasses.length);
 
   for (const subclass of characterSubclasses) {
@@ -31,7 +32,15 @@ test('registered subclass IDs resolve to one approved class and document route',
     assert.ok(characterClass, `${subclass.id}: unknown class`);
     assert.ok(characterClass.subclassIds.includes(subclass.id), `${subclass.id}: class is missing its ID`);
     assert.equal(getCharacterSubclass(subclass.classId, subclass.id), subclass);
-    assert.ok(existsSync(path.join('docs', 'mechanics', 'classes', subclass.classId, `${subclass.id}.mdx`)));
+    assert.equal(
+      getCharacterSubclassHref(subclass.classId, subclass.id),
+      `/mechanics/classes/${subclass.classId}#subclass-${subclass.id}`,
+    );
+    assert.equal(
+      existsSync(path.join('docs', 'mechanics', 'classes', subclass.classId, `${subclass.id}.mdx`)),
+      false,
+      `${subclass.classId}/${subclass.id}: standalone MDX routes are no longer supported`,
+    );
   }
 
   for (const characterClass of characterClasses) {
@@ -71,4 +80,13 @@ test('all 119 approved canonical subclasses have provenance and valid class IDs'
   assert.equal(resolveCharacterSubclass('warlock', 'Great Old One Patron')?.name, 'Great Old One Patron');
   assert.equal(resolveCharacterSubclass('mago', 'Vestige Patron'), undefined);
   assert.equal(getCharacterClass('barbaro')?.subclassIds.includes('path-of-the-world-tree'), true);
+});
+
+test('the class page renders inline subclass chapters and uses stable anchors', () => {
+  const source = require('node:fs').readFileSync(
+    path.join('src', 'components', 'classes', 'CharacterClassPage.tsx'), 'utf8',
+  );
+  assert.match(source, /id=\{\`subclass-\$\{subclass\.id\}\`\}/);
+  assert.match(source, /subclassChapters/);
+  assert.doesNotMatch(source, /CharacterSubclassPage|DirectoryCard/);
 });
