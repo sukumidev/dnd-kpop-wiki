@@ -61,7 +61,7 @@ export type BookAppearance = {
   color?: string;
   accentColor?: string;
   symbol?: string;
-  ornament?: "filigree" | "stars" | "laurel" | "none";
+  ornament?: "filigree" | "stars" | "laurel" | "none" | "circle" | "diamond" | "arcane" | "laurel-frame" | "filigree-frame";
   height?: "short" | "medium" | "tall";
   thickness?: "thin" | "medium" | "thick";
   texture?: "leather" | "cloth" | "aged";

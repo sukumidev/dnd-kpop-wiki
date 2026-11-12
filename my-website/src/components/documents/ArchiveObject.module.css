@@ -83,6 +83,7 @@
 .object[data-mode="scroll"] .cord { display: block; z-index: 3; top: 25px; right: 2px; left: 2px; height: 6px; border-top: 1px solid #e2c78f; border-bottom: 1px solid #342639; background: var(--archive-color); box-shadow: 0 calc(var(--object-height) - 65px) 0 var(--archive-color); }
 .object[data-mode="scroll"] .seal { display: flex; top: 37%; width: 19px; height: 19px; font-size: .75rem; }
 .object[data-mode="scroll"] .title { top: 61%; max-height: 54%; }
+.object[data-frame-modern="true"] .seal { width: min(32px, calc(100% - 4px)); height: 32px; --ornament-symbol-size: .75rem; }
 
 @media (max-width: 600px) {
   .object { --object-width: 42px; --object-height: 181px; }

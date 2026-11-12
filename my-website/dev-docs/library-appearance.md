@@ -30,7 +30,7 @@ La Wiki lee la extensión opcional `metadata.library` en **el mismo** documento 
 - Sin ambos campos, el volumen va a «Ubicación no registrada». `locationIds`, `sessionIds`, autor, tema y etiquetas no determinan el estante.
 - `hidden: true` oculta solo el volumen de la Biblioteca. La visibilidad pública y el lector siguen regidos por `status` y `visibility`.
 - `appearance` es opcional. Los colores deben tener formato `#RRGGBB`; `spineImage` debe ser una ruta pública del sitio que empiece con `/` (por ejemplo `/img/lomos/libro.webp`). Valores no válidos se reemplazan por presets deterministas en la interfaz y se reportan en `npm run validate:data`.
-- Valores admitidos: `ornament`: `filigree`, `stars`, `laurel`, `none`; `height`: `short`, `medium`, `tall`; `thickness`: `thin`, `medium`, `thick`; `texture`: `leather`, `cloth`, `aged`.
+- Valores admitidos: `ornament`: `filigree`, `stars`, `laurel`, `none`, `circle`, `diamond`, `arcane`, `laurel-frame`, `filigree-frame`; `height`: `short`, `medium`, `tall`; `thickness`: `thin`, `medium`, `thick`; `texture`: `leather`, `cloth`, `aged`.
 
 El CMS debe conservar los controles de estos campos, selector de ubicación y reino del catálogo, vista previa y exportación dentro de `metadata.library`. Debe mostrar explícitamente el estado sin hallazgo registrado y permitir un lugar fuera de los reinos catalogados. No debe rellenar la procedencia a partir de las relaciones del documento.
 
@@ -45,9 +45,9 @@ type ArchiveWear = "new" | "used" | "ancient";
 // BookAppearance añade displayMode?, material? y wear?.
 ```
 
-Si `displayMode` falta o no es válido, se muestra el libro legacy sin cambios. Un modo nuevo elige una silueta y un preset de color, símbolo y grosor; las personalizaciones válidas prevalecen. `wear` ausente usa `new`. Los materiales incompatibles con la silueta usan un acabado seguro: `book → leather`, `letter → parchment`, `newspaper → newsprint`, `dossier → canvas`, `notice → leather`, `scroll → aged-paper`. `texture` y `spineImage` continúan aplicándose a `book`.
+Si `displayMode` falta o no es válido, se muestra el libro legacy sin cambios. Los presets del CMS se exportan como valores explícitos; `displayMode` aislado cambia la silueta y el material predeterminado, conservando los colores, símbolo y dimensiones deterministas de la Wiki. Las personalizaciones válidas prevalecen. `wear` ausente usa `new`. Los materiales incompatibles con la silueta usan un acabado seguro: `book → leather`, `letter → parchment`, `newspaper → newsprint`, `dossier → canvas`, `notice → leather`, `scroll → aged-paper`. `texture` y `spineImage` continúan aplicándose a `book`.
 
-El CMS guarda el **glifo** en `symbol` (`☾`, `⚔`, `✒`, etc.), no el ID del selector (`moon`, `crossed-swords`, `quill`). La Wiki reconoce ambos y usa `✦` cuando el valor de un objeto nuevo es desconocido. El catálogo completo y sus IDs exactos están en `src/data/archiveSymbols.ts`.
+El CMS guarda los **32 símbolos históricos como glifos** (`☾`, `⚔`, `✒`) y los **doce nuevos como IDs SVG** (`paw-print`, `card-spade`, etc.). La Wiki usa un registro único en `src/data/archiveSymbols.ts`, resuelve ambos formatos y aplica el símbolo predeterminado determinista si recibe uno desconocido. Los SVG aprobados están en `static/img/symbols/`; `src/data/archiveVectorAssets.json` especifica los únicos que se copian al build público.
 
 Ejemplos de `metadata.library.appearance` para cada silueta, sin agregar documentos ficticios al JSON narrativo:
 
@@ -60,4 +60,6 @@ Ejemplos de `metadata.library.appearance` para cada silueta, sin agregar documen
 | Anuncio | `{ "displayMode": "notice", "material": "leather", "symbol": "⚔" }` |
 | Pergamino | `{ "displayMode": "scroll", "material": "aged-paper", "wear": "ancient", "symbol": "⊛" }` |
 
-**Paridad pendiente:** el preview del CMS usa `resolveBookAppearance` para color y grosor si el editor sólo guarda `displayMode`; la Wiki aplica el preset de la silueta para esos campos. Al exportar una apariencia completa desde el editor, ambos usan los valores explícitos. El CMS aún no exporta IDs de símbolo; si cambia ese formato, mantener actualizado el catálogo compartido.
+Para combinar símbolo y marco se conservan los dos campos independientes: por ejemplo `{ "symbol": "paw-print", "ornament": "circle" }` o `{ "symbol": "card-spade", "ornament": "filigree-frame" }`. Los acabados clásicos `filigree`, `stars` y `laurel` siguen renderizándose como antes. Los nombres con sufijo `-frame` son los IDs reales del CMS.
+
+La auditoría de ramas, el origen de los SVG y la política del build público se documentan en `dev-docs/library-cms-integration.md`.

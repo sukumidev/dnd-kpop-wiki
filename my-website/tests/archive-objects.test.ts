@@ -22,7 +22,7 @@ test("todos los modos se resuelven de manera determinista y sólo se activan exp
   assert.equal(resolveArchiveAppearance(volume("invalid", { displayMode: "unknown" })).displayMode, "book");
 });
 
-test("el preset del modo precede personalizaciones válidas; materiales incompatibles usan fallback", () => {
+test("los materiales por modo siguen al CMS y las personalizaciones válidas prevalecen", () => {
   assert.deepEqual(ARCHIVE_MATERIALS, ["leather", "cloth", "parchment", "newsprint", "canvas", "aged-paper"]);
   assert.deepEqual(ARCHIVE_WEARS, ["new", "used", "ancient"]);
   assert.equal(resolveArchiveAppearance(volume("letter", { displayMode: "letter" })).material, "parchment");
@@ -31,7 +31,8 @@ test("el preset del modo precede personalizaciones válidas; materiales incompat
   const custom = resolveArchiveAppearance(volume("custom", { displayMode: "dossier", material: "cloth", wear: "ancient", color: "#123456", accentColor: "#abcdef", height: "short", thickness: "thick", spineTitle: "Informe", symbol: "☾" }));
   assert.deepEqual([custom.material, custom.wear, custom.color, custom.accentColor, custom.height, custom.thickness, custom.spineTitle, custom.symbol], ["cloth", "ancient", "#123456", "#abcdef", "short", "thick", "Informe", "☾"]);
   const invalid = resolveArchiveAppearance(volume("bad", { displayMode: "scroll", material: "nope", wear: "nope", color: "red", symbol: "<script>" }));
-  assert.deepEqual([invalid.material, invalid.wear, invalid.color, invalid.symbol], ["aged-paper", "new", "#694d38", "✧"]);
+  const bookFallback = resolveBookAppearance(volume("bad", { displayMode: "scroll", material: "nope", wear: "nope", color: "red", symbol: "<script>" }));
+  assert.deepEqual([invalid.material, invalid.wear, invalid.color, invalid.symbol], ["aged-paper", "new", bookFallback.color, bookFallback.symbol]);
   assert.equal(validateLibraryMetadata(volume("bad", { displayMode: "invalid", material: "invalid", wear: "invalid" }).metadata?.library).length, 3);
 });
 

@@ -19,8 +19,8 @@ const classes = new Proxy({}, { get: (_target, key) => String(key) });
 const ArchiveObject = require("../src/components/documents/ArchiveObject").default as (props: {document: Document}) => React.ReactElement;
 (Module as any)._load = originalLoad;
 
-function volume(mode: string): Document {
-  return { id: mode, title: `Documento ${mode}`, type: "letter", status: "published", visibility: "public", metadata: { library: { discoveredRealmId: "hyberia", appearance: { displayMode: mode as any, material: mode === "newspaper" ? "newsprint" : undefined } } } };
+function volume(mode: string, appearance: Record<string, unknown> = {}): Document {
+  return { id: mode, title: `Documento ${mode}`, type: "letter", status: "published", visibility: "public", metadata: { library: { discoveredRealmId: "hyberia", appearance: { displayMode: mode as any, material: mode === "newspaper" ? "newsprint" : undefined, ...appearance } } } } as Document;
 }
 
 test("las seis variantes renderizan enlace, nombre completo, silueta y tooltip", () => {
@@ -40,4 +40,28 @@ test("colección conserva su ruta y se identifica visualmente", () => {
   assert.match(html, /href="\/documents\/coleccion"/);
   assert.match(html, /data-collection="true"/);
   assert.match(html, /COLECCIÓN/);
+});
+
+test("los doce SVG se colorean con el acento y funcionan con marcos independientes", () => {
+  const ids = ["four-point-star", "pirate-banner", "anchor", "bat", "wolf", "claw-marks", "paw-print", "card-spade", "card-heart", "card-diamond", "card-club", "theater-masks"];
+  for (const id of ids) {
+    const html = renderToStaticMarkup(<ArchiveObject document={volume("letter", { symbol: id, ornament: "circle", accentColor: "#D6BA87" })} />);
+    assert.match(html, new RegExp(`data-symbol="${id}"`));
+    assert.match(html, new RegExp(`/img/symbols/${id}\\.svg`));
+    assert.match(html, /data-frame="circle"/);
+    assert.match(html, /--archive-accent:#D6BA87/);
+  }
+});
+
+test("los marcos se combinan con símbolos en libros y objetos sin cambiar dimensiones", () => {
+  for (const ornament of ["circle", "diamond", "laurel-frame", "arcane", "filigree-frame"]) {
+    const html = renderToStaticMarkup(<ArchiveObject document={volume("book", { ornament, symbol: "card-spade", height: "short", thickness: "thin" })} />);
+    assert.match(html, new RegExp(`data-frame="${ornament}"`));
+    assert.match(html, /data-symbol="card-spade"/);
+    assert.match(html, /data-height="short"/);
+    assert.match(html, /data-thickness="thin"/);
+  }
+  const noFrame = renderToStaticMarkup(<ArchiveObject document={volume("notice", { ornament: "none", symbol: "paw-print" })} />);
+  assert.match(noFrame, /data-symbol="paw-print"/);
+  assert.doesNotMatch(noFrame, /data-frame="/);
 });

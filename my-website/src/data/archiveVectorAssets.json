@@ -1,0 +1,14 @@
+[
+  { "id": "four-point-star", "label": "Estrella de cuatro puntas", "family": "creatures", "asset": "/img/symbols/four-point-star.svg" },
+  { "id": "pirate-banner", "label": "Bandera pirata", "family": "creatures", "asset": "/img/symbols/pirate-banner.svg" },
+  { "id": "anchor", "label": "Ancla", "family": "creatures", "asset": "/img/symbols/anchor.svg" },
+  { "id": "bat", "label": "Murciélago", "family": "creatures", "asset": "/img/symbols/bat.svg" },
+  { "id": "wolf", "label": "Lobo", "family": "creatures", "asset": "/img/symbols/wolf.svg" },
+  { "id": "claw-marks", "label": "Zarpazo", "family": "creatures", "asset": "/img/symbols/claw-marks.svg" },
+  { "id": "paw-print", "label": "Huellita", "family": "creatures", "asset": "/img/symbols/paw-print.svg" },
+  { "id": "card-spade", "label": "Picas", "family": "cards", "asset": "/img/symbols/card-spade.svg" },
+  { "id": "card-heart", "label": "Corazones", "family": "cards", "asset": "/img/symbols/card-heart.svg" },
+  { "id": "card-diamond", "label": "Diamantes", "family": "cards", "asset": "/img/symbols/card-diamond.svg" },
+  { "id": "card-club", "label": "Tréboles", "family": "cards", "asset": "/img/symbols/card-club.svg" },
+  { "id": "theater-masks", "label": "Máscaras teatrales", "family": "secrets", "asset": "/img/symbols/theater-masks.svg" }
+]
