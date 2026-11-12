@@ -1,37 +1,54 @@
-# Clases y subclases: política editorial de fuentes (Hallyura)
+# Clases y subclases aprobadas en Hallyura
 
-## Reglas base
+## Autoridad de los datos
 
-- **D&D 5.5e / Player's Handbook (2024)** es la referencia primaria de las doce clases base.
-- **Eberron: Forge of the Artificer** es la referencia para el Artífice revisado y sus opciones 5.5e.
-- Los datos breves de clase en `characterClasses.ts` son resúmenes originales; no sustituyen las reglas de los manuales.
-- **`statblocks.json` es la fuente de verdad para clase, nivel y subclase de los personajes**, pero no representa automáticamente un catálogo de subclases aprobadas para publicación en la Wiki.
-- Antes de registrar una subclase, comprobar nombre exacto, fuente, compatibilidad, aprobación para Hallyura y ruta MDX. Mantener `subclassIds` y `characterSubclasses` consistentes.
+- **Catálogo permitido:** copia editorial versionada de la pestaña `Classes` en [Characters — Classes & Subclasses Pool](https://docs.google.com/spreadsheets/d/1VzbRtqUGG8FelHgZABurPsGXnJmQpq7hEctedMnP_L4/edit?gid=1013832248), almacenada en `characterSubclasses.json`.
+- **Personajes, niveles y subclases equipadas:** `statblocks.json`. Nunca inferir una subclase equipada de las columnas «Personaje» del Google Sheet.
+- **Versiones:** una ficha por subclase, usando la revisión más reciente identificada y conservando nombres históricos en `aliases`.
+- **Clases permitidas:** las doce clases 2024, Artífice (Forge of the Artificer) y Blood Hunter (Critical Role, **terceros**).
+- **Total:** 119 subclases canónicas. Se unificó Totem Warrior con Wild Heart y se añadió Path of the World Tree a petición de la DM.
+- **No hay reproducción de habilidades por nivel** todavía: las fichas actuales son directorio, fuente y navegación; consulta los manuales originales para las reglas.
 
-## Biblioteca de referencia indicada
+## Correspondencia de fuentes
 
-| Fuente | Uso editorial |
+| Código de la hoja | Fuente editorial |
 | --- | --- |
-| Player's Handbook (2024) | Reglas principales 5.5e de clases y subclases |
-| D&D Beyond Basic Rules (2024) | Verificación pública de rasgos y opciones básicas |
-| Eberron: Forge of the Artificer | Artífice revisado para 5.5e |
-| Xanathar's Guide to Everything | Opciones 5e (2014); verificar adaptación antes de incorporarlas |
-| Tasha's Cauldron of Everything | Opciones 5e (2014); verificar adaptación antes de incorporarlas |
-| The Book of Many Things | Material complementario; revisar cada opción por separado |
-| Forgotten Realms: Heroes of Faerûn | Material complementario posterior; revisar cada opción por separado |
-| Arcana Unleashed | Verificar título, procedencia y compatibilidad de cada opción antes de citarla |
-| Ghosts of Saltmarsh | Referencia de ambientación y aventura, no catálogo base de clases |
-| Monster Manual (2024) | Referencia de criaturas, no fuente primaria de clases |
-| Dungeon Master's Guide (2024) | Reglas y herramientas para DM, no fuente primaria de clases |
-| Sage Advice & Errata | Aclaraciones y correcciones aplicables por edición |
+| PHB | Player's Handbook (2024) |
+| EFotA | Eberron: Forge of the Artificer (2025) |
+| ER | **Desambiguado por subclase:** Arcana Unleashed (2026) o Forgotten Realms: Heroes of Faerûn (2025) |
+| XGtE | Xanathar's Guide to Everything (2017) |
+| TCoE | Tasha's Cauldron of Everything (2020) |
+| SCAG | Sword Coast Adventurer's Guide (2015); cuando existe reedición en Xanathar, se usa la más reciente |
+| CR | Opciones de Critical Role / material de terceros; la compatibilidad específica con 2024 deberá verificarse por separado |
 
-## Pendiente para siguiente PR: subclases
+La etiqueta `official` se reserva a publicaciones oficiales de Dungeons & Dragons; `partner` a material de terceros. El catálogo no afirma que las opciones antiguas hayan recibido una revisión mecánica 2024.
 
-El inventario actual en `statblocks.json` contiene nombres de subclases oficiales de distintas ediciones, variantes de nombres (por ejemplo `Evoker` frente a `School of Evocation`) y opciones aparentemente personalizadas, como `Vestige Patron` y `College of the Moon`. Se requiere una tabla de equivalencias revisada antes de crear rutas públicas; **no se debe normalizar ni reescribir el JSON de personajes automáticamente**.
+### Arcana Unleashed (2026)
 
-Cada entrada aprobada debería incluir: identificador estable, clase padre, nombre en español/inglés, fuente concreta, edición o compatibilidad verificada y marca `isHomebrew` si corresponde. Evitar reproducir texto extenso protegido de los manuales.
+Arcana Domain (Cleric); Arcane Archer (Fighter); Warrior of the Mystic Arts (Monk); Vestige Patron (Warlock); Conjurer, Enchanter, Necromancer y Transmuter (Wizard).
 
-## Referencias de consulta pública
+### Forgotten Realms: Heroes of Faerûn (2025)
 
-- https://www.dndbeyond.com/sources/dnd/br-2024/character-classes
-- https://www.dndbeyond.com/sources/dnd/efota
+College of the Moon (Bard); Knowledge Domain (Cleric); Banneret (Fighter); Oath of the Noble Genies (Paladin); Winter Walker (Ranger); Scion of the Three (Rogue); Spellfire Sorcery (Sorcerer); Bladesinger (Wizard).
+
+## Resoluciones de canon
+
+- Mark: Wizard 13 (Abjurer), Artificer 3 (Artillerist). La asignación de War Magic en la hoja es histórica.
+- Jisung (NCT): Wild Magic Sorcery; no cambiar automáticamente a Spellfire.
+- Kao: Druid 3 (Circle of Stars) / Bard 3 (College of the Moon).
+- Taeil / Taevil: planificado como Transmuter, sin statblock creado.
+- Jongho: el texto `Path of the Totem Warrior` del statblock sigue siendo válido como alias de `Path of the Wild Heart`.
+- Kiyori, Imugi, Soobin y otros: conservar etiquetas históricas en sus statblocks; resolver su versión canónica mediante alias.
+
+## Rutas MDX y ampliación
+
+`npm run gen:subclasses` genera rutas MDX mínimas para las 119 subclases sin sobrescribir documentos existentes. Se ejecuta antes de `npm start`, `npm test` y `npm run build`.
+
+Los archivos generados están ignorados por Git. Para agregar contenido detallado en una siguiente entrega, crear una fuente autoral explícita y/o registrar manualmente los MDX correspondientes (con `git add -f` cuando el archivo de ruta esté ignorado), sin duplicar el modelo del catálogo. Las páginas actuales no sustituyen los manuales ni los textos de reglas.
+
+## Referencias de verificación
+
+- [D&D Beyond — Cambios del Player's Handbook 2024](https://www.dndbeyond.com/posts/1810-updates-in-the-players-handbook-2024)
+- [D&D Beyond — Arcana Unleashed](https://www.dndbeyond.com/sources/dnd/au)
+- [D&D Beyond — Heroes of Faerûn, contenido de las ocho subclases](https://www.dndbeyond.com/forums/d-d-beyond-general/release-issues-support/231469-forgotten-realms-heroes-of-faerun-issues-and)
+- [D&D Beyond — Eberron: Forge of the Artificer](https://www.dndbeyond.com/sources/dnd/efota)

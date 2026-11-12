@@ -1,3 +1,5 @@
+import rawCharacterSubclasses from './characterSubclasses.json';
+
 /** Classes approved for the Hallyura directory, in their editorial order. */
 export interface CharacterClass {
   id: string;
@@ -21,10 +23,16 @@ export interface CharacterSubclass {
   imageSrc?: string | null;
   source?: string;
   isHomebrew?: boolean;
+  aliases?: string[];
+  sourceYear?: number;
+  contentCategory?: 'official' | 'partner' | 'homebrew';
 }
 
 /** Compact original summaries and core traits; consult the cited books for full rules. */
-export const characterClasses: CharacterClass[] = [
+/** The approved 119-subclass catalog is separate from the class definitions. */
+export const characterSubclasses: CharacterSubclass[] = rawCharacterSubclasses as CharacterSubclass[];
+
+const classDefinitions: CharacterClass[] = [
   {
     id: 'barbaro', name: 'Bárbaro', originalName: 'Barbarian',
     description: 'Combatiente que canaliza su furia y resistencia para abrirse paso en el frente de batalla.',
@@ -136,20 +144,30 @@ export const characterClasses: CharacterClass[] = [
   {
     id: 'artifice', name: 'Artífice', originalName: 'Artificer',
     description: 'Inventor arcano que crea herramientas y objetos mágicos para apoyar sus aventuras.',
-    source: 'Material complementario compatible con D&D 5.5e',
+    source: 'Eberron: Forge of the Artificer (2025)',
     hitDie: 8,
     primaryAbilities: ["Inteligencia"],
     savingThrows: ["Constitución","Inteligencia"],
     subclassIds: [],
   },
+  {
+    id: 'blood-hunter', name: 'Blood Hunter', originalName: 'Blood Hunter',
+    description: 'Cazador que combina entrenamiento marcial con hemocraft y técnicas de riesgo.',
+    source: 'Critical Role (material de terceros; revisar compatibilidad con D&D 2024)',
+    hitDie: 10,
+    primaryAbilities: ['Fuerza', 'Destreza', 'Inteligencia'],
+    savingThrows: ['Destreza', 'Inteligencia'],
+    subclassIds: [],
+  },
 ];
 
-/**
- * Only register subclasses approved for Hallyura, with an MDX route for each.
- * Statblock subclass labels are evidence of usage, not approval or proof of
- * 2024 rules compatibility. 2014 books and homebrew require individual review.
- */
-export const characterSubclasses: CharacterSubclass[] = [];
+/** Keep class/subclass relationships derived from a single approved catalog. */
+export const characterClasses: CharacterClass[] = classDefinitions.map((entry) => ({
+  ...entry,
+  subclassIds: characterSubclasses
+    .filter((subclass) => subclass.classId === entry.id)
+    .map((subclass) => subclass.id),
+}));
 
 export function getCharacterClass(id: string): CharacterClass | undefined {
   return characterClasses.find((characterClass) => characterClass.id === id);
@@ -174,4 +192,20 @@ export function getCharacterClassHref(id: string): string {
 
 export function getCharacterSubclassHref(classId: string, subclassId: string): string {
   return `${getCharacterClassHref(classId)}/${subclassId}`;
+}
+
+/** Alias-aware subclass lookup for legacy statblocks without rewriting their data. */
+export function resolveCharacterSubclass(classId: string, label: unknown): CharacterSubclass | undefined {
+  if (typeof label !== 'string') return undefined;
+  const normalized = (value: string) => value.trim().normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[\s_-]+/g, ' ');
+  const name = normalized(label);
+  return getClassSubclassesById(classId).find((subclass) =>
+    [subclass.name, subclass.originalName, ...(subclass.aliases ?? [])]
+      .some((option) => normalized(option) === name),
+  );
+}
+
+function getClassSubclassesById(classId: string): CharacterSubclass[] {
+  return characterSubclasses.filter((subclass) => subclass.classId === classId);
 }

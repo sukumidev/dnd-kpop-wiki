@@ -23,7 +23,7 @@ test('resolves one class by its statblock entry and keeps its recorded level', (
   assert.deepEqual(result, [{character, level: 6}]);
   assert.equal(resolveClassId('  BÁRBARO  '), 'barbaro');
   assert.equal(resolveClassId('Fighter'), 'guerrero');
-  assert.equal(resolveClassId('Blood Hunter'), undefined);
+  assert.equal(resolveClassId('Blood Hunter'), 'blood-hunter');
 });
 
 test('includes multiclass characters in each class with separate levels', () => {
@@ -79,4 +79,15 @@ test('current statblocks resolve multiclass levels and linked character profiles
         `${characterClass.id}: missing profile for ${character.id}`);
     }
   }
+});
+
+test('uses the approved Mark multiclass and retains subclass provenance from statblocks', () => {
+  const wizard = getCharactersForClass('mago').find(({character}) => character.id === 'nct-mark');
+  const artificer = getCharactersForClass('artifice').find(({character}) => character.id === 'nct-mark');
+  assert.equal(wizard?.level, 13);
+  assert.equal(wizard?.subclass, 'Abjurer');
+  assert.equal(artificer?.level, 3);
+  assert.equal(artificer?.subclass, 'Artillerist');
+  const hunter = getCharactersForClass('blood-hunter').find(({character}) => character.id === 'skz-bangchan');
+  assert.equal(hunter?.subclass, 'Order of the Lycan');
 });

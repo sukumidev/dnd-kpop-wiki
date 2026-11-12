@@ -1,6 +1,6 @@
 import React, {type ReactNode} from 'react';
 import CharacterGrid from '@site/src/components/CharacterGrid';
-import {getCharacterClass, getCharacterSubclassHref, getClassSubclasses} from '@site/src/data/characterClasses';
+import {getCharacterClass, getCharacterSubclassHref, getClassSubclasses, resolveCharacterSubclass} from '@site/src/data/characterClasses';
 import {getCharactersForClass} from '@site/src/data/classCharacters';
 import DirectoryCard from './DirectoryCard';
 import styles from './styles.module.css';
@@ -14,8 +14,10 @@ export default function CharacterClassPage({classId, children}: Props) {
   const subclasses = getClassSubclasses(characterClass);
   const classCharacters = getCharactersForClass(classId);
   const classLevels = new Map<string, number>();
-  for (const {character, level} of classCharacters) {
+  const classSubclasses = new Map<string, string>();
+  for (const {character, level, subclass} of classCharacters) {
     if (level !== undefined) classLevels.set(character.id, level);
+    if (subclass) classSubclasses.set(character.id, resolveCharacterSubclass(classId, subclass)?.name ?? subclass);
   }
   const hasDetails = Boolean(
     characterClass.hitDie || characterClass.primaryAbilities?.length || characterClass.savingThrows?.length,
@@ -24,7 +26,7 @@ export default function CharacterClassPage({classId, children}: Props) {
   return (
     <div className={styles.page}>
       <header className={styles.pageHeader}>
-        <span className={styles.eyebrow}>Clase · D&amp;D 5.5e</span>
+        <span className={styles.eyebrow}>{classId === 'blood-hunter' ? 'Clase · material de terceros' : 'Clase · D&D 5.5e'}</span>
         <h1 className={styles.pageTitle}>{characterClass.name}</h1>
         <p className={styles.originalName}>{characterClass.originalName}</p>
         {characterClass.description && <p className={styles.lead}>{characterClass.description}</p>}
@@ -70,6 +72,8 @@ export default function CharacterClassPage({classId, children}: Props) {
           <CharacterGrid
             characters={classCharacters.map(({character}) => character)}
             classLevels={classLevels}
+            classSubclasses={classSubclasses}
+            largeCards
             label={`Personajes de la clase ${characterClass.name}`}
           />
         ) : <p className={styles.emptyState}>Aún no hay personajes registrados para esta clase.</p>}
