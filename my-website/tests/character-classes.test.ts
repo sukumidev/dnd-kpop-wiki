@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import {existsSync} from 'node:fs';
+import {existsSync, readFileSync} from 'node:fs';
 import path from 'node:path';
 import test from 'node:test';
 import {
@@ -83,7 +83,7 @@ test('all 119 approved canonical subclasses have provenance and valid class IDs'
 });
 
 test('the class page renders inline subclass chapters and uses stable anchors', () => {
-  const source = require('node:fs').readFileSync(
+  const source = readFileSync(
     path.join('src', 'components', 'classes', 'CharacterClassPage.tsx'), 'utf8',
   );
   assert.match(source, /id=\{\`subclass-\$\{subclass\.id\}\`\}/);
