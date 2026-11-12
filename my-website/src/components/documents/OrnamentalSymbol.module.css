@@ -1,0 +1,2 @@
+.symbol { display: inline-grid; place-items: center; color: inherit; line-height: 1; }
+.vector { display: block; width: var(--ornament-symbol-size, 1rem); height: var(--ornament-symbol-size, 1rem); max-width: 100%; max-height: 100%; background-color: currentColor; mask: var(--symbol-mask) center / contain no-repeat; -webkit-mask: var(--symbol-mask) center / contain no-repeat; }

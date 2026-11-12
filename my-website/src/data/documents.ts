@@ -48,6 +48,36 @@ export type DocumentKind = (typeof DOCUMENT_KINDS)[number];
 export type DocumentContentFormat = (typeof DOCUMENT_CONTENT_FORMATS)[number];
 export type DocumentCharacterRelationRole = "author" | "recipient" | "related";
 
+/** Optional display and discovery data inside the existing document metadata field. */
+export type ArchiveDisplayMode = "book" | "letter" | "newspaper" | "dossier" | "notice" | "scroll";
+export type ArchiveMaterial = "leather" | "cloth" | "parchment" | "newsprint" | "canvas" | "aged-paper";
+export type ArchiveWear = "new" | "used" | "ancient";
+
+export type BookAppearance = {
+  displayMode?: ArchiveDisplayMode;
+  material?: ArchiveMaterial;
+  wear?: ArchiveWear;
+  spineTitle?: string;
+  color?: string;
+  accentColor?: string;
+  symbol?: string;
+  ornament?: "filigree" | "stars" | "laurel" | "none" | "circle" | "diamond" | "arcane" | "laurel-frame" | "filigree-frame";
+  height?: "short" | "medium" | "tall";
+  thickness?: "thin" | "medium" | "thick";
+  texture?: "leather" | "cloth" | "aged";
+  spineImage?: string | null;
+};
+
+export type LibraryMetadata = {
+  /** Location ID where this volume was found, not a related or authored location. */
+  discoveredAt?: string | null;
+  /** Realm ID to use when the discovery location is not known more precisely. */
+  discoveredRealmId?: string | null;
+  appearance?: BookAppearance;
+  /** Removes the volume from the library index; its public reader remains available. */
+  hidden?: boolean;
+};
+
 export type Document = {
   id: string;
   title: string;
@@ -86,7 +116,7 @@ export type Document = {
   attachments?: unknown[];
   source?: string;
   notes?: string;
-  metadata?: Record<string, unknown>;
+  metadata?: Record<string, unknown> & { library?: LibraryMetadata };
 
   [key: string]: unknown;
 };

@@ -46,10 +46,10 @@ export default function DocumentEntryNavigation({
   const publicParent = getPublicParentDocument(document);
   const { previous, next } = getPreviousAndNextDocumentEntries(document);
 
-  if (!previous && !next) return null;
+  if (!previous && !next && !publicParent) return null;
 
   return (
-    <nav className={styles.entryNav} aria-label="Navegacion de entradas">
+    <nav className={styles.entryNav} aria-label="Navegación de capítulos">
       <div className={styles.entryNavSide}>
         {previous ? <EntryNavLink direction="previous" document={previous} /> : null}
       </div>
@@ -60,7 +60,7 @@ export default function DocumentEntryNavigation({
 
       {publicParent ? (
         <Link className={styles.entryNavBack} to={withBaseUrl(getDocumentPath(publicParent))}>
-          Ver índice de {publicParent.title}
+          Volver al índice de {publicParent.title}
         </Link>
       ) : null}
     </nav>
