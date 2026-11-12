@@ -49,7 +49,14 @@ export type DocumentContentFormat = (typeof DOCUMENT_CONTENT_FORMATS)[number];
 export type DocumentCharacterRelationRole = "author" | "recipient" | "related";
 
 /** Optional display and discovery data inside the existing document metadata field. */
+export type ArchiveDisplayMode = "book" | "letter" | "newspaper" | "dossier" | "notice" | "scroll";
+export type ArchiveMaterial = "leather" | "cloth" | "parchment" | "newsprint" | "canvas" | "aged-paper";
+export type ArchiveWear = "new" | "used" | "ancient";
+
 export type BookAppearance = {
+  displayMode?: ArchiveDisplayMode;
+  material?: ArchiveMaterial;
+  wear?: ArchiveWear;
   spineTitle?: string;
   color?: string;
   accentColor?: string;

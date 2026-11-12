@@ -30,6 +30,6 @@ test("cada lomo conserva un enlace público y un nombre accesible", () => {
 test("los estilos ofrecen foco visible, móvil sin scroll obligatorio y movimiento reducido", () => {
   assert.match(stylesheet, /\.link:focus-visible\s*\{[^}]*outline:/);
   assert.match(stylesheet, /prefers-reduced-motion: reduce/);
-  assert.match(shelfStylesheet, /grid-template-columns: repeat\(auto-fill, minmax\(52px, 1fr\)\)/);
+  assert.match(shelfStylesheet, /grid-template-columns: repeat\(auto-fill, minmax\(62px, 1fr\)\)/);
   assert.doesNotMatch(shelfStylesheet, /overflow-x:\s*(auto|scroll)/);
 });
