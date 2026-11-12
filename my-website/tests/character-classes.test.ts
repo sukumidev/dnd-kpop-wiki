@@ -8,6 +8,7 @@ import {
   getCharacterClass,
   getCharacterSubclass,
   getCharacterSubclassHref,
+  getClassSubclasses,
   resolveCharacterSubclass,
 } from '../src/data/characterClasses';
 
@@ -82,11 +83,27 @@ test('all 119 approved canonical subclasses have provenance and valid class IDs'
   assert.equal(getCharacterClass('barbaro')?.subclassIds.includes('path-of-the-world-tree'), true);
 });
 
-test('the class page renders inline subclass chapters and uses stable anchors', () => {
-  const source = readFileSync(
+test('native Docusaurus TOC contains all subclass headings in their class MDX pages', () => {
+  for (const characterClass of characterClasses) {
+    const content = readFileSync(
+      path.join('docs', 'mechanics', 'classes', `${characterClass.id}.mdx`), 'utf8',
+    );
+    assert.match(content, /toc_min_heading_level: 2/);
+    assert.match(content, /toc_max_heading_level: 3/);
+    assert.doesNotMatch(content, /hide_table_of_contents: true/);
+    assert.match(content, /^## Información de clase \{#class-details\}$/m);
+    assert.match(content, /^## Subclases \{#class-subclasses\}$/m);
+    assert.match(content, /^## Personajes de esta clase \{#class-characters\}$/m);
+    const headingIds = [...content.matchAll(/^### .+ \{#(subclass-[a-z0-9-]+)\}$/gm)]
+      .map((match) => match[1]);
+    const expected = getClassSubclasses(characterClass).map((subclass) => `subclass-${subclass.id}`);
+    assert.deepEqual(headingIds, expected, `${characterClass.id}: MDX headings must follow catalog order`);
+    assert.equal((content.match(/<ClassSubclass /g) ?? []).length, expected.length);
+  }
+
+  const component = readFileSync(
     path.join('src', 'components', 'classes', 'CharacterClassPage.tsx'), 'utf8',
   );
-  assert.match(source, /id=\{\`subclass-\$\{subclass\.id\}\`\}/);
-  assert.match(source, /subclassChapters/);
-  assert.doesNotMatch(source, /CharacterSubclassPage|DirectoryCard/);
+  assert.doesNotMatch(component, /className=\{styles\.subclassToc\}/);
+  assert.match(component, /export function ClassSubclass/);
 });
