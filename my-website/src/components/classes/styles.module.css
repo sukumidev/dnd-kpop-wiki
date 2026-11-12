@@ -215,7 +215,94 @@
 
 .source {margin-top: 1.5rem; color: var(--h-text-secondary);}
 
+
+/* One-page, book-like subclass chapters: compact index followed by readable sections. */
+.chapterIntro {
+  color: var(--h-text-secondary);
+  line-height: 1.65;
+}
+
+.subclassToc {
+  padding: 1.2rem 1.4rem;
+  border: 1px solid var(--h-border-soft);
+  border-radius: var(--h-radius-ui);
+  background: var(--h-bg-raised);
+}
+
+.subclassTocList {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 1.5rem;
+  row-gap: 0.65rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.subclassTocList li {min-width: 0; margin: 0;}
+.subclassTocList a {
+  color: var(--h-accent);
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+.subclassTocList a:hover {text-decoration: underline;}
+.subclassTocList a:focus-visible,
+.backToSubclasses:focus-visible {
+  outline: 2px solid var(--h-accent-bright);
+  outline-offset: 3px;
+}
+
+.subclassChapters {margin-top: 2rem;}
+.subclassChapter {
+  padding: 2rem 0 1.5rem;
+  border-top: 1px solid var(--h-border-soft);
+  scroll-margin-top: 5.5rem;
+}
+.subclassChapter:target {
+  border-color: var(--h-accent);
+  background: linear-gradient(to bottom, rgba(129, 140, 248, 0.07), transparent 50%);
+}
+
+.subclassChapterHeader {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.6rem 1rem;
+}
+.subclassChapterHeader h3 {
+  font-family: var(--h-font-editorial);
+  color: var(--h-text);
+  font-size: clamp(1.55rem, 3.4vw, 2rem);
+  margin: 0;
+}
+.subclassDescription {
+  color: var(--h-text-secondary);
+  line-height: 1.7;
+  max-width: 68ch;
+}
+.subclassMetadata {
+  color: var(--h-text-secondary);
+  margin: 0.65rem 0;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+.subclassFeatures {margin-top: 1.5rem;}
+.subclassFeature {margin: 1.25rem 0;}
+.subclassFeature h4 {
+  font-family: var(--h-font-editorial);
+  margin-bottom: 0.45rem;
+}
+.subclassFeature p {line-height: 1.75; max-width: 75ch;}
+.backToSubclasses {
+  display: inline-block;
+  font-family: var(--h-font-ui);
+  font-size: 0.78rem;
+  margin-top: 0.9rem;
+  color: var(--h-accent);
+}
+
 @media (max-width: 720px) {
+  .subclassTocList {grid-template-columns: 1fr;}
   .grid {grid-template-columns: 1fr;}
   .facts {grid-template-columns: 1fr;}
 }
