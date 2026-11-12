@@ -91,11 +91,16 @@ test('native Docusaurus TOC contains all subclass headings in their class MDX pa
     assert.match(content, /toc_min_heading_level: 2/);
     assert.match(content, /toc_max_heading_level: 3/);
     assert.doesNotMatch(content, /hide_table_of_contents: true/);
-    assert.match(content, /^## Información de clase \{#class-details\}$/m);
-    assert.match(content, /^## Subclases \{#class-subclasses\}$/m);
-    assert.match(content, /^## Personajes de esta clase \{#class-characters\}$/m);
-    const headingIds = [...content.matchAll(/^### .+ \{#(subclass-[a-z0-9-]+)\}$/gm)]
-      .map((match) => match[1]);
+    assert.ok(content.includes('## Información de clase {/* #class-details */}'));
+    assert.ok(content.includes('## Subclases {/* #class-subclasses */}'));
+    assert.ok(content.includes('## Personajes de esta clase {/* #class-characters */}'));
+    const headingIds = content.split('\n')
+      .filter((line) => line.startsWith('### '))
+      .map((line) => {
+        const match = line.match(/\{\/\* #(subclass-[a-z0-9-]+) \*\/\}$/);
+        assert.ok(match, `${characterClass.id}: invalid subclass heading ${line}`);
+        return match[1];
+      });
     const expected = getClassSubclasses(characterClass).map((subclass) => `subclass-${subclass.id}`);
     assert.deepEqual(headingIds, expected, `${characterClass.id}: MDX headings must follow catalog order`);
     assert.equal((content.match(/<ClassSubclass /g) ?? []).length, expected.length);
