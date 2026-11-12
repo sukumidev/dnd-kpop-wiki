@@ -40,11 +40,16 @@ College of the Moon (Bard); Knowledge Domain (Cleric); Banneret (Fighter); Oath 
 - Jongho: el texto `Path of the Totem Warrior` del statblock sigue siendo válido como alias de `Path of the Wild Heart`.
 - Kiyori, Imugi, Soobin y otros: conservar etiquetas históricas en sus statblocks; resolver su versión canónica mediante alias.
 
-## Rutas MDX y ampliación
+## Estructura del manual por clase
 
-`npm run gen:subclasses` genera rutas MDX mínimas para las 119 subclases sin sobrescribir documentos existentes. Se ejecuta antes de `npm start`, `npm test` y `npm run build`.
+Cada clase tiene **una única ruta MDX** en `docs/mechanics/classes/[classId].mdx`.
+Las subclases se muestran como capítulos dentro de la propia página de clase, con índice de enlaces a anclas `#subclass-[id]`.
+No deben crearse páginas MDX individuales para cada subclase; las 119 subclases se resuelven desde `characterSubclasses.json`.
 
-Los archivos generados están ignorados por Git. Para agregar contenido detallado en una siguiente entrega, crear una fuente autoral explícita y/o registrar manualmente los MDX correspondientes (con `git add -f` cuando el archivo de ruta esté ignorado), sin duplicar el modelo del catálogo. Las páginas actuales no sustituyen los manuales ni los textos de reglas.
+El componente `CharacterClassPage` presenta la información editorial de cada subclase (nombre, fuente, alias y, cuando estén disponibles, características mecánicas por nivel), dentro del mismo documento.
+Las futuras habilidades podrán incorporarse al modelo mediante `features: [{level, name, description}]`, redactadas como resúmenes originales y verificadas contra las fuentes.
+
+La tarea `npm run clean:subclasses` elimina **solo** las páginas generadas automáticamente por el sistema antiguo, comparando el contenido exacto antes de borrar. Conserva archivos editados manualmente para evitar pérdida de trabajo, que deberán revisarse si existen. Se ejecuta antes de `npm start`, `npm test` y `npm run build`.
 
 ## Referencias de verificación
 
