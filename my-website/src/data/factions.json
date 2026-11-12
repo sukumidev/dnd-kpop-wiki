@@ -59,6 +59,16 @@
     "visibility": "public",
     "sortOrder": 1
   },
+  "os-guild": {
+    "id": "os-guild",
+    "title": "Los Forasteros del Gremio de Aventureros",
+    "type": "party",
+    "status": "active",
+    "visibility": "public",
+    "sortOrder": 2,
+    "realm": "sin-reino",
+    "regionId": null
+  },
   "ciudadanos-de-jeyperia": {
     "id": "ciudadanos-de-jeyperia",
     "title": "Ciudadanos de Jeyperia",
@@ -66,7 +76,7 @@
     "status": "active",
     "realm": "jeyperia",
     "visibility": "public",
-    "sortOrder": 2
+    "sortOrder": 3
   },
   "ciudadanos-de-sylmorien": {
     "id": "ciudadanos-de-sylmorien",
@@ -75,7 +85,7 @@
     "status": "active",
     "realm": "sylmorien",
     "visibility": "public",
-    "sortOrder": 3
+    "sortOrder": 4
   },
   "clan-del-sol-ardiente": {
     "id": "clan-del-sol-ardiente",
@@ -102,7 +112,7 @@
     ],
     "imageSrc": null,
     "accent": "red",
-    "sortOrder": 4,
+    "sortOrder": 5,
     "reputation": null,
     "goal": null,
     "methods": null,
@@ -172,7 +182,7 @@
     "type": "clan",
     "status": "active",
     "visibility": "public",
-    "sortOrder": 5,
+    "sortOrder": 6,
     "realm": "hotou",
     "regionId": "hotou",
     "summary": "Clan dragonborn de Hotou que sigue y sirve a G-Dragon."
@@ -184,7 +194,7 @@
     "status": "active",
     "subtitle": "ALLDAY PROJECT",
     "visibility": "public",
-    "sortOrder": 6,
+    "sortOrder": 7,
     "memberIds": [
       "adp-annie",
       "adp-tarzzan",
@@ -221,7 +231,7 @@
     "type": "clan",
     "status": "active",
     "visibility": "public",
-    "sortOrder": 7,
+    "sortOrder": 8,
     "realm": "sylmorien",
     "regionId": "sylmorien",
     "summary": "Clan dragonborn de Sylmorien que se opone a G-Dragon."
@@ -232,7 +242,7 @@
     "type": "other",
     "status": "active",
     "visibility": "public",
-    "sortOrder": 8,
+    "sortOrder": 9,
     "realm": "jeyperia",
     "regionId": "jeyperia",
     "name": "El Clan del Beso de la Vida",
@@ -265,7 +275,7 @@
     "subtitle": "Super Junior",
     "realm": "sylmorien",
     "visibility": "public",
-    "sortOrder": 9,
+    "sortOrder": 10,
     "imageSrc": "/img/factions/sj.webp",
     "name": "Los Super Señores del Consejo",
     "typeLabel": "Institución Política",
@@ -302,7 +312,7 @@
     "subtitle": "Personal y Estudiantes de la Neo Academia",
     "realm": "sylmorien",
     "visibility": "public",
-    "sortOrder": 10,
+    "sortOrder": 11,
     "regionId": "sylmorien"
   },
   "viviz": {
@@ -312,7 +322,7 @@
     "status": "active",
     "realm": "hyberia",
     "visibility": "public",
-    "sortOrder": 11,
+    "sortOrder": 12,
     "imageSrc": "/img/factions/viviz.webp",
     "name": "Las Clérigas Vívidas",
     "subtitle": "VIVIZ",
@@ -345,7 +355,7 @@
     "subtitle": "NewJeans",
     "realm": "hyberia",
     "visibility": "public",
-    "sortOrder": 12,
+    "sortOrder": 13,
     "regionId": "hyberia",
     "name": "Las Guardianas del Bosque Muerto",
     "typeLabel": "Clan",
@@ -383,7 +393,7 @@
     "subtitle": "KATSEYE",
     "realm": "hyberia",
     "visibility": "public",
-    "sortOrder": 13,
+    "sortOrder": 14,
     "imageSrc": "/img/factions/katseye.webp",
     "regionId": "hyberia",
     "name": "Las Hijas del Ojo de Gato",
@@ -417,7 +427,7 @@
     "status": "active",
     "realm": "hotou",
     "visibility": "public",
-    "sortOrder": 14,
+    "sortOrder": 15,
     "imageSrc": "/img/factions/xg.webp",
     "name": "Las Lobas Extraordinarias",
     "subtitle": "XG",
@@ -456,7 +466,7 @@
     "subtitle": "TWICE",
     "realm": "jeyperia",
     "visibility": "public",
-    "sortOrder": 15,
+    "sortOrder": 16,
     "imageSrc": "/img/factions/twice.webp",
     "name": "Las Princesas Guerreras",
     "typeLabel": "Institución Militar",
@@ -488,7 +498,7 @@
     "subtitle": "LE SSERAFIM",
     "realm": "hyberia",
     "visibility": "public",
-    "sortOrder": 16,
+    "sortOrder": 17,
     "imageSrc": "/img/factions/lsf.webp",
     "regionId": "hyberia",
     "name": "Las Princesas Serafinas",
@@ -525,7 +535,7 @@
     "subtitle": "&TEAM",
     "realm": "hyberia",
     "visibility": "public",
-    "sortOrder": 17,
+    "sortOrder": 18,
     "imageSrc": "/img/factions/andteam.webp",
     "regionId": "hyberia"
   },
@@ -536,7 +546,7 @@
     "status": "active",
     "realm": "hotou",
     "visibility": "public",
-    "sortOrder": 18,
+    "sortOrder": 19,
     "regionId": "hotou",
     "name": "Los Bandidos de la Fiebre Psíquica",
     "subtitle": "PSYCHIC FEVER",
@@ -572,7 +582,7 @@
     "subtitle": "BTS",
     "realm": "hyberia",
     "visibility": "public",
-    "sortOrder": 19,
+    "sortOrder": 20,
     "regionId": "hyberia",
     "name": "Los Caballeros Bangtan",
     "typeLabel": "Orden militar",
@@ -611,7 +621,7 @@
     "subtitle": "SANTOS BRAVOS",
     "realm": "hyberia",
     "visibility": "public",
-    "sortOrder": 20,
+    "sortOrder": 21,
     "imageSrc": "/img/factions/stbv.webp",
     "name": "Los Luchadores Santos Bravos",
     "typeLabel": "Aventureros",
@@ -646,7 +656,7 @@
     "type": "criminal",
     "status": "active",
     "visibility": "public",
-    "sortOrder": 21,
+    "sortOrder": 22,
     "imageSrc": "/img/factions/lngshot.webp",
     "realm": "jeyperia",
     "regionId": "jeyperia"
@@ -659,7 +669,7 @@
     "subtitle": "BOYNEXTDOOR",
     "realm": "hyberia",
     "visibility": "public",
-    "sortOrder": 22,
+    "sortOrder": 23,
     "imageSrc": "/img/factions/bnd.webp",
     "regionId": "hyberia",
     "name": "Los Chicos del Gremio de al Lado",
@@ -697,7 +707,7 @@
     "subtitle": "CORTIS",
     "realm": "hyberia",
     "visibility": "public",
-    "sortOrder": 23,
+    "sortOrder": 24,
     "imageSrc": "/img/factions/cortis.webp",
     "regionId": "hyberia",
     "name": "Los Cortaditos del Casino",
@@ -817,7 +827,7 @@
     "imageSrc": "/img/factions/svt.webp",
     "imageCaption": "Los Trece Soñadores",
     "accent": "green",
-    "sortOrder": 24,
+    "sortOrder": 25,
     "realm": "hyberia",
     "leaderId": "svt-scoups",
     "memberIds": [
@@ -865,7 +875,7 @@
     "status": "active",
     "realm": "fantagio",
     "visibility": "public",
-    "sortOrder": 25,
+    "sortOrder": 26,
     "name": "Los Dioses Astronómicos",
     "subtitle": "ASTRO",
     "typeLabel": "Panteón",
@@ -900,7 +910,7 @@
     "subtitle": "SHINee",
     "realm": "sylmorien",
     "visibility": "public",
-    "sortOrder": 26,
+    "sortOrder": 27,
     "name": "Los Dioses Resplandecientes",
     "typeLabel": "Panteón",
     "summary": "Los Dioses Resplandecientes son un panteón vinculado a Sylmorien y a la tradición del Resplandecismo. Sus relatos describen a cinco mortales cuya relación con las personas y sus milagros dio paso a la divinidad.",
@@ -931,7 +941,7 @@
     "subtitle": "GOT7",
     "realm": "jeyperia",
     "visibility": "public",
-    "sortOrder": 27,
+    "sortOrder": 28,
     "imageSrc": "/img/factions/got7.webp",
     "name": "Los Ex Príncipes Herederos",
     "typeLabel": "Colectivo",
@@ -954,16 +964,6 @@
         "value": "Sesión 9"
       }
     ]
-  },
-  "os-guild": {
-    "id": "os-guild",
-    "title": "Los Forasteros del Gremio de Aventureros",
-    "type": "party",
-    "status": "active",
-    "visibility": "public",
-    "sortOrder": 1,
-    "realm": "sin-reino",
-    "regionId": null
   },
   "riize": {
     "id": "riize",
@@ -1573,41 +1573,6 @@
     "visibility": "public",
     "sortOrder": 40
   },
-  "ampersone": {
-    "id": "ampersone",
-    "title": "Los Unificadores",
-    "type": "order",
-    "status": "active",
-    "subtitle": "AMPERS&ONE",
-    "realm": "fincaria",
-    "visibility": "public",
-    "imageSrc": "/img/factions/ampersone.webp",
-    "name": "Los Unificadores",
-    "typeLabel": "Institución Militar",
-    "summary": "Los Unificadores son una institución militar humana de Fincaria al servicio de su corona. Su función conocida es actuar como portavoces diplomáticos y mediadores.",
-    "description": "Los Unificadores son una institución militar humana de Fincaria al servicio de su corona. Su función conocida es actuar como portavoces diplomáticos y mediadores.",
-    "origin": "Fincaria",
-    "affiliation": "Al servicio de la corona",
-    "knownMembers": "Choi Jiho y Brian Ho; lista parcial",
-    "statusLabel": "Activos",
-    "allyFactionIds": [],
-    "enemyFactionIds": [],
-    "additionalFacts": [
-      {
-        "label": "Estado narrativo",
-        "value": "En campaña"
-      },
-      {
-        "label": "Especie",
-        "value": "Humano"
-      },
-      {
-        "label": "Primera aparición",
-        "value": "Sesión 14.5"
-      }
-    ],
-    "sortOrder": 124
-  },
   "loossemble": {
     "id": "loossemble",
     "title": "La Asamblea de la Luna",
@@ -1616,7 +1581,255 @@
     "subtitle": "LOOSSEMBLE",
     "realm": "sin-reino",
     "visibility": "public",
-    "imageSrc": "/img/factions/loossemble.webp"
+    "imageSrc": "/img/factions/loossemble.webp",
+    "sortOrder": 41
+  },
+  "kobolds-del-valle-del-arrozal": {
+    "id": "kobolds-del-valle-del-arrozal",
+    "title": "Kobolds del Valle del Arrozal",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden",
+    "regionId": "valle-dorado",
+    "firstAppearance": 1,
+    "realm": "hyberia",
+    "sortOrder": 42
+  },
+  "emisarios-de-los-hijos-de-la-noche": {
+    "id": "emisarios-de-los-hijos-de-la-noche",
+    "title": "Emisarios de los Hijos de la Noche",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden",
+    "parentFactionId": "enhypen",
+    "firstAppearance": 4,
+    "realm": "hyberia",
+    "regionId": "hyberia",
+    "sortOrder": 43
+  },
+  "cobradores-de-impuestos-de-hyberia": {
+    "id": "cobradores-de-impuestos-de-hyberia",
+    "title": "Cobradores de Impuestos de Hyberia",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden",
+    "realm": "hyberia",
+    "regionId": "hyberia",
+    "sortOrder": 44
+  },
+  "oficiales-reales-de-hyberia": {
+    "id": "oficiales-reales-de-hyberia",
+    "title": "Oficiales Reales de Hyberia",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden",
+    "realm": "hyberia",
+    "regionId": "hyberia",
+    "sortOrder": 45
+  },
+  "monstruos-del-casino-clandestino": {
+    "id": "monstruos-del-casino-clandestino",
+    "title": "Monstruos del Casino Clandestino",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden",
+    "realm": "hyberia",
+    "regionId": "hyberia",
+    "sortOrder": 46
+  },
+  "policia-militar-de-sylmorien": {
+    "id": "policia-militar-de-sylmorien",
+    "title": "Policía Militar de Sylmorien",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden",
+    "realm": "sylmorien",
+    "regionId": "sylmorien",
+    "sortOrder": 47
+  },
+  "archidiablos-del-averno": {
+    "id": "archidiablos-del-averno",
+    "title": "Archidiablos del Averno",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden",
+    "sortOrder": 48
+  },
+  "goblins-de-hyberia": {
+    "id": "goblins-de-hyberia",
+    "title": "Goblins de Hyberia",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden",
+    "realm": "hyberia",
+    "regionId": "hyberia",
+    "sortOrder": 49
+  },
+  "habitantes-de-la-neocity": {
+    "id": "habitantes-de-la-neocity",
+    "title": "Habitantes de la Neocity",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden",
+    "parentFactionId": "ciudadanos-de-sylmorien",
+    "realm": "sylmorien",
+    "regionId": "sylmorien",
+    "sortOrder": 50
+  },
+  "changelings-del-clan-hoshizuki": {
+    "id": "changelings-del-clan-hoshizuki",
+    "title": "Changelings del Clan Hoshizuki",
+    "type": "clan",
+    "status": "unknown",
+    "visibility": "hidden",
+    "realm": "hotou",
+    "regionId": "hotou",
+    "sortOrder": 51
+  },
+  "licantropos-de-hotou": {
+    "id": "licantropos-de-hotou",
+    "title": "Licántropos",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden",
+    "parentFactionId": "ciudadanos-de-hotou",
+    "realm": "hotou",
+    "regionId": "hotou",
+    "sortOrder": 52
+  },
+  "ciudadanos-de-yggdrasil": {
+    "id": "ciudadanos-de-yggdrasil",
+    "title": "Ciudadanos de Yggdrasil",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden",
+    "realm": "yggdrasil",
+    "sortOrder": 53
+  },
+  "guardia-real-de-sylmorien": {
+    "id": "guardia-real-de-sylmorien",
+    "title": "Guardia Real de Sylmorien",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden",
+    "realm": "sylmorien",
+    "sortOrder": 54
+  },
+  "division-del-agua-de-la-guardia-real-de-sylmorien": {
+    "id": "division-del-agua-de-la-guardia-real-de-sylmorien",
+    "title": "División del Agua de la Guardia Real de Sylmorien",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden",
+    "realm": "sylmorien",
+    "parentFactionId": "guardia-real-de-sylmorien",
+    "sortOrder": 55
+  },
+  "gremio-de-ladrones-de-sylmorien": {
+    "id": "gremio-de-ladrones-de-sylmorien",
+    "title": "Gremio de Ladrones de Sylmorien",
+    "type": "guild",
+    "realm": "sylmorien",
+    "status": "unknown",
+    "visibility": "hidden",
+    "sortOrder": 56
+  },
+  "seunghan-y-las-almas-renacidas": {
+    "id": "seunghan-y-las-almas-renacidas",
+    "title": "Seunghan y las Almas Renacidas",
+    "subtitle": "Xnghan&Xoul",
+    "type": "other",
+    "parentFactionId": "gremio-de-ladrones-de-sylmorien",
+    "status": "unknown",
+    "visibility": "hidden",
+    "realm": "sylmorien",
+    "regionId": "sylmorien",
+    "sortOrder": 57
+  },
+  "consejo-de-hotou": {
+    "id": "consejo-de-hotou",
+    "title": "Consejo de Hotou",
+    "type": "other",
+    "realm": "hotou",
+    "status": "unknown",
+    "visibility": "hidden",
+    "sortOrder": 58
+  },
+  "consejo-de-honor-de-la-nacion-p": {
+    "id": "consejo-de-honor-de-la-nacion-p",
+    "title": "Consejo de Honor de la Nación P",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden",
+    "realm": "nacion-p",
+    "sortOrder": 59
+  },
+  "las-guerreras-de-los-dos-soles": {
+    "id": "las-guerreras-de-los-dos-soles",
+    "title": "Las Guerreras de los Dos Soles",
+    "subtitle": "Kep1er",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden",
+    "sortOrder": 60
+  },
+  "los-heroes-de-la-base-uno": {
+    "id": "los-heroes-de-la-base-uno",
+    "title": "Los Héroes de La Base Uno",
+    "subtitle": "ZEROBASEONE",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden",
+    "sortOrder": 61
+  },
+  "iglesia-de-los-dioses-nacientes": {
+    "id": "iglesia-de-los-dioses-nacientes",
+    "title": "Iglesia de los Dioses Nacientes",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden",
+    "sortOrder": 62
+  },
+  "los-perdidos-de-la-puerta-de-baldur": {
+    "id": "los-perdidos-de-la-puerta-de-baldur",
+    "title": "Los Perdidos de la Puerta de Baldur",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden",
+    "sortOrder": 63
+  },
+  "mascotas": {
+    "id": "mascotas",
+    "title": "Mascotas",
+    "type": "other",
+    "status": "unknown",
+    "visibility": "hidden",
+    "sortOrder": 64
+  },
+  "izone": {
+    "id": "izone",
+    "title": "Las Doce Princesas del Ensueño",
+    "type": "other",
+    "status": "inactive",
+    "visibility": "hidden",
+    "subtitle": "IZ*ONE",
+    "sortOrder": 65
+  },
+  "seguidores-de-los-dioses-resplandecientes": {
+    "id": "seguidores-de-los-dioses-resplandecientes",
+    "title": "Seguidores de los Dioses Resplandecientes",
+    "type": "other",
+    "status": "active",
+    "realm": "sylmorien",
+    "regionId": "sylmorien",
+    "visibility": "public",
+    "name": "Seguidores de los Dioses Resplandecientes",
+    "typeLabel": "Comunidad religiosa",
+    "summary": "Devotos del panteón de los Dioses Resplandecientes y de la tradición del Resplandecismo en Sylmorien.",
+    "description": "Los Seguidores de los Dioses Resplandecientes veneran al panteón conformado por Onew, Jonghyun, Key, Minho y Taemin. Kang Dohorn, guardián del Santuario del Dios Minho, está registrado entre sus integrantes. No se ha establecido una jerarquía propia de este colectivo.",
+    "knownMembers": "Kang Dohorn",
+    "affiliation": "Resplandecismo",
+    "sortOrder": 66
   },
   "nct-127": {
     "id": "nct-127",
@@ -1657,48 +1870,7 @@
         "value": "Sesión 4"
       }
     ],
-    "sortOrder": 107
-  },
-  "nct-dream": {
-    "id": "nct-dream",
-    "title": "Los Neo Culturales Tecnológicos: Casa de los Sueños",
-    "type": "academy",
-    "status": "active",
-    "subtitle": "NCT DREAM",
-    "realm": "sylmorien",
-    "visibility": "public",
-    "imageSrc": "/img/factions/nct-dream.webp",
-    "name": "Los Neo Culturales Tecnológicos: Casa de los Sueños",
-    "typeLabel": "Institución Academia",
-    "summary": "La Casa de los Sueños es una de las principales ramas de los Neo Culturales Tecnológicos y está especializada en el estudio del Dreamscape, la oniromancia y los fenómenos relacionados con el Plano Astral.",
-    "description": "La Casa de los Sueños es una de las principales ramas de los Neo Culturales Tecnológicos y está especializada en el estudio del Dreamscape, la oniromancia y los fenómenos relacionados con el Plano Astral.\n\nSu actividad académica comprende la investigación de los sueños, la interpretación de símbolos, la construcción de espacios oníricos y el desarrollo de métodos para interactuar con estos fenómenos mediante la magia.\n\nLa Casa se distingue por combinar conocimientos arcanos con investigaciones sobre la conciencia, la memoria y las experiencias compartidas.",
-    "origin": "Sylmorien",
-    "affiliation": "Autónoma reconocida",
-    "knownMembers": "Mark, Renjun, Jeno, Haechan, Jaemin, Chenle y Jisung",
-    "baseLabel": "Neo Academia, Neocity",
-    "leaderLabel": "Mark Lee",
-    "statusLabel": "Activos",
-    "regionId": "sylmorien",
-    "baseLocationId": "neocity",
-    "leaderCharacterId": "nct-mark",
-    "parentFactionId": "nct",
-    "allyFactionIds": [],
-    "enemyFactionIds": [],
-    "additionalFacts": [
-      {
-        "label": "Estado narrativo",
-        "value": "En campaña"
-      },
-      {
-        "label": "Especie",
-        "value": "Superhumano"
-      },
-      {
-        "label": "Primera aparición",
-        "value": "Sesión 7"
-      }
-    ],
-    "sortOrder": 109
+    "sortOrder": 67
   },
   "wayv": {
     "id": "wayv",
@@ -1739,7 +1911,48 @@
         "value": "Sesión 4"
       }
     ],
-    "sortOrder": 108
+    "sortOrder": 68
+  },
+  "nct-dream": {
+    "id": "nct-dream",
+    "title": "Los Neo Culturales Tecnológicos: Casa de los Sueños",
+    "type": "academy",
+    "status": "active",
+    "subtitle": "NCT DREAM",
+    "realm": "sylmorien",
+    "visibility": "public",
+    "imageSrc": "/img/factions/nct-dream.webp",
+    "name": "Los Neo Culturales Tecnológicos: Casa de los Sueños",
+    "typeLabel": "Institución Academia",
+    "summary": "La Casa de los Sueños es una de las principales ramas de los Neo Culturales Tecnológicos y está especializada en el estudio del Dreamscape, la oniromancia y los fenómenos relacionados con el Plano Astral.",
+    "description": "La Casa de los Sueños es una de las principales ramas de los Neo Culturales Tecnológicos y está especializada en el estudio del Dreamscape, la oniromancia y los fenómenos relacionados con el Plano Astral.\n\nSu actividad académica comprende la investigación de los sueños, la interpretación de símbolos, la construcción de espacios oníricos y el desarrollo de métodos para interactuar con estos fenómenos mediante la magia.\n\nLa Casa se distingue por combinar conocimientos arcanos con investigaciones sobre la conciencia, la memoria y las experiencias compartidas.",
+    "origin": "Sylmorien",
+    "affiliation": "Autónoma reconocida",
+    "knownMembers": "Mark, Renjun, Jeno, Haechan, Jaemin, Chenle y Jisung",
+    "baseLabel": "Neo Academia, Neocity",
+    "leaderLabel": "Mark Lee",
+    "statusLabel": "Activos",
+    "regionId": "sylmorien",
+    "baseLocationId": "neocity",
+    "leaderCharacterId": "nct-mark",
+    "parentFactionId": "nct",
+    "allyFactionIds": [],
+    "enemyFactionIds": [],
+    "additionalFacts": [
+      {
+        "label": "Estado narrativo",
+        "value": "En campaña"
+      },
+      {
+        "label": "Especie",
+        "value": "Superhumano"
+      },
+      {
+        "label": "Primera aparición",
+        "value": "Sesión 7"
+      }
+    ],
+    "sortOrder": 69
   },
   "nct-wish": {
     "id": "nct-wish",
@@ -1780,24 +1993,24 @@
         "value": "Sesión 9"
       }
     ],
-    "sortOrder": 110
+    "sortOrder": 70
   },
-  "omega-x": {
-    "id": "omega-x",
-    "title": "Los Diez Omegas",
-    "type": "clan",
+  "ampersone": {
+    "id": "ampersone",
+    "title": "Los Unificadores",
+    "type": "order",
     "status": "active",
-    "subtitle": "OMEGA X",
-    "realm": "sin-reino",
+    "subtitle": "AMPERS&ONE",
+    "realm": "fincaria",
     "visibility": "public",
-    "imageSrc": "/img/factions/omega-x.webp",
-    "name": "Los Diez Omegas",
-    "typeLabel": "Clan",
-    "summary": "Los Diez Omegas son un clan humano exiliado de origen desconocido. Su historia está marcada por el cautiverio a manos del Clan del Sol Ardiente.",
-    "description": "Los Diez Omegas son un clan humano exiliado de origen desconocido. Su historia está marcada por el cautiverio a manos del Clan del Sol Ardiente.",
-    "origin": "Desconocido",
-    "affiliation": "Exiliada",
-    "knownMembers": "Jaehan, Hangyeom, Hwichan y Yechan; lista parcial",
+    "imageSrc": "/img/factions/ampersone.webp",
+    "name": "Los Unificadores",
+    "typeLabel": "Institución Militar",
+    "summary": "Los Unificadores son una institución militar humana de Fincaria al servicio de su corona. Su función conocida es actuar como portavoces diplomáticos y mediadores.",
+    "description": "Los Unificadores son una institución militar humana de Fincaria al servicio de su corona. Su función conocida es actuar como portavoces diplomáticos y mediadores.",
+    "origin": "Fincaria",
+    "affiliation": "Al servicio de la corona",
+    "knownMembers": "Choi Jiho y Brian Ho; lista parcial",
     "statusLabel": "Activos",
     "allyFactionIds": [],
     "enemyFactionIds": [],
@@ -1813,13 +2026,110 @@
       {
         "label": "Primera aparición",
         "value": "Sesión 14.5"
-      },
-      {
-        "label": "Rivales / enemigos",
-        "value": "Clan del Sol Ardiente (captores)"
       }
     ],
-    "sortOrder": 142
+    "sortOrder": 71
+  },
+  "rv": {
+    "id": "rv",
+    "title": "Las Doncellas del Terciopelo Rojo",
+    "name": "Las Doncellas del Terciopelo Rojo",
+    "subtitle": "Red Velvet",
+    "type": "other",
+    "typeLabel": "Círculo",
+    "status": "active",
+    "visibility": "public",
+    "summary": "Las Doncellas del Terciopelo Rojo son un círculo de cambions originario de Sylmorien. Sus capacidades combinan manifestaciones intensas de fuego y transformación con ilusiones, encantamientos y magia relacionada con el sueño.",
+    "description": "Las Doncellas del Terciopelo Rojo son un círculo de cambions originario de Sylmorien. Sus capacidades combinan manifestaciones intensas de fuego y transformación con ilusiones, encantamientos y magia relacionada con el sueño.",
+    "origin": "Sylmorien",
+    "realm": "sylmorien",
+    "affiliation": "Independiente",
+    "knownMembers": "Irene, Seulgi, Wendy, Joy y Yeri",
+    "statusLabel": "Activas",
+    "regionId": "sylmorien",
+    "allyFactionIds": [],
+    "enemyFactionIds": [],
+    "additionalFacts": [
+      {
+        "label": "Estado narrativo",
+        "value": "Parcialmente vistos"
+      },
+      {
+        "label": "Especie",
+        "value": "Cambion"
+      },
+      {
+        "label": "Primera aparición",
+        "value": "Sesión 5"
+      }
+    ],
+    "sortOrder": 72
+  },
+  "h2h": {
+    "id": "h2h",
+    "title": "Las Hermanas del Corazón",
+    "name": "Las Hermanas del Corazón",
+    "subtitle": "Hearts2Hearts",
+    "type": "other",
+    "typeLabel": "Institución Política",
+    "status": "active",
+    "visibility": "public",
+    "summary": "Las Hermanas del Corazón son una institución política de Sylmorien afiliada al Estado. Su presencia en campaña se registra desde la sesión 13.",
+    "description": "Las Hermanas del Corazón son una institución política de Sylmorien afiliada al Estado. Su presencia en campaña se registra desde la sesión 13.",
+    "origin": "Sylmorien",
+    "realm": "sylmorien",
+    "affiliation": "Estatal",
+    "knownMembers": "Ocho integrantes conocidas por la party en la sesión 13; nombres pendientes",
+    "statusLabel": "Activas",
+    "regionId": "sylmorien",
+    "allyFactionIds": [],
+    "enemyFactionIds": [],
+    "additionalFacts": [
+      {
+        "label": "Estado narrativo",
+        "value": "En campaña"
+      },
+      {
+        "label": "Primera aparición",
+        "value": "Sesión 13"
+      }
+    ],
+    "sortOrder": 73
+  },
+  "ntop": {
+    "id": "ntop",
+    "title": "El Escuadrón en la Cima",
+    "name": "El Escuadrón en la Cima",
+    "subtitle": "N.TOP",
+    "type": "order",
+    "typeLabel": "Institución Militar",
+    "status": "active",
+    "visibility": "public",
+    "summary": "El Escuadrón en la Cima es una unidad militar humana de Sylmorien al servicio de la corona. Está vinculado al mando del EXO-Caballero Chanyeol.",
+    "description": "El Escuadrón en la Cima es una unidad militar humana de Sylmorien al servicio de la corona. Está vinculado al mando del EXO-Caballero Chanyeol.",
+    "origin": "Sylmorien",
+    "realm": "sylmorien",
+    "affiliation": "Al servicio de la corona",
+    "leaderLabel": "Minjae (mando directo recién asignado); Chanyeol (mando superior)",
+    "statusLabel": "Activo",
+    "regionId": "sylmorien",
+    "allyFactionIds": [],
+    "enemyFactionIds": [],
+    "additionalFacts": [
+      {
+        "label": "Estado narrativo",
+        "value": "Introducida"
+      },
+      {
+        "label": "Especie",
+        "value": "Humano"
+      },
+      {
+        "label": "Primera aparición",
+        "value": "Sesión 19"
+      }
+    ],
+    "sortOrder": 74
   },
   "morat": {
     "id": "morat",
@@ -1859,109 +2169,8 @@
         "value": "Sesión 17"
       }
     ],
-    "sortOrder": 130,
+    "sortOrder": 75,
     "parentFactionId": "division-del-agua-de-la-guardia-real-de-sylmorien"
-  },
-  "rv": {
-    "id": "rv",
-    "title": "Las Doncellas del Terciopelo Rojo",
-    "name": "Las Doncellas del Terciopelo Rojo",
-    "subtitle": "Red Velvet",
-    "type": "other",
-    "typeLabel": "Círculo",
-    "status": "active",
-    "visibility": "public",
-    "summary": "Las Doncellas del Terciopelo Rojo son un círculo de cambions originario de Sylmorien. Sus capacidades combinan manifestaciones intensas de fuego y transformación con ilusiones, encantamientos y magia relacionada con el sueño.",
-    "description": "Las Doncellas del Terciopelo Rojo son un círculo de cambions originario de Sylmorien. Sus capacidades combinan manifestaciones intensas de fuego y transformación con ilusiones, encantamientos y magia relacionada con el sueño.",
-    "origin": "Sylmorien",
-    "realm": "sylmorien",
-    "affiliation": "Independiente",
-    "knownMembers": "Irene, Seulgi, Wendy, Joy y Yeri",
-    "statusLabel": "Activas",
-    "regionId": "sylmorien",
-    "allyFactionIds": [],
-    "enemyFactionIds": [],
-    "additionalFacts": [
-      {
-        "label": "Estado narrativo",
-        "value": "Parcialmente vistos"
-      },
-      {
-        "label": "Especie",
-        "value": "Cambion"
-      },
-      {
-        "label": "Primera aparición",
-        "value": "Sesión 5"
-      }
-    ],
-    "sortOrder": 126
-  },
-  "h2h": {
-    "id": "h2h",
-    "title": "Las Hermanas del Corazón",
-    "name": "Las Hermanas del Corazón",
-    "subtitle": "Hearts2Hearts",
-    "type": "other",
-    "typeLabel": "Institución Política",
-    "status": "active",
-    "visibility": "public",
-    "summary": "Las Hermanas del Corazón son una institución política de Sylmorien afiliada al Estado. Su presencia en campaña se registra desde la sesión 13.",
-    "description": "Las Hermanas del Corazón son una institución política de Sylmorien afiliada al Estado. Su presencia en campaña se registra desde la sesión 13.",
-    "origin": "Sylmorien",
-    "realm": "sylmorien",
-    "affiliation": "Estatal",
-    "knownMembers": "Ocho integrantes conocidas por la party en la sesión 13; nombres pendientes",
-    "statusLabel": "Activas",
-    "regionId": "sylmorien",
-    "allyFactionIds": [],
-    "enemyFactionIds": [],
-    "additionalFacts": [
-      {
-        "label": "Estado narrativo",
-        "value": "En campaña"
-      },
-      {
-        "label": "Primera aparición",
-        "value": "Sesión 13"
-      }
-    ],
-    "sortOrder": 128
-  },
-  "ntop": {
-    "id": "ntop",
-    "title": "El Escuadrón en la Cima",
-    "name": "El Escuadrón en la Cima",
-    "subtitle": "N.TOP",
-    "type": "order",
-    "typeLabel": "Institución Militar",
-    "status": "active",
-    "visibility": "public",
-    "summary": "El Escuadrón en la Cima es una unidad militar humana de Sylmorien al servicio de la corona. Está vinculado al mando del EXO-Caballero Chanyeol.",
-    "description": "El Escuadrón en la Cima es una unidad militar humana de Sylmorien al servicio de la corona. Está vinculado al mando del EXO-Caballero Chanyeol.",
-    "origin": "Sylmorien",
-    "realm": "sylmorien",
-    "affiliation": "Al servicio de la corona",
-    "leaderLabel": "Minjae (mando directo recién asignado); Chanyeol (mando superior)",
-    "statusLabel": "Activo",
-    "regionId": "sylmorien",
-    "allyFactionIds": [],
-    "enemyFactionIds": [],
-    "additionalFacts": [
-      {
-        "label": "Estado narrativo",
-        "value": "Introducida"
-      },
-      {
-        "label": "Especie",
-        "value": "Humano"
-      },
-      {
-        "label": "Primera aparición",
-        "value": "Sesión 19"
-      }
-    ],
-    "sortOrder": 129
   },
   "nouera": {
     "id": "nouera",
@@ -1997,7 +2206,7 @@
         "value": "Sesión 20"
       }
     ],
-    "sortOrder": 131,
+    "sortOrder": 76,
     "leaderCharacterId": "exo-kai"
   },
   "wjsn": {
@@ -2028,7 +2237,7 @@
         "value": "Sesión 20"
       }
     ],
-    "sortOrder": 138
+    "sortOrder": 77
   },
   "billlie": {
     "id": "billlie",
@@ -2062,7 +2271,7 @@
         "value": "Lady Sua (Moon Sua), apoyo a sus labores comunitarias"
       }
     ],
-    "sortOrder": 139
+    "sortOrder": 78
   },
   "xlov": {
     "id": "xlov",
@@ -2097,7 +2306,7 @@
         "value": "Sesión 20"
       }
     ],
-    "sortOrder": 140
+    "sortOrder": 79
   },
   "be-first": {
     "id": "be-first",
@@ -2132,7 +2341,46 @@
         "value": "Sesión 15"
       }
     ],
-    "sortOrder": 141
+    "sortOrder": 80
+  },
+  "omega-x": {
+    "id": "omega-x",
+    "title": "Los Diez Omegas",
+    "type": "clan",
+    "status": "active",
+    "subtitle": "OMEGA X",
+    "realm": "sin-reino",
+    "visibility": "public",
+    "imageSrc": "/img/factions/omega-x.webp",
+    "name": "Los Diez Omegas",
+    "typeLabel": "Clan",
+    "summary": "Los Diez Omegas son un clan humano exiliado de origen desconocido. Su historia está marcada por el cautiverio a manos del Clan del Sol Ardiente.",
+    "description": "Los Diez Omegas son un clan humano exiliado de origen desconocido. Su historia está marcada por el cautiverio a manos del Clan del Sol Ardiente.",
+    "origin": "Desconocido",
+    "affiliation": "Exiliada",
+    "knownMembers": "Jaehan, Hangyeom, Hwichan y Yechan; lista parcial",
+    "statusLabel": "Activos",
+    "allyFactionIds": [],
+    "enemyFactionIds": [],
+    "additionalFacts": [
+      {
+        "label": "Estado narrativo",
+        "value": "En campaña"
+      },
+      {
+        "label": "Especie",
+        "value": "Humano"
+      },
+      {
+        "label": "Primera aparición",
+        "value": "Sesión 14.5"
+      },
+      {
+        "label": "Rivales / enemigos",
+        "value": "Clan del Sol Ardiente (captores)"
+      }
+    ],
+    "sortOrder": 81
   },
   "nu-est": {
     "id": "nu-est",
@@ -2179,7 +2427,7 @@
         "value": "Sesión 5"
       }
     ],
-    "sortOrder": 143
+    "sortOrder": 82
   },
   "bigbang": {
     "id": "bigbang",
@@ -2213,7 +2461,7 @@
         "value": "G-Dragon, T.O.P, Taeyang, Daesung y Seungri"
       }
     ],
-    "sortOrder": 145
+    "sortOrder": 83
   },
   "t1": {
     "id": "t1",
@@ -2250,228 +2498,6 @@
         "value": "ZEUS, Dios de la Tempestad; fallecido"
       }
     ],
-    "sortOrder": 146
-  },
-  "kobolds-del-valle-del-arrozal": {
-    "id": "kobolds-del-valle-del-arrozal",
-    "title": "Kobolds del Valle del Arrozal",
-    "type": "other",
-    "status": "unknown",
-    "visibility": "hidden",
-    "regionId": "valle-dorado",
-    "firstAppearance": 1,
-    "realm": "hyberia"
-  },
-  "emisarios-de-los-hijos-de-la-noche": {
-    "id": "emisarios-de-los-hijos-de-la-noche",
-    "title": "Emisarios de los Hijos de la Noche",
-    "type": "other",
-    "status": "unknown",
-    "visibility": "hidden",
-    "parentFactionId": "enhypen",
-    "firstAppearance": 4,
-    "realm": "hyberia",
-    "regionId": "hyberia"
-  },
-  "cobradores-de-impuestos-de-hyberia": {
-    "id": "cobradores-de-impuestos-de-hyberia",
-    "title": "Cobradores de Impuestos de Hyberia",
-    "type": "other",
-    "status": "unknown",
-    "visibility": "hidden",
-    "realm": "hyberia",
-    "regionId": "hyberia"
-  },
-  "oficiales-reales-de-hyberia": {
-    "id": "oficiales-reales-de-hyberia",
-    "title": "Oficiales Reales de Hyberia",
-    "type": "other",
-    "status": "unknown",
-    "visibility": "hidden",
-    "realm": "hyberia",
-    "regionId": "hyberia"
-  },
-  "monstruos-del-casino-clandestino": {
-    "id": "monstruos-del-casino-clandestino",
-    "title": "Monstruos del Casino Clandestino",
-    "type": "other",
-    "status": "unknown",
-    "visibility": "hidden",
-    "realm": "hyberia",
-    "regionId": "hyberia"
-  },
-  "policia-militar-de-sylmorien": {
-    "id": "policia-militar-de-sylmorien",
-    "title": "Policía Militar de Sylmorien",
-    "type": "other",
-    "status": "unknown",
-    "visibility": "hidden",
-    "realm": "sylmorien",
-    "regionId": "sylmorien"
-  },
-  "archidiablos-del-averno": {
-    "id": "archidiablos-del-averno",
-    "title": "Archidiablos del Averno",
-    "type": "other",
-    "status": "unknown",
-    "visibility": "hidden"
-  },
-  "goblins-de-hyberia": {
-    "id": "goblins-de-hyberia",
-    "title": "Goblins de Hyberia",
-    "type": "other",
-    "status": "unknown",
-    "visibility": "hidden",
-    "realm": "hyberia",
-    "regionId": "hyberia"
-  },
-  "habitantes-de-la-neocity": {
-    "id": "habitantes-de-la-neocity",
-    "title": "Habitantes de la Neocity",
-    "type": "other",
-    "status": "unknown",
-    "visibility": "hidden",
-    "parentFactionId": "ciudadanos-de-sylmorien",
-    "realm": "sylmorien",
-    "regionId": "sylmorien"
-  },
-  "changelings-del-clan-hoshizuki": {
-    "id": "changelings-del-clan-hoshizuki",
-    "title": "Changelings del Clan Hoshizuki",
-    "type": "clan",
-    "status": "unknown",
-    "visibility": "hidden",
-    "realm": "hotou",
-    "regionId": "hotou"
-  },
-  "licantropos-de-hotou": {
-    "id": "licantropos-de-hotou",
-    "title": "Licántropos",
-    "type": "other",
-    "status": "unknown",
-    "visibility": "hidden",
-    "parentFactionId": "ciudadanos-de-hotou",
-    "realm": "hotou",
-    "regionId": "hotou"
-  },
-  "ciudadanos-de-yggdrasil": {
-    "id": "ciudadanos-de-yggdrasil",
-    "title": "Ciudadanos de Yggdrasil",
-    "type": "other",
-    "status": "unknown",
-    "visibility": "hidden",
-    "realm": "yggdrasil"
-  },
-  "guardia-real-de-sylmorien": {
-    "id": "guardia-real-de-sylmorien",
-    "title": "Guardia Real de Sylmorien",
-    "type": "other",
-    "status": "unknown",
-    "visibility": "hidden",
-    "realm": "sylmorien"
-  },
-  "division-del-agua-de-la-guardia-real-de-sylmorien": {
-    "id": "division-del-agua-de-la-guardia-real-de-sylmorien",
-    "title": "División del Agua de la Guardia Real de Sylmorien",
-    "type": "other",
-    "status": "unknown",
-    "visibility": "hidden",
-    "realm": "sylmorien",
-    "parentFactionId": "guardia-real-de-sylmorien"
-  },
-  "gremio-de-ladrones-de-sylmorien": {
-    "id": "gremio-de-ladrones-de-sylmorien",
-    "title": "Gremio de Ladrones de Sylmorien",
-    "type": "guild",
-    "realm": "sylmorien",
-    "status": "unknown",
-    "visibility": "hidden"
-  },
-  "seunghan-y-las-almas-renacidas": {
-    "id": "seunghan-y-las-almas-renacidas",
-    "title": "Seunghan y las Almas Renacidas",
-    "subtitle": "Xnghan&Xoul",
-    "type": "other",
-    "parentFactionId": "gremio-de-ladrones-de-sylmorien",
-    "status": "unknown",
-    "visibility": "hidden",
-    "realm": "sylmorien",
-    "regionId": "sylmorien"
-  },
-  "consejo-de-hotou": {
-    "id": "consejo-de-hotou",
-    "title": "Consejo de Hotou",
-    "type": "other",
-    "realm": "hotou",
-    "status": "unknown",
-    "visibility": "hidden"
-  },
-  "consejo-de-honor-de-la-nacion-p": {
-    "id": "consejo-de-honor-de-la-nacion-p",
-    "title": "Consejo de Honor de la Nación P",
-    "type": "other",
-    "status": "unknown",
-    "visibility": "hidden",
-    "realm": "nacion-p"
-  },
-  "las-guerreras-de-los-dos-soles": {
-    "id": "las-guerreras-de-los-dos-soles",
-    "title": "Las Guerreras de los Dos Soles",
-    "subtitle": "Kep1er",
-    "type": "other",
-    "status": "unknown",
-    "visibility": "hidden"
-  },
-  "los-heroes-de-la-base-uno": {
-    "id": "los-heroes-de-la-base-uno",
-    "title": "Los Héroes de La Base Uno",
-    "subtitle": "ZEROBASEONE",
-    "type": "other",
-    "status": "unknown",
-    "visibility": "hidden"
-  },
-  "iglesia-de-los-dioses-nacientes": {
-    "id": "iglesia-de-los-dioses-nacientes",
-    "title": "Iglesia de los Dioses Nacientes",
-    "type": "other",
-    "status": "unknown",
-    "visibility": "hidden"
-  },
-  "los-perdidos-de-la-puerta-de-baldur": {
-    "id": "los-perdidos-de-la-puerta-de-baldur",
-    "title": "Los Perdidos de la Puerta de Baldur",
-    "type": "other",
-    "status": "unknown",
-    "visibility": "hidden"
-  },
-  "mascotas": {
-    "id": "mascotas",
-    "title": "Mascotas",
-    "type": "other",
-    "status": "unknown",
-    "visibility": "hidden"
-  },
-  "izone": {
-    "id": "izone",
-    "title": "Las Doce Princesas del Ensueño",
-    "type": "other",
-    "status": "inactive",
-    "visibility": "hidden",
-    "subtitle": "IZ*ONE"
-  },
-  "seguidores-de-los-dioses-resplandecientes": {
-    "id": "seguidores-de-los-dioses-resplandecientes",
-    "title": "Seguidores de los Dioses Resplandecientes",
-    "type": "other",
-    "status": "active",
-    "realm": "sylmorien",
-    "regionId": "sylmorien",
-    "visibility": "public",
-    "name": "Seguidores de los Dioses Resplandecientes",
-    "typeLabel": "Comunidad religiosa",
-    "summary": "Devotos del panteón de los Dioses Resplandecientes y de la tradición del Resplandecismo en Sylmorien.",
-    "description": "Los Seguidores de los Dioses Resplandecientes veneran al panteón conformado por Onew, Jonghyun, Key, Minho y Taemin. Kang Dohorn, guardián del Santuario del Dios Minho, está registrado entre sus integrantes. No se ha establecido una jerarquía propia de este colectivo.",
-    "knownMembers": "Kang Dohorn",
-    "affiliation": "Resplandecismo"
+    "sortOrder": 84
   }
 }

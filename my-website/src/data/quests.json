@@ -57,7 +57,7 @@
     "accent": "gold",
     "isRepeatable": false,
     "notes": "Quest central de toda la campaña. El contador refleja el total de Cartas en posesión de la party confirmado por la DM.",
-    "sortOrder": 1,
+    "sortOrder": 0,
     "tagIds": [
       "baraja-del-destino",
       "cartas-legendarias",
@@ -127,7 +127,7 @@
     "accent": "gold",
     "isRepeatable": false,
     "notes": "Subquest de la búsqueda de la Baraja del Destino.",
-    "sortOrder": 2,
+    "sortOrder": 1,
     "tagIds": [
       "baraja-del-destino",
       "templo-del-sol-naciente",
@@ -145,153 +145,6 @@
     ],
     "locationIds": [
       "interior-del-templo-del-sol-naciente"
-    ]
-  },
-  "mq-defeat-burning-sun": {
-    "id": "mq-defeat-burning-sun",
-    "title": "Detener al Clan del Sol Ardiente",
-    "subtitle": "Impedir que su purificación continúe",
-    "types": [
-      "main"
-    ],
-    "status": "active",
-    "visibility": "public",
-    "priority": "high",
-    "summary": "La party debe impedir que el Clan del Sol Ardiente continúe persiguiendo, capturando y utilizando a quienes considera impuros o peligrosos.",
-    "description": "El Clan del Sol Ardiente persigue vampiros, seres lunares, dragonborn y otros grupos que considera amenazas. La party sabe que buscó a Joshua y a sus hijas, que Taeil y Kim Soohyun secuestraron a Jungwoo bebé para negociar por uno de los Wishitos y que el Padre Kim mantiene vínculos directos con el Clan. Detenerlo exige proteger a sus objetivos, frustrar sus planes y descubrir qué busca realmente. Cuatro niñas tiefling fueron trasladadas a Neocity, y las tres Cartas del templo quedaron bajo custodia de la party. Más tarde, Minjae y Joshua registraron a sus hijas en Sylmorien y Mingi asumió el traslado de los refugiados dragonborn. La protección de las familias y comunidades perseguidas sigue abierta.",
-    "progress": {
-      "mode": "manual",
-      "current": 0,
-      "goal": 5
-    },
-    "objectives": [
-      {
-        "id": "stop-taeil-and-kim",
-        "label": "Detener a Taeil y Kim Soohyun",
-        "done": false
-      },
-      {
-        "id": "protect-joshua-family",
-        "label": "Proteger a Joshua y a sus hijas",
-        "done": false
-      },
-      {
-        "id": "protect-persecuted",
-        "label": "Proteger a los Hijos de la Noche y a otros seres perseguidos",
-        "done": false
-      },
-      {
-        "id": "discover-burning-sun-goal",
-        "label": "Descubrir qué busca realmente el Clan del Sol Ardiente",
-        "done": false
-      },
-      {
-        "id": "deny-destiny-cards",
-        "label": "Impedir que el Clan consiga más Cartas del Destino",
-        "done": false
-      }
-    ],
-    "sessionStartedId": "10",
-    "lastUpdatedSessionId": "19",
-    "factionIds": [
-      "clan-del-sol-ardiente"
-    ],
-    "rewards": [
-      "Protección de comunidades perseguidas",
-      "Debilitamiento de una amenaza mayor",
-      "Información sobre los planes del Clan del Sol Ardiente"
-    ],
-    "accent": "red",
-    "isRepeatable": false,
-    "notes": "Quest paraguas del arco contra el Clan del Sol Ardiente.",
-    "sortOrder": 20,
-    "tagIds": [
-      "sol-ardiente",
-      "persecucion",
-      "proteccion",
-      "cartas-del-destino"
-    ],
-    "sessionIds": [
-      "18",
-      "19"
-    ]
-  },
-  "mq-protect-temple-girls": {
-    "id": "mq-protect-temple-girls",
-    "parentQuestId": "mq-defeat-burning-sun",
-    "title": "Proteger a las niñas del Templo del Sol Naciente",
-    "subtitle": "Cuatro niñas tiefling necesitan un lugar seguro",
-    "types": [
-      "main"
-    ],
-    "status": "active",
-    "visibility": "public",
-    "priority": "high",
-    "summary": "Las cuatro niñas tiefling fueron trasladadas a Neocity. Queda por investigar lo ocurrido en el templo y si hay más personas en peligro.",
-    "description": "Las niñas contaron a Kiyori que el Padre Kim abusaba de ellas. Wooseok afirmó que desconocía lo que ocurría en el templo. En la sesión 18, la party las trasladó a Neocity con ayuda de Mark y Wooseok. Sigue pendiente investigar el templo, averiguar si hay más personas en peligro y decidir cómo actuar frente al Padre Kim.",
-    "progress": {
-      "mode": "manual",
-      "current": 1,
-      "goal": 5
-    },
-    "objectives": [
-      {
-        "id": "keep-girls-safe",
-        "label": "Poner a salvo a las cuatro niñas mediante su traslado a Neocity",
-        "done": true
-      },
-      {
-        "id": "find-other-victims",
-        "label": "Averiguar si existen más personas en peligro",
-        "done": false
-      },
-      {
-        "id": "investigate-temple",
-        "label": "Descubrir qué ocurrió dentro del templo",
-        "done": false
-      },
-      {
-        "id": "evaluate-wooseok",
-        "label": "Decidir si pueden confiar en Wooseok",
-        "done": false
-      },
-      {
-        "id": "decide-kim-soohyun",
-        "label": "Determinar qué hacer con el Padre Kim Soohyun",
-        "done": false
-      }
-    ],
-    "sessionStartedId": "17",
-    "lastUpdatedSessionId": "18",
-    "factionIds": [
-      "clan-del-sol-ardiente"
-    ],
-    "characterIds": [
-      "pc-kiyori",
-      "nct-mark"
-    ],
-    "rewards": [
-      "Seguridad para las niñas del templo",
-      "Información sobre las actividades del Padre Kim",
-      "Posible protección para otras víctimas"
-    ],
-    "accent": "red",
-    "isRepeatable": false,
-    "notes": "Subquest urgente de Detener al Clan del Sol Ardiente.",
-    "sortOrder": 21,
-    "tagIds": [
-      "templo-del-sol-naciente",
-      "tieflings",
-      "kim-soohyun",
-      "proteccion"
-    ],
-    "sessionIds": [
-      "17",
-      "18"
-    ],
-    "locationIds": [
-      "interior-del-templo-del-sol-naciente",
-      "neocity"
     ]
   },
   "mq-protect-wishies": {
@@ -374,7 +227,7 @@
     "accent": "gold",
     "isRepeatable": false,
     "notes": "Quest compartida: principal para la campaña y personal para Kiyori.",
-    "sortOrder": 3,
+    "sortOrder": 2,
     "tagIds": [
       "wishitos",
       "casa-de-los-deseos",
@@ -384,6 +237,329 @@
     ],
     "sessionIds": [
       "20"
+    ]
+  },
+  "mq-recover-stolen-cards": {
+    "id": "mq-recover-stolen-cards",
+    "parentQuestId": "mq-collect-cards",
+    "title": "Recuperar las Cartas Robadas",
+    "subtitle": "Cartas robadas por los Piratas",
+    "types": [
+      "main",
+      "faction"
+    ],
+    "status": "active",
+    "visibility": "public",
+    "summary": "La party debe rastrear y recuperar las cartas de la Baraja del Destino que fueron robadas por los Piratas antes de que desaparezcan, sean vendidas o caigan en manos aún peores.",
+    "description": "No todas las cartas permanecen ocultas o ligadas a portadores indefensos: algunas ya fueron arrebatadas y ahora están en circulación entre fuerzas peligrosas. Los Piratas de la Marea Negra han robado parte de la Baraja, y recuperarla exigirá rastreo, confrontación, negociación o infiltración, dependiendo de quién las posea y qué tan lejos estén dispuestos a llegar para conservarlas.",
+    "progress": {
+      "mode": "manual",
+      "current": 1,
+      "goal": 4
+    },
+    "objectives": [
+      {
+        "id": "recover-1",
+        "label": "Recuperar el 8 de Corazones",
+        "done": true
+      },
+      {
+        "id": "recover-2",
+        "label": "Recuperar el 6 de Picas",
+        "done": false
+      },
+      {
+        "id": "recover-3",
+        "label": "Recueperar el 9 de Diamantes",
+        "done": false
+      },
+      {
+        "id": "recover-4",
+        "label": "Recuperar el ??? de Tréboles",
+        "done": false
+      }
+    ],
+    "sessionStartedId": null,
+    "lastUpdatedSessionId": null,
+    "factionIds": [],
+    "rewards": [
+      "Recuperación de cartas activas de la Baraja",
+      "Información sobre el mercado o circulación de cartas robadas",
+      "Avance directo en la main quest"
+    ],
+    "accent": "gold",
+    "isRepeatable": false,
+    "notes": "Quest de recuperación ligada al movimiento de cartas fuera del control de la party.",
+    "sortOrder": 3,
+    "tagIds": [
+      "cartas-robadas",
+      "baraja-del-destino",
+      "piratas",
+      "recuperacion"
+    ]
+  },
+  "mq-defeat-burning-sun": {
+    "id": "mq-defeat-burning-sun",
+    "title": "Detener al Clan del Sol Ardiente",
+    "subtitle": "Impedir que su purificación continúe",
+    "types": [
+      "main"
+    ],
+    "status": "active",
+    "visibility": "public",
+    "priority": "high",
+    "summary": "La party debe impedir que el Clan del Sol Ardiente continúe persiguiendo, capturando y utilizando a quienes considera impuros o peligrosos.",
+    "description": "El Clan del Sol Ardiente persigue vampiros, seres lunares, dragonborn y otros grupos que considera amenazas. La party sabe que buscó a Joshua y a sus hijas, que Taeil y Kim Soohyun secuestraron a Jungwoo bebé para negociar por uno de los Wishitos y que el Padre Kim mantiene vínculos directos con el Clan. Detenerlo exige proteger a sus objetivos, frustrar sus planes y descubrir qué busca realmente. Cuatro niñas tiefling fueron trasladadas a Neocity, y las tres Cartas del templo quedaron bajo custodia de la party. Más tarde, Minjae y Joshua registraron a sus hijas en Sylmorien y Mingi asumió el traslado de los refugiados dragonborn. La protección de las familias y comunidades perseguidas sigue abierta.",
+    "progress": {
+      "mode": "manual",
+      "current": 0,
+      "goal": 5
+    },
+    "objectives": [
+      {
+        "id": "stop-taeil-and-kim",
+        "label": "Detener a Taeil y Kim Soohyun",
+        "done": false
+      },
+      {
+        "id": "protect-joshua-family",
+        "label": "Proteger a Joshua y a sus hijas",
+        "done": false
+      },
+      {
+        "id": "protect-persecuted",
+        "label": "Proteger a los Hijos de la Noche y a otros seres perseguidos",
+        "done": false
+      },
+      {
+        "id": "discover-burning-sun-goal",
+        "label": "Descubrir qué busca realmente el Clan del Sol Ardiente",
+        "done": false
+      },
+      {
+        "id": "deny-destiny-cards",
+        "label": "Impedir que el Clan consiga más Cartas del Destino",
+        "done": false
+      }
+    ],
+    "sessionStartedId": "10",
+    "lastUpdatedSessionId": "19",
+    "factionIds": [
+      "clan-del-sol-ardiente"
+    ],
+    "rewards": [
+      "Protección de comunidades perseguidas",
+      "Debilitamiento de una amenaza mayor",
+      "Información sobre los planes del Clan del Sol Ardiente"
+    ],
+    "accent": "red",
+    "isRepeatable": false,
+    "notes": "Quest paraguas del arco contra el Clan del Sol Ardiente.",
+    "sortOrder": 4,
+    "tagIds": [
+      "sol-ardiente",
+      "persecucion",
+      "proteccion",
+      "cartas-del-destino"
+    ],
+    "sessionIds": [
+      "18",
+      "19"
+    ]
+  },
+  "mq-protect-temple-girls": {
+    "id": "mq-protect-temple-girls",
+    "parentQuestId": "mq-defeat-burning-sun",
+    "title": "Proteger a las niñas del Templo del Sol Naciente",
+    "subtitle": "Cuatro niñas tiefling necesitan un lugar seguro",
+    "types": [
+      "main"
+    ],
+    "status": "active",
+    "visibility": "public",
+    "priority": "high",
+    "summary": "Las cuatro niñas tiefling fueron trasladadas a Neocity. Queda por investigar lo ocurrido en el templo y si hay más personas en peligro.",
+    "description": "Las niñas contaron a Kiyori que el Padre Kim abusaba de ellas. Wooseok afirmó que desconocía lo que ocurría en el templo. En la sesión 18, la party las trasladó a Neocity con ayuda de Mark y Wooseok. Sigue pendiente investigar el templo, averiguar si hay más personas en peligro y decidir cómo actuar frente al Padre Kim.",
+    "progress": {
+      "mode": "manual",
+      "current": 1,
+      "goal": 5
+    },
+    "objectives": [
+      {
+        "id": "keep-girls-safe",
+        "label": "Poner a salvo a las cuatro niñas mediante su traslado a Neocity",
+        "done": true
+      },
+      {
+        "id": "find-other-victims",
+        "label": "Averiguar si existen más personas en peligro",
+        "done": false
+      },
+      {
+        "id": "investigate-temple",
+        "label": "Descubrir qué ocurrió dentro del templo",
+        "done": false
+      },
+      {
+        "id": "evaluate-wooseok",
+        "label": "Decidir si pueden confiar en Wooseok",
+        "done": false
+      },
+      {
+        "id": "decide-kim-soohyun",
+        "label": "Determinar qué hacer con el Padre Kim Soohyun",
+        "done": false
+      }
+    ],
+    "sessionStartedId": "17",
+    "lastUpdatedSessionId": "18",
+    "factionIds": [
+      "clan-del-sol-ardiente"
+    ],
+    "characterIds": [
+      "pc-kiyori",
+      "nct-mark"
+    ],
+    "rewards": [
+      "Seguridad para las niñas del templo",
+      "Información sobre las actividades del Padre Kim",
+      "Posible protección para otras víctimas"
+    ],
+    "accent": "red",
+    "isRepeatable": false,
+    "notes": "Subquest urgente de Detener al Clan del Sol Ardiente.",
+    "sortOrder": 5,
+    "tagIds": [
+      "templo-del-sol-naciente",
+      "tieflings",
+      "kim-soohyun",
+      "proteccion"
+    ],
+    "sessionIds": [
+      "17",
+      "18"
+    ],
+    "locationIds": [
+      "interior-del-templo-del-sol-naciente",
+      "neocity"
+    ]
+  },
+  "sq-investigate-lucerna-ii": {
+    "id": "sq-investigate-lucerna-ii",
+    "title": "Investigar qué pasó con el Lucerna II",
+    "types": [
+      "side"
+    ],
+    "status": "completed",
+    "visibility": "public",
+    "summary": "La party encontró el Lucerna II destruido y dio por concluida la investigación.",
+    "progress": {
+      "mode": "objectives"
+    },
+    "objectives": [
+      {
+        "id": "complete-investigation",
+        "label": "Investigar qué pasó con el Lucerna II",
+        "done": true
+      }
+    ],
+    "sessionStartedId": "18",
+    "lastUpdatedSessionId": null,
+    "sessionIds": [
+      "18"
+    ],
+    "sortOrder": 6
+  },
+  "sq-rescue-vienessa": {
+    "id": "sq-rescue-vienessa",
+    "title": "Rescatar a Vienessa",
+    "types": [
+      "side"
+    ],
+    "status": "completed",
+    "visibility": "public",
+    "summary": "La party aceptó el encargo en Seongnam, rescató a Vienessa y regresó con ella y Nabi. Recibió la recompensa acordada.",
+    "progress": {
+      "mode": "objectives"
+    },
+    "objectives": [
+      {
+        "id": "bring-vienessa-back",
+        "label": "Rescatar a Vienessa",
+        "done": true
+      }
+    ],
+    "sessionStartedId": "20",
+    "lastUpdatedSessionId": "20",
+    "sessionIds": [
+      "20"
+    ],
+    "sortOrder": 7
+  },
+  "sq-find-hyunjin": {
+    "id": "sq-find-hyunjin",
+    "title": "Encontrar a Hyunjin",
+    "subtitle": "Desapareció durante la noche en Puerto Bay Alta",
+    "types": [
+      "side"
+    ],
+    "status": "active",
+    "visibility": "public",
+    "priority": "medium",
+    "summary": "Hyunjin volvió a aparecer en la sesión 19. Queda por aclarar por qué se marchó y cuál es su situación actual.",
+    "description": "Hyunjin desapareció la noche anterior al viaje al Templo del Dios Lobo y volvió a figurar entre los personajes de la sesión 19. Queda por averiguar por qué se marchó, qué hizo durante su ausencia y si su salida estuvo relacionada con Felix.",
+    "progress": {
+      "mode": "manual",
+      "current": 0,
+      "goal": 4
+    },
+    "objectives": [
+      {
+        "id": "discover-departure",
+        "label": "Averiguar cuándo y por qué se fue",
+        "done": false
+      },
+      {
+        "id": "ask-lost-wolves",
+        "label": "Preguntar a los Lobos Perdidos si han recibido noticias",
+        "done": false
+      },
+      {
+        "id": "follow-trail",
+        "label": "Seguir cualquier rastro que haya dejado",
+        "done": false
+      },
+      {
+        "id": "check-felix-link",
+        "label": "Confirmar si su desaparición está relacionada con Felix",
+        "done": false
+      }
+    ],
+    "sessionStartedId": "15",
+    "lastUpdatedSessionId": "19",
+    "rewards": [
+      "Conocer el destino de Hyunjin",
+      "Información sobre sus motivos o posibles perseguidores"
+    ],
+    "accent": "blue",
+    "isRepeatable": false,
+    "notes": "Misión secundaria activa.",
+    "sortOrder": 8,
+    "tagIds": [
+      "hyunjin",
+      "lobos-perdidos",
+      "desaparicion",
+      "felix"
+    ],
+    "sessionIds": [
+      "19"
+    ],
+    "characterIds": [
+      "skz-hyunjin"
+    ],
+    "factionIds": [
+      "skz"
     ]
   },
   "pq-minjae-personal-arc": {
@@ -422,7 +598,7 @@
     "accent": "blue",
     "isRepeatable": false,
     "notes": "Quest madre del arco personal de Minjae.",
-    "sortOrder": 100,
+    "sortOrder": 9,
     "tagIds": [
       "minjae",
       "arco-personal",
@@ -434,383 +610,6 @@
       "18",
       "19",
       "20"
-    ]
-  },
-  "pq-soobin-personal-arc": {
-    "id": "pq-soobin-personal-arc",
-    "title": "Arco Personal de Jang Soobin",
-    "subtitle": "Entre recuerdos perdidos, linaje y verdad",
-    "types": [
-      "personal"
-    ],
-    "status": "active",
-    "visibility": "public",
-    "summary": "Soobin debe recuperar su historia, comprender su relación con la corona de Sylmorien y decidir qué hacer con la identidad que le fue ocultada.",
-    "description": "Jang Soobin inició su viaje sin recuerdos claros de quién era. Ahora sabe que su pasado está conectado con el rey de Sylmorien, un monasterio destruido y una orden de muerte. Reconstruir su identidad exigirá recuperar recuerdos, proteger las pruebas que posee y decidir qué lugar quiere ocupar frente a su familia y al reino.",
-    "progress": {
-      "mode": "manual",
-      "current": 0,
-      "goal": 4
-    },
-    "sessionStartedId": "01",
-    "lastUpdatedSessionId": "17",
-    "factionIds": [
-      "panes-del-destino"
-    ],
-    "regionIds": [
-      "sylmorien"
-    ],
-    "characterIds": [
-      "pc-soobin"
-    ],
-    "rewards": [
-      "Crecimiento personal de Soobin",
-      "Recuperación de recuerdos clave",
-      "Comprensión de su linaje"
-    ],
-    "accent": "pink",
-    "isRepeatable": false,
-    "notes": "Quest madre del arco personal de Soobin.",
-    "sortOrder": 110,
-    "tagIds": [
-      "soobin",
-      "arco-personal",
-      "memoria",
-      "linaje",
-      "sylmorien"
-    ]
-  },
-  "pq-imugi-personal-arc": {
-    "id": "pq-imugi-personal-arc",
-    "title": "Arco Personal de Fenghuang Imugi",
-    "subtitle": "Entre caos, pérdida y elección",
-    "types": [
-      "personal"
-    ],
-    "status": "active",
-    "visibility": "public",
-    "summary": "Imugi debe decidir qué clase de poder desea representar y aprender a vivir sin convertirse en una extensión de la voluntad de su patrón.",
-    "description": "Fenghuang Imugi carga con el poder del Caos, la pérdida de su clan y transformaciones que pueden poner en peligro tanto a enemigos como a aliados. Su viaje personal consiste en controlar su poder, proteger a los suyos, reparar los vínculos dañados y decidir qué relación mantendrá con su padre y patrón. Imugi aceptó la oferta de Yangyang de dar refugio a los dragonborn en Wantai. La party confió el traslado a Mingi en la sesión 19. Sigue pendiente confirmar la llegada de los refugiados.",
-    "progress": {
-      "mode": "manual",
-      "current": 0,
-      "goal": 5
-    },
-    "sessionStartedId": "01",
-    "lastUpdatedSessionId": "19",
-    "factionIds": [
-      "panes-del-destino"
-    ],
-    "characterIds": [
-      "pc-imugi"
-    ],
-    "rewards": [
-      "Crecimiento personal de Imugi",
-      "Mayor control sobre sus transformaciones",
-      "Definición de su relación con el Caos"
-    ],
-    "accent": "green",
-    "isRepeatable": false,
-    "notes": "Quest madre del arco personal de Imugi.",
-    "sortOrder": 120,
-    "tagIds": [
-      "imugi",
-      "arco-personal",
-      "caos",
-      "dragonborn",
-      "control"
-    ],
-    "sessionIds": [
-      "18",
-      "19"
-    ]
-  },
-  "pq-kiyori-personal-arc": {
-    "id": "pq-kiyori-personal-arc",
-    "title": "Arco Personal de Kiyori Hoshizuki",
-    "subtitle": "Entre Hotou, la Neo Academia y su propia voluntad",
-    "types": [
-      "personal"
-    ],
-    "status": "active",
-    "visibility": "public",
-    "summary": "Kiyori debe descubrir la verdad sobre su familia, decidir cuánto puede confiar en la Neo Academia y construir un futuro que realmente le pertenezca.",
-    "description": "Kiyori creció bajo las expectativas del Clan Hoshizuki y encontró en la Neo Academia la posibilidad de convertirse en maga. Las revelaciones sobre su familia, los changelings y Sylmorien la obligan ahora a separar el cariño que siente por sus maestros de las instituciones que los rodean y a elegir qué responsabilidades desea conservar. En la sesión 18 ayudó a poner a salvo a las niñas del templo con apoyo de Mark y Wooseok. En la sesión 20 asumió la custodia de la lámpara de Minho y la guardó sin activarla.",
-    "progress": {
-      "mode": "manual",
-      "current": 0,
-      "goal": 4
-    },
-    "sessionStartedId": "01",
-    "lastUpdatedSessionId": "20",
-    "factionIds": [
-      "panes-del-destino",
-      "nct"
-    ],
-    "characterIds": [
-      "pc-kiyori"
-    ],
-    "rewards": [
-      "Crecimiento personal de Kiyori",
-      "Claridad sobre su familia y sus maestros",
-      "Definición de su lugar entre Hotou y la Neo Academia"
-    ],
-    "accent": "purple",
-    "isRepeatable": false,
-    "notes": "Quest madre del arco personal de Kiyori. La protección de los Wishitos se registra como quest compartida.",
-    "sortOrder": 130,
-    "tagIds": [
-      "kiyori",
-      "arco-personal",
-      "hotou",
-      "neo-academia",
-      "familia-hoshizuki"
-    ],
-    "sessionIds": [
-      "18",
-      "20"
-    ]
-  },
-  "pq-soobin-protect-from-guard": {
-    "id": "pq-soobin-protect-from-guard",
-    "parentQuestId": "pq-soobin-personal-arc",
-    "title": "Proteger a Soobin de la Guardia Real de Sylmorien",
-    "subtitle": "La hija bastarda del rey está siendo perseguida",
-    "types": [
-      "personal",
-      "main"
-    ],
-    "status": "active",
-    "visibility": "public",
-    "priority": "high",
-    "summary": "La party debe mantener oculta la identidad de Soobin mientras investiga por qué la Guardia Real recibió órdenes de matarla.",
-    "description": "Soldados de Sylmorien buscan a la hija bastarda del rey Jang Cheol-hyuk. La descripción que recibieron era incorrecta y la presentaba como una goblin llamada «Jang Soobaquin», por lo que no reconocieron a Soobin. La misión pertenece a su arco personal, pero afecta la seguridad de toda la party.",
-    "progress": {
-      "mode": "manual",
-      "current": 0,
-      "goal": 4
-    },
-    "objectives": [
-      {
-        "id": "hide-soobin-identity",
-        "label": "Mantener oculta la identidad de Soobin",
-        "done": false
-      },
-      {
-        "id": "discover-kill-order",
-        "label": "Descubrir por qué el rey quiere eliminarla",
-        "done": false
-      },
-      {
-        "id": "investigate-mother-monastery",
-        "label": "Averiguar qué ocurrió con su madre y con el monasterio",
-        "done": false
-      },
-      {
-        "id": "avoid-royal-detection",
-        "label": "Evitar que la Guardia Real descubra que viaja con la party",
-        "done": false
-      }
-    ],
-    "sessionStartedId": "17",
-    "lastUpdatedSessionId": "17",
-    "factionIds": [
-      "panes-del-destino"
-    ],
-    "regionIds": [
-      "sylmorien"
-    ],
-    "characterIds": [
-      "pc-soobin"
-    ],
-    "rewards": [
-      "Seguridad de Soobin",
-      "Información sobre la corona de Sylmorien",
-      "Avance en su historia familiar"
-    ],
-    "accent": "pink",
-    "isRepeatable": false,
-    "notes": "Quest personal de Soobin con repercusión grupal.",
-    "sortOrder": 111,
-    "tagIds": [
-      "soobin",
-      "guardia-real",
-      "sylmorien",
-      "persecucion"
-    ]
-  },
-  "pq-soobin-recover-memories": {
-    "id": "pq-soobin-recover-memories",
-    "parentQuestId": "pq-soobin-personal-arc",
-    "title": "Recuperar sus recuerdos",
-    "subtitle": "Reconstruir la vida que perdió",
-    "types": [
-      "personal"
-    ],
-    "status": "active",
-    "visibility": "public",
-    "priority": "high",
-    "summary": "Soobin debe recuperar las partes de su pasado que aún no recuerda y comprender cómo llegó al Valle Dorado.",
-    "description": "Soobin todavía desconoce aspectos importantes de su identidad, de su vida antes de conocer a la party y de lo ocurrido en el monasterio. Sus recuerdos podrían estar relacionados con las Cartas del Destino y con la forma en que el grupo llegó al Valle Dorado.",
-    "progress": {
-      "mode": "manual",
-      "current": 0,
-      "goal": 3
-    },
-    "objectives": [
-      {
-        "id": "remember-before-valley",
-        "label": "Descubrir quién era antes de perder la memoria",
-        "done": false
-      },
-      {
-        "id": "remember-monastery",
-        "label": "Averiguar qué ocurrió en el monasterio",
-        "done": false
-      },
-      {
-        "id": "connect-amnesia-cards",
-        "label": "Investigar qué relación tiene su amnesia con las Cartas del Destino",
-        "done": false
-      }
-    ],
-    "sessionStartedId": "01",
-    "lastUpdatedSessionId": "17",
-    "characterIds": [
-      "pc-soobin"
-    ],
-    "rewards": [
-      "Recuperación de recuerdos clave",
-      "Mayor comprensión de su identidad"
-    ],
-    "accent": "pink",
-    "isRepeatable": false,
-    "notes": "Misión personal activa de Soobin.",
-    "sortOrder": 112,
-    "tagIds": [
-      "soobin",
-      "memoria",
-      "monasterio",
-      "baraja-del-destino"
-    ]
-  },
-  "pq-soobin-family-truth": {
-    "id": "pq-soobin-family-truth",
-    "parentQuestId": "pq-soobin-personal-arc",
-    "title": "Descubrir la verdad sobre su familia",
-    "subtitle": "El linaje que Sylmorien intentó ocultar",
-    "types": [
-      "personal"
-    ],
-    "status": "active",
-    "visibility": "public",
-    "priority": "high",
-    "summary": "Soobin debe descubrir quién fue su madre, por qué su padre quiere matarla y qué significa su linaje para Sylmorien.",
-    "description": "Soobin sabe que es hija de Jang Cheol-hyuk y que la Guardia Real persigue a la hija bastarda del rey. Todavía desconoce la historia completa de su madre, la razón de la orden de muerte y las consecuencias políticas de su existencia.",
-    "progress": {
-      "mode": "manual",
-      "current": 0,
-      "goal": 4
-    },
-    "objectives": [
-      {
-        "id": "discover-mother",
-        "label": "Descubrir quién fue su madre",
-        "done": false
-      },
-      {
-        "id": "discover-father-motive",
-        "label": "Averiguar por qué su padre quiere matarla",
-        "done": false
-      },
-      {
-        "id": "understand-lineage",
-        "label": "Comprender qué significa su linaje para Sylmorien",
-        "done": false
-      },
-      {
-        "id": "choose-identity",
-        "label": "Decidir qué quiere hacer con esa identidad",
-        "done": false
-      }
-    ],
-    "sessionStartedId": null,
-    "lastUpdatedSessionId": "17",
-    "regionIds": [
-      "sylmorien"
-    ],
-    "characterIds": [
-      "pc-soobin"
-    ],
-    "rewards": [
-      "Verdad sobre su familia",
-      "Comprensión de su lugar frente a la corona"
-    ],
-    "accent": "pink",
-    "isRepeatable": false,
-    "notes": "Quest principal dentro del arco personal de Soobin.",
-    "sortOrder": 113,
-    "tagIds": [
-      "soobin",
-      "familia",
-      "jang-cheol-hyuk",
-      "linaje"
-    ]
-  },
-  "pq-soobin-protect-tadpole-samples": {
-    "id": "pq-soobin-protect-tadpole-samples",
-    "parentQuestId": "pq-soobin-personal-arc",
-    "title": "Proteger las muestras de los renacuajos",
-    "subtitle": "Tres pruebas dentro de frascos",
-    "types": [
-      "personal"
-    ],
-    "status": "active",
-    "visibility": "public",
-    "priority": "high",
-    "summary": "Soobin debe mantener a salvo los tres renacuajos encontrados en los soldados sylmorianos hasta que puedan ser estudiados.",
-    "description": "Soobin conserva las tres muestras que la party encontró dentro de los cráneos de soldados de Sylmorien. Las muestras podrían ayudar a comprender el Decreto Absoluto y lo que ocurre dentro de Minjae.",
-    "progress": {
-      "mode": "manual",
-      "current": 0,
-      "goal": 3
-    },
-    "objectives": [
-      {
-        "id": "keep-samples-safe",
-        "label": "Mantener las muestras a salvo",
-        "done": false
-      },
-      {
-        "id": "find-researcher",
-        "label": "Encontrar a alguien capaz de estudiarlas",
-        "done": false
-      },
-      {
-        "id": "prevent-loss",
-        "label": "Evitar que sean destruidas o robadas",
-        "done": false
-      }
-    ],
-    "sessionStartedId": "17",
-    "lastUpdatedSessionId": "17",
-    "characterIds": [
-      "pc-soobin",
-      "pc-minjae"
-    ],
-    "rewards": [
-      "Evidencia conservada",
-      "Posible avance en la investigación del Decreto Absoluto"
-    ],
-    "accent": "pink",
-    "isRepeatable": false,
-    "notes": "Quest personal de Soobin conectada con la misión de Minjae.",
-    "sortOrder": 114,
-    "tagIds": [
-      "soobin",
-      "renacuajos",
-      "decreto-absoluto",
-      "evidencia"
     ]
   },
   "pq-minjae-investigate-tadpole": {
@@ -881,7 +680,7 @@
     "accent": "blue",
     "isRepeatable": false,
     "notes": "Quest personal de Minjae con repercusión grupal.",
-    "sortOrder": 101,
+    "sortOrder": 10,
     "tagIds": [
       "minjae",
       "tadpole",
@@ -941,7 +740,7 @@
     "accent": "blue",
     "isRepeatable": false,
     "notes": "Misión personal activa de Minjae.",
-    "sortOrder": 102,
+    "sortOrder": 11,
     "tagIds": [
       "minjae",
       "sylmorien",
@@ -1009,7 +808,7 @@
     "accent": "blue",
     "isRepeatable": false,
     "notes": "Misión personal de Minjae vinculada al arco del Sol Ardiente.",
-    "sortOrder": 103,
+    "sortOrder": 12,
     "tagIds": [
       "minjae",
       "joshua",
@@ -1070,7 +869,7 @@
     "accent": "blue",
     "isRepeatable": false,
     "notes": "Misión personal de Minjae conectada con la quest central.",
-    "sortOrder": 104,
+    "sortOrder": 13,
     "tagIds": [
       "minjae",
       "baraja-del-destino",
@@ -1125,12 +924,343 @@
     "accent": "blue",
     "isRepeatable": false,
     "notes": "Misión personal relacional de Minjae.",
-    "sortOrder": 105,
+    "sortOrder": 14,
     "tagIds": [
       "minjae",
       "felix",
       "almas-predestinadas",
       "consentimiento"
+    ]
+  },
+  "pq-soobin-personal-arc": {
+    "id": "pq-soobin-personal-arc",
+    "title": "Arco Personal de Jang Soobin",
+    "subtitle": "Entre recuerdos perdidos, linaje y verdad",
+    "types": [
+      "personal"
+    ],
+    "status": "active",
+    "visibility": "public",
+    "summary": "Soobin debe recuperar su historia, comprender su relación con la corona de Sylmorien y decidir qué hacer con la identidad que le fue ocultada.",
+    "description": "Jang Soobin inició su viaje sin recuerdos claros de quién era. Ahora sabe que su pasado está conectado con el rey de Sylmorien, un monasterio destruido y una orden de muerte. Reconstruir su identidad exigirá recuperar recuerdos, proteger las pruebas que posee y decidir qué lugar quiere ocupar frente a su familia y al reino.",
+    "progress": {
+      "mode": "manual",
+      "current": 0,
+      "goal": 4
+    },
+    "sessionStartedId": "01",
+    "lastUpdatedSessionId": "17",
+    "factionIds": [
+      "panes-del-destino"
+    ],
+    "regionIds": [
+      "sylmorien"
+    ],
+    "characterIds": [
+      "pc-soobin"
+    ],
+    "rewards": [
+      "Crecimiento personal de Soobin",
+      "Recuperación de recuerdos clave",
+      "Comprensión de su linaje"
+    ],
+    "accent": "pink",
+    "isRepeatable": false,
+    "notes": "Quest madre del arco personal de Soobin.",
+    "sortOrder": 15,
+    "tagIds": [
+      "soobin",
+      "arco-personal",
+      "memoria",
+      "linaje",
+      "sylmorien"
+    ]
+  },
+  "pq-soobin-protect-from-guard": {
+    "id": "pq-soobin-protect-from-guard",
+    "parentQuestId": "pq-soobin-personal-arc",
+    "title": "Proteger a Soobin de la Guardia Real de Sylmorien",
+    "subtitle": "La hija bastarda del rey está siendo perseguida",
+    "types": [
+      "personal",
+      "main"
+    ],
+    "status": "active",
+    "visibility": "public",
+    "priority": "high",
+    "summary": "La party debe mantener oculta la identidad de Soobin mientras investiga por qué la Guardia Real recibió órdenes de matarla.",
+    "description": "Soldados de Sylmorien buscan a la hija bastarda del rey Jang Cheol-hyuk. La descripción que recibieron era incorrecta y la presentaba como una goblin llamada «Jang Soobaquin», por lo que no reconocieron a Soobin. La misión pertenece a su arco personal, pero afecta la seguridad de toda la party.",
+    "progress": {
+      "mode": "manual",
+      "current": 0,
+      "goal": 4
+    },
+    "objectives": [
+      {
+        "id": "hide-soobin-identity",
+        "label": "Mantener oculta la identidad de Soobin",
+        "done": false
+      },
+      {
+        "id": "discover-kill-order",
+        "label": "Descubrir por qué el rey quiere eliminarla",
+        "done": false
+      },
+      {
+        "id": "investigate-mother-monastery",
+        "label": "Averiguar qué ocurrió con su madre y con el monasterio",
+        "done": false
+      },
+      {
+        "id": "avoid-royal-detection",
+        "label": "Evitar que la Guardia Real descubra que viaja con la party",
+        "done": false
+      }
+    ],
+    "sessionStartedId": "17",
+    "lastUpdatedSessionId": "17",
+    "factionIds": [
+      "panes-del-destino"
+    ],
+    "regionIds": [
+      "sylmorien"
+    ],
+    "characterIds": [
+      "pc-soobin"
+    ],
+    "rewards": [
+      "Seguridad de Soobin",
+      "Información sobre la corona de Sylmorien",
+      "Avance en su historia familiar"
+    ],
+    "accent": "pink",
+    "isRepeatable": false,
+    "notes": "Quest personal de Soobin con repercusión grupal.",
+    "sortOrder": 16,
+    "tagIds": [
+      "soobin",
+      "guardia-real",
+      "sylmorien",
+      "persecucion"
+    ]
+  },
+  "pq-soobin-recover-memories": {
+    "id": "pq-soobin-recover-memories",
+    "parentQuestId": "pq-soobin-personal-arc",
+    "title": "Recuperar sus recuerdos",
+    "subtitle": "Reconstruir la vida que perdió",
+    "types": [
+      "personal"
+    ],
+    "status": "active",
+    "visibility": "public",
+    "priority": "high",
+    "summary": "Soobin debe recuperar las partes de su pasado que aún no recuerda y comprender cómo llegó al Valle Dorado.",
+    "description": "Soobin todavía desconoce aspectos importantes de su identidad, de su vida antes de conocer a la party y de lo ocurrido en el monasterio. Sus recuerdos podrían estar relacionados con las Cartas del Destino y con la forma en que el grupo llegó al Valle Dorado.",
+    "progress": {
+      "mode": "manual",
+      "current": 0,
+      "goal": 3
+    },
+    "objectives": [
+      {
+        "id": "remember-before-valley",
+        "label": "Descubrir quién era antes de perder la memoria",
+        "done": false
+      },
+      {
+        "id": "remember-monastery",
+        "label": "Averiguar qué ocurrió en el monasterio",
+        "done": false
+      },
+      {
+        "id": "connect-amnesia-cards",
+        "label": "Investigar qué relación tiene su amnesia con las Cartas del Destino",
+        "done": false
+      }
+    ],
+    "sessionStartedId": "01",
+    "lastUpdatedSessionId": "17",
+    "characterIds": [
+      "pc-soobin"
+    ],
+    "rewards": [
+      "Recuperación de recuerdos clave",
+      "Mayor comprensión de su identidad"
+    ],
+    "accent": "pink",
+    "isRepeatable": false,
+    "notes": "Misión personal activa de Soobin.",
+    "sortOrder": 17,
+    "tagIds": [
+      "soobin",
+      "memoria",
+      "monasterio",
+      "baraja-del-destino"
+    ]
+  },
+  "pq-soobin-family-truth": {
+    "id": "pq-soobin-family-truth",
+    "parentQuestId": "pq-soobin-personal-arc",
+    "title": "Descubrir la verdad sobre su familia",
+    "subtitle": "El linaje que Sylmorien intentó ocultar",
+    "types": [
+      "personal"
+    ],
+    "status": "active",
+    "visibility": "public",
+    "priority": "high",
+    "summary": "Soobin debe descubrir quién fue su madre, por qué su padre quiere matarla y qué significa su linaje para Sylmorien.",
+    "description": "Soobin sabe que es hija de Jang Cheol-hyuk y que la Guardia Real persigue a la hija bastarda del rey. Todavía desconoce la historia completa de su madre, la razón de la orden de muerte y las consecuencias políticas de su existencia.",
+    "progress": {
+      "mode": "manual",
+      "current": 0,
+      "goal": 4
+    },
+    "objectives": [
+      {
+        "id": "discover-mother",
+        "label": "Descubrir quién fue su madre",
+        "done": false
+      },
+      {
+        "id": "discover-father-motive",
+        "label": "Averiguar por qué su padre quiere matarla",
+        "done": false
+      },
+      {
+        "id": "understand-lineage",
+        "label": "Comprender qué significa su linaje para Sylmorien",
+        "done": false
+      },
+      {
+        "id": "choose-identity",
+        "label": "Decidir qué quiere hacer con esa identidad",
+        "done": false
+      }
+    ],
+    "sessionStartedId": null,
+    "lastUpdatedSessionId": "17",
+    "regionIds": [
+      "sylmorien"
+    ],
+    "characterIds": [
+      "pc-soobin"
+    ],
+    "rewards": [
+      "Verdad sobre su familia",
+      "Comprensión de su lugar frente a la corona"
+    ],
+    "accent": "pink",
+    "isRepeatable": false,
+    "notes": "Quest principal dentro del arco personal de Soobin.",
+    "sortOrder": 18,
+    "tagIds": [
+      "soobin",
+      "familia",
+      "jang-cheol-hyuk",
+      "linaje"
+    ]
+  },
+  "pq-soobin-protect-tadpole-samples": {
+    "id": "pq-soobin-protect-tadpole-samples",
+    "parentQuestId": "pq-soobin-personal-arc",
+    "title": "Proteger las muestras de los renacuajos",
+    "subtitle": "Tres pruebas dentro de frascos",
+    "types": [
+      "personal"
+    ],
+    "status": "active",
+    "visibility": "public",
+    "priority": "high",
+    "summary": "Soobin debe mantener a salvo los tres renacuajos encontrados en los soldados sylmorianos hasta que puedan ser estudiados.",
+    "description": "Soobin conserva las tres muestras que la party encontró dentro de los cráneos de soldados de Sylmorien. Las muestras podrían ayudar a comprender el Decreto Absoluto y lo que ocurre dentro de Minjae.",
+    "progress": {
+      "mode": "manual",
+      "current": 0,
+      "goal": 3
+    },
+    "objectives": [
+      {
+        "id": "keep-samples-safe",
+        "label": "Mantener las muestras a salvo",
+        "done": false
+      },
+      {
+        "id": "find-researcher",
+        "label": "Encontrar a alguien capaz de estudiarlas",
+        "done": false
+      },
+      {
+        "id": "prevent-loss",
+        "label": "Evitar que sean destruidas o robadas",
+        "done": false
+      }
+    ],
+    "sessionStartedId": "17",
+    "lastUpdatedSessionId": "17",
+    "characterIds": [
+      "pc-soobin",
+      "pc-minjae"
+    ],
+    "rewards": [
+      "Evidencia conservada",
+      "Posible avance en la investigación del Decreto Absoluto"
+    ],
+    "accent": "pink",
+    "isRepeatable": false,
+    "notes": "Quest personal de Soobin conectada con la misión de Minjae.",
+    "sortOrder": 19,
+    "tagIds": [
+      "soobin",
+      "renacuajos",
+      "decreto-absoluto",
+      "evidencia"
+    ]
+  },
+  "pq-imugi-personal-arc": {
+    "id": "pq-imugi-personal-arc",
+    "title": "Arco Personal de Fenghuang Imugi",
+    "subtitle": "Entre caos, pérdida y elección",
+    "types": [
+      "personal"
+    ],
+    "status": "active",
+    "visibility": "public",
+    "summary": "Imugi debe decidir qué clase de poder desea representar y aprender a vivir sin convertirse en una extensión de la voluntad de su patrón.",
+    "description": "Fenghuang Imugi carga con el poder del Caos, la pérdida de su clan y transformaciones que pueden poner en peligro tanto a enemigos como a aliados. Su viaje personal consiste en controlar su poder, proteger a los suyos, reparar los vínculos dañados y decidir qué relación mantendrá con su padre y patrón. Imugi aceptó la oferta de Yangyang de dar refugio a los dragonborn en Wantai. La party confió el traslado a Mingi en la sesión 19. Sigue pendiente confirmar la llegada de los refugiados.",
+    "progress": {
+      "mode": "manual",
+      "current": 0,
+      "goal": 5
+    },
+    "sessionStartedId": "01",
+    "lastUpdatedSessionId": "19",
+    "factionIds": [
+      "panes-del-destino"
+    ],
+    "characterIds": [
+      "pc-imugi"
+    ],
+    "rewards": [
+      "Crecimiento personal de Imugi",
+      "Mayor control sobre sus transformaciones",
+      "Definición de su relación con el Caos"
+    ],
+    "accent": "green",
+    "isRepeatable": false,
+    "notes": "Quest madre del arco personal de Imugi.",
+    "sortOrder": 20,
+    "tagIds": [
+      "imugi",
+      "arco-personal",
+      "caos",
+      "dragonborn",
+      "control"
+    ],
+    "sessionIds": [
+      "18",
+      "19"
     ]
   },
   "pq-imugi-control-cooler": {
@@ -1185,7 +1315,7 @@
     "accent": "green",
     "isRepeatable": false,
     "notes": "Misión personal activa de Imugi.",
-    "sortOrder": 121,
+    "sortOrder": 21,
     "tagIds": [
       "imugi",
       "transformacion",
@@ -1235,7 +1365,7 @@
     "accent": "green",
     "isRepeatable": false,
     "notes": "Misión personal de Imugi.",
-    "sortOrder": 122,
+    "sortOrder": 22,
     "tagIds": [
       "imugi",
       "ente-del-caos",
@@ -1303,7 +1433,7 @@
     "accent": "green",
     "isRepeatable": false,
     "notes": "Quest principal dentro del arco personal de Imugi.",
-    "sortOrder": 123,
+    "sortOrder": 23,
     "tagIds": [
       "imugi",
       "dragonborn",
@@ -1363,7 +1493,7 @@
     "accent": "green",
     "isRepeatable": false,
     "notes": "Misión personal relacional de Imugi.",
-    "sortOrder": 124,
+    "sortOrder": 24,
     "tagIds": [
       "imugi",
       "jeongin",
@@ -1418,13 +1548,59 @@
     "accent": "green",
     "isRepeatable": false,
     "notes": "Misión personal relacional de Imugi.",
-    "sortOrder": 125,
+    "sortOrder": 25,
     "tagIds": [
       "imugi",
       "scoups",
       "jeonghan",
       "duelo",
       "relaciones"
+    ]
+  },
+  "pq-kiyori-personal-arc": {
+    "id": "pq-kiyori-personal-arc",
+    "title": "Arco Personal de Kiyori Hoshizuki",
+    "subtitle": "Entre Hotou, la Neo Academia y su propia voluntad",
+    "types": [
+      "personal"
+    ],
+    "status": "active",
+    "visibility": "public",
+    "summary": "Kiyori debe descubrir la verdad sobre su familia, decidir cuánto puede confiar en la Neo Academia y construir un futuro que realmente le pertenezca.",
+    "description": "Kiyori creció bajo las expectativas del Clan Hoshizuki y encontró en la Neo Academia la posibilidad de convertirse en maga. Las revelaciones sobre su familia, los changelings y Sylmorien la obligan ahora a separar el cariño que siente por sus maestros de las instituciones que los rodean y a elegir qué responsabilidades desea conservar. En la sesión 18 ayudó a poner a salvo a las niñas del templo con apoyo de Mark y Wooseok. En la sesión 20 asumió la custodia de la lámpara de Minho y la guardó sin activarla.",
+    "progress": {
+      "mode": "manual",
+      "current": 0,
+      "goal": 4
+    },
+    "sessionStartedId": "01",
+    "lastUpdatedSessionId": "20",
+    "factionIds": [
+      "panes-del-destino",
+      "nct"
+    ],
+    "characterIds": [
+      "pc-kiyori"
+    ],
+    "rewards": [
+      "Crecimiento personal de Kiyori",
+      "Claridad sobre su familia y sus maestros",
+      "Definición de su lugar entre Hotou y la Neo Academia"
+    ],
+    "accent": "purple",
+    "isRepeatable": false,
+    "notes": "Quest madre del arco personal de Kiyori. La protección de los Wishitos se registra como quest compartida.",
+    "sortOrder": 26,
+    "tagIds": [
+      "kiyori",
+      "arco-personal",
+      "hotou",
+      "neo-academia",
+      "familia-hoshizuki"
+    ],
+    "sessionIds": [
+      "18",
+      "20"
     ]
   },
   "pq-kiyori-hoshizuki-changelings": {
@@ -1485,7 +1661,7 @@
     "accent": "purple",
     "isRepeatable": false,
     "notes": "Quest principal dentro del arco personal de Kiyori.",
-    "sortOrder": 131,
+    "sortOrder": 27,
     "tagIds": [
       "kiyori",
       "hoshizuki",
@@ -1553,7 +1729,7 @@
     "accent": "purple",
     "isRepeatable": false,
     "notes": "Misión personal activa de Kiyori.",
-    "sortOrder": 132,
+    "sortOrder": 28,
     "tagIds": [
       "kiyori",
       "neo-academia",
@@ -1615,7 +1791,7 @@
     "accent": "purple",
     "isRepeatable": false,
     "notes": "Misión personal de Kiyori.",
-    "sortOrder": 133,
+    "sortOrder": 29,
     "tagIds": [
       "kiyori",
       "clan-hoshizuki",
@@ -1650,7 +1826,7 @@
     "accent": "blue",
     "isRepeatable": false,
     "notes": "Quest madre de las misiones secundarias de Jeongin.",
-    "sortOrder": 200,
+    "sortOrder": 30,
     "tagIds": [
       "jeongin",
       "moonbin",
@@ -1717,7 +1893,7 @@
     "accent": "blue",
     "isRepeatable": false,
     "notes": "Misión secundaria de aliado.",
-    "sortOrder": 201,
+    "sortOrder": 31,
     "tagIds": [
       "jeongin",
       "ritual",
@@ -1774,7 +1950,7 @@
     "accent": "blue",
     "isRepeatable": false,
     "notes": "Misión secundaria de aliado.",
-    "sortOrder": 202,
+    "sortOrder": 32,
     "tagIds": [
       "jeongin",
       "moonbin",
@@ -1831,7 +2007,7 @@
     "accent": "blue",
     "isRepeatable": false,
     "notes": "Misión secundaria de aliado.",
-    "sortOrder": 203,
+    "sortOrder": 33,
     "tagIds": [
       "jeongin",
       "dios",
@@ -1887,188 +2063,12 @@
     "accent": "blue",
     "isRepeatable": false,
     "notes": "Misión secundaria de aliado conectada con el arco personal de Imugi.",
-    "sortOrder": 204,
+    "sortOrder": 34,
     "tagIds": [
       "jeongin",
       "imugi",
       "confianza",
       "tregua"
-    ]
-  },
-  "sq-find-hyunjin": {
-    "id": "sq-find-hyunjin",
-    "title": "Encontrar a Hyunjin",
-    "subtitle": "Desapareció durante la noche en Puerto Bay Alta",
-    "types": [
-      "side"
-    ],
-    "status": "active",
-    "visibility": "public",
-    "priority": "medium",
-    "summary": "Hyunjin volvió a aparecer en la sesión 19. Queda por aclarar por qué se marchó y cuál es su situación actual.",
-    "description": "Hyunjin desapareció la noche anterior al viaje al Templo del Dios Lobo y volvió a figurar entre los personajes de la sesión 19. Queda por averiguar por qué se marchó, qué hizo durante su ausencia y si su salida estuvo relacionada con Felix.",
-    "progress": {
-      "mode": "manual",
-      "current": 0,
-      "goal": 4
-    },
-    "objectives": [
-      {
-        "id": "discover-departure",
-        "label": "Averiguar cuándo y por qué se fue",
-        "done": false
-      },
-      {
-        "id": "ask-lost-wolves",
-        "label": "Preguntar a los Lobos Perdidos si han recibido noticias",
-        "done": false
-      },
-      {
-        "id": "follow-trail",
-        "label": "Seguir cualquier rastro que haya dejado",
-        "done": false
-      },
-      {
-        "id": "check-felix-link",
-        "label": "Confirmar si su desaparición está relacionada con Felix",
-        "done": false
-      }
-    ],
-    "sessionStartedId": "15",
-    "lastUpdatedSessionId": "19",
-    "rewards": [
-      "Conocer el destino de Hyunjin",
-      "Información sobre sus motivos o posibles perseguidores"
-    ],
-    "accent": "blue",
-    "isRepeatable": false,
-    "notes": "Misión secundaria activa.",
-    "sortOrder": 40,
-    "tagIds": [
-      "hyunjin",
-      "lobos-perdidos",
-      "desaparicion",
-      "felix"
-    ],
-    "sessionIds": [
-      "19"
-    ],
-    "characterIds": [
-      "skz-hyunjin"
-    ],
-    "factionIds": [
-      "skz"
-    ]
-  },
-  "mq-recover-stolen-cards": {
-    "id": "mq-recover-stolen-cards",
-    "parentQuestId": "mq-collect-cards",
-    "title": "Recuperar las Cartas Robadas",
-    "subtitle": "Cartas robadas por los Piratas",
-    "types": [
-      "main",
-      "faction"
-    ],
-    "status": "active",
-    "visibility": "public",
-    "summary": "La party debe rastrear y recuperar las cartas de la Baraja del Destino que fueron robadas por los Piratas antes de que desaparezcan, sean vendidas o caigan en manos aún peores.",
-    "description": "No todas las cartas permanecen ocultas o ligadas a portadores indefensos: algunas ya fueron arrebatadas y ahora están en circulación entre fuerzas peligrosas. Los Piratas de la Marea Negra han robado parte de la Baraja, y recuperarla exigirá rastreo, confrontación, negociación o infiltración, dependiendo de quién las posea y qué tan lejos estén dispuestos a llegar para conservarlas.",
-    "progress": {
-      "mode": "manual",
-      "current": 1,
-      "goal": 4
-    },
-    "objectives": [
-      {
-        "id": "recover-1",
-        "label": "Recuperar el 8 de Corazones",
-        "done": true
-      },
-      {
-        "id": "recover-2",
-        "label": "Recuperar el 6 de Picas",
-        "done": false
-      },
-      {
-        "id": "recover-3",
-        "label": "Recueperar el 9 de Diamantes",
-        "done": false
-      },
-      {
-        "id": "recover-4",
-        "label": "Recuperar el ??? de Tréboles",
-        "done": false
-      }
-    ],
-    "sessionStartedId": null,
-    "lastUpdatedSessionId": null,
-    "factionIds": [
-      
-    ],
-    "rewards": [
-      "Recuperación de cartas activas de la Baraja",
-      "Información sobre el mercado o circulación de cartas robadas",
-      "Avance directo en la main quest"
-    ],
-    "accent": "gold",
-    "isRepeatable": false,
-    "notes": "Quest de recuperación ligada al movimiento de cartas fuera del control de la party.",
-    "sortOrder": 6,
-    "tagIds": [
-      "cartas-robadas",
-      "baraja-del-destino",
-      "piratas",
-      "recuperacion"
-    ]
-  },
-  "sq-investigate-lucerna-ii": {
-    "id": "sq-investigate-lucerna-ii",
-    "title": "Investigar qué pasó con el Lucerna II",
-    "types": [
-      "side"
-    ],
-    "status": "completed",
-    "visibility": "public",
-    "summary": "La party encontró el Lucerna II destruido y dio por concluida la investigación.",
-    "progress": {
-      "mode": "objectives"
-    },
-    "objectives": [
-      {
-        "id": "complete-investigation",
-        "label": "Investigar qué pasó con el Lucerna II",
-        "done": true
-      }
-    ],
-    "sessionStartedId": "18",
-    "lastUpdatedSessionId": null,
-    "sessionIds": [
-      "18"
-    ]
-  },
-  "sq-rescue-vienessa": {
-    "id": "sq-rescue-vienessa",
-    "title": "Rescatar a Vienessa",
-    "types": [
-      "side"
-    ],
-    "status": "completed",
-    "visibility": "public",
-    "summary": "La party aceptó el encargo en Seongnam, rescató a Vienessa y regresó con ella y Nabi. Recibió la recompensa acordada.",
-    "progress": {
-      "mode": "objectives"
-    },
-    "objectives": [
-      {
-        "id": "bring-vienessa-back",
-        "label": "Rescatar a Vienessa",
-        "done": true
-      }
-    ],
-    "sessionStartedId": "20",
-    "lastUpdatedSessionId": "20",
-    "sessionIds": [
-      "20"
     ]
   }
 }

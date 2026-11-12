@@ -1,3 +1,22 @@
 [
-
+  {
+    "id": "rumores-de-hyberia",
+    "title": "Rumores de Hyberia",
+    "type": "rumor",
+    "status": "published",
+    "visibility": "public",
+    "documentKind": "collection",
+    "contentFormat": "markdown",
+    "subtitle": "Colección de chismes y rumores en Hyberia",
+    "content": "",
+    "metadata": {
+      "library": {
+        "appearance": {
+          "symbol": "theater-masks",
+          "thickness": "medium",
+          "height": "medium"
+        }
+      }
+    }
+  }
 ]
