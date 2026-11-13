@@ -4,6 +4,7 @@ import {DocumentPdf} from "@site/src/components/documents/mdx/DocumentPdf";
 import {
   Callout,
   Divider,
+  DocumentGallery,
   DocumentImage,
   Quote,
   Spoiler,
@@ -15,6 +16,7 @@ export default {
   Callout,
   Spoiler,
   DocumentImage,
+  DocumentGallery,
   DocumentPdf,
   Divider,
   SessionCharacterGrid,
