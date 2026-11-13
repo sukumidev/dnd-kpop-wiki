@@ -7,6 +7,7 @@ import {
   publicCharacters, publishEveryCharacter, sanitiseRelations, sanitisePublicCosmology, restrictedTerms, restrictedIdentifiers,
   approvedTeasers, findLeaks,
 } from "./public-build-policy.mjs";
+import {publishDocumentAssets} from "./document-public-assets.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const PUBLIC_OUT = path.join(ROOT, "build-public");
@@ -278,6 +279,9 @@ async function copyImages(stage, publicRegistry, hiddenRegistry, teasers) {
   for (const teaser of teasers) if (teaser.imageSrc) references.add(teaser.imageSrc);
   let copied = 0, missing = 0;
   for (const ref of references) {
+    // Document media has its own owner-aware MDX policy and must never enter
+    // through the broad illustration scanner.
+    if (ref.startsWith("/img/documents/")) continue;
     if (hiddenImages.has(ref)) throw new Error("Private character image referenced publicly; cannot ship it.");
     if (ref.startsWith("/img/characters/") && !allowedCharacterImages.has(ref)) {
       throw new Error("Unapproved character image reference in public source; details withheld.");
@@ -364,6 +368,8 @@ async function main() {
   let succeeded = false;
   try {
     await stageCopy(stage, hiddenIds);
+    // Validate public owners and MDX sources before any document body is staged.
+    await publishDocumentAssets(ROOT, stage, await readJSON(path.join(ROOT, "src/data/documents.json")));
     await sanitizeStage(stage, hiddenIds, publicIds, publicRegistry);
     await sanitiseAuthoredDocs(stage, hiddenIds);
     await generateMysteryPages(stage, teasers);
