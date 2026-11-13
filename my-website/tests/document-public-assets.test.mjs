@@ -35,6 +35,16 @@ test("MDX syntax parser finds gallery images and literal PDF links only", () => 
   assert.deepEqual([...assets.pdfs], ["/handouts/alpha/report-0123456789.pdf"]);
 });
 
+test("CMS DocumentPdf blocks publish the referenced PDF without scanning arbitrary HTML", async (t) => {
+  const f = await fixture(t);
+  const src = "/handouts/alpha/report-0123456789.pdf";
+  await f.write("src/content/documents/alpha.mdx", `<DocumentPdf src="${src}" title="Report" display="embedded" />`);
+  await f.write("static/handouts/alpha/report-0123456789.pdf", validPdf);
+  const copied = await publishDocumentAssets(f.root, f.stage, [doc("alpha", {contentFormat: "mdx", contentPath: "alpha.mdx"})], {trackedPaths: []});
+  assert.deepEqual([...copied], ["handouts/alpha/report-0123456789.pdf"]);
+  assert.throws(() => referencedDocumentAssets(`<iframe src="${src}" />`, "alpha"), /approved MDX/);
+});
+
 test("invalid owners, traversal, extension and executable MDX attributes fail closed", () => {
   assert.throws(() => validateDocumentAssetPath("/handouts/alpha/../secret.pdf", "alpha", "pdf"), /Unsafe/);
   assert.throws(() => validateDocumentAssetPath("/handouts/beta/file-0123456789.pdf", "alpha", "pdf"), /cross-document/);

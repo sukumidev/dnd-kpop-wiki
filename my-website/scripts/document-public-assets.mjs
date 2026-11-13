@@ -53,6 +53,7 @@ export function referencedDocumentAssets(source, documentId) {
     if (node.type === "link") accept(node.url, "link");
     if (node.type === "mdxJsxFlowElement" || node.type === "mdxJsxTextElement") {
       if (node.name === "DocumentImage") accept(literalAttribute(node, "src"), "image");
+      else if (node.name === "DocumentPdf") accept(literalAttribute(node, "src"), "link");
       else {
         for (const attribute of node.attributes ?? []) {
           if (attribute.name !== "src" && attribute.name !== "href") continue;
