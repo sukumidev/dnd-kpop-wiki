@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import {analyzeDocumentPdfMdx, validatePublicDocumentPdfFiles} from "./document-pdf-mdx";
 import path from "node:path";
 import remarkMdx from "remark-mdx";
 import remarkParse from "remark-parse";
@@ -18,6 +19,7 @@ export const ALLOWED_DOCUMENT_MDX_COMPONENTS = [
   "Spoiler",
   "DocumentImage",
   "DocumentGallery",
+  "DocumentPdf",
   "Divider",
 ] as const;
 
@@ -28,6 +30,7 @@ const ALLOWED_ATTRIBUTES: Record<(typeof ALLOWED_DOCUMENT_MDX_COMPONENTS)[number
   Spoiler: ["summary", "label"],
   DocumentImage: ["src", "alt", "caption", "title", "size", "align"],
   DocumentGallery: ["columns"],
+  DocumentPdf: ["src", "title", "caption", "display"],
   Divider: ["label"],
 };
 
@@ -36,6 +39,7 @@ export type DocumentContentFormat = "markdown" | "mdx";
 export type DocumentContentRecord = {
   id?: unknown;
   status?: unknown;
+  visibility?: unknown;
   documentKind?: unknown;
   content?: unknown;
   contentFormat?: unknown;
@@ -164,8 +168,9 @@ export function validateControlledMdx(source: string): string[] {
     for (const child of node.children ?? []) visit(child);
   }
   visit(tree);
+  errors.push(...analyzeDocumentPdfMdx(source).errors);
   return [...new Set(errors)];
-}
+
 
 export function validateDocumentMdxFile(
   document: DocumentContentRecord,
@@ -196,5 +201,7 @@ export function validateDocumentMdxFile(
   }
 
   const source = fs.readFileSync(realFilePath, "utf8");
-  return validateControlledMdx(source);
+  const errors = validateControlledMdx(source);
+  if (errors.length || document.status !== "published" || document.visibility !== "public") return errors;
+  return validatePublicDocumentPdfFiles(projectRoot, analyzeDocumentPdfMdx(source).sources);
 }
