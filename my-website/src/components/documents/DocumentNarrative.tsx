@@ -3,6 +3,8 @@ import Link from "@docusaurus/Link";
 import {useBaseUrlUtils} from "@docusaurus/useBaseUrl";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import {MDXProvider} from "@mdx-js/react";
+import MDXComponents from "@theme/MDXComponents";
 import type {Document} from "@site/src/data/documents";
 import type {SelectedDocumentContent} from "./documentContent";
 import {nextDocumentHeadingId, slugDocumentHeading} from "./documentHeadings";
@@ -61,7 +63,7 @@ export default function DocumentNarrative({document, narrative}: {document: Docu
         <ol>{toc.map((item) => <li key={item.id} data-level={item.level}><a href={`#${item.id}`}>{item.title}</a></li>)}</ol>
       </nav> : null}
       <div ref={root} className={`${styles.documentReaderContent} ${narrative.kind === "legacy" ? styles.legacyContent : ""} markdown`} data-document-reader-content>
-        {narrative.kind === "mdx" ? narrative.content : (
+        {narrative.kind === "mdx" ? <MDXProvider components={MDXComponents}>{narrative.content}</MDXProvider> : (
           <ReactMarkdown
             remarkPlugins={[remarkGfm]}
             skipHtml

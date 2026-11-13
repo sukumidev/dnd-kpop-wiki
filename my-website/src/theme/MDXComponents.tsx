@@ -3,6 +3,7 @@ import SessionCharacterGrid from "@site/src/components/SessionCharacterGrid";
 import {
   Callout,
   Divider,
+  DocumentGallery,
   DocumentImage,
   Quote,
   Spoiler,
@@ -14,6 +15,7 @@ export default {
   Callout,
   Spoiler,
   DocumentImage,
+  DocumentGallery,
   Divider,
   SessionCharacterGrid,
 };
