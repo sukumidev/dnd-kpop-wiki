@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import {analyzeDocumentPdfMdx, validatePublicDocumentPdfFiles} from "./document-pdf-mdx";
 
 export const DOCUMENT_CONTENT_DIRECTORY = path.join("src", "content", "documents");
 export const ALLOWED_DOCUMENT_MDX_COMPONENTS = [
@@ -7,6 +8,7 @@ export const ALLOWED_DOCUMENT_MDX_COMPONENTS = [
   "Callout",
   "Spoiler",
   "DocumentImage",
+  "DocumentPdf",
   "Divider",
 ] as const;
 
@@ -17,6 +19,7 @@ export type DocumentContentFormat = "markdown" | "mdx";
 export type DocumentContentRecord = {
   id?: unknown;
   status?: unknown;
+  visibility?: unknown;
   documentKind?: unknown;
   content?: unknown;
   contentFormat?: unknown;
@@ -117,6 +120,7 @@ export function validateControlledMdx(source: string): string[] {
     }
   }
 
+  errors.push(...analyzeDocumentPdfMdx(source).errors);
   return [...new Set(errors)];
 }
 
@@ -149,5 +153,7 @@ export function validateDocumentMdxFile(
   }
 
   const source = fs.readFileSync(realFilePath, "utf8");
-  return validateControlledMdx(source);
+  const errors = validateControlledMdx(source);
+  if (errors.length || document.status !== "published" || document.visibility !== "public") return errors;
+  return validatePublicDocumentPdfFiles(projectRoot, analyzeDocumentPdfMdx(source).sources);
 }
