@@ -68,7 +68,7 @@ test("legacy Markdown image references still publish without interpreting JSX", 
 test("published public PDF and gallery image copy with identical bytes, private and orphan assets stay out", async (t) => {
   const f = await fixture(t);
   const image = Buffer.from("RIFF....WEBP");
-  await f.write("src/content/documents/alpha.mdx", '<DocumentGallery><DocumentImage src="/img/documents/alpha/image.webp" /></DocumentGallery>');
+  await f.write("src/content/documents/alpha.mdx", '<DocumentGallery><DocumentImage src="/img/documents/alpha/image.webp" /></DocumentGallery>\n<DocumentPdf src="/handouts/alpha/report-0123456789.pdf" title="Report" />');
   await f.write("static/img/documents/alpha/image.webp", image);
   await f.write("static/img/documents/alpha/unreferenced.webp", image);
   await f.write("static/handouts/alpha/report-0123456789.pdf", validPdf);
@@ -84,6 +84,18 @@ test("published public PDF and gallery image copy with identical bytes, private 
   await assert.rejects(fs.access(path.join(f.stage, "static/handouts/secret/private-0123456789.pdf")));
   await assert.rejects(fs.access(path.join(f.stage, "static/handouts/orphan/lost-0123456789.pdf")));
   await assert.rejects(fs.access(path.join(f.stage, "static/img/documents/alpha/unreferenced.webp")));
+});
+
+test("unreferenced PDF in a public document folder is not deployed, and tracked PDFs require references", async (t) => {
+  const f = await fixture(t);
+  const orphan = "static/handouts/alpha/unused-0123456789.pdf";
+  await f.write(orphan, validPdf);
+  await f.write("src/content/documents/alpha.mdx", "# No PDF reference");
+  const docs = [doc("alpha", {contentFormat: "mdx", contentPath: "alpha.mdx"})];
+  const copied = await publishDocumentAssets(f.root, f.stage, docs, {trackedPaths: []});
+  assert.deepEqual([...copied], []);
+  await assert.rejects(fs.access(path.join(f.stage, orphan)));
+  await assert.rejects(publishDocumentAssets(f.root, f.stage, docs, {trackedPaths: [orphan]}), /no approved public MDX reference/);
 });
 
 test("archived PDF is excluded and versioned private PDFs block publication", async (t) => {
@@ -107,7 +119,7 @@ test("missing image, missing linked PDF, invalid PDF and oversized PDF block pub
   await f.write("src/content/documents/alpha.mdx", "[PDF](/handouts/alpha/missing-0123456789.pdf)");
   await assert.rejects(publishDocumentAssets(f.root, f.stage, published, {trackedPaths: []}), /missing/);
   const pdf = await f.write("static/handouts/alpha/report-0123456789.pdf", Buffer.from("%PDF-1.4\nnot really a PDF"));
-  await f.write("src/content/documents/alpha.mdx", "# Empty");
+  await f.write("src/content/documents/alpha.mdx", '[Invalid PDF](/handouts/alpha/report-0123456789.pdf)');
   await assert.rejects(publishDocumentAssets(f.root, f.stage, published, {trackedPaths: []}), /Invalid PDF/);
   await fs.writeFile(pdf, validPdf);
   await assert.rejects(verifyPublicPdf(pdf, 8), /size limit/);
