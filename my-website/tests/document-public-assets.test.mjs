@@ -43,6 +43,7 @@ test("CMS DocumentPdf blocks publish the referenced PDF without scanning arbitra
   const copied = await publishDocumentAssets(f.root, f.stage, [doc("alpha", {contentFormat: "mdx", contentPath: "alpha.mdx"})], {trackedPaths: []});
   assert.deepEqual([...copied], ["handouts/alpha/report-0123456789.pdf"]);
   assert.throws(() => referencedDocumentAssets(`<iframe src="${src}" />`, "alpha"), /approved MDX/);
+  assert.equal(validateDocumentAssetPath("/handouts/alpha/plain.pdf", "alpha", "pdf"), "handouts/alpha/plain.pdf");
 });
 
 test("invalid owners, traversal, extension and executable MDX attributes fail closed", () => {
@@ -91,8 +92,8 @@ test("archived PDF is excluded and versioned private PDFs block publication", as
   await publishDocumentAssets(f.root, f.stage, [doc("archived", {status: "archived"})], {trackedPaths: []});
   await assert.rejects(fs.access(path.join(f.stage, "static/handouts/archived/report-0123456789.pdf")));
   assert.deepEqual(trackedPrivatePdfPaths(["static/handouts/archived/report-0123456789.pdf"], new Set()), ["static/handouts/archived/report-0123456789.pdf"]);
-  assert.deepEqual(trackedPrivatePdfPaths(["static/private/secret.pdf", "static/handouts/alpha/invalid.pdf"], new Set(["alpha"])),
-    ["static/private/secret.pdf", "static/handouts/alpha/invalid.pdf"]);
+  assert.deepEqual(trackedPrivatePdfPaths(["static/private/secret.pdf", "static/handouts/alpha/INVALID.pdf"], new Set(["alpha"])),
+    ["static/private/secret.pdf", "static/handouts/alpha/INVALID.pdf"]);
   await assert.rejects(publishDocumentAssets(f.root, f.stage, [doc("archived", {status: "archived"})], {
     trackedPaths: ["static/handouts/archived/report-0123456789.pdf"],
   }), /Versioned PDF/);

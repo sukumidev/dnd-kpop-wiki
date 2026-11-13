@@ -32,7 +32,7 @@ test("the public build has no PDF owned by a nonpublic document", () => {
   for (const owner of fs.readdirSync(handouts)) {
     assert.ok(publicIds.has(owner), `Unexpected public PDF owner: ${owner}`);
     for (const name of fs.readdirSync(path.join(handouts, owner))) {
-      assert.match(name, /^[a-z0-9]+(?:-[a-z0-9]+)*-[a-f0-9]{10}\.pdf$/);
+      assert.match(name, /^[a-z0-9]+(?:-[a-z0-9]+)*\.pdf$/);
       assert.deepEqual(
         fs.readFileSync(path.join(handouts, owner, name)),
         fs.readFileSync(path.join("static", "handouts", owner, name)),

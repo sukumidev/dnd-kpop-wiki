@@ -8,7 +8,7 @@ import remarkMdx from "remark-mdx";
 export const MAX_PUBLIC_PDF_BYTES = 25 * 1024 * 1024;
 const ID = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const IMAGE = /^[a-z0-9]+(?:-[a-z0-9]+)*\.(?:webp|png|jpg)$/;
-const PDF = /^[a-z0-9]+(?:-[a-z0-9]+)*-[a-f0-9]{10}\.pdf$/;
+const PDF = /^[a-z0-9]+(?:-[a-z0-9]+)*\.pdf$/;
 const parser = unified().use(remarkParse).use(remarkMdx);
 
 export function isPublicDocument(document) {
