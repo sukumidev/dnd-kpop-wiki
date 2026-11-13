@@ -170,7 +170,7 @@ export function validateControlledMdx(source: string): string[] {
   visit(tree);
   errors.push(...analyzeDocumentPdfMdx(source).errors);
   return [...new Set(errors)];
-
+}
 
 export function validateDocumentMdxFile(
   document: DocumentContentRecord,
