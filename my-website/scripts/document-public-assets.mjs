@@ -139,7 +139,7 @@ function trackedStaticFiles(root) {
   return result.stdout.split("\0").filter(Boolean);
 }
 
-/** CMS PR #15 has no PDF manifest or MDX node yet: publish only strict PDF names under public owner IDs. */
+/** Stage only assets explicitly referenced by public document MDX/Markdown. */
 export async function publishDocumentAssets(root, stage, documents, options = {}) {
   const publicDocuments = documents.filter(isPublicDocument);
   const publicIds = new Set(publicDocuments.map((document) => document.id));
@@ -168,23 +168,20 @@ export async function publishDocumentAssets(root, stage, documents, options = {}
     }
     references.set(document.id, assets);
   }
+  // A file in a public document folder is not automatically approved for publishing.
+  // The MDX/Markdown reference is the explicit allowlist for the public build.
+  const allowedTrackedPdfs = new Set([...references.values()].flatMap(({pdfs}) =>
+    [...pdfs].map((reference) => "static" + reference)));
+  const unreferencedTrackedPdfs = tracked.filter((entry) => {
+    const normalized = entry.replaceAll("\\", "/");
+    return /^static\/handouts\/[^/]+\/[^/]+\.pdf$/i.test(normalized) && !allowedTrackedPdfs.has(normalized);
+  });
+  if (unreferencedTrackedPdfs.length) {
+    throw new Error("Versioned PDF has no approved public MDX reference; remove or reference it explicitly.");
+  }
+
   const copied = new Set();
   for (const [documentId, assets] of references) {
-    const pdfDirectory = path.join(root, "static/handouts", documentId);
-    const directory = await fs.lstat(pdfDirectory).catch((error) => {
-      if (error.code === "ENOENT") return null;
-      throw error;
-    });
-    if (directory?.isSymbolicLink()) throw new Error("Symlink PDF directory is forbidden.");
-    if (directory && !directory.isDirectory()) throw new Error("PDF owner path is not a directory.");
-    if (directory) {
-      for (const entry of await fs.readdir(pdfDirectory, {withFileTypes: true})) {
-        const reference = `/handouts/${documentId}/${entry.name}`;
-        validateDocumentAssetPath(reference, documentId, "pdf");
-        if (!entry.isFile()) throw new Error("Nested or symlink PDF resource is forbidden: " + reference);
-        assets.pdfs.add(reference);
-      }
-    }
     for (const reference of assets.images) {
       const relative = validateDocumentAssetPath(reference, documentId, "image", true);
       if (!publicIds.has(relative.split("/")[2])) throw new Error("Public document references a nonpublic image owner.");
