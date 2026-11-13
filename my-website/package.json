@@ -25,7 +25,8 @@
     "gen:factions:force": "tsx scripts/generateFactionsMdx.ts --force",
     "gen:documents": "tsx scripts/generate-document-pages.ts --clean",
     "migrate:documents:mdx": "tsx scripts/migrate-document-content-to-mdx.ts",
-    "test": "tsx --test tests/document-mdx.test.ts tests/character-id-normalization.test.ts tests/fill-null-character-image-paths.test.mjs tests/faction-directory-ordering.test.ts tests/character-faction-ordering.test.ts tests/public-build-policy.test.mjs tests/audit-character-doc-duplicates.test.mjs tests/public-redirects.test.ts tests/public-faction-routes.test.mjs tests/character-classes.test.ts tests/class-characters.test.ts tests/archive-objects.test.ts tests/archive-objects-render.test.tsx tests/archive-symbols.test.ts tests/document-reader.test.tsx tests/library.test.ts",
+    "test": "tsx --test tests/document-mdx.test.ts tests/document-pdf.test.tsx tests/character-id-normalization.test.ts tests/fill-null-character-image-paths.test.mjs tests/faction-directory-ordering.test.ts tests/character-faction-ordering.test.ts tests/public-build-policy.test.mjs tests/audit-character-doc-duplicates.test.mjs tests/public-redirects.test.ts tests/public-faction-routes.test.mjs tests/character-classes.test.ts tests/class-characters.test.ts tests/archive-objects.test.ts tests/archive-objects-render.test.tsx tests/archive-symbols.test.ts tests/document-reader.test.tsx tests/library.test.ts",
+    "test:document-pdf": "tsx --test tests/document-pdf.test.tsx",
     "test:character-ids": "tsx --test tests/character-id-normalization.test.ts",
     "validate:data": "tsx scripts/validate-data.ts",
     "images:webp": "node scripts/convert-images-to-webp.mjs",
@@ -63,7 +64,10 @@
     "react-dom": "^19.0.0",
     "recharts": "^3.8.0",
     "react-markdown": "^10.1.0",
-    "remark-gfm": "^4.0.1"
+    "remark-gfm": "^4.0.1",
+    "remark-mdx": "^3.1.1",
+    "remark-parse": "^11.0.0",
+    "unified": "^11.0.5"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.9.2",
