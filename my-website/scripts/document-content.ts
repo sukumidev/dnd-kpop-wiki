@@ -1,6 +1,16 @@
 import fs from "node:fs";
-import path from "node:path";
 import {analyzeDocumentPdfMdx, validatePublicDocumentPdfFiles} from "./document-pdf-mdx";
+import path from "node:path";
+import remarkMdx from "remark-mdx";
+import remarkParse from "remark-parse";
+import {unified} from "unified";
+import {
+  DOCUMENT_GALLERY_COLUMNS,
+  DOCUMENT_IMAGE_ALIGNMENTS,
+  DOCUMENT_IMAGE_SIZES,
+  isSafeDocumentImageSource,
+  isSafeDocumentUrl,
+} from "../src/components/documents/mdx/documentMedia";
 
 export const DOCUMENT_CONTENT_DIRECTORY = path.join("src", "content", "documents");
 export const ALLOWED_DOCUMENT_MDX_COMPONENTS = [
@@ -8,11 +18,21 @@ export const ALLOWED_DOCUMENT_MDX_COMPONENTS = [
   "Callout",
   "Spoiler",
   "DocumentImage",
+  "DocumentGallery",
   "DocumentPdf",
   "Divider",
 ] as const;
 
 const ALLOWED_COMPONENT_SET = new Set<string>(ALLOWED_DOCUMENT_MDX_COMPONENTS);
+const ALLOWED_ATTRIBUTES: Record<(typeof ALLOWED_DOCUMENT_MDX_COMPONENTS)[number], readonly string[]> = {
+  Quote: ["cite"],
+  Callout: ["title", "tone", "type"],
+  Spoiler: ["summary", "label"],
+  DocumentImage: ["src", "alt", "caption", "title", "size", "align"],
+  DocumentGallery: ["columns"],
+  DocumentPdf: ["src", "title", "caption", "display"],
+  Divider: ["label"],
+};
 
 export type DocumentContentFormat = "markdown" | "mdx";
 
@@ -86,40 +106,68 @@ export function resolveDocumentMdxPath(
   };
 }
 
-function stripFencedCode(source: string): string {
-  return source.replace(/^( {0,3})(`{3,}|~{3,})[^\n]*\n[\s\S]*?^\1\2\s*$/gm, "");
-}
+type MdxNode = {
+  type: string;
+  name?: string | null;
+  attributes?: Array<{type: string; name?: string; value?: unknown}>;
+  children?: MdxNode[];
+  url?: string;
+};
 
 export function validateControlledMdx(source: string): string[] {
+  let tree: MdxNode;
+  try {
+    tree = unified().use(remarkParse).use(remarkMdx).parse(source) as MdxNode;
+  } catch (error) {
+    return [`Invalid narrative MDX: ${error instanceof Error ? error.message : String(error)}`];
+  }
+
   const errors: string[] = [];
-  const content = stripFencedCode(source);
-
-  if (/^\s*import(?:\s|\{)/m.test(content)) {
-    errors.push("imports are not allowed in narrative MDX documents");
-  }
-  if (/^\s*export(?:\s|\{)/m.test(content)) {
-    errors.push("exports are not allowed in narrative MDX documents");
-  }
-  if (/[{}]/.test(content)) {
-    errors.push("JavaScript expressions in braces are not allowed in narrative MDX documents");
-  }
-  if (/<\s*(?:script|iframe|object|embed)\b/i.test(content)) {
-    errors.push("executable or embedded HTML elements are not allowed in narrative MDX documents");
-  }
-  if (/\b(?:href|src)\s*=\s*["']\s*javascript:/i.test(content) || /\]\(\s*javascript:/i.test(content)) {
-    errors.push("javascript: URLs are not allowed in narrative MDX documents");
-  }
-
-  const componentPattern = /<\/?([A-Z][A-Za-z0-9.]*)\b/g;
-  for (const match of content.matchAll(componentPattern)) {
-    const componentName = match[1];
-    if (!ALLOWED_COMPONENT_SET.has(componentName)) {
-      errors.push(
-        `component <${componentName}> is not registered; allowed components: ${ALLOWED_DOCUMENT_MDX_COMPONENTS.join(", ")}`,
-      );
+  function visit(node: MdxNode) {
+    if (node.type === "mdxjsEsm") errors.push("imports and exports are not allowed in narrative MDX documents");
+    if (node.type === "mdxFlowExpression" || node.type === "mdxTextExpression") {
+      errors.push("JavaScript expressions are not allowed in narrative MDX documents");
     }
+    if (node.type === "link" || node.type === "image") {
+      if (!isSafeDocumentUrl(node.url)) errors.push("javascript: and other unsafe URLs are not allowed in narrative MDX documents");
+    }
+    if (node.type === "mdxJsxFlowElement" || node.type === "mdxJsxTextElement") {
+      const name = node.name ?? "";
+      if (!ALLOWED_COMPONENT_SET.has(name)) {
+        errors.push(`component <${name}> is not registered; allowed components: ${ALLOWED_DOCUMENT_MDX_COMPONENTS.join(", ")}`);
+      } else {
+        const fields = new Map<string, string>();
+        for (const attribute of node.attributes ?? []) {
+          if (attribute.type !== "mdxJsxAttribute" || typeof attribute.value !== "string") {
+            errors.push(`component <${name}> only accepts literal text attributes`);
+            continue;
+          }
+          const attributeName = attribute.name ?? "";
+          if (!ALLOWED_ATTRIBUTES[name as keyof typeof ALLOWED_ATTRIBUTES].includes(attributeName) || fields.has(attributeName)) {
+            errors.push(`component <${name}> has an unknown or duplicate attribute: ${attributeName}`);
+          }
+          fields.set(attributeName, attribute.value);
+        }
+        if (node.type === "mdxJsxTextElement" && (name === "DocumentImage" || name === "DocumentGallery")) {
+          errors.push(`component <${name}> must be a block element`);
+        }
+        if (name === "DocumentImage") {
+          if (!isSafeDocumentImageSource(fields.get("src"))) errors.push("DocumentImage requires a safe nonempty src");
+          if (fields.has("size") && !DOCUMENT_IMAGE_SIZES.includes(fields.get("size") as never)) errors.push("DocumentImage size is invalid");
+          if (fields.has("align") && !DOCUMENT_IMAGE_ALIGNMENTS.includes(fields.get("align") as never)) errors.push("DocumentImage align is invalid");
+          if (node.children?.length) errors.push("DocumentImage cannot contain children");
+        }
+        if (name === "DocumentGallery") {
+          if (!DOCUMENT_GALLERY_COLUMNS.includes(fields.get("columns") as never)) errors.push("DocumentGallery columns must be 1, 2 or 3");
+          if (!node.children?.length || node.children.some((child) => child.type !== "mdxJsxFlowElement" || child.name !== "DocumentImage")) {
+            errors.push("DocumentGallery must contain only DocumentImage children");
+          }
+        }
+      }
+    }
+    for (const child of node.children ?? []) visit(child);
   }
-
+  visit(tree);
   errors.push(...analyzeDocumentPdfMdx(source).errors);
   return [...new Set(errors)];
 }
